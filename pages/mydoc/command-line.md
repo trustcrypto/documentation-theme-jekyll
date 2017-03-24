@@ -9,8 +9,9 @@ permalink: command-line.html
 folder: mydoc
 ---
 
-<!-- load remote readme file from github -->
-{% remote_markdown https://raw.githubusercontent.com/trustcrypto/python-onlykey/master/README.md %}
+{% highlight javascript tabsize=4 %}
+{% remote_file_content https://raw.githubusercontent.com/trustcrypto/python-onlykey/master/README.md %}
+{% endhighlight %}
 
 ## Source
 
