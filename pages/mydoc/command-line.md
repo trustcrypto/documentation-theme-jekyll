@@ -9,6 +9,7 @@ permalink: command-line.html
 folder: mydoc
 ---
 
+{% include https://raw.githubusercontent.com/trustcrypto/python-onlykey/master/README.md %}
 
 ## Source
 
