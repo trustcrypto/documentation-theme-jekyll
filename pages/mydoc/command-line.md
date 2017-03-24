@@ -9,9 +9,7 @@ permalink: command-line.html
 folder: mydoc
 ---
 
-{% highlight javascript tabsize=4 %}
 {% remote_file_content https://raw.githubusercontent.com/trustcrypto/python-onlykey/master/README.md %}
-{% endhighlight %}
 
 ## Source
 
