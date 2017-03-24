@@ -8,9 +8,7 @@ sidebar: mydoc_sidebar
 permalink: command-line.html
 folder: mydoc
 ---
-```
-{% remote_file_content https://raw.githubusercontent.com/trustcrypto/python-onlykey/master/README.md %}
-```
+
 
 ## Source
 
