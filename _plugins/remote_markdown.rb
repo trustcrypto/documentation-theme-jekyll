@@ -1,46 +1,36 @@
-# "THE BEER-WARE LICENSE" (Revision 42):
-# <robin.hahling@gw-computing.net> wrote this file. As long as you retain this
-# notice you can do whatever you want with this stuff. If we meet some day, and
-# you think this stuff is worth it, you can buy me a beer in return.
-# Robin Hahling
-
 require 'net/http'
+require 'uri'
 
 module Jekyll
-  # Remotely fetch a markdown file.
-  class RemoteMarkdownTag < Liquid::Tag
-    def initialize(tag_name, text, tokens)
+
+  class RemoteFileContent < Liquid::Tag
+
+    def initialize(tag_name, markup, tokens)
+      url = markup
+
+      puts 'Fetching content of url: ' + url
+
+      if url =~ URI::regexp
+        @content = fetchContent(url)
+      else
+        raise 'Invalid URL passed to RemoteFileContent'
+      end
+
       super
-
-      text.strip!
-      check_protocol(text)
-      uri = URI(text)
-
-      check_extension(uri.path)
-
-      res = Net::HTTP.get_response(uri)
-      fail 'resource unavailable' unless res.is_a?(Net::HTTPSuccess)
-
-      @content = res.body.force_encoding("UTF-8")
     end
 
-    def render(_context)
-      @content
+    def render(context)
+      if @content
+        @content
+      else
+        raise 'Something went wrong in RemoteFileContent'
+      end
     end
 
-    private
-
-    def check_protocol(text)
-      error_message = "remote_markdown: invalid URI given #{text}"
-      fail error_message unless text =~ URI.regexp(%w(http https ftp ftps))
-    end
-
-    def check_extension(path)
-      mdexts = %w(.markdown .mkdown .mkdn .mkd .md)
-      error_message = "remote_markdown: URI file extension not in #{mdexts}"
-      fail error_message unless mdexts.include?(File.extname(path))
+    def fetchContent(url)
+      Net::HTTP.get(URI.parse(URI.encode(url.strip)))
     end
   end
 end
 
-Liquid::Template.register_tag('remote_markdown', Jekyll::RemoteMarkdownTag)
+Liquid::Template.register_tag('remote_file_content', Jekyll::RemoteFileContent)
