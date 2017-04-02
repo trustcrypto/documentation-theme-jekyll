@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://demo.yubico.com/js/u2f-api.js"></script>
+</head>
+<body>
+<h1>Student Data Viewer</h1>
+
+<p>Greetings! To access this feature you must add a U2F 2FA key to your account.</p>
+<input type="button" value="Register a 2FA key" onClick="register()">
+
+<p>If you have already added a key to your account, you can use it to access student data.</p>
+<input type="button" value="View super secret student data" onClick="authenticate()">
+<script>
+/* Get an authentication request from the server,
+ * sign it with the key, verify the results on the server
+ */
+function authenticate() {
+	ajaxGet("/api/sign_request", function(authRequest) {
+			var req = JSON.parse(authRequest);
+			alert("Press your key");
+			u2f.sign([req], function(res) {
+				ajaxPost("/api/authenticate", res, function(res) {
+					res = JSON.parse(res);
+					if (res.error) {
+						alert(res.error);
+						return;
+					} else {
+						alert(JSON.stringify(res.secretData, true, 5));
+					}
+				});
+			});
+	});
+}
+/* Get a registration request from the server, use it to register the key, send the results back
+ * to server and check if it was successful
+ */
+function register() {
+	ajaxGet("/api/register_request", function(authRequest) {
+			var req = JSON.parse(authRequest);
+			alert("Press your key");
+			u2f.register([req], [], function(res) {
+				ajaxPost("/api/register", res, function(res) {
+					if (res === "true") {
+						alert("Successfully registered that key. You can now view student data.");
+					} else {
+						alert(res);
+					}
+				});
+			});
+	});
+}
+/* Very basic ajax functions */
+function ajaxGet(url, cb) {
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", url);
+	xhr.onload = function() {
+		cb(xhr.responseText);
+	};
+	xhr.send();
+}
+function ajaxPost(url, data, cb) {
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", url);
+	xhr.setRequestHeader("Content-type", "application/json");
+	xhr.onload = function() {
+		cb(xhr.responseText);
+	};
+	xhr.send(JSON.stringify(data));
+}
+</script>
+</body>
+</html>
