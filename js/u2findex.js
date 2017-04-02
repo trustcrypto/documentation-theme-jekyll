@@ -8,7 +8,7 @@ var u2f = require('u2f');
 
 var APP_ID = "https://localhost:4433";
 
-var SECRET_DATA = require("./secret_data.json");
+var SECRET_DATA = require("../secret_data.json");
 
 app.use(bodyParser.json());
 app.use(require('cookie-parser')());
