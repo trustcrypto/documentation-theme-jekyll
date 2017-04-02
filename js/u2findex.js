@@ -6,7 +6,7 @@ var https = require('https');
 var fs = require('fs');
 var u2f = require('u2f');
 
-var APP_ID = "https://localhost:4433";
+var APP_ID = "https://localhost:443";
 
 var SECRET_DATA = require("../secret_data.json");
 
@@ -70,4 +70,4 @@ var credentials = {
   cert: fs.readFileSync('server.crt')
 };
 var httpsServer = https.createServer(credentials, app);
-httpsServer.listen(4433);
+httpsServer.listen(443);
