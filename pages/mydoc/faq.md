@@ -14,12 +14,12 @@ folder: mydoc
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What specifically are the differences between the U.S. Version firmware and the International Version firmware?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What specifically are the differences between the Standard Edition firmware and the International Travel Edition firmware?</a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                The International Version firmware is essentially a stripped down version of the U.S. Version firmware. The crypto libraries have been removed so that it will be a fully functional password manager but not utilize encryption and may be usable in countries where encryption is illegal.
+                                The International Travel Edition firmware is essentially a stripped down version of the Standard Edition firmware. The crypto libraries have been removed so that it will be a fully functional password manager but not utilize encryption and may be usable in countries where encryption is illegal.
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ folder: mydoc
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                There are two big reasons to have the two separate versions of firmware. 1) The International Version is not subject to any export restrictions that would apply to export of crypto outside of the US since it performs no encryption. 2) By actually having a version in use that does not utilize encryption the plausible deniability feature is actually plausible. If for example all devices shipped with encryption and a plausible deniability mode it would not be plausible that a device does not perform encryption because anyone with the ability to search online would see that this is a feature available on all devices. By having this as a feature on some devices and other devices being legitimately without any encryption capabilities it is plausible that your device does not utilize encryption.
+                                There are two big reasons to have the two separate versions of firmware. 1) The International Travel Edition is not subject to any export restrictions that would apply to export of crypto outside of the US since it performs no encryption. 2) By actually having a version in use that does not utilize encryption the plausible deniability feature is actually plausible. If for example all devices shipped with encryption and a plausible deniability mode it would not be plausible that a device does not perform encryption because anyone with the ability to search online would see that this is a feature available on all devices. By having this as a feature on some devices and other devices being legitimately without any encryption capabilities it is plausible that your device does not utilize encryption.
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ folder: mydoc
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse">
                             <div class="panel-body">
-                                This activates a second profile that is designed to be indistinguishable from the OnlyKey (International Version) firmware while actually running the OnlyKey (U.S.) version firmware. The objective of this feature is to allow users to run the OnlyKey (U.S.) version and travel overseas to areas where devices using encryption might not be allowed. The user would have a plausible story in showing that their device is just a basic password manager without any encryption. For more information on encryption and international travel see https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/
+                                This activates a second profile that is designed to be indistinguishable from the OnlyKey (International Travel Edition) firmware while actually running the OnlyKey (Standard Edition) firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. The user can load the International Travel Edition firmware on thier OnlyKey along with some accounts they don't really care about before crossing a border and then if they are asked if they have anything that is encrypted they can say no and be completely telling the truth. Once inside the country they could load the Standard Firmware and set up thier plausible deniability profile so that if they are ever detained or forced to give up thier PIN they can comply by giving the plausible deniability PIN which would just unlock the accounts they don't really care about and would again appear to just be an unencrypted password manager. The user would have a plausible story that they are giving up everything they have while keeping the accounts they care about and encryption keys protected. For more information on encryption and international travel see https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/
                             </div>
                         </div>
                     </div>
