@@ -30,27 +30,27 @@ If you are having issues that are not addressed in the User's Guide or FAQs chec
 There are several apps and software projects that are compatible with OnlyKey. They basically fall into three categories.
 
 
-*1 - Software that runs on the OnlyKey itself*
+**1 - Software that runs on the OnlyKey itself**
 
-*2 - Software that is used to configure the OnlyKey*
+**2 - Software that is used to configure the OnlyKey**
 
-*3 - Software that supports OnlyKey functionality*
+**3 - Software that supports OnlyKey functionality**
 
 
-*Software that runs on the OnlyKey itself*
+**Software that runs on the OnlyKey itself**
 
 [OnlyKey Firmware](https://docs.crp.to/firmware.html) - This is the software that runs on the OnlyKey itself. The OnlyKey firmware is open source and can be loaded onto the OnlyKey by following the instructions in the User's Guide.
 
 The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKey-Firmware/releases)
 The firmware supporting libraries can be found [here.](https://github.com/trustcrypto/libraries) 
 
-*Software that is used to configure the OnlyKey*
+**Software that is used to configure the OnlyKey**
 
 [OnlyKey Chrome App](https://docs.crp.to/app.html) - This is the primary and recommended app to set up and configure OnlyKey. This App requires Google Chrome or open source Chromium browser and has been tested on Windows, Mac OS, Linux, and Chrome OS.
 
 [OnlyKey Python App](https://docs.crp.to/command-line.html) - This is a command line tool targeted towards more advanced users. This can be used for set up, configuration, and testing. This app is open source and has been tested on Windows, Mac OS, and Linux.
 
-*Software that supports OnlyKey functionality*
+**Software that supports OnlyKey functionality**
 
 [OnlyKey SSH/GPG Agent](https://docs.crp.to/onlykey-agent.html) - This is essentially middleware that lets you use OnlyKey as a hardware SSH/GPG device (GPG not supported yet). OnlyKey Python App is required to use this agent.
 
