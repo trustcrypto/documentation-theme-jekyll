@@ -364,7 +364,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav > li.active > a  {
-background-color: #ffffff;
+background-color: #347DBE;
 }
 
 .nav li a {
@@ -1203,3 +1203,4 @@ h4.panel-title {
         display:block !important;
     }
 }
+
