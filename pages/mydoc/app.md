@@ -21,6 +21,3 @@ Coming soon
 
 [OnlyKey Chrome App on Github](https://github.com/trustcrypto/OnlyKey-Chrome-App) - This is the app used to set up and configure OnlyKey.
 
-<!-- fetch -->
-{% assign url = 'https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/_includes/links.html' %}
-{% include_relative {{ url }} %}
