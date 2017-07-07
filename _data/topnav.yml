@@ -3,13 +3,33 @@
 topnav:
 - title: Topnav
   items:
+<<<<<<< HEAD
     - title: Home
       external_url: https://crp.to
+=======
+    - title: GitHub
+      external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+    - title: News
+      url: /news
+>>>>>>> tomjohnson1492/gh-pages
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
+<<<<<<< HEAD
+=======
+    - title: Jekyll Help
+      folderitems:
+        - title: Jekyll Talk
+          external_url: https://talk.jekyllrb.com
+        - title: Jekyll documentation
+          external_url: http://jekyllrb.com/docs/home/
+        - title: Jekyll on Stack Overflow
+          external_url: http://stackoverflow.com/questions/tagged/jekyll
+        - title: Jekyll on my blog
+          external_url: http://idratherbewriting.com/category-jekyll/
+>>>>>>> tomjohnson1492/gh-pages
     - title: Products
       folderitems:
         - title: OnlyKey

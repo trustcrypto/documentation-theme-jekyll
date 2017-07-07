@@ -41,6 +41,17 @@ a[data-toggle="tooltip"] {
     background-color: #347DBE;
     border-color: #015CAE;
 }
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
+     color: #f0f0f0;
+}
+
+a.navbar-brand:hover {
+  color: #f0f0f0;
+}
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     color: #015CAE;
@@ -51,7 +62,6 @@ a[data-toggle="tooltip"] {
     color: #ffffff;
 }
 
-/* not sure if using this ...*/
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border-color: #248ec2 !important;
 }
@@ -93,7 +103,7 @@ div.sidebarTitle {
 }
 
 li.sidebarTitle {
-    margin-top:40px;
+  margin-top:20px;
     font-weight:normal;
     font-size:130%;
     color: #ae0000;
@@ -101,3 +111,14 @@ li.sidebarTitle {
     margin-left: 5px;
 
 }
+<<<<<<< HEAD
+=======
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #015CAE;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #015CAE;
+}
+>>>>>>> tomjohnson1492/gh-pages

@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container topnavlinks">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -12,8 +12,14 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
                 <!-- entries without drop-downs appear here -->
-                {% for entry in site.data.topnav.topnav %}
+
+{% assign topnav = site.data[page.topnav] %}
+{% assign topnav_dropdowns = site.data[page.topnav].topnav_dropdowns %}
+
+                {% for entry in topnav.topnav %}
                 {% for item in entry.items %}
                 {% if item.external_url %}
                 <li><a href="{{item.external_url}}" target="_blank">{{item.title}}</a></li>
@@ -26,7 +32,7 @@
                 {% endfor %}
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
-                {% for entry in site.data.topnav.topnav_dropdowns %}
+                {% for entry in topnav_dropdowns %}
                 {% for folder in entry.folders %}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ folder.title }}<b class="caret"></b></a>
@@ -60,7 +66,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: '{{ "search.json" }}',
-                                searchResultTemplate: '<li><a href="{url}" title="{{page.title | replace: "'", "\"}}">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="{{page.title | replace: "\'", "\"}}">{title}</a></li>',
                     noResultsText: '{{site.data.strings.search_no_results_text}}',
                             limit: 10,
                             fuzzy: true,

@@ -25,6 +25,14 @@ div.navbar-collapse .dropdown-menu > li > a:hover {
     background-color: #72ac4a;
 }
 
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, a.fa.fa-home.fa-lg.navbar-brand:hover {
+     color: #f0f0f0;
+}
+
 .nav li.thirdlevel > a {
     background-color: #FAFAFA !important;
     color: #72ac4a;
@@ -89,11 +97,17 @@ div.sidebarTitle {
 }
 
 li.sidebarTitle {
-    margin-top:40px;
+    margin-top:20px;
     font-weight:normal;
     font-size:130%;
     color: #ae0000;
     margin-bottom:10px;
     margin-left: 5px;
+}
 
+<<<<<<< HEAD
+=======
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #E50E51;
+>>>>>>> tomjohnson1492/gh-pages
 }
