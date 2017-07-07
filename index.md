@@ -37,6 +37,7 @@ There are several apps and software projects that are compatible with OnlyKey. T
 **3 - Software that supports OnlyKey functionality**
 
 
+
 **Software that runs on the OnlyKey itself**
 
 [OnlyKey Firmware](https://docs.crp.to/firmware.html) - This is the software that runs on the OnlyKey itself. The OnlyKey firmware is open source and can be loaded onto the OnlyKey by following the instructions in the User's Guide.
@@ -44,11 +45,13 @@ There are several apps and software projects that are compatible with OnlyKey. T
 The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKey-Firmware/releases)
 The firmware supporting libraries can be found [here.](https://github.com/trustcrypto/libraries) 
 
+
 **Software that is used to configure the OnlyKey**
 
 [OnlyKey Chrome App](https://docs.crp.to/app.html) - This is the primary and recommended app to set up and configure OnlyKey. This App requires Google Chrome or open source Chromium browser and has been tested on Windows, Mac OS, Linux, and Chrome OS.
 
 [OnlyKey Python App](https://docs.crp.to/command-line.html) - This is a command line tool targeted towards more advanced users. This can be used for set up, configuration, and testing. This app is open source and has been tested on Windows, Mac OS, and Linux.
+
 
 **Software that supports OnlyKey functionality**
 
