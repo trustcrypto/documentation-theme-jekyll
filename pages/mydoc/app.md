@@ -22,6 +22,6 @@ Coming soon
 [OnlyKey Chrome App on Github](https://github.com/trustcrypto/OnlyKey-Chrome-App) - This is the app used to set up and configure OnlyKey.
 
 <!-- load remote readme file from github -->
-{% raw remote_markdown https://raw.githubusercontent.com/trustcrypto/OnlyKey-Chrome-App/master/README.md %}
+{% include https://raw.githubusercontent.com/trustcrypto/OnlyKey-Chrome-App/master/README.md %}
 
 {% include links.html %}
