@@ -23,4 +23,4 @@ Coming soon
 
 <!-- fetch -->
 {% assign url = 'https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/_includes/links.html' %}
-{% include {{ url }} %}
+{% include_relative {{ url }} %}
