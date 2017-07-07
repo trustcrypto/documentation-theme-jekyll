@@ -364,7 +364,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav > li.active > a  {
-background-color: #347DBE;
+background-color: #616161;
 }
 
 .nav li a {
@@ -1164,8 +1164,6 @@ h4.panel-title {
     padding-top: 0px;
     margin-top: 0px;
 }
-<<<<<<< HEAD
-=======
 
 /*set navbar breakpoint so that it converts to hamburger earlier */
 
@@ -1205,4 +1203,3 @@ h4.panel-title {
         display:block !important;
     }
 }
->>>>>>> tomjohnson1492/gh-pages
