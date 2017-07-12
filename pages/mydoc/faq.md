@@ -84,7 +84,7 @@ folder: mydoc
                         </div>
                         <div id="collapseSix" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. Form more information on Plausible Deniability encryption see https://en.wikipedia.org/wiki/Deniable_encryption
+                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. Form more information read https://crp.to/2017/04/plausible-deniability-onlykey/
                             </div>
                         </div>
                     </div>
@@ -128,6 +128,22 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                         <div id="collapseEight" class="panel-collapse collapse">
                             <div class="panel-body">
                                 We did consider this option but there is one big security weakness this introduces. If the registered holder of the signing certificate is forced to give up the private key (by court order or other means) then whoever gains access to the private key could make modifications to the firmware and release it to unsuspecting users. Also there is not a good way to have firmware be both open source and require a specific code signing certificate. The integrity of firmware can still be validated without a signature using a checksum.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Why no NFC (Near Field Communication) support?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Three main reasons for not supporting NFC
+                                1) Power Requirements - NFC provides ~5mA of harvested power to NFC tags. The OnlyKey has a high performance processor which permits quick cryptographic operations but requires more power than NFC provides.
+                                2) User Experience - The way that NFC devices are typically used is to quickly tap an NFC device to a reader/smartphone. There is no physical protection in place for most NFC devices if you drop it, someone can pick it up and use it. With OnlyKey this is not the case, you have to enter a PIN to unlock the device first. Even if power output of NFC was enough imagine trying to hold a device close enough to the reader for power while entering a PIN. This in many cases would not be very user friendly.
+                                3) Not Universally Supported - One thing we strive to do is provide a device that works practically everywhere and on everything. NFC is only supported on select Android devices and there are no plans for Apple to open up NFC functionality on the iPhone/iPad. NFC support would not provide universal mobile support. With USB an adapter is required but we can support all Android devices and even newer iPhones that now have USB suppor.
                             </div>
                         </div>
                     </div>
