@@ -11,6 +11,42 @@ folder: mydoc
 ---
 
 <div class="panel-group" id="accordion">
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen">Is OnlyKey Waterproof and Durable?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFourteen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                OnlyKey is protected with a clear potting compound that provides:
+
+                                <strong>1) Durability</strong> - OnlyKey is crush and impact resistant, it stands up to abuse. You can carry it on your keychain, in your pocket, etc.
+
+                                <strong>2) Waterproof </strong>- Accidentally leave your OnlyKey in your pocket and it goes through the washing machine? No problem.
+
+                                <strong>3) Transparency</strong> - It is possible to visually verify that things have not been tampered with and there is not a hardware backdoor installed.
+
+                                <strong>OnlyKey Cases Now Available!</strong>
+
+                                To provide even more durability and style OnlyKey silicon cases are now available.
+
+                                <a href="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3.jpg" rel="attachment wp-att-1236"><img class="size-medium wp-image-1236 aligncenter" src="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3-300x225.jpg" alt="" width="300" height="225" /></a>
+                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p>
+                                <p style="text-align: center;"><a href="https://www.amazon.com/CryptoTrust-OK-Case-BLK-OnlyKey-Silicon-Case/dp/B071WLDDMF" rel="attachment wp-att-1090">
+                                <img class="aligncenter wp-image-977 size-medium" src="https://crp.to/wp-content/uploads/2016/11/buy-now-amazon-300x152.png" alt="" width="300" height="152" /></a></p>
+                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p>
+
+                                <div class="form" style="text-align: center;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" /><input name="hosted_button_id" type="hidden" value="2GL2GEU8ZAZHU" /><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image" /><img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
+                                <p style="text-align: left;">This case fits both the OnlyKey Original and the OnlyKey Color.</p>
+
+                                </form></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
