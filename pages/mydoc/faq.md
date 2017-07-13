@@ -3,8 +3,8 @@ title: OnlyKey FAQ
 permalink: faq.html
 sidebar: mydoc_sidebar
 tags: [special_layouts]
-keywords: frequently asked questions, FAQ, question and answer, collapsible sections, expand, collapse
-last_updated: Jan, 16 2017
+keywords: frequently asked questions, FAQ, question and answer
+last_updated: Jul, 13 2017
 summary: Frequently Asked Questions
 toc: false
 folder: mydoc
@@ -107,21 +107,6 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">How can I be sure by OnlyKey does not have a backdoor or was not tampered with?</a>
-                            </h4>
-                        </div>
-                        <div id="collapseNine" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                We have designed OnlyKey to be as transparent as possible (literally it is covered in a clear potting compound). You can load our firmware, review the source, or write your own firmware. Here are some of the features that allow you validate that there is no backdoor or tampering has occurred.
-                                1) Hardware - By having a clear coat on the electronics you can actually see the hardware and would be able to see a hardware type of backdoor.
-                                2) Software - The way that OnlyKey loads firmware is unique. When you bridge the two touch points to load firmware what actually happens is first the small chip on the board sends a message to the large chip on the board that wipes all data from the large chip, next the firmware is loaded onto the small chip via USB, and finally written onto the blank large chip. So even is someone succeeded in loading malicious software onto your OnlyKey reloading the firmware would completely remove it.
-                            </div>
-                        </div>
-                    </div>
-                     <!-- /.panel -->                   
-                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
                                 <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Why not sign the firmware with a code signing certificate?</a>
                             </h4>
                         </div>
@@ -135,15 +120,90 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Why no NFC (Near Field Communication) support?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">How can I be sure by OnlyKey does not have a backdoor or was not tampered with?</a>
                             </h4>
                         </div>
                         <div id="collapseNine" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Three main reasons for not supporting NFC
-                                1) Power Requirements - NFC provides ~5mA of harvested power to NFC tags. The OnlyKey has a high performance processor which permits quick cryptographic operations but requires more power than NFC provides.
-                                2) User Experience - The way that NFC devices are typically used is to quickly tap an NFC device to a reader/smartphone. There is no physical protection in place for most NFC devices if you drop it, someone can pick it up and use it. With OnlyKey this is not the case, you have to enter a PIN to unlock the device first. Even if power output of NFC was enough imagine trying to hold a device close enough to the reader for power while entering a PIN. This in many cases would not be very user friendly.
+                                We have designed OnlyKey to be as transparent as possible (literally it is covered in a clear potting compound). You can load our firmware, review the source, or write your own firmware. Here are some of the features that allow you validate that there is no backdoor or tampering has occurred.<br>
+                                1) Hardware - By having a clear coat on the electronics you can actually see the hardware and would be able to see a hardware type of backdoor.<br>
+                                2) Software - The way that OnlyKey loads firmware is unique. When you bridge the two touch points to load firmware what actually happens is first the small chip on the board sends a message to the large chip on the board that wipes all data from the large chip, next the firmware is loaded onto the small chip via USB, and finally written onto the blank large chip. So even is someone succeeded in loading malicious software onto your OnlyKey reloading the firmware would completely remove it.
+                            </div>
+                        </div>
+                    </div>
+                     <!-- /.panel -->                   
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Why no NFC (Near Field Communication) support?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Three main reasons for not supporting NFC<br>
+                                1) Power Requirements - NFC provides ~5mA of harvested power to NFC tags. The OnlyKey has a high performance processor which permits quick cryptographic operations but requires more power than NFC provides.<br>
+                                2) User Experience - The way that NFC devices are typically used is to quickly tap an NFC device to a reader/smartphone. There is no physical protection in place for most NFC devices if you drop it, someone can pick it up and use it. With OnlyKey this is not the case, you have to enter a PIN to unlock the device first. Even if power output of NFC was enough imagine trying to hold a device close enough to the reader for power while entering a PIN. This in many cases would not be very user friendly.<br>
                                 3) Not Universally Supported - One thing we strive to do is provide a device that works practically everywhere and on everything. NFC is only supported on select Android devices and there are no plans for Apple to open up NFC functionality on the iPhone/iPad. NFC support would not provide universal mobile support. With USB an adapter is required but we can support all Android devices and even newer iPhones that now have USB suppor.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->               
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">Why no USB C version?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwelve" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                USB C, while definitely having its advantages and on paper looks like a great option also has a lot of disadvantages and issues to consider.<br>
+                                1) Connector Strength - OnlyKey has physical security provided by requiring a PIN to be entered in order to use. This makes OnlyKey a much more secure option than devices with no physical protection but it also requires that the USB connector is fairly durable and strong. USB C connectors/recepticles are smaller not very durable and more prone to breaking from say the stress of pressing on a device that is plugged in to enter a PIN. The way to resolve this issue would be to have a flexible USB C connector attached to OnlyKey. While this is possible it would be more expensive to produce and would only be slightly more compact than just using a USB C adapter connected to the current OnlyKey. For this reason we provide USB C support via a USB C adapter, as this method also provides backwards compatability with the majority of systems in use that do not support USB C.<br>
+                                2) Connector Complexity/Durability - USB C connectors contain 24 tiny connections while USB A contains 4 large connections. Additionally, the USB A connector on OnlyKey is a flat surface while USB C is not. With the current USB A the device is waterproof, you could go swimming, wipe your OnlyKey dry and its good to go. This is not the case with USB C as water can reside inside the connector where its not easy to dry and plugging a wet electrical connector in is a bad idea. The complexity of USB C is great for things like supporting a 4K monitor that requires an incredible amount of data transfer, but for OnlyKey it is just a disadvantage as there is no need for high speed data at all.<br>
+                                For more information on mobile adapters including USB C, Mirco USB, and iPhone Lightning see is [OnlyKey supported on Android and iPhone](#collapseThirteen).
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">Is OnlyKey Supported on Android and iPhone?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwelve" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                OnlyKey is supported by any device that would support a USB keyboard. This includes Android devices and even iPhone 7 using USB OTG adapter.<br>
+                                <table>
+                          <tbody>
+                          <tr>
+                          <th>Phone Model</th>
+                          <th>Supported</th>
+                          <th>Required Adapter</th>
+                          </tr>
+                          <tr>
+                          <td>iPhone/iPad (IOS 9.2+) with Lightning port</td>
+                          <td>Password manager and Yubikey OTP</td>
+                          <td>Lightning to USB OTG Adapter available <a href="https://www.amazon.com/gp/product/B00S9I7EPO/">here</a>
+
+                          <a href="https://crp.to/wp-content/uploads/2017/06/adapter3.jpg" rel="attachment wp-att-1232"><img class="alignnone size-full wp-image-1232" src="https://crp.to/wp-content/uploads/2017/06/adapter3.jpg" alt="" width="1144" height="645" /></a></td>
+                          </tr>
+                          <tr>
+                          <td>Android with USB Micro port</td>
+                          <td>Password manager and Yubikey OTP</td>
+                          <td>USB Micro OTG w/Key chain Adapter available <a href="https://www.amazon.com/dp/B071Y4CZV9">here</a>
+
+                          <a href="https://crp.to/wp-content/uploads/2017/06/adapter.jpg" rel="attachment wp-att-1230"><img class="alignnone size-full wp-image-1230" src="https://crp.to/wp-content/uploads/2017/06/adapter.jpg" alt="" width="907" height="459" /></a></td>
+                          </tr>
+                          <tr>
+                          <td>Android with USB C port</td>
+                          <td>Password manager and Yubikey OTP</td>
+                          <td>USB C OTG Adapter available <a href="https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html">here</a>
+
+                          <a href="https://crp.to/wp-content/uploads/2017/06/adapter2.jpg" rel="attachment wp-att-1231"><img class="alignnone size-full wp-image-1231" src="https://crp.to/wp-content/uploads/2017/06/adapter2.jpg" alt="" width="1108" height="551" /></a></td>
+                          </tr>
+                          </tbody>
+                          </table>
+                          Note: FIDO U2F via USB and Google Authenticator via USB are not currently supported on mobile devices.
                             </div>
                         </div>
                     </div>
