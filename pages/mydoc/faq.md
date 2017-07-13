@@ -122,6 +122,29 @@ folder: mydoc
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen">What if I lose my OnlyKey?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSixteen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                The data stored on OnlyKey is encrypted with military grade encryption (AES-256-GCM) and most importantly is PIN protected.<br>
+
+What this means is that if you lose your OnlyKey it is essentially a brick without the PIN, nothing can be read from or written to it.<br>
+
+If an attacker tries to guess the PIN it will wipe all data after 10 failed attempts.<br>
+
+What about getting my accounts back? This is where the secure encrypted backup anywhere comes in. You can create encrypted backups anywhere by just holding the #1 button down on the OnlyKey. This means that only a physical person can initiate a backup (not malware) and it essentially types out the encrypted file so you can save it anywhere in a text file, email, etc.<br>
+
+To restore you data if you lose your OnlyKey you can restore this backup to a new OnlyKey or if you like to plan ahead then get a secondary OnlyKey and restore your backup so it is ready in case your primary is lost.<br>
+
+Read more about the technical physical hardware security and encrypted backup feature in the <a href="https://crp.to/okstart" target="_blank">users guide available here.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
                                 <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">What does entering the self destruct PIN do?</a>
                             </h4>
                         </div>
