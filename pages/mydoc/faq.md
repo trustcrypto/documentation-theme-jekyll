@@ -167,10 +167,10 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">Is OnlyKey Supported on Android and iPhone?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">Is OnlyKey Supported on Android and iPhone?</a>
                             </h4>
                         </div>
-                        <div id="collapseTwelve" class="panel-collapse collapse">
+                        <div id="collapseThirteen" class="panel-collapse collapse">
                             <div class="panel-body">
                                 OnlyKey is supported by any device that would support a USB keyboard. This includes Android devices and even iPhone 7 using USB OTG adapter.<br>
                                 <table>
@@ -183,27 +183,21 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                           <tr>
                           <td>iPhone/iPad (IOS 9.2+) with Lightning port</td>
                           <td>Password manager and Yubikey OTP</td>
-                          <td>Lightning to USB OTG Adapter available <a href="https://www.amazon.com/gp/product/B00S9I7EPO/">here</a>
-
-                          <a href="https://crp.to/wp-content/uploads/2017/06/adapter3.jpg" rel="attachment wp-att-1232"><img class="alignnone size-full wp-image-1232" src="https://crp.to/wp-content/uploads/2017/06/adapter3.jpg" alt="" width="1144" height="645" /></a></td>
+                          <td>Lightning to USB OTG Adapter available <a href="https://www.amazon.com/gp/product/B00S9I7EPO/">here</a></td>
                           </tr>
                           <tr>
                           <td>Android with USB Micro port</td>
                           <td>Password manager and Yubikey OTP</td>
-                          <td>USB Micro OTG w/Key chain Adapter available <a href="https://www.amazon.com/dp/B071Y4CZV9">here</a>
-
-                          <a href="https://crp.to/wp-content/uploads/2017/06/adapter.jpg" rel="attachment wp-att-1230"><img class="alignnone size-full wp-image-1230" src="https://crp.to/wp-content/uploads/2017/06/adapter.jpg" alt="" width="907" height="459" /></a></td>
+                          <td>USB Micro OTG w/Key chain Adapter available <a href="https://www.amazon.com/dp/B071Y4CZV9">here</a></td>
                           </tr>
                           <tr>
                           <td>Android with USB C port</td>
                           <td>Password manager and Yubikey OTP</td>
-                          <td>USB C OTG Adapter available <a href="https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html">here</a>
-
-                          <a href="https://crp.to/wp-content/uploads/2017/06/adapter2.jpg" rel="attachment wp-att-1231"><img class="alignnone size-full wp-image-1231" src="https://crp.to/wp-content/uploads/2017/06/adapter2.jpg" alt="" width="1108" height="551" /></a></td>
+                          <td>USB C OTG Adapter available <a href="https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html">here</a></td>
                           </tr>
                           </tbody>
                           </table>
-                          Note: FIDO U2F via USB and Google Authenticator via USB are not currently supported on mobile devices.
+                    
                             </div>
                         </div>
                     </div>
