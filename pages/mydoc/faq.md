@@ -20,7 +20,7 @@ folder: mydoc
                         </div>
                         <div id="collapseFourteen" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                OnlyKey is protected with a clear potting compound that provides:
+                                OnlyKey is protected with a clear potting compound that provides:<br>
 
                                 <strong>1) Durability</strong> - OnlyKey is crush and impact resistant, it stands up to abuse. You can carry it on your keychain, in your pocket, etc.<br>
 
@@ -54,39 +54,39 @@ folder: mydoc
                         </div>
                         <div id="collapseFifteen" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                          First it is important to understand how accounts are hacked as there are several ways and OnlyKey has unique features that prevent each type.<br>
+                          First it is important to understand how accounts are hacked as there are several ways and OnlyKey has unique features that prevent each type.<br><br>
 
                           1) The site you use is breached (i.e. Yahoo, LinkedIn, Target, Anthem, Sony etc.)<br>
 
                           If the site you use is breached the attacker may be able to get your password in a couple of ways.<br> 
 
                           a) They get a dump of all passwords in clear text.<br>
-                          b) They get a hashed dump of all passwords.<br>
+                          b) They get a hashed dump of all passwords.<br><br>
 
                           If a) then it does not matter how long or complex your password is they have got it. <br>
 
-                          If b) then the attacker has to crack the passwords and only the weak passwords will be obtained.<br>
+                          If b) then the attacker has to crack the passwords and only the weak passwords will be obtained.<br><br>
 
-                          OnlyKey addresses b) by allowing users to set strong 32 character passwords that cannot be cracked by an attacker. And they are actually usable since you don't have to remember them, they are stored on your OnlyKey and typed out for you.<br>
+                          OnlyKey addresses b) by allowing users to set strong 32 character passwords that cannot be cracked by an attacker. And they are actually usable since you don't have to remember them, they are stored on your OnlyKey and typed out for you.<br><br>
 
-                          OnlyKey addresses a) by making two-factor authentication usable for users and compatible with the largest number of sites. If two-factor authentication is used then even if an attacker has your password they still can't access your account and you are protected.<br>
+                          OnlyKey addresses a) by making two-factor authentication usable for users and compatible with the largest number of sites. If two-factor authentication is used then even if an attacker has your password they still can't access your account and you are protected.<br><br>
 
                           2) The computer you use is hacked (you click on a malicious website or download malware accidentally)<br>
 
-                          If the computer you use is hacked and you use a software password manager like LastPass, Dashlane, or even KeePass the attacker is in your computer and can see everything that you can see including your passwords. This is scary considering that now instead of just having one account compromised a hacker has access to everything in one fell swoop. In fact if this happens you would have been better off to have not used a password manager in the first place as a hacker would have a more difficult time in finding out what accounts you had. <br>
+                          If the computer you use is hacked and you use a software password manager like LastPass, Dashlane, or even KeePass the attacker is in your computer and can see everything that you can see including your passwords. This is scary considering that now instead of just having one account compromised a hacker has access to everything in one fell swoop. In fact if this happens you would have been better off to have not used a password manager in the first place as a hacker would have a more difficult time in finding out what accounts you had. <br><br>
 
-                          If the computer you use is compromised the attacker may be able to get your passwords in a couple of ways. <br>
+                          If the computer you use is compromised the attacker may be able to get your passwords in a couple of ways. <br><br>
 
                           a) They log all of your keyboard input (Keylogger) or clipboard if using a software password manager<br>
-                          b) They wait until you unlock your software password manager like Lastpass and download the entire database of passwords for all of your accounts.<br>
+                          b) They wait until you unlock your software password manager like Lastpass and download the entire database of passwords for all of your accounts.<br><br>
 
-                          OnlyKey addresses b) by storing everything offline. Essentially OnlyKey is secure by design so that you can only every write or wipe passwords stored on the OnlyKey. If an attacker gains access to your computer there are no passwords stored there to steal. Even if your OnlyKey is plugged in and unlocked there is no way to download or copy information from the OnlyKey.<br>
+                          OnlyKey addresses b) by storing everything offline. Essentially OnlyKey is secure by design so that you can only every write or wipe passwords stored on the OnlyKey. If an attacker gains access to your computer there are no passwords stored there to steal. Even if your OnlyKey is plugged in and unlocked there is no way to download or copy information from the OnlyKey.<br><br>
 
-                          OnlyKey addresses a) by making two-factor authentication usable for users and compatible with the largest number of sites. If two-factor authentication is used then even if an attacker captures your password they still can't access your account without obtaining your one-time password. One time passwords used by Yubikey OTP are only valid once and Google Authenticator OTPs are only valid once and for a short period of time, usually 30 seconds. <br>
+                          OnlyKey addresses a) by making two-factor authentication usable for users and compatible with the largest number of sites. If two-factor authentication is used then even if an attacker captures your password they still can't access your account without obtaining your one-time password. One time passwords used by Yubikey OTP are only valid once and Google Authenticator OTPs are only valid once and for a short period of time, usually 30 seconds. <br><br>
 
                           3) Your cloud based password manager was compromised.<br>
 
-                          In this scenario you have chosen the convenience of having passwords accessible anywhere you go with the security trade off being that  they are being stored online in the cloud. The provider assures you that the accounts will never be hacked but they missed something and now an attacker has access to every account you own.<br>
+                          In this scenario you have chosen the convenience of having passwords accessible anywhere you go with the security trade off being that they are being stored online in the cloud. The provider assures you that the accounts will never be hacked but they missed something and now an attacker has access to every account you own. With OnlyKey you can store your most important accounts offline so that they are never suceptible to this type of attack.<br>
                             </div>
                         </div>
                     </div>
