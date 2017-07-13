@@ -218,7 +218,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseSix" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. Form more information read <a href="https://crp.to/2017/04/plausible-deniability-onlykey/">https://crp.to/2017/04/plausible-deniability-onlykey/</a>
+                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. For more information read <a href="https://crp.to/2017/04/plausible-deniability-onlykey/">https://crp.to/2017/04/plausible-deniability-onlykey/</a>
                             </div>
                         </div>
                     </div>
