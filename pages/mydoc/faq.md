@@ -22,21 +22,21 @@ folder: mydoc
                             <div class="panel-body">
                                 OnlyKey is protected with a clear potting compound that provides:
 
-                                <strong>1) Durability</strong> - OnlyKey is crush and impact resistant, it stands up to abuse. You can carry it on your keychain, in your pocket, etc.
+                                <strong>1) Durability</strong> - OnlyKey is crush and impact resistant, it stands up to abuse. You can carry it on your keychain, in your pocket, etc.<br>
 
-                                <strong>2) Waterproof </strong>- Accidentally leave your OnlyKey in your pocket and it goes through the washing machine? No problem.
+                                <strong>2) Waterproof </strong>- Accidentally leave your OnlyKey in your pocket and it goes through the washing machine? No problem.<br>
 
-                                <strong>3) Transparency</strong> - It is possible to visually verify that things have not been tampered with and there is not a hardware backdoor installed.
+                                <strong>3) Transparency</strong> - It is possible to visually verify that things have not been tampered with and there is not a hardware backdoor installed.<br>
 
-                                <strong>OnlyKey Cases Now Available!</strong>
+                                <strong>OnlyKey Cases Now Available!</strong><br>
 
-                                To provide even more durability and style OnlyKey silicon cases are now available.
+                                To provide even more durability and style OnlyKey silicon cases are now available.<br>
 
-                                <a href="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3.jpg" rel="attachment wp-att-1236"><img class="size-medium wp-image-1236 aligncenter" src="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3-300x225.jpg" alt="" width="300" height="225" /></a>
-                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p>
-                                <p style="text-align: center;"><a href="https://www.amazon.com/CryptoTrust-OK-Case-BLK-OnlyKey-Silicon-Case/dp/B071WLDDMF" rel="attachment wp-att-1090">
-                                <img class="aligncenter wp-image-977 size-medium" src="https://crp.to/wp-content/uploads/2016/11/buy-now-amazon-300x152.png" alt="" width="300" height="152" /></a></p>
-                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p>
+                                <a href="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3.jpg" rel="attachment wp-att-1236"><img class="size-medium wp-image-1236 aligncenter" src="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3-300x225.jpg" alt="" width="300" height="225" /></a><br>
+                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p><br>
+                                <p style="text-align: center;"><a href="https://www.amazon.com/CryptoTrust-OK-Case-BLK-OnlyKey-Silicon-Case/dp/B071WLDDMF" rel="attachment wp-att-1090"><br>
+                                <img class="aligncenter wp-image-977 size-medium" src="https://crp.to/wp-content/uploads/2016/11/buy-now-amazon-300x152.png" alt="" width="300" height="152" /></a></p><br>
+                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p><br>
 
                                 <div class="form" style="text-align: center;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" /><input name="hosted_button_id" type="hidden" value="2GL2GEU8ZAZHU" /><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image" /><img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
                                 <p style="text-align: left;">This case fits both the OnlyKey Original and the OnlyKey Color.</p>
@@ -45,7 +45,51 @@ folder: mydoc
                             </div>
                         </div>
                     </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen">How Does OnlyKey Keep My Information From Getting Hacked?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFifteen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                          First it is important to understand how accounts are hacked as there are several ways and OnlyKey has unique features that prevent each type.<br>
 
+                          1) The site you use is breached (i.e. Yahoo, LinkedIn, Target, Anthem, Sony etc.)<br>
+
+                          If the site you use is breached the attacker may be able to get your password in a couple of ways.<br> 
+
+                          a) They get a dump of all passwords in clear text.<br>
+                          b) They get a hashed dump of all passwords.<br>
+
+                          If a) then it does not matter how long or complex your password is they have got it. <br>
+
+                          If b) then the attacker has to crack the passwords and only the weak passwords will be obtained.<br>
+
+                          OnlyKey addresses b) by allowing users to set strong 32 character passwords that cannot be cracked by an attacker. And they are actually usable since you don't have to remember them, they are stored on your OnlyKey and typed out for you.<br>
+
+                          OnlyKey addresses a) by making two-factor authentication usable for users and compatible with the largest number of sites. If two-factor authentication is used then even if an attacker has your password they still can't access your account and you are protected.<br>
+
+                          2) The computer you use is hacked (you click on a malicious website or download malware accidentally)<br>
+
+                          If the computer you use is hacked and you use a software password manager like LastPass, Dashlane, or even KeePass the attacker is in your computer and can see everything that you can see including your passwords. This is scary considering that now instead of just having one account compromised a hacker has access to everything in one fell swoop. In fact if this happens you would have been better off to have not used a password manager in the first place as a hacker would have a more difficult time in finding out what accounts you had. <br>
+
+                          If the computer you use is compromised the attacker may be able to get your passwords in a couple of ways. <br>
+
+                          a) They log all of your keyboard input (Keylogger) or clipboard if using a software password manager<br>
+                          b) They wait until you unlock your software password manager like Lastpass and download the entire database of passwords for all of your accounts.<br>
+
+                          OnlyKey addresses b) by storing everything offline. Essentially OnlyKey is secure by design so that you can only every write or wipe passwords stored on the OnlyKey. If an attacker gains access to your computer there are no passwords stored there to steal. Even if your OnlyKey is plugged in and unlocked there is no way to download or copy information from the OnlyKey.<br>
+
+                          OnlyKey addresses a) by making two-factor authentication usable for users and compatible with the largest number of sites. If two-factor authentication is used then even if an attacker captures your password they still can't access your account without obtaining your one-time password. One time passwords used by Yubikey OTP are only valid once and Google Authenticator OTPs are only valid once and for a short period of time, usually 30 seconds. <br>
+
+                          3) Your cloud based password manager was compromised.<br>
+
+                          In this scenario you have chosen the convenience of having passwords accessible anywhere you go with the security trade off being that  they are being stored online in the cloud. The provider assures you that the accounts will never be hacked but they missed something and now an attacker has access to every account you own.<br>
+                            </div>
+                        </div>
+                    </div>
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -197,7 +241,7 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                                 USB C, while definitely having its advantages and on paper looks like a great option also has a lot of disadvantages and issues to consider.<br><br>
                                 1) Connector Strength - OnlyKey has physical security provided by requiring a PIN to be entered in order to use. This makes OnlyKey a much more secure option than devices with no physical protection but it also requires that the USB connector is fairly durable and strong. USB C connectors/recepticles are smaller not very durable and more prone to breaking from say the stress of pressing on a device that is plugged in to enter a PIN. The way to resolve this issue would be to have a flexible USB C connector attached to OnlyKey. While this is possible it would be more expensive to produce and would only be slightly more compact than just using a USB C adapter connected to the current OnlyKey. For this reason we provide USB C support via a USB C adapter, as this method also provides backwards compatability with the majority of systems in use that do not support USB C.<br><br>
                                 2) Connector Complexity/Durability - USB C connectors contain 24 tiny connections while USB A contains 4 large connections. Additionally, the USB A connector on OnlyKey is a flat surface while USB C is not. With the current USB A the device is waterproof, you could go swimming, wipe your OnlyKey dry and its good to go. This is not the case with USB C as water can reside inside the connector where its not easy to dry and plugging a wet electrical connector in is a bad idea. The complexity of USB C is great for things like supporting a 4K monitor that requires an incredible amount of data transfer, but for OnlyKey it is just a disadvantage as there is no need for high speed data at all.<br>
-                                For more information on mobile adapters including USB C, Mirco USB, and iPhone Lightning see is <a href="#collapseThirteen">OnlyKey supported on Android and iPhone</a>.
+                                For more information on mobile adapters including USB C, Mirco USB, and iPhone Lightning see below "Is OnlyKey supported on Android and iPhone".
                             </div>
                         </div>
                     </div>
