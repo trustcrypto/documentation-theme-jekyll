@@ -90,6 +90,58 @@ folder: mydoc
                             </div>
                         </div>
                     </div>
+                     <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen">What if I lose my OnlyKey?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSixteen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                The data stored on OnlyKey is encrypted with military grade encryption (AES-256-GCM) and most importantly is PIN protected.<br>
+
+What this means is that if you lose your OnlyKey it is essentially a brick without the PIN, nothing can be read from or written to it.<br>
+
+If an attacker tries to guess the PIN it will wipe all data after 10 failed attempts.<br>
+
+What about getting my accounts back? This is where the secure encrypted backup anywhere comes in. You can create encrypted backups anywhere by just holding the #1 button down on the OnlyKey. This means that only a physical person can initiate a backup (not malware) and it essentially types out the encrypted file so you can save it anywhere in a text file, email, etc.<br>
+
+To restore you data if you lose your OnlyKey you can restore this backup to a new OnlyKey or if you like to plan ahead then get a secondary OnlyKey and restore your backup so it is ready in case your primary is lost.<br>
+
+Read more about the technical physical hardware security and encrypted backup feature in the <a href="https://crp.to/okstart" target="_blank">users guide available here.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen">How is OnlyKey Better Than a Smart Card?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeventeen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                Smart Cards are commonly used to provide two-factor authentication and decryption/signing for things like email. Unfortunately, if the computer that a smart card is plugged into is compromised by an attacker then the security of the smart card is compromised. All the attacker has to do is easily capture the keyboard output (Keylogging) and they can capture the users smart card PIN. With this PIN they can then authenticate to anything that the user has access to and also decrypt/sign emails as if the user had done so. This is a serious threat and one of the reasons that the OnlyKey project was started. With OnlyKey your PIN is entered on the 6 digit keypad located on the device itself that does not in any way send this PIN to the connected computer. In this way the PIN entry is offline and inaccessible to an attacker who has compromised the connected computer. <br><br>
+
+In addition to PIN security OnlyKey has functionality that smart cards do not like password management, SSH login, and is universally supported without the need for drivers to be installed. The OnlyKey is detected by the computer as a keyboard and no middleware or special drivers are required. OnlyKey can literally be plugged in and used on a computer that you have never used before and it works without installing anything.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEightteen">How is OnlyKey Better Than Other Tokens?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseEightteen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                There are a variety of hardware and software tokens out there. Some support U2F and others support Yubikey OTP and yet others support Google Authenticator (TOTP). Unfortunately for users not all websites support all of these. There is no standardization of two-factor support among websites so in order to log in using a token you often need multiple tokens and apps. OnlyKey set out to address this issue and make two-factor authentication usable by supporting the methods most commonly used by websites. Additionally, by combining this with password management we can provide users with a secure login with the touch of a button. A one touch login is the kind of user experience we think that users want and that is what OnlyKey is all about.
+
+                            </div>
+                        </div>
+                    </div>
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -115,29 +167,6 @@ folder: mydoc
                                 There are two big reasons to have the two separate versions of firmware. <br><br>
                                 1) The International Travel Edition is not subject to any export restrictions that would apply to export of crypto outside of the US since it performs no encryption. <br><br>
                                 2) By actually having a version in use that does not utilize encryption the plausible deniability feature is actually plausible. If for example all devices shipped with encryption and a plausible deniability mode it would not be plausible that a device does not perform encryption because anyone with the ability to search online would see that this is a feature available on all devices. By having this as a feature on some devices and other devices being legitimately without any encryption capabilities it is plausible that your device does not utilize encryption.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen">What if I lose my OnlyKey?</a>
-                            </h4>
-                        </div>
-                        <div id="collapseSixteen" class="panel-collapse collapse noCrossRef">
-                            <div class="panel-body">
-                                The data stored on OnlyKey is encrypted with military grade encryption (AES-256-GCM) and most importantly is PIN protected.<br>
-
-What this means is that if you lose your OnlyKey it is essentially a brick without the PIN, nothing can be read from or written to it.<br>
-
-If an attacker tries to guess the PIN it will wipe all data after 10 failed attempts.<br>
-
-What about getting my accounts back? This is where the secure encrypted backup anywhere comes in. You can create encrypted backups anywhere by just holding the #1 button down on the OnlyKey. This means that only a physical person can initiate a backup (not malware) and it essentially types out the encrypted file so you can save it anywhere in a text file, email, etc.<br>
-
-To restore you data if you lose your OnlyKey you can restore this backup to a new OnlyKey or if you like to plan ahead then get a secondary OnlyKey and restore your backup so it is ready in case your primary is lost.<br>
-
-Read more about the technical physical hardware security and encrypted backup feature in the <a href="https://crp.to/okstart" target="_blank">users guide available here.</a>
                             </div>
                         </div>
                     </div>
