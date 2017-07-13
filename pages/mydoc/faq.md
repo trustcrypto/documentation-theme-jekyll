@@ -2,7 +2,7 @@
 title: OnlyKey FAQ
 permalink: faq.html
 sidebar: mydoc_sidebar
-tags: [special_layouts]
+tags: 
 keywords: frequently asked questions, FAQ, question and answer
 last_updated: Jul, 13 2017
 summary: Frequently Asked Questions
