@@ -292,7 +292,7 @@ We would comply with the order and at the same time 100% protect customers. This
                                 Three main reasons for not supporting NFC<br><br>
                                 1) User Experience/Physical Security - The way that NFC devices are typically used is to quickly tap an NFC device to a reader/smartphone. There is no physical protection in place for most NFC devices if you drop it, someone can pick it up and use it. With OnlyKey this is not the case, you have to enter a PIN to unlock the device first. Imagine trying to hold a device close enough to the reader for power while entering a PIN. This in many cases would not be very user friendly.<br><br>
                                 2) NFC is not Universally Supported - One thing we strive to do is provide a device that works practically everywhere and on everything. NFC is only supported on select Android devices and there are no plans for Apple to open up NFC functionality on the iPhone/iPad. NFC support would not provide universal mobile support. With USB, an adapter is required but we can support all Android devices and even newer iPhones that now have USB support.<br><br>
-                                3) Power Requirements - NFC provides ~5mA of harvested power to NFC tags. The OnlyKey has a high performance processor which permits quick cryptographic operations but requires more power than NFC provides.</a>.
+                                3) Power Requirements - NFC provides ~5mA of harvested power to NFC tags. The OnlyKey has a high performance processor which permits quick cryptographic operations but requires more power than NFC provides.
                             </div>
                         </div>
                     </div>
