@@ -3,7 +3,7 @@ title: OnlyKey App
 tags: [OnlyKey App, Chrome App]
 keywords: OnlyKey, App
 last_updated: Jan, 16, 2017
-summary: The OnlyKey App is used for the initial setup of the OnlyKey and configuration.
+summary: The OnlyKey Chrome App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chromebook through Chrome or Chromium browser.
 sidebar: mydoc_sidebar
 permalink: app.html
 folder: mydoc
