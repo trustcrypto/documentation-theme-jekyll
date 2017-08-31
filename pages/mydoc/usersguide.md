@@ -11,8 +11,6 @@ folder: mydoc
 
 <span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 344.50px; height: 55.76px;">![](images/image50.png)</span><span class="c15">   </span>
 
-<span>  USER’S</span><span class="c37 c68"> GUIDE</span>
-
 # <span class="c19">Unpacking</span>
 
 <span class="c15"></span>
