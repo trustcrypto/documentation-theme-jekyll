@@ -8,15 +8,143 @@ sidebar: mydoc_sidebar
 permalink: usersguide.html
 folder: mydoc
 ---
+<!----- Conversion time: 33.263 seconds.
+
+
+Using this Markdown file:
+
+1. Cut and paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* gd2md-html version 1.0β3
+* Thu Aug 31 2017 15:11:01 GMT-0700 (PDT)
+* Source doc: https://docs.google.com/open?id=196ZUQQA0P9QKROT6K6pCtvPV55M9XRLXppPgEe_5JvI
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 1; WARNINGs: 0; ALERTS: 90.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+<a href="#gdcalert6">alert6</a>
+<a href="#gdcalert7">alert7</a>
+<a href="#gdcalert8">alert8</a>
+<a href="#gdcalert9">alert9</a>
+<a href="#gdcalert10">alert10</a>
+<a href="#gdcalert11">alert11</a>
+<a href="#gdcalert12">alert12</a>
+<a href="#gdcalert13">alert13</a>
+<a href="#gdcalert14">alert14</a>
+<a href="#gdcalert15">alert15</a>
+<a href="#gdcalert16">alert16</a>
+<a href="#gdcalert17">alert17</a>
+<a href="#gdcalert18">alert18</a>
+<a href="#gdcalert19">alert19</a>
+<a href="#gdcalert20">alert20</a>
+<a href="#gdcalert21">alert21</a>
+<a href="#gdcalert22">alert22</a>
+<a href="#gdcalert23">alert23</a>
+<a href="#gdcalert24">alert24</a>
+<a href="#gdcalert25">alert25</a>
+<a href="#gdcalert26">alert26</a>
+<a href="#gdcalert27">alert27</a>
+<a href="#gdcalert28">alert28</a>
+<a href="#gdcalert29">alert29</a>
+<a href="#gdcalert30">alert30</a>
+<a href="#gdcalert31">alert31</a>
+<a href="#gdcalert32">alert32</a>
+<a href="#gdcalert33">alert33</a>
+<a href="#gdcalert34">alert34</a>
+<a href="#gdcalert35">alert35</a>
+<a href="#gdcalert36">alert36</a>
+<a href="#gdcalert37">alert37</a>
+<a href="#gdcalert38">alert38</a>
+<a href="#gdcalert39">alert39</a>
+<a href="#gdcalert40">alert40</a>
+<a href="#gdcalert41">alert41</a>
+<a href="#gdcalert42">alert42</a>
+<a href="#gdcalert43">alert43</a>
+<a href="#gdcalert44">alert44</a>
+<a href="#gdcalert45">alert45</a>
+<a href="#gdcalert46">alert46</a>
+<a href="#gdcalert47">alert47</a>
+<a href="#gdcalert48">alert48</a>
+<a href="#gdcalert49">alert49</a>
+<a href="#gdcalert50">alert50</a>
+<a href="#gdcalert51">alert51</a>
+<a href="#gdcalert52">alert52</a>
+<a href="#gdcalert53">alert53</a>
+<a href="#gdcalert54">alert54</a>
+<a href="#gdcalert55">alert55</a>
+<a href="#gdcalert56">alert56</a>
+<a href="#gdcalert57">alert57</a>
+<a href="#gdcalert58">alert58</a>
+<a href="#gdcalert59">alert59</a>
+<a href="#gdcalert60">alert60</a>
+<a href="#gdcalert61">alert61</a>
+<a href="#gdcalert62">alert62</a>
+<a href="#gdcalert63">alert63</a>
+<a href="#gdcalert64">alert64</a>
+<a href="#gdcalert65">alert65</a>
+<a href="#gdcalert66">alert66</a>
+<a href="#gdcalert67">alert67</a>
+<a href="#gdcalert68">alert68</a>
+<a href="#gdcalert69">alert69</a>
+<a href="#gdcalert70">alert70</a>
+<a href="#gdcalert71">alert71</a>
+<a href="#gdcalert72">alert72</a>
+<a href="#gdcalert73">alert73</a>
+<a href="#gdcalert74">alert74</a>
+<a href="#gdcalert75">alert75</a>
+<a href="#gdcalert76">alert76</a>
+<a href="#gdcalert77">alert77</a>
+<a href="#gdcalert78">alert78</a>
+<a href="#gdcalert79">alert79</a>
+<a href="#gdcalert80">alert80</a>
+<a href="#gdcalert81">alert81</a>
+<a href="#gdcalert82">alert82</a>
+<a href="#gdcalert83">alert83</a>
+<a href="#gdcalert84">alert84</a>
+<a href="#gdcalert85">alert85</a>
+<a href="#gdcalert86">alert86</a>
+<a href="#gdcalert87">alert87</a>
+<a href="#gdcalert88">alert88</a>
+<a href="#gdcalert89">alert89</a>
+<a href="#gdcalert90">alert90</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert: NOTE: You have 11 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.</p>
+
+
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/OnlyKey-User0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
 
 ![alt_text](images/OnlyKey-User0.png "image_tooltip")
 **    **
 
+<p>  USER'S GUIDE
 
-###   USER'S GUIDE
+**Table of Contents**
 
 
-## Unpacking {#unpacking}
+[TOC]
+
+
+<h1 id="unpacking">Unpacking</h1>
+
 
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
 
@@ -48,8 +176,8 @@ folder: mydoc
 
 *Proceed to initial setup below*
 
+<h1 id="initial-setup">Initial Setup</h1>
 
-## Initial Setup {#initial-setup}
 
 **Step 1.** Open the Chrome Web Browser (If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))
 
@@ -183,8 +311,8 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 *If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware).*
 
+<h1 id="configure-profile">Configure Profile</h1>
 
-## Configure Profile {#configure-profile}
 
 ***PRO TIP - ***Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.
 
@@ -208,8 +336,8 @@ Now that your OnlyKey is unlocked you see this screen.
 ![alt_text](images/OnlyKey-User13.png "image_tooltip")
 
 
+<h3 id="all-about-slots">All About Slots</h3>
 
-#### All About Slots {#all-about-slots}
 
 The Slots area of the application is where you will set up things like your usernames, passwords, and 2 factor. As you can see the word "empty" is shown 12 times next to a button with a number and a letter. Each of these buttons refer to one of the slots on your OnlyKey.
 
@@ -219,8 +347,8 @@ Each button has two slots assigned to it that can be activated by holding the bu
 
 The slots that have not been configured have no label so they are shown as "empty". Next, let's set a label to slot 1a. 
 
+<h3 id="set-a-label">Set a Label</h3>
 
-#### Set a Label {#set-a-label}
 
 **Step 1.** Click the 1a button in the OnlyKey app and see the Slot 1a Configuration
 
@@ -258,8 +386,8 @@ This is where the card you received with your OnlyKey comes in handy. You can wr
 
 Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a.
 
+<h3 id="set-up-a-slot">Set up a Slot</h3>
 
-#### Set up a Slot {#set-up-a-slot}
 
 The example configuration shown below would be to set up a username and password to automatically login to the Google page shown below.
 
@@ -289,8 +417,8 @@ The example configuration shown below would be to set up a username and password
 ![alt_text](images/OnlyKey-User19.png "image_tooltip")
 
 
+<h3 id="test-a-slot">Test a Slot</h3>
 
-#### Test a Slot {#test-a-slot}
 
 Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
 
@@ -454,8 +582,8 @@ After loading next page
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
 
+<h3 id="generate-strong-password-via-browser-extension">Generate Strong Password via Browser Extension</h3>
 
-#### Generate Strong Password via Browser Extension {#generate-strong-password-via-browser-extension}
 
 Install a browser extension by selecting add to Chrome the same way that you installed the OnlyKey app.
 
@@ -469,8 +597,8 @@ Chrome Extension available from the Chrome Web Store [here](https://chrome.googl
 ![alt_text](images/OnlyKey-User32.png "image_tooltip")
 
 
+<h3 id="generate-strong-passwords-online">Generate Strong Passwords Online</h3>
 
-#### Generate Strong Passwords Online {#generate-strong-passwords-online}
 
 There are many websites that allow you to generate a secure random password including the Lastpass tool.
 
@@ -484,13 +612,13 @@ LastPass password generation tool available [here](https://lastpass.com/generate
 ![alt_text](images/OnlyKey-User33.png "image_tooltip")
 
 
+<h2 id="two-factor-authentication-2fa">Two Factor Authentication (2FA)</h2>
 
-### Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
 Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are three different types of 2FA supported by OnlyKey. There is more information on these available on the features page of the [OnlyKey Wiki](https://docs.crp.to). By supporting multiple modes of 2FA OnlyKey will work with most sites that suppor 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
 
+<h3 id="google-authenticator-totp">Google Authenticator (TOTP)</h3>
 
-#### Google Authenticator (TOTP) {#google-authenticator-totp}
 
 ***PRO TIP - If you are not a 2FA guru then this is the recommended method to use.***
 
@@ -584,8 +712,8 @@ Once your account has been verified you are all set. You can add a username and 
 
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
 
+<h3 id="yubico-one-time-password">Yubico One-Time Password</h3>
 
-#### Yubico One-Time Password {#yubico-one-time-password}
 
 ***PRO TIP - The majority of YubiKey OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico OTP.***
 
@@ -644,8 +772,8 @@ The majority of YubiKey OTP applications online require Yubicloud setup. See the
 
 Learn more about Yubikey OTP implementation [here.](#yubico-one-time-password)
 
+<h3>Yubicloud (Not Officially Support) </h3>
 
-#### Yubicloud (Not Officially Support)  {#yubicloud-not-officially-support}
 
 Some online services use Yubicloud for authentication. Yubicloud is owned by Yubico and 3rd party devices are not supported so OnlyKey is not supported on Yubicloud. However, 3rd party devices will technically work with Yubicloud as long as you own an actual Yubikey. 
 
@@ -691,8 +819,8 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 ![alt_text](images/OnlyKey-User48.png "image_tooltip")
 
 
+<h3 id="universal-2nd-factor-u2f">Universal 2nd Factor (U2F)</h3>
 
-#### Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
 
 **Note: **The OnlyKey comes pre-loaded with an attestation certificate that can be used or you can load a custom certificate and private key. 
 
@@ -716,15 +844,15 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 
 Learn more about OnlyKey's implementation of U2F [here.](#universal-2nd-factor-authentication-u2f)
 
+<h2 id="using-onlykey-with-a-software-password-manager">Using OnlyKey With A Software Password Manager</h2>
 
-### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
 OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.
 
 ***PRO TIP - This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.***
 
+<h3 id="lastpass">LastPass</h3>
 
-#### LastPass {#lastpass}
 
 LastPass supports both Google Authenticator and Yubico OTP. Google Authenticator is supported in the free version of LastPass and Yubico OTP is supported in the premium version of LastPass.
 
@@ -798,18 +926,18 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 ![alt_text](images/OnlyKey-User56.png "image_tooltip")
 
 
+<h3 id="dashlane">DashLane</h3>
 
-#### DashLane {#dashlane}
 
 DashLane supports Google Authenticator, Yubico OTP, and U2F. The choice is yours but for beginners Google Authenticator is the best option.
 
+<h3 id="google-smartlock">Google SmartLock</h3>
 
-#### Google SmartLock {#google-smartlock}
 
 SmartLock is a new password manager that is available in Google Chrome. Since this uses a Google account it supports Google Authenticator or U2F. The choice is yours but for beginners Google Authenticator is the best option.
 
+<h1 id="preferences">Preferences</h1>
 
-## Preferences {#preferences}
 
 OnlyKey has several customizable preferences that can be accessed from the preferences tab of the configuration app.
 
@@ -821,25 +949,25 @@ OnlyKey has several customizable preferences that can be accessed from the prefe
 ![alt_text](images/OnlyKey-User57.png "image_tooltip")
 
 
+<h2 id="configurable-inactivity-lockout-period">Configurable Inactivity Lockout Period</h2>
 
-### Configurable Inactivity Lockout Period {#configurable-inactivity-lockout-period}
 
 This is the amount of time that the OnlyKey should remain unlocked while not being used. The default value is 30 minutes and the maximum is 255 minutes (about 4 hours). To disable lockout altogether set the lockout to 0.
 
+<h2 id="configurable-keyboard-type-speed">Configurable Keyboard Type Speed</h2>
 
-### Configurable Keyboard Type Speed {#configurable-keyboard-type-speed}
 
 Setting a custom type speed may be desirable in cases where the application you are using can not keep up with fast typing. Or if you don't use any applications with type speed restrictions you can have the text typed at top speed for the fastest logins. Setting value to 1 will result in very slow type speed of about one character a second, setting value to 10 will result in very fast type speed that will type almost instantly.
 
+<h2 id="configurable-wipe-mode">Configurable Wipe Mode</h2>
 
-### Configurable Wipe Mode {#configurable-wipe-mode}
 
 **Use Case #1** - If you are using the plausible deniability feature there is one scenario where an adversary may be able to determine that you were using the plausible deniability feature. This is possible if the adversary enters 10 incorrect PINs causing your OnlyKey to wipe all data and then they go to reconfigure the PINs. The adversary would be able to set both a regular PIN and PD PIN on the newly wiped OnlyKey and thus they would be able to conclude that you have the Standard Edition firmware. At this point the device is wiped the adversary would not have access to any sensitive information but the adversary would know that your device is capable of encryption which in some areas may be undesirable. To address this issue you can now set the wipe mode of your OnlyKey to Full Wipe. Given the same scenario with Full Wipe set when 10 incorrect PINs are entered the device will completely wipe all information including the firmware from your OnlyKey. No useful information would be available to an adversary concerning what firmware you were running and in order to use the device new firmware must be loaded.
 
 **Use Case #2** - You are just really paranoid and want to erase any trace of your OnlyKey when a factory default occurs. Doing a full wipe is one way to be absolutely sure that everything including the firmware has been eliminated from your device.
 
+<h2 id="configurable-keyboard-layouts">Configurable Keyboard Layouts</h2>
 
-### Configurable Keyboard Layouts {#configurable-keyboard-layouts}
 
 We now support changing your keyboard layout on the fly through the Chrome app no firmware reload required. Traveling to France from the US? No problem just set the OnlyKey keyboard to French and change it back to US when you return. Here are the options supported for international keyboards:
 
@@ -871,13 +999,13 @@ We now support changing your keyboard layout on the fly through the Chrome app n
 *   CZECH	
 *   SERBIAN_LATIN_ONLY	
 
+<h1 id="encryption-keys">Encryption Keys</h1>
 
-## Encryption Keys {#encryption-keys}
 
 OnlyKey makes encryption keys easier and by storing them offline, protected even if the computer using the keys is compromised. 
 
+<h2 id="key-faq">Key FAQ</h2>
 
-### Key FAQ {#key-faq}
 
 **What is a key?**
 
@@ -900,8 +1028,8 @@ The OnlyKey stores private keys. These private keys are used for four different 
 
 Learn more about keys feature [here.](#keys-feature)
 
+<h2 id="generating-keys">Generating Keys</h2>
 
-### Generating Keys {#generating-keys}
 
 If you are already familiar with PGP/GPG and already have keys ready to use you can jump ahead to the [Loading Keys](#loading-rsa-keys) section. 
 
@@ -979,8 +1107,8 @@ If this is your first time creating keys or if you would like to create new keys
 ![alt_text](images/OnlyKey-User64.png "image_tooltip")
 
 
+<h2 id="loading-rsa-keys">Loading RSA Keys</h2>
 
-### Loading RSA Keys {#loading-rsa-keys}
 
 **Step 1.** Starting from the last step of the Generating Keys section, select all of the text in the Private box (CTRL+A), and copy the text (CTRL+C).
 
@@ -1028,15 +1156,15 @@ Select the key features (what you want to use the key for) such as backup, signa
 
 **Step 6. **Click Save, and you should see the message Successfully set RSA Key.
 
+<h2>Loading ECC Keys </h2>
 
-### Loading ECC Keys  {#loading-ecc-keys}
 
 Loading ECC keys is a more advanced topic and requires familiarity with using terminal commands. ECC Keys are required for SSH Authentication and can be used for encrypted backups. Up to 32 ECC keys can be stored on OnlyKey. 
 
 The [OpenSSL ECC Key Generation guide here](https://docs.google.com/document/d/14RxoaqBLEhU8nizZeeB2RbZVJAG6sxXD7epkdt7Ukls/pub) provides instructions on how to generate OnlyKey compatible ECC keys and load them onto the OnlyKey
 
+<h1 id="secure-encrypted-backup-anywhere">Secure Encrypted Backup Anywhere</h1>
 
-## Secure Encrypted Backup Anywhere {#secure-encrypted-backup-anywhere}
 
 The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the go. The way that this works is that the OnlyKey encrypts everything on your OnlyKey using an encryption key and then types it out. This allows saving the backup in a text file or email on any computer. 
 
@@ -1052,8 +1180,8 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 ![alt_text](images/OnlyKey-User68.png "image_tooltip")
 
 
+<h2 id="backup-with-onlykey-app">Backup With OnlyKey App</h2>
 
-### Backup With OnlyKey App {#backup-with-onlykey-app}
 
 **Step 1. **First, you must have a backup key and have this set on your OnlyKey. Follow the instructions in the [Generating Keys](#generating-keys) section to create a new key and then follow the instructions in the [Loading Keys](#loading-rsa-keys) section to load and set as backup key.
 
@@ -1071,15 +1199,15 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 ***PRO TIP*** - Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey Chrome app and select a higher setting, 9 usually works well. 
 
+<h2 id="backup-without-onlykey-app">Backup Without OnlyKey App</h2>
 
-### Backup Without OnlyKey App {#backup-without-onlykey-app}
 
 The process is the same to backup without the app. Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the file using whatever filename you prefer. In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else. 
 
 **Note:** While the backup is already encrypted using what would be considered as "military grade" encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup.
 
+<h1 id="restore-from-backup">Restore From Backup</h1>
 
-## Restore From Backup {#restore-from-backup}
 
 Using the backup file created in the Secure Encrypted Backup Anywhere section, we can restore an OnlyKey from backup. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra. 
 
@@ -1103,8 +1231,8 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 **Step 5.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously.
 
+<h1 id="loading-onlykey-firmware">Loading OnlyKey Firmware</h1>
 
-## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
 ***PRO TIP - Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?***
 
@@ -1235,11 +1363,11 @@ File Name
 
 **Under The Hood** - One of the great things about this method of firmware loading is that you, the user, can load your own firmware and in doing so be sure that your OnlyKey has not been tampered with. What actually happens when you load the firmware is that a mass erase is completed first. What this means is that all data is completely wiped, and then the new firmware is loaded. This way if say you suspect that your device was tampered with by someone or you just like to know for sure you can just re-load the firmware yourself.
 
+<h1 id="onlykey-accessories-mobile-support">OnlyKey Accessories / Mobile Support</h1>
 
-## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 
+<h3 id="onlykey-case">OnlyKey Case</h3>
 
-#### OnlyKey Case {#onlykey-case}
 
 The OnlyKey silicon case provides additional protection and gives OnlyKey a polished appearance. To put on the case just carefully slide the case over the OnlyKey as shown below:
 
@@ -1274,15 +1402,15 @@ The OnlyKey silicon case provides additional protection and gives OnlyKey a poli
 </table>
 
 
+<h3 id="android-support">Android Support</h3>
 
-#### Android Support {#android-support}
 
 Android is supported by using a USB on-the-go (OTG) adapter. There are two types of OTG adapters that can be purchased USB Micro and USB C.
 
 Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently on Android.
 
+<h4 id="usb-micro-to-usb-3-otg-adapter-with-keychain">[USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9)</h4>
 
-##### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
 **Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S               , Moto G5, Moto X, or other Android device with USB Micro and OTG support.*
 
@@ -1313,8 +1441,8 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 </table>
 
 
+<h4 id="usb-c-to-usb-3-otg-adapter">[USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)</h4>
 
-##### [USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html) {#usb-c-to-usb-3-otg-adapter}
 
 *Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support.*
 
@@ -1328,8 +1456,8 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 ![alt_text](images/OnlyKey-User81.png "image_tooltip")
 
 
+<h3 id="iphone-ipad-support-experimental">iPhone/iPad Support (Experimental)</h3>
 
-#### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
 
 This is currently in the experimental phase so there is not official support. User's have claimed to successfully use OnlyKey on their iPhones using a USB adapter like the one shown below.
 
@@ -1345,8 +1473,8 @@ This is currently in the experimental phase so there is not official support. Us
 
 Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the username / password / Yubikey OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently.
 
+<h3 id="optimize-keychain-length">Optimize Keychain Length</h3>
 
-#### Optimize Keychain Length {#optimize-keychain-length}
 
 If you don't like how far your OnlyKey hangs off of your keyring then follow these instructions to create a nice short keychain. You can do this yourself all that is needed is a pair of scissors.
 
@@ -1380,11 +1508,11 @@ If you don't like how far your OnlyKey hangs off of your keyring then follow the
 ![alt_text](images/OnlyKey-User85.jpg "image_tooltip")
 
 
+<h1 id="troubleshooting">Troubleshooting</h1>
 
-## Troubleshooting {#troubleshooting}
 
+<h2 id="common-issues">Common Issues</h2>
 
-### Common Issues {#common-issues}
 
 Below is a list of common issues and solutions.
 
@@ -1437,39 +1565,39 @@ Below is a list of common issues and solutions.
 
 If you have an issue not listed here please reference the online support forum [here.](https://groups.google.com/forum/#!forum/onlykey) 
 
+<h1 id="additional-information">Additional Information</h1>
 
-## Additional Information {#additional-information}
 
+<h2 id="alternate-backup-method">Alternate Backup Method</h2>
 
-### Alternate Backup Method {#alternate-backup-method}
 
 This method has been replaced by the built-in OnlyKey secure backup method but is provided here for reference.
 
+<h2 id="standard-edition-onlykey-backup-using-veracrypt-truecrypt-7-1a">**Standard Edition OnlyKey Backup using Veracrypt/Truecrypt 7.1a**</h2>
 
-### **Standard Edition OnlyKey Backup using Veracrypt/Truecrypt 7.1a** {#standard-edition-onlykey-backup-using-veracrypt-truecrypt-7-1a}
 
 [https://youtu.be/NYh5eZS6gsc](https://youtu.be/NYh5eZS6gsc)
 
+<h2 id="plausible-deniability-onlykey-backup-using-veracrypt-truecrypt-7-1a">**Plausible Deniability OnlyKey Backup using Veracrypt/Truecrypt 7.1a**</h2>
 
-### **Plausible Deniability OnlyKey Backup using Veracrypt/Truecrypt 7.1a** {#plausible-deniability-onlykey-backup-using-veracrypt-truecrypt-7-1a}
 
 [https://youtu.be/vrhZyddwzxQ](https://youtu.be/vrhZyddwzxQ)
 
+<h2 id="features">Features</h2>
 
-### Features {#features}
 
+<h3 id="password-manager">Password Manager</h3>
 
-#### Password Manager {#password-manager}
 
 The primary benefit to having an OnlyKey is that instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong 32 character passwords along with the usernames and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
 
+<h3 id="self-destruct">Self-Destruct</h3>
 
-#### Self-Destruct {#self-destruct}
 
 Wouldn't it be nice to know that your data is protected, and if you are in a pinch or forced to give up your PIN there is an easy way to make sure that your data does not get into the wrong hands? That is what the Self-Destruct feature is all about. You set this PIN code whenever you first setup your OnlyKey and then if you or anyone else ever enters it the OnlyKey wipes all of the sensitive data you have stored on it. 
 
+<h3 id="plausible-deniability-international-travel-edition-and-standard-edition-of-firmware">Plausible Deniability (International Travel Edition and Standard Edition of Firmware)</h3>
 
-#### Plausible Deniability (International Travel Edition and Standard Edition of Firmware) {#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware}
 
 Wouldn't it be nice to be able to be able to travel to a country where encryption is illegal or to a country where it is against the law to refuse to give up your password to authorities and be able to comply without actually giving any access to your accounts? That is what the plausible deniability feature is all about. OnlyKey allows the use of a hidden profile and a fake profile (Plausible Deniability Mode) that essentially provides a cover story. If compelled to do so a fake profile can be activated by entering a plausible deniability PIN code and the goal of this feature is that there is no proof that the hidden profile even exists. In fact since the international travel edition of the OnlyKey ships without the plausible deniability feature there is no way to know if you are using an OnlyKey with the international travel edition firmware or the Standard Edition firmware in plausible deniability mode. When the Standard Edition OnlyKey is in plausible deniability mode it is essentially indistinguishable from an International version OnlyKey. 
 
@@ -1499,8 +1627,8 @@ Q - When should I not use the plausible deniability PIN?
 
 A - Plausible deniability is only good if you are in a country where your worst case scenario is that you will be fined for using encryption. If someone is holding a gun to your head or there is risk of torture plausible deniability is pretty much useless. For more information on why see this [https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis](https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis).
 
+<h3 id="hardware-security">Hardware Security</h3>
 
-#### Hardware Security {#hardware-security}
 
 When it comes to hardware security there are terms such as tamper resistant, tamper proof, and secure element. These terms are mostly marketing terms as anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof, and tamper resistant can mean something as simple as the device being coated in plastic that can [easily be removed](http://www.hexview.com/~scl/neo/). The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels.
 
@@ -1522,8 +1650,8 @@ When a connection is placed between these two points it does two things, first i
 
 If you would like to read more about the flash security features of the MK20 [here](https://www.pjrc.com/teensy/K20P64M72SF1RM.pdf) is a document that describes in detail. If you plan to mess around with the flash security features - WARNING - Changes to the flash security settings can brick your device. We tested this feature to ensure this does not happen but any changes you make to source code are at your own risk.
 
+<h3 id="led-definitions-onlykey-color">LED Definitions (OnlyKey Color)</h3>
 
-#### LED Definitions (OnlyKey Color) {#led-definitions-onlykey-color}
 
 
 
@@ -1538,8 +1666,8 @@ If you would like to read more about the flash security features of the MK20 [he
 *   Turquoise Fade in and Fade out - Private key decryption request 
 *   Red Fade in and Fade out - Device is in config mode
 
+<h3 id="led-definitions-original-onlykey">LED Definitions (Original OnlyKey)</h3>
 
-#### LED Definitions (Original OnlyKey) {#led-definitions-original-onlykey}
 
 
 
@@ -1554,8 +1682,8 @@ If you would like to read more about the flash security features of the MK20 [he
    Or if you have placed your device into config mode
 
 
+<h3 id="two-factor-authentication">Two-Factor Authentication</h3>
 
-#### Two-Factor Authentication {#two-factor-authentication}
 
 There are 3 methods of two-factor authentication supported by Onlykey.
 
@@ -1564,8 +1692,8 @@ There are 3 methods of two-factor authentication supported by Onlykey.
 *   Google Authenticator (TOTP)
 *   Universal 2nd Factor Authentication (U2F)
 *   Yubico One-Time Password
+<h4 id="google-authenticator-totp">Google Authenticator (TOTP)</h4>
 
-##### Google Authenticator (TOTP) {#google-authenticator-totp}
 
 
 Google Authenticator is an application that implements TOTP security tokens from RFC 6238 in mobile apps made by Google, sometimes branded "Two-step verification" (or 2-Step Verification).
@@ -1600,8 +1728,8 @@ And then press the OnlyKey button to output your 6 digit OTP into the passcode f
 
 Currently the Google Authenticator (TOTP) feature requires the Chrome app to be open.
 
+<h4 id="universal-2nd-factor-authentication-u2f">Universal 2nd Factor Authentication (U2F)</h4>
 
-##### Universal 2nd Factor Authentication (U2F) {#universal-2nd-factor-authentication-u2f}
 
 OnlyKey's implementation of U2F started out with the open source implementation [here](https://github.com/yohanes/teensy-u2f). We then reviewed the model in use by Yubikey [here](https://www.yubico.com/2014/11/yubicos-u2f-key-wrapping/). And came up with our own implementation of key wrapping that utilizes the open source [AES-256-GCM](https://github.com/rweather/arduinolibs) implementation we are using for encryption of local storage. When the Onlykey is first configured with a PIN, a random nonce is stored that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin. The private key generated for U2F key handle encryption is generated from the SHA-256 hash of the random nonce and a unique Freescale chip ID that is hardcoded onto the processor at the factory. The U2F service also provides an AppID (that is tied to the URL of the site) and during registration the SHA256 hash of the AppID is used as the Initialization Vector for the AES-GCM encryption of the key handle. This ensures that the key handle is only valid for the particular combination of device (private key) and AppID that was created during registration. By using AES-256 in Galios Counter Mode and using SHA-256 our key wrapping implementation follows NIST (SP) 800 guidelines [NIST approved key wrapping](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf) (See Table 7: Approval Status of Block Cipher Algorithms Used for Key Wrapping and Table 9: Approval Status of Hash Functions)
 
@@ -1609,15 +1737,15 @@ For the attestation certificates we allow users to import their own certificates
 
 This all being said the implementation of U2F has not been certified by the FIDO Alliance as an approved token. 
 
+<h4 id="yubico-one-time-password">Yubico One-Time Password</h4>
 
-##### Yubico One-Time Password {#yubico-one-time-password}
 
 OnlyKey's implementation of the Yubico OTP is based on the open source library provided by Yubico [here](https://github.com/Yubico/yubico-c). The one-time passwords generated by OnlyKey have been tested to be indistinguishable from the one-time passwords generated by a Yubikey. However, some services like Yubicloud do not allow third-party devices and require a valid serial number from a Yubikey. For example, you can test your OnlyKey with the [https://demo.yubico.com/](https://demo.yubico.com/) test site but you would be required to have a valid Yubikey serial number to do so.
 
 For more information on Yubico OTP see [this](https://www.yubico.com/products/services-software/personalization-tools/yubikey-otp/)
 
+<h3 id="keys-feature">Keys Feature</h3>
 
-#### Keys Feature {#keys-feature}
 
 The keys feature allows you to use OnlyKey to store private keys that can be used for SSH authentication, OpenPGP Signing, OpenPGP Decryption, and secure OnlyKey backup. You can store 32 ECC private keys and 4 RSA private keys. Each key also has a label assigned to it so just like with slots, an identifier can be assigned to each key. 
 
@@ -1638,29 +1766,29 @@ Under the hood -
 
 Keys are loaded using the OnlyKey Chrome App. For a demonstration see [https://vimeo.com/210800252](https://vimeo.com/210800252)
 
+<h3 id="ssh-login">SSH Login</h3>
 
-#### SSH Login {#ssh-login}
 
 SSH Authentication - Currently only ECC keys are supported for SSH authentication. Using the OnlyKey agent ssh authentication can be accomplished by storing a key on the OnlyKey and setting it as an authentication key. The benefit this provides is that your private key is never exposed on a computer where it can be compromised by hacker.
 
 See [https://github.com/trustcrypto/onlykey-agent](https://github.com/trustcrypto/onlykey-agent)
 
+<h3 id="email-file-signing-openpgp">Email/File Signing (OpenPGP)</h3>
 
-#### Email/File Signing (OpenPGP) {#email-file-signing-openpgp}
 
 Using the OnlyKey PGP Message Tool, the OnlyKey supports signing of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as proof of concept, additional work is needed to properly generate signatures that can be validated.
 
 See [https://github.com/trustcrypto/python-onlykey](https://github.com/trustcrypto/python-onlykey)
 
+<h3 id="email-file-decryption-openpgp">Email/File Decryption (OpenPGP)</h3>
 
-#### Email/File Decryption (OpenPGP) {#email-file-decryption-openpgp}
 
 Using the OnlyKey PGP Message Tool, the OnlyKey supports decryption of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as experimental, to try it out we recommend encrypting emails with Mailvelope (Using RSA 4096 Key) and decrypting with the OnlyKey PGP Messege Tool. The benefit this provides is that your private key is never exposed on a computer where it can be compromised by hacker.
 
 See [https://github.com/trustcrypto/python-onlykey](https://github.com/trustcrypto/python-onlykey)
 
+<h3 id="config-mode">Config Mode</h3>
 
-#### Config Mode {#config-mode}
 
 This secondary feature has been added to provide additional protection against the following scenario:
 
@@ -1672,8 +1800,8 @@ Note - Backups only supported on Standard Edition firmware and not while in plau
 
 For a demonstration of backup feature see [https://vimeo.com/210800252](https://vimeo.com/210800252)
 
+<h3 id="cryptographically-secure-random-number-generator">Cryptographically Secure Random Number Generator</h3>
 
-#### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
 
 After much research it was concluded that Arduino and other microcontrollers such as MK20 are not ideal for generating truly random numbers. While the Arduino Reference Manual recommends using analog pins, which read random atmospheric noise to seed a PRNG, it was concluded that this method alone may not generate a cryptographically secure random number. The paper here goes into more detail - [http://benedikt.sudo.is/ardrand.pdf](http://benedikt.sudo.is/ardrand.pdf). A true random number generator uses non-deterministic sources to produce randomness. Thus, the random number generation function in use requires user provided entropy. This is similar to how TrueCrypt used mouse movements to generate entropy during key generation. The OnlyKey RNG function uses a combination of the entropy provided from two separate analog pins (atmospheric noise) and the user's key presses on the six capacitive touch sensors (conductivity of user's skin, duration of key press, number of key presses, conductivity of air).
 
@@ -1767,8 +1895,8 @@ Touchpin 6 Value = 721
 
 With user interaction, the touchpin values change significantly. Also the touchpins next to the button that was pressed change slightly just from the proximity of a user's finger to that button. As implemented, touchpin values are read from all six capacitive touch sensors once every ~10ms and users are required to have a PIN of 7 – 10 digits. During a typical login (One button press per second), this generates approximately 56 - 80 numbers based on the conductivity of a user's skin and 280 - 400 numbers based on the conductivity of the air around the buttons not being pressed. By performing xor and bitshift operations on these numbers we can generate a random number that is based on non-deterministic values that are completely unpredictable. Additionally, if a user enters an incorrect PIN this would generate even more entropy as this would require re-entering the PIN and during use the buttons are also pressed to select sites to authenticate to which generates constantly unpredictable entropy.
 
+<h2 id="web-links">Web Links</h2>
 
-### Web Links {#web-links}
 
 ** **
 
@@ -1778,8 +1906,12 @@ FAQs - [https://docs.crp.to/faq.html](https://docs.crp.to/faq.html)
 
 Forum -[ https://groups.google.com/forum/#!forum/onlykey](https://groups.google.com/forum/#!forum/onlykey)
 
+ 
+
 Store –[ https://crp.to/ok](https://crp.to/ok)
+
+ 
 
 Github –[ https://github.com/trustcrypto](https://github.com/trustcrypto)
 
-Getting Started with OnlyKey –[ https://crp.to/okstart](https://crp.to/okstart)
+This User's Guide –[ https://crp.to/okstart](https://crp.to/okstart)
