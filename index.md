@@ -1,5 +1,5 @@
 ---
-title: CryptoTrust Docs
+title: OnlyKey Docs
 keywords: homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
