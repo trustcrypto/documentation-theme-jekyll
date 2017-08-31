@@ -15,12 +15,6 @@ folder: mydoc
 
 ###   USER'S GUIDE
 
-**Table of Contents**
-
-
-[TOC]
-
-
 
 ## Unpacking {#unpacking}
 
