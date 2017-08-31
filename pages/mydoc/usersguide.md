@@ -9,55 +9,25 @@ permalink: usersguide.html
 folder: mydoc
 ---
 
-![](images/image50.png)</span><span class="c15">
+![](images/image50.png)
 
-# <span class="c19">Unpacking</span>
+# Unpacking
 
-<span class="c15"></span>
+**Step 1.** Remove the OnlyKey and Keychain from packaging.
+**Step 2.** Remove the small metal keyring if one is attached and discard this keyring.
+![image77.jpg](images/image76.jpg)
+**Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey.
+![image14 (1).jpg](images/image14.jpg)
+**Step 3.**By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
+**Step 4.** (Optional) Insert OnlyKey into silicone case as shown[here.](#h.ty4k72g3crty)
+***PRO TIP*** (Optional Keychain Length Adjustment) - If you prefer you can shorten the keychain so your OnlyKey stays closer to your keyring see DIY instructions [here.](#h.r5dreasefjss)
 
-<span class="c16">Step 1.</span><span class="c5"> Remove the OnlyKey and Keychain from packaging.</span>
+Proceed to initial setup below
 
-<span class="c5"></span>
+# Initial Setup
 
-<span class="c16">Step 2.</span><span class="c5"> Remove the small metal keyring if one is attached and discard this keyring.</span>
-
-<span class="c15"></span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 127.00px; height: 260.00px;">![image77.jpg](images/image76.jpg)</span>
-
-<span class="c5"></span>
-
-<span class="c16">Step 3.</span><span class="c5"> Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey.</span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 341.50px; height: 325.32px;">![image14 (1).jpg](images/image14.jpg)</span>
-
-<span class="c5"></span>
-
-<span class="c16">Step 3\.</span> <span class="c5">By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.</span>
-
-<span class="c5"></span>
-
-<span class="c16">Step 4.</span><span> (Optional) Insert OnlyKey into silicone case as shown</span> <span class="c9">[here.](#h.ty4k72g3crty)</span>
-
-<span class="c5"></span>
-
-<span class="c36 c16">PRO TIP</span><span> (Optional Keychain Length Adjustment) - If you prefer you can shorten the keychain so your OnlyKey stays closer to your keyring see DIY instructions</span> <span class="c9">[here.](#h.r5dreasefjss)</span>
-
-<span class="c5"></span>
-
-<span class="c36">Proceed to initial setup below</span>
-
-<span class="c5"></span>
-
-# <span class="c19">Initial Setup</span>
-
-<span class="c5"></span>
-
-<span class="c16">Step 1.</span><span> Open the Chrome Web Browser (If you do not have the chrome web browser installed you can install this by following the instructions here:</span> <span class="c9">[https://www.google.com/chrome/browser/desktop/](https://www.google.com/url?q=https://www.google.com/chrome/browser/desktop/&sa=D&ust=1504217070669000&usg=AFQjCNEeHm7UcdffHouBm1Gr_FFbBLm3Tw)</span><span class="c5">)</span>
-
-<span class="c5"></span>
-
-<span class="c16">Step 2.</span><span> Click</span> <span class="c9">[here](https://www.google.com/url?q=https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica&sa=D&ust=1504217070670000&usg=AFQjCNGbBV5OMrP29q7waFo2PkupLhL9XA)</span><span class="c5"> to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select “Add to Chrome”</span>
+**Step 1.** Open the Chrome Web Browser (If you do not have the chrome web browser installed you can install this by following the instructions here:[https://www.google.com/chrome/browser/desktop/](https://www.google.com/url?q=https://www.google.com/chrome/browser/desktop/&sa=D&ust=1504217070669000&usg=AFQjCNEeHm7UcdffHouBm1Gr_FFbBLm3Tw)
+**Step 2.** Click</span> <span class="c9">[here](https://www.google.com/url?q=https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica&sa=D&ust=1504217070670000&usg=AFQjCNGbBV5OMrP29q7waFo2PkupLhL9XA)</span><span class="c5"> to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select “Add to Chrome”</span>
 
 <span class="c5"></span>
 
