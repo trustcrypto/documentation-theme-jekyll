@@ -1,3 +1,4 @@
+
 ---
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
@@ -205,75 +206,42 @@ The example configuration shown below would be to set up a URL and password to a
   </tr>
   <tr>
    <td>Site that does not automatically select username field after loading page (i.e.Kracken).
-<p>
-
 <img src="images/OnlyKey-User22.png" width="" alt="alt_text" title="image_tooltip">
-
    </td>
    <td><em>With URL - You will notice that the delay is set to a high value so that you have plenty of time to select the username field manually since it's not selected automatically.</em>
-<p>
-
 <img src="images/OnlyKey-User23.png" width="" alt="alt_text" title="image_tooltip">
-
-<p>
 <em>Without URL - Browse to the login page first and place cursor in the username field before selecting the assigned OnlyKey button.</em>
-<p>
-
 <img src="images/OnlyKey-User24.png" width="" alt="alt_text" title="image_tooltip">
-
    </td>
   </tr>
   <tr>
    <td>Site where username is remembered after first login (i.e. Google).
    </td>
    <td><em>Password and 2FA only - This is usually the best option if you remember your username/email address as this will work on any computer whether your username is remembered or not. This method does not include URL in case you are prompted for a password.</em>
-<p>
-
 <img src="images/OnlyKey-User25.png" width="" alt="alt_text" title="image_tooltip">
-
-<p>
 <em>Username Remembered w/URL - If you use your device mostly on a computer where you username is remembered this is a good option.</em>
-<p>
-
 <img src="images/OnlyKey-User26.png" width="" alt="alt_text" title="image_tooltip">
-
    </td>
   </tr>
   <tr>
    <td>Site that does not automatically select OTP code field (i.e. Salesforce)
-<p>
-
 <img src="images/OnlyKey-User27.png" width="" alt="alt_text" title="image_tooltip">
-
-<p>
 After loading next page
-<p>
-
 <img src="images/OnlyKey-User28.png" width="" alt="alt_text" title="image_tooltip">
-
    </td>
    <td><em>You will notice that the delay before 2FA is set to a high value so that you have plenty of time to select the OTP code field manually since it's not selected automatically.</em>
-<p>
-
 <img src="images/OnlyKey-User29.png" width="" alt="alt_text" title="image_tooltip">
-
    </td>
   </tr>
   <tr>
    <td>Site where username and password is required first and then OTP code field appears below (i.e. IT Glue)
-<p>
-
 <img src="images/OnlyKey-User30.png" width="" alt="alt_text" title="image_tooltip">
-
    </td>
    <td>
-
 <img src="images/OnlyKey-User31.png" width="" alt="alt_text" title="image_tooltip">
-
    </td>
   </tr>
 </table>
-
 
 ***PRO TIP - Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password. ***
 
