@@ -1,4 +1,3 @@
-
 ---
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
@@ -27,7 +26,7 @@ folder: mydoc
 
 ![alt_text](images/OnlyKey-User2.jpg "image_tooltip")
 
-**Step 4. **By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
+**Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
 
 **Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
 
@@ -44,7 +43,7 @@ folder: mydoc
 
 ![alt_text](images/OnlyKey-User3.png "image_tooltip")
 
-**Step 3. **When prompted select "Add App"
+**Step 3.** When prompted select "Add App"
 
 ![alt_text](images/OnlyKey-User4.png "image_tooltip")
 
@@ -54,7 +53,7 @@ folder: mydoc
 
 ![alt_text](images/OnlyKey-User6.png "image_tooltip")
 
-**Step 5. **Once the OnlyKey Configuration App launches you will see the message "Please connect your OnlyKey"
+**Step 5.** Once the OnlyKey Configuration App launches you will see the message "Please connect your OnlyKey"
 
 ![alt_text](images/OnlyKey-User7.png "image_tooltip")
 
