@@ -1303,4 +1303,4 @@ Store –[ https://crp.to/ok](https://crp.to/ok)
 
 Github –[ https://github.com/trustcrypto](https://github.com/trustcrypto)
 
-This User's Guide –[ https://crp.to/okstart](https://crp.to/okstart)
+Getting started with OnlyKey –[ https://crp.to/okstart](https://crp.to/okstart)
