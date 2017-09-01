@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ![alt_text](images/OnlyKey-User0.png "image_tooltip")
-**    **
+
 ##   USER'S GUIDE
 
 # Unpacking {#unpacking}
