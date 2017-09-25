@@ -18,7 +18,7 @@ folder: mydoc
 
 **Step 2.** Remove the small metal keyring if one is attached and discard this keyring.
 
-<div style="text-align:center; width: 138.24px; height: 260.00px"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image76.jpg" /></div>
+<div style="text-align:center; width: 30%;"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image76.jpg" /></div>
 
 **Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey.
 
