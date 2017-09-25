@@ -2,7 +2,7 @@
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
-last_updated: Aug, 31, 2017
+last_updated: Sept, 25, 2017
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
 sidebar: mydoc_sidebar
 permalink: usersguide.html
@@ -10,7 +10,8 @@ folder: mydoc
 ---
 
 
-![alt_text](images/OnlyKey-User0.png "image_tooltip")
+----------
+<div style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image50.png" /><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/ok.jpg" /></div>
 
 # Unpacking {#unpacking}
 
@@ -983,12 +984,12 @@ If you have an issue not listed here please reference the online support forum [
 This method has been replaced by the built-in OnlyKey secure backup method but is provided here for reference.
 
 
-## **Standard Edition OnlyKey Backup using Veracrypt/Truecrypt 7.1a** {#standard-edition-onlykey-backup-using-veracrypt-truecrypt-7-1a}
+## Standard Edition OnlyKey Backup using Veracrypt/Truecrypt 7.1a {#standard-edition-onlykey-backup-using-veracrypt-truecrypt-7-1a}
 
 [https://youtu.be/NYh5eZS6gsc](https://youtu.be/NYh5eZS6gsc)
 
 
-## **Plausible Deniability OnlyKey Backup using Veracrypt/Truecrypt 7.1a** {#plausible-deniability-onlykey-backup-using-veracrypt-truecrypt-7-1a}
+## Plausible Deniability OnlyKey Backup using Veracrypt/Truecrypt 7.1a {#plausible-deniability-onlykey-backup-using-veracrypt-truecrypt-7-1a}
 
 [https://youtu.be/vrhZyddwzxQ](https://youtu.be/vrhZyddwzxQ)
 
