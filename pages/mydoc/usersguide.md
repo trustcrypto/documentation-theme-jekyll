@@ -142,7 +142,7 @@ The slots that have not been configured have no label so they are shown as "empt
 
 ![alt_text](images/OnlyKey-User14.png "image_tooltip")
 
-**Step 2. **Enter a label such as Gmail in the Label field, check the box next to Label, and click Submit.
+**Step 2.** Enter a label such as Gmail in the Label field, check the box next to Label, and click Submit.
 
 Now the label you entered is assigned to slot 1a. Slot labels are helpful if you forget which button is assigned to which account you can open the OnlyKey app at any time to see how it is set up.
 
@@ -162,7 +162,7 @@ The example configuration shown below would be to set up a username and password
 
 ![alt_text](images/OnlyKey-User18.png "image_tooltip")
 
-**Note: **Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.
+**Note: ** Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.
 
 ![alt_text](images/OnlyKey-User19.png "image_tooltip")
 
@@ -241,7 +241,8 @@ After loading next page
   </tr>
 </table>
 
-***PRO TIP - Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password. ***
+
+***PRO TIP - Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password.***
 
 ***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like "password1" this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker.
 
