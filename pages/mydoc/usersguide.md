@@ -27,7 +27,7 @@ folder: mydoc
 
 **Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
 
-***PRO TIP - (Optional) Check out OnlyKey accessories - [color cases]({#onlykey-case}), [keychain options]({#keychain-options}), [mobile adapter]({#android-support}).***
+***PRO TIP - (Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support).***
 
 *Proceed to initial setup below*
 
@@ -106,7 +106,7 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 ***Method #2 - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking. This is an intentional safeguard so that in the event that a child gets ahold of your OnlyKey the device will not be inadvertently wiped by them repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.***
 
-*If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware).*
+*If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](#features).*
 
 ## Configure Profile {#configure-profile}
 
@@ -148,7 +148,7 @@ Now the label you entered is assigned to slot 1a. Slot labels are helpful if you
 
 This is where the card you received with your OnlyKey comes in handy. You can write your labels on this and carry this in your wallet. This is a low tech solution but it works great.
 
-{% include image.html file="card.png" %}
+{% include image.html file="card.jpg" %}
 
 Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a.
 
@@ -915,7 +915,7 @@ Part 2. Both versions utilize physical flash security to essentially lock the in
 
 Part 3. We make it easy for user's to load whatever version of the firmware they want. International customers can easily load the Standard Edition and vice versa. Even we have no way of knowing what version of firmware a device has loaded.
 
-Anyone can view the open source firmware [here](https://github.com/trustcrypto) and verify that this is the case. Since there are devices that ship without the ability to perform encryption it is plausible that your OnlyKey is one of these, just a basic password manager. There is not a way of knowing that there is another hidden profile that is only activated if you know the secret PIN. Best of all, changing the version of firmware on your device is easily accomplished as the OnlyKey is field upgradable. There is a section in the user's guide [here](#loading-onlykey-firmware) that provides instructions on flashing whichever Onlykey firmware you want.
+Anyone can view the open source firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases) and verify that this is the case. Since there are devices that ship without the ability to perform encryption it is plausible that your OnlyKey is one of these, just a basic password manager. There is not a way of knowing that there is another hidden profile that is only activated if you know the secret PIN. Best of all, changing the version of firmware on your device is easily accomplished as the OnlyKey is field upgradable. There is a section in the user's guide [here](#loading-onlykey-firmware) that provides instructions on flashing whichever Onlykey firmware you want.
 
 So now you can see how a user if compelled to do so could say "I just have a basic password manager, here is my PIN code" and it would be completely plausible that they do in fact just have a basic password manager. To be even more plausible the user should set up actual accounts with real credentials which work to log into websites.
 
