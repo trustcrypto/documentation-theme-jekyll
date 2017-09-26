@@ -9,10 +9,10 @@ permalink: usersguide.html
 folder: mydoc
 ---
 {% include image.html file="image50.png" %}
-<h1>USER'S GUIDE</h1>
+<h1>&nbsp;&nbsp;USER'S GUIDE</h1>
 <br>
 ## Unpacking OnlyKey {#unpacking}
-{% include image.html file="ok.jpg" max-width="50" %}
+{% include image.html file="ok.jpg" max-width="75" %}
 
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
 
