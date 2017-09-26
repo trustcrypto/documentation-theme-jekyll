@@ -112,6 +112,8 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 ***PRO TIP -*** Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.
 
+### Configure Basic Login Info {#all-about-slots}
+
 **Enter your PIN -**  After removing and reinserting your OnlyKey you are prompted to enter the PIN you set during initial setup onto your OnlyKey six button keypad.
 
 <img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image82.png">
@@ -257,7 +259,7 @@ LastPass password generation tool available [here](https://lastpass.com/generate
 
 <img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image59.png">
 
-### Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
+### Configure Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
 Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are three different types of 2FA supported by OnlyKey. There is more information on these available on the features page of the [OnlyKey Wiki](https://docs.crp.to). By supporting multiple modes of 2FA OnlyKey will work with most sites that suppor 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
 
@@ -718,7 +720,7 @@ File Name
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 
-#### OnlyKey Case {#onlykey-case}
+### OnlyKey Case {#onlykey-case}
 
 The OnlyKey silicon case provides additional protection and gives OnlyKey a polished appearance. To put on the case just carefully slide the case over the OnlyKey as shown below:
 
@@ -738,13 +740,13 @@ The OnlyKey silicon case provides additional protection and gives OnlyKey a poli
 </table>
 
 
-#### Android Support {#android-support}
+### Android Support {#android-support}
 
 Android is supported by using a USB on-the-go (OTG) adapter. There are two types of OTG adapters that can be purchased USB Micro and USB C.
 
 Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently on Android.
 
-##### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
+#### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
 **Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support.**[https://www.amazon.com/dp/B071Y4CZV9](https://www.amazon.com/dp/B071Y4CZV9)
 
@@ -763,7 +765,7 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 </table>
 
 
-##### [USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html) {#usb-c-to-usb-3-otg-adapter}
+#### [USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html) {#usb-c-to-usb-3-otg-adapter}
 
 *Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support.*
 
@@ -771,7 +773,7 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 
 <img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image73.png" width= "50%">
 
-#### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
+### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
 
 This is currently in the experimental phase so there is not official support. User's have claimed to successfully use OnlyKey on their iPhones using a USB adapter like the one shown below.
 
@@ -781,24 +783,24 @@ This is currently in the experimental phase so there is not official support. Us
 
 Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently.
 
-#### Keychain Accessory Options {#keychain-options}
+### Keychain Accessory Options {#keychain-options}
 
-##### Standard Keychain
+#### Standard Keychain
 
 The standard keychain that comes with the OnlyKey is plastic which provides good durability and an easy quick disconnect for convenient access.
 
 If you ever need a replacement or extra keychain one can be purchased using the link below:
 
-
+<div>
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	<input type="hidden" name="cmd" value="_s-xclick">
 	<input type="hidden" name="hosted_button_id" value="FCWD7D8B4G7VY">
 	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 	</form>
+</div>
 
-
-##### Keychain DIY Customize
+#### Keychain DIY Customize
 
 If you don't like how far your OnlyKey hangs off of your keyring then follow these instructions to create a nice short keychain. You can do this yourself all that is needed is a pair of scissors.
 
@@ -814,7 +816,7 @@ If you don't like how far your OnlyKey hangs off of your keyring then follow the
 
 <img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image9.jpg" width= "20%">
 
-##### Other Keychain Options
+#### Other Keychain Options
 
 Various other Keychains may be used some ideas are shown below:
 
