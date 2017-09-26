@@ -1,4 +1,4 @@
-" type="primary" %}---
+---
 title: USER'S GUIDE
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
