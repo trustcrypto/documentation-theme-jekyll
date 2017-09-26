@@ -1,5 +1,5 @@
 ---
-title: <div><img src="images/image50.png"><br>  USER'S GUIDE</div>
+title: <figure><img class="docimage" src="images/image50.png" alt="" /></figure><p>  USER'S GUIDE</p>
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
 last_updated: Sept, 25, 2017
