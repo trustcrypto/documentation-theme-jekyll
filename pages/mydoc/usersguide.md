@@ -1,5 +1,6 @@
+<figure><img class="docimage" src="images/image50.png" alt="" /></figure>
 ---
-title: <figure><img class="docimage" src="images/image50.png" alt="" /></figure><p>  USER'S GUIDE</p>
+title: USER'S GUIDE
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
 last_updated: Sept, 25, 2017
@@ -9,11 +10,11 @@ permalink: usersguide.html
 folder: mydoc
 ---
 
-{% include image.html file="ok.jpg" %}
-
 ## Unpacking {#unpacking}
 
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
+
+{% include image.html file="ok.jpg" %}
 
 **Step 2.** Remove the small metal keyring if one is attached and discard this keyring.
 
