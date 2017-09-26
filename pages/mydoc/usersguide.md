@@ -58,7 +58,7 @@ folder: mydoc
 
 **Step 7.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select "Next" to continue.
 
-{% include info.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
+{% include note.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
 
 {% include image.html file="image77.png" %}
 
@@ -74,7 +74,7 @@ folder: mydoc
 
 **Step 9. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select "Next" to continue.
 
-{% include info.html content="The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN." %}
+{% include note.html content="The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN." %}
 
 **Step 10. Confirm Your PIN -**  Re-enter the same PIN and select "Next" to continue. Once you click next you can see the messages in red at the bottom of the app displaying "Successfully set PIN" and that your "OnlyKey is ready…" at this point the manditory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs.
 
@@ -157,7 +157,7 @@ The example configuration shown below would be to set up a username and password
 
 {% include image.html file="image24.png" max-width="602" %}
 
-{% include info.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
+{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
 
 {% include image.html file="image3.png" max-width="295" %}
 
@@ -367,7 +367,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 #### Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
 
-{% include info.html content="The OnlyKey comes pre-loaded with an attestation certificate that can be used or you can load a custom certificate and private key." %}
+{% include note.html content="The OnlyKey comes pre-loaded with an attestation certificate that can be used or you can load a custom certificate and private key." %}
 
 In order to Load your own custom U2F certificate to OnlyKey see the certificate generation guide [here](https://docs.google.com/document/d/1LE09BB2ULGblc--3Ttut66NVMJk698LHp0f3DeRdr7w/edit?usp=sharing)
 
@@ -602,13 +602,13 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 The process is the same to backup without the app. Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the file using whatever filename you prefer. In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else.
 
-{% include info.html content="While the backup is already encrypted using what would be considered as strong encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup." %}
+{% include note.html content="While the backup is already encrypted using what would be considered as strong encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup." %}
 
 ## Restore From Backup {#restore-from-backup}
 
 Using the backup file created in the Secure Encrypted Backup Anywhere section, we can restore an OnlyKey from backup. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
 
-{% include info.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
+{% include note.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
 **Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same key is loaded onto the OnlyKey that was used to backup by following the steps in the [Loading Keys](#loading-rsa-keys) section.
 
@@ -699,7 +699,7 @@ File Name
 
 {% include image.html file="image67.png" max-width="213" %}
 
-{% include info.html content="If a message prompts that 'HEX file is too large' ensure that your OnlyKey is plugged in." %}
+{% include note.html content="If a message prompts that 'HEX file is too large' ensure that your OnlyKey is plugged in." %}
 
 7.  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port.
 
@@ -1056,7 +1056,7 @@ Bob leaves his OnlyKey unlocked and plugged into his computer and walks away, Al
 
 While Bob should not have left his device unlocked and unattended we still want to prevent this scenario so first a device must be in config mode to load keys or to restore from backup. To put a device in config mode hold the #6 button down for 5 seconds on an unlocked OnlyKey, then re-enter the PIN. This ensures that only someone who knows the PIN can select the private key used to create a backup.
 
-{% include info.html content="Backups only supported on Standard Edition firmware and not while in plausible deniability mode. The reason is the backup requires encryption and plausible deniability requires being able to deny that any encryption is used." %}
+{% include note.html content="Backups only supported on Standard Edition firmware and not while in plausible deniability mode. The reason is the backup requires encryption and plausible deniability requires being able to deny that any encryption is used." %}
 
 For a demonstration of backup feature see [https://vimeo.com/210800252](https://vimeo.com/210800252)
 
