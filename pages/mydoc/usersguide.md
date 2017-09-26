@@ -46,7 +46,6 @@ folder: mydoc
 **Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> "Bookmarks" -> "Show Bookmarks Bar" to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to "chrome://apps/") and then select the "OK" icon to launch the OnlyKey App.
 
 <span><img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image33.png" width="60%">
-   
 <br>
 <br>
 <span><img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image17.png" width="60%">
