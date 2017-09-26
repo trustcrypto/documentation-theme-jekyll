@@ -8,10 +8,10 @@ sidebar: mydoc_sidebar
 permalink: usersguide.html
 folder: mydoc
 ---
-
+<div align="center">
 {% include image.html file="image50.png" %}
 {% include image.html file="ok.jpg" %}
-
+</div>
 ## Unpacking {#unpacking}
 
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
