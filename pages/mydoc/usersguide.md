@@ -13,20 +13,19 @@ folder: mydoc
 <br>
 ## Unpacking OnlyKey {#unpacking}
 
-{% include callout.html content="**Step 1.** Remove the OnlyKey and Keychain from packaging.
+{% include callout.html content="**Step 1.** Remove the OnlyKey and Keychain from packaging." type="default" %}
 
-**Step 2.** Remove the small metal keyring if one is attached and discard this keyring." type="default" %}
+{% include callout.html content="**Step 2.** Remove the small metal keyring if one is attached and discard this keyring." type="default" %}
 
 {% include image.html file="image76.jpg" max-width="138" %}
 
-**Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and
-the other string end of the keychain to your OnlyKey.
+{% include callout.html content="**Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey." type="default" %}
 
 {% include image.html file="image14.jpg" max-width="350" %}
 
-**Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
+{% include callout.html content="**Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB." type="default" %}
 
-**Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
+{% include callout.html content="**Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)" type="default" %}
 
 {% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
 
@@ -34,36 +33,36 @@ the other string end of the keychain to your OnlyKey.
 
 ## Initial Setup {#initial-setup}
 
-**Step 1.** Open the Chrome Web Browser (If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))
+{% include callout.html content="**Step 1.** Open the Chrome Web Browser (If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
 
-**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select "Add to Chrome"
+{% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome' type="default" %}
 
 {% include image.html file="image41.png" %}
 
-**Step 3.** When prompted select "Add App"
+{% include callout.html content="**Step 3.** When prompted select 'Add App'" type="default" %}
 
 {% include image.html file="image12.png" max-width="359" %}
 
-**Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> "Bookmarks" -> "Show Bookmarks Bar" to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to "chrome://apps/") and then select the "OK" icon to launch the OnlyKey App.
+{% include callout.html content="**Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> Bookmarks -> Show Bookmarks Bar to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to 'chrome://apps/') and then select the 'OK' icon to launch the OnlyKey App." type="default" %}
 
 {% include image.html file="image33.png" max-width="544" %}
 <br>
 <br>
 {% include image.html file="image17.png" %}
 
-**Step 5.** Once the OnlyKey Configuration App launches you will see the message "Please connect your OnlyKey"
+{% include callout.html content="**Step 5.** Once the OnlyKey Configuration App launches you will see the message ''Please connect your OnlyKey''" type="default" %}
 
 {% include image.html file="image18.png" %}
 
-**Step 6.** Insert the OnlyKey into USB port.
+{% include callout.html content="**Step 6.** Insert the OnlyKey into USB port." type="default" %}
 
-**Step 7.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select "Next" to continue.
+{% include callout.html content="**Step 7.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select ''Next'' to continue." type="default" %}
 
 {% include note.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
 
 {% include image.html file="image77.png" %}
 
-**Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you are a US customer select Standard Edition. For international customers (outside of US) the OnlyKey comes pre-loaded with the International Travel Edition as shipping devices with military grade encryption is problematic in some countries. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) then you may load the standard OnlyKey firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup.
+{% include callout.html content="**Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you are a US customer select Standard Edition. For international customers (outside of US) the OnlyKey comes pre-loaded with the International Travel Edition as shipping devices with military grade encryption is problematic in some countries. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) then you may load the standard OnlyKey firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup." type="default" %}
 
 {% include image.html file="image88.png" %}
 
@@ -73,23 +72,23 @@ the other string end of the keychain to your OnlyKey.
 
 {% include note.html content="As described in the following steps you can use multiple PINs, make sure PINs are not set to the same thing or share the same sequence, this will not work they must be different. For example, if PIN A is '11223344' and PIN B is '1122334455' then when you try to type in PIN B the device would read PIN A before you enter '55'." %}
 
-**Step 9. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select "Next" to continue.
+{% include callout.html content="**Step 9. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
 
 {% include note.html content="The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN." %}
 
-**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select "Next" to continue. Once you click next you can see the messages in red at the bottom of the app displaying "Successfully set PIN" and that your "OnlyKey is ready…" at this point the manditory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs.
+{% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the manditory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
 
-**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](#self-destruct) for more information on this feature.
+{% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](#self-destruct) for more information on this feature." type="default" %}
 
-Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select "Next" to continue.
+Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue.
 
-**Step 12. Confirm Your PIN -**  Re-enter the same PIN and select "Next" to continue. Once you click next you can see the messages in red at the bottom of the app displaying "Successfully set PIN" and that your "OnlyKey is ready…" at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN.
+{% include callout.html content="**Step 12. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN." type="default" %}
 
-**Step 13. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature.
+{% include callout.html content="**Step 13. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature." type="default" %}
 
-Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select "Next" to continue.
+Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue.
 
-**Step 14. Confirm Your PIN -**  Re-enter the same PIN and select "Next" to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile.
+{% include callout.html content="**Step 14. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile." type="default" %}
 
 {% include image.html file="image27.png" %}
 
@@ -122,21 +121,21 @@ Now that your OnlyKey is unlocked you see this screen.
 
 #### All About Slots {#all-about-slots}
 
-The Slots area of the application is where you will set up things like your usernames, passwords, and 2 factor. As you can see the word "empty" is shown 12 times next to a button with a number and a letter. Each of these buttons refer to one of the slots on your OnlyKey.
+The Slots area of the application is where you will set up things like your usernames, passwords, and 2 factor. As you can see the word ''empty'' is shown 12 times next to a button with a number and a letter. Each of these buttons refer to one of the slots on your OnlyKey.
 
 **What are slots?** On the OnlyKey you have 6 buttons and 12 available slots in your profile. Each slot can be set with a Label, URL, Username, Password, and two-factor authentication. Each slot is assigned to a button on your OnlyKey. So for example if you were to save your Google password to slot 1a, then to type out your Google password you would tap button 1 on your OnlyKey for less than one second (Slot 1a). If you were to save your Yahoo password to slot 1b, then to type our your Yahoo password you would hold button 1 on your OnlyKey for more than one second (Slot 1b).
 
 Each button has two slots assigned to it that can be activated by holding the button for less than or more than one second.
 
-The slots that have not been configured have no label so they are shown as "empty". Next, let's set a label to slot 1a.
+The slots that have not been configured have no label so they are shown as "empty''. Next, let's set a label to slot 1a.
 
 #### Set a Label {#set-a-label}
 
-**Step 1.** Click the 1a button in the OnlyKey app and see the Slot 1a Configuration
+{% include callout.html content="**Step 1.** Click the 1a button in the OnlyKey app and see the Slot 1a Configuration" type="default" %}
 
 {% include image.html file="image36.png" %}
 
-**Step 2.** Enter a label such as Gmail in the Label field, check the box next to Label, and click Submit.
+{% include callout.html content="**Step 2.** Enter a label such as Gmail in the Label field, check the box next to Label, and click Submit." type="default" %}
 
 Now the label you entered is assigned to slot 1a. Slot labels are helpful if you forget which button is assigned to which account you can open the OnlyKey app at any time to see how it is set up.
 
@@ -237,7 +236,7 @@ After loading next page
 
 {% include tip.html content="Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
-***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like "password1" this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker.
+***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker.
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
 
@@ -277,7 +276,7 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 *This method of two-factor authentication has some notable advantages over using features like 2nd-step verification where a website will send you an SMS message with a code to enter to login. One weakness in the SMS approach is that phone numbers can be transferred to a malicious party sometimes just by calling and asking the phone company to do this and providing some personal information. Another weakness is that more sophisticated attackers may be able to clone your phone number and then receive SMS messages sent to you. Google authenticator (TOTP) solves some of these issues by generating the code on your phone itself using a private key. Now that the background is covered we can set this up on your OnlyKey. No phone or app required for setting this up on your OnlyKey but if you wish to maintain a backup of your two-factor authentication codes it may be a good idea to download the app and scan the QR code as a backup in case you lose your OnlyKey.*
 
-**Step 1. Enable Google Authenticator App on Website -** If you are unsure if the website you want to setup supports OTP check [here](http://www.dongleauth.info/). Assuming that the website supports Google Authenticator you can proceed to enable Google Authenticator. For example to do this for your Google Account you must first enable 2-Step Verification and then you select "SETUP" as shown below:
+{% include callout.html content="**Step 1. Enable Google Authenticator App on Website -** If you are unsure if the website you want to setup supports OTP check [here](http://www.dongleauth.info/). Assuming that the website supports Google Authenticator you can proceed to enable Google Authenticator. For example to do this for your Google Account you must first enable 2-Step Verification and then you select ''SETUP'' as shown below:" type="default" %}
 
 {% include image.html file="image85.png" max-width="582" %}
 
@@ -285,19 +284,19 @@ As you go through the steps you will be prompted to scan a QR code (Looks like a
 
 {% include image.html file="image6.png" max-width="392" %}
 
-**Step 2. Copy and Paste Code into Chrome App -**
+{% include callout.html content="**Step 2. Copy and Paste Code into Chrome App -**
 
-Selecting "CAN'T SCAN IT" will display the private code. Select this text and copy it as shown below:
+Selecting ''CAN'T SCAN IT'' will display the private code. Select this text and copy it as shown below:" type="default" %}
 
 {% include image.html file="image38.png" max-width="383"%}
 
-Now open the OnlyKey Chrome Configuration App. With your correct PIN entered on the OnlyKey you are able to select the Slot to configure and paste this code into the field located next to "Google Auth OTP" as shown below:
+Now open the OnlyKey Chrome Configuration App. With your correct PIN entered on the OnlyKey you are able to select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
 
 {% include image.html file="image65.png" max-width="599" %}
 
 Once you click submit your OnlyKey is ready to generate OTPs.
 
-**Step 3. Generate OTP -** Place your cursor in the "Enter code" field and press the button that corresponds to the slot that was set. In the example above we set slot 2a so we press the #2 button to generate the OTP.
+{% include callout.html content="**Step 3. Generate OTP -** Place your cursor in the ''Enter code'' field and press the button that corresponds to the slot that was set. In the example above we set slot 2a so we press the #2 button to generate the OTP." type="default" %}
 
 {% include image.html file="image20.png" max-width="339" %}
 
@@ -316,11 +315,11 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 {% include tip.html content="The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP." %}
 
 *   First download and install the [Yubikey® personalization tools](https://www.Yubico.com/support/download/)
-*   Go into Yubico® OTP and select "Quick"
+*   Go into Yubico® OTP and select ''Quick''
 
 {% include image.html file="image43.png" %}
 
-*   Select the "Hide values" checkbox and select "Regenerate" to create a Public Identify, Private Identity, and Secret Key.
+*   Select the ''Hide values'' checkbox and select ''Regenerate'' to create a Public Identify, Private Identity, and Secret Key.
 
 {% include image.html file="image1.png" %}
 
@@ -328,9 +327,9 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 
 {% include image.html file="image62.png" max-width="330" %}
 
-*   Select "Save to OnlyKey" to write these values to your OnlyKey
+*   Select ''Save to OnlyKey'' to write these values to your OnlyKey
 *   Now your OnlyKey is ready to function in Yubikey® OTP mode
-*   Just select a slot that you wish to use with Yubikey® OTP mode by selecting the radio button and then selecting "Submit". The Yubikey® OTP will be generated when the corresponding button is pressed.
+*   Just select a slot that you wish to use with Yubikey® OTP mode by selecting the radio button and then selecting ''Submit''. The Yubikey® OTP will be generated when the corresponding button is pressed.
 
 {% include image.html file="image56.png" max-width="80" %}
 
@@ -344,25 +343,25 @@ Some online services use Yubicloud for authentication. Yubicloud is owned by Yub
 
 The following instructions show you how to set up a 3rd party device on Yubicloud. This is for your information only and we do not recommend setting up a 3rd party device on Yubicloud. If you choose to follow this information to set up a 3rd party device on Yubicloud you choose to do so against our recommendations and at your own risk.
 
-**Step 1.** Download and install the [Yubikey® personalization tools](https://www.Yubico.com/support/download/)
+{% include callout.html content="**Step 1.** Download and install the [Yubikey® personalization tools](https://www.Yubico.com/support/download/)" type="default" %}
 
-**Step 2.** Go into Yubico® OTP and select "Quick"
+{% include callout.html content="**Step 2.** Go into Yubico® OTP and select ''Quick''" type="default" %}
 
-**Step 3.** Insert Yubikey®, select a configuration slot, and click "Write configuration" button
+{% include callout.html content="**Step 3.** Insert Yubikey®, select a configuration slot, and click ''Write configuration'' button" type="default" %}
 
 {% include image.html file="image5.png" max-width="90" %}
 
-**Step 4.** Set the values shown in the Public Identity, Private Identity, and Secret Key to your 3rd party device.
+{% include callout.html content="**Step 4.** Set the values shown in the Public Identity, Private Identity, and Secret Key to your 3rd party device." type="default" %}
 
-**Step 5.** Once this is complete select "Upload to Yubico®"
+{% include callout.html content="**Step 5.** Once this is complete select ''Upload to Yubico®''" type="default" %}
 
-**Step 6.** This will open a web browser, to complete the registration enter the OTP in the "OTP from the Yubikey®" field by pressing the button on your 3rd party device.
+{% include callout.html content="**Step 6.** This will open a web browser, to complete the registration enter the OTP in the ''OTP from the Yubikey®'' field by pressing the button on your 3rd party device." type="default" %}
 
 {% include image.html file="image46.png" %}
 
-**Step 7.** Once the form is complete enter the Captcha and select Upload AES key.
+{% include callout.html content="**Step 7.** Once the form is complete enter the Captcha and select Upload AES key." type="default" %}
 
-**Step 8.** Now you can test your OTP on the site [https://demo.Yubico®.com/](https://demo.Yubico®.com/)
+{% include callout.html content="**Step 8.** Now you can test your OTP on the site [https://demo.Yubico®.com/](https://demo.Yubico®.com/)" type="default" %}
 
 {% include image.html file="image51.png" %}
 
@@ -374,13 +373,13 @@ In order to Load your own custom U2F certificate to OnlyKey see the certificate 
 
 OnlyKey works just like any other U2F token. Follow the steps below to configure a slot to use U2F.
 
-**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting "Submit".
+{% include callout.html content="**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting ''Submit''." type="default" %}
 
 {% include image.html file="image34.png" max-width="90" %}
 
-**Step 2.** Go to the website that you wish to register a new security token and when you select to register a token you will notice the OnlyKey light flashing (Blue for OnlyKey Color) on and off. Press the button corresponding to the slot you set to U2F in step 1 to register token.
+{% include callout.html content="**Step 2.** Go to the website that you wish to register a new security token and when you select to register a token you will notice the OnlyKey light flashing (Blue for OnlyKey Color) on and off. Press the button corresponding to the slot you set to U2F in step 1 to register token." type="default" %}
 
-**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login.
+{% include callout.html content="**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login." type="default" %}
 
 Learn more about OnlyKey's implementation of U2F [here.](#universal-2nd-factor-authentication-u2f)
 
@@ -396,25 +395,25 @@ LastPass supports both Google Authenticator and Yubico® OTP. Google Authenticat
 
 To protect LastPass account with Google Authenticator 2FA follow the steps below.
 
-**Step 1.** Go into Account settings-> Multi-factor Options and select the edit button in the Google Authenticator column.
+{% include callout.html content="**Step 1.** Go into Account settings-> Multi-factor Options and select the edit button in the Google Authenticator column." type="default" %}
 
 {% include image.html file="image71.png" max-width="495" %}
 
-**Step 2.** Change to enabled and select View button next to Private Key
+{% include callout.html content="**Step 2.** Change to enabled and select View button next to Private Key" type="default" %}
 
 {% include image.html file="image7.png" max-width="351" %}
 
-**Step 3.** You will be prompted to enter your master password and then the key is displayed.
+{% include callout.html content="**Step 3.** You will be prompted to enter your master password and then the key is displayed." type="default" %}
 
 {% include image.html file="image11.png" max-width="369" %}
 
-**Step 4.** Copy and paste the key into the Google Auth OTP field of the OnlyKey app for the slot that you want to set up.
+{% include callout.html content="**Step 4.** Copy and paste the key into the Google Auth OTP field of the OnlyKey app for the slot that you want to set up." type="default" %}
 
 {% include image.html file="image53.png" max-width="415" %}
 
-**Step 5.** Make sure to check the radio button next to Google Auth OTP and select Submit.
+{% include callout.html content="**Step 5.** Make sure to check the radio button next to Google Auth OTP and select Submit." type="default" %}
 
-**Step 6.** Go back to the LastPass app and select Update. You will be prompted for your password again and then your current verification code. Click inside the verification code box and press the button assigned to the slot you set up on your OnlyKey to type out the verification code.
+{% include callout.html content="**Step 6.** Go back to the LastPass app and select Update. You will be prompted for your password again and then your current verification code. Click inside the verification code box and press the button assigned to the slot you set up on your OnlyKey to type out the verification code." type="default" %}
 
 {% include image.html file="image74.png" max-width="430" %}
 
@@ -515,29 +514,29 @@ If this is your first time creating keys or if you would like to create new keys
 
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)" %}
 
-**Step 1.** Open Chrome and then open this link to go to the[ Mailvelope Extension in the Chrome Web Store.](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) Click ADD TO CHROME, and then Add extension to add the extension to Chrome.
+{% include callout.html content="**Step 1.** Open Chrome and then open this link to go to the[ Mailvelope Extension in the Chrome Web Store.](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) Click ADD TO CHROME, and then Add extension to add the extension to Chrome." type="default" %}
 
 {% include image.html file="image81.png" max-width="525" %}
 
 {% include image.html file="image57.png" max-width="314" %}
 
-**Step 2.** Now a small lock and key will show up in the top right of the Chrome browser. Click the lock and then click Options.
+{% include callout.html content="**Step 2.** Now a small lock and key will show up in the top right of the Chrome browser. Click the lock and then click Options." type="default" %}
 
 {% include image.html file="image58.png" max-width="312" %}
 
-**Step 3.** On the page that opens up click Generate Key
+{% include callout.html content="**Step 3.** On the page that opens up click Generate Key" type="default" %}
 
 {% include image.html file="image39.png" max-width="513"%}
 
-**Step 4.** Fill in the name, email, and password you want to be assigned to your key. You can uncheck Upload public key to Mailvelope Key Server if you wish. Finally, click generate to create your key.
+{% include callout.html content="**Step 4.** Fill in the name, email, and password you want to be assigned to your key. You can uncheck Upload public key to Mailvelope Key Server if you wish. Finally, click generate to create your key." type="default" %}
 
 {% include image.html file="image8.png" %}
 
-**Step 5.** When you see Success! Click Display Keys and then click on the name of the key you created.
+{% include callout.html content="**Step 5.** When you see Success! Click Display Keys and then click on the name of the key you created." type="default" %}
 
 {% include image.html file="image30.png" %}
 
-**Step 6.** Click on Export, then click Private, then click save to save a local copy of your encrypted private key.
+{% include callout.html content="**Step 6.** Click on Export, then click Private, then click save to save a local copy of your encrypted private key." type="default" %}
 
 {% include important.html content="It is recommended to keep an offline copy of this in a secure location. For example, you could copy this to a USB flash drive or CD/DVD and then store it in a safe. You will need this key and the password you used when you created it to read encrypted messages, there is no way to recover this key if you lose it." %}
 
@@ -545,19 +544,19 @@ If this is your first time creating keys or if you would like to create new keys
 
 ### Loading RSA Keys {#loading-rsa-keys}
 
-**Step 1.** Starting from the last step of the Generating Keys section, select all of the text in the Private box (CTRL+A), and copy the text (CTRL+C).
+{% include callout.html content="**Step 1.** Starting from the last step of the Generating Keys section, select all of the text in the Private box (CTRL+A), and copy the text (CTRL+C)." type="default" %}
 
 {% include image.html file="image15.png" max-width="465" %}
 
-**Step 2.** Click on the Keys tab of the OnlyKey Chrome App.
+{% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey Chrome App." type="default" %}
 
-**Step 3.** Put the OnlyKey into config mode doing the following
+{% include callout.html content="**Step 3.** Put the OnlyKey into config mode doing the following" type="default" %}
 
 *   Ensure OnlyKey is unlocked
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-**Step 4.** Paste the copied private key into the RSA Private Key box and then enter the same Passphrase you used when you generated your private key.
+{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box and then enter the same Passphrase you used when you generated your private key." type="default" %}
 
 Select the slot where you would like to store this key, there are 4 RSA slots available.
 
@@ -565,11 +564,11 @@ Select the key features (what you want to use the key for) such as backup, signa
 
 {% include image.html file="image19.png" %}
 
-**Step 5.** Click Save to OnlyKey, then select primary or subkey. The primary key is typically used to sign other keys so you will generally want to load the subkey(s).
+{% include callout.html content="**Step 5.** Click Save to OnlyKey, then select primary or subkey. The primary key is typically used to sign other keys so you will generally want to load the subkey(s)." type="default" %}
 
 {% include image.html file="image87.png" max-width="349" %}
 
-**Step 6** Click Save, and you should see the message Successfully set RSA Key.
+{% include callout.html content="**Step 6** Click Save, and you should see the message Successfully set RSA Key." type="default" %}
 
 ### Loading ECC Keys  {#loading-ecc-keys}
 
@@ -589,11 +588,11 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 ### Backup With OnlyKey App {#backup-with-onlykey-app}
 
-**Step 1.** First, you must have a backup key and have this set on your OnlyKey. Follow the instructions in the [Generating Keys](#generating-keys) section to create a new key and then follow the instructions in the [Loading Keys](#loading-rsa-keys) section to load and set as backup key.
+{% include callout.html content="**Step 1.** First, you must have a backup key and have this set on your OnlyKey. Follow the instructions in the [Generating Keys](#generating-keys) section to create a new key and then follow the instructions in the [Loading Keys](#loading-rsa-keys) section to load and set as backup key." type="default" %}
 
-**Step 2.** Click on the Backup/Restore tab of the OnlyKey Chrome App.
+{% include callout.html content="**Step 2.** Click on the Backup/Restore tab of the OnlyKey Chrome App." type="default" %}
 
-**Step 3.** Click inside the Backup data box and then hold down the 1 button on your OnlyKey for 5 seconds or more and then release. This will type out an encrypted backup of your OnlyKey configuration into the box. Select save file to save the backup file which has a timestamp so you can keep track of the latest backup file.
+{% include callout.html content="**Step 3.** Click inside the Backup data box and then hold down the 1 button on your OnlyKey for 5 seconds or more and then release. This will type out an encrypted backup of your OnlyKey configuration into the box. Select save file to save the backup file which has a timestamp so you can keep track of the latest backup file." type="default" %}
 
 {% include image.html file="image78.png" max-width="550" %}
 
@@ -611,17 +610,17 @@ Using the backup file created in the Secure Encrypted Backup Anywhere section, w
 
 {% include note.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
-**Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same key is loaded onto the OnlyKey that was used to backup by following the steps in the [Loading Keys](#loading-rsa-keys) section.
+{% include callout.html content="**Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same key is loaded onto the OnlyKey that was used to backup by following the steps in the [Loading Keys](#loading-rsa-keys) section." type="default" %}
 
-**Step 2.** Put the OnlyKey into config mode by holding the 6 button down for more than 5 seconds, and then re-entering your PIN. You will see the OnlyKey LED fade in and out continuously while in config mode.
+{% include callout.html content="**Step 2.** Put the OnlyKey into config mode by holding the 6 button down for more than 5 seconds, and then re-entering your PIN. You will see the OnlyKey LED fade in and out continuously while in config mode." type="default" %}
 
-**Step 4.** Click on the Backup/Restore tab of the OnlyKey App and then click Choose File to select your OnlyKey backup file. Click Restore to OnlyKey.
+{% include callout.html content="**Step 4.** Click on the Backup/Restore tab of the OnlyKey App and then click Choose File to select your OnlyKey backup file. Click Restore to OnlyKey." type="default" %}
 
-If you used the OnlyKey App to create the backup then the name of this file will be "onlykey-backup-<timestamp>.txt". The timestamp can be used to make sure you are loading the latest backup.
+If you used the OnlyKey App to create the backup then the name of this file will be ''onlykey-backup-<timestamp>.txt''. The timestamp can be used to make sure you are loading the latest backup.
 
 {% include image.html file="image45.png" %}
 
-**Step 5.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously.
+{% include callout.html content="**Step 5.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously." type="default" %}
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
@@ -802,15 +801,15 @@ If you ever need a replacement or extra keychain one can be purchased using the 
 
 If you don't like how far your OnlyKey hangs off of your keyring then follow these instructions to create a nice short keychain. You can do this yourself all that is needed is a pair of scissors.
 
-**Step 1.** As shown in the diagram below, pull excess through clip opening and tie a second knot approximately at the length of the end of the plastic attachment.
+{% include callout.html content="**Step 1.** As shown in the diagram below, pull excess through clip opening and tie a second knot approximately at the length of the end of the plastic attachment." type="default" %}
 
 {% include image.html file="image64.jpg" max-width="156" %}
 
-**Step 2.** Put the knot back through the clip opening and remove the keychain to make sure there is enough length left to fit over plastic attachment, if not increase length and re-tie knot.
+{% include callout.html content="**Step 2.** Put the knot back through the clip opening and remove the keychain to make sure there is enough length left to fit over plastic attachment, if not increase length and re-tie knot." type="default" %}
 
 {% include image.html file="image70.jpg" max-width="179" %}
 
-**Step 3.** Finally, cut off the first knot and enjoy your optimum length keychain.
+{% include callout.html content="**Step 3.** Finally, cut off the first knot and enjoy your optimum length keychain." type="default" %}
 
 {% include image.html file="image9.jpg" max-width="134" %}
 
@@ -915,7 +914,7 @@ Part 3. We make it easy for user's to load whatever version of the firmware they
 
 Anyone can view the open source firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases) and verify that this is the case. Since there are devices that ship without the ability to perform encryption it is plausible that your OnlyKey is one of these, just a basic password manager. There is not a way of knowing that there is another hidden profile that is only activated if you know the secret PIN. Best of all, changing the version of firmware on your device is easily accomplished as the OnlyKey is field upgradable. There is a section in the user's guide [here](#loading-onlykey-firmware) that provides instructions on flashing whichever Onlykey firmware you want.
 
-So now you can see how a user if compelled to do so could say "I just have a basic password manager, here is my PIN code" and it would be completely plausible that they do in fact just have a basic password manager. To be even more plausible the user should set up actual accounts with real credentials which work to log into websites.
+So now you can see how a user if compelled to do so could say ''I just have a basic password manager, here is my PIN code'' and it would be completely plausible that they do in fact just have a basic password manager. To be even more plausible the user should set up actual accounts with real credentials which work to log into websites.
 
 Are these the user's real accounts or are really just dummy accounts and there is another hidden profile? There is not a way of knowing.
 
@@ -983,7 +982,7 @@ There are 3 methods of two-factor authentication supported by Onlykey.
 
 ##### Google Authenticator (TOTP) {#google-authenticator-totp}
 
-Google Authenticator is an application that implements TOTP security tokens from RFC 6238 in mobile apps made by Google, sometimes branded "Two-step verification" (or 2-Step Verification).
+Google Authenticator is an application that implements TOTP security tokens from RFC 6238 in mobile apps made by Google, sometimes branded ''Two-step verification'' (or 2-Step Verification).
 
 Quoting Wikipedia:
 
@@ -995,7 +994,7 @@ With this kind of two-factor authentication, mere knowledge of username and pass
 
 The service provider generates an 80-bit secret key for each user (whereas RFC 4226 §4 requires 128 bits and recommends 160 bits).[36] This is provided as a 16, 26 or 32 character base32 string or as a QR code.
 
-As mentioned above the service provider generates a base32 string or a QR code. While the way you would set up the Google Authenticator app on your phone is typically to take a picture of the QR code you also have the option of displaying the base 32 string. This option is available when you are setting up an account there may be a link that says something like "Can't read QR code" that you have to click to show the base 32 key. You would then copy and paste this key into the the OnlyKey slot that you would like to use with this account.
+As mentioned above the service provider generates a base32 string or a QR code. While the way you would set up the Google Authenticator app on your phone is typically to take a picture of the QR code you also have the option of displaying the base 32 string. This option is available when you are setting up an account there may be a link that says something like ''Can't read QR code'' that you have to click to show the base 32 key. You would then copy and paste this key into the the OnlyKey slot that you would like to use with this account.
 
 
 {% include image.html file="image79.jpg" max-width="492" %}
