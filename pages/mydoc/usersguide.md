@@ -9,7 +9,7 @@ permalink: usersguide.html
 folder: mydoc
 ---
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image50.png"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/ok.jpg"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image50.png"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/ok.jpg"></div>
 
 # Unpacking {#unpacking}
 
@@ -17,20 +17,19 @@ folder: mydoc
 
 **Step 2.** Remove the small metal keyring if one is attached and discard this keyring.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image76.jpg" width= "20%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image76.jpg" width= "20%"></div>
 
 **Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image14.jpg" width= "40%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image14.jpg" width= "40%"></div>
 
 **Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
 
 **Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
 
-***PRO TIP - (Optional) Check out OnlyKey accessories - [color cases]({#onlykey-case}), [keychain options]({#keychain-options}), [mobile adapter]({#android-support}).*** 
+***PRO TIP - (Optional) Check out OnlyKey accessories - [color cases]({#onlykey-case}), [keychain options]({#keychain-options}), [mobile adapter]({#android-support}).***
 
 *Proceed to initial setup below*
-
 
 # Initial Setup {#initial-setup}
 
@@ -38,22 +37,22 @@ folder: mydoc
 
 **Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select "Add to Chrome"
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image41.png" width= "100%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image41.png" width= "100%"></div>
 
 **Step 3.** When prompted select "Add App"
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image12.png" width= "45%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image12.png" width= "45%"></div>
 
 **Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> "Bookmarks" -> "Show Bookmarks Bar" to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to "chrome://apps/") and then select the "OK" icon to launch the OnlyKey App.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image33.png" width= "60%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image33.png" width= "60%"></div>
 <br>
 <br>
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image17.png" width= "60%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image17.png" width= "60%"></div>
 
 **Step 5.** Once the OnlyKey Configuration App launches you will see the message "Please connect your OnlyKey"
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image18.png" width= "80%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image18.png" width= "80%"></div>
 
 **Step 6.** Insert the OnlyKey into USB port.
 
@@ -61,18 +60,17 @@ folder: mydoc
 
 ***LINUX USERS NOTE: If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)***
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image77.png"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image77.png"></div>
 
 **Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you are a US customer select Standard Edition. For international customers (outside of US) the OnlyKey comes pre-loaded with the International Travel Edition as shipping devices with military grade encryption is problematic in some countries. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) then you may load the standard OnlyKey firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image88.png"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image88.png"></div>
 
 ***PRO TIP - Before setting a PIN***
 
 *   *You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock an Android Lockscreen:*
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image86.png" width= "30%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image86.png" width= "30%"></div>
 
 *   *As described in the following steps you can use multiple PINs, make sure PINs are not set to the same thing or share the same sequence, this will not work they must be different. For example, if PIN A is "11223344" and PIN B is "1122334455" then when you try to type in PIN B the device would read PIN A before you enter "55".*
 
@@ -94,7 +92,7 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 **Step 14. Confirm Your PIN -**  Re-enter the same PIN and select "Next" to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image27.png"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image27.png"></div>
 
 ***PRO TIP - Don't Care About Plausible Deniability, how about a work profile and personal profile?***
 
@@ -110,19 +108,17 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 *If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware).*
 
-
 # Configure Profile {#configure-profile}
 
 ***PRO TIP -*** Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.
 
 **Enter your PIN -**  After removing and reinserting your OnlyKey you are prompted to enter the PIN you set during initial setup onto your OnlyKey six button keypad.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image82.png"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image82.png"></div>
 
 Now that your OnlyKey is unlocked you see this screen.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image31.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image31.png"></div>
 
 ### All About Slots {#all-about-slots}
 
@@ -134,24 +130,23 @@ Each button has two slots assigned to it that can be activated by holding the bu
 
 The slots that have not been configured have no label so they are shown as "empty". Next, let's set a label to slot 1a.
 
-
 ### Set a Label {#set-a-label}
 
 **Step 1.** Click the 1a button in the OnlyKey app and see the Slot 1a Configuration
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image36.png"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image36.png"></div>
 
 **Step 2.** Enter a label such as Gmail in the Label field, check the box next to Label, and click Submit.
 
 Now the label you entered is assigned to slot 1a. Slot labels are helpful if you forget which button is assigned to which account you can open the OnlyKey app at any time to see how it is set up.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image66.png"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image66.png"></div>
 
 **What if I am using a computer without the OnlyKey app?**
 
 This is where the card you received with your OnlyKey comes in handy. You can write your labels on this and carry this in your wallet. This is a low tech solution but it works great.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/card.png"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/card.png"></div>
 
 Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a.
 
@@ -159,14 +154,13 @@ Obviously, no sensitive information should be written on the card or saved to yo
 
 The example configuration shown below would be to set up a username and password to automatically login to the Google page shown below.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image35.png" width= "90%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image35.png" width= "90%"></div>
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image24.png" width= "90%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image24.png" width= "90%"></div>
 
-**Note: ** Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.
+**Note:** Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image3.png" width= "50%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image3.png" width= "50%"></div>
 
 ### Test a Slot {#test-a-slot}
 
@@ -187,9 +181,9 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
 
 The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered so there is not a need to set this in the OnlyKey slot.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image72.png" width= "90%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image72.png" width= "90%"></div>
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image23.png" width= "90%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image23.png" width= "90%"></div>
 
 *The table below shows how to configure some common login forms that at first may seem problematic. By using the delay setting of the OnlyKey we can support practically any login field format.*
 
@@ -247,16 +241,13 @@ After loading next page
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
 
-
 ### Generate Strong Password via Browser Extension {#generate-strong-password-via-browser-extension}
 
 Install a browser extension by selecting add to Chrome the same way that you installed the OnlyKey app.
 
 Chrome Extension available from the Chrome Web Store [here](https://chrome.google.com/webstore/detail/strong-password-generator/emehklffcaphknhhfhadkjhpfapcbpco).
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image21.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image21.png"></div>
 
 ### Generate Strong Passwords Online {#generate-strong-passwords-online}
 
@@ -264,14 +255,11 @@ There are many websites that allow you to generate a secure random password incl
 
 LastPass password generation tool available [here](https://lastpass.com/generatepassword.php).
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image59.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image59.png"></div>
 
 ## Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
 Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are three different types of 2FA supported by OnlyKey. There is more information on these available on the features page of the [OnlyKey Wiki](https://docs.crp.to). By supporting multiple modes of 2FA OnlyKey will work with most sites that suppor 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
-
 
 ### Google Authenticator (TOTP) {#google-authenticator-totp}
 
@@ -283,8 +271,7 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 *The way you would typically set up Google Authenticator without OnlyKey is to download the Google Authenticator app to your smartphone. You would then enable Google Authenticator on a website and the website would provide you with a QR code that looks like this:*
 
-<div markdown="1" style="text-align:center%;"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image84.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image84.png"></div>
 
 *You would then take a picture of the QR code the website gives you. The app then starts generating a 6 digit number that changes every 30 seconds that is required to be typed into the website login prompt in addition to your username and password.*
 
@@ -292,43 +279,35 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 **Step 1. Enable Google Authenticator App on Website -** If you are unsure if the website you want to setup supports OTP check [here](http://www.dongleauth.info/). Assuming that the website supports Google Authenticator you can proceed to enable Google Authenticator. For example to do this for your Google Account you must first enable 2-Step Verification and then you select "SETUP" as shown below:
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image85.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image85.png"></div>
 
 As you go through the steps you will be prompted to scan a QR code (Looks like a square bar code). You can go ahead and scan the QR code using your smartphone Google Authenticator app if you wish to create a backup and then select "CAN'T SCAN IT" as shown below:
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image6.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image6.png"></div>
 
 **Step 2. Copy and Paste Code into Chrome App -**
 
 Selecting "CAN'T SCAN IT" will display the private code. Select this text and copy it as shown below:
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image38.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image38.png"></div>
 
 Now open the OnlyKey Chrome Configuration App. With your correct PIN entered on the OnlyKey you are able to select the Slot to configure and paste this code into the field located next to "Google Auth OTP" as shown below:
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image65.png" width= "90%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image65.png" width= "90%"></div>
 
 Once you click submit your OnlyKey is ready to generate OTPs.
 
 **Step 3. Generate OTP -** Place your cursor in the "Enter code" field and press the button that corresponds to the slot that was set. In the example above we set slot 2a so we press the #2 button to generate the OTP.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image20.png" width= "70%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image20.png" width= "70%"></div>
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image75.png" width= "70%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image75.png" width= "70%"></div>
 
 Once your account has been verified you are all set. You can add a username and password to this slot so that you can do a one touch login. Keep in mind that the page may take a second or two to load where your 6 digit OTP is entered so set the delay accordingly, 4 - 5 seconds delay should be plenty of time.
 
-
-<div markdown="1" style="text-align:center width: 60%;"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image37.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image37.png"></div>
 
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
-
 
 ### Yubico® One-Time Password {#Yubico®-one-time-password}
 
@@ -336,36 +315,28 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 
 ***PRO TIP - The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP.***
 
-
 *   First download and install the [Yubikey® personalization tools](https://www.Yubico.com/support/download/)
 *   Go into Yubico® OTP and select "Quick"
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image43.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image43.png"></div>
 
 *   Select the "Hide values" checkbox and select "Regenerate" to create a Public Identify, Private Identity, and Secret Key.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image1.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image1.png"></div>
 
 *   Copy and paste these into the corresponding fields on the OnlyKey Configuration App.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image62.png" width= "50%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image62.png" width= "50%"></div>
 
 *   Select "Save to OnlyKey" to write these values to your OnlyKey
 *   Now your OnlyKey is ready to function in Yubikey® OTP mode
 *   Just select a slot that you wish to use with Yubikey® OTP mode by selecting the radio button and then selecting "Submit". The Yubikey® OTP will be generated when the corresponding button is pressed.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image56.png" width= "80%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image56.png" width= "80%"></div>
 
 The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP.
 
 Learn more about Yubikey® OTP implementation [here.](#Yubico®-one-time-password)
-
 
 ### Yubicloud (Not Officially Support)  {#yubicloud-not-officially-support}
 
@@ -379,8 +350,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 **Step 3.** Insert Yubikey®, select a configuration slot, and click "Write configuration" button
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image5.png" width= "90%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image5.png" width= "90%"></div>
 
 **Step 4.** Set the values shown in the Public Identity, Private Identity, and Secret Key to your 3rd party device.
 
@@ -388,18 +358,13 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 **Step 6.** This will open a web browser, to complete the registration enter the OTP in the "OTP from the Yubikey®" field by pressing the button on your 3rd party device.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image46.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image46.png"></div>
 
 **Step 7.** Once the form is complete enter the Captcha and select Upload AES key.
 
 **Step 8.** Now you can test your OTP on the site [https://demo.Yubico®.com/](https://demo.Yubico®.com/)
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image51.png"></div>
-
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image51.png"></div>
 
 ### Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
 
@@ -411,9 +376,7 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 
 **Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting "Submit".
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image34.png" width= "90%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image34.png" width= "90%"></div>
 
 **Step 2.** Go to the website that you wish to register a new security token and when you select to register a token you will notice the OnlyKey light flashing (Blue for OnlyKey Color) on and off. Press the button corresponding to the slot you set to U2F in step 1 to register token.
 
@@ -421,13 +384,11 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 
 Learn more about OnlyKey's implementation of U2F [here.](#universal-2nd-factor-authentication-u2f)
 
-
 ## Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
 OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.
 
 ***PRO TIP - This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.***
-
 
 ### LastPass {#lastpass}
 
@@ -437,64 +398,51 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 **Step 1.** Go into Account settings-> Multi-factor Options and select the edit button in the Google Authenticator column.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image71.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image71.png"></div>
 
 **Step 2.** Change to enabled and select View button next to Private Key
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image7.png" width= "80%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image7.png" width= "80%"></div>
 
 **Step 3.** You will be prompted to enter your master password and then the key is displayed.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image11.png" width= "80%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image11.png" width= "80%"></div>
 
 **Step 4.** Copy and paste the key into the Google Auth OTP field of the OnlyKey app for the slot that you want to set up.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image53.png" width= "90%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image53.png" width= "90%"></div>
 
 **Step 5.** Make sure to check the radio button next to Google Auth OTP and select Submit.
 
 **Step 6.** Go back to the LastPass app and select Update. You will be prompted for your password again and then your current verification code. Click inside the verification code box and press the button assigned to the slot you set up on your OnlyKey to type out the verification code.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image74.png" width= "90%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image74.png" width= "90%"></div>
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image13.png" width= "90%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image13.png" width= "90%"></div>
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image10.png" width= "90%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image10.png" width= "90%"></div>
 
 ### DashLane {#dashlane}
 
 DashLane supports Google Authenticator, Yubico® OTP, and U2F. The choice is yours but for beginners Google Authenticator is the best option.
 
-
 ### Google SmartLock {#google-smartlock}
 
 SmartLock is a new password manager that is available in Google Chrome. Since this uses a Google account it supports Google Authenticator or U2F. The choice is yours but for beginners Google Authenticator is the best option.
-
 
 # Preferences {#preferences}
 
 OnlyKey has several customizable preferences that can be accessed from the preferences tab of the configuration app.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image63.png"></div>
-
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image63.png"></div>
 
 ## Configurable Inactivity Lockout Period {#configurable-inactivity-lockout-period}
 
 This is the amount of time that the OnlyKey should remain unlocked while not being used. The default value is 30 minutes and the maximum is 255 minutes (about 4 hours). To disable lockout altogether set the lockout to 0.
 
-
 ## Configurable Keyboard Type Speed {#configurable-keyboard-type-speed}
 
 Setting a custom type speed may be desirable in cases where the application you are using can not keep up with fast typing. Or if you don't use any applications with type speed restrictions you can have the text typed at top speed for the fastest logins. Setting value to 1 will result in very slow type speed of about one character a second, setting value to 10 will result in very fast type speed that will type almost instantly.
-
 
 ## Configurable Wipe Mode {#configurable-wipe-mode}
 
@@ -502,12 +450,9 @@ Setting a custom type speed may be desirable in cases where the application you 
 
 **Use Case #2** - You are just really paranoid and want to erase any trace of your OnlyKey when a factory default occurs. Doing a full wipe is one way to be absolutely sure that everything including the firmware has been eliminated from your device.
 
-
 ## Configurable Keyboard Layouts {#configurable-keyboard-layouts}
 
 We now support changing your keyboard layout on the fly through the Chrome app no firmware reload required. Traveling to France from the US? No problem just set the OnlyKey keyboard to French and change it back to US when you return. Here are the options supported for international keyboards:
-
-
 
 *   US_ENGLISH
 *   CANADIAN_FRENCH
@@ -535,11 +480,9 @@ We now support changing your keyboard layout on the fly through the Chrome app n
 *   CZECH
 *   SERBIAN_LATIN_ONLY
 
-
 # Encryption Keys {#encryption-keys}
 
 OnlyKey makes encryption keys easier and by storing them offline, protected even if the computer using the keys is compromised.
-
 
 ## Key FAQ {#key-faq}
 
@@ -555,15 +498,12 @@ You may hear the term private key being used sometimes, we will not get into the
 
 The OnlyKey stores private keys. These private keys are used for four different purposes.
 
-
-
 1.  **Secure Encrypted Backup** - OnlyKey allows using RSA or ECC private keys to backup your OnlyKey. This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For more information see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
 1.  **SSH Authentication** - OnlyKey allows using ECC private keys for SSH authentication. Using the OnlyKey agent ssh authentication can be accomplished by storing a key on the OnlyKey and setting it as an authentication key. For more information see [SSH Authentication](#ssh-login).
 1.  **Email/File Decryption** - Using the OnlyKey PGP Message Tool, the OnlyKey supports decryption of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as experimental, to try it out we recommend encrypting emails with Mailvelope (Using RSA 4096 Key) and decrypting with the OnlyKey PGP Message Tool. More to come here we are looking to partner to support a web based OpenPGP solution.
 1.  **Email/File Signing** - Using the OnlyKey PGP Message Tool, the OnlyKey supports signing of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as proof of concept and is not available for general use.
 
 Learn more about keys feature [here.](#keys-feature)
-
 
 ## Generating Keys {#generating-keys}
 
@@ -577,52 +517,41 @@ If this is your first time creating keys or if you would like to create new keys
 
 **Step 1.** Open Chrome and then open this link to go to the[ Mailvelope Extension in the Chrome Web Store.](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) Click ADD TO CHROME, and then Add extension to add the extension to Chrome.
 
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image81.png"></div>
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image81.png"></div>
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image57.png" width= "60%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image57.png" width= "60%"></div>
 
 **Step 2.** Now a small lock and key will show up in the top right of the Chrome browser. Click the lock and then click Options.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image58.png" width= "70%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image58.png" width= "70%"></div>
 
 **Step 3.** On the page that opens up click Generate Key
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image39.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image39.png"></div>
 
 **Step 4.** Fill in the name, email, and password you want to be assigned to your key. You can uncheck Upload public key to Mailvelope Key Server if you wish. Finally, click generate to create your key.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image8.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image8.png"></div>
 
 **Step 5.** When you see Success! Click Display Keys and then click on the name of the key you created.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image30.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image30.png"></div>
 
 **Step 6.** Click on Export, then click Private, then click save to save a local copy of your encrypted private key.
 
 **Note:** It is recommended to keep an offline copy of this in a secure location. For example, you could copy this to a USB flash drive or CD/DVD and then store it in a safe. You will need this key and the password you used when you created it to read encrypted messages, there is no way to recover this key if you lose it.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image68.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image68.png"></div>
 
 ## Loading RSA Keys {#loading-rsa-keys}
 
 **Step 1.** Starting from the last step of the Generating Keys section, select all of the text in the Private box (CTRL+A), and copy the text (CTRL+C).
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image15.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image15.png"></div>
 
 **Step 2.** Click on the Keys tab of the OnlyKey Chrome App.
 
 **Step 3.** Put the OnlyKey into config mode doing the following
-
-
 
 *   Ensure OnlyKey is unlocked
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
@@ -634,23 +563,19 @@ Select the slot where you would like to store this key, there are 4 RSA slots av
 
 Select the key features (what you want to use the key for) such as backup, signature, decryption, authentication. You can select them all but only one key can be set as the backup key, if you load a new key and set it as backup it will be the backup key and the old key will no longer be used for backup.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image19.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image19.png"></div>
 
 **Step 5.** Click Save to OnlyKey, then select primary or subkey. The primary key is typically used to sign other keys so you will generally want to load the subkey(s).
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image87.png" width= "70%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image87.png" width= "70%"></div>
 
 **Step 6** Click Save, and you should see the message Successfully set RSA Key.
-
 
 ## Loading ECC Keys  {#loading-ecc-keys}
 
 Loading ECC keys is a more advanced topic and requires familiarity with using terminal commands. ECC Keys are required for SSH Authentication and can be used for encrypted backups. Up to 32 ECC keys can be stored on OnlyKey.
 
 The [OpenSSL ECC Key Generation guide here](https://docs.google.com/document/d/14RxoaqBLEhU8nizZeeB2RbZVJAG6sxXD7epkdt7Ukls/pub) provides instructions on how to generate OnlyKey compatible ECC keys and load them onto the OnlyKey
-
 
 # Secure Encrypted Backup Anywhere {#secure-encrypted-backup-anywhere}
 
@@ -660,9 +585,7 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 The backup feature was introduced in firmware version v0.2-beta.4, but for users who use the second profile (plausible deniability mode) make sure your OnlyKey is running firmware v0.2-beta.5 or later. You can check this once your device is configured by looking in the bottom right corner of the OnlyKey Chrome App. If you are running an earlier version follow the
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image83.png"></div>
-
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image83.png"></div>
 
 ## Backup With OnlyKey App {#backup-with-onlykey-app}
 
@@ -672,18 +595,15 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 **Step 3.** Click inside the Backup data box and then hold down the 1 button on your OnlyKey for 5 seconds or more and then release. This will type out an encrypted backup of your OnlyKey configuration into the box. Select save file to save the backup file which has a timestamp so you can keep track of the latest backup file.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image78.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image78.png"></div>
 
 ***PRO TIP*** - Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey Chrome app and select a higher setting, 9 usually works well.
-
 
 ## Backup Without OnlyKey App {#backup-without-onlykey-app}
 
 The process is the same to backup without the app. Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the file using whatever filename you prefer. In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else.
 
 **Note:** While the backup is already encrypted using what would be considered as "military grade" encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup.
-
 
 # Restore From Backup {#restore-from-backup}
 
@@ -699,11 +619,9 @@ Using the backup file created in the Secure Encrypted Backup Anywhere section, w
 
 If you used the OnlyKey App to create the backup then the name of this file will be "onlykey-backup-<timestamp>.txt". The timestamp can be used to make sure you are loading the latest backup.
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image45.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image45.png"></div>
 
 **Step 5.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously.
-
 
 # Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
@@ -711,16 +629,11 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 *Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical. For that matter you can load any custom firmware you want on it.*
 
-
-
 1.  Insert OnlyKey into USB port
-1.  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)
-1.  Determine which version of OnlyKey you have and download firmware below
+2.  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)
+3.  Determine which version of OnlyKey you have and download firmware below
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image25.jpg" width= "40%"></div>
-
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image25.jpg" width= "40%"></div>
 
 <table>
   <tr>
@@ -741,10 +654,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
   </tr>
 </table>
 
-
-
-
-1.  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA256 hash of the downloaded file matches these
+4.  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA256 hash of the downloaded file matches these
 
 <table>
   <tr>
@@ -783,67 +693,46 @@ File Name
 
 ***PRO TIP*** - To do this in Windows open a command prompt and type "certUtil -hashfile pathToFileToCheck SHA256". To do this in Linux open a terminal and type "sha256sum pathToFileToCheck". Where pathToFileToCheck is replaced with the path of the file you are checking.
 
+5.  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open.
+6.  Now the firmware should appear at the bottom of the Teensy Loader application.
 
-
-1.  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open.
-2.  Now the firmware should appear at the bottom of the Teensy Loader application.
-
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image67.png" width= "30%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image67.png" width= "30%"></div>
 
 *Note: If a message prompts that "HEX file is too large" ensure that your OnlyKey is plugged in.*
 
-
-
-3.  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port.
+7.  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port.
 
 ***PRO TIP*** - If your OnlyKey has a case on it you can just slip the two corners out of the case without completely removing the case.
 
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image16.png"></div>
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image16.png"></div>
+8.  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully.
 
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image48.png" width= "40%"></div>
 
-4.  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully.
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image48.png" width= "40%"></div>
-
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image2.png" width= "40%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image2.png" width= "40%"></div>
 
 **Under The Hood** - One of the great things about this method of firmware loading is that you, the user, can load your own firmware and in doing so be sure that your OnlyKey has not been tampered with. What actually happens when you load the firmware is that a mass erase is completed first. What this means is that all data is completely wiped, and then the new firmware is loaded. This way if say you suspect that your device was tampered with by someone or you just like to know for sure you can just re-load the firmware yourself.
 
-
 # OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
-
 
 ### OnlyKey Case {#onlykey-case}
 
 The OnlyKey silicon case provides additional protection and gives OnlyKey a polished appearance. To put on the case just carefully slide the case over the OnlyKey as shown below:
 
-
 <table>
   <tr>
    <td>
-
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image40.jpg">
-
    </td>
    <td>
-
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image80.jpg">
-
    </td>
    <td>
-
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image49.jpg">
-
    </td>
   </tr>
 </table>
-
-
 
 ### Android Support {#android-support}
 
@@ -851,30 +740,22 @@ Android is supported by using a USB on-the-go (OTG) adapter. There are two types
 
 Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently on Android.
 
-
 #### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
-**Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S               , Moto G5, Moto X, or other Android device with USB Micro and OTG support.**[https://www.amazon.com/dp/B071Y4CZV9](https://www.amazon.com/dp/B071Y4CZV9)*
+**Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support.**[https://www.amazon.com/dp/B071Y4CZV9](https://www.amazon.com/dp/B071Y4CZV9)
 
 This solution is ideal as it can be carried on a keychain for on the go use.
-
 
 <table>
   <tr>
    <td>
-
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image55.png">
-
    </td>
    <td>
-
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image26.jpg">
-
    </td>
   </tr>
 </table>
-
-
 
 #### [USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html) {#usb-c-to-usb-3-otg-adapter}
 
@@ -882,18 +763,13 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 
 [https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image73.png" width= "50%"></div>
-
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image73.png" width= "50%"></div>
 
 ### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
 
 This is currently in the experimental phase so there is not official support. User's have claimed to successfully use OnlyKey on their iPhones using a USB adapter like the one shown below.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image29.png"  width= "50%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image29.png"  width= "50%"></div>
 
 [https://www.amazon.com/gp/product/B00S9I7EPO/](https://www.amazon.com/gp/product/B00S9I7EPO/)
 
@@ -903,11 +779,11 @@ Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the 
 
 #### Standard Keychain
 
-The standard keychain that comes with the OnlyKey is plastic which provides good durability and an easy quick disconnect for convenient access. 
+The standard keychain that comes with the OnlyKey is plastic which provides good durability and an easy quick disconnect for convenient access.
 
 If you ever need a replacement or extra keychain one can be purchased using the link below:
 
-<div markdown="1" style="text-align:center">
+<div markdown="1">
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	<input type="hidden" name="cmd" value="_s-xclick">
 	<input type="hidden" name="hosted_button_id" value="FCWD7D8B4G7VY">
@@ -922,20 +798,15 @@ If you don't like how far your OnlyKey hangs off of your keyring then follow the
 
 **Step 1.** As shown in the diagram below, pull excess through clip opening and tie a second knot approximately at the length of the end of the plastic attachment.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image64.jpg" width= "25%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image64.jpg" width= "25%"></div>
 
 **Step 2.** Put the knot back through the clip opening and remove the keychain to make sure there is enough length left to fit over plastic attachment, if not increase length and re-tie knot.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image70.jpg" width= "30%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image70.jpg" width= "30%"></div>
 
 **Step 3.** Finally, cut off the first knot and enjoy your optimum length keychain.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image9.jpg" width= "20%"></div>
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image9.jpg" width= "20%"></div>
 
 #### Other Keychain Options
 
@@ -945,14 +816,11 @@ Various other Keychains may be used some ideas are shown below:
 
 <div markdown="1" style="text-align:center width: 40%;"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/keychain2.jpg"></div>
 
-
 # Troubleshooting {#troubleshooting}
-
 
 ## Common Issues {#common-issues}
 
 Below is a list of common issues and solutions.
-
 
 <table>
   <tr>
@@ -999,40 +867,31 @@ Below is a list of common issues and solutions.
   </tr>
 </table>
 
-
 If you have an issue not listed here please reference the online support forum [here.](https://groups.google.com/forum/#!forum/onlykey)
 
-
 # Additional Information {#additional-information}
-
 
 ## Alternate Backup Method {#alternate-backup-method}
 
 This method has been replaced by the built-in OnlyKey secure backup method but is provided here for reference.
 
-
 ## Standard Edition OnlyKey Backup using Veracrypt/Truecrypt 7.1a {#standard-edition-onlykey-backup-using-veracrypt-truecrypt-7-1a}
 
 [https://youtu.be/NYh5eZS6gsc](https://youtu.be/NYh5eZS6gsc)
-
 
 ## Plausible Deniability OnlyKey Backup using Veracrypt/Truecrypt 7.1a {#plausible-deniability-onlykey-backup-using-veracrypt-truecrypt-7-1a}
 
 [https://youtu.be/vrhZyddwzxQ](https://youtu.be/vrhZyddwzxQ)
 
-
 ## Features {#features}
-
 
 ### Password Manager {#password-manager}
 
 The primary benefit to having an OnlyKey is that instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong 32 character passwords along with the usernames and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
 
-
 ### Self-Destruct {#self-destruct}
 
 Wouldn't it be nice to know that your data is protected, and if you are in a pinch or forced to give up your PIN there is an easy way to make sure that your data does not get into the wrong hands? That is what the Self-Destruct feature is all about. You set this PIN code whenever you first setup your OnlyKey and then if you or anyone else ever enters it the OnlyKey wipes all of the sensitive data you have stored on it.
-
 
 ### Plausible Deniability (International Travel Edition and Standard Edition of Firmware) {#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware}
 
@@ -1064,7 +923,6 @@ Q - When should I not use the plausible deniability PIN?
 
 A - Plausible deniability is only good if you are in a country where your worst case scenario is that you will be fined for using encryption. If someone is holding a gun to your head or there is risk of torture plausible deniability is pretty much useless. For more information on why see this [https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis](https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis).
 
-
 ### Hardware Security {#hardware-security}
 
 When it comes to hardware security there are terms such as tamper resistant, tamper proof, and secure element. These terms are mostly marketing terms as anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof, and tamper resistant can mean something as simple as the device being coated in plastic that can [easily be removed](http://www.hexview.com/~scl/neo/). The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels.
@@ -1076,17 +934,13 @@ While we do not plan on pursuing FIPS certification we can attest that OnlyKey m
 In addition to this, we enable the [Kinetis flash security](http://cache.nxp.com/files/microcontrollers/doc/app_note/AN4507.pdf) the first time the device is used. This ensures that the firmware, and all sensitive information stored in memory is essentially locked down. The ability to read or write to the chip from external sources is disabled. The only way to clear this so the OnlyKey can load new firmware is to place a jumper between the two touch points of the OnlyKey shown here:
 
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image16.png" width= "100%"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image16.png" width= "100%"></div>
 
 When a connection is placed between these two points it does two things, first it proves that a user is present there is no way for malware running on the connected computer to do this, second it does a mass erase of the OnlyKey. A mass erase essentially wipes everything and returns the chip to a factory default state. Once this is complete new firmware can be loaded to the Onlykey.
 
 If you would like to read more about the flash security features of the MK20 [here](https://www.pjrc.com/teensy/K20P64M72SF1RM.pdf) is a document that describes in detail. If you plan to mess around with the flash security features - WARNING - Changes to the flash security settings can brick your device. We tested this feature to ensure this does not happen but any changes you make to source code are at your own risk.
 
-
 ### LED Definitions (OnlyKey Color) {#led-definitions-onlykey-color}
-
-
 
 *   Steady Green Light = Unlocked
 *   No Light = Locked
@@ -1099,10 +953,7 @@ If you would like to read more about the flash security features of the MK20 [he
 *   Turquoise Fade in and Fade out - Private key decryption request
 *   Red Fade in and Fade out - Device is in config mode
 
-
 ### LED Definitions (Original OnlyKey) {#led-definitions-original-onlykey}
-
-
 
 *   Steady Light = Unlocked
 *   No Light = Locked
@@ -1114,20 +965,15 @@ If you would like to read more about the flash security features of the MK20 [he
 *   Fade in and Fade out = U2F, SSH, or private key operation request
    Or if you have placed your device into config mode
 
-
-
 ### Two-Factor Authentication {#two-factor-authentication}
 
 There are 3 methods of two-factor authentication supported by Onlykey.
-
-
 
 *   Google Authenticator (TOTP)
 *   Universal 2nd Factor Authentication (U2F)
 *   Yubico® One-Time Password
 
 #### Google Authenticator (TOTP) {#google-authenticator-totp}
-
 
 Google Authenticator is an application that implements TOTP security tokens from RFC 6238 in mobile apps made by Google, sometimes branded "Two-step verification" (or 2-Step Verification).
 
@@ -1144,13 +990,11 @@ The service provider generates an 80-bit secret key for each user (whereas RFC 4
 As mentioned above the service provider generates a base32 string or a QR code. While the way you would set up the Google Authenticator app on your phone is typically to take a picture of the QR code you also have the option of displaying the base 32 string. This option is available when you are setting up an account there may be a link that says something like "Can't read QR code" that you have to click to show the base 32 key. You would then copy and paste this key into the the OnlyKey slot that you would like to use with this account.
 
 
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image79.jpg"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image79.jpg"></div>
 
 And then press the OnlyKey button to output your 6 digit OTP into the passcode field to complete the setup. Now you can also go and set your username and password to this slot and have a complete one touch login with two-factor authentication.
 
 Currently the Google Authenticator (TOTP) feature requires the Chrome app to be open.
-
 
 #### Universal 2nd Factor Authentication (U2F) {#universal-2nd-factor-authentication-u2f}
 
@@ -1160,13 +1004,11 @@ For the attestation certificates we allow users to import their own certificates
 
 This all being said the implementation of U2F has not been certified by the FIDO Alliance as an approved token.
 
-
 #### Yubico® One-Time Password {#Yubico®-one-time-password}
 
 OnlyKey's implementation of the Yubico® OTP is based on the open source library provided by Yubico® [here](https://github.com/Yubico/Yubico-c). The one-time passwords generated by OnlyKey have been tested to be indistinguishable from the one-time passwords generated by a Yubikey®. However, some services like Yubicloud do not allow third-party devices and require a valid serial number from a Yubikey®. For example, you can test your OnlyKey with the [https://demo.Yubico.com/](https://demo.Yubico.com/) test site but you would be required to have a valid Yubikey® serial number to do so.
 
 For more information on Yubico® OTP see [this](https://www.Yubico.com/products/services-software/personalization-tools/Yubikey-otp/)
-
 
 ### Keys Feature {#keys-feature}
 
@@ -1174,17 +1016,12 @@ The keys feature allows you to use OnlyKey to store private keys that can be use
 
 Under the hood -
 
-
-
 *   Up to 32 ECC keys are supported of type curve25519, P256 (NIST), and secp256k1 (Used for Bitcoin)
 *   Up to 4 RSA keys are supported with key sizes 1024, 2048, 3072, and 4096 bit keys.
 
-
-<div markdown="1" style="text-align:center"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image69.png"></div>
-
+<div markdown="1"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image69.png"></div>
 
 Keys are loaded using the OnlyKey Chrome App. For a demonstration see [https://vimeo.com/210800252](https://vimeo.com/210800252)
-
 
 ### SSH Login {#ssh-login}
 
@@ -1192,20 +1029,17 @@ SSH Authentication - Currently only ECC keys are supported for SSH authenticatio
 
 See [https://github.com/trustcrypto/onlykey-agent](https://github.com/trustcrypto/onlykey-agent)
 
-
 ### Email/File Signing (OpenPGP) {#email-file-signing-openpgp}
 
 Using the OnlyKey PGP Message Tool, the OnlyKey supports signing of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as proof of concept, additional work is needed to properly generate signatures that can be validated.
 
 See [https://github.com/trustcrypto/python-onlykey](https://github.com/trustcrypto/python-onlykey)
 
-
 ### Email/File Decryption (OpenPGP) {#email-file-decryption-openpgp}
 
 Using the OnlyKey PGP Message Tool, the OnlyKey supports decryption of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as experimental, to try it out we recommend encrypting emails with Mailvelope (Using RSA 4096 Key) and decrypting with the OnlyKey PGP Messege Tool. The benefit this provides is that your private key is never exposed on a computer where it can be compromised by hacker.
 
 See [https://github.com/trustcrypto/python-onlykey](https://github.com/trustcrypto/python-onlykey)
-
 
 ### Config Mode {#config-mode}
 
@@ -1218,7 +1052,6 @@ While Bob should not have left his device unlocked and unattended we still want 
 Note - Backups only supported on Standard Edition firmware and not while in plausible deniability mode. The reason is the backup requires encryption and plausible deniability requires being able to deny that any encryption is used.
 
 For a demonstration of backup feature see [https://vimeo.com/210800252](https://vimeo.com/210800252)
-
 
 ### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
 
@@ -1314,10 +1147,7 @@ Touchpin 6 Value = 721
 
 With user interaction, the touchpin values change significantly. Also the touchpins next to the button that was pressed change slightly just from the proximity of a user's finger to that button. As implemented, touchpin values are read from all six capacitive touch sensors once every ~10ms and users are required to have a PIN of 7 – 10 digits. During a typical login (One button press per second), this generates approximately 56 - 80 numbers based on the conductivity of a user's skin and 280 - 400 numbers based on the conductivity of the air around the buttons not being pressed. By performing xor and bitshift operations on these numbers we can generate a random number that is based on non-deterministic values that are completely unpredictable. Additionally, if a user enters an incorrect PIN this would generate even more entropy as this would require re-entering the PIN and during use the buttons are also pressed to select sites to authenticate to which generates constantly unpredictable entropy.
 
-
 ## Web Links {#web-links}
-
-** **
 
 Documentation - [https://docs.crp.to](https://docs.crp.to)
 
