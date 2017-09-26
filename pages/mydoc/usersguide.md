@@ -1,5 +1,5 @@
 ---
-title: OnlyKey User's Guide
+title: OnlyKey User's Guide {% include image.html file="ok.jpg" %}
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
 last_updated: Sept, 25, 2017
@@ -9,7 +9,6 @@ permalink: usersguide.html
 folder: mydoc
 ---
 
-{% include image.html file="ok.jpg" %}
 {% include image.html file="image50.png" %}
 
 ## Unpacking {#unpacking}
