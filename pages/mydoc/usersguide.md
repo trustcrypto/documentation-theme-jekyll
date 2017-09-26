@@ -26,9 +26,8 @@ folder: mydoc
 
 **Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
 
-```
 {% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases]({#onlykey-case}), [keychain options]({#keychain-options}), [mobile adapter]({#android-support})." %}
-```
+
 *Proceed to initial setup below*
 
 ## Initial Setup {#initial-setup}
@@ -64,9 +63,9 @@ folder: mydoc
 **Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you are a US customer select Standard Edition. For international customers (outside of US) the OnlyKey comes pre-loaded with the International Travel Edition as shipping devices with military grade encryption is problematic in some countries. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) then you may load the standard OnlyKey firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup.
 
 {% include image.html file="image88.png" max-width="100" %}
-```
+
 {% include tip.html content="Before setting a PIN" %}
-```
+
 *   *You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock an Android Lockscreen:*
 
 {% include image.html file="image86.png" max-width="100" %}
@@ -92,13 +91,13 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 **Step 14. Confirm Your PIN -**  Re-enter the same PIN and select "Next" to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile.
 
 {% include image.html file="image27.png" max-width="100" %}
-```
+
 {% include tip.html content="Don't Care About Plausible Deniability, how about a work profile and personal profile?" %}
-```
+
 *We get that there will be some users who think the idea of having a second hidden profile is awesome and others will be be like meh, I don't want or need that. That is fine and you can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, if you wanted to set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile that would be fine. You can get creative and use the other profile for whatever you want.*
-```
+
 {% include tip.html content="Forget your PIN?" %}
-```
+
 *If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:*
 
 ***Method #1 - Enter your self-destruct PIN. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.***
@@ -108,9 +107,9 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 *If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware).*
 
 ## Configure Profile {#configure-profile}
-```
+
 {% include tip.html content="Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
-```
+
 ### Configure Basic Login Info {#all-about-slots}
 
 **Enter your PIN -**  After removing and reinserting your OnlyKey you are prompted to enter the PIN you set during initial setup onto your OnlyKey six button keypad.
@@ -235,9 +234,9 @@ After loading next page
   </tr>
 </table>
 
-```
+
 {% include tip.html content="Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
-```
+
 ***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like "password1" this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker.
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
@@ -265,9 +264,9 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 #### Google Authenticator (TOTP) {#google-authenticator-totp}
 
 *DISCLAIMER - Google® is the registered trademarks of Google Inc. OnlyKey is not associated with or sponsored by Google® Inc.*
-```
+
 {% include tip.html content="If you are not a 2FA guru then this is the recommended method to use." %}
-```
+
 ***Background Information***
 
 *The way you would typically set up Google Authenticator without OnlyKey is to download the Google Authenticator app to your smartphone. You would then enable Google Authenticator on a website and the website would provide you with a QR code that looks like this:*
@@ -313,9 +312,9 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 #### Yubico® One-Time Password {#Yubico®-one-time-password}
 
 *DISCLAIMER - Yubico® and Yubikey® are the registered trademarks of Yubico® AB. OnlyKey is not associated with or sponsored by Yubico® AB. Yubikey® OTP has been released by Yubico® as open source software with license found [here](https://github.com/Yubico/Yubico-c/blob/master/COPYING)*
-```
+
 {% include tip.html content="The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP." %}
-```
+
 *   First download and install the [Yubikey® personalization tools](https://www.Yubico.com/support/download/)
 *   Go into Yubico® OTP and select "Quick"
 
@@ -388,9 +387,9 @@ Learn more about OnlyKey's implementation of U2F [here.](#universal-2nd-factor-a
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
 OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.
-```
+
 {% include tip.html content="This way you can keep your most valuable accounts in offline storage and everything else in the software password manager." %}
-```
+
 #### LastPass {#lastpass}
 
 LastPass supports both Google Authenticator and Yubico® OTP. Google Authenticator is supported in the free version of LastPass and Yubico® OTP is supported in the premium version of LastPass.
@@ -597,9 +596,9 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 **Step 3.** Click inside the Backup data box and then hold down the 1 button on your OnlyKey for 5 seconds or more and then release. This will type out an encrypted backup of your OnlyKey configuration into the box. Select save file to save the backup file which has a timestamp so you can keep track of the latest backup file.
 
 {% include image.html file="image78.png" max-width="100" %}
-```
+
 {% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey Chrome app and select a higher setting, 9 usually works well." %}
-```
+
 ### Backup Without OnlyKey App {#backup-without-onlykey-app}
 
 The process is the same to backup without the app. Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the file using whatever filename you prefer. In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else.
@@ -625,9 +624,9 @@ If you used the OnlyKey App to create the backup then the name of this file will
 **Step 5.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously.
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
-```
+
 {% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?" %}
-```
+
 *Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical. For that matter you can load any custom firmware you want on it.*
 
 1.  Insert OnlyKey into USB port
@@ -693,9 +692,9 @@ File Name
   </tr>
 </table>
 
-```
+
 {% include tip.html content="To do this in Windows open a command prompt and type "certUtil -hashfile pathToFileToCheck SHA256". To do this in Linux open a terminal and type "sha256sum pathToFileToCheck". Where pathToFileToCheck is replaced with the path of the file you are checking." %}
-```
+
 5.  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open.
 6.  Now the firmware should appear at the bottom of the Teensy Loader application.
 
@@ -704,9 +703,9 @@ File Name
 *Note: If a message prompts that "HEX file is too large" ensure that your OnlyKey is plugged in.*
 
 7.  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port.
-```
+
 {% include tip.html content="If your OnlyKey has a case on it you can just slip the two corners out of the case without completely removing the case." %}
-```
+
 {% include image.html file="image16.png" max-width="100" %}
 
 8.  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully.
