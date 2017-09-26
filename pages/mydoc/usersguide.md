@@ -1,5 +1,5 @@
 ---
-title: <img src="images/ok.jpg" width="50%"><br><img src="images/image50.png"><br>USER'S GUIDE
+title: <img src="images/image50.png"><br>  USER'S GUIDE
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
 last_updated: Sept, 25, 2017
@@ -9,7 +9,7 @@ permalink: usersguide.html
 folder: mydoc
 ---
 
-{% include image.html file="image50.png" %}
+{% include image.html file="ok.jpg" %}
 
 ## Unpacking {#unpacking}
 
