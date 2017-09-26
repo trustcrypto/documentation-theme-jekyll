@@ -791,15 +791,6 @@ The standard keychain that comes with the OnlyKey is plastic which provides good
 
 If you ever need a replacement or extra keychain one can be purchased using the link below:
 
-
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="FCWD7D8B4G7VY">
-	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
-
-
 #### Keychain DIY Customize
 
 If you don't like how far your OnlyKey hangs off of your keyring then follow these instructions to create a nice short keychain. You can do this yourself all that is needed is a pair of scissors.
