@@ -78,9 +78,9 @@ folder: mydoc
 
 {% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the manditory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
 
-{% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](#self-destruct) for more information on this feature." type="default" %}
-
-Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue.
+{% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](#self-destruct) for more information on this feature.
+<br>
+*Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue.*" type="default" %}
 
 {% include callout.html content="**Step 12. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN." type="default" %}
 
@@ -96,12 +96,12 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 *We get that there will be some users who think the idea of having a second hidden profile is awesome and others will be be like meh, I don't want or need that. That is fine and you can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, if you wanted to set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile that would be fine. You can get creative and use the other profile for whatever you want.*
 
-{% include tip.html content="Forget your PIN?<br><br>
-If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:" %}
+{% include tip.html content="***Forget your PIN?***<br><br>
+If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:
 
-***Method #1 - Enter your self-destruct PIN. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.***
+**Method #1** - Enter your self-destruct PIN. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.*
 
-***Method #2 - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking. This is an intentional safeguard so that in the event that a child gets ahold of your OnlyKey the device will not be inadvertently wiped by them repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.***
+**Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking. This is an intentional safeguard so that in the event that a child gets ahold of your OnlyKey the device will not be inadvertently wiped by them repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure." %}
 
 *If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](#features).*
 
@@ -111,7 +111,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 
 ### Configure Basic Login Info {#all-about-slots}
 
-**Enter your PIN -**  After removing and reinserting your OnlyKey you are prompted to enter the PIN you set during initial setup onto your OnlyKey six button keypad.
+{% include callout.html content="**Enter your PIN -**  After removing and reinserting your OnlyKey you are prompted to enter the PIN you set during initial setup onto your OnlyKey six button keypad." type="default" %}
 
 {% include image.html file="image82.png" %}
 
@@ -137,7 +137,7 @@ The slots that have not been configured have no label so they are shown as ''emp
 
 {% include callout.html content="**Step 2.** Enter a label such as Gmail in the Label field, check the box next to Label, and click Submit." type="default" %}
 
-Now the label you entered is assigned to slot 1a. Slot labels are helpful if you forget which button is assigned to which account you can open the OnlyKey app at any time to see how it is set up.
+*Now the label you entered is assigned to slot 1a. Slot labels are helpful if you forget which button is assigned to which account you can open the OnlyKey app at any time to see how it is set up.*
 
 {% include image.html file="image66.png" %}
 
@@ -145,9 +145,9 @@ Now the label you entered is assigned to slot 1a. Slot labels are helpful if you
 
 This is where the card you received with your OnlyKey comes in handy. You can write your labels on this and carry this in your wallet. This is a low tech solution but it works great.
 
-{% include image.html file="card.jpg" %}
+{% include image.html file="card.jpg" max-width="400" %}
 
-Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a.
+{% include important.html content="Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a." %}
 
 #### Set up a Slot {#set-up-a-slot}
 
@@ -155,30 +155,36 @@ The example configuration shown below would be to set up a username and password
 
 {% include image.html file="image35.png" max-width="602" %}
 
+{% include callout.html content="**Step 1.** To configure OnlyKey to log into the example Google page, Click the 1a button in the OnlyKey app, click the checkboxes and enter values as shown:" type="default" %}
+
 {% include image.html file="image24.png" max-width="602" %}
 
-{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
+{% include callout.html content="**Step 2.** Click submit to save the configuration to OnlyKey:" type="default" %}
 
 {% include image.html file="image3.png" max-width="295" %}
+
+**Now the configuration is saved and shows up in the OnlyKey app as ''Google 1''**
+
+{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
 
 #### Test a Slot {#test-a-slot}
 
 Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
 
-***Common issues:***
+{% include important.html content="***Common issues:***
 
 *   ***The password is entered before page loads.***
     *   *Set the delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
 *   ***There is a Captcha required sometimes after password***
     *   *You can either set the delay to a high value like 8 - 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
 *   ***Everything works fine but I really wish it typed faster.***
-    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
+    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*" %}
 
 As mentioned earlier, login pages can be different between sites and sometimes even different on the same site. For the second example we will set up another Google login, this one for a Google account where the username is already saved to the website so all you need to do is enter a password. This is the default when you have already logged into Google in the past on a computer.
 
 Additionally, by using the URL field we can have the OnlyKey type the login page URL into the browser and browse to the login page (in this case accounts.google.com). This way a one-touch login is possible. Just select the empty URL field in the browser and the URL is automatically typed out and Return is pressed to browse to the site. Once on the site the password is entered and the login is complete.
 
-The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered so there is not a need to set this in the OnlyKey slot.
+**The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered so there is not a need to set this in the OnlyKey slot.**
 
 {% include image.html file="image72.png" max-width="624" %}
 
