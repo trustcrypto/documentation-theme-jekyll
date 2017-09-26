@@ -1,5 +1,5 @@
 ---
-title: OnlyKey User's Guide {% include image.html file="ok.jpg" %}
+title: OnlyKey User's Guide <br><img src="images/ok.jpg">
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
 last_updated: Sept, 25, 2017
