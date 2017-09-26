@@ -187,7 +187,7 @@ The example configuration shown below would be to set up a URL and password to a
 
 *The table below shows how to configure some common login forms that at first may seem problematic. By using the delay setting of the OnlyKey we can support practically any login field format.*
 
-
+<div>
 <table>
   <tr>
    <td><strong>Login Format</strong>
@@ -233,7 +233,7 @@ After loading next page
    </td>
   </tr>
 </table>
-
+</div>
 
 ***PRO TIP - Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password.***
 
@@ -634,7 +634,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
 3.  Determine which version of OnlyKey you have and download firmware below
 
 <div><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image25.jpg" width= "40%"></div>
-
+<div>
 <table>
   <tr>
    <td colspan="2" >OnlyKey Color (Has a square LED)              OnlyKey Original (Has text "LED" visible)
@@ -653,9 +653,11 @@ If you used the OnlyKey App to create the backup then the name of this file will
    </td>
   </tr>
 </table>
+</div>
 
 4.  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA256 hash of the downloaded file matches these
 
+<div>
 <table>
   <tr>
    <td>
@@ -689,7 +691,7 @@ File Name
    </td>
   </tr>
 </table>
-
+</div>
 
 ***PRO TIP*** - To do this in Windows open a command prompt and type "certUtil -hashfile pathToFileToCheck SHA256". To do this in Linux open a terminal and type "sha256sum pathToFileToCheck". Where pathToFileToCheck is replaced with the path of the file you are checking.
 
@@ -720,6 +722,7 @@ File Name
 
 The OnlyKey silicon case provides additional protection and gives OnlyKey a polished appearance. To put on the case just carefully slide the case over the OnlyKey as shown below:
 
+<div>
 <table>
   <tr>
    <td>
@@ -733,6 +736,7 @@ The OnlyKey silicon case provides additional protection and gives OnlyKey a poli
    </td>
   </tr>
 </table>
+</div>
 
 ### Android Support {#android-support}
 
@@ -746,6 +750,7 @@ Since the OnlyKey is essentially detected by Android as a keyboard, the username
 
 This solution is ideal as it can be carried on a keychain for on the go use.
 
+<div>
 <table>
   <tr>
    <td>
@@ -756,6 +761,7 @@ This solution is ideal as it can be carried on a keychain for on the go use.
    </td>
   </tr>
 </table>
+</div>
 
 #### [USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html) {#usb-c-to-usb-3-otg-adapter}
 
@@ -822,6 +828,7 @@ Various other Keychains may be used some ideas are shown below:
 
 Below is a list of common issues and solutions.
 
+<div>
 <table>
   <tr>
    <td><strong>Issue</strong>
@@ -866,6 +873,7 @@ Below is a list of common issues and solutions.
    </td>
   </tr>
 </table>
+</div>
 
 If you have an issue not listed here please reference the online support forum [here.](https://groups.google.com/forum/#!forum/onlykey)
 
