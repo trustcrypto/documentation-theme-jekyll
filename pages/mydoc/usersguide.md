@@ -1,10 +1,10 @@
 ---
-title: <img src="images/image50.png"><br>  USER'S GUIDE
+title: <div><img src="images/image50.png"><br>  USER'S GUIDE</div>
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
 last_updated: Sept, 25, 2017
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
-sidebar: mydoc_sidebar
+sidebar: mydoc_sidebarusers
 permalink: usersguide.html
 folder: mydoc
 ---
