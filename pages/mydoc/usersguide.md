@@ -27,7 +27,7 @@ folder: mydoc
 
 **Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
 
-{% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
+{% include tip.html content="***(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support).***" %}
 
 *Proceed to initial setup below*
 
@@ -58,7 +58,7 @@ folder: mydoc
 
 **Step 7.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select "Next" to continue.
 
-***LINUX USERS NOTE: If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)***
+{% include info.html content="***LINUX USERS:*** If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
 
 {% include image.html file="image77.png" %}
 
@@ -66,7 +66,7 @@ folder: mydoc
 
 {% include image.html file="image88.png" %}
 
-{% include tip.html content="Before setting a PIN<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock an Android Lockscreen:" %}
+{% include tip.html content="***Before setting a PIN***<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock an Android Lockscreen:" %}
 
 {% include image.html file="image86.png" max-width="157" %}
 
@@ -74,7 +74,7 @@ folder: mydoc
 
 **Step 9. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select "Next" to continue.
 
-*Note: The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN. *
+{% include info.html content="The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN." %}
 
 **Step 10. Confirm Your PIN -**  Re-enter the same PIN and select "Next" to continue. Once you click next you can see the messages in red at the bottom of the app displaying "Successfully set PIN" and that your "OnlyKey is ready…" at this point the manditory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs.
 
@@ -96,7 +96,7 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 *We get that there will be some users who think the idea of having a second hidden profile is awesome and others will be be like meh, I don't want or need that. That is fine and you can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, if you wanted to set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile that would be fine. You can get creative and use the other profile for whatever you want.*
 
-{% include tip.html content="Forget your PIN?<br><br>
+{% include tip.html content="***Forget your PIN?***<br><br>
 If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:" %}
 
 ***Method #1 - Enter your self-destruct PIN. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.***
@@ -107,7 +107,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 
 ## Configure Profile {#configure-profile}
 
-***PRO TIP -*** Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
+{% include tip.html content="Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -157,7 +157,7 @@ The example configuration shown below would be to set up a username and password
 
 {% include image.html file="image24.png" max-width="602" %}
 
-**Note:** Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.
+{% include info.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
 
 {% include image.html file="image3.png" max-width="295" %}
 
@@ -367,7 +367,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 #### Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
 
-**Note:** The OnlyKey comes pre-loaded with an attestation certificate that can be used or you can load a custom certificate and private key.
+{% include info.html content="The OnlyKey comes pre-loaded with an attestation certificate that can be used or you can load a custom certificate and private key." %}
 
 In order to Load your own custom U2F certificate to OnlyKey see the certificate generation guide [here](https://docs.google.com/document/d/1LE09BB2ULGblc--3Ttut66NVMJk698LHp0f3DeRdr7w/edit?usp=sharing)
 
@@ -512,7 +512,7 @@ If you are already familiar with PGP/GPG and already have keys ready to use you 
 
 If this is your first time creating keys or if you would like to create new keys the method we will be using just requires a web browser and the Mailvelope extension/plugin. Instructions are for Chrome browser but this could also be accomplished using Firefox browser.
 
-**Note:** Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)
+{% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)" %}
 
 **Step 1.** Open Chrome and then open this link to go to the[ Mailvelope Extension in the Chrome Web Store.](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) Click ADD TO CHROME, and then Add extension to add the extension to Chrome.
 
@@ -538,7 +538,7 @@ If this is your first time creating keys or if you would like to create new keys
 
 **Step 6.** Click on Export, then click Private, then click save to save a local copy of your encrypted private key.
 
-**Note:** It is recommended to keep an offline copy of this in a secure location. For example, you could copy this to a USB flash drive or CD/DVD and then store it in a safe. You will need this key and the password you used when you created it to read encrypted messages, there is no way to recover this key if you lose it.
+{% include important.html content="It is recommended to keep an offline copy of this in a secure location. For example, you could copy this to a USB flash drive or CD/DVD and then store it in a safe. You will need this key and the password you used when you created it to read encrypted messages, there is no way to recover this key if you lose it." %}
 
 {% include image.html file="image68.png" max-width="434" %}
 
@@ -602,13 +602,13 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 The process is the same to backup without the app. Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the file using whatever filename you prefer. In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else.
 
-**Note:** While the backup is already encrypted using what would be considered as "military grade" encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup.
+{% include info.html content="While the backup is already encrypted using what would be considered as 'military grade' encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup." %}
 
 ## Restore From Backup {#restore-from-backup}
 
 Using the backup file created in the Secure Encrypted Backup Anywhere section, we can restore an OnlyKey from backup. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
 
-**Note:** The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten.
+{% include info.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
 **Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same key is loaded onto the OnlyKey that was used to backup by following the steps in the [Loading Keys](#loading-rsa-keys) section.
 
@@ -699,7 +699,7 @@ File Name
 
 {% include image.html file="image67.png" max-width="213" %}
 
-*Note: If a message prompts that "HEX file is too large" ensure that your OnlyKey is plugged in.*
+{% include info.html content="If a message prompts that 'HEX file is too large' ensure that your OnlyKey is plugged in." %}
 
 7.  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port.
 
@@ -1056,7 +1056,7 @@ Bob leaves his OnlyKey unlocked and plugged into his computer and walks away, Al
 
 While Bob should not have left his device unlocked and unattended we still want to prevent this scenario so first a device must be in config mode to load keys or to restore from backup. To put a device in config mode hold the #6 button down for 5 seconds on an unlocked OnlyKey, then re-enter the PIN. This ensures that only someone who knows the PIN can select the private key used to create a backup.
 
-Note - Backups only supported on Standard Edition firmware and not while in plausible deniability mode. The reason is the backup requires encryption and plausible deniability requires being able to deny that any encryption is used.
+{% include info.html content="Backups only supported on Standard Edition firmware and not while in plausible deniability mode. The reason is the backup requires encryption and plausible deniability requires being able to deny that any encryption is used." %}
 
 For a demonstration of backup feature see [https://vimeo.com/210800252](https://vimeo.com/210800252)
 
