@@ -8,21 +8,21 @@ sidebar: mydoc_sidebar
 permalink: usersguide.html
 folder: mydoc
 ---
-<div align="center">
-{% include image.html file="image50.png" %}
+
 {% include image.html file="ok.jpg" %}
-</div>
+{% include image.html file="image50.png" %}
+
 ## Unpacking {#unpacking}
 
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
 
 **Step 2.** Remove the small metal keyring if one is attached and discard this keyring.
 
-{% include image.html file="image76.jpg" max-width="20" %}
+{% include image.html file="image76.jpg" max-width="138" %}
 
 **Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey.
 
-{% include image.html file="image14.jpg" max-width="40" %}
+{% include image.html file="image14.jpg" max-width="350" %}
 
 **Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
 
@@ -38,22 +38,22 @@ folder: mydoc
 
 **Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select "Add to Chrome"
 
-{% include image.html file="image41.png" max-width="100" %}
+{% include image.html file="image41.png" max-width="624" %}
 
 **Step 3.** When prompted select "Add App"
 
-{% include image.html file="image12.png" max-width="45" %}
+{% include image.html file="image12.png" max-width="359" %}
 
 **Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> "Bookmarks" -> "Show Bookmarks Bar" to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to "chrome://apps/") and then select the "OK" icon to launch the OnlyKey App.
 
-{% include image.html file="image33.png" max-width="60" %}
+{% include image.html file="image33.png" max-width="544" %}
 <br>
 <br>
-{% include image.html file="image17.png" max-width="60" %}
+{% include image.html file="image17.png" max-width="624" %}
 
 **Step 5.** Once the OnlyKey Configuration App launches you will see the message "Please connect your OnlyKey"
 
-{% include image.html file="image18.png" max-width="80" %}
+{% include image.html file="image18.png" max-width="624" %}
 
 **Step 6.** Insert the OnlyKey into USB port.
 
