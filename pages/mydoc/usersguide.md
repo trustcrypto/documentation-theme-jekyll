@@ -13,23 +13,34 @@ folder: mydoc
 <br>
 ## Unpacking OnlyKey {#unpacking}
 
+
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
+
 
 **Step 2.** Remove the small metal keyring if one is attached and discard this keyring.
 
+
 {% include image.html file="image76.jpg" max-width="138" %}
 
-**Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey.
+
+**Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and
+the other string end of the keychain to your OnlyKey.
+
 
 {% include image.html file="image14.jpg" max-width="350" %}
 
+
 **Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
+
 
 **Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
 
+
 {% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
 
-***Proceed to initial setup below***
+
+{% include callout.html content="***Proceed to initial setup below***" type="primary" %}
+
 
 ## Initial Setup {#initial-setup}
 
@@ -70,7 +81,7 @@ folder: mydoc
 
 {% include image.html file="image86.png" max-width="157" %}
 
-*As described in the following steps you can use multiple PINs, make sure PINs are not set to the same thing or share the same sequence, this will not work they must be different. For example, if PIN A is "11223344" and PIN B is "1122334455" then when you try to type in PIN B the device would read PIN A before you enter "55".*
+{% include note.html content="As described in the following steps you can use multiple PINs, make sure PINs are not set to the same thing or share the same sequence, this will not work they must be different. For example, if PIN A is '11223344' and PIN B is '1122334455' then when you try to type in PIN B the device would read PIN A before you enter '55'." %}
 
 **Step 9. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select "Next" to continue.
 
