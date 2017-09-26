@@ -17,10 +17,10 @@ folder: mydoc
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
 
 **Step 2.** Remove the small metal keyring if one is attached and discard this keyring.
-{% include image.html file="image76.jpg" max-width="100" %}
+{% include image.html file="image76.jpg" width="20%" max-width="100" %}
 **Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey.
 
-{% include image.html file="image14.jpg" max-width="100" %}
+{% include image.html file="image14.jpg" width="40%" max-width="100" %}
 
 **Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB.
 
@@ -36,21 +36,21 @@ folder: mydoc
 
 **Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select "Add to Chrome"
 
-{% include image.html file="image41.png" max-width="100" %}
+{% include image.html file="image41.png" width="100%" max-width="100" %}
 
 **Step 3.** When prompted select "Add App"
 
-{% include image.html file="image12.png" max-width="100" %}
+{% include image.html file="image12.png" width="45%" max-width="100" %}
 
 **Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> "Bookmarks" -> "Show Bookmarks Bar" to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to "chrome://apps/") and then select the "OK" icon to launch the OnlyKey App.
 
-{% include image.html file="image33.png" max-width="100" %}
+{% include image.html file="image33.png" width="60%" max-width="100" %}
 
-{% include image.html file="image17.png" max-width="100" %}
+{% include image.html file="image17.png" width="60%" max-width="100" %}
 
 **Step 5.** Once the OnlyKey Configuration App launches you will see the message "Please connect your OnlyKey"
 
-{% include image.html file="image18.png" max-width="100" %}
+{% include image.html file="image18.png" width="80%" max-width="100" %}
 
 **Step 6.** Insert the OnlyKey into USB port.
 
@@ -68,7 +68,7 @@ folder: mydoc
 
 *   *You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock an Android Lockscreen:*
 
-{% include image.html file="image86.png" max-width="100" %}
+{% include image.html file="image86.png" width="30%" max-width="100" %}
 
 *   *As described in the following steps you can use multiple PINs, make sure PINs are not set to the same thing or share the same sequence, this will not work they must be different. For example, if PIN A is "11223344" and PIN B is "1122334455" then when you try to type in PIN B the device would read PIN A before you enter "55".*
 
@@ -154,13 +154,13 @@ Obviously, no sensitive information should be written on the card or saved to yo
 
 The example configuration shown below would be to set up a username and password to automatically login to the Google page shown below.
 
-{% include image.html file="image35.png" max-width="100" %}
+{% include image.html file="image35.png" width="90%" max-width="100" %}
 
-{% include image.html file="image24.png" max-width="100" %}
+{% include image.html file="image24.png" width="90%" max-width="100" %}
 
 **Note:** Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your password, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.
 
-{% include image.html file="image3.png" max-width="100" %}
+{% include image.html file="image3.png" width="50%" max-width="100" %}
 
 #### Test a Slot {#test-a-slot}
 
@@ -181,9 +181,9 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
 
 The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered so there is not a need to set this in the OnlyKey slot.
 
-{% include image.html file="image72.png" max-width="100" %}
+{% include image.html file="image72.png" width="90%" max-width="100" %}
 
-{% include image.html file="image23.png" max-width="100" %}
+{% include image.html file="image23.png" width="90%" max-width="100" %}
 
 *The table below shows how to configure some common login forms that at first may seem problematic. By using the delay setting of the OnlyKey we can support practically any login field format.*
 
@@ -293,15 +293,15 @@ Selecting "CAN'T SCAN IT" will display the private code. Select this text and co
 
 Now open the OnlyKey Chrome Configuration App. With your correct PIN entered on the OnlyKey you are able to select the Slot to configure and paste this code into the field located next to "Google Auth OTP" as shown below:
 
-{% include image.html file="image65.png" max-width="100" %}
+{% include image.html file="image65.png" width="90%" max-width="100" %}
 
 Once you click submit your OnlyKey is ready to generate OTPs.
 
 **Step 3. Generate OTP -** Place your cursor in the "Enter code" field and press the button that corresponds to the slot that was set. In the example above we set slot 2a so we press the #2 button to generate the OTP.
 
-{% include image.html file="image20.png" max-width="100" %}
+{% include image.html file="image20.png" width="70%" max-width="100" %}
 
-{% include image.html file="image75.png" max-width="100" %}
+{% include image.html file="image75.png" width="70%" max-width="100" %}
 
 Once your account has been verified you are all set. You can add a username and password to this slot so that you can do a one touch login. Keep in mind that the page may take a second or two to load where your 6 digit OTP is entered so set the delay accordingly, 4 - 5 seconds delay should be plenty of time.
 
@@ -326,13 +326,13 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 
 *   Copy and paste these into the corresponding fields on the OnlyKey Configuration App.
 
-{% include image.html file="image62.png" max-width="100" %}
+{% include image.html file="image62.png" width="50%" max-width="100" %}
 
 *   Select "Save to OnlyKey" to write these values to your OnlyKey
 *   Now your OnlyKey is ready to function in Yubikey® OTP mode
 *   Just select a slot that you wish to use with Yubikey® OTP mode by selecting the radio button and then selecting "Submit". The Yubikey® OTP will be generated when the corresponding button is pressed.
 
-{% include image.html file="image56.png" max-width="100" %}
+{% include image.html file="image56.png" width="80%" max-width="100" %}
 
 The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP.
 
@@ -350,7 +350,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 **Step 3.** Insert Yubikey®, select a configuration slot, and click "Write configuration" button
 
-{% include image.html file="image5.png" max-width="100" %}
+{% include image.html file="image5.png" width="90%" max-width="100" %}
 
 **Step 4.** Set the values shown in the Public Identity, Private Identity, and Secret Key to your 3rd party device.
 
@@ -376,7 +376,7 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 
 **Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting "Submit".
 
-{% include image.html file="image34.png" max-width="100" %}
+{% include image.html file="image34.png" width="90%" max-width="100" %}
 
 **Step 2.** Go to the website that you wish to register a new security token and when you select to register a token you will notice the OnlyKey light flashing (Blue for OnlyKey Color) on and off. Press the button corresponding to the slot you set to U2F in step 1 to register token.
 
@@ -402,25 +402,25 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 **Step 2.** Change to enabled and select View button next to Private Key
 
-{% include image.html file="image7.png" max-width="100" %}
+{% include image.html file="image7.png" width="80%" max-width="100" %}
 
 **Step 3.** You will be prompted to enter your master password and then the key is displayed.
 
-{% include image.html file="image11.png" max-width="100" %}
+{% include image.html file="image11.png" width="80%" max-width="100" %}
 
 **Step 4.** Copy and paste the key into the Google Auth OTP field of the OnlyKey app for the slot that you want to set up.
 
-{% include image.html file="image53.png" max-width="100" %}
+{% include image.html file="image53.png" width="90%" max-width="100" %}
 
 **Step 5.** Make sure to check the radio button next to Google Auth OTP and select Submit.
 
 **Step 6.** Go back to the LastPass app and select Update. You will be prompted for your password again and then your current verification code. Click inside the verification code box and press the button assigned to the slot you set up on your OnlyKey to type out the verification code.
 
-{% include image.html file="image74.png" max-width="100" %}
+{% include image.html file="image74.png" width="90%" max-width="100" %}
 
-{% include image.html file="image13.png" max-width="100" %}
+{% include image.html file="image13.png" width="90%" max-width="100" %}
 
-{% include image.html file="image10.png" max-width="100" %}
+{% include image.html file="image10.png" width="90%" max-width="100" %}
 
 #### DashLane {#dashlane}
 
@@ -519,11 +519,11 @@ If this is your first time creating keys or if you would like to create new keys
 
 {% include image.html file="image81.png" max-width="100" %}
 
-{% include image.html file="image57.png" max-width="100" %}
+{% include image.html file="image57.png" width="60%" max-width="100" %}
 
 **Step 2.** Now a small lock and key will show up in the top right of the Chrome browser. Click the lock and then click Options.
 
-{% include image.html file="image58.png" max-width="100" %}
+{% include image.html file="image58.png" width="70%" max-width="100" %}
 
 **Step 3.** On the page that opens up click Generate Key
 
@@ -567,7 +567,7 @@ Select the key features (what you want to use the key for) such as backup, signa
 
 **Step 5.** Click Save to OnlyKey, then select primary or subkey. The primary key is typically used to sign other keys so you will generally want to load the subkey(s).
 
-{% include image.html file="image87.png" max-width="100" %}
+{% include image.html file="image87.png" width="70%" max-width="100" %}
 
 **Step 6** Click Save, and you should see the message Successfully set RSA Key.
 
@@ -633,7 +633,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
 2.  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)
 3.  Determine which version of OnlyKey you have and download firmware below
 
-{% include image.html file="image25.jpg" max-width="100" %}
+{% include image.html file="image25.jpg" width="40%" max-width="100" %}
 
 <table>
   <tr>
@@ -698,7 +698,7 @@ File Name
 5.  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open.
 6.  Now the firmware should appear at the bottom of the Teensy Loader application.
 
-{% include image.html file="image67.png" max-width="100" %}
+{% include image.html file="image67.png" width="30%" max-width="100" %}
 
 *Note: If a message prompts that "HEX file is too large" ensure that your OnlyKey is plugged in.*
 
@@ -710,9 +710,9 @@ File Name
 
 8.  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully.
 
-{% include image.html file="image48.png" max-width="100" %}
+{% include image.html file="image48.png" width="40%" max-width="100" %}
 
-{% include image.html file="image2.png" max-width="100" %}
+{% include image.html file="image2.png" width="40%" max-width="100" %}
 
 **Under The Hood** - One of the great things about this method of firmware loading is that you, the user, can load your own firmware and in doing so be sure that your OnlyKey has not been tampered with. What actually happens when you load the firmware is that a mass erase is completed first. What this means is that all data is completely wiped, and then the new firmware is loaded. This way if say you suspect that your device was tampered with by someone or you just like to know for sure you can just re-load the firmware yourself.
 
@@ -769,13 +769,13 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 
 [https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)
 
-{% include image.html file="image73.png" max-width="100" %}
+{% include image.html file="image73.png" width="50%" max-width="100" %}
 
 ### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
 
 This is currently in the experimental phase so there is not official support. User's have claimed to successfully use OnlyKey on their iPhones using a USB adapter like the one shown below.
 
-{% include image.html file="image29.png" max-width="100" %}
+{% include image.html file="image29.png"  width="50%" max-width="100" %}
 
 [https://www.amazon.com/gp/product/B00S9I7EPO/](https://www.amazon.com/gp/product/B00S9I7EPO/)
 
@@ -804,15 +804,15 @@ If you don't like how far your OnlyKey hangs off of your keyring then follow the
 
 **Step 1.** As shown in the diagram below, pull excess through clip opening and tie a second knot approximately at the length of the end of the plastic attachment.
 
-{% include image.html file="image64.jpg" max-width="100" %}
+{% include image.html file="image64.jpg" width="25%" max-width="100" %}
 
 **Step 2.** Put the knot back through the clip opening and remove the keychain to make sure there is enough length left to fit over plastic attachment, if not increase length and re-tie knot.
 
-{% include image.html file="image70.jpg" max-width="100" %}
+{% include image.html file="image70.jpg" width="30%" max-width="100" %}
 
 **Step 3.** Finally, cut off the first knot and enjoy your optimum length keychain.
 
-{% include image.html file="image9.jpg" max-width="100" %}
+{% include image.html file="image9.jpg" width="20%" max-width="100" %}
 
 #### Other Keychain Options
 
@@ -942,7 +942,7 @@ While we do not plan on pursuing FIPS certification we can attest that OnlyKey m
 In addition to this, we enable the [Kinetis flash security](http://cache.nxp.com/files/microcontrollers/doc/app_note/AN4507.pdf) the first time the device is used. This ensures that the firmware, and all sensitive information stored in memory is essentially locked down. The ability to read or write to the chip from external sources is disabled. The only way to clear this so the OnlyKey can load new firmware is to place a jumper between the two touch points of the OnlyKey shown here:
 
 
-{% include image.html file="image16.png" max-width="100" %}
+{% include image.html file="image16.png" width="100%" max-width="100" %}
 
 When a connection is placed between these two points it does two things, first it proves that a user is present there is no way for malware running on the connected computer to do this, second it does a mass erase of the OnlyKey. A mass erase essentially wipes everything and returns the chip to a factory default state. Once this is complete new firmware can be loaded to the Onlykey.
 
