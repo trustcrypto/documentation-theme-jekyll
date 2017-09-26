@@ -58,7 +58,7 @@ folder: mydoc
 
 **Step 7.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select "Next" to continue.
 
-{% include info.html content="LINUX USERS: If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
+{% include info.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
 
 {% include image.html file="image77.png" %}
 
@@ -602,7 +602,7 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 The process is the same to backup without the app. Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the file using whatever filename you prefer. In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else.
 
-{% include info.html content="While the backup is already encrypted using what would be considered as 'military grade' encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup." %}
+{% include info.html content="While the backup is already encrypted using what would be considered as strong encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup." %}
 
 ## Restore From Backup {#restore-from-backup}
 
