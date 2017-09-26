@@ -39,11 +39,11 @@ folder: mydoc
 
 {% include image.html file="image41.png" %}
 
-{% include callout.html content="**Step 3.** When prompted select 'Add App'" type="default" %}
+{% include callout.html content="**Step 3.** When prompted select ''Add App''" type="default" %}
 
 {% include image.html file="image12.png" max-width="359" %}
 
-{% include callout.html content="**Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> Bookmarks -> Show Bookmarks Bar to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to 'chrome://apps/') and then select the 'OK' icon to launch the OnlyKey App." type="default" %}
+{% include callout.html content="**Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> Bookmarks -> Show Bookmarks Bar to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to ''chrome://apps/'') and then select the ''OK'' icon to launch the OnlyKey App." type="default" %}
 
 {% include image.html file="image33.png" max-width="544" %}
 <br>
@@ -127,7 +127,7 @@ The Slots area of the application is where you will set up things like your user
 
 Each button has two slots assigned to it that can be activated by holding the button for less than or more than one second.
 
-The slots that have not been configured have no label so they are shown as "empty''. Next, let's set a label to slot 1a.
+The slots that have not been configured have no label so they are shown as ''empty''. Next, let's set a label to slot 1a.
 
 #### Set a Label {#set-a-label}
 
