@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: usersguide.html
 folder: mydoc
 ---
- style="text-align:center;"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image50.png" /><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/ok.jpg" /></div>
+<div markdown="1" style="text-align:center;"><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image50.png" /><img src ="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/ok.jpg" /></div>
 
 # Unpacking {#unpacking}
 
