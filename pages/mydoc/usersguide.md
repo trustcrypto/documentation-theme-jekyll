@@ -1,5 +1,4 @@
 ---
-<figure><img class="docimage" src="images/image50.png" alt="" /></figure>
 title: USER'S GUIDE
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
@@ -9,9 +8,11 @@ sidebar: mydoc_sidebarusers
 permalink: usersguide.html
 folder: mydoc
 ---
-
+{% include image.html file="image50.png" %}
+<h1>USER'S GUIDE</>
+<br>
 ## Unpacking OnlyKey {#unpacking}
-{% include image.html file="ok.jpg" %}
+{% include image.html file="ok.jpg" max-width="50" %}
 
 **Step 1.** Remove the OnlyKey and Keychain from packaging.
 
