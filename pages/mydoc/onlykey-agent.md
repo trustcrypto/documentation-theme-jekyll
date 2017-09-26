@@ -27,7 +27,7 @@ folder: mydoc
 
 **Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)
 
-***PRO TIP - (Optional) Check out OnlyKey accessories - [color cases]({#onlykey-case}), [keychain options]({#keychain-options}), [mobile adapter]({#android-support}).***
+{% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases]({#onlykey-case}), [keychain options]({#keychain-options}), [mobile adapter]({#android-support})." %}
 
 *Proceed to initial setup below*
 
@@ -65,7 +65,7 @@ folder: mydoc
 
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image88.png">
 
-***PRO TIP - Before setting a PIN***
+{% include tip.html content="Before setting a PIN" %}
 
 *   *You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock an Android Lockscreen:*
 
@@ -93,11 +93,11 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image27.png">
 
-***PRO TIP - Don't Care About Plausible Deniability, how about a work profile and personal profile?***
+{% include tip.html content="Don't Care About Plausible Deniability, how about a work profile and personal profile?" %}
 
 *We get that there will be some users who think the idea of having a second hidden profile is awesome and others will be be like meh, I don't want or need that. That is fine and you can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, if you wanted to set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile that would be fine. You can get creative and use the other profile for whatever you want.*
 
-***PRO TIP - Forget your PIN?***
+{% include tip.html content="Forget your PIN?" %}
 
 *If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:*
 
@@ -109,7 +109,7 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 ## Configure Profile {#configure-profile}
 
-***PRO TIP -*** Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.
+{% include tip.html content="Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -236,7 +236,7 @@ After loading next page
 </table>
 
 
-***PRO TIP - Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password.***
+{% include tip.html content="Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
 ***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like "password1" this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker.
 
@@ -266,7 +266,7 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 *DISCLAIMER - Google® is the registered trademarks of Google Inc. OnlyKey is not associated with or sponsored by Google® Inc.*
 
-***PRO TIP - If you are not a 2FA guru then this is the recommended method to use.***
+{% include tip.html content="If you are not a 2FA guru then this is the recommended method to use." %}
 
 ***Background Information***
 
@@ -314,7 +314,7 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 
 *DISCLAIMER - Yubico® and Yubikey® are the registered trademarks of Yubico® AB. OnlyKey is not associated with or sponsored by Yubico® AB. Yubikey® OTP has been released by Yubico® as open source software with license found [here](https://github.com/Yubico/Yubico-c/blob/master/COPYING)*
 
-***PRO TIP - The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP.***
+{% include tip.html content="The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP." %}
 
 *   First download and install the [Yubikey® personalization tools](https://www.Yubico.com/support/download/)
 *   Go into Yubico® OTP and select "Quick"
@@ -389,7 +389,7 @@ Learn more about OnlyKey's implementation of U2F [here.](#universal-2nd-factor-a
 
 OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.
 
-***PRO TIP - This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.***
+{% include tip.html content="This way you can keep your most valuable accounts in offline storage and everything else in the software password manager." %}
 
 #### LastPass {#lastpass}
 
@@ -598,7 +598,7 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image78.png">
 
-***PRO TIP*** - Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey Chrome app and select a higher setting, 9 usually works well.
+{% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey Chrome app and select a higher setting, 9 usually works well." %}
 
 ### Backup Without OnlyKey App {#backup-without-onlykey-app}
 
@@ -626,7 +626,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-***PRO TIP - Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?***
+{% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?" %}
 
 *Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical. For that matter you can load any custom firmware you want on it.*
 
@@ -694,7 +694,7 @@ File Name
 </table>
 
 
-***PRO TIP*** - To do this in Windows open a command prompt and type "certUtil -hashfile pathToFileToCheck SHA256". To do this in Linux open a terminal and type "sha256sum pathToFileToCheck". Where pathToFileToCheck is replaced with the path of the file you are checking.
+{% include tip.html content="To do this in Windows open a command prompt and type "certUtil -hashfile pathToFileToCheck SHA256". To do this in Linux open a terminal and type "sha256sum pathToFileToCheck". Where pathToFileToCheck is replaced with the path of the file you are checking." %}
 
 5.  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open.
 6.  Now the firmware should appear at the bottom of the Teensy Loader application.
@@ -705,7 +705,7 @@ File Name
 
 7.  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port.
 
-***PRO TIP*** - If your OnlyKey has a case on it you can just slip the two corners out of the case without completely removing the case.
+{% include tip.html content="If your OnlyKey has a case on it you can just slip the two corners out of the case without completely removing the case." %}
 
 <img src="https://github.com/trustcrypto/trustcrypto.github.io/raw/master/images/image16.png">
 
