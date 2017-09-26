@@ -9,3 +9,4 @@ permalink: usersguide.html
 folder: mydoc
 ---
 
+test
