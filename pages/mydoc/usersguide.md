@@ -692,7 +692,7 @@ File Name
 </table>
 
 
-{% include tip.html content="To do this in Windows open a command prompt and type "certUtil -hashfile pathToFileToCheck SHA256". To do this in Linux open a terminal and type "sha256sum pathToFileToCheck". Where pathToFileToCheck is replaced with the path of the file you are checking." %}
+{% include tip.html content="To do this in Windows open a command prompt and type "certUtil -hashfile pathToFileToCheck SHA256". To do this in Linux open a terminal and type 'sha256sum pathToFileToCheck'. Where pathToFileToCheck is replaced with the path of the file you are checking." %}
 
 5.  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open.
 6.  Now the firmware should appear at the bottom of the Teensy Loader application.
