@@ -9,7 +9,7 @@ permalink: usersguide.html
 folder: mydoc
 ---
 {% include image.html file="image50.png" %}
-<h1>USER'S GUIDE</>
+<h1>USER'S GUIDE</h1>
 <br>
 ## Unpacking OnlyKey {#unpacking}
 {% include image.html file="ok.jpg" max-width="50" %}
