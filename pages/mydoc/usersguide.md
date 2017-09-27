@@ -618,25 +618,25 @@ Using the backup file created in the Secure Encrypted Backup Anywhere section, w
 
 {% include callout.html content="**Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same key is loaded onto the OnlyKey that was used to backup by following the steps in the [Loading Keys](#loading-rsa-keys) section." type="default" %}
 
-{% include callout.html content="**Step 2.** Put the OnlyKey into config mode by holding the 6 button down for more than 5 seconds, and then re-entering your PIN. You will see the OnlyKey LED fade in and out continuously while in config mode." type="default" %}
+{% include callout.html content="**Step 2.** Put the OnlyKey into config mode by holding the 6 button down for more than 5 seconds, and then re-entering your PIN. You will see the OnlyKey LED fade in and out continuously (Red) while in config mode." type="default" %}
 
-{% include callout.html content="**Step 4.** Click on the Backup/Restore tab of the OnlyKey App and then click Choose File to select your OnlyKey backup file. Click Restore to OnlyKey." type="default" %}
+{% include callout.html content="**Step 3.** Click on the Backup/Restore tab of the OnlyKey App and then click Choose File to select your OnlyKey backup file. Click Restore to OnlyKey." type="default" %}
 
 If you used the OnlyKey App to create the backup then the name of this file will be ''onlykey-backup-<timestamp>.txt''. The timestamp can be used to make sure you are loading the latest backup.
 
 {% include image.html file="image45.png" %}
 
-{% include callout.html content="**Step 5.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously." type="default" %}
+{% include callout.html content="**Step 4.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously (Green)." type="default" %}
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-{% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?" %}
+{% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?
 
-*Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical. For that matter you can load any custom firmware you want on it.*
+Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical. For that matter you can load any custom firmware you want on it." %}
 
-1.  Insert OnlyKey into USB port
-2.  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)
-3.  Determine which version of OnlyKey you have and download firmware below
+{% include callout.html content="**Step 1.**  Insert OnlyKey into USB port" type="default" %}
+{% include callout.html content="**Step 2.**  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)" type="default" %}
+{% include callout.html content="**Step 3.**  Determine which version of OnlyKey you have and download firmware below" type="default" %}
 
 {% include image.html file="image25.jpg" max-width="285" %}
 
@@ -660,7 +660,7 @@ If you used the OnlyKey App to create the backup then the name of this file will
 </table>
 
 
-4.  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA256 hash of the downloaded file matches these
+{% include callout.html content="**Step 4.**  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA256 hash of the downloaded file matches these:" type="default" %}
 
 
 <table>
@@ -700,20 +700,20 @@ File Name
 
 {% include tip.html content="To do this in Windows open a command prompt and type 'certUtil -hashfile pathToFileToCheck SHA256'. To do this in Linux open a terminal and type 'sha256sum pathToFileToCheck'. Where pathToFileToCheck is replaced with the path of the file you are checking." %}
 
-5.  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open.
-6.  Now the firmware should appear at the bottom of the Teensy Loader application.
+{% include callout.html content="**Step 5.**  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open." type="default" %}
+{% include callout.html content="**Step 6.**  Now the firmware should appear at the bottom of the Teensy Loader application." type="default" %}
 
 {% include image.html file="image67.png" max-width="213" %}
 
 {% include note.html content="If a message prompts that 'HEX file is too large' ensure that your OnlyKey is plugged in." %}
 
-7.  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port.
+{% include callout.html content="**Step 7.**  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port." type="default" %}
 
 {% include tip.html content="If your OnlyKey has a case on it you can just slip the two corners out of the case without completely removing the case." %}
 
 {% include image.html file="image16.png" %}
 
-8.  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully.
+{% include callout.html content="**Step 8.**  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully." type="default" %}
 
 {% include image.html file="image48.png" max-width="200" %}
 
@@ -737,7 +737,7 @@ The OnlyKey silicon case provides additional protection and gives OnlyKey a poli
 {% include image.html file="image80.jpg" max-width="292" %}
    </td>
    <td>
-{% include image.html file="image49.jpg" max-width="227"%}
+{% include image.html file="image49.jpg" max-width="227" %}
    </td>
   </tr>
 </table>
@@ -751,7 +751,7 @@ Since the OnlyKey is essentially detected by Android as a keyboard, the username
 
 #### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
-**Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support.**[https://www.amazon.com/dp/B071Y4CZV9](https://www.amazon.com/dp/B071Y4CZV9)
+{% include note.html content="Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support.[https://www.amazon.com/dp/B071Y4CZV9](https://www.amazon.com/dp/B071Y4CZV9)" %}
 
 This solution is ideal as it can be carried on a keychain for on the go use.
 
@@ -770,9 +770,9 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 
 #### [USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html) {#usb-c-to-usb-3-otg-adapter}
 
-*Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support.*
+{% include note.html content="Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support." %}
 
-[https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)
+[Purchase on Aliexpress](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)
 
 {% include image.html file="image73.png" max-width="221" %}
 
@@ -782,7 +782,7 @@ This is currently in the experimental phase so there is not official support. Us
 
 {% include image.html file="image29.png"  max-width="248" %}
 
-[https://www.amazon.com/gp/product/B00S9I7EPO/](https://www.amazon.com/gp/product/B00S9I7EPO/)
+[Purchase on Amazon](https://www.amazon.com/gp/product/B00S9I7EPO/)
 
 Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently.
 
