@@ -29,7 +29,7 @@ folder: mydoc
 
 {% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
 
-{% include callout.html content="***Proceed to initial setup below***" type="success" %}
+<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to initial setup below***
 
 ## Initial Setup {#initial-setup}
 
