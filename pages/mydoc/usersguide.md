@@ -62,7 +62,7 @@ folder: mydoc
 
 {% include image.html file="image77.png" %}
 
-{% include callout.html content="**Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you are a US customer select Standard Edition. For international customers (outside of US) the OnlyKey comes pre-loaded with the International Travel Edition as shipping devices with military grade encryption is problematic in some countries. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) then you may load the standard OnlyKey firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup." type="default" %}
+{% include callout.html content="**Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you purchased OnlyKey through Amazon select the Standard Edition. The International Travel Edition ships globally as military grade encryption may be problematic in some countries. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) and you would prefer the Standard Edition then you may load this firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup." type="default" %}
 
 {% include image.html file="image88.png" %}
 
