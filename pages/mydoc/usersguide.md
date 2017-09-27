@@ -371,11 +371,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 {% include image.html file="image51.png" %}
 
-#### Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
-
-{% include note.html content="The OnlyKey comes pre-loaded with an attestation certificate that can be used or you can load a custom certificate and private key." %}
-
-In order to Load your own custom U2F certificate to OnlyKey see the certificate generation guide [here](https://docs.google.com/document/d/1LE09BB2ULGblc--3Ttut66NVMJk698LHp0f3DeRdr7w/edit?usp=sharing)
+#### Security Key - Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
 
 OnlyKey works just like any other U2F token. Follow the steps below to configure a slot to use U2F.
 
@@ -1013,7 +1009,32 @@ Currently the Google Authenticator (TOTP) feature requires the Chrome app to be 
 
 OnlyKey's implementation of U2F started out with the open source implementation [here](https://github.com/yohanes/teensy-u2f). We then reviewed the model in use by Yubikey® [here](https://www.Yubico.com/2014/11/Yubicos-u2f-key-wrapping/). And came up with our own implementation of key wrapping that utilizes the open source [AES-256-GCM](https://github.com/rweather/arduinolibs) implementation we are using for encryption of local storage. When the Onlykey is first configured with a PIN, a random nonce is stored that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin. The private key generated for U2F key handle encryption is generated from the SHA-256 hash of the random nonce and a unique Freescale chip ID that is hardcoded onto the processor at the factory. The U2F service also provides an AppID (that is tied to the URL of the site) and during registration the SHA256 hash of the AppID is used as the Initialization Vector for the AES-GCM encryption of the key handle. This ensures that the key handle is only valid for the particular combination of device (private key) and AppID that was created during registration. By using AES-256 in Galios Counter Mode and using SHA-256 our key wrapping implementation follows NIST (SP) 800 guidelines [NIST approved key wrapping](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf) (See Table 7: Approval Status of Block Cipher Algorithms Used for Key Wrapping and Table 9: Approval Status of Hash Functions)
 
-For the attestation certificates we allow users to import their own certificates. We do understand that the attestation certificate in other U2F tokens is hard coded and the user is unable to change this. There is an ongoing discussion of how you can have a closed source system (or U2F token) and truly be able to trust the security of that system. A closed source product is not verifiable, and requires you to trust that the vendor was not compelled to put a backdoor into the product. This is why we are using what may be the first open source implementation of U2F that supports user import of attestation certificates.
+For the attestation certificates we allow users to import their own certificates. We do understand that the attestation certificate and private key in other U2F tokens is hard coded and the user is unable to change this. There is an ongoing discussion of how you can have a closed source system (or U2F token) and truly be able to trust the security of that system. A closed source product is not verifiable, and requires you to trust that the vendor was not compelled to put a backdoor into the product. This is why we are using what may be the first open source implementation of U2F that supports user import of attestation certificates.
+
+{% include note.html content="In order to Load your own custom U2F certificate to OnlyKey see the certificate generation guide [here](https://docs.google.com/document/d/1LE09BB2ULGblc--3Ttut66NVMJk698LHp0f3DeRdr7w/edit?usp=sharing)" %}
+
+**What is attestation and why would I load a custom certificate and key?**
+
+Attestation is basically U2F's way of attesting that a token is from a certain vendor. For example, if you were to use a Yubikey, the website would know that you were using a Yubikey to authenticate instead of some other vendor's device as shown below:
+
+{% include image.html file="u2f-attestation" max-width="500" %}
+
+This is good in some ways as website's may be able to only permit certain vendor's devices that they trust. But there are two big problems here:
+
+**1) This also can be used to track users and has some serious privacy implications.**
+As shown in the output from U2F authentication you can see that a unique serial number is visible.
+
+{% include image.html file="serial-number" max-width="400" %}
+
+With this information the website knows exactly which device was used to authenticate. Knowing what device was used in one step away from knowing what person is accessing the website. And along with this at what time they accessed it, from what location, and what they accessed. If the website were to receive a national security letter they would then have to turn over this information on all of their users. This metadata provides a way to track user's activity and identity with precision.
+
+2) You can never have an open source U2F device with a "trusted" attestation key/certificate
+
+In order to be open source it must be possible for a user to change the source (firmware) running on their device. Otherwise, there is no way of knowing what firmware is running on their device or if the vendor was compelled to put a backdoor into the device. But if you allow a user to change the source on thier device now you have just invalidated the attestation that this device is a trusted device from a certain vendor. Open source U2F and attestation are essentially incompatible.  
+
+At this point this is not much of an issue as websites allow all U2F token's and do not enforce the attestation. If this were to occur, then open source U2F tokens would no longer work. As many user's do not trust closed source systems for privacy reasons, if this were to occur there may be a need for a new open source friendly fork of U2F to be developed, or use an alternative form of 2FA.
+
+The problem with attestation is that a vendor cannot give user's access to the attestation key, if the user were to able to read the attestation key from a device they could then load it on a different vendor device and now your vendor X device would show up as a Yubikey because that would allow the user to 
 
 This all being said the implementation of U2F has not been certified by the FIDO Alliance as an approved token.
 
