@@ -98,9 +98,9 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 {% include tip.html content="***Forget your PIN?***<br><br>
 If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:
-
+<br>
 **Method #1** - Enter your self-destruct PIN. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.*
-
+<br>
 **Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking. This is an intentional safeguard so that in the event that a child gets ahold of your OnlyKey the device will not be inadvertently wiped by them repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure." %}
 
 *If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](#features).*
@@ -171,14 +171,14 @@ The example configuration shown below would be to set up a username and password
 
 Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
 
-{% include important.html content="***Common issues:***
+***Common issues:***
 
 *   ***The password is entered before page loads.***
     *   *Set the delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
 *   ***There is a Captcha required sometimes after password***
     *   *You can either set the delay to a high value like 8 - 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
 *   ***Everything works fine but I really wish it typed faster.***
-    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*" %}
+    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
 
 As mentioned earlier, login pages can be different between sites and sometimes even different on the same site. For the second example we will set up another Google login, this one for a Google account where the username is already saved to the website so all you need to do is enter a password. This is the default when you have already logged into Google in the past on a computer.
 
@@ -264,7 +264,7 @@ LastPass password generation tool available [here](https://lastpass.com/generate
 
 ### Configure Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
-Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are three different types of 2FA supported by OnlyKey. There is more information on these available on the features page of the [OnlyKey Wiki](https://docs.crp.to). By supporting multiple modes of 2FA OnlyKey will work with most sites that suppor 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
+Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are three different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that suppor 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
 
 #### Google Authenticator (TOTP) {#google-authenticator-totp}
 
@@ -314,7 +314,7 @@ Once your account has been verified you are all set. You can add a username and 
 
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
 
-#### Yubico® One-Time Password {#Yubico®-one-time-password}
+#### Yubico® One-Time Password {#Yubico-one-time-password}
 
 *DISCLAIMER - Yubico® and Yubikey® are the registered trademarks of Yubico® AB. OnlyKey is not associated with or sponsored by Yubico® AB. Yubikey® OTP has been released by Yubico® as open source software with license found [here](https://github.com/Yubico/Yubico-c/blob/master/COPYING)*
 
@@ -337,11 +337,11 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 *   Now your OnlyKey is ready to function in Yubikey® OTP mode
 *   Just select a slot that you wish to use with Yubikey® OTP mode by selecting the radio button and then selecting ''Submit''. The Yubikey® OTP will be generated when the corresponding button is pressed.
 
-{% include image.html file="image56.png" max-width="80" %}
+{% include image.html file="image56.png" max-width="400" %}
 
 The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP.
 
-Learn more about Yubikey® OTP implementation [here.](#Yubico®-one-time-password)
+Learn more about Yubikey® OTP implementation [here.](#Yubico-one-time-password)
 
 #### Yubicloud (Not Officially Support)  {#yubicloud-not-officially-support}
 
@@ -355,7 +355,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 {% include callout.html content="**Step 3.** Insert Yubikey®, select a configuration slot, and click ''Write configuration'' button" type="default" %}
 
-{% include image.html file="image5.png" max-width="90" %}
+{% include image.html file="image5.png" %}
 
 {% include callout.html content="**Step 4.** Set the values shown in the Public Identity, Private Identity, and Secret Key to your 3rd party device." type="default" %}
 
@@ -381,7 +381,7 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 
 {% include callout.html content="**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting ''Submit''." type="default" %}
 
-{% include image.html file="image34.png" max-width="90" %}
+{% include image.html file="image34.png" %}
 
 {% include callout.html content="**Step 2.** Go to the website that you wish to register a new security token and when you select to register a token you will notice the OnlyKey light flashing (Blue for OnlyKey Color) on and off. Press the button corresponding to the slot you set to U2F in step 1 to register token." type="default" %}
 
@@ -403,19 +403,19 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 {% include callout.html content="**Step 1.** Go into Account settings-> Multi-factor Options and select the edit button in the Google Authenticator column." type="default" %}
 
-{% include image.html file="image71.png" max-width="495" %}
+{% include image.html file="image71.png" max-width="595" %}
 
 {% include callout.html content="**Step 2.** Change to enabled and select View button next to Private Key" type="default" %}
 
-{% include image.html file="image7.png" max-width="351" %}
+{% include image.html file="image7.png" max-width="451" %}
 
 {% include callout.html content="**Step 3.** You will be prompted to enter your master password and then the key is displayed." type="default" %}
 
-{% include image.html file="image11.png" max-width="369" %}
+{% include image.html file="image11.png" max-width="469" %}
 
 {% include callout.html content="**Step 4.** Copy and paste the key into the Google Auth OTP field of the OnlyKey app for the slot that you want to set up." type="default" %}
 
-{% include image.html file="image53.png" max-width="415" %}
+{% include image.html file="image53.png" max-width="515" %}
 
 {% include callout.html content="**Step 5.** Make sure to check the radio button next to Google Auth OTP and select Submit." type="default" %}
 
@@ -425,7 +425,7 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 {% include image.html file="image13.png" max-width="624" %}
 
-{% include image.html file="image10.png" max-width="400" %}
+{% include image.html file="image10.png" max-width="500" %}
 
 #### DashLane {#dashlane}
 
@@ -522,17 +522,17 @@ If this is your first time creating keys or if you would like to create new keys
 
 {% include callout.html content="**Step 1.** Open Chrome and then open this link to go to the[ Mailvelope Extension in the Chrome Web Store.](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) Click ADD TO CHROME, and then Add extension to add the extension to Chrome." type="default" %}
 
-{% include image.html file="image81.png" max-width="525" %}
+{% include image.html file="image81.png" max-width="625" %}
 
-{% include image.html file="image57.png" max-width="314" %}
+{% include image.html file="image57.png" max-width="354" %}
 
 {% include callout.html content="**Step 2.** Now a small lock and key will show up in the top right of the Chrome browser. Click the lock and then click Options." type="default" %}
 
-{% include image.html file="image58.png" max-width="312" %}
+{% include image.html file="image58.png" max-width="412" %}
 
 {% include callout.html content="**Step 3.** On the page that opens up click Generate Key" type="default" %}
 
-{% include image.html file="image39.png" max-width="513"%}
+{% include image.html file="image39.png" %}
 
 {% include callout.html content="**Step 4.** Fill in the name, email, and password you want to be assigned to your key. You can uncheck Upload public key to Mailvelope Key Server if you wish. Finally, click generate to create your key." type="default" %}
 
@@ -572,7 +572,7 @@ Select the key features (what you want to use the key for) such as backup, signa
 
 {% include callout.html content="**Step 5.** Click Save to OnlyKey, then select primary or subkey. The primary key is typically used to sign other keys so you will generally want to load the subkey(s)." type="default" %}
 
-{% include image.html file="image87.png" max-width="349" %}
+{% include image.html file="image87.png" max-width="449" %}
 
 {% include callout.html content="**Step 6** Click Save, and you should see the message Successfully set RSA Key." type="default" %}
 
@@ -1017,7 +1017,7 @@ For the attestation certificates we allow users to import their own certificates
 
 This all being said the implementation of U2F has not been certified by the FIDO Alliance as an approved token.
 
-##### Yubico® One-Time Password {#Yubico®-one-time-password}
+##### Yubico® One-Time Password {#Yubico-one-time-password}
 
 OnlyKey's implementation of the Yubico® OTP is based on the open source library provided by Yubico® [here](https://github.com/Yubico/Yubico-c). The one-time passwords generated by OnlyKey have been tested to be indistinguishable from the one-time passwords generated by a Yubikey®. However, some services like Yubicloud do not allow third-party devices and require a valid serial number from a Yubikey®. For example, you can test your OnlyKey with the [https://demo.Yubico.com/](https://demo.Yubico.com/) test site but you would be required to have a valid Yubikey® serial number to do so.
 
