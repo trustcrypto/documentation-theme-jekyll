@@ -3,7 +3,7 @@
 entries:
 - title: sidebar
   product: OnlyKey Documentation
-  version: 
+  version:
   folders:
 
   - title: General Information
@@ -19,6 +19,50 @@ entries:
       url: /faq.html
       output: web, pdf
 
+  - title: User's Guide
+    output: web, pdf
+    folderitems:
+
+    - title: Unpacking OnlyKey
+      url: /usersguide.html#unpacking
+      output: web, pdf
+
+    - title: Initial Setup
+      url: /usersguide.html#initial-setup
+      output: web, pdf
+
+    - title: Configure Profile
+      url: /usersguide.html#configure-profile
+      output: web, pdf
+
+    - title: Preferences
+      url: /usersguide.html#preferences
+      output: web, pdf
+
+    - title: Encryption Keys
+      url: /usersguide.html#encryption-keys
+      output: web, pdf
+
+    - title: Secure Encrypted Backup Anywhere
+      url: /usersguide.html#secure-encrypted-backup-anywhere
+      output: web, pdf
+
+    - title: Restore From Backup
+      url: /usersguide.html#restore-from-backup
+      output: web, pdf
+
+    - title: Loading OnlyKey Firmware
+      url: /usersguide.html#loading-onlykey-firmware
+      output: web, pdf
+
+    - title: Troubleshooting
+      url: /usersguide.html#troubleshooting
+      output: web, pdf
+
+    - title: Additional Information
+      url: /usersguide.html#additional-information
+      output: web, pdf
+
   - title: Apps and Software
     output: web, pdf
     folderitems:
@@ -30,12 +74,11 @@ entries:
     - title: OnlyKey Chrome App
       url: /app.html
       output: web, pdf
-      
+
     - title: OnlyKey Python Command-Line Utility
       url: /command-line.html
       output: web, pdf
-      
+
     - title: OnlyKey SSH/GPG Agent
       url: /onlykey-agent.html
       output: web, pdf
-
