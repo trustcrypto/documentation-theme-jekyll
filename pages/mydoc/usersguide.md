@@ -1028,7 +1028,7 @@ As shown in the output from U2F authentication you can see that a unique serial 
 
 With this information the website knows exactly which device was used to authenticate. Knowing what device was used in one step away from knowing what person is accessing the website. And along with this at what time they accessed it, from what location, and what they accessed. If the website were to receive a national security letter they would then have to turn over this information on all of their users. This metadata provides a way to track user's activity and identity with precision.
 
-2) You can never have an open source U2F device with a "trusted" attestation key/certificate
+**2) You can never have an open source U2F device with a "trusted" attestation key/certificate**
 
 In order to be open source it must be possible for a user to change the source (firmware) running on their device. Otherwise, there is no way of knowing what firmware is running on their device or if the vendor was compelled to put a backdoor into the device. But if you allow a user to change the source on thier device now you have just invalidated the attestation that this device is a trusted device from a certain vendor. Open source U2F and attestation are essentially incompatible.  
 
