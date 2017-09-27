@@ -1034,8 +1034,6 @@ In order to be open source it must be possible for a user to change the source (
 
 At this point this is not much of an issue as websites allow all U2F token's and do not enforce the attestation. If this were to occur, then open source U2F tokens would no longer work. As many user's do not trust closed source systems for privacy reasons, if this were to occur there may be a need for a new open source friendly fork of U2F to be developed, or use an alternative form of 2FA.
 
-The problem with attestation is that a vendor cannot give user's access to the attestation key, if the user were to able to read the attestation key from a device they could then load it on a different vendor device and now your vendor X device would show up as a Yubikey because that would allow the user to
-
 This all being said the implementation of U2F has not been certified by the FIDO Alliance as an approved token.
 
 ##### Yubico® One-Time Password {#Yubico-one-time-password}
