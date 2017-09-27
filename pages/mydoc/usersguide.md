@@ -1017,14 +1017,14 @@ For the attestation certificates we allow users to import their own certificates
 
 Attestation is basically U2F's way of attesting that a token is from a certain vendor. For example, if you were to use a Yubikey, the website would know that you were using a Yubikey to authenticate instead of some other vendor's device as shown below:
 
-{% include image.html file="u2f-attestation" max-width="500" %}
+{% include image.html file="u2f-attestation.jpg" max-width="500" %}
 
 This is good in some ways as website's may be able to only permit certain vendor's devices that they trust. But there are two big problems here:
 
 **1) This also can be used to track users and has some serious privacy implications.**
 As shown in the output from U2F authentication you can see that a unique serial number is visible.
 
-{% include image.html file="serial-number" max-width="400" %}
+{% include image.html file="serial-number.jpg" max-width="400" %}
 
 With this information the website knows exactly which device was used to authenticate. Knowing what device was used in one step away from knowing what person is accessing the website. And along with this at what time they accessed it, from what location, and what they accessed. If the website were to receive a national security letter they would then have to turn over this information on all of their users. This metadata provides a way to track user's activity and identity with precision.
 
@@ -1034,7 +1034,7 @@ In order to be open source it must be possible for a user to change the source (
 
 At this point this is not much of an issue as websites allow all U2F token's and do not enforce the attestation. If this were to occur, then open source U2F tokens would no longer work. As many user's do not trust closed source systems for privacy reasons, if this were to occur there may be a need for a new open source friendly fork of U2F to be developed, or use an alternative form of 2FA.
 
-The problem with attestation is that a vendor cannot give user's access to the attestation key, if the user were to able to read the attestation key from a device they could then load it on a different vendor device and now your vendor X device would show up as a Yubikey because that would allow the user to 
+The problem with attestation is that a vendor cannot give user's access to the attestation key, if the user were to able to read the attestation key from a device they could then load it on a different vendor device and now your vendor X device would show up as a Yubikey because that would allow the user to
 
 This all being said the implementation of U2F has not been certified by the FIDO Alliance as an approved token.
 
