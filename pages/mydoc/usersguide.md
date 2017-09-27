@@ -823,9 +823,9 @@ If you don't like how far your OnlyKey hangs off of your keyring then follow the
 
 Various other Keychains may be used some ideas are shown below:
 
-{% include image.html file="keychain.jpg" %}
+{% include image.html file="keychain.jpg" max-width="300" %}
 
-{% include image.html file="keychain2.jpg" %}
+{% include image.html file="keychain2.jpg" max-width="300" %}
 
 ## Troubleshooting {#troubleshooting}
 
@@ -850,7 +850,7 @@ Below is a list of common issues and solutions.
   <tr>
    <td>Not working with certain sites / Not entering data in correct field
    </td>
-   <td>We often get customers that ask how to set up a specific site with OnlyKey. There are several examples listed in the table provided in the section "Set up a slot". If you have a use case that is not covered by this please open a new issue on the support forum.
+   <td>We often get customers that ask how to set up a specific site with OnlyKey. There are several examples listed in the table provided in the [Set up a slot](#Set up a slot) section. If you have a use case that is not covered by this please open a new issue on the support forum.
    </td>
   </tr>
   <tr>
