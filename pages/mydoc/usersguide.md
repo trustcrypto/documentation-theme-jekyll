@@ -1015,6 +1015,8 @@ For the attestation certificates we allow users to import their own certificates
 
 **What is attestation and why would I load a custom certificate and key?**
 
+*Short Answer - A custom certificate and key is generally not needed. Keeping the default attestation certificate and key is good for privacy as there is no personally identifiable information in the default key. However, there are some use cases like if an organization wants to load custom certificates and keys to devices so that employees only use the company issued device.*
+
 Attestation is basically U2F's way of attesting that a token is from a certain vendor. For example, if you were to use a Yubikey, the website would know that you were using a Yubikey to authenticate instead of some other vendor's device as shown below:
 
 {% include image.html file="u2f-attestation.jpg" max-width="500" %}
@@ -1027,6 +1029,8 @@ As shown in the output from U2F authentication you can see that a unique serial 
 {% include image.html file="serial-number.jpg" max-width="400" %}
 
 With this information the website knows exactly which device was used to authenticate. Knowing what device was used in one step away from knowing what person is accessing the website. And along with this at what time they accessed it, from what location, and what they accessed. If the website were to receive a national security letter they would then have to turn over this information on all of their users. This metadata provides a way to track user's activity and identity with precision.
+
+i.e. Bob uses his device to authenticate to Google and to Facebook. Agency X knows that serial number '123456' device is used to authenticate to Google and Facebook. Agency X knows that this Facebook account belongs to Bob because he has a profile picture of himself, now they know that the Google account also belongs to Bob.
 
 **2) You can never have an open source U2F device with a "trusted" attestation key/certificate**
 
