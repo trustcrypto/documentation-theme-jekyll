@@ -80,13 +80,15 @@ folder: mydoc
 
 {% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](#self-destruct) for more information on this feature.
 <br>
-*Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue.*" type="default" %}
+<br>
+Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
 
 {% include callout.html content="**Step 12. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN." type="default" %}
 
-{% include callout.html content="**Step 13. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature." type="default" %}
-
-Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue.
+{% include callout.html content="**Step 13. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature.
+<br>
+<br>
+Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
 
 {% include callout.html content="**Step 14. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile." type="default" %}
 
