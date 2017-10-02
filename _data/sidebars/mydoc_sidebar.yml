@@ -43,12 +43,12 @@ entries:
       url: /usersguide.html#ssh-login
       output: web, pdf
 
-    - title: Self-Destruct
-      url: /usersguide.html#self-destruct
+    - title: Email/File Signing (OpenPGP)
+      url: /usersguide.html#email-file-signing-openpgp
       output: web, pdf
 
-     - title: Plausible Deniability
-      url: /usersguide.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
+    - title: Email/File Decryption (OpenPGP)
+      url: /usersguide.html#email-file-decryption-openpgp
       output: web, pdf
 
   - title: User's Guide
