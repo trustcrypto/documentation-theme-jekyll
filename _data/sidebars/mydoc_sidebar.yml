@@ -58,6 +58,10 @@ entries:
     - title: Plausible Deniability
       url: /usersguide.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
       output: web, pdf
+    
+    - title: Hardware Security
+      url: /usersguide.html#hardware-security
+      output: web, pdf
 
   - title: User's Guide
     output: web, pdf
