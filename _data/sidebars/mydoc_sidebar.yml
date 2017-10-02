@@ -42,14 +42,6 @@ entries:
     - title: SSH Login
       url: /usersguide.html#ssh-login
       output: web, pdf
-      
-    - title: Email/File Signing (OpenPGP)
-      url: /usersguide.html#email-file-signing-openpgp
-      output: web, pdf
-
-    - title: Email/File Decryption (OpenPGP)
-      url: /usersguide.html#email-file-decryption-openpgp
-      output: web, pdf
 
     - title: Self-Destruct
       url: /usersguide.html#self-destruct
