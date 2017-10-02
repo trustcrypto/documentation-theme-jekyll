@@ -18,23 +18,23 @@ entries:
     - title: FAQs
       url: /faq.html
       output: web, pdf
-      
+
   - title: Features
     output: web, pdf
     folderitems:
-    
+
     - title: LED Definitions
       url: /usersguide.html#led-definitions-onlykey-color
       output: web, pdf
-      
+
     - title: Password Manager
       url: /usersguide.html#password-manager
       output: web, pdf
-      
+
     - title: Two-Factor Authentication
       url: /usersguide.html#two-factor-authentication
       output: web, pdf
-      
+
     - title: Keys (PGP/GPG/OpenPGP/SSH)
       url: /usersguide.html#keys-feature
       output: web, pdf
