@@ -899,61 +899,6 @@ This method has been replaced by the built-in OnlyKey secure backup method but i
 
 ### Features {#features}
 
-#### Password Manager {#password-manager}
-
-The primary benefit to having an OnlyKey is that instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong 32 character passwords along with the usernames and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
-
-#### Self-Destruct {#self-destruct}
-
-Wouldn't it be nice to know that your data is protected, and if you are in a pinch or forced to give up your PIN there is an easy way to make sure that your data does not get into the wrong hands? That is what the Self-Destruct feature is all about. You set this PIN code whenever you first setup your OnlyKey and then if you or anyone else ever enters it the OnlyKey wipes all of the sensitive data you have stored on it.
-
-#### Plausible Deniability (International Travel Edition and Standard Edition of Firmware) {#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware}
-
-Wouldn't it be nice to be able to be able to travel to a country where encryption is illegal or to a country where it is against the law to refuse to give up your password to authorities and be able to comply without actually giving any access to your accounts? That is what the plausible deniability feature is all about. OnlyKey allows the use of a hidden profile and a fake profile (Plausible Deniability Mode) that essentially provides a cover story. If compelled to do so a fake profile can be activated by entering a plausible deniability PIN code and the goal of this feature is that there is no proof that the hidden profile even exists. In fact since the international travel edition of the OnlyKey ships without the plausible deniability feature there is no way to know if you are using an OnlyKey with the international travel edition firmware or the Standard Edition firmware in plausible deniability mode. When the Standard Edition OnlyKey is in plausible deniability mode it is essentially indistinguishable from an International version OnlyKey.
-
-Now that you understand the basics of how the plausible deniability feature works the reason for having two versions of firmware becomes more clear. The genius behind the plausible deniability feature that makes it possible is a three part solution.
-
-Part 1. We ship two versions of the OnlyKey, an international travel edition and a standard edition. We can ship the international travel edition anywhere in the world because this version is basically just a password manager that does not utilize encryption (No U.S. export restrictions). The Standard Edition on the other hand does utilize encryption and has the plausible deniability feature that when activated makes the OnlyKey appear to be running the international travel edition firmware.
-
-Part 2. Both versions utilize physical flash security to essentially lock the information stored on the devices so there is no way to know what version a device has loaded. We have taken great care to ensure that the plausible deniability mode on the Standard Edition Version acts exactly the same as the International Travel Edition.
-
-Part 3. We make it easy for user's to load whatever version of the firmware they want. International customers can easily load the Standard Edition and vice versa. Even we have no way of knowing what version of firmware a device has loaded.
-
-Anyone can view the open source firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases) and verify that this is the case. Since there are devices that ship without the ability to perform encryption it is plausible that your OnlyKey is one of these, just a basic password manager. There is not a way of knowing that there is another hidden profile that is only activated if you know the secret PIN. Best of all, changing the version of firmware on your device is easily accomplished as the OnlyKey is field upgradable. There is a section in the user's guide [here](#loading-onlykey-firmware) that provides instructions on flashing whichever Onlykey firmware you want.
-
-So now you can see how a user if compelled to do so could say ''I just have a basic password manager, here is my PIN code'' and it would be completely plausible that they do in fact just have a basic password manager. To be even more plausible the user should set up actual accounts with real credentials which work to log into websites.
-
-Are these the user's real accounts or are really just dummy accounts and there is another hidden profile? There is not a way of knowing.
-
-Alternatively, if you don't need the second profile for plausible deniability you can just use it as a second profile to store additional accounts, such as a personal profile and keep your work accounts in the primary profile.
-
-For more information on encryption and international travel see [https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/)
-
-Q - When should I use the plausible deniability PIN?
-
-A - Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. Form more information on Plausible Deniability encryption see [https://en.wikipedia.org/wiki/Deniable_encryption](https://en.wikipedia.org/wiki/Deniable_encryption)
-
-Q - When should I not use the plausible deniability PIN?
-
-A - Plausible deniability is only good if you are in a country where your worst case scenario is that you will be fined for using encryption. If someone is holding a gun to your head or there is risk of torture plausible deniability is pretty much useless. For more information on why see this [https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis](https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis).
-
-#### Hardware Security {#hardware-security}
-
-When it comes to hardware security there are terms such as tamper resistant, tamper proof, and secure element. These terms are mostly marketing terms as anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof, and tamper resistant can mean something as simple as the device being coated in plastic that can [easily be removed](http://www.hexview.com/~scl/neo/). The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels.
-
-A simplified explanation of these levels can be found on [wikipedia](https://en.wikipedia.org/wiki/FIPS_140-2) (Notice that even the highest security level is not tamper proof)
-
-While we do not plan on pursuing FIPS certification we can attest that OnlyKey meets many of the requirements of FIPS certification including using a FIPS approved algorithm (FIPS 140-2 Level 1 - AES-256 is an approved algorithm). The coating of the OnlyKey would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. In our testing chemical removal of the coating results in noticeable damage to the OnlyKey that results in evidence that it was tampered with (FIPS 140-2 Level 2). In the same way attempts to manually delaminate the potting compound in our testing will also delaminate electronic components rendering the device inoperable and creates visible damage to the silkscreen/soldermask layers.
-
-In addition to this, we enable the [Kinetis flash security](http://cache.nxp.com/files/microcontrollers/doc/app_note/AN4507.pdf) the first time the device is used. This ensures that the firmware, and all sensitive information stored in memory is essentially locked down. The ability to read or write to the chip from external sources is disabled. The only way to clear this so the OnlyKey can load new firmware is to place a jumper between the two touch points of the OnlyKey shown here:
-
-
-{% include image.html file="image16.png" %}
-
-When a connection is placed between these two points it does two things, first it proves that a user is present there is no way for malware running on the connected computer to do this, second it does a mass erase of the OnlyKey. A mass erase essentially wipes everything and returns the chip to a factory default state. Once this is complete new firmware can be loaded to the Onlykey.
-
-If you would like to read more about the flash security features of the MK20 [here](https://www.pjrc.com/teensy/K20P64M72SF1RM.pdf) is a document that describes in detail. If you plan to mess around with the flash security features - WARNING - Changes to the flash security settings can brick your device. We tested this feature to ensure this does not happen but any changes you make to source code are at your own risk.
-
 #### LED Definitions (OnlyKey Color) {#led-definitions-onlykey-color}
 
 *   Steady Green Light = Unlocked
@@ -978,6 +923,10 @@ If you would like to read more about the flash security features of the MK20 [he
 
 *   Fade in and Fade out = U2F, SSH, or private key operation request
    Or if you have placed your device into config mode
+
+#### Password Manager {#password-manager}
+
+The primary benefit to having an OnlyKey is that instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong 32 character passwords along with the usernames and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
 
 #### Two-Factor Authentication {#two-factor-authentication}
 
@@ -1078,13 +1027,68 @@ See [https://github.com/trustcrypto/onlykey-agent](https://github.com/trustcrypt
 
 Using the OnlyKey PGP Message Tool, the OnlyKey supports signing of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as proof of concept, additional work is needed to properly generate signatures that can be validated.
 
-See [https://github.com/trustcrypto/python-onlykey](https://github.com/trustcrypto/python-onlykey)
+See [OnlyKey Python Command-Line Utility](https://docs.crp.to/command-line.html)
+
+Coming soon - Email/File/Chat Signing in browser using Keybase.
 
 #### Email/File Decryption (OpenPGP) {#email-file-decryption-openpgp}
 
 Using the OnlyKey PGP Message Tool, the OnlyKey supports decryption of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as experimental, to try it out we recommend encrypting emails with Mailvelope (Using RSA 4096 Key) and decrypting with the OnlyKey PGP Messege Tool. The benefit this provides is that your private key is never exposed on a computer where it can be compromised by hacker.
 
-See [https://github.com/trustcrypto/python-onlykey](https://github.com/trustcrypto/python-onlykey)
+See [OnlyKey Python Command-Line Utility](https://docs.crp.to/command-line.html)
+
+Coming soon - Email/File/Chat Decryption in browser using Keybase.
+
+#### Self-Destruct {#self-destruct}
+
+Wouldn't it be nice to know that your data is protected, and if you are in a pinch or forced to give up your PIN there is an easy way to make sure that your data does not get into the wrong hands? That is what the Self-Destruct feature is all about. You set this PIN code whenever you first setup your OnlyKey and then if you or anyone else ever enters it the OnlyKey wipes all of the sensitive data you have stored on it.
+
+#### Plausible Deniability (International Travel Edition and Standard Edition of Firmware) {#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware}
+
+Wouldn't it be nice to be able to be able to travel to a country where encryption is illegal or to a country where it is against the law to refuse to give up your password to authorities and be able to comply without actually giving any access to your accounts? That is what the plausible deniability feature is all about. OnlyKey allows the use of a hidden profile and a fake profile (Plausible Deniability Mode) that essentially provides a cover story. If compelled to do so a fake profile can be activated by entering a plausible deniability PIN code and the goal of this feature is that there is no proof that the hidden profile even exists. In fact since the international travel edition of the OnlyKey ships without the plausible deniability feature there is no way to know if you are using an OnlyKey with the international travel edition firmware or the Standard Edition firmware in plausible deniability mode. When the Standard Edition OnlyKey is in plausible deniability mode it is essentially indistinguishable from an International version OnlyKey.
+
+Now that you understand the basics of how the plausible deniability feature works the reason for having two versions of firmware becomes more clear. The genius behind the plausible deniability feature that makes it possible is a three part solution.
+
+Part 1. We ship two versions of the OnlyKey, an international travel edition and a standard edition. We can ship the international travel edition anywhere in the world because this version is basically just a password manager that does not utilize encryption (No U.S. export restrictions). The Standard Edition on the other hand does utilize encryption and has the plausible deniability feature that when activated makes the OnlyKey appear to be running the international travel edition firmware.
+
+Part 2. Both versions utilize physical flash security to essentially lock the information stored on the devices so there is no way to know what version a device has loaded. We have taken great care to ensure that the plausible deniability mode on the Standard Edition Version acts exactly the same as the International Travel Edition.
+
+Part 3. We make it easy for user's to load whatever version of the firmware they want. International customers can easily load the Standard Edition and vice versa. Even we have no way of knowing what version of firmware a device has loaded.
+
+Anyone can view the open source firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases) and verify that this is the case. Since there are devices that ship without the ability to perform encryption it is plausible that your OnlyKey is one of these, just a basic password manager. There is not a way of knowing that there is another hidden profile that is only activated if you know the secret PIN. Best of all, changing the version of firmware on your device is easily accomplished as the OnlyKey is field upgradable. There is a section in the user's guide [here](#loading-onlykey-firmware) that provides instructions on flashing whichever Onlykey firmware you want.
+
+So now you can see how a user if compelled to do so could say ''I just have a basic password manager, here is my PIN code'' and it would be completely plausible that they do in fact just have a basic password manager. To be even more plausible the user should set up actual accounts with real credentials which work to log into websites.
+
+Are these the user's real accounts or are really just dummy accounts and there is another hidden profile? There is not a way of knowing.
+
+Alternatively, if you don't need the second profile for plausible deniability you can just use it as a second profile to store additional accounts, such as a personal profile and keep your work accounts in the primary profile.
+
+For more information on encryption and international travel see [https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/)
+
+Q - When should I use the plausible deniability PIN?
+
+A - Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. Form more information on Plausible Deniability encryption see [https://en.wikipedia.org/wiki/Deniable_encryption](https://en.wikipedia.org/wiki/Deniable_encryption)
+
+Q - When should I not use the plausible deniability PIN?
+
+A - Plausible deniability is only good if you are in a country where your worst case scenario is that you will be fined for using encryption. If someone is holding a gun to your head or there is risk of torture plausible deniability is pretty much useless. For more information on why see this [https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis](https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis).
+
+#### Hardware Security {#hardware-security}
+
+When it comes to hardware security there are terms such as tamper resistant, tamper proof, and secure element. These terms are mostly marketing terms as anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof, and tamper resistant can mean something as simple as the device being coated in plastic that can [easily be removed](http://www.hexview.com/~scl/neo/). The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels.
+
+A simplified explanation of these levels can be found on [wikipedia](https://en.wikipedia.org/wiki/FIPS_140-2) (Notice that even the highest security level is not tamper proof)
+
+While we do not plan on pursuing FIPS certification we can attest that OnlyKey meets many of the requirements of FIPS certification including using a FIPS approved algorithm (FIPS 140-2 Level 1 - AES-256 is an approved algorithm). The coating of the OnlyKey would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. In our testing chemical removal of the coating results in noticeable damage to the OnlyKey that results in evidence that it was tampered with (FIPS 140-2 Level 2). In the same way attempts to manually delaminate the potting compound in our testing will also delaminate electronic components rendering the device inoperable and creates visible damage to the silkscreen/soldermask layers.
+
+In addition to this, we enable the [Kinetis flash security](http://cache.nxp.com/files/microcontrollers/doc/app_note/AN4507.pdf) the first time the device is used. This ensures that the firmware, and all sensitive information stored in memory is essentially locked down. The ability to read or write to the chip from external sources is disabled. The only way to clear this so the OnlyKey can load new firmware is to place a jumper between the two touch points of the OnlyKey shown here:
+
+
+{% include image.html file="image16.png" %}
+
+When a connection is placed between these two points it does two things, first it proves that a user is present there is no way for malware running on the connected computer to do this, second it does a mass erase of the OnlyKey. A mass erase essentially wipes everything and returns the chip to a factory default state. Once this is complete new firmware can be loaded to the Onlykey.
+
+If you would like to read more about the flash security features of the MK20 [here](https://www.pjrc.com/teensy/K20P64M72SF1RM.pdf) is a document that describes in detail. If you plan to mess around with the flash security features - WARNING - Changes to the flash security settings can brick your device. We tested this feature to ensure this does not happen but any changes you make to source code are at your own risk.
 
 #### Config Mode {#config-mode}
 
