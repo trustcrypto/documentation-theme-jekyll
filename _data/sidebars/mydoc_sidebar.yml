@@ -30,6 +30,18 @@ entries:
     - title: Password Manager
       url: /usersguide.html#password-manager
       output: web, pdf
+      
+    - title: Two-Factor Authentication
+      url: /usersguide.html#two-factor-authentication
+      output: web, pdf
+      
+    - title: Keys (PGP/GPG/OpenPGP/SSH)
+      url: /usersguide.html#keys-feature
+      output: web, pdf
+
+    - title: SSH Login
+      url: /usersguide.html#ssh-login
+      output: web, pdf
 
   - title: User's Guide
     output: web, pdf
