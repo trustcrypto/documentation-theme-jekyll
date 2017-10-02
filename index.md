@@ -17,7 +17,7 @@ This will ensure you stay up to date on important OnlyKey updates.
 
 ### 2. OnlyKey Configuration
 
-The users's guide provides step-by-step instructions for configuring the OnlyKey. The user's guide is available online here [Online User's Guide](https://docs.google.com/document/d/196ZUQQA0P9QKROT6K6pCtvPV55M9XRLXppPgEe_5JvI/pub) as well as downloadable PDF format here [User's Guide PDF](https://drive.google.com/open?id=0B_Bb-hXCnpYqb0ZDVFFRd1VLTE0).
+The users's guide provides step-by-step instructions for configuring the OnlyKey. The user's guide is available online here [Online User's Guide](https://docs.crp.to/usersguide.html) as well as downloadable PDF format here [User's Guide PDF](https://drive.google.com/open?id=0B_Bb-hXCnpYqb0ZDVFFRd1VLTE0).
 
 ### 3. OnlyKey Support
 
