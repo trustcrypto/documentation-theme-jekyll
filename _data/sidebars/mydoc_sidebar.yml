@@ -19,35 +19,23 @@ entries:
       url: /faq.html
       output: web, pdf
       
-    - title: Features
-      url: /usersguide.html#features
+  - title: Features
+    output: web, pdf
+    folderitems:
+    
+    - title: LED Definitions
+      url: /usersguide.html#password-manager
       output: web, pdf
       
     - title: Password Manager
       url: /usersguide.html#password-manager
       output: web, pdf
-
-    - title: Self-Destruct
-      url: /usersguide.html#self-destruct
-      output: web, pdf
-
-     - title: Plausible Deniability
-      url: /usersguide.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
-      output: web, pdf
-
-    - title: Hardware Security
-      url: /usersguide.html#password-manager
-      output: web, pdf
-
-     - title: LED Definitions
-      url: /usersguide.html#password-manager
-      output: web, pdf
-
+      
     - title: Two-Factor Authentication
       url: /usersguide.html#password-manager
       output: web, pdf
-
-     - title: Keys (PGP/GPG)
+      
+    - title: Keys (PGP/GPG)
       url: /usersguide.html#password-manager
       output: web, pdf
 
@@ -60,6 +48,18 @@ entries:
       output: web, pdf
 
     - title: Email/File Decryption (OpenPGP)
+      url: /usersguide.html#password-manager
+      output: web, pdf
+
+    - title: Self-Destruct
+      url: /usersguide.html#self-destruct
+      output: web, pdf
+
+     - title: Plausible Deniability
+      url: /usersguide.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
+      output: web, pdf
+
+    - title: Hardware Security
       url: /usersguide.html#password-manager
       output: web, pdf
 
