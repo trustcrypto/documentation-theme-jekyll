@@ -926,7 +926,7 @@ This method has been replaced by the built-in OnlyKey secure backup method but i
 
 #### Password Manager {#password-manager}
 
-The primary benefit to having an OnlyKey is that instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong 32 character passwords along with the usernames and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
+The primary benefit to having an OnlyKey is that instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong 56 character passwords along with the usernames and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
 
 #### Two-Factor Authentication {#two-factor-authentication}
 
