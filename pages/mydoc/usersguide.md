@@ -94,14 +94,15 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 
 {% include image.html file="image27.png" %}
 
-{% include tip.html content="Don't Care About Plausible Deniability, how about a work profile and personal profile?" %}
-
-*We get that there will be some users who think the idea of having a second hidden profile is awesome and others will be be like meh, I don't want or need that. That is fine and you can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, if you wanted to set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile that would be fine. You can get creative and use the other profile for whatever you want.*
+{% include tip.html content="***Don't Care About Plausible Deniability, how about a work profile and personal profile?***<br><br>
+*We get that there will be some users who think the idea of having a second hidden profile is awesome and others will be be like meh, I don't want or need that. That is fine and you can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, if you wanted to set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile that would be fine. You can get creative and use the other profile for whatever you want.*" %}
 
 {% include tip.html content="***Forget your PIN?***<br><br>
 If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:
 <br>
+<br>
 **Method #1** - Enter your self-destruct PIN. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.*
+<br>
 <br>
 **Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking. This is an intentional safeguard so that in the event that a child gets ahold of your OnlyKey the device will not be inadvertently wiped by them repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure." %}
 
@@ -244,7 +245,7 @@ After loading next page
 
 {% include tip.html content="Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
-***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker.
+{% include important.html content="***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker." %}
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
 
@@ -401,11 +402,11 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 {% include callout.html content="**Step 1.** Go into Account settings-> Multi-factor Options and select the edit button in the Google Authenticator column." type="default" %}
 
-{% include image.html file="image71.png" max-width="595" %}
+{% include image.html file="image71.png" %}
 
 {% include callout.html content="**Step 2.** Change to enabled and select View button next to Private Key" type="default" %}
 
-{% include image.html file="image7.png" max-width="451" %}
+{% include image.html file="image7.png" %}
 
 {% include callout.html content="**Step 3.** You will be prompted to enter your master password and then the key is displayed." type="default" %}
 
@@ -413,13 +414,13 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 {% include callout.html content="**Step 4.** Copy and paste the key into the Google Auth OTP field of the OnlyKey app for the slot that you want to set up." type="default" %}
 
-{% include image.html file="image53.png" max-width="515" %}
+{% include image.html file="image53.png" max-width="600" %}
 
 {% include callout.html content="**Step 5.** Make sure to check the radio button next to Google Auth OTP and select Submit." type="default" %}
 
 {% include callout.html content="**Step 6.** Go back to the LastPass app and select Update. You will be prompted for your password again and then your current verification code. Click inside the verification code box and press the button assigned to the slot you set up on your OnlyKey to type out the verification code." type="default" %}
 
-{% include image.html file="image74.png" max-width="430" %}
+{% include image.html file="image74.png" max-width="600" %}
 
 {% include image.html file="image13.png" max-width="624" %}
 
@@ -598,7 +599,7 @@ The backup feature was introduced in firmware version v0.2-beta.4, but for users
 
 {% include callout.html content="**Step 3.** Click inside the Backup data box and then hold down the 1 button on your OnlyKey for 5 seconds or more and then release. This will type out an encrypted backup of your OnlyKey configuration into the box. Select save file to save the backup file which has a timestamp so you can keep track of the latest backup file." type="default" %}
 
-{% include image.html file="image78.png" max-width="550" %}
+{% include image.html file="image78.png" max-width="650" %}
 
 {% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey Chrome app and select a higher setting, 9 usually works well" %}
 
@@ -749,7 +750,9 @@ Since the OnlyKey is essentially detected by Android as a keyboard, the username
 
 #### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
-{% include note.html content="Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support.[https://www.amazon.com/dp/B071Y4CZV9](https://www.amazon.com/dp/B071Y4CZV9)" %}
+{% include note.html content="Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
+
+[Purchase on Amazon](https://www.amazon.com/dp/B071Y4CZV9)
 
 This solution is ideal as it can be carried on a keychain for on the go use.
 
@@ -770,7 +773,7 @@ This solution is ideal as it can be carried on a keychain for on the go use.
 
 {% include note.html content="Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support." %}
 
-[Purchase on Aliexpress](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)
+[Purchase on Aliexpress from 3rd party seller](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)
 
 {% include image.html file="image73.png" max-width="221" %}
 
@@ -780,7 +783,7 @@ This is currently in the experimental phase so there is not official support. Us
 
 {% include image.html file="image29.png"  max-width="248" %}
 
-[Purchase on Amazon](https://www.amazon.com/gp/product/B00S9I7EPO/)
+[Purchase on Amazon from 3rd party seller](https://www.amazon.com/gp/product/B00S9I7EPO/)
 
 Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently.
 
