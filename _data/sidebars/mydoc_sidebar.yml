@@ -50,6 +50,10 @@ entries:
     - title: Email/File Decryption (OpenPGP)
       url: /usersguide.html#email-file-decryption-openpgp
       output: web, pdf
+    
+    - title: Self-Destruct
+      url: /usersguide.html#self-destruct
+      output: web, pdf
 
   - title: User's Guide
     output: web, pdf
