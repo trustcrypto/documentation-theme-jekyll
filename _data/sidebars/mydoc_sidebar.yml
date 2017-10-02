@@ -66,6 +66,10 @@ entries:
     - title: Config Mode
       url: /usersguide.html#config-mode
       output: web, pdf
+      
+    - title: Cryptographically Secure Random Number Generator
+      url: /usersguide.html#cryptographically-secure-random-number-generator
+      output: web, pdf   
 
   - title: User's Guide
     output: web, pdf
