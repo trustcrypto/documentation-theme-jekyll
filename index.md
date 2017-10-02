@@ -4,7 +4,7 @@ keywords: homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: Documentation includes -
+summary: This is the official OnlyKey documenation site. Select from the topics shown below or from the left sidebar.
 ---
 
 ## Get Started With OnlyKey
