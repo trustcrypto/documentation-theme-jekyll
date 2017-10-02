@@ -1028,9 +1028,13 @@ As shown in the output from U2F authentication you can see that a unique serial 
 
 {% include image.html file="serial-number.jpg" max-width="400" %}
 
-With this information the website knows exactly which device was used to authenticate. Knowing what device was used in one step away from knowing what person is accessing the website. And along with this at what time they accessed it, from what location, and what they accessed. If the website were to receive a national security letter they would then have to turn over this information on all of their users. This metadata provides a way to track user's activity and identity with precision.
+It is unclear if manufactures generally use a uinque serial number for each device or a batch of devices. Either way there are many cases where this may permit identification and tracking of the user.
 
-i.e. Bob uses his device to authenticate to Google and to Facebook. Agency X knows that serial number '123456' device is used to authenticate to Google and Facebook. Agency X knows that this Facebook account belongs to Bob because he has a profile picture of himself, now they know that the Google account also belongs to Bob.
+In the case of unique serial numbers the website knows exactly which device was used to authenticate. Knowing what device was used in one step away from knowing what person is accessing the website. And along with this at what time they accessed it, from what location, and what they accessed. If the website were to receive a national security letter they would then have to turn over this information on all of their users. This metadata provides a way to track user's activity and identity with precision.
+
+i.e. Bob uses his device to authenticate to Google and to Facebook. Agency X knows that serial number '123456' device is used to authenticate to Google and Facebook. Agency X knows that this Facebook account belongs to Bob because he has a profile picture of himself, now they know that the Google account also belongs to Bob along with every other account that has a device with serial number '123456' assigned.
+
+OnlyKey addresses this issue by using a generic certificate. The serial number of the default attestation certificate on OnlyKey is '1', this is the same across all OnlyKey devices and to even further obsfucate the identity of the user this same certificate is used by another device (software simulated U2F). So this way there is no way to prove that you are even using an OnlyKey. This makes it so that U2F can be used without compromising privacy. 
 
 **2) You can never have an open source U2F device with a "trusted" attestation key/certificate**
 
