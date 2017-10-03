@@ -12,13 +12,29 @@ folder: mydoc
 <h1>&nbsp;&nbsp;USER'S GUIDE</h1>
 <br>
 
-<!-- Web2PDF Converter Button BEGIN -->
+<!-- jspdf Converter Button BEGIN -->
 <script type="text/javascript">
-var
-pdfbuttonlabel="Save page as PDF"
+var doc = new jsPDF();
+
+// We'll make our own renderer to skip this editor
+var specialElementHandlers = {
+	'#editor': function(element, renderer){
+		return true;
+	},
+	'.controls': function(element, renderer){
+		return true;
+	}
+};
+
+// All units are in the set measurement for the document
+// This can be changed to "pt" (points), "mm" (Default), "cm", "in"
+doc.fromHTML($('body').get(0), 15, 15, {
+	'width': 170, 
+	'elementHandlers': specialElementHandlers
+});
 </script>
-<script src="http://www.web2pdfconvert.com/pdfbutton2.js" id="Web2PDF" type="text/javascript"></script>
-<!-- Web2PDF Converter Button END -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<!-- jspdf Converter Button END -->
 
 
 ## Unpacking OnlyKey {#unpacking}
