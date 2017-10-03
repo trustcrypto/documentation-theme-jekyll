@@ -11,6 +11,16 @@ folder: mydoc
 {% include image.html file="image50.png" %}
 <h1>&nbsp;&nbsp;USER'S GUIDE</h1>
 <br>
+
+<!-- Web2PDF Converter Button BEGIN -->
+<script type="text/javascript">
+var
+pdfbuttonlabel="Save page as PDF"
+</script>
+<script src="http://www.web2pdfconvert.com/pdfbutton2.js" id="Web2PDF" type="text/javascript"></script>
+<!-- Web2PDF Converter Button END -->
+
+
 ## Unpacking OnlyKey {#unpacking}
 
 {% include callout.html content="**Step 1.** Remove the OnlyKey and Keychain from packaging." type="default" %}
