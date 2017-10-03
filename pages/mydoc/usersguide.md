@@ -40,16 +40,6 @@ doc.fromHTML($('body').get(0), 15, 15, {
 	<!--<a href="#" class="btn btn-primary">Download Your Code</a>-->
 	<a href="#" class="btn btn-primary download-pdf">Download PDF</a>
 </div>
-
-<label class="checkbox">
-	<input type="checkbox" id="auto-refresh" checked="checked"> Auto refresh on changes?
-</label>
-<a href="#" class="run-code hide btn btn-success">Run Code</a>
-
-<div class="alert hide">
-	Auto refresh disabled for this
-</div>
-
 </div>
 <!-- jspdf Converter Button END -->
 
