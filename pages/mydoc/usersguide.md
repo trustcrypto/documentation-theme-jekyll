@@ -29,7 +29,7 @@ var specialElementHandlers = {
 // All units are in the set measurement for the document
 // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
 doc.fromHTML($('body').get(0), 15, 15, {
-	'width': 170, 
+	'width': 170,
 	'elementHandlers': specialElementHandlers
 });
 </script>
@@ -111,14 +111,14 @@ doc.fromHTML($('body').get(0), 15, 15, {
 
 {% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the manditory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
 
-{% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](#self-destruct) for more information on this feature.
+{% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](https://docs.crp.to/features.html#self-destruct) for more information on this feature.
 <br>
 <br>
 Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
 
 {% include callout.html content="**Step 12. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN." type="default" %}
 
-{% include callout.html content="**Step 13. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature.
+{% include callout.html content="**Step 13. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature.
 <br>
 <br>
 Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
@@ -536,11 +536,11 @@ You may hear the term private key being used sometimes, we will not get into the
 The OnlyKey stores private keys. These private keys are used for four different purposes.
 
 1.  **Secure Encrypted Backup** - OnlyKey allows using RSA or ECC private keys to backup your OnlyKey. This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For more information see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
-1.  **SSH Authentication** - OnlyKey allows using ECC private keys for SSH authentication. Using the OnlyKey agent ssh authentication can be accomplished by storing a key on the OnlyKey and setting it as an authentication key. For more information see [SSH Authentication](#ssh-login).
+1.  **SSH Authentication** - OnlyKey allows using ECC private keys for SSH authentication. Using the OnlyKey agent ssh authentication can be accomplished by storing a key on the OnlyKey and setting it as an authentication key. For more information see [SSH Authentication](https://docs.crp.to/features.html#ssh-login).
 1.  **Email/File Decryption** - Using the OnlyKey PGP Message Tool, the OnlyKey supports decryption of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as experimental, to try it out we recommend encrypting emails with Mailvelope (Using RSA 4096 Key) and decrypting with the OnlyKey PGP Message Tool. More to come here we are looking to partner to support a web based OpenPGP solution.
 1.  **Email/File Signing** - Using the OnlyKey PGP Message Tool, the OnlyKey supports signing of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as proof of concept and is not available for general use.
 
-Learn more about keys feature [here.](#keys-feature)
+Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-feature)
 
 ### Generating Keys {#generating-keys}
 
