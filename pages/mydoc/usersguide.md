@@ -12,38 +12,6 @@ folder: mydoc
 <h1>&nbsp;&nbsp;USER'S GUIDE</h1>
 <br>
 
-<!-- jspdf Converter Button BEGIN -->
-<script type="text/javascript">
-var doc = new jsPDF();
-
-// We'll make our own renderer to skip this editor
-var specialElementHandlers = {
-	'#editor': function(element, renderer){
-		return true;
-	},
-	'.controls': function(element, renderer){
-		return true;
-	}
-};
-
-// All units are in the set measurement for the document
-// This can be changed to "pt" (points), "mm" (Default), "cm", "in"
-doc.fromHTML($('body').get(0), 15, 15, {
-	'width': 170,
-	'elementHandlers': specialElementHandlers
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
-
-<div class="controls">
-<div class="pull-right">
-	<!--<a href="#" class="btn btn-primary">Download Your Code</a>-->
-	<a href="#" class="btn btn-primary download-pdf">Download PDF</a>
-</div>
-</div>
-<!-- jspdf Converter Button END -->
-
-
 ## Unpacking OnlyKey {#unpacking}
 
 {% include callout.html content="**Step 1.** Remove the OnlyKey and Keychain from packaging." type="default" %}
