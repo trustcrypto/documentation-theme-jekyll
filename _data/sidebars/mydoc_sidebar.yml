@@ -68,51 +68,51 @@ entries:
     folderitems:
 
     - title: LED Definitions
-      url: /usersguide.html#led-definitions-onlykey-color
+      url: /features.html#led-definitions-onlykey-color
       output: web, pdf
 
     - title: Password Manager
-      url: /usersguide.html#password-manager
+      url: /features.html#password-manager
       output: web, pdf
       
     - title: Two-Factor Authentication
-      url: /usersguide.html#two-factor-authentication
+      url: /features.html#two-factor-authentication
       output: web, pdf
       
     - title: Keys (PGP/GPG/OpenPGP/SSH)
-      url: /usersguide.html#keys-feature
+      url: /features.html#keys-feature
       output: web, pdf
 
     - title: SSH Login
-      url: /usersguide.html#ssh-login
+      url: /features.html#ssh-login
       output: web, pdf
 
     - title: Email/File Signing (OpenPGP)
-      url: /usersguide.html#email-file-signing-openpgp
+      url: /features.html#email-file-signing-openpgp
       output: web, pdf
 
     - title: Email/File Decryption (OpenPGP)
-      url: /usersguide.html#email-file-decryption-openpgp
+      url: /features.html#email-file-decryption-openpgp
       output: web, pdf
     
     - title: Self-Destruct
-      url: /usersguide.html#self-destruct
+      url: /features.html#self-destruct
       output: web, pdf
       
     - title: Plausible Deniability
-      url: /usersguide.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
+      url: /features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
       output: web, pdf
     
     - title: Hardware Security
-      url: /usersguide.html#hardware-security
+      url: /features.html#hardware-security
       output: web, pdf
       
     - title: Config Mode
-      url: /usersguide.html#config-mode
+      url: /features.html#config-mode
       output: web, pdf
       
     - title: Cryptographically Secure Random Number Generator
-      url: /usersguide.html#cryptographically-secure-random-number-generator
+      url: /features.html#cryptographically-secure-random-number-generator
       output: web, pdf    
 
   - title: Apps and Software
