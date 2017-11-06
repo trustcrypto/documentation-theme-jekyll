@@ -744,7 +744,7 @@ The OnlyKey silicon case provides additional protection and gives OnlyKey a poli
 
 Additional color cases are available - Choose a color that fits your style – Stealth Black, Guardian Blue, Hacker Green, or Resistance Red.
 
-{% include image.html file="cases.jpg" max-width="200" %}
+{% include image.html file="cases.jpg" max-width="500" %}
 
 [Purchase on Amazon](https://crp.to/Amazon-Case)
 
