@@ -62,7 +62,7 @@ entries:
     - title: Additional Information
       url: /usersguide.html#additional-information
       output: web, pdf
-      
+
   - title: Features
     output: web, pdf
     folderitems:
@@ -74,11 +74,11 @@ entries:
     - title: Password Manager
       url: /features.html#password-manager
       output: web, pdf
-      
+
     - title: Two-Factor Authentication
       url: /features.html#two-factor-authentication
       output: web, pdf
-      
+
     - title: Keys (PGP/GPG/OpenPGP/SSH)
       url: /features.html#keys-feature
       output: web, pdf
@@ -94,26 +94,26 @@ entries:
     - title: Email/File Decryption (OpenPGP)
       url: /features.html#email-file-decryption-openpgp
       output: web, pdf
-    
+
     - title: Self-Destruct
       url: /features.html#self-destruct
       output: web, pdf
-      
+
     - title: Plausible Deniability
       url: /features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
       output: web, pdf
-    
+
     - title: Hardware Security
       url: /features.html#hardware-security
       output: web, pdf
-      
+
     - title: Config Mode
       url: /features.html#config-mode
       output: web, pdf
-      
+
     - title: Cryptographically Secure Random Number Generator
       url: /features.html#cryptographically-secure-random-number-generator
-      output: web, pdf    
+      output: web, pdf
 
   - title: Apps and Software
     output: web, pdf
@@ -123,11 +123,19 @@ entries:
       url: /firmware.html
       output: web, pdf
 
-    - title: OnlyKey Chrome App
+    - title: OnlyKey App
       url: /app.html
       output: web, pdf
 
-    - title: OnlyKey Python Command-Line Utility
+    - title: OnlyKey WebCrypt
+      url: /webcrypt.html
+      output: web, pdf
+
+    - title: OnlyKey BrowserCrypt (For Google Chrome)
+      url: /browsercrypt.html
+      output: web, pdf
+
+    - title: OnlyKey Command-Line Utility
       url: /command-line.html
       output: web, pdf
 

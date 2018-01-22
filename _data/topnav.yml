@@ -4,15 +4,8 @@ topnav:
 - title: Topnav
   items:
 
-    - title: Home
-      external_url: https://crp.to
+    - title: Store
+      external_url: https://crp.to/p/
 
-#Topnav dropdowns
-topnav_dropdowns:
-- title: Topnav dropdowns
-  folders:
-
-    - title: Products
-      folderitems:
-        - title: OnlyKey
-          url: /index.html
+    - title: WebCrypt App
+      external_url: https://apps.crp.to

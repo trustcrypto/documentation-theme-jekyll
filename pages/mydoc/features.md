@@ -4,16 +4,16 @@ permalink: features.html
 sidebar: mydoc_sidebar
 tags: [OnlyKey, Features]
 keywords: OnlyKey, Features
-last_updated: Oct, 3 2017
+last_updated: Jan, 18 2018
 summary: Detailed information on OnlyKey Features
 toc: false
 folder: mydoc
 ---
 
 
-### Features {#features}
+## Features {#features}
 
-#### LED Definitions (OnlyKey Color) {#led-definitions-onlykey-color}
+### LED Definitions (OnlyKey Color) {#led-definitions-onlykey-color}
 
 *   Steady Green Light = Unlocked
 *   No Light = Locked
@@ -26,7 +26,7 @@ folder: mydoc
 *   Turquoise Fade in and Fade out - Private key decryption request
 *   Red Fade in and Fade out - Device is in config mode
 
-#### LED Definitions (Original OnlyKey) {#led-definitions-original-onlykey}
+### LED Definitions (Original OnlyKey) {#led-definitions-original-onlykey}
 
 *   Steady Light = Unlocked
 *   No Light = Locked
@@ -38,11 +38,11 @@ folder: mydoc
 *   Fade in and Fade out = U2F, SSH, or private key operation request
    Or if you have placed your device into config mode
 
-#### Password Manager {#password-manager}
+### Password Manager {#password-manager}
 
-The primary benefit to having an OnlyKey is that instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong 56 character passwords along with the usernames and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
+Instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong and random (up to 56 character) passwords along with the login page URLs, usernames, and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
 
-#### Two-Factor Authentication {#two-factor-authentication}
+### Two-Factor Authentication {#two-factor-authentication}
 
 There are 3 methods of two-factor authentication supported by Onlykey.
 
@@ -50,7 +50,7 @@ There are 3 methods of two-factor authentication supported by Onlykey.
 *   Universal 2nd Factor Authentication (U2F)
 *   Yubico® One-Time Password
 
-##### Google Authenticator (TOTP) {#google-authenticator-totp}
+#### Google Authenticator (TOTP) {#google-authenticator-totp}
 
 Google Authenticator is an application that implements TOTP security tokens from RFC 6238 in mobile apps made by Google, sometimes branded ''Two-step verification'' (or 2-Step Verification).
 
@@ -71,9 +71,9 @@ As mentioned above the service provider generates a base32 string or a QR code. 
 
 And then press the OnlyKey button to output your 6 digit OTP into the passcode field to complete the setup. Now you can also go and set your username and password to this slot and have a complete one touch login with two-factor authentication.
 
-Currently the Google Authenticator (TOTP) feature requires the Chrome app to be open.
+Currently the Google Authenticator (TOTP) feature requires the OnlyKey app to be running.
 
-##### Universal 2nd Factor Authentication (U2F) {#universal-2nd-factor-authentication-u2f}
+#### Universal 2nd Factor Authentication (U2F) {#universal-2nd-factor-authentication-u2f}
 
 OnlyKey's implementation of U2F started out with the open source implementation [here](https://github.com/yohanes/teensy-u2f). We then reviewed the model in use by Yubikey® [here](https://www.Yubico.com/2014/11/Yubicos-u2f-key-wrapping/). And came up with our own implementation of key wrapping that utilizes the open source [AES-256-GCM](https://github.com/rweather/arduinolibs) implementation we are using for encryption of local storage. When the Onlykey is first configured with a PIN, a random nonce is stored that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin. The private key generated for U2F key handle encryption is generated from the SHA-256 hash of the random nonce and a unique Freescale chip ID that is hardcoded onto the processor at the factory. The U2F service also provides an AppID (that is tied to the URL of the site) and during registration the SHA256 hash of the AppID is used as the Initialization Vector for the AES-GCM encryption of the key handle. This ensures that the key handle is only valid for the particular combination of device (private key) and AppID that was created during registration. By using AES-256 in Galios Counter Mode and using SHA-256 our key wrapping implementation follows NIST (SP) 800 guidelines [NIST approved key wrapping](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf) (See Table 7: Approval Status of Block Cipher Algorithms Used for Key Wrapping and Table 9: Approval Status of Hash Functions)
 
@@ -102,7 +102,7 @@ In the case of unique serial numbers the website knows exactly which device was 
 
 i.e. Bob uses his device to authenticate to Google and to Facebook. Agency X knows that serial number '123456' device is used to authenticate to Google and Facebook. Agency X knows that this Facebook account belongs to Bob because he has a profile picture of himself, now they know that the Google account also belongs to Bob along with every other account that has a device with serial number '123456' assigned.
 
-OnlyKey addresses this issue by using a generic certificate. The serial number of the default attestation certificate on OnlyKey is '1', this is the same across all OnlyKey devices and to even further obfuscate the identity of the user this same certificate is used by another device (software simulated U2F). So this way there is no way to prove that you are even using an OnlyKey. This makes it so that U2F can be used without compromising privacy. 
+OnlyKey addresses this issue by using a generic certificate. The serial number of the default attestation certificate on OnlyKey is '1', this is the same across all OnlyKey devices and to even further obfuscate the identity of the user this same certificate is used by another device (software simulated U2F). So this way there is no way to prove that you are even using an OnlyKey. This makes it so that U2F can be used without compromising privacy.
 
 **2) You can never have an open source U2F device with a "trusted" attestation key/certificate**
 
@@ -112,113 +112,99 @@ At this point this is not much of an issue as websites allow all U2F token's and
 
 This all being said the implementation of U2F has not been certified by the FIDO Alliance as an approved token.
 
-##### Yubico® One-Time Password {#Yubico-one-time-password}
+#### Yubico® One-Time Password {#Yubico-one-time-password}
 
 OnlyKey's implementation of the Yubico® OTP is based on the open source library provided by Yubico® [here](https://github.com/Yubico/Yubico-c). The one-time passwords generated by OnlyKey have been tested to be indistinguishable from the one-time passwords generated by a Yubikey®. However, some services like Yubicloud do not allow third-party devices and require a valid serial number from a Yubikey®. For example, you can test your OnlyKey with the [https://demo.Yubico.com/](https://demo.Yubico.com/) test site but you would be required to have a valid Yubikey® serial number to do so.
 
 For more information on Yubico® OTP see [this](https://www.Yubico.com/products/services-software/personalization-tools/Yubikey-otp/)
 
-#### Keys Feature {#keys-feature}
+### Keys Feature {#keys-feature}
 
-The keys feature allows you to use OnlyKey to store private keys that can be used for SSH authentication, OpenPGP Signing, OpenPGP Decryption, and secure OnlyKey backup. You can store 32 ECC private keys and 4 RSA private keys. Each key also has a label assigned to it so just like with slots, an identifier can be assigned to each key.
+The keys feature allows you to use OnlyKey to store private keys that can be used for SSH authentication, OpenPGP, and secure OnlyKey backup. Each key may also have a label assigned to it so just like with slots, an identifier can be assigned to each key.
 
 Under the hood -
 
-*   Up to 32 ECC keys are supported of type curve25519, P256 (NIST), and secp256k1 (Used for Bitcoin)
+*   Up to 30 ECC keys are supported of type curve25519, P256 (NIST), and secp256k1 (Used for Bitcoin)
 *   Up to 4 RSA keys are supported with key sizes 1024, 2048, 3072, and 4096 bit keys.
 
 {% include image.html file="image69.png" %}
 
-Keys are loaded using the OnlyKey Chrome App. For a demonstration see [https://vimeo.com/210800252](https://vimeo.com/210800252)
+Keys are loaded using the OnlyKey App. Step by step directions for generating and loading keys are provided in the User's Guide here:
 
-#### SSH Login {#ssh-login}
+- [Generate keys](https://docs.crp.to/usersguide.html#generating-keys) using Keybase
+- [Load keys](https://docs.crp.to/usersguide.html#loading-keys) onto OnlyKey
 
-SSH Authentication - Currently only ECC keys are supported for SSH authentication. Using the OnlyKey agent ssh authentication can be accomplished by storing a key on the OnlyKey and setting it as an authentication key. The benefit this provides is that your private key is never exposed on a computer where it can be compromised by hacker.
+### SSH Login {#ssh-login}
 
-See [https://github.com/trustcrypto/onlykey-agent](https://github.com/trustcrypto/onlykey-agent)
+SSH Authentication - Currently only ECC keys (curve25519 & NIST-P256) are supported for SSH authentication. Using the [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html) ssh authentication is easy and your private key is never exposed on a computer where it can be compromised by hacker.
 
-#### Email/File Signing (OpenPGP) {#email-file-signing-openpgp}
+### OpenPGP Everywhere {#openpgp}
 
-Using the OnlyKey PGP Message Tool, the OnlyKey supports signing of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as proof of concept, additional work is needed to properly generate signatures that can be validated.
+OnlyKey supports OpenPGP everywhere using our apps:
 
-See [OnlyKey Python Command-Line Utility](https://docs.crp.to/command-line.html)
+**[OnlyKey WebCrypt - WebCrypt](https://docs.crp.to/webcrypt.html)** is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide encryption everywhere on-the-go.
 
-Coming soon - Email/File/Chat Signing in browser using Keybase.
+**[OnlyKey BrowerCrypt - BrowserCrypt](https://docs.crp.to/webcrypt.html)** is a Google Chrome Extension that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide easy and secure PGP encryption in Google Chrome.
 
-#### Email/File Decryption (OpenPGP) {#email-file-decryption-openpgp}
-
-Using the OnlyKey PGP Message Tool, the OnlyKey supports decryption of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as experimental, to try it out we recommend encrypting emails with Mailvelope (Using RSA 4096 Key) and decrypting with the OnlyKey PGP Messege Tool. The benefit this provides is that your private key is never exposed on a computer where it can be compromised by hacker.
-
-See [OnlyKey Python Command-Line Utility](https://docs.crp.to/command-line.html)
-
-Coming soon - Email/File/Chat Decryption in browser using Keybase.
-
-#### Self-Destruct {#self-destruct}
+### Self-Destruct {#self-destruct}
 
 Wouldn't it be nice to know that your data is protected, and if you are in a pinch or forced to give up your PIN there is an easy way to make sure that your data does not get into the wrong hands? That is what the Self-Destruct feature is all about. You set this PIN code whenever you first setup your OnlyKey and then if you or anyone else ever enters it the OnlyKey wipes all of the sensitive data you have stored on it.
 
-#### Plausible Deniability (International Travel Edition and Standard Edition of Firmware) {#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware}
+### Plausible Deniability (International Travel Edition and Standard Edition of Firmware) {#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware}
 
-Wouldn't it be nice to be able to be able to travel to a country where encryption is illegal or to a country where it is against the law to refuse to give up your password to authorities and be able to comply without actually giving any access to your accounts? That is what the plausible deniability feature is all about. OnlyKey allows the use of a hidden profile and a fake profile (Plausible Deniability Mode) that essentially provides a cover story. If compelled to do so a fake profile can be activated by entering a plausible deniability PIN code and the goal of this feature is that there is no proof that the hidden profile even exists. In fact since the international travel edition of the OnlyKey ships without the plausible deniability feature there is no way to know if you are using an OnlyKey with the international travel edition firmware or the Standard Edition firmware in plausible deniability mode. When the Standard Edition OnlyKey is in plausible deniability mode it is essentially indistinguishable from an International version OnlyKey.
+TL;DR - With a fake profile and a real profile someone can't just force you to give up your PIN.
 
-Now that you understand the basics of how the plausible deniability feature works the reason for having two versions of firmware becomes more clear. The genius behind the plausible deniability feature that makes it possible is a three part solution.
+Wouldn't it be nice to be able to be able to travel to a country where encryption is illegal or to a country where it is against the law to refuse to give up your password to authorities and be able to comply without actually giving any access to your accounts?
 
-Part 1. We ship two versions of the OnlyKey, an international travel edition and a standard edition. We can ship the international travel edition anywhere in the world because this version is basically just a password manager that does not utilize encryption (No U.S. export restrictions). The Standard Edition on the other hand does utilize encryption and has the plausible deniability feature that when activated makes the OnlyKey appear to be running the international travel edition firmware.
+That is what the plausible deniability feature is all about. OnlyKey allows the use of a hidden profile and a fake profile (Plausible Deniability Mode) that essentially provides a cover story. If compelled to do so a fake profile can be activated by entering a plausible deniability PIN code and the goal of this feature is that there is no proof that the hidden profile even exists. In fact since the international travel edition of the OnlyKey ships without the plausible deniability feature there is no way to know if you are using an OnlyKey with the international travel edition firmware or the Standard Edition firmware in plausible deniability mode. When the Standard Edition OnlyKey is in plausible deniability mode it is essentially indistinguishable from an international travel edition OnlyKey.
 
-Part 2. Both versions utilize physical flash security to essentially lock the information stored on the devices so there is no way to know what version a device has loaded. We have taken great care to ensure that the plausible deniability mode on the Standard Edition Version acts exactly the same as the International Travel Edition.
+Now that you understand the basics of how the plausible deniability feature works the reason for having two versions of firmware becomes more clear. **OnlyKey is the only device in the world where you can have encryption and there isn't a way to prove that you have encryption.** Here is how this is possible:
+
+Part 1. We ship two versions of the OnlyKey, an international travel edition and a standard edition. We can ship the international travel edition globally and even if there is an encryption ban in the receiving company it is in compliance because it is just a password manager that does not utilize any encryption. The Standard Edition on the other hand does utilize encryption but when the plausible deniability PIN is entered it makes the OnlyKey appear to be running the international travel edition firmware.
+
+Part 2. Both versions utilize physical flash security to essentially lock the information stored on the devices so there is no way to know what version a device has loaded. We have taken great care to ensure that the plausible deniability mode on the Standard Edition firmware acts exactly the same as the International Travel Edition firmware.
 
 Part 3. We make it easy for user's to load whatever version of the firmware they want. International customers can easily load the Standard Edition and vice versa. Even we have no way of knowing what version of firmware a device has loaded.
 
-Anyone can view the open source firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases) and verify that this is the case. Since there are devices that ship without the ability to perform encryption it is plausible that your OnlyKey is one of these, just a basic password manager. There is not a way of knowing that there is another hidden profile that is only activated if you know the secret PIN. Best of all, changing the version of firmware on your device is easily accomplished as the OnlyKey is field upgradable. There is a section in the user's guide [here](#loading-onlykey-firmware) that provides instructions on flashing whichever Onlykey firmware you want.
+Anyone can view the open source firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases) and verify that this is the case. Since there are devices that ship without the ability to perform encryption it is plausible that your OnlyKey is one of these, just a basic password manager. There is not a way of knowing that there is another hidden profile that is only activated if you know the secret PIN. Best of all, changing the version of firmware on your device is easily accomplished as the OnlyKey is field upgradable. There is a section in the user's guide [here](#loading-onlykey-firmware) that provides instructions on flashing Onlykey firmware.
 
 So now you can see how a user if compelled to do so could say ''I just have a basic password manager, here is my PIN code'' and it would be completely plausible that they do in fact just have a basic password manager. To be even more plausible the user should set up actual accounts with real credentials which work to log into websites.
-
-Are these the user's real accounts or are really just dummy accounts and there is another hidden profile? There is not a way of knowing.
 
 Alternatively, if you don't need the second profile for plausible deniability you can just use it as a second profile to store additional accounts, such as a personal profile and keep your work accounts in the primary profile.
 
 For more information on encryption and international travel see [https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/)
 
-Q - When should I use the plausible deniability PIN?
-
-A - Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. Form more information on Plausible Deniability encryption see [https://en.wikipedia.org/wiki/Deniable_encryption](https://en.wikipedia.org/wiki/Deniable_encryption)
-
-Q - When should I not use the plausible deniability PIN?
-
-A - Plausible deniability is only good if you are in a country where your worst case scenario is that you will be fined for using encryption. If someone is holding a gun to your head or there is risk of torture plausible deniability is pretty much useless. For more information on why see this [https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis](https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis).
-
-#### Hardware Security {#hardware-security}
+### Hardware Security {#hardware-security}
 
 When it comes to hardware security there are terms such as tamper resistant, tamper proof, and secure element. These terms are mostly marketing terms as anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof, and tamper resistant can mean something as simple as the device being coated in plastic that can [easily be removed](http://www.hexview.com/~scl/neo/). The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels.
 
 A simplified explanation of these levels can be found on [wikipedia](https://en.wikipedia.org/wiki/FIPS_140-2) (Notice that even the highest security level is not tamper proof)
 
-While we do not plan on pursuing FIPS certification we can attest that OnlyKey meets many of the requirements of FIPS certification including using a FIPS approved algorithm (FIPS 140-2 Level 1 - AES-256 is an approved algorithm). The coating of the OnlyKey would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. In our testing chemical removal of the coating results in noticeable damage to the OnlyKey that results in evidence that it was tampered with (FIPS 140-2 Level 2). In the same way attempts to manually delaminate the potting compound in our testing will also delaminate electronic components rendering the device inoperable and creates visible damage to the silkscreen/soldermask layers.
+While we do not plan on pursuing FIPS certification at this time we can attest that OnlyKey meets many of the requirements of FIPS certification including using a FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256 is an approved algorithm). The coating of the OnlyKey would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. In our testing chemical removal of the coating results in noticeable damage to the OnlyKey that results in evidence that it was tampered with (FIPS 140-2 Level 2 - Tamper Evident). In the same way attempts to manually delaminate the potting compound in our testing will also delaminate electronic components rendering the device inoperable and creates visible damage to the silkscreen/soldermask layers.
 
-In addition to this, we enable the [Kinetis flash security](http://cache.nxp.com/files/microcontrollers/doc/app_note/AN4507.pdf) the first time the device is used. This ensures that the firmware, and all sensitive information stored in memory is essentially locked down. The ability to read or write to the chip from external sources is disabled. The only way to clear this so the OnlyKey can load new firmware is to place a jumper between the two touch points of the OnlyKey shown here:
-
+In addition to this, we enable the [Kinetis flash security](http://cache.nxp.com/files/microcontrollers/doc/app_note/AN4507.pdf) the first time the device is used. This ensures that the firmware, and all sensitive information stored in memory is essentially locked. The ability to read or write to the chip from external sources is disabled. The only way to clear this so the OnlyKey can load new firmware is to place a jumper between the two touch points of the OnlyKey shown here:
 
 {% include image.html file="image16.png" %}
 
 When a connection is placed between these two points it does two things, first it proves that a user is present there is no way for malware running on the connected computer to do this, second it does a mass erase of the OnlyKey. A mass erase essentially wipes everything and returns the chip to a factory default state. Once this is complete new firmware can be loaded to the Onlykey.
 
-If you would like to read more about the flash security features of the MK20 [here](https://www.pjrc.com/teensy/K20P64M72SF1RM.pdf) is a document that describes in detail. If you plan to mess around with the flash security features - WARNING - Changes to the flash security settings can brick your device. We tested this feature to ensure this does not happen but any changes you make to source code are at your own risk.
+If you would like to read more about the flash security features of the MK20 [here](https://www.pjrc.com/teensy/K20P64M72SF1RM.pdf) is a document that describes in detail.
 
-#### Config Mode {#config-mode}
+If you plan to modify the flash security features be warned that changes may brick your device. We tested this feature to ensure this does not happen but any changes you make to source code are at your own risk.
+
+### Config Mode {#config-mode}
 
 This secondary feature has been added to provide additional protection against the following scenario:
 
 Bob leaves his OnlyKey unlocked and plugged into his computer and walks away, Alice walks up and loads her key onto Bob's OnlyKey and sets this as the backup key and then uses this to create a backup. Alice now has the encrypted contents of Bob's OnlyKey and knows the key.
 
-While Bob should not have left his device unlocked and unattended we still want to prevent this scenario so first a device must be in config mode to load keys or to restore from backup. To put a device in config mode hold the #6 button down for 5 seconds on an unlocked OnlyKey, then re-enter the PIN. This ensures that only someone who knows the PIN can select the private key used to create a backup.
+While Bob should not have left his device unlocked and unattended we still want to prevent this scenario so first a device must be in config mode to load keys or to restore from backup. To put a device in config mode hold the # 6 button down for 5 seconds on an unlocked OnlyKey, then re-enter the PIN. This ensures that only someone who knows the PIN can select the private key used to create a backup.
 
 {% include note.html content="Backups only supported on Standard Edition firmware and not while in plausible deniability mode. The reason is the backup requires encryption and plausible deniability requires being able to deny that any encryption is used." %}
 
-For a demonstration of backup feature see [https://vimeo.com/210800252](https://vimeo.com/210800252)
+### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
 
-#### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
-
-After much research it was concluded that Arduino and other microcontrollers such as MK20 are not ideal for generating truly random numbers. While the Arduino Reference Manual recommends using analog pins, which read random atmospheric noise to seed a PRNG, it was concluded that this method alone may not generate a cryptographically secure random number. The paper here goes into more detail - [http://benedikt.sudo.is/ardrand.pdf](http://benedikt.sudo.is/ardrand.pdf). A true random number generator uses non-deterministic sources to produce randomness. Thus, the random number generation function in use requires user provided entropy. This is similar to how TrueCrypt used mouse movements to generate entropy during key generation. The OnlyKey RNG function uses a combination of the entropy provided from two separate analog pins (atmospheric noise) and the user's key presses on the six capacitive touch sensors (conductivity of user's skin, duration of key press, number of key presses, conductivity of air).
+After much research it was concluded that Arduino and other microcontrollers such as MK20 are not ideal for generating truly random numbers. While the Arduino Reference Manual recommends using analog pins, which read random atmospheric noise to seed a PRNG, it was concluded that this method alone may not generate a cryptographically secure random number. The paper here goes into more detail - [http://benedikt.sudo.is/ardrand.pdf](http://benedikt.sudo.is/ardrand.pdf). A true random number generator uses non-deterministic sources to produce randomness. Thus, the random number generation function in use requires user provided entropy. This is similar to how TrueCrypt/VeraCrypt use mouse movements to generate entropy during key generation. The OnlyKey RNG function uses a combination of the entropy provided from two separate analog pins (atmospheric noise) and the user's key presses on the six capacitive touch sensors (conductivity of user's skin, duration of key press, number of key presses, conductivity of air).
 
 Below is an example of values read from the analog 0 pin and the touchpins values, read once per second for 3 seconds without any user provided entropy.
 

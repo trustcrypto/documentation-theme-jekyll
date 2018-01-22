@@ -27,40 +27,20 @@ If you are having issues that are not addressed in the User's Guide or FAQs chec
 
 ### 4. OnlyKey Apps and Software
 
-There are several apps and software projects that are compatible with OnlyKey. They basically fall into three categories.
+[OnlyKey App](https://docs.crp.to/app.html) - The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chromebook (with Chrome App).
 
+[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html) is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide PGP encryption everywhere on-the-go. Supports Google Chrome and Firefox!
 
-**1 - Software that runs on the OnlyKey itself**
+[OnlyKey BrowserCrypt](https://docs.crp.to/browsercrypt.html) is a Google Chrome Extension that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide easy and secure PGP encryption in Google Chrome.
 
-**2 - Software that is used to configure the OnlyKey**
-
-**3 - Software that supports OnlyKey functionality**
-
-
-
-**Software that runs on the OnlyKey itself**
+[OnlyKey SSH Agent](https://docs.crp.to/onlykey-agent.html) - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure.
 
 [OnlyKey Firmware](https://docs.crp.to/firmware.html) - This is the software that runs on the OnlyKey itself. The OnlyKey firmware is open source and can be loaded onto the OnlyKey by following the instructions in the User's Guide.
 
 The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKey-Firmware/releases)
-The firmware supporting libraries can be found [here.](https://github.com/trustcrypto/libraries) 
 
-
-**Software that is used to configure the OnlyKey**
-
-[OnlyKey Chrome App](https://docs.crp.to/app.html) - This is the primary and recommended app to set up and configure OnlyKey. This App requires Google Chrome or open source Chromium browser and has been tested on Windows, Mac OS, Linux, and Chrome OS.
-
-[OnlyKey Python App](https://docs.crp.to/command-line.html) - This is a command line tool targeted towards more advanced users. This can be used for set up, configuration, and testing. This app is open source and has been tested on Windows, Mac OS, and Linux.
-
-
-**Software that supports OnlyKey functionality**
-
-[OnlyKey SSH/GPG Agent](https://docs.crp.to/onlykey-agent.html) - This is essentially middleware that lets you use OnlyKey as a hardware SSH/GPG device (GPG not supported yet). OnlyKey Python App is required to use this agent.
-
-[OnlyKey PGP Message Tool](https://docs.crp.to/command-line.html) - The PGP Message Tool is currently included with the OnlyKey Python App and permits OpenPGP decryption and signing. This allows private keys to remain safely stored on OnlyKey and requires no special drivers.
+[OnlyKey Command-line Utility](https://docs.crp.to/command-line.html) - The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
 
 OnlyKey Android App - We are currently working on an Android app that supports U2F and Google Authenticator on Android. This app is working but has not been released for public use yet.
-
-OnlyKey Web App - We are currently working on a web app that supports Keybase.io for encrypted email and chat (OpenPGP via browser). This web app will support Google Chrome/Chromium as well as Firefox. This app is working but has not been released for public use yet.
 
 {% include links.html %}

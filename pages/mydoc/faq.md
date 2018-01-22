@@ -2,15 +2,48 @@
 title: OnlyKey FAQ
 permalink: faq.html
 sidebar: mydoc_sidebar
-tags: 
+tags:
 keywords: frequently asked questions, FAQ, question and answer
-last_updated: Jul, 13 2017
+last_updated: Jan, 18 2018
 summary: Frequently Asked Questions
 toc: false
 folder: mydoc
 ---
 
 <div class="panel-group" id="accordion">
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen">How do I get started with OnlyKey?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseNineteen" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                            Just getting started with OnlyKey?
+                            [Start here](http://www.crp.to/okstart)
+                                </form></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty">Where do I go for OnlyKey support?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwenty" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                            Check out the [OnlyKey Support Forum](https://groups.google.com/forum/#!forum/onlykey)
+
+                            Check out the [OnlyKey Documentation](https://docs.crp.to)
+                                </form></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -58,7 +91,7 @@ folder: mydoc
 
                           1) The site you use is breached (i.e. Yahoo, LinkedIn, Target, Anthem, Sony etc.)<br>
 
-                          If the site you use is breached the attacker may be able to get your password in a couple of ways.<br> 
+                          If the site you use is breached the attacker may be able to get your password in a couple of ways.<br>
 
                           a) They get a dump of all passwords in clear text.<br>
                           b) They get a hashed dump of all passwords.<br><br>
@@ -159,14 +192,12 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Why have the two different versions of Firmware?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Why have the two different editions of firmware?</a>
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                There are two big reasons to have the two separate versions of firmware. <br><br>
-                                1) The International Travel Edition is not subject to any export restrictions that would apply to export of crypto outside of the US since it performs no encryption. <br><br>
-                                2) By actually having a version in use that does not utilize encryption the plausible deniability feature is actually plausible. If for example all devices shipped with encryption and a plausible deniability mode it would not be plausible that a device does not perform encryption because anyone with the ability to search online would see that this is a feature available on all devices. By having this as a feature on some devices and other devices being legitimately without any encryption capabilities it is plausible that your device does not utilize encryption.
+                                The encryption free version of the OnlyKey may be used in countries where encryption is banned. Additionally, the two editions enable the [plausible deniability feature - Read More](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware)                         
                             </div>
                         </div>
                     </div>
@@ -205,7 +236,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse">
                             <div class="panel-body">
-                                This activates a second profile that is designed to be indistinguishable from the OnlyKey (International Travel Edition) firmware while actually running the OnlyKey (Standard Edition) firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. The user can load the International Travel Edition firmware on their OnlyKey along with some accounts they don't really care about before crossing a border and then if they are asked if they have anything that is encrypted they can say no and be completely telling the truth. Once inside the country they could load the Standard Firmware and set up their plausible deniability profile so that if they are ever detained or forced to give up their PIN they can comply by giving the plausible deniability PIN which would just unlock the accounts they don't really care about and would again appear to just be an unencrypted password manager. The user would have a plausible story that they are giving up everything they have while keeping the accounts they care about and encryption keys protected. For more information on encryption and international travel see <a href="https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/">https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/</a>
+                                This activates a second profile that is designed to be indistinguishable from the OnlyKey (International Travel Edition) firmware while actually running the OnlyKey (Standard Edition) firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. The user can load the International Travel Edition firmware on their OnlyKey along with some accounts they don't really care about before crossing a border and then if they are asked if they have anything that is encrypted they can say no and be completely telling the truth. Once inside the country they could load the Standard Firmware and set up their plausible deniability profile so that if they are ever detained or forced to give up their PIN they can comply by giving the plausible deniability PIN which would just unlock the accounts they don't really care about and would again appear to just be an unencrypted password manager. The user would have a plausible story that they are giving up everything they have while keeping the accounts they care about and encryption keys protected. More information [here](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware). For more information on encryption and international travel see <a href="https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/">https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/</a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +249,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseSix" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption. For more information read <a href="https://crp.to/2017/04/plausible-deniability-onlykey/">https://crp.to/2017/04/plausible-deniability-onlykey/</a>
+                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption.
                             </div>
                         </div>
                     </div>
@@ -260,7 +291,7 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                         <div id="collapseNine" class="panel-collapse collapse">
                             <div class="panel-body">
                                 We have designed OnlyKey to be as transparent as possible (literally it is covered in a clear potting compound). You can load our firmware, review the source, or write your own firmware. Here are some of the features that allow you validate that there is no backdoor or tampering has occurred.<br><br>
-                                
+
 1) Hardware - By having a clear coat on the electronics you can actually see the hardware and would be able to see a hardware type of backdoor.<br><br>
 
 2) Software - The way that OnlyKey loads firmware is unique. When you bridge the two touch points to load firmware what actually happens is first the small chip on the board sends a message to the large chip on the board that wipes all data from the large chip, next the firmware is loaded onto the small chip via USB, and finally written onto the blank large chip. So even is someone succeeded in loading malicious software onto your OnlyKey reloading the firmware would completely remove it.<br><br>
@@ -343,11 +374,11 @@ We would comply with the order and at the same time 100% protect customers. This
                           <tr>
                           <td>Android with USB C port</td>
                           <td>Password manager and Yubikey OTP</td>
-                          <td>USB C OTG Adapter available <a href="https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html">here</a></td>
+                          <td>USB C OTG Adapter available <a href="https://www.aliexpress.com/item/CARPRIE-2017-Best-Sale-USB-C-3-1-Type-C-Male-to-USB-3-0-Cable/32843574422.html">here</a></td>
                           </tr>
                           </tbody>
                           </table>
-                    
+
                             </div>
                         </div>
                     </div>

@@ -30,9 +30,9 @@ folder: mydoc
 
 {% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
 
-<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to initial setup below***
+<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup below***
 
-## Initial Setup {#initial-setup}
+## Setting up OnlyKey {#initial-setup}
 
 {% include callout.html content="**Step 1.** Open the Chrome Web Browser (If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
 
@@ -63,7 +63,9 @@ folder: mydoc
 
 {% include image.html file="image77.png" %}
 
-{% include callout.html content="**Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you purchased OnlyKey through Amazon select the Standard Edition. The International Travel Edition ships globally as military grade encryption may be problematic in some countries. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) and you would prefer the Standard Edition then you may load this firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup." type="default" %}
+{% include callout.html content="**Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you purchased OnlyKey through Amazon or the online store select the Standard Edition." type="default" %}
+
+{% include note.html content="International Travel Edition<br><br>This edition of OnlyKey may ship globally, even to countries where encryption devices are not permitted as it does not utilize encryption. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) and you would prefer the Standard Edition then you may load this firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup. For more information on the two editions of OnlyKey firmware see [Plausible Deniability](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware)" %}
 
 {% include image.html file="image88.png" %}
 
@@ -487,7 +489,7 @@ We now support changing your keyboard layout on the fly through the Chrome app n
 
 ## Encryption Keys {#encryption-keys}
 
-OnlyKey makes encryption keys easier and by storing them offline, protected even if the computer using the keys is compromised.
+OnlyKey makes encryption keys easier and more secure by storing them offline, protected even if the computer using the key is compromised.
 
 ### Key FAQ {#key-faq}
 
@@ -503,52 +505,69 @@ You may hear the term private key being used sometimes, we will not get into the
 
 The OnlyKey stores private keys. These private keys are used for four different purposes.
 
-1.  **Secure Encrypted Backup** - OnlyKey allows using RSA or ECC private keys to backup your OnlyKey. This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For more information see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
-1.  **SSH Authentication** - OnlyKey allows using ECC private keys for SSH authentication. Using the OnlyKey agent ssh authentication can be accomplished by storing a key on the OnlyKey and setting it as an authentication key. For more information see [SSH Authentication](https://docs.crp.to/features.html#ssh-login).
-1.  **Email/File Decryption** - Using the OnlyKey PGP Message Tool, the OnlyKey supports decryption of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as experimental, to try it out we recommend encrypting emails with Mailvelope (Using RSA 4096 Key) and decrypting with the OnlyKey PGP Message Tool. More to come here we are looking to partner to support a web based OpenPGP solution.
-1.  **Email/File Signing** - Using the OnlyKey PGP Message Tool, the OnlyKey supports signing of email and files using OpenPGP (PGP/GPG compatible). This feature is currently released as proof of concept and is not available for general use.
+1.  **Secure Encrypted Backup** - This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For information on backing up OnlyKey see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
+2.  **Secure Encrypted Messages (OpenPGP)**
+  - **[OnlyKey WebCrypt - WebCrypt](https://docs.crp.to/webcrypt.html)** is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide encryption everywhere on-the-go.
+  - **[OnlyKey BrowerCrypt - BrowserCrypt](https://docs.crp.to/webcrypt.html)** is a Google Chrome Extension that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide easy and secure PGP encryption in Google Chrome.
+3.  **SSH Authentication** - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure. For information on using OnlyKey for SSH authentication see [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html).
 
 Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-feature)
 
 ### Generating Keys {#generating-keys}
 
-If you are already familiar with PGP/GPG and already have keys ready to use you can jump ahead to the
-
-[Loading Keys](#heading=h.ym6z4k6k0sud) section.
-
-If this is your first time creating keys or if you would like to create new keys the method we will be using just requires a web browser and the Mailvelope extension/plugin. Instructions are for Chrome browser but this could also be accomplished using Firefox browser.
-
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)" %}
 
-{% include callout.html content="**Step 1.** Open Chrome and then open this link to go to the[ Mailvelope Extension in the Chrome Web Store.](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) Click ADD TO CHROME, and then Add extension to add the extension to Chrome." type="default" %}
+{% include callout.html content="**Step 1.** Go to https://keybase.io" type="default" %}
 
-{% include image.html file="image81.png" max-width="625" %}
+{% include callout.html content="**Step 2.** Select Login" type="default" %}
 
-{% include image.html file="image57.png" max-width="354" %}
+{% include image.html file="keybase1.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 2.** Now a small lock and key will show up in the top right of the Chrome browser. Click the lock and then click Options." type="default" %}
+{% include callout.html content="**Step 3.** Select Join Keybase" type="default" %}
 
-{% include image.html file="image58.png" max-width="412" %}
+{% include image.html file="keybase2.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 3.** On the page that opens up click Generate Key" type="default" %}
+{% include callout.html content="**Step 4.** Enter an email address, username, and passphrase. This username will be used by others who want to send you encrypted messages. When finished select join." type="default" %}
 
-{% include image.html file="image39.png" %}
+{% include image.html file="keybase11.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 4.** Fill in the name, email, and password you want to be assigned to your key. You can uncheck Upload public key to Mailvelope Key Server if you wish. Finally, click generate to create your key." type="default" %}
+{% include callout.html content="**Step 5.** Select add a PGP key" type="default" %}
 
-{% include image.html file="image8.png" %}
+{% include image.html file="keybase3.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 5.** When you see Success! Click Display Keys and then click on the name of the key you created." type="default" %}
+{% include callout.html content="**Step 6.** Select I need a public key" type="default" %}
 
-{% include image.html file="image30.png" %}
+{% include image.html file="keybase4.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 6.** Click on Export, then click Private, then click save to save a local copy of your encrypted private key." type="default" %}
+{% include callout.html content="**Step 7.** Select Ok, got it" type="default" %}
 
-{% include important.html content="It is recommended to keep an offline copy of this in a secure location. For example, you could copy this to a USB flash drive or CD/DVD and then store it in a safe. You will need this key and the password you used when you created it to read encrypted messages, there is no way to recover this key if you lose it." %}
+{% include image.html file="keybase5.jpeg" max-width="434" %}
 
-{% include image.html file="image68.png" max-width="434" %}
+{% include callout.html content="**Step 8.** Enter Full name and at least one email. These will appear on the messages you send. When finished select Let the math begin." type="default" %}
 
-### Loading RSA Keys {#loading-rsa-keys}
+{% include image.html file="keybase6.jpeg" max-width="434" %}
+
+{% include callout.html content="**Step 9.** Enter Full name and at least one email. These will appear on the messages you send. When finished select Let the math begin." type="default" %}
+
+{% include image.html file="keybase6.jpeg" max-width="434" %}
+
+{% include callout.html content="**Step 10.** After the key is generated make sure to uncheck Host encrypted private key, too. Best security practices are to only keep your private key offline." type="default" %}
+
+{% include image.html file="keybase7.jpeg" max-width="434" %}
+
+{% include callout.html content="**Step 11.** Highlight your private key and copy to a text file. Save this to removable media like a USB flash drive or CD/DVD and store in a secure location. You may want to make multiple copies as there is no way to recover this key if you lose it. Also ensure you save your key passphrase (Same as Keybase account password) to a secure location this is required to unlock your key." type="default" %}
+
+{% include image.html file="keybase8.jpeg" max-width="434" %}
+
+{% include image.html file="keybase9.jpeg" max-width="434" %}
+
+Now all that is needed to start sending encrypted messages is to load the key you generated onto your OnlyKey.
+
+<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to Loading Keys below***
+
+### Loading Keys {#loading-keys}
+
+If you generated your keys as described in the Generating Keys section above proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
 
 {% include callout.html content="**Step 1.** Starting from the last step of the Generating Keys section, select all of the text in the Private box (CTRL+A), and copy the text (CTRL+C)." type="default" %}
 
@@ -562,25 +581,61 @@ If this is your first time creating keys or if you would like to create new keys
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box and then enter the same Passphrase you used when you generated your private key." type="default" %}
+{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with Keybase is entered as passphrase, and *Set as decryption key* is selected. When finished select Save to OnlyKey" type="default" %}
 
-Select the slot where you would like to store this key, there are 4 RSA slots available.
+{% include callout.html content="**Step 5.** Select Subkey 1 and save" type="default" %}
 
-Select the key features (what you want to use the key for) such as backup, signature, decryption, authentication. You can select them all but only one key can be set as the backup key, if you load a new key and set it as backup it will be the backup key and the old key will no longer be used for backup.
+You should see a message displayed indicating the key was successfully saved to OnlyKey.
 
-{% include image.html file="image19.png" %}
+{% include callout.html content="**Step 6.** Paste the copied private key into the RSA Private Key box. Ensure *slot 2* is selected, the same passphrase you used with Keybase is entered as passphrase, and *Set as signature key* is selected. When finished select Save to OnlyKey" type="default" %}
 
-{% include callout.html content="**Step 5.** Click Save to OnlyKey, then select primary or subkey. The primary key is typically used to sign other keys so you will generally want to load the subkey(s)." type="default" %}
+{% include callout.html content="**Step 5.** Select Subkey 2 and save" type="default" %}
 
-{% include image.html file="image87.png" max-width="449" %}
+You should see a message displayed indicating the key was successfully saved to OnlyKey.
 
-{% include callout.html content="**Step 6** Click Save, and you should see the message Successfully set RSA Key." type="default" %}
+Your OnlyKey is now ready to use to send and receive encrypted messages.
 
-### Loading ECC Keys  {#loading-ecc-keys}
+### Loading Keys Advanced {#loading-keys-a}
 
-Loading ECC keys is a more advanced topic and requires familiarity with using terminal commands. ECC Keys are required for SSH Authentication and can be used for encrypted backups. Up to 32 ECC keys can be stored on OnlyKey.
+If you did not generate keys using the [Generating Keys](#generating-keys) steps provided or you already have an OpenPGP key that you would like to use there are some additional considerations.
 
-The [OpenSSL ECC Key Generation guide here](https://docs.google.com/document/d/14RxoaqBLEhU8nizZeeB2RbZVJAG6sxXD7epkdt7Ukls/pub) provides instructions on how to generate OnlyKey compatible ECC keys and load them onto the OnlyKey
+- OnlyKey supports RSA OpenPGP keys of sizes 2048 and 4096 (ECC Keys are not used for OpenPGP).
+- Decryption operations using a 2048 size key takes about 2 seconds, with 4096 size key it takes about 9 seconds.
+
+For best user experience we recommend using 2048 key size (subkeys) for decryption and signing.
+
+**What are subkeys?**
+
+Each OpenPGP key is actually multiple keys. There is a primary key and subkey(s), for example when you follow the Generating Keys steps Keybase generates a key that has a 4096 key size primary key and two 2048 key size subkeys. The first subkey is used for decryption and the second subkey is used for signing.
+
+**Why does this matter?**
+
+You need to determine which keys to load to OnlyKey if you are generating your own key. Typically, if your key has two subkeys then subkey 1 is used for decryption and subkey 2 is used for signing.
+
+If your key only has one subkey then the primary (master) key is typically used for signing and the subkey is used for decryption. This is the default for keys created with GnuPG and Mailvelope (OpenPGP.js).
+
+Once you determine which key is your used for signing and which key is used for decryption:
+- Load the decryption subkey into slot 1 of OnlyKey and check "set as decryption key".
+- Load the signing primary/subkey into slot 2 of OnlyKey and check "set as signature key".
+
+**Digging Deeper into PGP**
+
+You can use gpg2 via terminal to check the key flags by using the following commands:
+```
+$ gpg2 --import /Downloads/asdf_priv.asc
+gpg: key 86F9C12A016169E4: public key "asdf <asdf@asdf.com>" imported
+gpg: key 86F9C12A016169E4: secret key imported
+gpg: Total number processed: 1
+
+$ gpg2 --with-colons --list-keys 86F9C12A016169E4
+tru::1:1481922139:0:3:1:5
+pub:-:4096:1:86F9C12A016169E4:1513980282:::-:::scESC::::::23::0:
+fpr:::::::::37F75C777AEBB46FB690040986F9C12A016169E4:
+uid:-::::1513980287::AB20A6F0D2D7FE2A9EFF4575C3FF7ED2DAC66F4A::asdf <asdf@asdf.com>::::::::::0:
+sub:-:4096:1:8E6332B693FB6D8F:1513980282::::::e::::::23:
+fpr:::::::::F5F80C91796859CEC6CB54768E6332B693FB6D8F:
+```
+In the shown example the flag 'e' (encryption) indicates that the first subkey is the decryption key. The flag 'sc' indicates that the primary key is the signing key
 
 ## Secure Encrypted Backup Anywhere {#secure-encrypted-backup-anywhere}
 
@@ -588,7 +643,9 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 **Before Getting Started**
 
-The backup feature was introduced in firmware version v0.2-beta.4, but for users who use the second profile (plausible deniability mode) make sure your OnlyKey is running firmware v0.2-beta.5 or later. You can check this once your device is configured by looking in the bottom right corner of the OnlyKey Chrome App. If you are running an earlier version follow the
+The backup feature is supported on firmware v0.2-beta.5 or later. You can check this once your device is configured by looking in the bottom right corner of the OnlyKey Chrome App.
+
+{% include warning.html content="U2F and Yubikey OTP backup and restore is only supported on backups that were created on firmware v0.2-beta.6 (Released Jan 2018) or later. This means if you are upgrading from v0.2-beta.5 to v0.2-beta.6 you MUST have an alternate two factor method set on your account. Make sure to have an alternative two factor method set prior to upgrade." %}
 
 {% include image.html file="image83.png" %}
 
@@ -629,6 +686,14 @@ If you used the OnlyKey App to create the backup then the name of this file will
 {% include callout.html content="**Step 4.** Restore may take a minute or two depending on the amount of data to restore. You will know that the restore is complete when the OnlyKey starts blinking continuously (Green)." type="default" %}
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
+
+**Before Getting Started**
+
+{% include warning.html content="U2F and Yubikey OTP backup and restore is only supported on backups that were created on firmware v0.2-beta.6 (Released Jan 2018) or later. This means if you are upgrading from v0.2-beta.5 to v0.2-beta.6 and you use U2F or Yubikey OTP you MUST have an alternate two factor method set on your account. Make sure to have an alternative two factor method set prior to upgrade." %}
+
+You can check firmware version by looking in the bottom right corner of the OnlyKey App.
+
+{% include image.html file="image83.png" %}
 
 {% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?
 

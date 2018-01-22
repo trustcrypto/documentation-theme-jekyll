@@ -1,9 +1,9 @@
 ---
-title: OnlyKey Python Command-Line Utility 
+title: OnlyKey Command-Line Utility
 tags: [OnlyKey, Command line, Python]
 keywords: OnlyKey, Command line
-last_updated: Jan, 16, 2017
-summary: The OnlyKey Python Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
+last_updated: Jan, 16, 2018
+summary: The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
 sidebar: mydoc_sidebar
 permalink: command-line.html
 folder: mydoc
@@ -13,16 +13,12 @@ folder: mydoc
 
 Python client for interacting with the OnlyKey.
 
-OnlyKey-cli - A command line interface to the OnlyKey that can be used for configuration (Similar functionality to [OnlyKey Chrome App](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica?hl=en-US))
+OnlyKey-cli - A command line interface to the OnlyKey that can be used for configuration (Similar functionality to [OnlyKey App](https://docs.crp.to/app.html))
 
-OnlyKey-init - A command line tool for setting PIN on OnlyKey (Initial Configuration)
+PGPMessage - **Still in early development.** - Provides a tool for decrypting and signing OpenPGP/GPG messages using OnlyKey.
 
-OnlyKey-utils - A command line tool for loading keys.
 
-PGPMessage - Provides a tool for decrypting and signing OpenPGP/GPG messages using OnlyKey.
-
-**Still in early development.**
-
+<!---
 ## Run without installation (Packaged App)
 
 ### Mac OS Run without installation
@@ -53,9 +49,10 @@ Coming soon
 ### Windows Dependencies
 
 Python 2.7 - https://www.python.org/downloads/release/python-2713/
+
 git - https://git-scm.com/download/win
 
-<!---## Mac OS Install Dependencies
+## Mac OS Install Dependencies
 
 Tested on El Capitan
 ```
@@ -70,12 +67,14 @@ sudo pip uninstall crypto
 
 ### Windows Install
 
+Requires Python 2.7 and Git
+
 ```
 $ git clone https://github.com/trustcrypto/python-onlykey.git --recursive
 $ cd python-onlykey
-$ python.exe setup.py install
+$ pip2 install .
 $ cd PGPy
-$ python.exe setup.py install
+$ pip2 install .
 $ cd ..
 ```
 
@@ -88,12 +87,6 @@ $  c:\Python27\Scripts\onlykey-cli.exe
 Installing onlykey-cli-script.py script to c:\Python27\Scripts
 Installing onlykey-cli.exe script to c:\Python27\Scripts
 Installing onlykey-cli.exe.manifest script to c:\Python27\Scripts
-Installing onlykey-utils-script.py script to c:\Python27\Scripts
-Installing onlykey-utils.exe script to c:\Python27\Scripts
-Installing onlykey-utils.exe.manifest script to c:\Python27\Scripts
-Installing onlykey-init-script.py script to c:\Python27\Scripts
-Installing onlykey-init.exe script to c:\Python27\Scripts
-Installing onlykey-init.exe.manifest script to c:\Python27\Scripts
 
 ### Ubuntu/Debian Linux Dependencies
 
@@ -103,44 +96,153 @@ $ sudo apt-get install git python-setuptools python-dev libusb-1.0-0-dev libudev
 $ sudo pip install cffi
 ```
 
-Additionally, in order for non-root users to be able to communicate with OnlyKey a udev rule must be created as described [here](https://www.pjrc.com/teensy/td_download.html).
-
 ### Arch Linux Dependencies
 
 sudo pacman -Sy git python2-setuptools python2 libusb python2-pip
 
 ### Linux Install
 
+Additionally, in order for non-root users to be able to communicate with OnlyKey a udev rule must be created as described [here](https://www.pjrc.com/teensy/td_download.html).
+
 ```
 $ git clone https://github.com/trustcrypto/python-onlykey.git --recursive
 $ cd python-onlykey
-$ sudo python setup.py install
+$ pip2 install .
 $ cd PGPy
-$ sudo python setup.py install
+$ pip2 install .
 $ cd ..
 ```
 
 ## QuickStart
 
-### Init
+### Command Options
 
-You can set your pins using the special `onlykey-init` command.
+- init - A command line tool for setting PIN on OnlyKey (Initial Configuration)
+
+- settime - A command for setting time on OnlyKey, time is needed for TOTP (Google Authenticator)
+
+- getlabels - Returns slot labels
+
+- getkeylabels - Returns key labels for RSA keys 1-4 and ECC keys 1 -32
+
+- setslot [id] [type] [value]
+  - [id] must be slot number 1a - 6b
+  - [type] must be one of the following:
+    - label - Slot label i.e. My Google Acct
+    - url - URL to login page
+    - delay1 - set a 0 - 9 second delay
+    - add_char1 - Additional character before username 1 for TAB, 0 to clear
+    - username - Username to login
+    - add_char2 - Additional character after username 1 for TAB, 2 for RETURN
+    - delay2 - set a 0 - 9 second delay
+    - password - Password to login
+    - add_char3 - Additional character after password 1 for TAB, 2 for RETURN
+    - delay3 - set a 0 - 9 second delay
+    - add_char4 - Additional character before OTP 1 for TAB
+    - 2fa - type of two factor authentication
+      - g - Google Authenticator
+      - y - Yubico OTP
+      - u - U2F
+    - totpkey - Google Authenticator key
+    - add_char5 - Additional character after OTP 2 for RETURN
+
+- wipeslot <id>
+  - <id> must be slot number 1a - 6b
+
+- backupkey - Generates a backup key in key slot 32 and returns the generated private key
+
+- idletimeout - OnlyKey locks after ideletimeout is reached (1 – 255 minutes; default = 30; 0 to disable)
+
+- wipemode - Configure how the OnlyKey responds to
+a factory reset. WARNING - Setting to Full Wipe mode cannot be changed.
+  - 1 - Sensitive Data Only (default)
+All sensitive data is wiped.
+  - 2 - Full Wipe (recommended for plausible deniability users) Entire device is wiped. Firmware must be reloaded.
+
+- keylayout - Set keyboard layout
+  - 1 - USA_ENGLISH	(Default)
+  - 2 - CANADIAN_FRENCH
+  - 3 - CANADIAN_MULTILINGUAL
+  - 4 - DANISH
+  - 5 - FINNISH
+  - 6 - FRENCH
+  - 7 - FRENCH_BELGIAN
+  - 8 - FRENCH_SWISS
+  - 9 - GERMAN
+  - 10 - GERMAN_MAC
+  - 11 - GERMAN_SWISS
+  - 12 - ICELANDIC
+  - 13 - IRISH
+  - 14 - ITALIAN
+  - 15 - NORWEGIAN
+  - 16 - PORTUGUESE
+  - 17 - PORTUGUESE_BRAZILIAN
+  - 18 - SPANISH
+  - 19 - SPANISH_LATIN_AMERICA
+  - 20 - SWEDISH
+  - 21 - TURKISH
+  - 22 - UNITED_KINGDOM
+  - 23 - CZECH
+  - 24 - SERBIAN_LATIN_ONLY
+
+- keytypespeed - 1 = slowest; 10 = fastest [4 = default]
+
+### Running Commands
+
+You can run commands in two ways:
+
+**1) Directly in terminal**
+
+Like this:
 
 ```
-$ onlykey-init
-OnlyKey is ready, enter your PIN
-Press the Enter key once you are done
-Successful PIN entry
-OnlyKey is ready, re-enter your PIN to confirm
-Press the Enter key once you are done
-Successfully set PIN
-[...]
+$ onlykey-cli getlabels
+
+Slot 1a:
+Slot 1b:
+
+Slot 2a:
+Slot 2b:
+
+Slot 3a:
+Slot 3b:
+
+Slot 4a:
+Slot 4b:
+
+Slot 5a:
+Slot 5b:
+
+Slot 6a:
+Slot 6b:
+
+$ onlykey-cli setslot 1 label ok
+Successfully set Label
+$ onlykey-cli getlabels
+
+Slot 1a: ok
+Slot 1b:
+
+Slot 2a:
+Slot 2b:
+
+Slot 3a:
+Slot 3b:
+
+Slot 4a:
+Slot 4b:
+
+Slot 5a:
+Slot 5b:
+
+Slot 6a:
+Slot 6b:
+
 ```
 
+**2) Interactive Mode**
 
-### CLI
-
-The CLI is bundled with the package, it should be present globally after the install (Also available as packaged standalone app "cli").
+Or you can run commands in an interactive shell like this:
 
 ```
 $ onlykey-cli
@@ -150,23 +252,23 @@ Press Control-C to retry. Control-D to exit.
 
 OnlyKey> getlabels
 
-Slot 1a: <empty>
-Slot 1b: <empty>
+Slot 1a:
+Slot 1b:
 
-Slot 2a: <empty>
-Slot 2b: <empty>
+Slot 2a:
+Slot 2b:
 
-Slot 3a: <empty>
-Slot 3b: <empty>
+Slot 3a:
+Slot 3b:
 
-Slot 4a: <empty>
-Slot 4b: <empty>
+Slot 4a:
+Slot 4b:
 
-Slot 5a: <empty>
-Slot 5b: <empty>
+Slot 5a:
+Slot 5b:
 
-Slot 6a: <empty>
-Slot 6b: <empty>
+Slot 6a:
+Slot 6b:
 
 OnlyKey> setslot 1 label ok
 
@@ -175,22 +277,22 @@ Successfully set Label
 OnlyKey> getlabels
 
 Slot 1a: ok
-Slot 1b: <empty>
+Slot 1b:
 
-Slot 2a: <empty>
-Slot 2b: <empty>
+Slot 2a:
+Slot 2b:
 
-Slot 3a: <empty>
-Slot 3b: <empty>
+Slot 3a:
+Slot 3b:
 
-Slot 4a: <empty>
-Slot 4b: <empty>
+Slot 4a:
+Slot 4b:
 
-Slot 5a: <empty>
-Slot 5b: <empty>
+Slot 5a:
+Slot 5b:
 
-Slot 6a: <empty>
-Slot 6b: <empty>
+Slot 6a:
+Slot 6b:
 
 OnlyKey> setslot 1 url accounts.google.com
 
@@ -249,93 +351,9 @@ OnlyKey>
 Bye!
 ```
 
-Additionally, the CLI can be used to set key labels. Labels 19 - 22 correspond to RSA Keys 1 - 4 and labels 23 - 54 correspond to ECC Keys 1 - 32. In a future version we will add a setkeylabel function to make this transparent to user.
-
-```
-$ onlykey-cli
-OnlyKey CLI v0.2
-Press the right arrow to insert the suggestion.
-Press Control-C to retry. Control-D to exit.
-
-OnlyKey> setslot 19 label EmailSigningKey
-
-Successfully set Label
-
-OnlyKey> setslot 20 label EmailDecryptKey
-
-Successfully set Label
-
-OnlyKey> getkeylabels
-
-Slot RSA Key 1: EmailSigningKey
-Slot RSA Key 2: EmailDecryptKey
-Slot RSA Key 3: <empty>
-Slot RSA Key 4: <empty>
-Slot ECC Key 1: <empty>
-Slot ECC Key 2: <empty>
-...
-
-```
-
-### Creating/Loading SSH key (ED25519 only)
-
-Create a new ed25519 private key and load it into the OnlyKey:
-
-```
-$ python tests/ssh_auth_ed25519.py
-```
-
-See [onlykey-agent](https://github.com/trustcrypto/onlykey-agent) for more information on SSH authentication.
-
-The latest OnlyKey Chrome App can also be used to load ECC keys. See [OnlyKey-Chrome-App](https://github.com/trustcrypto/OnlyKey-Chrome-App) for more informations.
-
-
-### Creating/Loading PGP key
-
-Create a new RSA 1024 bit private key and load it into the OnlyKey:
-
-```
-$ python tests/rsa_decrypt_1024.py
-```
-
-Create a new RSA 2048 bit private key and load it into the OnlyKey:
-
-```
-$ python tests/rsa_decrypt_2048.py
-```
-
-Create a new RSA 3072 bit private key and load it into the OnlyKey:
-
-```
-$ python tests/rsa_decrypt_3072.py
-```
-
-Create a new RSA 4096 bit private key and load it into the OnlyKey:
-
-```
-$ python tests/rsa_decrypt_4096.py
-```
-
-The latest OnlyKey Chrome App can also be used to load RSA keys. See [OnlyKey-Chrome-App](https://github.com/trustcrypto/OnlyKey-Chrome-App) for more informations.
-
-### Testing PGP decryption
-
-If you already have a key loaded and you want to test decryption:
-
-```
-$ python tests/rsa_decrypt_testkey.py
-```
-
-You will be prompted to
-
-`Enter RSA slot number to use for decryption (1 - 4)`
-
-Select the slot where your key is loaded, this will be used to do PKCS1 v 15 decyption of an encrypted message
-
-
 ### Decrypt PGP email messages using OnlyKey
 
-If you using a previously set RSA private key with decryption capabilitiesyou can decrypt OpenPGP/GPG encrypted email messages:
+If you using a previously set RSA private key with decryption capabilities you can decrypt OpenPGP/GPG encrypted email messages:
 
 ```
 $ PGP_message.py
@@ -540,6 +558,7 @@ BNBU7972zW9q
 -----END PGP MESSAGE-----
 ```
 If signature is successful the ASCII armored version of the message will be displayed. If signature fails the message "Error with RSA signature" will be displayed.
+
 
 ## Source
 
