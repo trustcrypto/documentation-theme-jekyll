@@ -27,7 +27,6 @@ folder: mydoc
                         </div>
                     </div>
                     <!-- /.panel -->
-                    <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -42,7 +41,6 @@ folder: mydoc
                             </div>
                         </div>
                     </div>
-                    <!-- /.panel -->
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
