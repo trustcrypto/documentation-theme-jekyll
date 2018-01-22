@@ -21,7 +21,7 @@ folder: mydoc
                         <div id="collapseNineteen" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
                             Just getting started with OnlyKey?
-                            [Start here](http://www.crp.to/okstart)
+                            <a href="http://www.crp.to/okstart">Start here</a>
                                 </form></div>
                             </div>
                         </div>
@@ -36,9 +36,8 @@ folder: mydoc
                         </div>
                         <div id="collapseTwenty" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                            Check out the [OnlyKey Support Forum](https://groups.google.com/forum/#!forum/onlykey)
-
-                            Check out the [OnlyKey Documentation](https://docs.crp.to)
+                            Check out the <a href="https://groups.google.com/forum/#!forum/onlykey">OnlyKey Support Forum</a>
+                            Check out the <a href="https://docs.crp.to">OnlyKey Documentation</a>
                                 </form></div>
                             </div>
                         </div>
@@ -197,7 +196,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                The encryption free version of the OnlyKey may be used in countries where encryption is banned. Additionally, the two editions enable the [plausible deniability feature - Read More](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware)                         
+                                The encryption free version of the OnlyKey may be used in countries where encryption is banned. Additionally, the two editions enable the Check out the <a href="https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware">plausible deniability feature - Read More</a>                
                             </div>
                         </div>
                     </div>
@@ -236,7 +235,9 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse">
                             <div class="panel-body">
-                                This activates a second profile that is designed to be indistinguishable from the OnlyKey (International Travel Edition) firmware while actually running the OnlyKey (Standard Edition) firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. The user can load the International Travel Edition firmware on their OnlyKey along with some accounts they don't really care about before crossing a border and then if they are asked if they have anything that is encrypted they can say no and be completely telling the truth. Once inside the country they could load the Standard Firmware and set up their plausible deniability profile so that if they are ever detained or forced to give up their PIN they can comply by giving the plausible deniability PIN which would just unlock the accounts they don't really care about and would again appear to just be an unencrypted password manager. The user would have a plausible story that they are giving up everything they have while keeping the accounts they care about and encryption keys protected. More information [here](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware). For more information on encryption and international travel see <a href="https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/">https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/</a>
+                                This activates a second profile that is designed to be indistinguishable from the OnlyKey (International Travel Edition) firmware while actually running the OnlyKey (Standard Edition) firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. The user can load the International Travel Edition firmware on their OnlyKey along with some accounts they don't really care about before crossing a border and then if they are asked if they have anything that is encrypted they can say no and be completely telling the truth. Once inside the country they could load the Standard Firmware and set up their plausible deniability profile so that if they are ever detained or forced to give up their PIN they can comply by giving the plausible deniability PIN which would just unlock the accounts they don't really care about and would again appear to just be an unencrypted password manager. The user would have a plausible story that they are giving up everything they have while keeping the accounts they care about and encryption keys protected. More information
+                                <a href="https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware">here</a>
+                                For more information on encryption and international travel see <a href="https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/">https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/</a>
                             </div>
                         </div>
                     </div>
