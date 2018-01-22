@@ -547,19 +547,17 @@ Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-fea
 
 {% include image.html file="keybase6.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 9.** Enter Full name and at least one email. These will appear on the messages you send. When finished select Let the math begin." type="default" %}
-
-{% include image.html file="keybase6.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 10.** After the key is generated make sure to uncheck Host encrypted private key, too. Best security practices are to only keep your private key offline." type="default" %}
+{% include callout.html content="**Step 9.** After the key is generated make sure to uncheck Host encrypted private key, too. Best security practices are to only keep your private key offline." type="default" %}
 
 {% include image.html file="keybase7.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 11.** Highlight your private key and copy to a text file. Save this to removable media like a USB flash drive or CD/DVD and store in a secure location. You may want to make multiple copies as there is no way to recover this key if you lose it. Also ensure you save your key passphrase (Same as Keybase account password) to a secure location this is required to unlock your key." type="default" %}
+{% include callout.html content="**Step 10.** Highlight your private key and copy to a text file. Save this to removable media like a USB flash drive or CD/DVD and store in a secure location. You may want to make multiple copies as there is no way to recover this key if you lose it. Also ensure you save your key passphrase (Same as Keybase account password) to a secure location this is required to unlock your key." type="default" %}
 
 {% include image.html file="keybase8.jpeg" max-width="434" %}
 
 {% include image.html file="keybase9.jpeg" max-width="434" %}
+
+{% include callout.html content="**Step 11.** Select Done, post to Keybase." type="default" %}
 
 Now all that is needed to start sending encrypted messages is to load the key you generated onto your OnlyKey.
 
@@ -569,11 +567,11 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 
 If you generated your keys as described in the Generating Keys section above proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
 
-{% include callout.html content="**Step 1.** Starting from the last step of the Generating Keys section, select all of the text in the Private box (CTRL+A), and copy the text (CTRL+C)." type="default" %}
+{% include callout.html content="**Step 1.** Open the text file of your private key that you saved in the previous steps. Select all of the text of the private key (CTRL+A), and copy the text (CTRL+C)." type="default" %}
 
-{% include image.html file="image15.png" max-width="465" %}
+{% include image.html file="Keybase12.jpg" %}
 
-{% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey Chrome App." type="default" %}
+{% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey App." type="default" %}
 
 {% include callout.html content="**Step 3.** Put the OnlyKey into config mode doing the following" type="default" %}
 
@@ -581,7 +579,11 @@ If you generated your keys as described in the Generating Keys section above pro
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with Keybase is entered as passphrase, and *Set as decryption key* is selected. When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with Keybase is entered as passphrase, *Set as decryption key* is selected, and *Set as backup key* is selected. When finished select Save to OnlyKey" type="default" %}
+
+{% include image.html file="loadkey1.jpeg" %}
+
+{% include note.html content="Selecting set as backup key will use your Keybase key to encrypt backups. If you wish to use a different key for backups just load that key and set it as backup. There can only be one backup key set." %}
 
 {% include callout.html content="**Step 5.** Select Subkey 1 and save" type="default" %}
 
@@ -651,7 +653,7 @@ The backup feature is supported on firmware v0.2-beta.5 or later. You can check 
 
 ### Backup With OnlyKey App {#backup-with-onlykey-app}
 
-{% include callout.html content="**Step 1.** First, you must have a backup key and have this set on your OnlyKey. Follow the instructions in the [Generating Keys](#generating-keys) section to create a new key and then follow the instructions in the [Loading Keys](#loading-rsa-keys) section to load and set as backup key." type="default" %}
+{% include callout.html content="**Step 1.** First, you must have a backup key and have this set on your OnlyKey. Follow the instructions in the [Generating Keys](#generating-keys) section to create a new key and then follow the instructions in the [Loading Keys](#loading-keys) section to load and set as backup key." type="default" %}
 
 {% include callout.html content="**Step 2.** Click on the Backup/Restore tab of the OnlyKey Chrome App." type="default" %}
 
@@ -673,7 +675,7 @@ Using the backup file created in the Secure Encrypted Backup Anywhere section, w
 
 {% include note.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
-{% include callout.html content="**Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same key is loaded onto the OnlyKey that was used to backup by following the steps in the [Loading Keys](#loading-rsa-keys) section." type="default" %}
+{% include callout.html content="**Step 1.** Ensure that a PIN is set on the target OnlyKey by completing the [Initial Setup](#initial-setup) section and ensure that the same key is loaded onto the OnlyKey that was used to backup by following the steps in the [Loading Keys](#loading-keys) section." type="default" %}
 
 {% include callout.html content="**Step 2.** Put the OnlyKey into config mode by holding the 6 button down for more than 5 seconds, and then re-entering your PIN. You will see the OnlyKey LED fade in and out continuously (Red) while in config mode." type="default" %}
 
