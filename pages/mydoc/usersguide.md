@@ -79,7 +79,7 @@ folder: mydoc
 
 {% include note.html content="The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN." %}
 
-{% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the manditory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
+{% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the mandatory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
 
 {% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](https://docs.crp.to/features.html#self-destruct) for more information on this feature.
 <br>
@@ -98,7 +98,7 @@ Read and accept the Warning and Disclaimer by checking the checkbox. On your Onl
 {% include image.html file="image27.png" %}
 
 {% include tip.html content="***Don't Care About Plausible Deniability, how about a work profile and personal profile?***<br><br>
-*We get that there will be some users who think the idea of having a second hidden profile is awesome and others will be be like meh, I don't want or need that. That is fine and you can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, if you wanted to set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile that would be fine. You can get creative and use the other profile for whatever you want.*" %}
+*We get that there will be some users who think the idea of having a second hidden profile is awesome and others will not want or need it. You can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, you could set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile. You can get creative and use the other profile for whatever you want or not use it at all.*" %}
 
 {% include tip.html content="***Forget your PIN?***<br><br>
 If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:
@@ -109,11 +109,14 @@ If you lose or forget your PIN then a factory default must be completed on your 
 <br>
 **Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking. This is an intentional safeguard so that in the event that a child gets ahold of your OnlyKey the device will not be inadvertently wiped by them repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure." %}
 
+
 *If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](https://docs.crp.to/features.html#features).*
 
-## Configure Profile {#configure-profile}
+<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup accounts below***
 
-{% include tip.html content="Set aside some time to configure profiles as this can be time consuming the first time you set it up. Once you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
+## Set up accounts {#account-setup}
+
+{% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
 
 ### Configure Basic Login Info {#all-about-slots}
 
@@ -599,7 +602,11 @@ You should see a message displayed indicating the key was successfully saved to 
 
 You should see a message displayed indicating the key was successfully saved to OnlyKey.
 
-Your OnlyKey is now ready to use to send and receive encrypted messages.
+Now your OnlyKey is ready to:
+
+- Send/receive PGP encrypted messages using [WebCrypt](https://docs.crp.to/webcrypt.html)
+- Send/receive PGP encrypted messages using [BrowserCrypt](https://docs.crp.to/browsercrypt.html)
+- Create [secure encrypted backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)
 
 ### Loading Keys Advanced {#loading-keys-a}
 
@@ -671,9 +678,11 @@ The backup feature is supported on firmware v0.2-beta.5 or later. You can check 
 
 ### Backup Without OnlyKey App {#backup-without-onlykey-app}
 
-The process is the same to backup without the app. Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the file using whatever filename you prefer. In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else.
+The process is the same to backup without the app. OnlyKey can type out your encrypted backup anywhere.
 
-{% include note.html content="While the backup is already encrypted using what would be considered as strong encryption, we recommend due to the sensitive nature of the information to double encrypt it before sending over insecure means. For example, if you already use encrypted email like PGP/GPG then encrypt the email before sending. Or if storing in some kind of cloud storage like Dropbox then encrypt the backup using Veracrypt/Truecrypt, encrypted zip file, or equivalent. This will ensure that not only is the backup given extra protection but will ensure that any snooping eyes would not even be able to tell that the encrypted file contains an OnlyKey backup." %}
+**Save to a text file** - Instead of clicking in the Backup data box you could click into any text editor like notepad and when the backup is complete save the text file using whatever filename you prefer.
+
+**Save it in an email** - In the same way you could also click into any email client and then when the backup is complete send the email to yourself or someone else.
 
 ## Restore From Backup {#restore-from-backup}
 
@@ -825,7 +834,7 @@ Additional color cases are available - Choose a color that fits your style – S
 
 Android is supported by using a USB on-the-go (OTG) adapter. There are two types of OTG adapters that can be purchased USB Micro and USB C.
 
-Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently on Android.
+Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently on Android. We are currently working on an Android app that would support these features.
 
 #### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
@@ -964,17 +973,17 @@ If you have an issue not listed here please reference the online support forum [
 
 ## Additional Information {#additional-information}
 
-### Alternate Backup Method {#alternate-backup-method}
+### Change your PIN {#pin-change}
 
-This method has been replaced by the built-in OnlyKey secure backup method but is provided here for reference.
+If you need to change your self-destruct or plausible deniability PINs that can be completed by going through the initial setup again. If you need to change your primary profile PIN you must do a backup and restore. The process is as follows:
 
-### Standard Edition OnlyKey Backup using Veracrypt/Truecrypt 7.1a {#standard-edition-onlykey-backup-using-veracrypt-truecrypt-7-1a}
+- Backup OnlyKey
+- Wipe OnlyKey (self destruct PIN or enter incorrect PIN 10x)
+- Complete initial setup again and choose a different PIN
+- Load backup key
+- Restore backup file
 
-[https://youtu.be/NYh5eZS6gsc](https://youtu.be/NYh5eZS6gsc)
-
-### Plausible Deniability OnlyKey Backup using Veracrypt/Truecrypt 7.1a {#plausible-deniability-onlykey-backup-using-veracrypt-truecrypt-7-1a}
-
-[https://youtu.be/vrhZyddwzxQ](https://youtu.be/vrhZyddwzxQ)
+{% include note.html content="The reason that primary PIN can't just be changed is a security reason. The key that encrypts all of sensitive data on the OnlyKey is derived from your PIN and a random number. This means that just changing the PIN makes the sensitive data unreadable." %}
 
 ### Web Links {#web-links}
 
