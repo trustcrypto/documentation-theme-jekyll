@@ -515,7 +515,7 @@ Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-fea
 
 ### Generating Keys {#generating-keys}
 
-{% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)" %}
+{% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
 {% include callout.html content="**Step 1.** Go to https://keybase.io" type="default" %}
 
@@ -551,7 +551,9 @@ Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-fea
 
 {% include image.html file="keybase7.jpeg" max-width="434" %}
 
-{% include callout.html content="**Step 10.** Highlight your private key and copy to a text file. Save this to removable media like a USB flash drive or CD/DVD and store in a secure location. You may want to make multiple copies as there is no way to recover this key if you lose it. Also ensure you save your key passphrase (Same as Keybase account password) to a secure location this is required to unlock your key." type="default" %}
+{% include callout.html content="**Step 10.** Highlight your private key and copy to a text file. Save this to removable media like a USB flash drive or CD/DVD. You may want to make multiple copies as there is no way to recover this key if you lose it. Also ensure you write down your key passphrase (Same as Keybase account password) this is required to unlock your key. Store both in a physically secure location." type="default" %}
+
+{% include tip.html content="A great physically secure location is a safe, preferably a fire safe." %}
 
 {% include image.html file="keybase8.jpeg" max-width="434" %}
 
@@ -564,6 +566,8 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to Loading Keys below***
 
 ### Loading Keys {#loading-keys}
+
+{% include warning.html content="Only load keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
 If you generated your keys as described in the Generating Keys section above proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
 
@@ -589,7 +593,7 @@ If you generated your keys as described in the Generating Keys section above pro
 
 You should see a message displayed indicating the key was successfully saved to OnlyKey.
 
-{% include callout.html content="**Step 6.** Paste the copied private key into the RSA Private Key box. Ensure *slot 2* is selected, the same passphrase you used with Keybase is entered as passphrase, and *Set as signature key* is selected. When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 6.** Paste the copied private key into the RSA Private Key box  again. Ensure *slot 2* is selected, the same passphrase you used with Keybase is entered as passphrase, and *Set as signature key* is selected. When finished select Save to OnlyKey" type="default" %}
 
 {% include callout.html content="**Step 5.** Select Subkey 2 and save" type="default" %}
 
@@ -598,6 +602,8 @@ You should see a message displayed indicating the key was successfully saved to 
 Your OnlyKey is now ready to use to send and receive encrypted messages.
 
 ### Loading Keys Advanced {#loading-keys-a}
+
+{% include warning.html content="Only load keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
 If you did not generate keys using the [Generating Keys](#generating-keys) steps provided or you already have an OpenPGP key that you would like to use there are some additional considerations.
 
