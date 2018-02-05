@@ -5,7 +5,7 @@ keywords: OnlyKey, Extension, BrowserCrypt
 last_updated: Jan, 19, 2018
 summary: A chrome extension that enables simple click to encrypt/decrypt PGP messages in the browser with Keybase and OnlyKey.
 sidebar: mydoc_sidebar
-permalink: webcrypt.html
+permalink: browsercrypt.html
 folder: mydoc
 ---
 

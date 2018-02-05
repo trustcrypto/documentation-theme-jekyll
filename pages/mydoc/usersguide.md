@@ -615,9 +615,9 @@ Now your OnlyKey is ready to:
 If you did not generate keys using the [Generating Keys](#generating-keys) steps provided or you already have an OpenPGP key that you would like to use there are some additional considerations.
 
 - OnlyKey supports RSA OpenPGP keys of sizes 2048 and 4096 (ECC Keys are not used for OpenPGP).
-- Decryption operations using a 2048 size key takes about 2 seconds, with 4096 size key it takes about 9 seconds.
+- Decryption operations using a 2048 size key takes about 2 seconds, with 4096 size key it takes about 9 seconds (or up to 30 seconds with OnlyKey Original).
 
-For best user experience we recommend using 2048 key size (subkeys) for decryption and signing.
+For best user experience we recommend using OnlyKey Color with 2048 key size (subkeys) for decryption and signing.
 
 **What are subkeys?**
 
