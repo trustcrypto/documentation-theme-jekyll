@@ -939,7 +939,7 @@ Below is a list of common issues and solutions.
   <tr>
    <td>Not working with certain sites / Not entering data in correct field
    </td>
-   <td>We often get customers that ask how to set up a specific site with OnlyKey. There are several examples listed in the table provided in the [Set up a slot](#Set up a slot) section. If you have a use case that is not covered by this please open a new issue on the support forum.
+   <td>We often get customers that ask how to set up a specific site with OnlyKey. There are several examples listed in the table provided in the <a href="#set-up-a-slot">Set up a slot</a> section. If you have a use case that is not covered by this please open a new issue on the support forum.
    </td>
   </tr>
   <tr>
