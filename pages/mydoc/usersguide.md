@@ -660,7 +660,7 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 The backup feature is supported on firmware v0.2-beta.5 or later. You can check this once your device is configured by looking in the bottom right corner of the OnlyKey Chrome App.
 
-{% include warning.html content="U2F and Yubikey OTP backup and restore is only supported on backups that were created on firmware v0.2-beta.6 (Released Jan 2018) or later. This means if you are upgrading from v0.2-beta.5 to v0.2-beta.6 you MUST have an alternate two factor method set on your account. Make sure to have an alternative two factor method set prior to upgrade." %}
+{% include warning.html content="U2F and Yubikey OTP backup and restore is only supported on backups that were created on firmware v0.2-beta.6 (Released Feb 2018) or later. This means if you are upgrading from v0.2-beta.5 to v0.2-beta.6 you MUST have an alternate two factor method set on your account. Make sure to have an alternative two factor method set prior to upgrade." %}
 
 {% include image.html file="image83.png" %}
 

@@ -23,7 +23,6 @@ folder: mydoc
                             Just getting started with OnlyKey?
                             <a href="http://www.crp.to/okstart">Start here</a>
                             </div>
-                            </div>
                         </div>
                     </div>
                     <!-- /.panel -->
@@ -37,7 +36,6 @@ folder: mydoc
                             <div class="panel-body">
                             Check out the <a href="https://groups.google.com/forum/#!forum/onlykey">OnlyKey Support Forum</a>
                             Check out the <a href="https://docs.crp.to">OnlyKey Documentation</a>
-                            </div>
                             </div>
                         </div>
                     </div>
