@@ -27,20 +27,48 @@ entries:
       url: /usersguide.html#unpacking
       output: web, pdf
 
-    - title: Initial Setup
+    - title: Setting up OnlyKey
       url: /usersguide.html#initial-setup
       output: web, pdf
 
-    - title: Configure Profile
-      url: /usersguide.html#configure-profile
+    - title: Configure Basic Login Info
+      url: /usersguide.html#all-about-slots
+      output: web, pdf
+
+    - title: Configure Two Factor Authentication (2FA)
+      url: /usersguide.html#two-factor-authentication-2fa
+      output: web, pdf
+
+    - title: Google Authenticator (TOTP)
+      url: /usersguide.html#google-authenticator-totp
+      output: web, pdf
+
+    - title: Yubico® One-Time Password
+      url: /usersguide.html#Yubico-one-time-password
+      output: web, pdf
+
+    - title: Universal 2nd Factor (U2F) Security Key
+      url: /usersguide.html#universal-2nd-factor-u2f
+      output: web, pdf
+
+    - title: Using With A Software Password Manager
+      url: /usersguide.html#using-onlykey-with-a-software-password-manager
       output: web, pdf
 
     - title: Preferences
       url: /usersguide.html#preferences
       output: web, pdf
 
-    - title: Encryption Keys
+    - title: About Encryption Keys
       url: /usersguide.html#encryption-keys
+      output: web, pdf
+
+    - title: Generating Keys
+      url: /usersguide.html#generating-keys
+      output: web, pdf
+
+    - title: Loading Keys
+      url: /usersguide.html#loading-keys
       output: web, pdf
 
     - title: Secure Encrypted Backup Anywhere
@@ -59,8 +87,12 @@ entries:
       url: /usersguide.html#troubleshooting
       output: web, pdf
 
+    - title: Change your PIN
+      url: /usersguide.html#pin-change
+      output: web, pdf
+
     - title: Additional Information
-      url: /usersguide.html#additional-information
+      url: /usersguide.html#web-links
       output: web, pdf
 
   - title: Features
@@ -91,9 +123,9 @@ entries:
       url: /usersguide.html#secure-encrypted-backup-anywhere
       output: web, pdf
 
-      - title: Config Mode
-        url: /features.html#config-mode
-        output: web, pdf
+    - title: Config Mode
+      url: /features.html#config-mode
+      output: web, pdf
 
     - title: Self-Destruct
       url: /features.html#self-destruct
@@ -107,25 +139,17 @@ entries:
       url: /features.html#security-features
       output: web, pdf
 
-      - title: Hardware Security
-        url: /features.html#hardware-security
-        output: web, pdf
+    - title: Hardware Security
+      url: /features.html#hardware-security
+      output: web, pdf
 
-      - title: Cryptographically Secure Random Number Generator
-        url: /features.html#cryptographically-secure-random-number-generator
-        output: web, pdf
+    - title: Cryptographically Secure Random Number Generator
+      url: /features.html#cryptographically-secure-random-number-generator
+      output: web, pdf
 
   - title: Apps and Software
     output: web, pdf
     folderitems:
-
-    - title: Firmware
-      url: /firmware.html
-      output: web, pdf
-
-      - title: Releases
-        url: https://github.com/trustcrypto/OnlyKey-Firmware/releases
-        output: web, pdf
 
     - title: Desktop App
       url: /app.html
@@ -139,10 +163,14 @@ entries:
       url: /browsercrypt.html
       output: web, pdf
 
+    - title: SSH/GPG Agent
+      url: /onlykey-agent.html
+      output: web, pdf
+
     - title: Command-Line Utility
       url: /command-line.html
       output: web, pdf
 
-    - title: SSH/GPG Agent
-      url: /onlykey-agent.html
+    - title: Firmware
+      url: /firmware.html
       output: web, pdf
