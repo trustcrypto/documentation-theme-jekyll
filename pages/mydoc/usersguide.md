@@ -971,9 +971,7 @@ Below is a list of common issues and solutions.
 
 If you have an issue not listed here please reference the online support forum [here.](https://groups.google.com/forum/#!forum/onlykey)
 
-## Additional Information {#additional-information}
-
-### Change your PIN {#pin-change}
+## Change your PIN {#pin-change}
 
 If you need to change your self-destruct or plausible deniability PINs that can be completed by going through the initial setup again. If you need to change your primary profile PIN you must do a backup and restore. The process is as follows:
 
@@ -985,7 +983,7 @@ If you need to change your self-destruct or plausible deniability PINs that can 
 
 {% include note.html content="The reason that primary PIN can't just be changed is a security reason. The key that encrypts all of sensitive data on the OnlyKey is derived from your PIN and a random number. This means that just changing the PIN makes the sensitive data unreadable." %}
 
-### Web Links {#web-links}
+## Web Links {#web-links}
 
 Documentation - [https://docs.crp.to](https://docs.crp.to)
 

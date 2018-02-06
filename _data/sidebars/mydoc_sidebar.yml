@@ -79,21 +79,21 @@ entries:
       url: /features.html#two-factor-authentication
       output: web, pdf
 
-    - title: Keys (PGP/GPG/OpenPGP/SSH)
-      url: /features.html#keys-feature
-      output: web, pdf
-
     - title: SSH Login
       url: /features.html#ssh-login
       output: web, pdf
 
-    - title: Email/File Signing (OpenPGP)
-      url: /features.html#email-file-signing-openpgp
+    - title: OpenPGP Everywhere
+      url: /features.html#openpgp
       output: web, pdf
 
-    - title: Email/File Decryption (OpenPGP)
-      url: /features.html#email-file-decryption-openpgp
+    - title: Secure Backup Anywhere
+      url: /usersguide.html#secure-encrypted-backup-anywhere
       output: web, pdf
+
+      - title: Config Mode
+        url: /features.html#config-mode
+        output: web, pdf
 
     - title: Self-Destruct
       url: /features.html#self-destruct
@@ -103,42 +103,46 @@ entries:
       url: /features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
       output: web, pdf
 
-    - title: Hardware Security
-      url: /features.html#hardware-security
+    - title: Security Features
+      url: /features.html#security-features
       output: web, pdf
 
-    - title: Config Mode
-      url: /features.html#config-mode
-      output: web, pdf
+      - title: Hardware Security
+        url: /features.html#hardware-security
+        output: web, pdf
 
-    - title: Cryptographically Secure Random Number Generator
-      url: /features.html#cryptographically-secure-random-number-generator
-      output: web, pdf
+      - title: Cryptographically Secure Random Number Generator
+        url: /features.html#cryptographically-secure-random-number-generator
+        output: web, pdf
 
   - title: Apps and Software
     output: web, pdf
     folderitems:
 
-    - title: OnlyKey Firmware
+    - title: Firmware
       url: /firmware.html
       output: web, pdf
 
-    - title: OnlyKey App
+      - title: Releases
+        url: https://github.com/trustcrypto/OnlyKey-Firmware/releases
+        output: web, pdf
+
+    - title: Desktop App
       url: /app.html
       output: web, pdf
 
-    - title: OnlyKey WebCrypt
+    - title: WebCrypt (OpenPGP Webapp)
       url: /webcrypt.html
       output: web, pdf
 
-    - title: OnlyKey BrowserCrypt (For Google Chrome)
+    - title: BrowserCrypt (OpenPGP Chrome Extension)
       url: /browsercrypt.html
       output: web, pdf
 
-    - title: OnlyKey Command-Line Utility
+    - title: Command-Line Utility
       url: /command-line.html
       output: web, pdf
 
-    - title: OnlyKey SSH/GPG Agent
+    - title: SSH/GPG Agent
       url: /onlykey-agent.html
       output: web, pdf

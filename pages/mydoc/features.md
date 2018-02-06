@@ -174,7 +174,9 @@ Alternatively, if you don't need the second profile for plausible deniability yo
 
 For more information on encryption and international travel see [https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/)
 
-### Hardware Security {#hardware-security}
+### Security Features {#security-features}
+
+#### Hardware Security {#hardware-security}
 
 When it comes to hardware security there are terms such as tamper resistant, tamper proof, and secure element. These terms are mostly marketing terms as anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof, and tamper resistant can mean something as simple as the device being coated in plastic that can [easily be removed](http://www.hexview.com/~scl/neo/). The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels.
 
@@ -192,7 +194,7 @@ If you would like to read more about the flash security features of the MK20 [he
 
 If you plan to modify the flash security features be warned that changes may brick your device. We tested this feature to ensure this does not happen but any changes you make to source code are at your own risk.
 
-### Config Mode {#config-mode}
+#### Config Mode {#config-mode}
 
 This secondary feature has been added to provide additional protection against the following scenario:
 
@@ -202,7 +204,7 @@ While Bob should not have left his device unlocked and unattended we still want 
 
 {% include note.html content="Backups only supported on Standard Edition firmware and not while in plausible deniability mode. The reason is the backup requires encryption and plausible deniability requires being able to deny that any encryption is used." %}
 
-### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
+#### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
 
 After much research it was concluded that Arduino and other microcontrollers such as MK20 are not ideal for generating truly random numbers. While the Arduino Reference Manual recommends using analog pins, which read random atmospheric noise to seed a PRNG, it was concluded that this method alone may not generate a cryptographically secure random number. The paper here goes into more detail - [http://benedikt.sudo.is/ardrand.pdf](http://benedikt.sudo.is/ardrand.pdf). A true random number generator uses non-deterministic sources to produce randomness. Thus, the random number generation function in use requires user provided entropy. This is similar to how TrueCrypt/VeraCrypt use mouse movements to generate entropy during key generation. The OnlyKey RNG function uses a combination of the entropy provided from two separate analog pins (atmospheric noise) and the user's key presses on the six capacitive touch sensors (conductivity of user's skin, duration of key press, number of key presses, conductivity of air).
 
