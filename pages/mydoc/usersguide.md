@@ -46,11 +46,18 @@ Once you have installed the app proceed to [Set PIN(s)](#set-pin)
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
-<i class="fa fa-apple fa-2x"></i> [***macOS***](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.dmg.zip)
-<i class="fa fa-windows fa-2x"></i> [***Windows***](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.exe.zip)
-<i class="fa fa-linux fa-2x"></i> [***Linux***](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.deb.gz)
+[<i class="fa fa-apple fa-2x"></i> macOS](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.dmg.zip)
+`SHA 256 checksum `
+
+<i class="fa fa-windows fa-2x"></i> #### [Windows](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.exe.zip)
+`SHA 256 checksum `
+
+<i class="fa fa-linux fa-2x"></i> [Linux](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.deb.gz)
+`SHA 256 checksum `
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
+
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum" %}
 
 ### Install OnlyKey Chrome App {#app-chrome}
 
@@ -764,8 +771,7 @@ Yes, you can load the Standard Edition firmware on an International Travel Editi
 </table>
 
 
-{% include callout.html content="**Step 4.**  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA 256 checksum of the downloaded file matches these:" type="default" %}
-
+{% include callout.html content="**Step 4.** You can ensure the integrity of your downloaded firmware by verifying the checksum" type="default" %}
 
 <table>
   <tr>
