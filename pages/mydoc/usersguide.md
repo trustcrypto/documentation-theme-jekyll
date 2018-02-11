@@ -48,19 +48,13 @@ Once you have installed the app proceed to [Set PIN(s)](#set-pin)
 
 [<i class="fa fa-apple fa-2x"></i> **macOS**](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.dmg.zip)
 
-SHA 256 CHECKSUM: `51db9944ee234569146e053341cd57168baf84b145054cde77211c64cbbb81c7`
-
 [<i class="fa fa-windows fa-2x"></i> **Windows**](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.exe.zip)
-
-SHA 256 CHECKSUM: `bdfb4561f506992664dbb9450033a2222160bfd8d5d7b6702512db438a110e9f`
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.deb.gz)
 
-SHA 256 CHECKSUM: `517d8d795b4a293b773676623997464b91e7756f1e2454b5e6c3c692fd467ed3`
-
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 51db9944ee234569146e053341cd57168baf84b145054cde77211c64cbbb81c7<br>Windows SHA 256 CHECKSUM: bdfb4561f506992664dbb9450033a2222160bfd8d5d7b6702512db438a110e9f<br>Linux SHA 256 CHECKSUM: 517d8d795b4a293b773676623997464b91e7756f1e2454b5e6c3c692fd467ed3" %}
 
 ### Install OnlyKey Chrome App {#app-chrome}
 
