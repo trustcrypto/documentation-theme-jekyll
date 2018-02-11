@@ -34,6 +34,26 @@ folder: mydoc
 
 ## Setting up OnlyKey {#initial-setup}
 
+### Install OnlyKey App {#app-install}
+
+There are two options for installing the OnlyKey app.
+- Install the [OnlyKey Desktop App](#app-desktop)
+- Install the [OnlyKey Chrome App](#app-chrome)
+
+Once you have installed the app proceed to [Set PIN(s)](#set-pin)
+
+### Install OnlyKey Desktop App {#app-desktop}
+
+{% include callout.html content="**Step 1.** Download installer" type="default" %}
+
+<i class="fa fa-apple fa-2x"></i> [***macOS***](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.dmg.zip)
+<i class="fa fa-windows fa-2x"></i> [***Windows***](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.exe.zip)
+<i class="fa fa-linux fa-2x"></i> [***Linux***](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.deb.gz)
+
+{% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
+
+### Install OnlyKey Chrome App {#app-chrome}
+
 {% include callout.html content="**Step 1.** Open the Chrome Web Browser (If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
 
 {% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
@@ -51,19 +71,21 @@ folder: mydoc
 <br>
 {% include image.html file="image17.png" %}
 
-{% include callout.html content="**Step 5.** Once the OnlyKey Configuration App launches you will see the message ''Please connect your OnlyKey''" type="default" %}
+### Set PIN(s) {#set-pin}
+
+{% include callout.html content="**Step 1.** Once the OnlyKey App launches you will see the message ''Please connect your OnlyKey''" type="default" %}
 
 {% include image.html file="image18.png" %}
 
-{% include callout.html content="**Step 6.** Insert the OnlyKey into USB port." type="default" %}
+{% include callout.html content="**Step 2.** Insert the OnlyKey into USB port." type="default" %}
 
-{% include callout.html content="**Step 7.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select ''Next'' to continue." type="default" %}
+{% include callout.html content="**Step 3.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select ''Next'' to continue." type="default" %}
 
 {% include note.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
 
 {% include image.html file="image77.png" %}
 
-{% include callout.html content="**Step 8. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you purchased OnlyKey through Amazon or the online store select the Standard Edition." type="default" %}
+{% include callout.html content="**Step 4. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you purchased OnlyKey through Amazon or the online store select the Standard Edition." type="default" %}
 
 {% include note.html content="International Travel Edition<br><br>This edition of OnlyKey may ship globally, even to countries where encryption devices are not permitted as it does not utilize encryption. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) and you would prefer the Standard Edition then you may load this firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup. For more information on the two editions of OnlyKey firmware see [Plausible Deniability](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware)" %}
 
@@ -75,25 +97,25 @@ folder: mydoc
 
 {% include note.html content="As described in the following steps you can use multiple PINs, make sure PINs are not set to the same thing or share the same sequence, this will not work they must be different. For example, if PIN A is '11223344' and PIN B is '1122334455' then when you try to type in PIN B the device would read PIN A before you enter '55'." %}
 
-{% include callout.html content="**Step 9. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
+{% include callout.html content="**Step 5. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
 
 {% include note.html content="The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN." %}
 
-{% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the mandatory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
+{% include callout.html content="**Step 6. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the mandatory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
 
-{% include callout.html content="**Step 11. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](https://docs.crp.to/features.html#self-destruct) for more information on this feature.
+{% include callout.html content="**Step 7. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](https://docs.crp.to/features.html#self-destruct) for more information on this feature.
 <br>
 <br>
 Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
 
-{% include callout.html content="**Step 12. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN." type="default" %}
+{% include callout.html content="**Step 8. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN." type="default" %}
 
-{% include callout.html content="**Step 13. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature.
+{% include callout.html content="**Step 9. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature.
 <br>
 <br>
 Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
 
-{% include callout.html content="**Step 14. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile." type="default" %}
+{% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile." type="default" %}
 
 {% include image.html file="image27.png" %}
 
@@ -299,7 +321,7 @@ As you go through the steps you will be prompted to scan a QR code (Looks like a
 
 {% include image.html file="image6.png" max-width="392" %}
 
-{% include callout.html content="**Step 2. Copy and Paste Code into Chrome App -**
+{% include callout.html content="**Step 2. Copy and Paste Code into app -**
 
 Selecting ''CAN'T SCAN IT'' will display the private code. Select this text and copy it as shown below:" type="default" %}
 
@@ -462,7 +484,7 @@ Setting a custom type speed may be desirable in cases where the application you 
 
 ### Configurable Keyboard Layouts {#configurable-keyboard-layouts}
 
-We now support changing your keyboard layout on the fly through the Chrome app no firmware reload required. Traveling to France from the US? No problem just set the OnlyKey keyboard to French and change it back to US when you return. Here are the options supported for international keyboards:
+You can change your keyboard layout on the fly through the OnlyKey app preferences. Traveling to France from the US? No problem just set the OnlyKey keyboard to French and change it back to US when you return. Here are the options supported for international keyboards:
 
 *   US_ENGLISH
 *   CANADIAN_FRENCH
@@ -658,7 +680,7 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 **Before Getting Started**
 
-The backup feature is supported on firmware v0.2-beta.5 or later. You can check this once your device is configured by looking in the bottom right corner of the OnlyKey Chrome App.
+The backup feature is supported on firmware v0.2-beta.5 or later. You can check this once your device is configured by looking in the bottom right corner of the OnlyKey app.
 
 {% include warning.html content="U2F and Yubikey OTP backup and restore is only supported on backups that were created on firmware v0.2-beta.6 (Released Feb 2018) or later. This means if you are upgrading from v0.2-beta.5 to v0.2-beta.6 you MUST have an alternate two factor method set on your account. Make sure to have an alternative two factor method set prior to upgrade." %}
 
@@ -668,13 +690,13 @@ The backup feature is supported on firmware v0.2-beta.5 or later. You can check 
 
 {% include callout.html content="**Step 1.** First, you must have a backup key and have this set on your OnlyKey. Follow the instructions in the [Generating Keys](#generating-keys) section to create a new key and then follow the instructions in the [Loading Keys](#loading-keys) section to load and set as backup key." type="default" %}
 
-{% include callout.html content="**Step 2.** Click on the Backup/Restore tab of the OnlyKey Chrome App." type="default" %}
+{% include callout.html content="**Step 2.** Click on the Backup/Restore tab of the OnlyKey app." type="default" %}
 
 {% include callout.html content="**Step 3.** Click inside the Backup data box and then hold down the 1 button on your OnlyKey for 5 seconds or more and then release. This will type out an encrypted backup of your OnlyKey configuration into the box. Select save file to save the backup file which has a timestamp so you can keep track of the latest backup file." type="default" %}
 
 {% include image.html file="image78.png" max-width="650" %}
 
-{% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey Chrome app and select a higher setting, 9 usually works well" %}
+{% include tip.html content="Backup can take a long time if your Keyboard Type Speed is set to a low setting. To speed this up go to Preferences in the OnlyKey app and select a higher setting, 9 usually works well" %}
 
 ### Backup Without OnlyKey App {#backup-without-onlykey-app}
 
@@ -714,7 +736,7 @@ You can check firmware version by looking in the bottom right corner of the Only
 
 {% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?
 
-Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical. For that matter you can load any custom firmware you want on it." %}
+Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical." %}
 
 {% include callout.html content="**Step 1.**  Insert OnlyKey into USB port" type="default" %}
 {% include callout.html content="**Step 2.**  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)" type="default" %}
@@ -728,21 +750,21 @@ Yes, you can load the Standard Edition firmware on an International Travel Editi
    </td>
   </tr>
   <tr>
-   <td>Download OnlyKey Color Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.5/OnlyKey_Beta5_STD_Color.cpp.hex">here</a>
+   <td>Download OnlyKey Color Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_STD_Color.cpp.hex">here</a>
    </td>
-   <td>Download OnlyKey Original Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.5/OnlyKey_Beta5_STD.cpp.hex">here</a>
+   <td>Download OnlyKey Original Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_STD_Original.cpp.hex">here</a>
    </td>
   </tr>
   <tr>
-   <td>Download OnlyKey Color International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.4/OnlyKey_Beta4_IN_Color.cpp.hex">here</a>
+   <td>Download OnlyKey Color International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_IN_TRVL_Color.cpp.hex">here</a>
    </td>
-   <td>Download OnlyKey Original International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.5/OnlyKey_Beta5_IN-TRVL.cpp.hex">here</a>
+   <td>Download OnlyKey Original International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_IN_TRVL_Original.cpp.hex">here</a>
    </td>
   </tr>
 </table>
 
 
-{% include callout.html content="**Step 4.**  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA256 hash of the downloaded file matches these:" type="default" %}
+{% include callout.html content="**Step 4.**  You can ensure that your copy of the firmware has not been tampered with by checking to see if the SHA 256 checksum of the downloaded file matches these:" type="default" %}
 
 
 <table>
@@ -750,31 +772,31 @@ Yes, you can load the Standard Edition firmware on an International Travel Editi
    <td>
 File Name
    </td>
-   <td>SHA256 Hash
+   <td>SHA 256 Checksums
    </td>
   </tr>
   <tr>
-   <td>OnlyKey_Beta5_STD.cpp.hex
+   <td>OnlyKey_Beta6_STD_Color.cpp.hex
    </td>
-   <td>2eb241a376b2493b2fd57d33ee2d30b2a8ac9262f2ace44f2b433759b5af7e33
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta5_STD_Color.cpp.hex
-   </td>
-   <td>70a350f6f143090b63aefff5aad192a18940e3f20ee6649ebe905e0b186656d6
+   <td>68f2ba7a23e6d4983cb47d4318e8eedbb86ecdf094feaf4928383ade88eb9150
    </td>
   </tr>
   <tr>
-   <td>OnlyKey_Beta5_IN-TRVL.cpp.hex
+   <td>OnlyKey_Beta6_STD_Original.cpp.hex
    </td>
-   <td>f0f7a83162578b35d82af9a4e023564fe5a5b7f8e74d50c7604147c1a6ce15a4
+   <td>309da576981b0f9cf811f577467c8e214ce761bc543f7a469eed25e43c0dd811
    </td>
   </tr>
   <tr>
-   <td>OnlyKey_Beta5_IN-TRVL_Color.cpp.hex
+   <td>OnlyKey_Beta6_IN_TRVL_Color.cpp.hex
    </td>
-   <td>0b9af89af7c37ee97af05a7f0605e5ac9a510b7cd402753e8095d99cd958d3ad
+   <td>d50ffa47c1e201fea4f77cddc3ad49e3afeb5873c537281569df65d12e27749d
+   </td>
+  </tr>
+  <tr>
+   <td>OnlyKey_Beta6_IN_TRVL_Original.cpp.hex
+   </td>
+   <td>018c2f3fda8f958653e9e3f0c686ca1b9f84c2d5f1dab182b6efa8d2428234e8
    </td>
   </tr>
 </table>
@@ -951,7 +973,7 @@ Below is a list of common issues and solutions.
   <tr>
    <td>Google Authenticator types NOTSET instead of OTP code
    </td>
-   <td>This occurs when the OnlyKey does not have the time set. Time is set from the OnlyKey Chrome App which occurs automatically. Chrome and the OnlyKey Chrome App must be installed for the code to be generated.
+   <td>This occurs when the OnlyKey does not have the time set. Time is set from the OnlyKey app which occurs automatically. The OnlyKey app must be installed for the code to be generated.
    </td>
   </tr>
   <tr>
