@@ -154,7 +154,7 @@ Wouldn't it be nice to know that your data is protected, and if you are in a pin
 
 TL;DR - With a fake profile and a real profile someone can't just force you to give up your PIN.
 
-Wouldn't it be nice to be able to be able to travel to a country where encryption is illegal or to a country where it is against the law to refuse to give up your password to authorities and be able to comply without actually giving any access to your accounts?
+Wouldn't it be nice to be able to travel to a country where encryption is illegal or to a country where it is against the law to refuse to give up your password to authorities and be able to comply without actually giving any access to your accounts?
 
 That is what the plausible deniability feature is all about. OnlyKey allows the use of a hidden profile and a fake profile (Plausible Deniability Mode) that essentially provides a cover story. If compelled to do so a fake profile can be activated by entering a plausible deniability PIN code and the goal of this feature is that there is no proof that the hidden profile even exists. In fact since the international travel edition of the OnlyKey ships without the plausible deniability feature there is no way to know if you are using an OnlyKey with the international travel edition firmware or the Standard Edition firmware in plausible deniability mode. When the Standard Edition OnlyKey is in plausible deniability mode it is essentially indistinguishable from an international travel edition OnlyKey.
 
