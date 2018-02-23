@@ -408,6 +408,13 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 #### Security Key - Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
 
+{% include note.html content="U2F is supported on Google Chrome and Firefox. Firefox U2F support is still in it's early development stages so it is not enabled by default. If using Firefox, U2F must be enabled by completing the following steps in your browser:<br>
+- Type about:config into the Firefox browser.<br>
+- Search for “u2f”.<br>
+- Double click on security.webauth.u2f to enable U2F support.<br><br>
+NOTE: There is currently a bug in Firefox when registering multiple security keys on the same website. This was reported to Mozilla on 2/21/18. Register multiple U2F security keys using Chrome browser or if using Firefox make sure to register OnlyKey as the first security key in the list. More details [here](https://groups.google.com/d/msg/onlykey/HZ-HWk_LibE/jQMxWgV4BQAJ).
+" %}
+
 OnlyKey works just like any other U2F token. Follow the steps below to configure a slot to use U2F.
 
 {% include callout.html content="**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting ''Submit''." type="default" %}
@@ -417,6 +424,20 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 {% include callout.html content="**Step 2.** Go to the website that you wish to register a new security token and when you select to register a token you will notice the OnlyKey light flashing (Blue for OnlyKey Color) on and off. Press the button corresponding to the slot you set to U2F in step 1 to register token." type="default" %}
 
 {% include callout.html content="**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login." type="default" %}
+
+{% include tip.html content="There are two ways to use U2F:<br><br>
+1) Have one designated slot on OnlyKey for U2F. i.e. Set slot 6a as U2F and press button 6 to authenticate to an unlimited number of sites.<br><br>
+
+2) Have U2F enabled along with other account information for each site. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:
+{% include image.html file="u2f-slot.jpeg" %}
+<br>
+Now you can register your security key by pressing button 1. But won't it type out my information while registering? No, while your device is flashing blue you can press the button to register and typing is disabled. Once your security key is registered you can log out and now you have a one touch login configured:
+- Automatically type out and browse to login page (https://www.dropbox.com/login)
+- Three second delay ensures login page has time to load, this can be increased if using slow internet connections.
+- Username and password are entered in login field.
+- Two second delay ensures security key page has time to load.
+- U2F authentiation completes automatically.
+." %}
 
 Learn more about OnlyKey's implementation of U2F [here.](#universal-2nd-factor-authentication-u2f)
 
