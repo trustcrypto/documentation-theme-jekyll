@@ -16,17 +16,13 @@ folder: mydoc
 
 {% include callout.html content="**Step 1.** Remove the OnlyKey and Keychain from packaging." type="default" %}
 
-{% include callout.html content="**Step 2.** Remove the small metal keyring if one is attached and discard this keyring." type="default" %}
-
-{% include image.html file="image76.jpg" max-width="138" %}
-
-{% include callout.html content="**Step 3.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey." type="default" %}
+{% include callout.html content="**Step 2.** Attach the plastic end of the keychain to your own keyring that you use to carry your keys and the other string end of the keychain to your OnlyKey." type="default" %}
 
 {% include image.html file="image14.jpg" max-width="350" %}
 
-{% include callout.html content="**Step 4.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB." type="default" %}
+{% include callout.html content="**Step 3.** By pressing the buttons on both sides of the plastic attachment you can remove your OnlyKey from your keyring to insert it into USB." type="default" %}
 
-{% include callout.html content="**Step 5.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)" type="default" %}
+{% include callout.html content="**Step 4.** (Optional) Insert OnlyKey into silicone case as shown [here.](#onlykey-case)" type="default" %}
 
 {% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
 
@@ -863,8 +859,9 @@ Additional color cases are available - Choose a color that fits your style – S
 
 {% include image.html file="cases.jpg" max-width="500" %}
 
-[Purchase in OnlyKey Store](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908)
-[Purchase on Amazon](https://crp.to/Amazon-Case)
+####[Purchase in OnlyKey Store](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908)
+
+####[Purchase on Amazon](https://crp.to/Amazon-Case)
 
 ### Android Support {#android-support}
 
