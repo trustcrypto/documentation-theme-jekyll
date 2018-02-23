@@ -425,7 +425,7 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 {% include callout.html content="**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login." type="default" %}
 
 {% include tip.html content="There are **two ways to use U2F** on OnlyKey:<br><br>**1)** Have one designated slot on OnlyKey for U2F. i.e. Set slot 6a as U2F and press button 6 to authenticate to an unlimited number of sites.<br><br>**2)** Have U2F enabled along with other account information for each site. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
-<img src="u2f-slot.jpeg" width="200">
+{% include inline_image.html file="u2f-slot.jpeg" %}
 <br>Now you can register your security key by pressing button 1. But won't it type out my information while registering? No, while your device is flashing blue you can press the button to register and typing is disabled. Once your security key is registered you can log out and now you have a one touch login configured:<br>- Automatically type out and browse to login page (https://www.dropbox.com/login).<br>- Three second delay ensures login page has time to load, this can be increased if using slow internet connections.<br>- Username and password are entered in login field.<br>- Two second delay ensures security key page has time to load.<br>- U2F authentication completes automatically." %}
 
 Learn more about OnlyKey's implementation of U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
@@ -842,7 +842,7 @@ File Name
 
 ### OnlyKey Case {#onlykey-case}
 
-The OnlyKey silicon case provides additional protection and gives OnlyKey a polished appearance. To put on the case just carefully slide the case over the OnlyKey as shown below:
+The OnlyKey case provides additional protection and gives OnlyKey a polished appearance. To put on the case just carefully slide the case over the OnlyKey as shown below:
 
 
 <table>
@@ -859,10 +859,11 @@ The OnlyKey silicon case provides additional protection and gives OnlyKey a poli
   </tr>
 </table>
 
-Additional color cases are available - Choose a color that fits your style – Stealth Black, Guardian Blue, Hacker Green, or Resistance Red.
+Additional color cases are available - Choose a color that fits your style – Stealth Black, Guardian Blue, Hacker Green, Resistance Red, or Quantum White.
 
 {% include image.html file="cases.jpg" max-width="500" %}
 
+[Purchase in OnlyKey Store](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908)
 [Purchase on Amazon](https://crp.to/Amazon-Case)
 
 ### Android Support {#android-support}
@@ -871,34 +872,13 @@ Android is supported by using a USB on-the-go (OTG) adapter. There are two types
 
 Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently on Android. We are currently working on an Android app that would support these features.
 
-#### [USB Micro to USB 3 OTG adapter with keychain](https://www.amazon.com/dp/B071Y4CZV9) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
+#### [Purchase USB Micro to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/accessories-1/products/usb-micro-to-usb-a-otg-adapter?variant=1294977826860) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
 {% include note.html content="Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
 
-[Purchase on Amazon](https://www.amazon.com/dp/B071Y4CZV9)
-
-This solution is ideal as it can be carried on a keychain for on the go use.
-
-
-<table>
-  <tr>
-   <td>
-{% include image.html file="image55.png" max-width="221"%}
-   </td>
-   <td>
-{% include image.html file="image26.jpg" max-width="204" %}
-   </td>
-  </tr>
-</table>
-
-
-#### [USB C to USB 3 OTG adapter](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html) {#usb-c-to-usb-3-otg-adapter}
+#### [Purchase USB C to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/accessories-1/products/usb-c-to-usb-a-otg-adapter?variant=1294695989292) {#usb-c-to-usb-3-otg-adapter}
 
 {% include note.html content="Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support." %}
-
-[Purchase on Aliexpress from 3rd party seller](https://www.aliexpress.com/item/ONEPLUS-3-3T-Type-C-Dash-Cable-10CM-USB-Female-TO-TYPE-C-OTG-Converter-Data/32790621768.html)
-
-{% include image.html file="image73.png" max-width="221" %}
 
 ### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
 
@@ -912,22 +892,18 @@ Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the 
 
 ### Keychain Accessory Options {#keychain-options}
 
-#### Standard Keychain
+#### Standard Plastic Keychain
 
 The standard keychain that comes with the OnlyKey is plastic which provides good durability and an easy quick disconnect for convenient access.
 
-If you ever need a replacement or extra keychain one can be purchased using the link below:
+If you ever need a replacement or extra keychain one can be purchased from the [OnlyKey store](https://onlykey.io/collections/keychains/products/extra-standard-keychain?variant=926841372716).
 
-<div>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="FCWD7D8B4G7VY">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" max-width="1" height="1">
-</form>
-</div>
+#### Heavy Duty Metal Keychain
 
-#### Keychain DIY Customize
+This keychain provides better performance and durability than the standard plastic keychain. This keychain swivels 360° and is designed to withstand the stresses of demanding use. This can be purchased from the [OnlyKey store](https://onlykey.io/collections/keychains/products/heavy-duty-metal-keychain?variant=7154240028716).
+{% include image.html file="51vOBo8vUSL._SL1000_.jpg"  max-width="248" %}
+
+#### Standard Plastic Keychain DIY
 
 If you don't like how far your OnlyKey hangs off of your keyring then follow these instructions to create a nice short keychain. You can do this yourself all that is needed is a pair of scissors.
 
@@ -942,14 +918,6 @@ If you don't like how far your OnlyKey hangs off of your keyring then follow the
 {% include callout.html content="**Step 3.** Finally, cut off the first knot and enjoy your optimum length keychain." type="default" %}
 
 {% include image.html file="image9.jpg" max-width="134" %}
-
-#### Other Keychain Options
-
-Various other Keychains may be used some ideas are shown below:
-
-{% include image.html file="keychain.jpg" max-width="300" %}
-
-{% include image.html file="keychain2.jpg" max-width="300" %}
 
 ## Troubleshooting {#troubleshooting}
 
