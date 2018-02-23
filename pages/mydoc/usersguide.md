@@ -439,7 +439,7 @@ Now you can register your security key by pressing button 1. But won't it type o
 - U2F authentiation completes automatically.
 ." %}
 
-Learn more about OnlyKey's implementation of U2F [here.](#universal-2nd-factor-authentication-u2f)
+Learn more about OnlyKey's implementation of U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
 
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
