@@ -412,7 +412,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 - Type about:config into the Firefox browser.<br>
 - Search for “u2f”.<br>
 - Double click on security.webauth.u2f to enable U2F support.<br><br>
-*There is currently a bug in Firefox when registering multiple security keys on the same website. This was reported to Mozilla on 2/21/18. Register multiple U2F security keys using Chrome browser or if using Firefox make sure to register OnlyKey as the first security key in the list. More details [here](https://groups.google.com/d/msg/onlykey/HZ-HWk_LibE/jQMxWgV4BQAJ).*" %}
+*There is currently a bug in Firefox when registering* **multiple security keys** *on the same website. This was reported to Mozilla on 2/21/18. Register multiple U2F security keys using Chrome browser or if using Firefox make sure to register OnlyKey as the first security key in the list. More details [here](https://groups.google.com/d/msg/onlykey/HZ-HWk_LibE/jQMxWgV4BQAJ).*" %}
 
 OnlyKey works just like any other U2F token. Follow the steps below to configure a slot to use U2F.
 
@@ -424,7 +424,8 @@ OnlyKey works just like any other U2F token. Follow the steps below to configure
 
 {% include callout.html content="**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login." type="default" %}
 
-{% include tip.html content="There are two ways to use U2F:<br><br>1) Have one designated slot on OnlyKey for U2F. i.e. Set slot 6a as U2F and press button 6 to authenticate to an unlimited number of sites.<br><br>2) Have U2F enabled along with other account information for each site. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
+{% include tip.html content="There are **two ways to use U2F** on OnlyKey:<br><br>**1)** Have one designated slot on OnlyKey for U2F. i.e. Set slot 6a as U2F and press button 6 to authenticate to an unlimited number of sites.<br><br>**2)** Have U2F enabled along with other account information for each site. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
+<img src="/images/u2f-slot.jpeg" width="200">
 <br>Now you can register your security key by pressing button 1. But won't it type out my information while registering? No, while your device is flashing blue you can press the button to register and typing is disabled. Once your security key is registered you can log out and now you have a one touch login configured:<br>- Automatically type out and browse to login page (https://www.dropbox.com/login).<br>- Three second delay ensures login page has time to load, this can be increased if using slow internet connections.<br>- Username and password are entered in login field.<br>- Two second delay ensures security key page has time to load.<br>- U2F authentication completes automatically." %}
 
 Learn more about OnlyKey's implementation of U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
