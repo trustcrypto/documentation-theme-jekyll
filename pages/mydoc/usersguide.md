@@ -412,8 +412,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 - Type about:config into the Firefox browser.<br>
 - Search for “u2f”.<br>
 - Double click on security.webauth.u2f to enable U2F support.<br><br>
-NOTE: There is currently a bug in Firefox when registering multiple security keys on the same website. This was reported to Mozilla on 2/21/18. Register multiple U2F security keys using Chrome browser or if using Firefox make sure to register OnlyKey as the first security key in the list. More details [here](https://groups.google.com/d/msg/onlykey/HZ-HWk_LibE/jQMxWgV4BQAJ).
-" %}
+NOTE: There is currently a bug in Firefox when registering multiple security keys on the same website. This was reported to Mozilla on 2/21/18. Register multiple U2F security keys using Chrome browser or if using Firefox make sure to register OnlyKey as the first security key in the list. More details [here](https://groups.google.com/d/msg/onlykey/HZ-HWk_LibE/jQMxWgV4BQAJ)." %}
 
 OnlyKey works just like any other U2F token. Follow the steps below to configure a slot to use U2F.
 
@@ -436,8 +435,7 @@ Now you can register your security key by pressing button 1. But won't it type o
 - Three second delay ensures login page has time to load, this can be increased if using slow internet connections.
 - Username and password are entered in login field.
 - Two second delay ensures security key page has time to load.
-- U2F authentiation completes automatically.
-." %}
+- U2F authentiation completes automatically." %}
 
 Learn more about OnlyKey's implementation of U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
 
