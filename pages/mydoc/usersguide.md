@@ -859,9 +859,9 @@ Additional color cases are available - Choose a color that fits your style – S
 
 {% include image.html file="cases.jpg" max-width="500" %}
 
-####[Purchase in OnlyKey Store](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908)
+#### [Purchase in OnlyKey Store](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908)
 
-####[Purchase on Amazon](https://crp.to/Amazon-Case)
+#### [Purchase on Amazon](https://crp.to/Amazon-Case)
 
 ### Android Support {#android-support}
 
