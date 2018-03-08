@@ -17,9 +17,7 @@ WebCrypt is a serverless Web App that integrates with [OnlyKey](https://crp.to/p
 
 Supports Google Chrome and Firefox!
 
-**Still in early development available for testing only.**
-
-[Try it out here!](https://apps.crp.to/encrypt-test)
+[Try it out here!](https://apps.crp.to/encrypt)
 
 ## How it works
 
@@ -40,7 +38,7 @@ If using Firefox, U2F must be enabled by completing the following steps in your 
 ## Sending secure messages
 
 To create encrypted PGP message just:
-- Browse to https://apps.crp.to/encrypt-test
+- Browse to https://apps.crp.to/encrypt
 - Enter the recipient's Keybase ID in the first box
 - Enter your Keybase ID (for the key you loaded onto OnlyKey) in the second box
 - Enter your secure message in the third box
@@ -56,7 +54,7 @@ The encrypted message will be displayed and you can paste it into an email, IM, 
 ## Receiving secure messages
 
 To decrypt PGP message just:
-- Browse to https://apps.crp.to/decrypt-test
+- Browse to https://apps.crp.to/decrypt
 - Enter your Keybase ID (for the key you loaded onto OnlyKey) in the first box
 - Paste your encrypted PGP message in the second box
 - Click "Decrypt and Verify"
