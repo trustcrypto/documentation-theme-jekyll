@@ -182,7 +182,6 @@ This is where the card you received with your OnlyKey comes in handy. You can wr
 
 As mentioned on the card you can hold down the 2 button on OnlyKey for 5+ seconds and OnlyKey will type out your slot labels which may look something like this:
 
-`
 1a Google<br>
 2a Bank<br>
 3a Email<br>
@@ -194,8 +193,7 @@ As mentioned on the card you can hold down the 2 button on OnlyKey for 5+ second
 3b<br>
 4b<br>
 5b<br>
-6b Lastpass
-`
+6b Lastpass<br>
 
 {% include important.html content="Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a." %}
 
@@ -242,8 +240,9 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
 
 {% include image.html file="image23.png" max-width="602" %}
 
-*The table below shows how to configure some common login forms that at first may seem problematic. By using the delay setting of the OnlyKey we can support practically any login field format.*
-
+<br>
+*The table below shows how to configure some common login forms that at first may seem problematic.*
+<br>
 
 <table>
   <tr>
