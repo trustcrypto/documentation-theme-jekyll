@@ -2,7 +2,7 @@
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
-last_updated: Sept, 25, 2017
+last_updated: Mar, 19, 2018
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
 sidebar: mydoc_sidebar
 permalink: usersguide.html
@@ -180,20 +180,22 @@ This is where the card you received with your OnlyKey comes in handy. You can wr
 
 {% include image.html file="card.jpg" max-width="400" %}
 
-As mentioned on the card you can hold down the 2 button on OnlyKey for 5+ seconds and OnlyKey will type out your slot labels which may look something like this
+As mentioned on the card you can hold down the 2 button on OnlyKey for 5+ seconds and OnlyKey will type out your slot labels which may look something like this:
 
-1a Google
-2a Bank
-3a Email
-4a VPN
-5a School
-6a U2F
-1b Amazon
-2b Dropbox
-3b
-4b
-5b
+`
+1a Google<br>
+2a Bank<br>
+3a Email<br>
+4a VPN<br>
+5a School<br>
+6a U2F<br>
+1b Amazon<br>
+2b Dropbox<br>
+3b<br>
+4b<br>
+5b<br>
 6b Lastpass
+`
 
 {% include important.html content="Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a." %}
 
@@ -366,7 +368,7 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 
 #### Google Authenticator OTP On-The-Go {#google-authenticator-otg}
 
-One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display "NOTSET" instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. However, starting with our Beta 6 release of OnlyKey TOTP will work on-the-go without the app running. All you have to do is browse to our web app https://apps.crp.to in Google Chrome or Firefox (With U2F Enabled). This web app in addition to being used to send encrypted messages sets the current time on OnlyKey and login with TOTP will function as normal.
+One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display "NOTSET" instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. However, starting with our Beta 6 release of OnlyKey TOTP will work on-the-go without the app running. All you have to do is browse to our web app [https://apps.crp.to](https://apps.crp.to) in Google Chrome or Firefox (With U2F Enabled). This web app in addition to being used to send encrypted messages sets the current time on OnlyKey and login with TOTP will function as normal.
 
 {% include image.html file="totp.png" max-width="600" %}
 
