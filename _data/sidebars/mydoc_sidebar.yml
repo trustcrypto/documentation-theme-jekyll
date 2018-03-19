@@ -35,6 +35,10 @@ entries:
       url: /usersguide.html#all-about-slots
       output: web, pdf
 
+    - title: OnlyKey On-The-Go
+      url: /usersguide.html#otg
+      output: web, pdf
+
     - title: Configure Two Factor Authentication (2FA)
       url: /usersguide.html#two-factor-authentication-2fa
       output: web, pdf

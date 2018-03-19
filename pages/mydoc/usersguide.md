@@ -172,11 +172,28 @@ The slots that have not been configured have no label so they are shown as ''emp
 
 {% include image.html file="image66.png" %}
 
+#### OnlyKey On-The-Go {#otg}
+
 **What if I am using a computer without the OnlyKey app?**
 
 This is where the card you received with your OnlyKey comes in handy. You can write your labels on this and carry this in your wallet. This is a low tech solution but it works great.
 
 {% include image.html file="card.jpg" max-width="400" %}
+
+As mentioned on the card you can hold down the 2 button on OnlyKey for 5+ seconds and OnlyKey will type out your slot labels which may look something like this
+
+`1a Google
+2a Bank
+3a Email
+4a VPN
+5a School
+6a U2F
+1b Amazon
+2b Dropbox
+3b
+4b
+5b
+6b Lastpass`
 
 {% include important.html content="Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a." %}
 
@@ -215,6 +232,8 @@ As mentioned earlier, login pages can be different between sites and sometimes e
 
 Additionally, by using the URL field we can have the OnlyKey type the login page URL into the browser and browse to the login page (in this case accounts.google.com). This way a one-touch login is possible. Just select the empty URL field in the browser and the URL is automatically typed out and Return is pressed to browse to the site. Once on the site the password is entered and the login is complete.
 
+{% include tip.html content="Using the URL field provides protection against spear phishing attacks as this provides assurance that the site you are entering your password into is the legitimate site. For example, if you receive an email asking you to log into your account to verify something instead of clicking the link in the email to login you would use OnlyKey to browse to the correct site to login." %}
+
 **The example configuration shown below would be to set up a URL and password to automatically login to the Google page shown below. Notice that the username is already remembered so there is not a need to set this in the OnlyKey slot.**
 
 {% include image.html file="image72.png" max-width="624" %}
@@ -235,7 +254,7 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
    <td>Site that does not automatically select username field after loading page (i.e.Kracken).
 {% include image.html file="image42.png" max-width="201" %}
    </td>
-   <td><em>With URL - You will notice that the delay is set to a high value so that you have plenty of time to select the username field manually since it's not selected automatically.</em>
+   <td><em>With URL - You will notice that "Tab before UserName" is checked. This will select the username field as it is not automatically selected when the page loads.</em>
 {% include image.html file="image54.png" max-width="395" %}
 <em>Without URL - Browse to the login page first and place cursor in the username field before selecting the assigned OnlyKey button.</em>
 {% include image.html file="image4.png" max-width="395" %}
@@ -246,7 +265,7 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
    </td>
    <td><em>Password and 2FA only - This is usually the best option if you remember your username/email address as this will work on any computer whether your username is remembered or not. This method does not include URL in case you are prompted for a password.</em>
 {% include image.html file="image60.png" max-width="395"%}
-<em>Username Remembered w/URL - If you use your device mostly on a computer where you username is remembered this is a good option.</em>
+<em>Username Remembered w/URL - If you use your device mostly on a computer where you username is remembered this is a good option. If you use this configuration on a computer where username is not remembered then you must output of the login information into notepad and paste into login fields.</em>
 {% include image.html file="image61.png" max-width="395" %}
    </td>
   </tr>
@@ -256,7 +275,7 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
 After loading next page
 {% include image.html file="image47.png" max-width="201" %}
    </td>
-   <td><em>You will notice that the delay before 2FA is set to a high value so that you have plenty of time to select the OTP code field manually since it's not selected automatically.</em>
+   <td><em>You will notice that "Tab before OTP" is checked. This will select the OTP field as it is not automatically selected when the page loads.</em>
 {% include image.html file="image44.png" max-width="395"%}
    </td>
   </tr>
@@ -344,6 +363,12 @@ Once your account has been verified you are all set. You can add a username and 
 {% include image.html file="image37.png" max-width="600" %}
 
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
+
+#### Google Authenticator OTP On-The-Go {#google-authenticator-otg}
+
+One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display "NOTSET" instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. However, starting with our Beta 6 release of OnlyKey TOTP will work on-the-go without the app running. All you have to do is browse to our web app https://apps.crp.to in Google Chrome or Firefox (With U2F Enabled). This web app in addition to being used to send encrypted messages sets the current time on OnlyKey and login with TOTP will function as normal. 
+
+{% include image.html file="totp.png" max-width="600" %}
 
 #### Yubico® One-Time Password {#Yubico-one-time-password}
 
