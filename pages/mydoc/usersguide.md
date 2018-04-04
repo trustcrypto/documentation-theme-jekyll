@@ -710,6 +710,36 @@ fpr:::::::::F5F80C91796859CEC6CB54768E6332B693FB6D8F:
 ```
 In the shown example the flag 'e' (encryption) indicates that the first subkey is the decryption key. The flag 'sc' indicates that the primary key is the signing key
 
+**Exporting a key from GPG and Loading onto OnlyKey**
+
+{% include callout.html content="**Step 1.** Export the private key from GPG" type="default" %}
+-
+```
+$ gpg2 --export-secret-key -a "asdf"
+```
+
+% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey App." type="default" %}
+
+{% include callout.html content="**Step 3.** Put the OnlyKey into config mode doing the following" type="default" %}
+
+*   Ensure OnlyKey is unlocked
+*   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
+*   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
+
+{% include callout.html content="**Step 4.** Copy and paste the private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with GPG is entered as passphrase, *Set as decryption key* is selected, and *Set as backup key* is selected. When finished select Save to OnlyKey" type="default" %}
+
+{% include note.html content="Selecting set as backup key will use your GPG key to encrypt backups. If you wish to use a different key for backups just load that key and set it as backup. There can only be one backup key set." %}
+
+{% include callout.html content="**Step 5.** Select the decryption subkey and save" type="default" %}
+
+You should see a message displayed indicating the key was successfully saved to OnlyKey.
+
+{% include callout.html content="**Step 6.** Paste the copied private key into the RSA Private Key box again. Ensure *slot 2* is selected, the same passphrase you used with GPG is entered as passphrase, and *Set as signature key* is selected. When finished select Save to OnlyKey" type="default" %}
+
+{% include callout.html content="**Step 5.** Select the signing primary/subkey and save" type="default" %}
+
+You should see a message displayed indicating the key was successfully saved to OnlyKey.
+
 ## Secure Encrypted Backup Anywhere {#secure-encrypted-backup-anywhere}
 
 The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the go. The way that this works is that the OnlyKey encrypts everything on your OnlyKey using an encryption key and then types it out. This allows saving the backup in a text file or email on any computer.
