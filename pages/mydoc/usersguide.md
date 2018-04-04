@@ -712,8 +712,7 @@ In the shown example the flag 'e' (encryption) indicates that the first subkey i
 
 **Exporting a key from GPG and Loading onto OnlyKey**
 
-{% include callout.html content="**Step 1.** Export the private key from GPG" type="default" %}
--
+{% include callout.html content="**Step 1.** Export the OpenPGP compatible private key from GPG" type="default" %}
 ```
 $ gpg2 --export-secret-key -a "asdf"
 ```
