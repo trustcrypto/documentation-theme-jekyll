@@ -510,9 +510,9 @@ OnlyKey has two apps for secure communication:
 
 2) **[BrowerCrypt](https://docs.crp.to/browsercrypt.html)** is a Google Chrome Extension that allows you to highlight any text in the browser and encrypt it.
 
-{% include note.html content="OpenPGP keys are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. OnlyKey can only process secure messages when you tell it to by entering a 3 digit challenge code." %}
+{% include note.html content="Private keys are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. OnlyKey can only process secure messages when you tell it to by entering a 3 digit challenge code." %}
 
-**See it in action**
+**See Webcrypt in action**
 
 After configuring your OnlyKey following [these instructions](#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
 
@@ -541,7 +541,19 @@ After configuring your OnlyKey following [these instructions](#generating-keys) 
 - By clicking the button again the message will be copied to clipboard
 {% include image.html file="encrypted-message9.jpg" %}
 
-{% include note.html content="Messages sent via Webcrypt are never sent over the internet. The way it works is the necessary files are downloaded to your browser and all processing is done in the browser of messages. Read more about [Webcrypt security here](https://docs.crp.to/webcrypt.html#security-goals)" %}
+{% include note.html content="Messages sent via Webcrypt are never sent over the internet. The way it works is the necessary files are downloaded to your browser and all processing is done in your browser. Read more about [Webcrypt security here](https://docs.crp.to/webcrypt.html#security-goals)" %}
+
+**See BrowserCrypt in action**
+
+BrowserCrypt is similar to WebCrypt but instead of pasting messages you can compose a message anywhere in the browser and then highlight and click to encrypt. Both BrowserCrypt and Webcrypt use the same method for encrypting messages but BrowserCrypt has some advantages including the ability to store the Keybase ID of recipients. These are stored in your local browser storage so there is no need to remember or lookup a recipient's name.
+
+{% include warning.html content="Some websites may save a draft of your message automatically. For example, an email provider may save the message you are composing so that in case you close out of your email you can return to the message later. Keep this in mind when using BrowserCrypt, if you are concerned that your messaging provider may be able to read or save draft messages then use a secure composition window like Webcrypt." %}
+
+- Highlight the message to encrypt, select Encrypt, and select Encrypt for the recipient that you would like to send the message to (i.e. alicer)
+{% include image.html file="encrypted-message10.jpg" %}
+- Enter the shown challenge code on the OnlyKey and the encrypted message will be displayed
+
+Find more information on [BrowserCrypt here](https://docs.crp.to/browsercrypt.html)
 
 ## Preferences {#preferences}
 
