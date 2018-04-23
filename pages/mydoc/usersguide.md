@@ -498,6 +498,51 @@ DashLane supports Google Authenticator, Yubico® OTP, and U2F. The choice is you
 
 SmartLock is a new password manager that is available in Google Chrome. Since this uses a Google account it supports Google Authenticator or U2F. The choice is yours but for beginners Google Authenticator is the best option.
 
+## Secure Communication - Chat/Email {#secure-com}
+
+OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase you can truly send and receive secure messages anywhere.
+
+**How it works**
+
+OnlyKey has two apps for secure communication:
+
+1) **[WebCrypt](https://docs.crp.to/webcrypt.html)** is supported on Firefox and Google Chrome for sending secure messages right in the browser.
+
+2) **[BrowerCrypt](https://docs.crp.to/browsercrypt.html)** is a Google Chrome Extension that allows you to highlight any text in the browser and encrypt it.
+
+{% include note.html content="OpenPGP keys are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. OnlyKey can only process secure messages when you tell it to by entering a 3 digit challenge code." %}
+
+**See it in action**
+
+After configuring your OnlyKey following [these instructions](#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
+
+- Enter a message to encrypt
+{% include image.html file="encrypted-message.jpg" %}
+
+- Enter the shown challenge code on the OnlyKey (i.e. 1,5,2)
+{% include image.html file="encrypted-message2.jpg" %}
+
+- Encrypted message shown, by clicking the button again it will be copied to clipboard
+{% include image.html file="encrypted-message3.jpg" %}
+{% include image.html file="encrypted-message4.jpg" %}
+
+- Paste the message into any email or chat (Sending via Gmail shown)
+{% include image.html file="encrypted-message5.jpg" %}
+
+- When the recipient receives the message (email or chat) they can paste it into Webcrypt app to decrypt
+{% include image.html file="encrypted-message6.jpg" %}
+
+- Enter the shown challenge code on the OnlyKey (i.e. 2,2,1)
+{% include image.html file="encrypted-message7.jpg" %}
+
+- Decrypted message shown, if the sender signed the message you will see the sender's name (i.e. t) and their key ID.
+{% include image.html file="encrypted-message8.jpg" %}
+
+- By clicking the button again the message will be copied to clipboard
+{% include image.html file="encrypted-message9.jpg" %}
+
+{% include note.html content="Messages sent via Webcrypt are never sent over the internet. The way it works is the necessary files are downloaded to your browser and all processing is done in the browser of messages. Read more about [Webcrypt security here](https://docs.crp.to/webcrypt.html#security-goals)" %}
+
 ## Preferences {#preferences}
 
 OnlyKey has several customizable preferences that can be accessed from the preferences tab of the configuration app.

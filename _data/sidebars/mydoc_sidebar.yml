@@ -59,6 +59,10 @@ entries:
       url: /usersguide.html#using-onlykey-with-a-software-password-manager
       output: web, pdf
 
+    - title: Secure Communication - Chat/Email
+      url: /usersguide.html#secure-com
+      output: web, pdf
+
     - title: Preferences
       url: /usersguide.html#preferences
       output: web, pdf
