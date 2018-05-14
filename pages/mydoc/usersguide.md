@@ -81,7 +81,7 @@ Once you have installed the app proceed to [Set PIN(s)](#set-pin)
 
 {% include callout.html content="**Step 3.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select ''Next'' to continue." type="default" %}
 
-{% include note.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.google.com/document/d/1Go_Rs218fKUx-j_JKhddbSVTqY6P0vQO831t2MKCJC8/edit?usp=sharing) to create a udev rule. Also see the following forum topic [here.](https://groups.google.com/forum/#!topic/onlykey/MnD03gQzczg)" %}
+{% include note.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.crp.to/linux.html)" %}
 
 {% include image.html file="image77.png" %}
 

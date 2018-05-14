@@ -99,7 +99,7 @@ $ pip2 install onlykey-agent
 
 ### Linux UDEV Rule
 
-In order for non-root users in Linux to be able to communicate with OnlyKey a udev rule must be created as described [here](https://www.pjrc.com/teensy/td_download.html).
+In order for non-root users in Linux to be able to communicate with OnlyKey a udev rule must be created as described [here](https://docs.crp.to/linux.html).
 
 ## Advanced Options
 

@@ -102,7 +102,7 @@ sudo pacman -Sy git python2-setuptools python2 libusb python2-pip
 
 ### Linux Install
 
-Additionally, in order for non-root users to be able to communicate with OnlyKey a udev rule must be created as described [here](https://www.pjrc.com/teensy/td_download.html).
+Additionally, in order for non-root users to be able to communicate with OnlyKey a udev rule must be created as described [here](https://docs.crp.to/linux.html).
 
 ```
 $ git clone https://github.com/trustcrypto/python-onlykey.git --recursive
