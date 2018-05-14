@@ -41,6 +41,6 @@ The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKe
 
 [Command-line Utility](https://docs.crp.to/command-line.html) - The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
 
-OnlyKey Android App - We are currently working on an Android app that supports U2F and Google Authenticator on Android. This app is working but has not been released for public use yet.
+OnlyKey Android App - The username / password / Yubikey® OTP login features will work without any apps on Android. With the OnlyKey Android app additional features like FIDO U2F, TOTP, and OpenPGP are supported. Get the app from [Google Play here](https://play.google.com/store/apps/details?id=to.crp.android.onlykeyu2f).
 
 {% include links.html %}

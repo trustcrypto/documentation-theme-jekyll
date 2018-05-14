@@ -979,15 +979,15 @@ Additional color cases are available - Choose a color that fits your style – S
 
 Android is supported by using a USB on-the-go (OTG) adapter. There are two types of OTG adapters that can be purchased USB Micro and USB C.
 
-Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently on Android. We are currently working on an Android app that would support these features.
+Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work without any apps. With the OnlyKey Android app additional features like FIDO U2F, TOTP, and OpenPGP are supported. Get the app from [Google Play here](https://play.google.com/store/apps/details?id=to.crp.android.onlykeyu2f).
 
-#### [Purchase USB Micro to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/accessories-1/products/usb-micro-to-usb-a-otg-adapter?variant=1294977826860) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
-
-{% include note.html content="Supports Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
-
-#### [Purchase USB C to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/accessories-1/products/usb-c-to-usb-a-otg-adapter?variant=1294695989292) {#usb-c-to-usb-3-otg-adapter}
+#### [Purchase USB C to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-c-to-usb-a-otg-adapter) {#usb-c-to-usb-3-otg-adapter}
 
 {% include note.html content="Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support." %}
+
+#### [Purchase USB Micro to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-micro-to-usb-a-otg-adapter) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
+
+{% include note.html content="Supports Moto G5 Plus, Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
 
 ### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
 
