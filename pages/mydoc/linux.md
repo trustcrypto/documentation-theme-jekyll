@@ -1,7 +1,7 @@
 ---
 title: Using OnlyKey with Linux
 tags: [OnlyKey, Linux]
-keywords: OnlyKey, App
+keywords: OnlyKey, Linux, udev
 last_updated: May, 14, 2018
 summary: Create Linux UDEV rule for OnlyKey.
 sidebar: mydoc_sidebar
@@ -19,8 +19,10 @@ In order for non-root users in Linux to be able to communicate with OnlyKey a ud
 
 To complete this via terminal issue the following commands:
 
-`$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules`
-`$ sudo cp 49-onlykey.rules /etc/udev/rules.d/`
-`$ sudo udevadm control --reload`
+```
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ sudo cp 49-onlykey.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload
+```
 
 {% include links.html %}
