@@ -20,8 +20,8 @@ SSH is a popular remote access tool that is often used by administrators. Thanks
 1) Install OnlyKey agent on your client machine:
 
 ```
-$ sudo pip2 install onlykey
-$ sudo pip2 install onlykey-agent
+$ sudo pip install onlykey
+$ sudo pip install onlykey-agent
 ```
 
 2) Generate your First SSH Key on the OnlyKey
@@ -62,8 +62,7 @@ Brew is required. To install visit https://brew.sh/
 ```
 $ brew update && brew upgrade
 $ brew install python
-$ pip2 install onlykey
-$ pip2 install onlykey-agent
+$ pip2 install onlykey onlykey-agent
 ```
 
 ### Ubuntu Install with dependencies
@@ -78,8 +77,7 @@ $ pip2 install onlykey-agent
 ```
 $ apt update && apt upgrade
 $ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
-$ pip2 install onlykey
-$ pip2 install onlykey-agent
+$ pip2 install onlykey onlykey-agent
 ```
 
 ### Fedora/RedHat/CentOS Install with dependencies
@@ -87,14 +85,12 @@ $ pip2 install onlykey-agent
 $ yum update
 $ yum install python-pip python-devel libusb-devel libudev-devel \
               gcc redhat-rpm-config
-$ pip2 install onlykey
-$ pip2 install onlykey-agent
+$ pip2 install onlykey onlykey-agent
 ```
 ### OpenSUSE Install with dependencies
 ```
 $ zypper install python-pip python-devel libusb-1_0-devel libudev-devel
-$ pip2 install onlykey
-$ pip2 install onlykey-agent
+$ pip2 install onlykey onlykey-agent
 ```
 
 ### Linux UDEV Rule

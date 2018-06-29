@@ -365,6 +365,10 @@ Once your account has been verified you are all set. You can add a username and 
 
 {% include image.html file="image37.png" max-width="600" %}
 
+If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
+
+To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](https://twofactorauth.org). To see if a certain site is supported see that there is a check next to "Software Token"
+
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
 
 #### Google Authenticator OTP On-The-Go {#google-authenticator-otg}
