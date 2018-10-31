@@ -367,7 +367,7 @@ Once your account has been verified you are all set. You can add a username and 
 
 If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
 
-To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](https://twofactorauth.org). To see if a certain site is supported see that there is a check next to "Software Token"
+To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](http://www.dongleauth.info/). To see if a certain site is supported see that there is a check next to "One Time Passwords (OTP)"
 
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
 
@@ -854,103 +854,20 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-**Before Getting Started**
-
-{% include warning.html content="U2F and Yubikey OTP backup and restore is only supported on backups that were created on firmware v0.2-beta.6 (Released Jan 2018) or later. This means if you are upgrading from v0.2-beta.5 to v0.2-beta.6 and you use U2F or Yubikey OTP you MUST have an alternate two factor method set on your account. Make sure to have an alternative two factor method set prior to upgrade." %}
+Firmware loading in the OnlyKey App was introduced in firmware version v0.2-beta.7x.
 
 You can check firmware version by looking in the bottom right corner of the OnlyKey App.
 
 {% include image.html file="image83.png" %}
 
-{% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?
+- [Firmware loading in the OnlyKey App instructions (v0.2-beta.7x or later)](loading-onlykey-firmware-app)
+- [Legacy firmware loading instructions (v0.2-beta.6x or earlier)](https://docs.crp.to/upgradeguide.html)
 
-Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical." %}
+<i class="fa fa-arrow-down fa-3x"></i>
 
-{% include callout.html content="**Step 1.**  Insert OnlyKey into USB port" type="default" %}
-{% include callout.html content="**Step 2.**  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)" type="default" %}
-{% include callout.html content="**Step 3.**  Determine which version of OnlyKey you have and download firmware below" type="default" %}
+## Loading OnlyKey Firmware {#loading-onlykey-firmware-app}
 
-{% include image.html file="image25.jpg" max-width="285" %}
-
-<table>
-  <tr>
-   <td colspan="2" >OnlyKey Color (Has a square LED)              OnlyKey Original (Has text "LED" visible)
-   </td>
-  </tr>
-  <tr>
-   <td>Download OnlyKey Color Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_STD_Color.cpp.hex">here</a>
-   </td>
-   <td>Download OnlyKey Original Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_STD_Original.cpp.hex">here</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Download OnlyKey Color International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_IN_TRVL_Color.cpp.hex">here</a>
-   </td>
-   <td>Download OnlyKey Original International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_IN_TRVL_Original.cpp.hex">here</a>
-   </td>
-  </tr>
-</table>
-
-
-{% include callout.html content="**Step 4.** You can ensure the integrity of your downloaded firmware by verifying the checksum" type="default" %}
-
-<table>
-  <tr>
-   <td>
-File Name
-   </td>
-   <td>SHA 256 Checksums
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta6_STD_Color.cpp.hex
-   </td>
-   <td>68f2ba7a23e6d4983cb47d4318e8eedbb86ecdf094feaf4928383ade88eb9150
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta6_STD_Original.cpp.hex
-   </td>
-   <td>309da576981b0f9cf811f577467c8e214ce761bc543f7a469eed25e43c0dd811
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta6_IN_TRVL_Color.cpp.hex
-   </td>
-   <td>d50ffa47c1e201fea4f77cddc3ad49e3afeb5873c537281569df65d12e27749d
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta6_IN_TRVL_Original.cpp.hex
-   </td>
-   <td>018c2f3fda8f958653e9e3f0c686ca1b9f84c2d5f1dab182b6efa8d2428234e8
-   </td>
-  </tr>
-</table>
-
-
-{% include tip.html content="To do this in Windows open a command prompt and type 'certUtil -hashfile pathToFileToCheck SHA256'. To do this in Linux open a terminal and type 'sha256sum pathToFileToCheck'. Where pathToFileToCheck is replaced with the path of the file you are checking." %}
-
-{% include callout.html content="**Step 5.**  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open." type="default" %}
-{% include callout.html content="**Step 6.**  Now the firmware should appear at the bottom of the Teensy Loader application." type="default" %}
-
-{% include image.html file="image67.png" max-width="213" %}
-
-{% include note.html content="If a message prompts that 'HEX file is too large' ensure that your OnlyKey is plugged in." %}
-
-{% include callout.html content="**Step 7.**  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port." type="default" %}
-
-{% include tip.html content="If your OnlyKey has a case on it you can just slip the two corners out of the case without completely removing the case." %}
-
-{% include image.html file="image16.png" %}
-
-{% include callout.html content="**Step 8.**  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully." type="default" %}
-
-{% include image.html file="image48.png" max-width="200" %}
-
-{% include image.html file="image2.png" max-width="202" %}
-
-**Under The Hood** - One of the great things about this method of firmware loading is that you, the user, can load your own firmware and in doing so be sure that your OnlyKey has not been tampered with. What actually happens when you load the firmware is that a mass erase is completed first. What this means is that all data is completely wiped, and then the new firmware is loaded. This way if say you suspect that your device was tampered with by someone or you just like to know for sure you can just re-load the firmware yourself.
+**Coming Soon Loading Firmware in App**
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 

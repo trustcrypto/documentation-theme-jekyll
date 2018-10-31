@@ -182,3 +182,11 @@ entries:
     - title: Firmware
       url: /firmware.html
       output: web, pdf
+
+  - title: Knowledge base
+    output: web, pdf
+    folderitems:
+
+    - title: Legacy Firmware Upgrade Guide
+      url: /upgradeguide.html
+      output: web, pdf
