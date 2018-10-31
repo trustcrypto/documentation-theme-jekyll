@@ -3,7 +3,7 @@ title: Upgrading Firmware From Beta6 to Beta7
 tags: [OnlyKey, Firmware, Upgrade]
 keywords: OnlyKey, Firmware, Upgrade
 last_updated: Oct, 31, 2018
-summary: Upgrading Firmware From Beta6 to Beta7
+summary: Follow this guide to upgrade firmware from Beta6 to Beta7
 sidebar: mydoc_sidebar
 permalink: upgradeguide.html
 folder: mydoc
@@ -27,10 +27,6 @@ This release has a lot of improvements, most notably after upgrading your OnlyKe
 {% include warning.html content="Legacy firmware loading wipes all data from OnlyKey. Be sure to have a backup of OnlyKey data and the backup key before loading firmware." %}
 
 
-{% include tip.html content="Can I load the Standard Edition firmware on an International Travel Edition OnlyKey?
-
-Yes, you can load the Standard Edition firmware on an International Travel Edition OnlyKey or vice versa the hardware is identical." %}
-
 {% include callout.html content="**Step 1.**  Insert OnlyKey into USB port" type="default" %}
 {% include callout.html content="**Step 2.**  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)" type="default" %}
 {% include callout.html content="**Step 3.**  Determine which version of OnlyKey you have and download firmware below" type="default" %}
@@ -39,7 +35,9 @@ Yes, you can load the Standard Edition firmware on an International Travel Editi
 
 <table>
   <tr>
-   <td colspan="2" >OnlyKey Color (Has a square LED)              OnlyKey Original (Has text "LED" visible)
+   <td>OnlyKey Color (Has a square LED)
+   </td>
+   <td>OnlyKey Original (Has text "LED" visible)
    </td>
   </tr>
   <tr>
