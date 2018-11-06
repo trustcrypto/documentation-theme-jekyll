@@ -190,3 +190,7 @@ entries:
     - title: Legacy Firmware Upgrade Guide
       url: /upgradeguide.html
       output: web, pdf
+
+    - title: International Travel Edition Guide
+      url: /internationaledition.html
+      output: web, pdf
