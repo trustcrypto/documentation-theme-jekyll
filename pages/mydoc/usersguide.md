@@ -788,7 +788,7 @@ $ gpg2 --export-secret-key -a "asdf"
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-{% include callout.html content="**Step 4.** Copy and paste the private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with GPG is entered as passphrase, *Set as decryption key* is selected, and *Set as backup key* is selected. When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 4.** Copy and paste the private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with GPG is entered as passphrase, *Set as decryption key* is selected. If you wish to use your PGP to encrypt OnlyKey backups select *Set as backup key* (Note: If you previously set a backup passphrase and set this the PGP key will be used instead). When finished select Save to OnlyKey" type="default" %}
 
 {% include note.html content="Selecting set as backup key will use your GPG key to encrypt backups. If you wish to use a different key for backups just load that key and set it as backup. There can only be one backup key set." %}
 
@@ -860,8 +860,9 @@ You can check firmware version by looking in the bottom right corner of the Only
 
 {% include image.html file="image83.png" %}
 
-- [Firmware loading in the OnlyKey App instructions (v0.2-beta.7x or later)](loading-onlykey-firmware-app)
 - [Legacy firmware loading instructions (v0.2-beta.6x or earlier)](https://docs.crp.to/upgradeguide.html)
+
+- [Firmware loading in the OnlyKey App instructions (v0.2-beta.7x or later)](loading-onlykey-firmware-app)
 
 <i class="fa fa-arrow-down fa-3x"></i>
 
