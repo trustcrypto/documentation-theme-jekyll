@@ -183,7 +183,7 @@ entries:
       url: /firmware.html
       output: web, pdf
 
-  - title: Knowledge base
+  - title: Knowledge Base
     output: web, pdf
     folderitems:
 
