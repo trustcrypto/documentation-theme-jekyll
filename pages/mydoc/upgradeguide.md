@@ -145,34 +145,40 @@ File Name
 
 Now that the new OnlyKey app and firmware are installed its time to setup OnlyKey.
 
-{% include callout.html content="**Step 1.**  Insert OnlyKey into USB port and select [Next] in the app." type="default" %}
+{% include callout.html content="**Step 1.** Select [Next] to get started." type="default" %}
 
-Step 1 - Select [Next] to get started.
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
 
-Step 2 - Enter a PIN code, check the disclaimer box, and select [Next].
+{% include callout.html content="**Step 2.** Enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite2.png)
 
-Step 3 - Re-enter PIN code, and select [Next].
+{% include callout.html content="**Step 3.** Re-enter PIN code, and select [Next]." type="default" %}
 
-Step 4 - Enter a PIN code for second profile, check the disclaimer box, and select [Next].
+{% include callout.html content="**Step 4.** Enter a PIN code for second profile, check the disclaimer box, and select [Next]." type="default" %}
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
 
-Step 5 - If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next].
+{% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
 
-Step 6 - Re-enter PIN code, and select [Next].
+{% include callout.html content="**Step 6.** Re-enter PIN code, and select [Next]." type="default" %}
 
-Step 7 - Select [Use PGP Key instead of passphrase]
+{% include callout.html content="**Step 7.** Select [Use PGP Key instead of passphrase]" type="default" %}
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7.png)
 
-Step 8 - With slot 1 selected, paste OpenPGP RSA key and enter passphrase and then select [Next].
+{% include callout.html content="**Step 8.** With slot 1 selected, paste OpenPGP RSA key and enter passphrase and then select [Next]." type="default" %}
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup8.png)
 
-Step 9 - If you generated your keys as described in the [Generating Keys section](https://docs.crp.to/usersguide.html##generating-keys) select [subkey 1] and then select [Save]. If you generated a custom backup key then load the subkey used for backups to slot 1.
+{% include callout.html content="**Step 9.** If you generated your keys as described in the [Generating Keys section](https://docs.crp.to/usersguide.html##generating-keys) select [subkey 1] and then select [Save]. If you generated a custom backup key then load the subkey used for backups to slot 1." type="default" %}
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup9.png)
 
-Step 10 - Select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. Your device will reboot automatically when the restore is complete.
+{% include callout.html content="**Step 10.** Select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. Your device will reboot automatically when the restore is complete." type="default" %}
+
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
 
 Your device is now set up!
