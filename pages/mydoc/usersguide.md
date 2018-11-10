@@ -797,7 +797,7 @@ The Secure Encrypted Backup Anywhere feature allows you to backup OnlyKey on the
 
 ### Backup With OnlyKey App {#backup-with-onlykey-app}
 
-{% include callout.html content="**Step 1.** First, you must have a backup key and have this set on your OnlyKey. Follow the instructions in the [Generating Keys](#generating-keys) section to create a new key and then follow the instructions in the [Loading Keys](#loading-keys) section to load and set as backup key." type="default" %}
+{% include callout.html content="**Step 1.** First, you must have a backup passphrase or key set on your OnlyKey." type="default" %}
 
 {% include callout.html content="**Step 2.** Click on the Backup/Restore tab of the OnlyKey app." type="default" %}
 
