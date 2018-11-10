@@ -854,21 +854,25 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-Firmware loading in the OnlyKey App was introduced in firmware version v0.2-beta.7x.
+If you received a message in the OnlyKey app stating "This application is designed to work with a newer version of OnlyKey firmware." or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
+
+- [Legacy firmware upgrade guide (v0.2-beta.6x or earlier)](https://docs.crp.to/upgradeguide.html)
 
 You can check firmware version by looking in the bottom right corner of the OnlyKey App.
 
 {% include image.html file="image83.png" %}
 
-- [Legacy firmware loading instructions (v0.2-beta.6x or earlier)](https://docs.crp.to/upgradeguide.html)
-
-- [Firmware loading in the OnlyKey App instructions (v0.2-beta.7x or later)](loading-onlykey-firmware-app)
+If your OnlyKey has firmware v0.2-beta.7x or later follow the instructions below to load OnlyKey Firmware.
 
 <i class="fa fa-arrow-down fa-3x"></i>
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware-app}
 
-**Coming Soon Loading Firmware in App**
+There is an option in the app to load firmware when first setting up a new device. There is also a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed using a simple blockchain and verified by on the OnlyKey.
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
+
+- Download the latest firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
+- Follow the instructions in the app to load firmware
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 
