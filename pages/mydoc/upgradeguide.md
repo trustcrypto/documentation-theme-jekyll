@@ -142,7 +142,7 @@ File Name
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 51db9944ee234569146e053341cd57168baf84b145054cde77211c64cbbb81c7<br>Windows SHA 256 CHECKSUM: bdfb4561f506992664dbb9450033a2222160bfd8d5d7b6702512db438a110e9f<br>Linux SHA 256 CHECKSUM: 517d8d795b4a293b773676623997464b91e7756f1e2454b5e6c3c692fd467ed3<br> [ **GPG Public Key**](https://keybase.io/trustcrypto/pgp_keys.asc)" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06<br> [ **GPG Public Key**](https://keybase.io/trustcrypto/pgp_keys.asc)" %}
 
 
 ### Steps to Setup OnlyKey {#onlykey-setup}

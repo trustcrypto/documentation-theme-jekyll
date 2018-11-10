@@ -33,7 +33,7 @@ folder: mydoc
 ### Install OnlyKey App {#app-install}
 
 There are two options for installing the OnlyKey app.
-- Install the [OnlyKey Desktop App](#app-desktop)
+- Install the [OnlyKey Desktop App](#app-desktop) (Recommended)
 - Install the [OnlyKey Chrome App](#app-chrome)
 
 Once you have installed the app proceed to [Set PIN(s)](#set-pin)
@@ -42,15 +42,15 @@ Once you have installed the app proceed to [Set PIN(s)](#set-pin)
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.dmg.zip)
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.dmg)
 
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.exe.zip)
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.exe)
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://s3.amazonaws.com/onlykey/apps/desktop/releases/latest/OnlyKey_5.0.0.deb.gz)
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 51db9944ee234569146e053341cd57168baf84b145054cde77211c64cbbb81c7<br>Windows SHA 256 CHECKSUM: bdfb4561f506992664dbb9450033a2222160bfd8d5d7b6702512db438a110e9f<br>Linux SHA 256 CHECKSUM: 517d8d795b4a293b773676623997464b91e7756f1e2454b5e6c3c692fd467ed3" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06" %}
 
 ### Install OnlyKey Chrome App {#app-chrome}
 
@@ -73,64 +73,46 @@ Once you have installed the app proceed to [Set PIN(s)](#set-pin)
 
 ### Set PIN(s) {#set-pin}
 
-{% include callout.html content="**Step 1.** Once the OnlyKey App launches you will see the message ''Please connect your OnlyKey''" type="default" %}
+{% include callout.html content="**Step 1.** Insert OnlyKey and select [Next] to get started." type="default" %}
 
-{% include image.html file="image18.png" %}
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
 
-{% include callout.html content="**Step 2.** Insert the OnlyKey into USB port." type="default" %}
+{% include tip.html content="Before setting a PIN<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock a phone lock screen:" %}
 
-{% include callout.html content="**Step 3.** Once the OnlyKey has been successfully attached to the computer the Initial Setup Wizard screen will appear. Select ''Next'' to continue." type="default" %}
+{% include callout.html content="**Step 2.** Enter a PIN code on the OnlyKey Keypad, check the disclaimer box, and select [Next]." type="default" %}
 
-{% include note.html content="LINUX USERS - If you are using Linux your system may by default only allow read access to USB devices including the OnlyKey. In order to allow read/write access follow the instructions[ here](https://docs.crp.to/linux.html)" %}
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite2.png)
 
-{% include image.html file="image77.png" %}
+{% include callout.html content="**Step 3.** Re-enter PIN code, and select [Next]." type="default" %}
 
-{% include callout.html content="**Step 4. Select OnlyKey Edition** - This is where you select the edition of OnlyKey that you have. If you purchased OnlyKey through Amazon or the online store select the Standard Edition." type="default" %}
+{% include callout.html content="**Step 4.** Enter a PIN code for second profile, check the disclaimer box, and select [Next]." type="default" %}
 
-{% include note.html content="International Travel Edition<br><br>This edition of OnlyKey may ship globally, even to countries where encryption devices are not permitted as it does not utilize encryption. If strong encryption is permitted in your country ([check here](http://www.cryptolaw.org/)) and you would prefer the Standard Edition then you may load this firmware by following the instructions in the [Firmware Loading](#loading-onlykey-firmware) section and then return to initial setup. For more information on the two editions of OnlyKey firmware see [Plausible Deniability](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware)" %}
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
 
-{% include image.html file="image88.png" %}
+{% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
 
-{% include tip.html content="Before setting a PIN<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock an Android Lockscreen:" %}
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
 
-{% include image.html file="image86.png" max-width="157" %}
+{% include callout.html content="**Step 6.** Re-enter PIN code, and select [Next]." type="default" %}
 
-{% include note.html content="As described in the following steps you can use multiple PINs, make sure PINs are not set to the same thing or share the same sequence, this will not work they must be different. For example, if PIN A is '11223344' and PIN B is '1122334455' then when you try to type in PIN B the device would read PIN A before you enter '55'." %}
+{% include callout.html content="**Step 7.** Follow the instructions to enter a Backup Passphrase and select [Next]." type="default" %}
 
-{% include callout.html content="**Step 5. Set Your PIN** - Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7-2.png)
 
-{% include note.html content="The OnlyKey LED should be on and briefly turn off (blink) when you press each digit of your PIN." %}
+{% include callout.html content="**Step 10.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup just select [Next] to complete the setup." type="default" %}
 
-{% include callout.html content="**Step 6. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point the mandatory steps of your initial setup is complete you can either remove and reinsert your OnlyKey to start using or optionally continue to set the self-destruct and plausible deniability PINs." type="default" %}
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
 
-{% include callout.html content="**Step 7. Set Self-Destruct PIN** - The Self-Destruct PIN is an additional PIN you can set that is used to wipe your OnlyKey. Whenever this PIN is entered the OnlyKey will wipe all data and return to a factory default state. See [this](https://docs.crp.to/features.html#self-destruct) for more information on this feature.
-<br>
-<br>
-Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
-
-{% include callout.html content="**Step 8. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the messages in red at the bottom of the app displaying ''Successfully set PIN'' and that your ''OnlyKey is ready…'' at this point your initial setup is complete you can either remove and reinsert your OnlyKey to start using or if you have a Standard Edition OnlyKey you can optionally continue to set the plausible deniability PIN." type="default" %}
-
-{% include callout.html content="**Step 9. Set Plausible Deniability PIN (Only For Standard Edition OnlyKey)** - The Plausible Deniability PIN is an additional PIN you can set that is used to set up a separate profile on your OnlyKey. Whenever this PIN is entered the OnlyKey will open the separate profile while your primary profile remains hidden. This second profile operates identically to a profile on the OnlyKey international travel edition. It would be plausible that this second profile is the only profile on your OnlyKey. By design this feature allows a user plausibly deny that a second profile exists on the OnlyKey. See [this](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware) for more information on this feature.
-<br>
-<br>
-Read and accept the Warning and Disclaimer by checking the checkbox. On your Onlykey six digit keypad enter a PIN between 7 - 10 digits long. When you are finished select ''Next'' to continue." type="default" %}
-
-{% include callout.html content="**Step 10. Confirm Your PIN -**  Re-enter the same PIN and select ''Next'' to continue. Once you click next you can see the message shown below. Remove and reinsert your OnlyKey to set up your profile." type="default" %}
-
-{% include image.html file="image27.png" %}
-
-{% include tip.html content="***Don't Care About Plausible Deniability, how about a work profile and personal profile?***<br><br>
-*We get that there will be some users who think the idea of having a second hidden profile is awesome and others will not want or need it. You can still get value out of having the second profile. Using the second profile you can have up to 24 unique accounts set up instead of 12. For example, you could set up all of your personal accounts under the main profile and all of the work accounts under the hidden profile. You can get creative and use the other profile for whatever you want or not use it at all.*" %}
+Your device is now set up and will automatically reboot. You will be prompted to enter your PIN from now on when using the OnlyKey.
 
 {% include tip.html content="***Forget your PIN?***<br><br>
-If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Initial Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:
+If you lose or forget your PIN then a factory default must be completed on your OnlyKey before you can set a new PIN. This wipes all of your sensitive information and allows you to go through the Setup again to configure a new OnlyKey PIN. To perform a factory default you have two options:
 <br>
 <br>
-**Method #1** - Enter your self-destruct PIN. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure.*
+**Method #1** - Enter your self-destruct PIN.
 <br>
 <br>
-**Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking. This is an intentional safeguard so that in the event that a child gets ahold of your OnlyKey the device will not be inadvertently wiped by them repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid light on that indicates that it is un-initialized and ready to reconfigure." %}
-
+**Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking red. This is an intentional safeguard so that your OnlyKey will not be inadvertently wiped by repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid green light on that indicates that it is ready to set up." %}
 
 *If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](https://docs.crp.to/features.html#features).*
 
