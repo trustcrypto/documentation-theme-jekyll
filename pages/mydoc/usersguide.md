@@ -854,13 +854,13 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-If you received a message in the OnlyKey app stating "This application is designed to work with a newer version of OnlyKey firmware." or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
+If you received a message in the OnlyKey app stating *"This application is designed to work with a newer version of OnlyKey firmware."* or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
 
 - [Legacy firmware upgrade guide (v0.2-beta.6x or earlier)](https://docs.crp.to/upgradeguide.html)
 
 You can check firmware version by looking in the bottom right corner of the OnlyKey App.
 
-{% include image.html file="image83.png" %}
+{% include image.html file="version.png" %}
 
 If your OnlyKey has firmware v0.2-beta.7x or later follow the instructions below to load OnlyKey Firmware.
 
