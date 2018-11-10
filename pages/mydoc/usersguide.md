@@ -77,9 +77,9 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
 
-{% include tip.html content="Before setting a PIN<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock a phone lock screen:" %}
+{% include tip.html content="Before setting a PIN<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock a phone lock screen:" {% include image.html file="image86.png" max-width="157" %} %}
 
-{% include image.html file="image86.png" max-width="157" %}
+
 
 {% include callout.html content="**Step 2.** Enter a PIN code on the OnlyKey Keypad, check the disclaimer box, and select [Next]." type="default" %}
 
