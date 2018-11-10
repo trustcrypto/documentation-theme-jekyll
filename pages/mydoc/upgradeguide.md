@@ -55,15 +55,15 @@ This release has a lot of improvements, most notably after upgrading your OnlyKe
    </td>
   </tr>
   <tr>
-   <td>Download OnlyKey Color Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_STD_Color.cpp.hex">here</a>
+   <td>Download OnlyKey Color Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_STD_Color.cpp.hex">here</a>
    </td>
-   <td>Download OnlyKey Original Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_STD_Original.cpp.hex">here</a>
+   <td>Download OnlyKey Original Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_STD_Original.cpp.hex">here</a>
    </td>
   </tr>
   <tr>
-   <td>Download OnlyKey Color International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_IN_TRVL_Color.cpp.hex">here</a>
+   <td>Download OnlyKey Color International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_IN_TRVL_Color.cpp.hex">here</a>
    </td>
-   <td>Download OnlyKey Original International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.6/OnlyKey_Beta6_IN_TRVL_Original.cpp.hex">here</a>
+   <td>Download OnlyKey Original International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_IN_TRVL_Original.cpp.hex">here</a>
    </td>
   </tr>
 </table>
@@ -80,27 +80,27 @@ File Name
    </td>
   </tr>
   <tr>
-   <td>OnlyKey_Beta6_STD_Color.cpp.hex
+   <td>OnlyKey_Beta7_STD_Color.cpp.hex
    </td>
-   <td>68f2ba7a23e6d4983cb47d4318e8eedbb86ecdf094feaf4928383ade88eb9150
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta6_STD_Original.cpp.hex
-   </td>
-   <td>309da576981b0f9cf811f577467c8e214ce761bc543f7a469eed25e43c0dd811
+   <td>572912a48b3d2f56ca87aa1b72b58a87ffdf33c372fc1229eef968bc773fcc0e
    </td>
   </tr>
   <tr>
-   <td>OnlyKey_Beta6_IN_TRVL_Color.cpp.hex
+   <td>OnlyKey_Beta7_STD_Original.cpp.hex
    </td>
-   <td>d50ffa47c1e201fea4f77cddc3ad49e3afeb5873c537281569df65d12e27749d
+   <td>ab42a2d6e2630ada1050a1b7835b1dd06c08c8db40cc3004efe7e483bb89c1a1
    </td>
   </tr>
   <tr>
-   <td>OnlyKey_Beta6_IN_TRVL_Original.cpp.hex
+   <td>OnlyKey_Beta7_IN_TRVL_Color.cpp.hex
    </td>
-   <td>018c2f3fda8f958653e9e3f0c686ca1b9f84c2d5f1dab182b6efa8d2428234e8
+   <td>c9bda251ac22d9228de035d95bb9d57b0909fb432af7057c2df816b4049ca345
+   </td>
+  </tr>
+  <tr>
+   <td>OnlyKey_Beta7_IN_TRVL_Original.cpp.hex
+   </td>
+   <td>fd567d88f073e10cddf72cf028d9073d5f379cb026383928f16bdda49b37c1ba
    </td>
   </tr>
 </table>
