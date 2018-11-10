@@ -25,9 +25,13 @@ This release has a lot of improvements, most notably after upgrading your OnlyKe
 {% include note.html content="If you are a new OnlyKey user just complete steps 2 and 3 below as you won't have anything to backup/restore. Then head over to the [User's Guide](https://docs.crp.to/usersguide.html#set-pin) to get started." %}
 
 1) **Backup OnlyKey** - Create a backup of your OnlyKey by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)).
+<br>
 2) **Upgrade OnlyKey firmware** - Follow instructions [here](#loading-onlykey-firmware) to upgrade firmware on the OnlyKey
+<br>
 3) **Upgrade OnlyKey desktop app** - Follow instructions [here](#app-desktop) to install the new OnlyKey app.
+<br>
 4) **Setup OnlyKey** - Follow instructions [here](#onlykey-setup) to setup OnlyKey and restore from backup
+<br>
 5) **Check out the new features [here](#new-features)**
 
 ### Steps to Upgrade OnlyKey firmware {#loading-onlykey-firmware}
