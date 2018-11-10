@@ -421,7 +421,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 {% include note.html content="U2F is supported on **Google Chrome** and **Firefox**. Firefox U2F support is not enabled by default. If using Firefox, U2F must be enabled by completing the following steps in your browser:<br>
 - Type about:config into the Firefox browser.<br>
 - Search for “u2f”.<br>
-- Double click on security.webauth.u2f to enable U2F support.<br><br>
+- Double click on security.webauth.u2f to enable U2F support.<br><br>" %}
 
 OnlyKey works just like any other U2F token. Follow the steps below to configure a slot to use U2F.
 
