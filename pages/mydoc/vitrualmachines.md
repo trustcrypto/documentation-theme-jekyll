@@ -13,9 +13,7 @@ folder: mydoc
 
 OnlyKey is supported on Virtual Machines in the same way as USB keyboards (USB HID).
 
-## VMware Support
-
-### VMware Workstation or VMware Fusion
+### VMware Workstation or VMware Fusion Support
 
 - With the VM shut down, open the .vmx file in a text editor
 - Add this line to the .vmx file and save
@@ -24,7 +22,7 @@ usb.generic.allowHID = "TRUE"
 ```
 - Restart the VM and now you will be able to connect OnlyKey to the VM
 
-## VirtualBox Support
+### VirtualBox Support
 
 - Go to Devices -> USB
 - Select "CRYPTOTRUST ONLYKEY"
@@ -36,7 +34,7 @@ Or to have OnlyKey automatically connect to the VM whenever the VM is powered on
 - Select "CRYPTOTRUST ONLYKEY"
 - Remove and reinsert OnlyKey to connect it to the VM
 
-## Qubes OS
+### Qubes OS
 
 Coming soon
 

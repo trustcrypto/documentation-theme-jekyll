@@ -198,3 +198,7 @@ entries:
     - title: Using OnlyKey with Linux
       url: /linux.html
       output: web, pdf
+
+    - title: Using OnlyKey with Virtual Machines
+      url: /virtualmachines.html
+      output: web, pdf
