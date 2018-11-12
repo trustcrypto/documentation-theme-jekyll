@@ -140,6 +140,10 @@ File Name
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
 
+{% include note.html content="Linux user's must follow the following instructions to update the UDEV rule for the app to be able to communicate with the OnlyKey - [Linux Guide](https://docs.crp.to/linux.html)" %}
+
+
+
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
 {% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06<br> [ **GPG Public Key**](https://keybase.io/trustcrypto/pgp_keys.asc)" %}
