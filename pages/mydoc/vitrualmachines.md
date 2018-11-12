@@ -5,7 +5,7 @@ keywords: OnlyKey, vm, vmware, virtualbox, virtual
 last_updated: Nov, 12, 2018
 summary: How to use OnlyKey with VMware, Virtualbox, Qubes OS
 sidebar: mydoc_sidebar
-permalink: linux.html
+permalink: virtualmachines.html
 folder: mydoc
 ---
 
