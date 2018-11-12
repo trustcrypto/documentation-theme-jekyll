@@ -140,7 +140,7 @@ File Name
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
 
-{% include note.html content="Linux user's must follow the following instructions to update the UDEV rule for the app to be able to communicate with the OnlyKey - [Linux Guide](https://docs.crp.to/linux.html)" %}
+{% include note.html content="Linux users must follow the following instructions to update the UDEV rule for the app to be able to communicate with the OnlyKey - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
 
 
