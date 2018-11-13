@@ -82,7 +82,7 @@ File Name
   <tr>
    <td>OnlyKey_Beta7_STD_Color.cpp.hex
    </td>
-   <td>572912a48b3d2f56ca87aa1b72b58a87ffdf33c372fc1229eef968bc773fcc0e
+   <td>bd226d32f8a0002ea9fdd9e467bb3619faf178af30a3063dc72ca616e09dce95
    </td>
   </tr>
   <tr>
