@@ -88,7 +88,7 @@ File Name
   <tr>
    <td>OnlyKey_Beta7_STD_Original.cpp.hex
    </td>
-   <td>665e2ce7668ee5c7a58304b780561be7762d548a7fd25c6d80b779502e710168
+   <td>356e25e337dad8fe1798592d5c674ddd44fac1340e054df9d43176f7e59406b2
    </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ File Name
   <tr>
    <td>OnlyKey_Beta7_IN_TRVL_Original.cpp.hex
    </td>
-   <td>568a0d6b933d453c21a09ed6c9f6ffb06ad13101d80e10a551879f9c54ea2b33
+   <td>7467910663f72bf7604be776a381a72d881df5afcc5a0da697aaedbfa315a0f9
    </td>
   </tr>
 </table>
