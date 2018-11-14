@@ -192,7 +192,7 @@ entries:
       output: web, pdf
 
     - title: International Travel Edition Guide
-      url: /internationaledition.html
+      url: /ite.html
       output: web, pdf
 
     - title: Using OnlyKey with Linux

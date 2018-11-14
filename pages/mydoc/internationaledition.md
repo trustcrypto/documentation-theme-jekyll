@@ -5,7 +5,7 @@ keywords: OnlyKey, International Travel Edition, Plausible Deniability
 last_updated: Nov, 6, 2018
 summary: Follow this guide to use the International Travel Edition OnlyKey
 sidebar: mydoc_sidebar
-permalink: internationaledition.html
+permalink: ite.html
 folder: mydoc
 ---
 

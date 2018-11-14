@@ -202,7 +202,7 @@ Keys are great but a passphrase is an easier way to securely backup your OnlyKey
 
 ### Two Profile Support
 
-You may notice now that when setting your PINs there is a primary profile and a secondary profile. The secondary profile can be either a standard profile or plausible deniability profile. This is a change as the previous OnlyKey release only had the option for the second profile to be a plausible deniability profile. The standard profile is a full featured second profile with 12 available slots and the plausible deniablity profile is a limited feature second profile that looks and acts just like a device with [International Travel Edition firmware](https://docs.crp.to/internationaledition.html).
+You may notice now that when setting your PINs there is a primary profile and a secondary profile. The secondary profile can be either a standard profile or plausible deniability profile. This is a change as the previous OnlyKey release only had the option for the second profile to be a plausible deniability profile. The standard profile is a full featured second profile with 12 available slots and the plausible deniablity profile is a limited feature second profile that looks and acts just like a device with [International Travel Edition firmware](https://docs.crp.to/ite.html).
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
 
 ### In App Firmware Updates
