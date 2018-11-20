@@ -25,6 +25,7 @@ folder: mydoc
 *   Purple Fade in and Fade out - Private key signing request (SSH or PGP)
 *   Turquoise Fade in and Fade out - Private key decryption request
 *   Red Fade in and Fade out - Device is in config mode
+*   Steady White Light - Device is in bootloader mode, use the OnlyKey app to load firmware.
 
 ### LED Definitions (Original OnlyKey) {#led-definitions-original-onlykey}
 
@@ -40,7 +41,7 @@ folder: mydoc
 
 ### Password Manager {#password-manager}
 
-Instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 12 unique accounts using strong and random (up to 56 character) passwords along with the login page URLs, usernames, and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
+Instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 24 unique accounts using strong and random (up to 56 character) passwords along with the login page URLs, usernames, and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
 
 ### Two-Factor Authentication {#two-factor-authentication}
 
@@ -71,11 +72,61 @@ As mentioned above the service provider generates a base32 string or a QR code. 
 
 And then press the OnlyKey button to output your 6 digit OTP into the passcode field to complete the setup. Now you can also go and set your username and password to this slot and have a complete one touch login with two-factor authentication.
 
-Currently the Google Authenticator (TOTP) feature requires the OnlyKey app to be running.
+Currently the Google Authenticator (TOTP) feature requires the OnlyKey to have the correct time. This is done automatically by having the OnlyKey app installed or by browsing to https://apps.crp.to for on-the-go use.
 
 #### Universal 2nd Factor Authentication (U2F) {#universal-2nd-factor-authentication-u2f}
 
-OnlyKey's implementation of U2F started out by reviewing the model in use by Yubikey® [here](https://www.Yubico.com/2014/11/Yubicos-u2f-key-wrapping/). We then came up with our own implementation of key wrapping that utilizes  [AES-256-GCM](https://github.com/rweather/arduinolibs), this is also used for encryption of local storage. AES-256-GCM is both FIPS approved and [NIST recommended](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf). When the Onlykey is first configured with a PIN, a random nonce is stored that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin. The private key generated for U2F key handle encryption is generated from the SHA-256 hash of the random nonce and attestation private. The U2F service also provides an AppID (that is tied to the URL of the site) and during registration the SHA256 hash of the AppID is used as the Initialization Vector for the AES-GCM encryption of the key handle. This ensures that the key handle is only valid for the particular combination of device (private key) and AppID that was created during registration.
+OnlyKey's implementation of U2F started out by reviewing the model in use by Yubikey® [here](https://www.Yubico.com/2014/11/Yubicos-u2f-key-wrapping/). We then came up with our own implementation of key wrapping that utilizes [AES-256-GCM](https://github.com/rweather/arduinolibs), this is also used for encryption of local storage. AES-256-GCM is both FIPS approved and [NIST recommended](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf). Our U2F implementation utilizes a double key wrapping method that mitigates the [vulnerabilities that we identified in Yubikey and other U2F devices](https://groups.google.com/forum/#!msg/onlykey/HZ-HWk_LibE/jQMxWgV4BQAJ). Our double key wrapping method works as follows:
+
+**When the Onlykey is configured with a PIN the following occurs:**
+
+1) A first random value is stored (nonce) that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin.
+
+2) A second random value is stored (Curve25519 derivation key) that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin.
+
+**When U2F is initialized the following occurs:**
+
+1) A U2F handlekey is generated from the SHA-256 hash of the derivation key and the attestation private value.
+
+2) A U2F apphandlekey is generated from the SHA-256 hash of the handlekey, variable portion of the attestation certificate, the attestation private value.
+
+**When U2F registration occurs (physical presence required):**
+
+1) A site specific P256 ECC private key is generated from random values including hardware generated noise and the capacitive touch readings from a user's skin.
+
+2) A site specific thisappkey is generated from the SHA-256 hash of the application id and the apphandlekey.
+
+3) A site specific IV is generated from the SHA-256 hash of the application id.
+
+4) A site specific thishandkey is generated from the SHA-256 hash of the application id, the attestation private value, and the apphandlekey.
+
+6) The site specific application Id is combined with the P256 ECC private key forming a handle.
+
+7) Inner keywrap - The site specific P256 ECC private key portion of the handle is encrypted via AES-256-GCM using the IV and the thishandkey.
+
+8) Outer keywrap - The full handle is encrypted via AES-256-GCM using the IV and the thisappkey.
+
+**When U2F authentication occurs (physical presence required):**
+
+1) A site specific thisappkey is generated from the SHA-256 hash of the application id and the apphandlekey.
+
+2) A site specific IV is generated from the SHA-256 hash of the application id.
+
+3) A site specific thishandkey is generated from the SHA-256 hash of the application id, the attestation private value, and the apphandlekey.
+
+4) Outer keywrap - The full handle is decrypted via AES-256-GCM using the IV and the thisappkey.
+
+5) Inner keywrap - The site specific P256 ECC private key portion of the handle is decrypted via AES-256-GCM using the IV and the thishandkey.
+
+6) The site specific P256 ECC private key is used with uECC_sign_deterministic to sign the hashed challenge.
+
+**When U2F authentication (check-only) occurs:**
+
+1) A site specific thisappkey is generated from the SHA-256 hash of the application id and the apphandlekey.
+
+2) If the website requests check-only, thisappkey is used to decrypt the application id portion of the handle and response is given.
+
+**Attestation Certificates**
 
 For the attestation certificates we allow users to import their own certificates. We do understand that the attestation certificate and private key in other U2F tokens is hard coded and the user is unable to change this. There is an ongoing discussion of how you can have a closed source system (or U2F token) and truly be able to trust the security of that system. A closed source product is not verifiable, and requires you to trust that the vendor was not compelled to put a backdoor into the product. This is why we are using what may be the first open source implementation of U2F that supports user import of attestation certificates.
 

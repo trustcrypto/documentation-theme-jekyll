@@ -58,7 +58,7 @@ folder: mydoc
 
                                 <strong>4) Transparency</strong> - The protective compound is clear so that it is possible to visually verify the electronic components (verify no hardware backdoor).<br>
 
-                                </form></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -304,7 +304,7 @@ We would comply with the order and at the same time 100% protect customers. This
                         </div>
                         <div id="collapseTen" class="panel-collapse collapse">
                             <div class="panel-body">
-                                It currently would not be possible to support all of the features of OnlyKey over NFC for various technical reasons. We may consider an add-on in the future to provide basic NFC 2FA. Luckily, NFC is not required for most mobile apps as there are many alternative ways of authenticating such as time-based OTPs, backup codes, and SMS. These methods can be used one time to setup a phone as mobile apps typically remain trusted after the first login. After the apps are setup the alternative methods of 2FA may be disabled and then only allow stronger methods such as FIDO U2F and time-based OTPs for future logins using OnlyKey. 
+                                It currently would not be possible to support all of the features of OnlyKey over NFC for various technical reasons. We may consider an add-on in the future to provide basic NFC 2FA. Luckily, NFC is not required for most mobile apps as there are many alternative ways of authenticating such as time-based OTPs, backup codes, and SMS. These methods can be used one time to setup a phone as mobile apps typically remain trusted after the first login. After the apps are setup the alternative methods of 2FA may be disabled and then only allow stronger methods such as FIDO U2F and time-based OTPs for future logins using OnlyKey.
                             </div>
                         </div>
                     </div>
