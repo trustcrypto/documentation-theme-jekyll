@@ -2,7 +2,7 @@
 title: OnlyKey Command-Line Utility
 tags: [OnlyKey, Command line, Python]
 keywords: OnlyKey, Command line
-last_updated: Jan, 16, 2018
+last_updated: Nov, 19, 2018
 summary: The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
 sidebar: mydoc_sidebar
 permalink: command-line.html
@@ -15,7 +15,7 @@ Python client for interacting with the OnlyKey.
 
 OnlyKey-cli - A command line interface to the OnlyKey that can be used for configuration (Similar functionality to [OnlyKey App](https://docs.crp.to/app.html))
 
-PGPMessage - **Still in early development.** - Provides a tool for decrypting and signing OpenPGP/GPG messages using OnlyKey.
+PGPMessage - **Still in early development.** - Provides a tool for decrypting and signing OpenPGP/GPG messages using OnlyKey (python only OpenPGP implementation).
 
 
 <!---
@@ -52,66 +52,86 @@ Python 2.7 - https://www.python.org/downloads/release/python-2713/
 
 git - https://git-scm.com/download/win
 
-## Mac OS Install Dependencies
+## Mac OS Install
 
-Tested on El Capitan
+Tested on Sierra
 ```
-$brew install pkg-config libffi
- export PKG_CONFIG_PATH=/usr/local/Cellar/libffi/3.0.13/lib/pkgconfig/
-  pip install bcrypt
 sudo pip uninstall crypto
-  sudo pip uninstall pycrypto
-  sudo pip install pycrypto
+sudo pip uninstall pycrypto
+easy_install pycrypto
 ```
 --->
 
+## Installation
+
 ### Windows Install
-
-Requires Python 2.7 and Git
-
-```
-$ git clone https://github.com/trustcrypto/python-onlykey.git --recursive
-$ cd python-onlykey
-$ pip2 install .
-$ cd PGPy
-$ pip2 install .
-$ cd ..
-```
-
-To Run
+Python 2.7 and pip are required. To setup a Python environment on Windows we recommend Anaconda https://www.anaconda.com/download/#windows
 
 ```
-$  c:\Python27\Scripts\onlykey-cli.exe
+$ pip install onlykey
 ```
+
+You should see a message showing where the executable is installed.
 
 Installing onlykey-cli-script.py script to c:\Python27\Scripts
 Installing onlykey-cli.exe script to c:\Python27\Scripts
 Installing onlykey-cli.exe.manifest script to c:\Python27\Scripts
 
-### Ubuntu/Debian Linux Dependencies
+This is usually c:\Python27\Scripts\onlykey-cli.exe
 
-Tested on Ubuntu 16.04
-```
-$ sudo apt-get install git python-setuptools python-dev libusb-1.0-0-dev libudev-dev python-pip libssl-dev
-$ sudo pip install cffi
-```
-
-### Arch Linux Dependencies
-
-sudo pacman -Sy git python2-setuptools python2 libusb python2-pip
-
-### Linux Install
-
-Additionally, in order for non-root users to be able to communicate with OnlyKey a udev rule must be created as described [here](https://docs.crp.to/linux.html).
+### MacOS Install
+Python 2.7 and pip are required. To setup a Python environment on MacOS we recommend Anaconda https://www.anaconda.com/download/#macos
 
 ```
-$ git clone https://github.com/trustcrypto/python-onlykey.git --recursive
-$ cd python-onlykey
-$ pip2 install .
-$ cd PGPy
-$ pip2 install .
-$ cd ..
+$ pip install onlykey
 ```
+
+### Ubuntu Install with dependencies
+
+```
+$ apt update && apt upgrade
+$ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
+$ pip install onlykey
+```
+
+### Debian Install with dependencies
+
+```
+$ apt update && apt upgrade
+$ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
+$ pip install onlykey
+```
+
+### Fedora/RedHat/CentOS Install with dependencies
+
+```
+$ yum update
+$ yum install python-pip python-devel libusb-devel libudev-devel \
+              gcc redhat-rpm-config
+$ pip install onlykey
+```
+### OpenSUSE Install with dependencies
+
+```
+$ zypper install python-pip python-devel libusb-1_0-devel libudev-devel
+$ pip install onlykey
+```
+
+### Arch Linux Install with dependencies
+
+```
+$ sudo pacman -Sy git python2-setuptools python2 libusb python2-pip
+$ pip install onlykey
+```
+
+### FreeBSD Install with dependencies
+
+See forum thread - https://groups.google.com/forum/#!category-topic/onlykey/new-features-and-feature-requests/CEYwdXjB508
+
+### Linux UDEV Rule
+
+In order for non-root users in Linux to be able to communicate with OnlyKey a udev rule must be created as described [here](https://docs.crp.to/linux).
+
 
 ## QuickStart
 
@@ -216,7 +236,7 @@ Slot 5b:
 Slot 6a:
 Slot 6b:
 
-$ onlykey-cli setslot 1 label ok
+$ onlykey-cli setslot 1a label ok
 Successfully set Label
 $ onlykey-cli getlabels
 
@@ -270,7 +290,7 @@ Slot 5b:
 Slot 6a:
 Slot 6b:
 
-OnlyKey> setslot 1 label ok
+OnlyKey> setslot 1a label ok
 
 Successfully set Label
 
@@ -294,55 +314,55 @@ Slot 5b:
 Slot 6a:
 Slot 6b:
 
-OnlyKey> setslot 1 url accounts.google.com
+OnlyKey> setslot 1a url accounts.google.com
 
 Successfully set URL
 
-OnlyKey> setslot 1 add_char1 2
+OnlyKey> setslot 1a add_char1 2
 
 Successfully set Character1
 
-OnlyKey> setslot 1 delay1 2
+OnlyKey> setslot 1a delay1 2
 
 Successfully set Delay1
 
-OnlyKey> setslot 1 username onlykey.1234
+OnlyKey> setslot 1a username onlykey.1234
 
 Successfully set Username
 
-OnlyKey> setslot 1 add_char2 2
+OnlyKey> setslot 1a add_char2 2
 
 Successfully set Character2
 
-OnlyKey> setslot 1 delay2 2
+OnlyKey> setslot 1a delay2 2
 
 Successfully set Delay2
 
-OnlyKey> setslot 1 password
+OnlyKey> setslot 1a password
 
 Type Control-T to toggle password visible.
 Password: *********
 Successfully set Password
 
-OnlyKey> setslot 1 add_char3 2
+OnlyKey> setslot 1a add_char3 2
 
 Successfully set Character3
 
-OnlyKey> setslot 1 delay3 2
+OnlyKey> setslot 1a delay3 2
 
 Successfully set Delay3
 
-OnlyKey> setslot 1 type g
+OnlyKey> setslot 1a 2fa g
 
 Successfully set 2FA Type
 
-OnlyKey> setslot 1 totpkey
+OnlyKey> setslot 1a totpkey
 
 Type Control-T to toggle password visible.
 Password: ********************************
 Successfully set TOTP Key
 
-OnlyKey> setslot 1 add_char4 2
+OnlyKey> setslot 1a add_char4 2
 
 Successfully set Character4
 
@@ -559,6 +579,18 @@ BNBU7972zW9q
 ```
 If signature is successful the ASCII armored version of the message will be displayed. If signature fails the message "Error with RSA signature" will be displayed.
 
+## PGPMessage Support
+
+Install w/PGPMessage support. Requires Python 2.7 and Git.
+
+```
+$ git clone https://github.com/trustcrypto/python-onlykey.git --recursive
+$ cd python-onlykey
+$ pip2 install .
+$ cd PGPy
+$ pip2 install .
+$ cd ..
+```
 
 ## Source
 

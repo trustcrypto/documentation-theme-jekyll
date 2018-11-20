@@ -48,26 +48,15 @@ folder: mydoc
                         </div>
                         <div id="collapseFourteen" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                OnlyKey is protected with a clear potting compound that provides:<br>
+                                OnlyKey is protected with a tamper-resistant and chemical-resistant compound that provides:<br>
 
-                                <strong>1) Durability</strong> - OnlyKey is crush and impact resistant, it stands up to abuse. You can carry it on your keychain, in your pocket, etc.<br>
+                                <strong>1) Durability</strong> - OnlyKey is crush and impact resistant, it stands up to abuse. You can carry it on your keychain, in your pocket, etc. Additionally, OnlyKey comes with <a href="https://onlykey.io/products/onlykey-silicone-case">color cases</a> for additional durability and scratch resistance.<br>
 
                                 <strong>2) Waterproof </strong>- Accidentally leave your OnlyKey in your pocket and it goes through the washing machine? No problem.<br>
 
-                                <strong>3) Transparency</strong> - It is possible to visually verify that things have not been tampered with and there is not a hardware backdoor installed.<br>
+                                <strong>3) Tamper-evident / Tamper-resistant</strong> - Attempts by an adversary to access the electronics inside of OnlyKey will create visible damage.<br>
 
-                                <strong>OnlyKey Cases Now Available!</strong><br>
-
-                                To provide even more durability and style OnlyKey silicon cases are now available.<br>
-
-                                <a href="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3.jpg" rel="attachment wp-att-1236"><img class="size-medium wp-image-1236 aligncenter" src="https://crp.to/wp-content/uploads/2017/06/71ER32NiHL._SL1500_-3-300x225.jpg" alt="" width="300" height="225" /></a><br>
-                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p><br>
-                                <p style="text-align: center;"><a href="https://www.amazon.com/CryptoTrust-OK-Case-BLK-OnlyKey-Silicon-Case/dp/B071WLDDMF" rel="attachment wp-att-1090"><br>
-                                <img class="aligncenter wp-image-977 size-medium" src="https://crp.to/wp-content/uploads/2016/11/buy-now-amazon-300x152.png" alt="" width="300" height="152" /></a></p><br>
-                                <p style="text-align: center;"><big>Buy now for $8.99, free shipping anywhere in US</big></p><br>
-
-                                <div class="form" style="text-align: center;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" /><input name="hosted_button_id" type="hidden" value="2GL2GEU8ZAZHU" /><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image" /><img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
-                                <p style="text-align: left;">This case fits both the OnlyKey Original and the OnlyKey Color.</p>
+                                <strong>4) Transparency</strong> - The protective compound is clear so that it is possible to visually verify the electronic components (verify no hardware backdoor).<br>
 
                                 </form></div>
                             </div>
@@ -137,7 +126,7 @@ What about getting my accounts back? This is where the secure encrypted backup a
 
 To restore you data if you lose your OnlyKey you can restore this backup to a new OnlyKey or if you like to plan ahead then get a secondary OnlyKey and restore your backup so it is ready in case your primary is lost.<br><br>
 
-Read more about the technical physical hardware security and encrypted backup feature in the <a href="https://crp.to/okstart" target="_blank">users guide available here.</a>
+Read more about the technical physical hardware security and encrypted backup feature <a href="https://docs.crp.to/features.html#hardware-security" target="_blank">here.</a>
                             </div>
                         </div>
                     </div>
@@ -150,7 +139,7 @@ Read more about the technical physical hardware security and encrypted backup fe
                         </div>
                         <div id="collapseSeventeen" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                Smart Cards are commonly used to provide two-factor authentication and decryption/signing for things like email. Unfortunately, if the computer that a smart card is plugged into is compromised by an attacker then the security of the smart card is compromised. All the attacker has to do is easily capture the keyboard output (Keylogging) and they can capture the users smart card PIN. With this PIN they can then authenticate to anything that the user has access to and also decrypt/sign emails as if the user had done so. This is a serious threat and one of the reasons that the OnlyKey project was started. With OnlyKey your PIN is entered on the 6 digit keypad located on the device itself that does not in any way send this PIN to the connected computer. In this way the PIN entry is offline and inaccessible to an attacker who has compromised the connected computer. <br><br>
+                                Smart Cards are commonly used to provide two-factor authentication and decryption/signing for things like email. Unfortunately, if the computer that a smart card is plugged into is compromised by an attacker then the security of the smart card is compromised. All the attacker has to do is capture the keyboard output (keylogging) and they can capture the users smart card PIN. With this PIN they can then authenticate to anything that the user has access to and also decrypt/sign emails as if the user had done so. With OnlyKey your PIN is entered on the 6 digit keypad located on the device itself that does not in any way send this PIN to the connected computer. In this way the PIN entry is offline and inaccessible to an attacker who has compromised the connected computer. <br><br>
 
 In addition to PIN security OnlyKey has functionality that smart cards do not like password management, SSH login, and is universally supported without the need for drivers to be installed. The OnlyKey is detected by the computer as a keyboard and no middleware or special drivers are required. OnlyKey can literally be plugged in and used on a computer that you have never used before and it works without installing anything.
                             </div>
@@ -179,7 +168,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                The International Travel Edition firmware is essentially a stripped down version of the Standard Edition firmware. The crypto libraries have been removed so that it will be a fully functional password manager but not utilize encryption and may be usable in countries where encryption is illegal.
+                                The International Travel Edition firmware is essentially a feature limited version of the OnlyKey. It is a fully functional password manager but not utilize encryption and may be usable in countries where encryption is banned/restricted. More information <a href="https://docs.crp.to/ite.html" target="_blank">here.</a>.
                             </div>
                         </div>
                     </div>
@@ -205,7 +194,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                Depending on what your wipe mode is set to it either wipes all sensitive data (overwrites where your usernames, passwords, keys etc. are stored) or if you are using full wipe mode it does a complete erase of the OnlyKey including sensitive data and all firmware (this requires reloading firmware).
+                                Depending on what your wipe mode is set to it either wipes all sensitive data (erases your usernames, passwords, keys etc.) or if you are using full wipe mode it does a complete erase of the OnlyKey including sensitive data and all firmware (this requires reloading firmware).
                             </div>
                         </div>
                     </div>
@@ -226,12 +215,12 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">What does entering the plausible deniability PIN do?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">What does entering the second profile PIN do?</a>
                             </h4>
                         </div>
                         <div id="collapseFive" class="panel-collapse collapse">
                             <div class="panel-body">
-                                This activates a second profile that is designed to be indistinguishable from the OnlyKey (International Travel Edition) firmware while actually running the OnlyKey (Standard Edition) firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. The user can load the International Travel Edition firmware on their OnlyKey along with some accounts they don't really care about before crossing a border and then if they are asked if they have anything that is encrypted they can say no and be completely telling the truth. Once inside the country they could load the Standard Firmware and set up their plausible deniability profile so that if they are ever detained or forced to give up their PIN they can comply by giving the plausible deniability PIN which would just unlock the accounts they don't really care about and would again appear to just be an unencrypted password manager. The user would have a plausible story that they are giving up everything they have while keeping the accounts they care about and encryption keys protected. More information
+                                This activates a second profile that stores an additional 12 accounts. When setting up OnlyKey you choose the second profile type which can either be standard or plausible deniability. The standard profile is a second profile with full functionality. The plausible deniability profile is designed to be indistinguishable from an OnlyKey with the International Travel Edition firmware, while actually running the OnlyKey Standard Edition firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. More information
                                 <a href="https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware">here</a>
                                 For more information on encryption and international travel see <a href="https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/">https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/</a>
                             </div>
@@ -241,12 +230,12 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">When should I use the plausible deniability PIN?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">When should I use a plausible deniability profile?</a>
                             </h4>
                         </div>
                         <div id="collapseSix" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption.
+                                Whenever you wish for your OnlyKey to appear to be a simple password manager that does not utilize encryption (typically for international travel) or if you want to be able to deny that the accounts in your primary profile exist. With an OnlyKey and a plausible deniability profile your device appears to be an OnlyKey with a single profile utilizing the <a href="https://docs.crp.to/ite.html" target="_blank">International Travel Edition firmware.</a>
                             </div>
                         </div>
                     </div>
@@ -260,8 +249,6 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         <div id="collapseSeven" class="panel-collapse collapse">
                             <div class="panel-body">
                                 Plausible deniability is only good if you are in a country where your worst case scenario is that you will be fined for using encryption. If someone is holding a gun to your head or there is risk of torture plausible deniability is pretty much useless. For more information on why see this <a href="https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis">https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis</a>.<br><br>
-
-If you think an adversary has the resources to decap a chip and inspect the contents with an electron microscope, or equivalent method, and is willing to spend these resources to obtain your passwords, then this implementation of plausible deniability would be defeated as there is no tamper respondent enclosure surrounding the device. Keep in mind that this is not a limitation of OnlyKey, this type of sophisticated attack if successful may be used to compromise the data of all commercial security devices including tokens and smartcards even the ones that claim their device is "Tamper Proof" there is no such thing when it comes to physical security.
                             </div>
                         </div>
                     </div>
@@ -269,12 +256,12 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Why not sign the firmware with a code signing certificate?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">How is the OnlyKey firmware signed and verified?</a>
                             </h4>
                         </div>
                         <div id="collapseEight" class="panel-collapse collapse">
                             <div class="panel-body">
-                                We did consider this option but there is one big security weakness this introduces. If the registered holder of the signing certificate is forced to give up the private key (by court order or other means) then whoever gains access to the private key could make modifications to the firmware and release it to unsuspecting users. Also there is not a good way to have firmware be both open source and require a specific code signing certificate. The integrity of firmware can still be validated without a signature using a checksum.
+                                The firmware is signed in a blockchain fashion. As the OnlyKey is an embedded device, things like memory are limited so verification of a complete firmware file would not be possible on the device. However, blocks of firmware can be signed along with the signature of the previous block to create a blockchain that can be verified by the OnlyKey bootloader. Additionally, firmware integrity is verified every time the device boots. In the event firmware verification fails the device is wiped and signed firmware must be reloaded.
                             </div>
                         </div>
                     </div>
@@ -287,11 +274,11 @@ If you think an adversary has the resources to decap a chip and inspect the cont
                         </div>
                         <div id="collapseNine" class="panel-collapse collapse">
                             <div class="panel-body">
-                                We have designed OnlyKey to be as transparent as possible (literally it is covered in a clear potting compound). You can load our firmware, review the source, or write your own firmware. Here are some of the features that allow you validate that there is no backdoor or tampering has occurred.<br><br>
+                                We have designed OnlyKey to be as transparent as possible. You can load our firmware, review the source, or write your own firmware. Here are some of the features that allow you validate that there is no backdoor or tampering has occurred.<br><br>
 
 1) Hardware - By having a clear coat on the electronics you can actually see the hardware and would be able to see a hardware type of backdoor.<br><br>
 
-2) Software - The way that OnlyKey loads firmware is unique. When you bridge the two touch points to load firmware what actually happens is first the small chip on the board sends a message to the large chip on the board that wipes all data from the large chip, next the firmware is loaded onto the small chip via USB, and finally written onto the blank large chip. So even is someone succeeded in loading malicious software onto your OnlyKey reloading the firmware would completely remove it.<br><br>
+2) Open Source - OnlyKey firmware and apps are published on Github and are open to review by the security community.  <br><br>
 
 3) Decentralized -  Secret keys are generated by you and accessible only to you. Unlike our competitors, we believe in a decentralized model where you have the freedom to control and verify everything on the OnlyKey.<br><br>
 
@@ -299,11 +286,11 @@ Why is decentralized important?<br><br>
 
 Take a real world example like <a href="https://lavabit.com/" target="_blank" rel="noopener noreferrer">Lavabit</a>, in May 2014 the owner of the service Ladar Levison abruptly shut down his secure email service after, it is speculated he received a National Security Letter from the NSA. This service was centralized so Ladar had the ability to see his customers information. Ultimately, he decided instead to just shut down his service rather than give this up his customers "I was forced to make a difficult decision: violate the rights of the American people and my global customers or shut down. I chose Freedom."<br><br>
 
-What is unknown is how many other companies have centralized technology and chose to not shut down and gave up their customers instead. All centralized security solutions have one thing in common, a single point of failure, and so they should never be trusted.<br><br>
+What is unknown is how many other companies have centralized technology and chose to not shut down and gave up their customers instead. All centralized security solutions have one thing in common, a single point of failure.<br><br>
 
 So what would happen if CryptoTrust received a similar letter?<br><br>
 
-We would comply with the order and at the same time 100% protect customers. This is possible because OnlyKey is a decentralized solution. We have zero knowledge of customer's sensitive data and we don't manage or store any keys. All of the keys are created by you either by directly loading them onto the OnlyKey or from being generated randomly using our patent pending method that uses input like the conductivity of your skin when pressing the buttons to create secure random keys.<br>
+We would comply with the order and at the same time 100% protect customers. This is possible because OnlyKey is a decentralized solution. We have zero knowledge of customer's sensitive data and we don't manage or store any keys. All of the keys are created by you either by directly loading them onto the OnlyKey or by being generated from random input.<br>
 
                             </div>
                         </div>
@@ -317,10 +304,7 @@ We would comply with the order and at the same time 100% protect customers. This
                         </div>
                         <div id="collapseTen" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Three main reasons for not supporting NFC<br><br>
-                                1) User Experience/Physical Security - The way that NFC devices are typically used is to quickly tap an NFC device to a reader/smartphone. There is no physical protection in place for most NFC devices if you drop it, someone can pick it up and use it. With OnlyKey this is not the case, you have to enter a PIN to unlock the device first. Imagine trying to hold a device close enough to the reader for power while entering a PIN. This in many cases would not be very user friendly.<br><br>
-                                2) NFC is not Universally Supported - One thing we strive to do is provide a device that works practically everywhere and on everything. NFC is only supported on select Android devices and Apple only supports very limited NFC functionality on the iPhone/iPad. NFC support would not provide universal mobile support. With USB, an adapter is required but we can support all Android devices and even newer iPhones that now have USB support.<br><br>
-                                3) Power Requirements - NFC provides ~5mA of harvested power to NFC tags. The OnlyKey has a high performance processor which permits quick cryptographic operations but requires more power than NFC provides.
+                                It currently would not be possible to support all of the features of OnlyKey over NFC for various technical reasons. We may consider an add-on in the future to provide basic NFC 2FA. Luckily, NFC is not required for most mobile apps as there are many alternative ways of authenticating such as time-based OTPs, backup codes, and SMS. These methods can be used one time to setup a phone as mobile apps typically remain trusted after the first login. After the apps are setup the alternative methods of 2FA may be disabled and then only allow stronger methods such as FIDO U2F and time-based OTPs for future logins using OnlyKey. 
                             </div>
                         </div>
                     </div>
