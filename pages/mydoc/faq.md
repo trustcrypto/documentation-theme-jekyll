@@ -58,7 +58,6 @@ folder: mydoc
 
                                 <strong>4) Transparency</strong> - The protective compound is clear so that it is possible to visually verify the electronic components (verify no hardware backdoor).<br>
 
-                                </div>
                             </div>
                         </div>
                     </div>
