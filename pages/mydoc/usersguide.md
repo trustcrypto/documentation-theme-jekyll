@@ -16,13 +16,9 @@ folder: mydoc
 
 {% include callout.html content="**Step 1.** Remove the OnlyKey and Keychain from packaging." type="default" %}
 
-{% include callout.html content="**Step 2.** Attach the provided keychain to your OnlyKey." type="default" %}
+{% include callout.html content="**Step 2.** Attach the provided keychain to your OnlyKey and insert OnlyKey into protective case." type="default" %}
 
-{% include image.html file="image14.jpg" max-width="350" %}
-
-{% include callout.html content="**Step 3.** Insert OnlyKey into protective case as shown [here.](#onlykey-case)" type="default" %}
-
-{% include tip.html content="(Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
+{% include tip.html content="**Step 3.** (Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." %}
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup below***
 
