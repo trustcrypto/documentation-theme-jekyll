@@ -195,6 +195,10 @@ entries:
       url: /ite.html
       output: web, pdf
 
+    - title: Plausible Deniability Setup Guide
+      url: /pdguide.html
+      output: web, pdf
+
     - title: Using OnlyKey with Linux
       url: /linux.html
       output: web, pdf

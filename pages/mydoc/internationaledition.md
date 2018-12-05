@@ -68,4 +68,6 @@ Your device is now set up, remove and reinsert OnlyKey to set up accounts.
 
 An OnlyKey with the International Travel Edition is identical in functionality to an OnlyKey with the Standard Edition firmware that is in plausible deniability mode. This mode is enabled by setting the second profile to Plausible Deniability Profile. [More about plausible deniability here](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware).
 
+A plausible deniability setup guide is available [here](https://docs.crp.to/pdguide.html).
+
 {% include links.html %}

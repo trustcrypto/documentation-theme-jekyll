@@ -97,7 +97,7 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7-2.png)
 
-{% include callout.html content="**Step 10.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup just select [Next] to complete the setup." type="default" %}
+{% include callout.html content="**Step 8.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup just select [Next] to complete the setup." type="default" %}
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
 
@@ -112,7 +112,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 <br>
 **Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking red. This is an intentional safeguard so that your OnlyKey will not be inadvertently wiped by repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid green light on that indicates that it is ready to set up." %}
 
-*If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](https://docs.crp.to/features.html#features).*
+*If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](https://docs.crp.to/features.html#self-destruct).*
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup accounts below***
 
