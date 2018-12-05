@@ -15,9 +15,9 @@ General information on OnlyKey plausible deniability mode is available [here](ht
 
 General information on the International Travel Edition OnlyKey firmware is available [here](https://docs.crp.to/ite.html).
 
-### Steps to Setup Plausible Deniability
+## Steps to Setup Plausible Deniability
 
-{% include note.html content="Before getting started make sure you have OnlyKey firmware Beta 7 or later and the OnlyKey app is installed. OnlyKey must be in a factory default state to set up plausible deniability." %}
+{% include note.html content="Before getting started make sure you have OnlyKey firmware Beta 7 or later and the OnlyKey app is installed. OnlyKey must be in a factory default state to set up a plausible deniability profile." %}
 
 {% include callout.html content="**Step 1.** Select [Next] to get started." type="default" %}
 
@@ -51,7 +51,7 @@ General information on the International Travel Edition OnlyKey firmware is avai
 
 {% include callout.html content="**Step 9.** Your device will now automatically reboot. Enter the PIN for you first profile to unlock OnlyKey." type="default" %}
 
-{% include callout.html content="**Step 10.** Select [Preferences] from the top menu and then click [Set Wipe Mode]. Full wipe will completely erase both the OnlyKey data and firmware in the event of a factory default. This ensures that after a factory default occurs there is not a way of determining what edition of firmware had been previously set on the device. This also requires re-loading the firmware through the OnlyKey app." type="default" %}
+{% include callout.html content="**Step 10.** Select [Preferences] from the top menu and then click [Set Wipe Mode]. Full wipe will completely erase both the OnlyKey data and firmware in the event of a factory default." type="default" %}
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pref.png)
 
