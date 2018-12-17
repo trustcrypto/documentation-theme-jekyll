@@ -42,6 +42,15 @@ Features not included in the International Travel Edition OnlyKey that are avail
 - SSH/OpenPGP
 - Second Profile
 
+## Switch to Standard Edition Firmware
+
+It is easy to switch between the International Travel Edition firmware and the Standard Edition firmware. In order to switch to Standard Edition firmware ensure that your International Travel Edition OnlyKey is in a factory default state and select [Load Firmware] in the OnlyKey App.
+
+- Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
+  - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_STD_Color.txt)
+  - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_IN_TRVL_Color.txt)
+- Follow the instructions in the app to load firmware
+
 ## Setup guide
 
 In order to setup an OnlyKey with the International Travel Edition first ensure you have loaded the International Travel Edition firmware and you have installed the OnlyKey app.

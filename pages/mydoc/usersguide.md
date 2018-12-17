@@ -6,6 +6,7 @@ last_updated: Nov, 10, 2018
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
 sidebar: mydoc_sidebar
 permalink: usersguide.html
+toc: false
 folder: mydoc
 ---
 {% include image.html file="image50.png" %}
@@ -850,7 +851,9 @@ If your OnlyKey has firmware v0.2-beta.7x or later follow the instructions below
 There is an option in the app to load firmware when first setting up a new device. There is also a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed using a simple blockchain and verified by on the OnlyKey.
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
-- Download the latest firmware [here](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
+- Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
+  - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_STD_Color.txt)
+  - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_IN_TRVL_Color.txt)
 - Follow the instructions in the app to load firmware
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
