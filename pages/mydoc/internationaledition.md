@@ -51,6 +51,15 @@ It is easy to switch between the International Travel Edition firmware and the S
   - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_IN_TRVL_Color.txt)
 - Follow the instructions in the app to load firmware
 
+{% include tip.html content="***Factory Default?***<br><br>
+To perform a factory default you have two options:
+<br>
+<br>
+**Method #1** - Enter your self-destruct PIN.
+<br>
+<br>
+**Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking red. This is an intentional safeguard so that your OnlyKey will not be inadvertently wiped by repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid green light on that indicates that it is in a factory default state." %}
+
 ## Setup guide
 
 In order to setup an OnlyKey with the International Travel Edition first ensure you have loaded the International Travel Edition firmware and you have installed the OnlyKey app.
