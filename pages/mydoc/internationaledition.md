@@ -49,7 +49,9 @@ It is easy to switch between the International Travel Edition firmware and the S
 - Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
   - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_STD_Color.txt)
   - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_IN_TRVL_Color.txt)
-- Follow the instructions in the app to load firmware
+- Select the [Load Firmware] button as shown below and follow the instructions in the app to load firmware
+
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite6.png)
 
 {% include tip.html content="***Factory Default?***<br><br>
 To perform a factory default you have two options:
