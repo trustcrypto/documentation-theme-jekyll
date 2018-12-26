@@ -199,6 +199,10 @@ entries:
       url: /pdguide.html
       output: web, pdf
 
+    - title: Deploying OnlyKey to the Enterprise
+      url: /enterprise.html
+      output: web, pdf
+
     - title: Using OnlyKey with Linux
       url: /linux.html
       output: web, pdf
