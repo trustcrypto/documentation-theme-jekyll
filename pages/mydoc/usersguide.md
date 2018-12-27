@@ -856,6 +856,8 @@ There is an option in the app to load firmware when first setting up a new devic
   - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_IN_TRVL_Color.txt)
 - Follow the instructions in the app to load firmware
 
+{% include note.html content="Ensure the signed firmware is downloaded (.txt extension) the unsigned firmware (.hex extension) is not compatible with in-app loading." %}
+
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 
 ### OnlyKey Case {#onlykey-case}
