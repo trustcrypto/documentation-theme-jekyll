@@ -1,5 +1,5 @@
 ---
-title: OnlyKey Security Whitepaper
+title: About Security
 tags: [OnlyKey, security]
 keywords: OnlyKey, security
 last_updated: Feb, 22, 2019
