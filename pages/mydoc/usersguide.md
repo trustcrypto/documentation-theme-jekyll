@@ -19,7 +19,7 @@ folder: mydoc
 
 {% include callout.html content="**Step 2.** Attach the provided keychain to your OnlyKey and insert OnlyKey into protective case." type="default" %}
 
-{% include callout.html content="**Step 3.** (Optional) Check out OnlyKey accessories - [color cases](#onlykey-case), [keychain options](#keychain-options), [mobile adapter](#android-support)." type="default" %}
+{% include callout.html content="**Step 3.** (Optional) Check out OnlyKey accessories - [color cases](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908), [mobile adapter](https://onlykey.io/collections/accessories-1), [business workstation](https://onlykey.io/collections/workstation)." type="default" %}
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup below***
 
