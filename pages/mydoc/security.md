@@ -102,10 +102,9 @@ There are multiple protections in use to prevent successful hardware attacks.
 
 - [Kinetis flash security](https://www.nxp.com/docs/en/application-note/AN4507.pdf) is enabled the first time the device is used. This disables all debugging capabilities of the hardware and keeps all information stored within the processor secure.
 
-- Before loading the firmware Firmware verification and integrity checking - The bootloader verifies the firmware signature on the OnlyKey. The firmware is only loaded onto the OnlyKey if the firmware is correctly signed by CryptoTrust.
+- Signed firmware uses a block chain where each block is signed and each block is verified on the device itself prior to loading. If any of the blocks of firmware contain an invalid signature the firmware load will be unsuccessful. If any of the blocks of firmware do not contain the valid signature of the previous block the firmware load will be unsuccessful. This ensures that only firmware signed by CryptoTrust LLC may be loaded and the firmware is verified by the device itself.
 
-- Firmware integrity checking - The bootloader verifies the firmware hash each time the device is used. The device only starts the firmware if the firmware has not changed.
-
+- Firmware is checked for integrity each time the device is powered on prior to loading the firmware. The device only starts the firmware if the firmware has not changed.
 
 ## Advanced
 
