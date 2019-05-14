@@ -43,4 +43,22 @@ The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKe
 
 OnlyKey Android App - The username / password / Yubikey® OTP login features will work without any apps on Android. With the OnlyKey Android app additional features like FIDO U2F, TOTP, and OpenPGP are supported. Get the app from [Google Play here](https://play.google.com/store/apps/details?id=to.crp.android.onlykeyu2f).
 
+### 5. OnlyKey Knowledge Base 
+
+The Knowledge Base contains guides and information for using OnlyKey in specific applications.
+
+[Using OnlyKey with Linux](https://docs.crp.to/linux.html) - Instructions for creating a UDEV rule for OnlyKey.
+
+[Using OnlyKey with Virtual Machines](https://docs.crp.to/virtualmachines.html) - How to use OnlyKey with VMware and Virtualbox.
+
+[Using OnlyKey with Qubes OS](https://docs.crp.to/qubes.html) - How to use OnlyKey with Qubes OS.
+
+[Legacy Firmware Upgrade Guide](https://docs.crp.to/upgradeguide.html) - Follow this guide to upgrade firmware from Beta6 to Beta7.
+
+[Deploying OnlyKey to the Enterprise](https://docs.crp.to/enterprise.html) - Options for deploying ready to use OnlyKey to employees.
+
+[International Travel Edition Guide](https://docs.crp.to/ite.html) - Follow this guide to use the International Travel Edition OnlyKey.
+
+[Plausible Deniability Setup Guide](https://docs.crp.to/pdguide.html) - Follow this guide to use the plausible deniability feature of OnlyKey
+
 {% include links.html %}
