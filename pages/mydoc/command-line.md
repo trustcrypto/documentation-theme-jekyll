@@ -65,11 +65,15 @@ easy_install pycrypto
 ## Installation
 
 ### Windows Install
-Python 2.7 and pip are required. To setup a Python environment on Windows we recommend Anaconda https://www.anaconda.com/download/#windows
+1) Python 2.7 and pip are required. To setup a Python environment on Windows we recommend Anaconda https://www.anaconda.com/download/#windows
 
+2) Install Microsoft Visual C++ Compiler for Python http://aka.ms/vcpython27
+
+3)
 ```
 $ pip install onlykey
 ```
+
 
 You should see a message showing where the executable is installed.
 
