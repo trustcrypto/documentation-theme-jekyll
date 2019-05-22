@@ -30,20 +30,48 @@ OnlyKey can be purchased here: [OnlyKey order](http://www.crp.to/p/)
 
 For information on using the app with OnlyKey see the [OnlyKey User's Guide](https://docs.crp.to/usersguide.html)
 
-## Installation
+### Install OnlyKey App {#app-install}
 
-To use the **OnlyKey Desktop App:**
+There are two options for installing the OnlyKey app.
+- Install the [OnlyKey Desktop App](#app-desktop) (Recommended)
+- Install the [OnlyKey Chrome App](#app-chrome)
 
-- Obtain an installer from https://github.com/trustcrypto/OnlyKey-Chrome-App/releases/latest
-- Install and launch the app.
+Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
-To use the **OnlyKey Chrome App:** (Chromebook Users)
+### Install OnlyKey Desktop App {#app-desktop}
 
-- Go to https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica,
-  click the **ADD TO CHROME** button.
-- Once the app installs ensure that your Chrome Bookmarks Bar is visible by
-  going to Bookmarks -> Show Bookmarks bar.
-- Select "Apps" icon in the bookmarks bar and select **OnlyKey Configuration**.
+{% include callout.html content="**Step 1.** Download installer" type="default" %}
+
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.dmg)
+
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.exe)
+
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
+
+{% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
+
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06<br>" %}
+
+### Install OnlyKey Chrome App {#app-chrome}
+
+{% include callout.html content="**Step 1.** Open the Chrome (or Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
+
+{% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
+
+{% include image.html file="image41.png" %}
+
+{% include callout.html content="**Step 3.** When prompted select ''Add App''" type="default" %}
+
+{% include image.html file="image12.png" max-width="359" %}
+
+{% include callout.html content="**Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> Bookmarks -> Show Bookmarks Bar to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to ''chrome://apps/'') and then select the ''OK'' icon to launch the OnlyKey App." type="default" %}
+
+{% include image.html file="image33.png" max-width="544" %}
+<br>
+<br>
+{% include image.html file="image17.png" %}
+<br>
+<br>
 
 ## Support ##
 
