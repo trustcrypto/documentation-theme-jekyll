@@ -13,7 +13,7 @@ folder: mydoc
 
 This is the official firmware for **OnlyKey**
 
-OnlyKey can be purchased here: [OnlyKey order](http://www.crp.to/p/)
+OnlyKey can be purchased here: [OnlyKey order](https://onlykey.io)
 
 ## Geting Started
 
