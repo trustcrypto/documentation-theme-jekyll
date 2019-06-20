@@ -206,3 +206,7 @@ entries:
     - title: Using OnlyKey with Qubes OS
       url: /qubes.html
       output: web, pdf
+
+    - title: Using OnlyKey for Head-less Server/Workstation Authentication
+      url: /headless-server.html
+      output: web, pdf

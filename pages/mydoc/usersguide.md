@@ -28,6 +28,7 @@ folder: mydoc
 ### Install OnlyKey App {#app-install}
 
 There are two options for installing the OnlyKey app.
+{% include tip.html content="The latest version of Windows 10 (1903) does not support the Chrome App, the Desktop App must be used." %}
 - Install the [OnlyKey Desktop App](#app-desktop) (Recommended)
 - Install the [OnlyKey Chrome App](#app-chrome)
 
@@ -40,6 +41,8 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 [<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.dmg)
 
 [<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.exe)
+
+{% include tip.html content="The latest version of Windows 10 (1903) now requires apps to be “run as administrator” in order to be able to communicate with OnlyKey. While running the OnlyKey App as admin does work for now, we are building a better solution that will be available in an upcoming OnlyKey app update." %}
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
 
