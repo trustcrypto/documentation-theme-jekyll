@@ -100,7 +100,7 @@ There are multiple protections in use to prevent successful hardware attacks.
 
 - While unlocked after a successful PIN entry there is an integrity counter used by the firmware running on OnlyKey. If instructions are skipped over the integrity counter will become corrupt causing the device to restart and lock.
 
-- [Kinetis flash security](https://www.nxp.com/docs/en/application-note/AN4507.pdf) is enabled the first time the device is used. This disables all debugging capabilities of the hardware and keeps all information stored within the processor secure.
+- [Kinetis flash security](https://www.nxp.com/docs/en/application-note/AN4507.pdf) is enabled the first time the device is used. This disables all debugging capabilities of the hardware, securely locks the flash memory, and keeps all information stored within the processor secure.
 
 - Signed firmware uses a block chain where each block is signed and each block is verified on the device itself prior to loading. If any of the blocks of firmware contain an invalid signature the firmware load will be unsuccessful. If any of the blocks of firmware do not contain the valid signature of the previous block the firmware load will be unsuccessful. This ensures that only firmware signed by CryptoTrust LLC may be loaded and the firmware is verified by the device itself.
 
