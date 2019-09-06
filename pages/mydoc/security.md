@@ -19,7 +19,7 @@ folder: mydoc
 
 - Protected key operations - Encryption / decryption operations are only allowed after user authentication via PIN.
 
-- Read/write-protected secure flash - OnlyKey utilizes Kinetis [flash security](#flashsecurity) to write protect all data residing on OnlyKey.
+- Read/write-protected secure flash - OnlyKey utilizes Kinetis [flash security](#flashsecurity) to securely lock all data residing on OnlyKey.
 
 - Offline secure processor - The data stored and processed on the OnlyKey is completely isolated from the connected computer. Data can only be written to the OnlyKey or wiped. Physical user touch is required to authorize authentication.
 
