@@ -36,26 +36,28 @@ For Debian user's install the DEB below.
 
 For other Linux users you may install the OnlyKey app via [snapcraft](https://snapcraft.io/onlykey-app)
 
-`
+```
 $ snap install onlykey-app
-`
+```
 
 At time of writing, snapcraft app does not work on Fedora, as an alternative you may also extract the .DEB and run the application directly:
 
-`
+```
 $ ar xf OnlyKey*.deb
 $ tar xf data.tar.xz
-`
+```
 
 Copy the OnlyKey directory to where you want the app i.e.
-`
+
+```
 $ sudo cp -r opt/OnlyKey/ /opt/
-`
+```
 
 Fedora requires additional dependency
-`
+
+```
 $ sudo dnf install libXScrnSaver
-`
+```
 
 To launch the app run the nw file located in the OnlyKey directory, you may want to create a symlink to launch the nw file.
 
