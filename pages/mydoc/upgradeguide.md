@@ -63,7 +63,19 @@ This release has a lot of improvements and new features. Here is the short list 
 
 ### Steps to Upgrade OnlyKey firmware {#loading-onlykey-firmware}
 
-There is an option in the app to load firmware before first setup of a new device. There is also a tab named [Firmware] in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed using a simple blockchain and verified on the OnlyKey.
+### Automatic Firmware Upgrade
+
+OnlyKey now supports auto firmware update through the OnlyKey App. This requires that "Automatically check for firmware updates" is checked in your OnlyKey App settings.
+
+If this feature is enabled when you restart the OnlyKey App you will see a pop-up, just follow the provided instructions to upgrade OnlyKey firmware:
+{% include image.html file="autoupgrade1.png" %}
+{% include image.html file="autoupgrade2.png" %}
+
+If you don't see a pop-up message proceed to Download Firmware section below:
+
+### Download Firmware
+
+There is a tab named [Firmware] in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed using a simple blockchain and verified on the OnlyKey.
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
 - Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
