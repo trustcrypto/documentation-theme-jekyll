@@ -344,7 +344,7 @@ We would comply with the order and at the same time 100% protect customers. This
                           <tr>
                           <td>iPhone/iPad (IOS 9.2+) with Lightning port</td>
                           <td>Password manager and Yubikey OTP</td>
-                          <td>Lightning to USB OTG Adapter available <a href="https://www.amazon.com/gp/product/B00S9I7EPO/">here</a></td>
+                          <td>Lightning to USB OTG Adapter available from 3rd party vendors</td>
                           </tr>
                           <tr>
                           <td>Android with USB Micro port</td>

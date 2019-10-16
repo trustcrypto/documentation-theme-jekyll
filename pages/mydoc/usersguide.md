@@ -2,7 +2,7 @@
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
-last_updated: Nov, 10, 2018
+last_updated: Oct, 01, 2019
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
 sidebar: mydoc_sidebar
 permalink: usersguide.html
@@ -25,6 +25,32 @@ folder: mydoc
 
 ## Setting up OnlyKey {#initial-setup}
 
+There are two options for setting up your OnlyKey.
+
+- [OnlyKey Quick Setup](#quick-setup) (No app required, less than 5 minute setup time)
+- [OnlyKey Setup Using OnlyKey App](#onlykey-setup) (App install required, 10 minute setup time)
+
+### OnlyKey Quick Setup {#quick-setup}
+
+{% include important.html content="Quick setup is the quickest way to set up a new OnlyKey and there are no apps required. However, to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
+
+To complete OnlyKey quick setup follow the instructions below:
+
+- Open a text editor such as notepad on a trusted computer
+- Click inside the text editor
+- Insert OnlyKey into the USB port on your computer
+- Hold button #3 on your OnlyKey down for 5+ seconds and then release
+
+{% include callout.html content="OnlyKey will type out instructions for you to follow into the text editor. Follow these instructions to set PINs on OnlyKey and a backup passphrase. You can choose to have OnlyKey automatically generate random PINs or set PINs yourself. When setting a PIN keep in mind that remembering a pattern may be easier than remembering numbers." type="default" %}
+
+- When you are complete the quick setup you will see the text 'SETUP COMPLETE, DELETE THIS TEXT'
+- Make sure you have carefully written down your PINs and backup passphrase and store this in a secure location
+- When finished enter your PIN onto OnlyKey to start using your new device, OnlyKey is ready for use as a security key (FIDO2/U2F) and for challenge-response
+
+ ***To use OnlyKey for password management, file encryption, and secure messaging follow the steps below to install the OnlyKey app***.
+
+<i class="fa fa-arrow-down fa-3x"></i>
+
 ### Install OnlyKey App {#app-install}
 
 There are two options for installing the OnlyKey app.
@@ -38,17 +64,17 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.dmg)
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey.App.5.2.0.dmg)
 
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.exe)
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0.exe)
 
-{% include important.html content="The latest version of Windows 10 (1903) now requires apps to be “run as administrator” in order to be able to communicate with OnlyKey. While running the OnlyKey App as admin does work for now, we are building a better solution that will be available in an upcoming OnlyKey app update." %}
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0_amd64.deb)
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
+{% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06<br>" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 247b3ed27a5d7f2c35f6da0d44e0d6e7cb3ac4084eb3f944df1ce58e0df54dce<br>Windows SHA 256 CHECKSUM: 71ae01f86995c1aadae947d447223f65540c0c5ebcd1319dd5e5f1e1907013c0<br>Linux SHA 256 CHECKSUM: 3dc675c5a33c55abb153f98003a41843d4a1b5959f30ff479b76a953799665c8<br>" %}
 
 ### Install OnlyKey Chrome App {#app-chrome}
 
@@ -71,7 +97,9 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 <br>
 <br>
 
-### OnlyKey Setup {#onlykey-setup}
+### OnlyKey Setup Using OnlyKey App {#onlykey-setup}
+
+If you have already setup OnlyKey using quick setup proceed to [Account Setup](#account-setup)
 
 {% include callout.html content="**Step 1.** Insert OnlyKey and select [Next] to get started." type="default" %}
 
@@ -305,7 +333,7 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 *DISCLAIMER - Google® is the registered trademarks of Google Inc. OnlyKey is not associated with or sponsored by Google® Inc.*
 
-{% include tip.html content="If you are not a 2FA guru then this is the recommended method to use." %}
+{% include tip.html content="If you are not a 2FA guru then this is the recommended method to use. Six digit codes will be typed automatically by OnlyKey." %}
 
 ***Background Information***
 
@@ -357,7 +385,7 @@ Learn more about the implementation of Google Auth OTP [here.](#google-authentic
 
 One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display "NOTSET" instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. For this reason it is important to ensure the OnlyKey app is permitted to autostart.
 
-However, OnlyKey TOTP will work on-the-go without the app running. All you have to do is browse to our web app [https://apps.crp.to](https://apps.crp.to) in Google Chrome or Firefox (With U2F Enabled). This web app in addition to being used to send encrypted messages sets the current time on OnlyKey and login with TOTP will function as normal.
+However, OnlyKey TOTP will work on-the-go without the app running. All you have to do is browse to our web app [https://apps.crp.to](https://apps.crp.to) in Google Chrome or Firefox. This web app in addition to being used to send encrypted messages sets the current time on OnlyKey and login with TOTP will function as normal.
 
 {% include image.html file="totp.png" max-width="600" %}
 
@@ -420,14 +448,23 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 {% include tip.html content="Keep in mind that once you write this configuration to OnlyKey you can no longer use a Yubikey with the same configuration. Attempting to do this causes one of the devices to be out of sync." %}
 
-#### Security Key - Universal 2nd Factor (U2F) {#universal-2nd-factor-u2f}
+#### Security Key - FIDO2, FIDO U2F, and WebAuthn {#universal-2nd-factor-u2f}
 
-{% include note.html content="U2F is supported on **Google Chrome** and **Firefox**. Firefox U2F support is not enabled by default. If using Firefox, U2F must be enabled by completing the following steps in your browser:<br>
-- Type about:config into the Firefox browser.<br>
-- Search for “u2f”.<br>
-- Double click on security.webauth.u2f to enable U2F support.<br><br>" %}
+The terminology for security keys can be a bit confusing so here are some quick definitions to make sense of it.
 
-OnlyKey works just like any other U2F token. Follow the steps below to configure a slot to use U2F.
+When websites use the term security key they typically are referring to one of these:
+- Universal 2nd Factor (FIDO U2F) - Security key is used just as a 2nd factor along with your password.
+- FIDO2 - A replacement for FIDO U2F released in 2019, Security key may be used as a 2nd factor along with your password or may be used as a passwordless security key on supported websites. Passwordless authentication allows logging in with just a security key and a PIN code.
+
+The term WebAuthn is sometimes used instead of FIDO2, essentially FIDO2 is part of a larger WebAuthn standard.
+
+OnlyKey works just like any other FIDO2 or FIDO U2F token. The first step to use a security key is to register the key and then once registered you can login to that site with the key.
+
+To use OnlyKey as a security key follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site.
+
+#### Security Key Advanced {#security-key-advanced}
+
+One touch login may be configured with a security key by assigned the FIDO U2F two-factor mode to a slot.
 
 {% include callout.html content="**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting ''Submit''." type="default" %}
 
@@ -445,9 +482,13 @@ Learn more about OnlyKey's implementation of U2F [here.](https://docs.crp.to/fea
 
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
-OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.
+OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to KeePassXC, Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.
 
 {% include tip.html content="This way you can keep your most valuable accounts in offline storage and everything else in the software password manager." %}
+
+#### KeePassXC {#keepassxc}
+
+More information coming soon. We are working with the KeePassXC team to implement OnlyKey support for KeePassXC.
 
 #### LastPass {#lastpass}
 
@@ -483,27 +524,45 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 #### DashLane {#dashlane}
 
-DashLane supports Google Authenticator, Yubico® OTP, and U2F. The choice is yours but for beginners Google Authenticator is the best option.
+DashLane supports Google Authenticator, Yubico® OTP, and Security Keys. The choice is yours but for beginners Google Authenticator is the best option.
 
 #### Google SmartLock {#google-smartlock}
 
-SmartLock is a new password manager that is available in Google Chrome. Since this uses a Google account it supports Google Authenticator or U2F. The choice is yours but for beginners Google Authenticator is the best option.
+SmartLock is a new password manager that is available in Google Chrome. Since this uses a Google account it supports Google Authenticator or Security Key. The choice is yours but for beginners Google Authenticator is the best option.
 
-## Secure Communication - Chat/Email {#secure-com}
+## OpenPGP File Encryption and Secure Communication {#secure-com}
 
-OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase you can truly send and receive secure messages anywhere.
+OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
-**How it works**
+1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android for more information [read this](https://docs.crp.to/android.html).
 
-OnlyKey has two apps for secure communication:
-
-1) **[WebCrypt](https://docs.crp.to/webcrypt.html)** is supported on Firefox and Google Chrome for sending secure messages right in the browser.
-
-2) **[BrowerCrypt](https://docs.crp.to/browsercrypt.html)** is a Google Chrome Extension that allows you to highlight any text in the browser and encrypt it.
+2) **[OnlyKey WebCrypt Native App](https://docs.crp.to/webcrypt.html)** provides the same app functionality but as a native app for that runs on Windows, mac OS, or Linux.
 
 {% include note.html content="Private keys are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. OnlyKey can only process secure messages when you tell it to by entering a 3 digit challenge code." %}
 
-**See Webcrypt in action**
+### How it works {#openpgp-how}
+
+{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to https://apps.crp.to/search to use our custom Keybase search tool to search Keybase users by:
+- Twitter, Github, Reddit, or Hackernews Usernames
+- Web domains
+- PGP fingerprint
+- Or Automatically search for best match" type="default" %}
+
+{% include image.html file="user-search.jpg %}
+
+{% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to https://apps.crp.to/encrypt to send a secure message or browse to https://apps.crp.to/encrypt-file to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
+
+{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to https://apps.crp.to/decrypt or https://apps.crp.to/decrypt-file. You can also create a unique link which allows anyone, with or without an OnlyKey to send you and encrypted file. This may be used in places such as an email signature to receive secure messages. The format is:
+
+Send me a secure message
+https://apps.crp.to/encrypt.html?type=e&recipients=YOURKEYBASEUSERNAME
+
+Send me a secure file
+https://apps.crp.to/encrypt-file.html?type=e&recipients=YOURKEYBASEUSERNAME
+
+" type="default" %}
+
+### See WebCrypt in action {#openpgp-action}
 
 After configuring your OnlyKey following [these instructions](#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
 
@@ -534,18 +593,6 @@ After configuring your OnlyKey following [these instructions](#generating-keys) 
 
 {% include note.html content="Messages sent via Webcrypt are never sent over the internet. The way it works is the necessary files are downloaded to your browser and all processing is done in your browser. Read more about [Webcrypt security here](https://docs.crp.to/webcrypt.html#security-goals)" %}
 
-**See BrowserCrypt in action**
-
-BrowserCrypt is similar to WebCrypt but instead of pasting messages you can compose a message anywhere in the browser and then highlight and click to encrypt. Both BrowserCrypt and Webcrypt use the same method for encrypting messages but BrowserCrypt has some advantages including the ability to store the Keybase ID of recipients. These are stored in your local browser storage so there is no need to remember or lookup a recipient's name.
-
-{% include warning.html content="Some websites may save a draft of your message automatically. For example, an email provider may save the message you are composing so that in case you close out of your email you can return to the message later. Keep this in mind when using BrowserCrypt, if you are concerned that your messaging provider may be able to read or save draft messages then use a secure composition window like Webcrypt." %}
-
-- Highlight the message to encrypt, select Encrypt, and select Encrypt for the recipient that you would like to send the message to (i.e. alicer)
-{% include image.html file="encrypted-message10.jpg" %}
-- Enter the shown challenge code on the OnlyKey and the encrypted message will be displayed
-
-Find more information on [BrowserCrypt here](https://docs.crp.to/browsercrypt.html)
-
 ## Preferences {#preferences}
 
 OnlyKey has several customizable preferences that can be accessed from the preferences tab of the configuration app.
@@ -559,12 +606,6 @@ This is the amount of time that the OnlyKey should remain unlocked while not bei
 ### Configurable Keyboard Type Speed {#configurable-keyboard-type-speed}
 
 Setting a custom type speed may be desirable in cases where the application you are using can not keep up with fast typing. Or if you don't use any applications with type speed restrictions you can have the text typed at top speed for the fastest logins. Setting value to 1 will result in very slow type speed of about one character a second, setting value to 10 will result in very fast type speed that will type almost instantly.
-
-### Configurable Wipe Mode {#configurable-wipe-mode}
-
-**Use Case #1** - If you are using the plausible deniability feature there is one scenario where an adversary may be able to determine that you were using the plausible deniability feature. This is possible if the adversary enters 10 incorrect PINs causing your OnlyKey to wipe all data and then they go to reconfigure the OnlyKey. The adversary would be able to determine during setup if the device has the Standard Edition firmware or the International Travel Edition firmware. At this point the device is wiped the adversary would not have access to any sensitive information but the adversary would know that your device is capable of encryption which in some areas may be undesirable. To address this issue you can set the wipe mode of your OnlyKey to Full Wipe. Given the same scenario with Full Wipe set when 10 incorrect PINs are entered the device will completely wipe all information including the firmware from your OnlyKey. No useful information would be available to an adversary concerning what firmware you were running and in order to use the device new firmware must be loaded.
-
-**Use Case #2** - You just like to be absolutely sure that everything including the firmware has been eliminated from your device when a factory default occurs.
 
 ### Configurable Keyboard Layouts {#configurable-keyboard-layouts}
 
@@ -604,6 +645,12 @@ By default, you must enter a 3 digit challenge code on OnlyKey to perform SSH or
 
 By default, you can change your backup key/passphrase at any time by entering your PIN to put the device in config mode. By setting backup key mode to locked, the backup key/passphrase may not be changed. This setting provides extra security so that even if an adversary has your PIN and has physical access to your device they would not be able to backup and restore your data.
 
+### Configurable Wipe Mode {#configurable-wipe-mode}
+
+**Use Case #1** - If you are using the plausible deniability feature there is one scenario where an adversary may be able to determine that you were using the plausible deniability feature. This is possible if the adversary enters 10 incorrect PINs causing your OnlyKey to wipe all data and then they go to reconfigure the OnlyKey. The adversary would be able to determine during setup if the device has the Standard Edition firmware or the International Travel Edition firmware. At this point the device is wiped the adversary would not have access to any sensitive information but the adversary would know that your device is capable of encryption which in some areas may be undesirable. To address this issue you can set the wipe mode of your OnlyKey to Full Wipe. Given the same scenario with Full Wipe set when 10 incorrect PINs are entered the device will completely wipe all information including the firmware from your OnlyKey. No useful information would be available to an adversary concerning what firmware you were running and in order to use the device new firmware must be loaded.
+
+**Use Case #2** - You just like to be absolutely sure that everything including the firmware has been eliminated from your device when a factory default occurs.
+
 ## Encryption Keys {#encryption-keys}
 
 OnlyKey makes encryption keys easier and more secure by storing them offline, protected even if the computer using the key is compromised.
@@ -616,7 +663,7 @@ In the simplest terms an encryption key is something you have that allows you to
 
 **Why does protecting private keys matter?**
 
-You may hear the term private key being used sometimes, we will not get into the details here but there are plenty of places to read further on this topic online. For our purposes here a private key is used to read the secure messages / data that someone sends you. Only you should have access to this key because anyone with access to the key can read all messages sent to you in the past or in the future. This is why it is important to protect the key from exposure and why storing it on the OnlyKey is better than on your computer somewhere. If it's on your computer and your computer is hacked then all past and future messages you send may be read by the hacker.
+You may hear the term private key being used sometimes, we will not get into the details here but there are plenty of places to read further on this topic online. For our purposes here a private key is used to read the secure messages / data that someone sends you. Only you should have access to this key because anyone with access to the key can read all messages sent to you in the past or in the future. This is why it is important to protect the key from exposure and why storing it securely on the OnlyKey is better than on your computer somewhere.
 
 **What does OnlyKey use keys for?**
 
@@ -624,8 +671,7 @@ The OnlyKey stores private keys. These private keys are used for four different 
 
 1.  **Secure Encrypted Backup** - This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For information on backing up OnlyKey see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
 2.  **Secure Encrypted Messages (OpenPGP)**
-  - **[OnlyKey WebCrypt - WebCrypt](https://docs.crp.to/webcrypt.html)** is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide encryption everywhere on-the-go.
-  - **[OnlyKey BrowerCrypt - BrowserCrypt](https://docs.crp.to/browsercrypt.html)** is a Google Chrome Extension that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide easy and secure PGP encryption in Google Chrome.
+  - **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide encryption everywhere on-the-go.
 3.  **SSH Authentication** - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure. For information on using OnlyKey for SSH authentication see [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html).
 
 Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-feature)
@@ -686,7 +732,7 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 
 {% include warning.html content="Only load keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
-If you generated your keys as described in the Generating Keys section above proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
+If you generated your keys as described in the Generating Keys section above, using Keybase, or using Mailvelope proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
 
 {% include callout.html content="**Step 1.** Open the text file of your private key that you saved in the previous steps. Select all of the text of the private key (CTRL+A), and copy the text (CTRL+C)." type="default" %}
 
@@ -700,27 +746,17 @@ If you generated your keys as described in the Generating Keys section above pro
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with Keybase is entered as passphrase, *Set as decryption key* is selected. When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *Auto* is selected as Slot, the same passphrase you used with Keybase (Or Mailvelope) is entered as passphrase. When finished select Save to OnlyKey" type="default" %}
 
 {% include image.html file="loadkey1.jpeg" %}
 
 {% include note.html content="Selecting set as backup key will use your Keybase key to encrypt backups. Setting this will override any previously set backup passphrase/key as there can only be one backup key set." %}
 
-{% include callout.html content="**Step 5.** Select Subkey 1 and save" type="default" %}
-
-You should see a message displayed indicating the key was successfully saved to OnlyKey.
-
-{% include callout.html content="**Step 6.** Paste the copied private key into the RSA Private Key box  again. Ensure *slot 2* is selected, the same passphrase you used with Keybase is entered as passphrase, and *Set as signature key* is selected. When finished select Save to OnlyKey" type="default" %}
-
-{% include callout.html content="**Step 5.** Select Subkey 2 and save" type="default" %}
-
 You should see a message displayed indicating the key was successfully saved to OnlyKey.
 
 Now your OnlyKey is ready to:
 
-- Send/receive PGP encrypted messages using [WebCrypt](https://docs.crp.to/webcrypt.html)
-- Send/receive PGP encrypted messages using [BrowserCrypt](https://docs.crp.to/browsercrypt.html)
-- Create [secure encrypted backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)
+- Send/receive PGP encrypted messages/files using [WebCrypt](https://docs.crp.to/webcrypt.html)
 
 ### Loading Keys Advanced {#loading-keys-a}
 
@@ -839,29 +875,17 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-If you received a message in the OnlyKey app stating *"This application is designed to work with a newer version of OnlyKey firmware."* or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
+If your OnlyKey has firmware v0.2-beta.7x or later follow the link below to load OnlyKey Firmware.
 
-- [**Legacy firmware upgrade guide (v0.2-beta.6x or earlier)**](https://docs.crp.to/upgradeguide.html)
+- [**Current firmware upgrade guide (v0.2-beta.7x or later)**](https://docs.crp.to/upgradeguide.html)
 
 You can check firmware version by looking in the bottom right corner of the OnlyKey App.
 
 {% include image.html file="version.png" %}
 
-If your OnlyKey has firmware v0.2-beta.7x or later follow the instructions below to load OnlyKey Firmware.
+If you received a message in the OnlyKey app stating *"This application is designed to work with a newer version of OnlyKey firmware."* or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
 
-<i class="fa fa-arrow-down fa-3x"></i>
-
-## Loading OnlyKey Firmware {#loading-onlykey-firmware-app}
-
-There is an option in the app to load firmware when first setting up a new device. There is also a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed using a simple blockchain and verified by on the OnlyKey.
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
-
-- Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
-  - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_STD_Color.txt)
-  - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_IN_TRVL_Color.txt)
-- Follow the instructions in the app to load firmware
-
-{% include note.html content="Ensure the signed firmware is downloaded (.txt extension) the unsigned firmware (.hex extension) is not compatible with in-app loading." %}
+- [**Legacy firmware upgrade guide (v0.2-beta.6x or earlier)**](https://docs.crp.to/legacyupgradeguide.html)
 
 ## OnlyKey Accessories / Mobile Support {#onlykey-accessories-mobile-support}
 
@@ -896,7 +920,9 @@ Additional color cases are available - Choose a color that fits your style – S
 
 Android is supported by using a USB on-the-go (OTG) adapter. There are two types of OTG adapters that can be purchased USB Micro and USB C.
 
-Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work without any apps. With the OnlyKey Android app additional features like FIDO U2F, TOTP, and OpenPGP are supported. Get the app from [Google Play here](https://play.google.com/store/apps/details?id=to.crp.android.onlykeyu2f).
+Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work without any apps.
+
+The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey browse to https://apps.crp.to from Chrome or Firefox in Android before trying to login.
 
 #### [Purchase USB C to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-c-to-usb-a-otg-adapter) {#usb-c-to-usb-3-otg-adapter}
 
@@ -912,21 +938,13 @@ This is currently in the experimental phase so there is not official support. Us
 
 {% include image.html file="image29.png"  max-width="248" %}
 
-[Purchase on Amazon from 3rd party seller](https://www.amazon.com/gp/product/B00S9I7EPO/)
+Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for FIDO2 or Google Authenticator currently.
 
-Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for U2F or Google Authenticator currently.
-
-### Keychain Accessory Options {#keychain-options}
-
-#### Standard Plastic Keychain
-
-The standard keychain is plastic which provides good durability and an easy quick disconnect for convenient access.
-
-If you ever need a replacement or extra keychain one can be purchased from the [OnlyKey store](https://onlykey.io/collections/keychains/products/extra-standard-keychain?variant=926841372716).
+### Keychain Accessory {#keychain-options}
 
 #### Heavy Duty Metal Keychain
 
-This keychain provides better performance and durability than the standard plastic keychain. This keychain swivels 360° and is designed to withstand the stresses of demanding use. This can be purchased from the [OnlyKey store](https://onlykey.io/collections/keychains/products/heavy-duty-metal-keychain?variant=7154240028716).
+This keychain swivels 360° and is designed to withstand the stresses of demanding use. This can be purchased from the [OnlyKey store](https://onlykey.io/collections/keychains/products/heavy-duty-metal-keychain?variant=7154240028716).
 {% include image.html file="51vOBo8vUSL._SL1000_.jpg"  max-width="248" %}
 
 ## Troubleshooting {#troubleshooting}
@@ -986,15 +1004,7 @@ If you have an issue not listed here please reference the online support forum [
 
 ## Change your PIN {#pin-change}
 
-If you need to change your self-destruct PIN that can be completed in the setup tab of the OnlyKey app at any time. If you need to change your primary or second profile PIN you must do a backup and restore. The process is as follows:
-
-- Backup OnlyKey
-- Wipe OnlyKey (self destruct PIN or enter incorrect PIN 10x)
-- Complete setup again and choose a different PIN
-- Load backup passphrase/key
-- Restore backup file
-
-{% include note.html content="The reason that primary PIN can't just be changed is a security reason. The key that encrypts all of sensitive data on the OnlyKey is derived from your PIN and a random number." %}
+OnlyKey support for PIN change was added in firmware version Beta8. You can check the firmware version in the lower right corner of the OnlyKey app. To change PIN go to the Setup tab, put OnlyKey in config mode and follow the instruction in the app to set a new PIN.
 
 ## Web Links {#web-links}
 

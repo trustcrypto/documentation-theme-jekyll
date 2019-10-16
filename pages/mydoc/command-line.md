@@ -15,10 +15,11 @@ Python client for interacting with the OnlyKey.
 
 OnlyKey-cli - A command line interface to the OnlyKey that can be used for configuration (Similar functionality to [OnlyKey App](https://docs.crp.to/app.html))
 
+<!---
 PGPMessage - **Still in early development.** - Provides a tool for decrypting and signing OpenPGP/GPG messages using OnlyKey (python only OpenPGP implementation).
 
 
-<!---
+
 ## Run without installation (Packaged App)
 
 ### Mac OS Run without installation
@@ -374,7 +375,7 @@ OnlyKey>
 
 Bye!
 ```
-
+<!---
 ### Decrypt PGP email messages using OnlyKey
 
 If you using a previously set RSA private key with decryption capabilities you can decrypt OpenPGP/GPG encrypted email messages:
@@ -595,7 +596,7 @@ $ cd PGPy
 $ pip2 install .
 $ cd ..
 ```
-
+--->
 ## Source
 
 [Python OnlyKey on Github](https://github.com/trustcrypto/python-onlykey)

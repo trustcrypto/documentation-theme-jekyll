@@ -29,9 +29,7 @@ If you are having issues that are not addressed in the User's Guide or FAQs chec
 
 [Desktop App](https://docs.crp.to/app.html) - The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chromebook (with Chrome App).
 
-[WebCrypt](https://docs.crp.to/webcrypt.html) is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide PGP encryption everywhere on-the-go. Supports Google Chrome and Firefox!
-
-[BrowserCrypt](https://docs.crp.to/browsercrypt.html) is a Google Chrome Extension that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide easy and secure PGP encryption in Google Chrome.
+[WebCrypt](https://docs.crp.to/webcrypt.html) is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide PGP encryption everywhere on-the-go for secure messages and file encryption. Supports browsers Google Chrome, Brave, and Firefox. Supports OS Windows, Mac, Linux and Android.
 
 [SSH Agent](https://docs.crp.to/onlykey-agent.html) - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure.
 
@@ -41,9 +39,7 @@ The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKe
 
 [Command-line Utility](https://docs.crp.to/command-line.html) - The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
 
-OnlyKey Android App - The username / password / Yubikey® OTP login features will work without any apps on Android. With the OnlyKey Android app additional features like FIDO U2F, TOTP, and OpenPGP are supported. Get the app from [Google Play here](https://play.google.com/store/apps/details?id=to.crp.android.onlykeyu2f).
-
-### 5. OnlyKey Knowledge Base 
+### 5. OnlyKey Knowledge Base
 
 The Knowledge Base contains guides and information for using OnlyKey in specific applications.
 
@@ -53,7 +49,7 @@ The Knowledge Base contains guides and information for using OnlyKey in specific
 
 [Using OnlyKey with Qubes OS](https://docs.crp.to/qubes.html) - How to use OnlyKey with Qubes OS.
 
-[Legacy Firmware Upgrade Guide](https://docs.crp.to/upgradeguide.html) - Follow this guide to upgrade firmware from Beta6 to Beta7.
+[Firmware Upgrade Guide](https://docs.crp.to/upgradeguide.html) - Follow this guide to upgrade firmware.
 
 [Deploying OnlyKey to the Enterprise](https://docs.crp.to/enterprise.html) - Options for deploying ready to use OnlyKey to employees.
 

@@ -1,9 +1,9 @@
 ---
-title: Upgrading Firmware From Beta6 to Beta7
+title: Upgrading Firmware
 tags: [OnlyKey, Firmware, Upgrade]
 keywords: OnlyKey, Firmware, Upgrade
-last_updated: Oct, 31, 2018
-summary: Follow this guide to upgrade firmware from Beta6 to Beta7
+last_updated: Sep, 16, 2019
+summary: Follow this guide to upgrade firmware
 sidebar: mydoc_sidebar
 permalink: upgradeguide.html
 folder: mydoc
@@ -11,203 +11,112 @@ folder: mydoc
 
 ## Why Upgrade?
 
-This release has a lot of improvements, most notably after upgrading your OnlyKey you can load future updates directly in the app without the need to backup and restore. Here is the short list of improvements in this release:
+This release has a lot of improvements and new features. Here is the short list of new features in this release:
 
-- Better touch sense on OnlyKey buttons using automatic touch sense calibration.
-- Backup Passphrase support - Backup's may be securely encrypted with a passphrase.
-- Two profile support - By setting two PINs you can have two profiles to store up to 24 accounts.
-- Automatic firmware and app update notifications - The OnlyKey app can now let you know when there are updates available.
-- Seamless firmware upgrades - Signed firmware can now be loaded directly through the app without wiping account data (thanks to our new blockchain bootloader).
-- Better FIDO U2F support
+- Windows 10 Support (Works with Windows 10 1903)
+- FIDO2 Support
+- OpenPGP message and file encryption
+- Android support, no app required. For more information [read this](https://docs.crp.to/android.html).
+- Quick setup
+- PIN changes now supported
+- Auto OpenPGP key loading
+- 
+
+
+## Before Upgrading
+
+{% include note.html content="If you are a new OnlyKey user skip this section and head over to the [User's Guide](https://docs.crp.to/usersguide.html#onlykey-setup) to get started." %}
+
+{% include warning.html content="This firmware release adds support for FIDO2 (WebAuthn), this has been developed as a replacement for FIDO U2F. This requires re-registering your security keys (U2F Keys). To do this ensure that the sites where OnlyKey has been registered as a U2F security key have an alternate method of two-factor authentication enabled. After upgrading login and re-register OnlyKey as a security key on these sites." %}
+
+{% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
 ## Steps to Upgrade
 
-{% include note.html content="If you are a new OnlyKey user just complete steps 2 and 3 below as you won't have anything to backup/restore. Then head over to the [User's Guide](https://docs.crp.to/usersguide.html#onlykey-setup) to get started." %}
-
-{% include callout.html content="**Step 1.** **Backup OnlyKey** - Create a backup of your OnlyKey by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
+{% include callout.html content="**Step 1.** **Upgrade OnlyKey desktop app** - Follow instructions [here](#app-desktop) to install the new OnlyKey app." type="default" %}
 
 {% include callout.html content="**Step 2.** **Upgrade OnlyKey firmware** - Follow instructions [here](#loading-onlykey-firmware) to upgrade firmware on the OnlyKey" type="default" %}
 
-{% include callout.html content="**Step 3.** **Upgrade OnlyKey desktop app** - Follow instructions [here](#app-desktop) to install the new OnlyKey app." type="default" %}
-
-{% include callout.html content="**Step 4.** **Setup OnlyKey** - Follow instructions [here](#onlykey-setup) to setup OnlyKey and restore from backup" type="default" %}
-
-{% include callout.html content="**Step 4.** **Check out the new features [here](#new-features)**" type="default" %}
-
-### Steps to Upgrade OnlyKey firmware {#loading-onlykey-firmware}
-
-**Before Getting Started**
-
-{% include warning.html content="Legacy firmware loading wipes all data from OnlyKey. Be sure to have a backup of OnlyKey data and the backup key before loading firmware." %}
-
-
-{% include callout.html content="**Step 1.**  Insert OnlyKey into USB port" type="default" %}
-{% include callout.html content="**Step 2.**  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)" type="default" %}
-{% include callout.html content="**Step 3.**  Determine which version of OnlyKey you have and download firmware below" type="default" %}
-
-{% include image.html file="image25.jpg" max-width="285" %}
-
-<table>
-  <tr>
-   <td>OnlyKey Color (Has a square LED)
-   </td>
-   <td>OnlyKey Original (Has text "LED" visible)
-   </td>
-  </tr>
-  <tr>
-   <td>Download OnlyKey Color Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_STD_Color.cpp.hex">here</a>
-   </td>
-   <td>Download OnlyKey Original Standard Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_STD_Orignal.cpp.hex">here</a>
-   </td>
-  </tr>
-  <tr>
-   <td>Download OnlyKey Color International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_IN_TRVL_Color.cpp.hex">here</a>
-   </td>
-   <td>Download OnlyKey Original International Travel Edition firmware <a href="https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/OnlyKey_Beta7_IN_TRVL_Original.cpp.hex">here</a>
-   </td>
-  </tr>
-</table>
-
-
-{% include callout.html content="**Step 4.** You can ensure the integrity of your downloaded firmware by verifying the checksum" type="default" %}
-
-<table>
-  <tr>
-   <td>
-File Name
-   </td>
-   <td>SHA 256 Checksums
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta7_STD_Color.cpp.hex
-   </td>
-   <td>fa2ccd6925fa9e3f72f1d7b40db0c7f33732fe0a8f55fb8a3f315ad9ac05ef87
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta7_STD_Original.cpp.hex
-   </td>
-   <td>356e25e337dad8fe1798592d5c674ddd44fac1340e054df9d43176f7e59406b2
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta7_IN_TRVL_Color.cpp.hex
-   </td>
-   <td>cac81a1d5606c3939c45c5b0ebeab8f9d01c510e20a00123ad35314fc1006754
-   </td>
-  </tr>
-  <tr>
-   <td>OnlyKey_Beta7_IN_TRVL_Original.cpp.hex
-   </td>
-   <td>7467910663f72bf7604be776a381a72d881df5afcc5a0da697aaedbfa315a0f9
-   </td>
-  </tr>
-</table>
-
-
-{% include tip.html content="To do this in Windows open a command prompt and type 'certUtil -hashfile pathToFileToCheck SHA256'. To do this in Linux open a terminal and type 'sha256sum pathToFileToCheck'. Where pathToFileToCheck is replaced with the path of the file you are checking." %}
-
-{% include callout.html content="**Step 5.**  In Teensy Loader select File -> Open HEX File. Then select the firmware you downloaded and click open." type="default" %}
-{% include callout.html content="**Step 6.**  Now the firmware should appear at the bottom of the Teensy Loader application." type="default" %}
-
-{% include image.html file="image67.png" max-width="213" %}
-
-{% include note.html content="If a message prompts that 'HEX file is too large' ensure that your OnlyKey is plugged in." %}
-
-{% include callout.html content="**Step 7.**  In order to enable the OnlyKey to upload the new firmware a jumper (Paperclip, aluminum foil etc) must make contact between the two small copper color circles shown while the OnlyKey is plugged into the USB port." type="default" %}
-
-{% include tip.html content="If your OnlyKey has a case on it you can just slip the two corners out of the case without completely removing the case." %}
-
-{% include image.html file="image16.png" %}
-
-{% include callout.html content="**Step 8.**  With the Teensy Loader in the foreground, you should now see the Teensy Loader progress bar and then a reboot complete appear in the Teensy Loader which indicates that the firmware has loaded successfully." type="default" %}
-
-{% include image.html file="image48.png" max-width="200" %}
-
-{% include image.html file="image2.png" max-width="202" %}
-
-**Under The Hood** - What actually happens when you load the firmware is that a mass erase is completed first. What this means is that all data is completely wiped, and then the new firmware is loaded.
-
+{% include callout.html content="**Step 3.** **Check out the new features [here](#new-features)**" type="default" %}
 
 ### Install OnlyKey Desktop App {#app-desktop}
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.dmg)
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0.dmg)
 
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.exe)
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0.exe)
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0_amd64.deb)
 
-{% include note.html content="Linux users must follow the following instructions to update the UDEV rule for the app to be able to communicate with the OnlyKey - [Linux Guide](https://docs.crp.to/linux.html)" %}
-
+{% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions to create a UDEV rule for the app to be able to communicate with the OnlyKey - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
 {% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06<br> [ **GPG Public Key**](https://keybase.io/trustcrypto/pgp_keys.asc)" %}
 
+### Steps to Upgrade OnlyKey firmware {#loading-onlykey-firmware}
 
-### Steps to Setup OnlyKey {#onlykey-setup}
+There is an option in the app to load firmware before first setup of a new device. There is also a tab named [Firmware] in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed using a simple blockchain and verified on the OnlyKey.
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
-Now that the new OnlyKey app and firmware are installed its time to setup OnlyKey.
-
-{% include callout.html content="**Step 1.** Select [Next] to get started." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
-
-{% include callout.html content="**Step 2.** Enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite2.png)
-
-{% include callout.html content="**Step 3.** Re-enter PIN code, and select [Next]." type="default" %}
-
-{% include callout.html content="**Step 4.** Enter a PIN code for second profile, check the disclaimer box, and select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
-
-{% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
-
-{% include callout.html content="**Step 6.** Re-enter PIN code, and select [Next]." type="default" %}
-
-{% include callout.html content="**Step 7.** Select [Use PGP Key instead of passphrase]" type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7.png)
-
-{% include callout.html content="**Step 8.** With slot 1 selected, paste OpenPGP RSA key and enter passphrase and then select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup8.png)
-
-{% include callout.html content="**Step 9.** If you generated your keys as described in the [Generating Keys section](https://docs.crp.to/usersguide.html##generating-keys) select [subkey 1] and then select [Save]. If you generated a custom backup key then load the subkey used for backups to slot 1." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup9.png)
-
-{% include callout.html content="**Step 10.** Select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. Your device will reboot automatically when the restore is complete." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
-
-Your device is now set up!
-
-Check out the new app features below.
+- Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
+  - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.8/Signed_OnlyKey_Beta8_STD_Color.txt)
+- Follow the instructions in the app to load firmware
 
 ## New OnlyKey Features {#new-features}
 
-### Backup Passphrase
+### FIDO2
 
-Keys are great but a passphrase is an easier way to securely backup your OnlyKey. If you are already using an OpenPGP key for backup you can switch to a passphrase simply by following the instructions on the [Set Backup Passphrase or Key] page. Your OpenPGP key will remain on the OnlyKey but the passphrase will be used for future backup and restore.
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature1.png)
+OnlyKey is ready for the passwordless future by adding FIDO2 (WebAuthn) support. While the future might be passwordless, the present is definitely not and so OnlyKey continues to support multiple methods of authentication including:
 
-### Two Profile Support
+- A hardware password manager
+- Multiple two-factor methods – FIDO U2F, FIDO2, TOTP, and Yubikey OTP
+- Passwordless SSH login
 
-You may notice now that when setting your PINs there is a primary profile and a secondary profile. The secondary profile can be either a standard profile or plausible deniability profile. This is a change as the previous OnlyKey release only had the option for the second profile to be a plausible deniability profile. The standard profile is a full featured second profile with 12 available slots and the plausible deniablity profile is a limited feature second profile that looks and acts just like a device with [International Travel Edition firmware](https://docs.crp.to/ite.html).
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
+So what can you do with FIDO2?
 
-### In App Firmware Updates
+- Login to Windows 10 with a security key
+- Login to websites with OnlyKey as 2nd factor
+- FIDO2 supports something called resident keys, this lets you use the security key and a PIN to login. No username/password required.
 
-You may notice now that there is an option in the app to load firmware when setting up a device. There is also a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed using a simple blockchain and verified by on the OnlyKey.
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
+### Webcrypt 2.0
+
+We have made many improvements to the Webcrypt secure messaging tool including:
+
+- Secure file encryption/decryption - Easily encrypt multiple files into a GPG encrypted container, no software install required supports Firefox, Chrome, the new Edge browser, and Brave browser.
+- Keybase user search tool. Use this to search for and send a secure message or file to anyone on Keybase.
+- Native Android support (Chrome and Firefox). Now no app is required to send encrypted messages or encrypt files on Android devices with OnlyKey.
+
+### Challenge-Response
+
+OnlyKey is the first open source device to support this feature which was previously only supported by Yubikey. Challenge and response is a useful feature that is already supported by many apps. Now these apps can support OnlyKey as well as Yubikey. Applications that support this include:
+
+- KeePassXC software password manager now supports challenge-response to lock your password vault using OnlyKey. Using a master password plus challenge-response is much better than a master password alone. Stay tuned for the next KeePassXC release with OnlyKey support.
+
+- Computer log in and full-disk encryption – The challenge-response code can be used to log in and is used with full-disk encryption solutions like LUKs. We will be working to add OnlyKey support to these projects. Know of any others we should add? We would love to hear about it, let us know and ask the project to add OnlyKey support.
+
+### Computer Lock
+
+Want a quick and easy way to lock both your OnlyKey and workstation? Just set one of the buttons on OnlyKey as your lock button. When you press the button OnlyKey will automatically lock your computer screen and then lock itself.
+
+### Adjustable LED Brightness
+
+You can now adjust the brightness of the light on OnlyKey through the app.
+
+### PIN Change
+
+You can now change your PIN through the OnlyKey app. Go to the [Setup] tab to change your PINs at any time.
+
+### OnlyKey Quick Setup
+
+A keyboard prompt configuration is now available for configuring OnlyKey completely app-free. This feature is very useful for new user’s that only want to use OnlyKey as a security key and don’t want any apps to install.
+
+There are two modes here:
+- Auto-mode – Great for administrators provisioning devices for users. Press a button to automatically generate secure random PINs and passphrase. Setup is completed in a matter of seconds.
+- Manual-mode – Quickly setup device with chosen PINs by following steps in the keyboard prompt. OnlyKey types out the instructions to follow, no app required.
+
+
 
 {% include links.html %}

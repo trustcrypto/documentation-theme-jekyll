@@ -37,20 +37,37 @@ When it comes to hardware security there are terms such as tamper resistant, tam
 
 - **Secure element** - This label indicates that the manufacturer intends for the device to be used for security related applications. This label does not ensure that a device is actually secure. For example, the recent article [here](https://www.cl.cam.ac.uk/~sps32/cardis2016_sem.pdf) found that when attempting to extract the memory from a device using a scanning electron microscope, the smart card (secure element) was compromised just as the other non-secure elements tested.
 – ATMEL AT90SCxx 0.21µm 2T memory cell (smart card type IC)
-Additionally, it is important to consider that most security weaknesses are related to issues with the implementation of a secure element. For example, the Ledger hardware wallet was [recently compromised](https://saleemrashid.com/2018/03/20/breaking-ledger-security-model/) due to their custom architecture. Another consideration with secure elements is that an NDA is required by most manufacturers, which requires the device to be closed source with unverifiable security. This sometimes allows vulnerabilities to go unnoticed for years, as was the case with the recent [Infineon RSA key generation vulnerability](https://crocs.fi.muni.cz/public/papers/rsa_ccs17) that affected millions of smart cards and TPMs; "The vulnerability is present in NIST FIPS 140-2 and CC EAL 5+ certified devices since at least the year 2012".
+Additionally, it is important to consider that most security weaknesses are related to issues with the implementation of a secure element. For example, the Ledger hardware wallet was [recently compromised](https://saleemrashid.com/2018/03/20/breaking-ledger-security-model/) due to their system architecture. Another consideration with secure elements is that an NDA is required by most manufacturers, which requires the device to be closed source with unverifiable security. This sometimes allows vulnerabilities to go unnoticed for years, as was the case with the recent [Infineon RSA key generation vulnerability](https://crocs.fi.muni.cz/public/papers/rsa_ccs17) that affected millions of smart cards and TPMs; "The vulnerability is present in NIST FIPS 140-2 and CC EAL 5+ certified devices since at least the year 2012".
 
-OnlyKey meets many of the requirements of FIPS certification including using FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256). OnlyKey circuitry is coated with a compound that is both chemical resistant and tamper resistant. This means that it would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. Removal of the coating also results in noticeable damage to the OnlyKey (FIPS 140-2 Level 2 - Tamper Evident).
+UPDATE 10/2019 - Additional security issues have been identified in closed source security keys and smart cards.
+- https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk
+- https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/
+- https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/
+
+- **FIPS-140-2** - OnlyKey meets many of the requirements of FIPS certification including using FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256). OnlyKey circuitry is coated with a physical protection compound that is both chemical resistant and tamper resistant. This means that it would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. Removal of the coating also results in noticeable damage to the OnlyKey (FIPS 140-2 Level 2 - Tamper Evident).
 
 ## Technical Specifications
+
+### OnlyKey secure element {#secure-element}
+
+- Freescale Kinetis [flash security](#flashsecurity)
+- Data-at-rest encryption (AES-256 GCM)
+- On-boot firmware integrity verification
+
+**Side-channel attack countermeasures**
+
+- System integrity counters (Glitching attack countermeasure)
+- Random processor delay intervals (TEMPEST attack countermeasure)
+- On-device PIN (Correct PIN required to perform cryptographic functions)
 
 ### Encryption and hashing methods
 
 - Data at rest is encrypted via AES-256-GCM
-- SSH Authentication uses ECC P256 or ed25519
+- FIDO2 data is encrypted via AES-256-CBC
+- SSH Authentication uses ECC P256 or ed25519 signing
 - OpenPGP/GPG Decryption/Signing uses RSA (1024, 2048, 3072, and 4096)
-- [FIDO U2F](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f) uses AES-256-GCM and ECC P256
 - Firmware signing/verification uses NACL
-- Firmware integrity checking utilizes SHA-512
+- Firmware integrity verification utilizes SHA-512
 - [WebCrypt App](https://docs.crp.to/webcrypt.html) uses NACL and AES-256-GCM for data in transit and OpenPGP for secure messages
 - [Yubico® One-Time Password](https://docs.crp.to/features.html#Yubico-one-time-password) uses AES-128
 - Challenge-response uses HMACSHA1
@@ -106,7 +123,92 @@ There are multiple protections in use to prevent successful hardware attacks.
 
 - Firmware is checked for integrity each time the device is powered on prior to loading the firmware. The device only starts the firmware if the firmware has not changed.
 
+## Supply Chain
+
+### Where is OnlyKey made?
+
+As with most electronics OnlyKey consists of a PCB and various electronic components. Everything is assembled in the USA.
+
+- The first step in making an OnlyKey is the PCB, this component is essentially the board that the electronics are put onto. This is manufactured in China.
+
+- Next, the PCB and various electronic components are assembled, the components are soldered onto the PCB. This is done in Massachusetts.
+
+- Next, the assembled boards are sent to North Carolina for programming and application of the tamper resistant coating. This coating is also what makes OnlyKey durable and water resistant.
+
+- Finally, the completed OnlyKeys are packaged in North Carolina and sent to distributors like Amazon and Amazon EU.
+
 ## Advanced
+
+### About OnlyKey PIN, profiles, key derivation, and encryption
+
+At a high level data at rest is encrypted via AES-256 using a random key that is encrypted by a key encryption key (kek). There is a lot going on to make this happen at a low level and this section is intended to highlight the unique features and methods used to encrypt data at rest.
+
+The following steps occur during initial setup to generate the key used to encrypt data at rest:
+
+1) During OnlyKey startup the bootloader generates a hash of the current firmware, this hash is checked against a stored SHA-512 hash. The firmware is loaded only if the hashes match.
+
+2) Once the firmware is loaded a check is completed to ensure the flash is locked (Flash Security, this occurs during the first boot which is when the device is programmed during manufacturing).
+
+3) During initial setup, a PIN is set on the primary profile. During PIN set the following occurs:
+- A 32 byte random number (nonce1) is stored in locked flash
+- A 32 byte random number (nonce2) is stored in locked eeprom (hardware wear leveled flash)
+- A SHA256 hash (pinhashpriv) of the user's PIN and nonce1 is generated
+- A Curve25519 public key (pinhashpub) of pinhashpriv is generated
+- If there is only one profile a Curve25519 shared secret of pinhashpriv and pinhashpub is generated (kek1)
+- If there are two profiles a Curve25519 shared secret of pinhashpriv and pinhashpub2 is generated (kek1)
+- A SHA256 hash (kek2) of kek1, nonce2, nonce1, and a 16 byte ID (Freescale chip ID stored in ROM) is generated
+- If there is not already a pinhashpub saved (initial setup), a 32 byte random number is generated (profilekey)
+- The profilekey is encrypted via AES-256 GCM using kek2 as the key-encryption-key and Freescale chip ID as IV
+- The encrypted profilekey is stored in locked flash
+- The public keys pinhashpub and pinhashpub2 (if 2nd profile) are stored in locked flash
+
+All sensitive data on OnlyKey is encrypted with this AES-256 profilekey and IVs change based on the slot/type of data being encrypted.
+
+- A random 32 byte number is generated, this is the default ECC key used for key derivation
+- This ECC key is stored in ECC key slot 32
+- The derivation key is not used directly, it is used to derive other keys for things like the OnlyKey SSH agent
+
+4) Once PINs have been set PIN authentication is required to unlock OnlyKey. During PIN authentication the following occurs:
+- A SHA256 hash (pinhashpriv) of the guessed PIN and nonce1 is generated
+- A Curve25519 public key (guesedpinhashpub) of pinhashpriv is generated
+- A SHA256 hash (maskedpublicguessed) of nonce2(16 bytes), Freescale chip ID (2nd 16 bytes), and guesedpinhashpub is generated
+- A SHA256 hash (maskedpublicstored) of nonce2(16 bytes), Freescale chip ID (2nd 16 bytes), and storedpinhashpub is generated
+- This is repeated for profile 2 if there are 2 profiles
+
+The two hashes, maskedpublicguessed and maskedpublicstored are compared, if they match the guessed PIN is correct and the follow occurs:
+- If there is only one profile a Curve25519 shared secret of pinhashpriv and pinhashpub is generated (kek1)
+- If there are two profiles a Curve25519 shared secret of pinhashpriv and pinhashpub2 is generated (kek1)
+- A SHA256 hash (kek2) of kek1, nonce2, nonce1, and a 16 byte ID (Freescale chip ID stored in ROM) is generated
+- The profilekey is decrypted via AES-256 GCM using kek2 as the key-encryption-key and Freescale chip ID as IV
+
+**PIN Changes**
+During PIN changes the profilekey remains static but is re-encrypted with a new key-encryption-key. A new kek2 is generated based on user's new PIN and a newly generated 32 byte random number nonce2.
+
+### How does OnlyKey encrypt backup data {#how-backup}
+
+Backups may only occur if a backup key/passphrase is set. Without setting a backup key/passphrase attempting to backup will only print instructions for how to set a backup key/passphrase. A backup key/passphrase may only be set during initial setup or if the device is in [config mode](#config-mode). There is also an option to lock backup key which ensures that the backup key may not be changed on a device. Enabling this option where there is no backup key permanently disables the backup feature.
+
+When a backup key/passphrase is set, the OnlyKey is unlocked, and a backup is initiated by user presence on the OnlyKey the following occurs:
+- OnlyKey retrieves records to backup and compiles them all into a buffer
+- Once all records are retrieved the buffer is encrypted via AES-256 GCM
+- If the backup key is an ECC key the AES-256 encryption key is derived as follows:
+-- A shared secret (sec1) of the ECC private and public keys (pub1) is generated (This ECC key may be Curve25519, secp256r1, or secp256k1)
+-- A random IV (iv) of 12 bytes is generated
+-- A SHA256 hash (sec2) of sec1, pub1, and iv is generated
+- The data in the buffer is then encrypted via AES-256 GCM with the key sec2 and the IV
+- The IV is appended to the end of the encrypted buffer
+
+- If the backup key is an RSA key the AES-256 encryption key is derived as follows:
+-- A random 32 byte number is generated as the AES-256 key
+-- The AES-256 key is encrypted via mbedtls_rsa_rsaes_pkcs1_v15_encrypt (RSA key size 2048 - 4096)
+- The data in the buffer is then encrypted via the random AES-256 GCM key
+- The pkcs1_v15 output is appended to the end of the encrypted buffer
+
+- The encrypted data is then converted to base64 format and typed out via the keyboard into a text box where it may be saved as a text file.
+
+-----BEGIN ONLYKEY BACKUP-----
+<base64 encrypted data>
+-----END ONLYKEY BACKUP-----
 
 ### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
 

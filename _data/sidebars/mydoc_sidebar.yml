@@ -159,10 +159,6 @@ entries:
       url: /webcrypt.html
       output: web, pdf
 
-    - title: BrowserCrypt (OpenPGP Chrome Extension)
-      url: /browsercrypt.html
-      output: web, pdf
-
     - title: SSH/GPG Agent
       url: /onlykey-agent.html
       output: web, pdf
@@ -179,8 +175,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Legacy Firmware Upgrade Guide
+    - title: Firmware Upgrade Guide
       url: /upgradeguide.html
+      output: web, pdf
+
+    - title: Legacy Firmware Upgrade Guide
+      url: /legacyupgradeguide.html
       output: web, pdf
 
     - title: International Travel Edition Guide
@@ -189,10 +189,6 @@ entries:
 
     - title: Plausible Deniability Setup Guide
       url: /pdguide.html
-      output: web, pdf
-
-    - title: Deploying OnlyKey to the Enterprise
-      url: /enterprise.html
       output: web, pdf
 
     - title: Using OnlyKey with Linux

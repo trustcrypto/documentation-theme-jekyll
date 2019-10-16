@@ -19,7 +19,7 @@ General information on the International Travel Edition OnlyKey firmware is avai
 
 {% include note.html content="Before getting started make sure you have OnlyKey firmware Beta 7 or later and the OnlyKey app is installed. OnlyKey must be in a factory default state to set up a plausible deniability profile." %}
 
-{% include callout.html content="**Step 1.** Select [Next] to get started." type="default" %}
+{% include callout.html content="**Step 1.** Select the Advanced checkbox and then select [Next] to get started." type="default" %}
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
 
@@ -56,5 +56,17 @@ General information on the International Travel Edition OnlyKey firmware is avai
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pref.png)
 
 {% include note.html content="This ensures that after a factory default occurs there is not a way of determining what edition of firmware had been previously loaded on the device. This also requires re-loading the firmware through the OnlyKey app." %}
+
+## Plausible Deniability FAQ
+
+Q - Is it believable that my OnlyKey only has one profile (only 12 slots used)?
+A - We actually sell quite a few [international travel edition Onlykeys](https://onlykey.io/products/onlykey-international-travel-edition-w-stealth-black-case?variant=8661476737068) so yes it is believable that you are using one of these. Even if you did not purchase an International Travel Edition Onlykey it is plausible that you have one because you can download and load the [international travel edition firmware here](https://github.com/trustcrypto/OnlyKey-Firmware/releases). People buy these when they live in or want to travel places where strong encryption may be banned.
+
+Q - Why not just give an adversary your self-destruct PIN?
+A - If you are not concerned with plausible deniability then yes the self-destruct pin would be fine. The adversary would obviously know that this was intentional.
+
+Q - Wouldn't it be possible for an adversary to brute force the primary profile PIN by trying 9 pins and then entering the secondary profile pin?
+A - When using a plausible deniability profile there is a counter that counts how many failed login attempts since the last primary profile login. You have a maximum of 20 failed attempts since the last successful login to the primary profile. Once that is reached the primary profile hash is deleted, essentially the primary profile is gone forever.
+
 
 {% include links.html %}

@@ -4,7 +4,7 @@ permalink: features.html
 sidebar: mydoc_sidebar
 tags: [OnlyKey, Features]
 keywords: OnlyKey, Features
-last_updated: Jan, 18 2018
+last_updated: Oct, 10 2019
 summary: Detailed information on OnlyKey Features
 toc: false
 folder: mydoc
@@ -13,31 +13,20 @@ folder: mydoc
 
 ## Features {#features}
 
-### LED Definitions (OnlyKey Color) {#led-definitions-onlykey-color}
+### LED Definitions {#led-definitions-onlykey-color}
 
-*   Steady Green Light = Unlocked
-*   No Light = Locked
-*   Single Yellow Flash = Button Pressed for PIN entry
-*   3 Red Flashes = Wrong PIN
-*   Continuous Red Flashes = Exceeded PIN tries
-*   Continuous Green Flashes = Backup and restore is complete.
-*   Blue Fade in and Fade out = U2F request
-*   Purple Fade in and Fade out - Private key signing request (SSH or PGP)
-*   Turquoise Fade in and Fade out - Private key decryption request
-*   Red Fade in and Fade out - Device is in config mode
-*   Steady White Light - Device is in bootloader mode, use the OnlyKey app to load firmware.
-
-### LED Definitions (Original OnlyKey) {#led-definitions-original-onlykey}
-
-*   Steady Light = Unlocked
-*   No Light = Locked
-*   Single Flash = Button Pressed
-*   3 Flash = Wrong PIN
-*   Continuous Flash = Exceeded PIN tries
-                    Or if you just did a backup and restore, the restore is complete.
-
-*   Fade in and Fade out = U2F, SSH, or private key operation request
-   Or if you have placed your device into config mode
+*   Steady green light = Unlocked
+*   No light = Locked
+*   Single yellow flash = Button pressed for PIN entry
+*   3 red flashes = Wrong PIN
+*   Continuous red flashes = Exceeded PIN tries
+*   Continuous green flashes = Backup and restore is complete.
+*   Blue fade in and fade out = FIDO U2F request
+*   Blue blink on/off = FIDO2 request
+*   Purple fade in and fade out - Private key signing request (SSH or PGP)
+*   Turquoise fade in and fade out - Private key decryption request
+*   Red fade in and fade out - Device is in config mode
+*   Steady white light - Device is in bootloader mode, use the OnlyKey app to load firmware.
 
 ### Password Manager {#password-manager}
 
@@ -48,11 +37,14 @@ Instead of having to remember all of your passwords you can just remember one 7 
 There are 3 methods of two-factor authentication supported by Onlykey.
 
 *   Google Authenticator (TOTP)
-*   Universal 2nd Factor Authentication (U2F)
+*   FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)
 *   Yubico® One-Time Password
 
 #### Google Authenticator (TOTP) {#google-authenticator-totp}
 
+The information below is intended to provide information on OnlyKey's Google Authenticator (TOTP) feature. For information on setting up and using TOTP see the user's guide [here](https://docs.crp.to/usersguide.html#google-authenticator-totp)
+
+**Background**
 Google Authenticator is an application that implements TOTP security tokens from RFC 6238 in mobile apps made by Google, sometimes branded ''Two-step verification'' (or 2-Step Verification).
 
 Quoting Wikipedia:
@@ -65,6 +57,7 @@ With this kind of two-factor authentication, mere knowledge of username and pass
 
 The service provider generates an 80-bit secret key for each user (whereas RFC 4226 §4 requires 128 bits and recommends 160 bits).[36] This is provided as a 16, 26 or 32 character base32 string or as a QR code.
 
+**How it works on OnlyKey**
 As mentioned above the service provider generates a base32 string or a QR code. While the way you would set up the Google Authenticator app on your phone is typically to take a picture of the QR code you also have the option of displaying the base 32 string. This option is available when you are setting up an account there may be a link that says something like ''Can't read QR code'' that you have to click to show the base 32 key. You would then copy and paste this key into the the OnlyKey slot that you would like to use with this account.
 
 
@@ -74,92 +67,28 @@ And then press the OnlyKey button to output your 6 digit OTP into the passcode f
 
 Currently the Google Authenticator (TOTP) feature requires the OnlyKey to have the correct time. This is done automatically by having the OnlyKey app installed or by browsing to https://apps.crp.to for on-the-go use.
 
-#### Universal 2nd Factor Authentication (U2F) {#universal-2nd-factor-authentication-u2f}
+#### FIDO2 and FIDO Universal 2nd Factor Authentication (U2F) {#universal-2nd-factor-authentication-u2f}
 
-OnlyKey's implementation of U2F started out by reviewing the model in use by Yubikey® [here](https://www.Yubico.com/2014/11/Yubicos-u2f-key-wrapping/). We then came up with our own implementation of key wrapping that utilizes [AES-256-GCM](https://github.com/rweather/arduinolibs), this is also used for encryption of local storage. AES-256-GCM is both FIPS approved and [NIST recommended](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf). Our U2F implementation utilizes a double key wrapping method that mitigates the [vulnerabilities that we identified in Yubikey and other U2F devices](https://groups.google.com/forum/#!msg/onlykey/HZ-HWk_LibE/jQMxWgV4BQAJ). Our double key wrapping method works as follows:
+The information below is intended to provide information on OnlyKey's FIDO2 / FIDO U2F feature. For information on setting up and using FIDO2 see the user's guide [here](https://docs.crp.to/usersguide.html#universal-2nd-factor-u2f)
 
-**When the Onlykey is configured with a PIN the following occurs:**
+OnlyKey uses the open source Solokey FIDO2 implementation and the source is available [here](https://github.com/trustcrypto/libraries/tree/master/fido2). The Solokey FIDO2 implementation is FIDO2 Certified - Certification No. FIDO20020191001001.
 
-1) A first random value is stored (nonce) that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin.
-
-2) A second random value is stored (Curve25519 derivation key) that is the SHA-256 hash of random values including hardware generated noise and the capacitive touch readings from a user's skin.
-
-**When U2F is initialized the following occurs:**
-
-1) A U2F handlekey is generated from the SHA-256 hash of the derivation key and the attestation private value.
-
-2) A U2F apphandlekey is generated from the SHA-256 hash of the handlekey, variable portion of the attestation certificate, the attestation private value.
-
-**When U2F registration occurs (physical presence required):**
-
-1) A site specific P256 ECC private key is generated from random values including hardware generated noise and the capacitive touch readings from a user's skin.
-
-2) A site specific thisappkey is generated from the SHA-256 hash of the application id and the apphandlekey.
-
-3) A site specific IV is generated from the SHA-256 hash of the application id.
-
-4) A site specific thishandkey is generated from the SHA-256 hash of the application id, the attestation private value, and the apphandlekey.
-
-6) The site specific application Id is combined with the P256 ECC private key forming a handle.
-
-7) Inner keywrap - The site specific P256 ECC private key portion of the handle is encrypted via AES-256-GCM using the IV and the thishandkey.
-
-8) Outer keywrap - The full handle is encrypted via AES-256-GCM using the IV and the thisappkey.
-
-**When U2F authentication occurs (physical presence required):**
-
-1) A site specific thisappkey is generated from the SHA-256 hash of the application id and the apphandlekey.
-
-2) A site specific IV is generated from the SHA-256 hash of the application id.
-
-3) A site specific thishandkey is generated from the SHA-256 hash of the application id, the attestation private value, and the apphandlekey.
-
-4) Outer keywrap - The full handle is decrypted via AES-256-GCM using the IV and the thisappkey.
-
-5) Inner keywrap - The site specific P256 ECC private key portion of the handle is decrypted via AES-256-GCM using the IV and the thishandkey.
-
-6) The site specific P256 ECC private key is used with uECC_sign_deterministic to sign the hashed challenge.
-
-**When U2F authentication (check-only) occurs:**
-
-1) A site specific thisappkey is generated from the SHA-256 hash of the application id and the apphandlekey.
-
-2) If the website requests check-only, thisappkey is used to decrypt the application id portion of the handle and response is given.
+There are differences between OnlyKey and Solokey FIDO2 implementations which are highlighted below.
 
 **Attestation Certificates**
 
-For the attestation certificates we allow users to import their own certificates. We do understand that the attestation certificate and private key in other U2F tokens is hard coded and the user is unable to change this. There is an ongoing discussion of how you can have a closed source system (or U2F token) and truly be able to trust the security of that system. A closed source product is not verifiable, and requires you to trust that the vendor was not compelled to put a backdoor into the product. This is why we are using what may be the first open source implementation of U2F that supports user import of attestation certificates.
+*What are they?* - An attestation certificate and signing key is used to attest to a server or application that a key is from a certain vendor. This permits servers/applications to only allow keys from certain vendors (i.e. Only permit Yubikey to be used). Attestation certificates and signing keys are not used for securing or encrypting data.
 
-{% include note.html content="In order to Load your own custom U2F certificate to OnlyKey see the certificate generation guide [here](https://docs.google.com/document/d/1LE09BB2ULGblc--3Ttut66NVMJk698LHp0f3DeRdr7w/edit?usp=sharing)" %}
+For the attestation certificates OnlyKey comes with a default attestation certificate and signing key and also allows users or enterprises to import their own attestation certificate/key. This feature allows organizations to only permit FIDO2 keys issued by the organization to be used. Importing attestation certificates and signing keys can be done in the OnlyKey app.
 
-**What is attestation and why would I load a custom certificate and key?**
+**Secure Backup and Restore**
+OnlyKey supports the [secure encrypted backup anywhere](#secure-backup) feature to enable secure backup and restore of security keys.
 
-*Short Answer - A custom certificate and key is generally not needed. Keeping the default attestation certificate and key is good for privacy as there is no personally identifiable information in the default key. However, there are some use cases like if an organization wants to load custom certificates and keys to devices so that employees only use the company issued device.*
+**Resident Keys**
+OnlyKey supports up to 15 resident keys.
 
-Attestation is basically U2F's way of attesting that a token is from a certain vendor. For example, if you were to use a Yubikey, the website would know that you were using a Yubikey to authenticate instead of some other vendor's device as shown below:
-
-{% include image.html file="u2f-attestation.jpg" max-width="500" %}
-
-This is good in some ways as website's may be able to only permit certain vendor's devices that they trust. But there are two big problems here:
-
-**1) This also can be used to track users and has some serious privacy implications.**
-As shown in the output from U2F authentication you can see that a unique serial number is visible.
-
-{% include image.html file="serial-number.jpg" max-width="400" %}
-
-It is unclear if manufactures generally use a unique serial number for each device or a batch of devices. Either way there are many cases where this may permit identification and tracking of the user.
-
-In the case of unique serial numbers the website knows exactly which device was used to authenticate. Knowing what device was used in one step away from knowing what person is accessing the website. And along with this at what time they accessed it, from what location, and what they accessed. If the website were to receive a national security letter they would then have to turn over this information on all of their users. This metadata provides a way to track user's activity and identity with precision.
-
-i.e. Bob uses his device to authenticate to Google and to Facebook. Agency X knows that serial number '123456' device is used to authenticate to Google and Facebook. Agency X knows that this Facebook account belongs to Bob because he has a profile picture of himself, now they know that the Google account also belongs to Bob along with every other account that has a device with serial number '123456' assigned.
-
-OnlyKey addresses this issue by using a generic certificate. The serial number of the default attestation certificate on OnlyKey is '1', this is the same across all OnlyKey devices and to even further obfuscate the identity of the user this same certificate is used by another device (software simulated U2F). So this way there is no way to prove that you are even using an OnlyKey. This makes it so that U2F can be used without compromising privacy.
-
-**2) You can never have an open source U2F device with a "trusted" attestation key/certificate**
-
-In order to be open source it must be possible for a user to change the source (firmware) running on their device. Otherwise, there is no way of knowing what firmware is running on their device or if the vendor was compelled to put a backdoor into the device. But if you allow a user to change the source on their device now you have just invalidated the attestation that this device is a trusted device from a certain vendor. Open source U2F and attestation are essentially incompatible.  
-
-At this point this is not much of an issue as websites allow all U2F token's and do not enforce the attestation. If this were to occur, then open source U2F tokens would no longer work. As many user's do not trust closed source systems for privacy reasons, if this were to occur there may be a need for a new open source friendly fork of U2F to be developed, or use an alternative form of 2FA.
+**WebCrypt Support**
+OnlyKey supports the WebCrypt FIDO2 extension which permits secure messaging and file encryption via PGP encryption.
 
 #### Yubico® One-Time Password {#Yubico-one-time-password}
 
@@ -171,13 +100,6 @@ For more information on Yubico® OTP see [this](https://www.Yubico.com/products/
 
 The keys feature allows you to use OnlyKey to store private keys that can be used for SSH authentication, OpenPGP, and secure OnlyKey backup. Each key may also have a label assigned to it so just like with slots, an identifier can be assigned to each key.
 
-Under the hood -
-
-*   Up to 30 ECC keys are supported of type curve25519, P256 (NIST), and secp256k1 (Used for Bitcoin)
-*   Up to 4 RSA keys are supported with key sizes 1024, 2048, 3072, and 4096 bit keys.
-
-{% include image.html file="image69.png" %}
-
 Keys are loaded using the OnlyKey App. Step by step directions for generating and loading keys are provided in the User's Guide here:
 
 - [Generate keys](https://docs.crp.to/usersguide.html#generating-keys) using Keybase
@@ -185,15 +107,25 @@ Keys are loaded using the OnlyKey App. Step by step directions for generating an
 
 ### SSH Login {#ssh-login}
 
-SSH Authentication - Currently only ECC keys (curve25519 & NIST-P256) are supported for SSH authentication. Using the [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html) ssh authentication is easy and your private key is never exposed on a computer where it can be compromised by hacker.
+SSH Authentication - Currently only ECC keys (curve25519 & NIST-P256) are supported for SSH authentication. Using the [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html) SSH authentication is easy and your private key is never exposed on a computer where it can be compromised by hacker.
 
-### OpenPGP Everywhere {#openpgp}
+### OpenPGP Everywhere Message and File Encryption {#openpgp}
 
-OnlyKey supports OpenPGP everywhere using our apps:
+The information below is intended to provide information on OnlyKey's OpenPGP everywhere feature. For information on setting up and using OpenPGP everywhere see the user's guide [here](https://docs.crp.to/usersguide.html#secure-com)
 
-**[OnlyKey WebCrypt - WebCrypt](https://docs.crp.to/webcrypt.html)** is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide encryption everywhere on-the-go.
+OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
-**[OnlyKey BrowerCrypt - BrowserCrypt](https://docs.crp.to/webcrypt.html)** is a Google Chrome Extension that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide easy and secure PGP encryption in Google Chrome.
+1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android for more information [read this](https://docs.crp.to/android.html).
+
+2) **[OnlyKey WebCrypt Native App](https://docs.crp.to/webcrypt.html)** provides the same app functionality but as a native app for that runs on Windows, mac OS, or Linux.
+
+{% include note.html content="Private keys are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. OnlyKey can only process secure messages when you tell it to by entering a 3 digit challenge code." %}
+
+### Secure Encrypted Backup Anywhere {#secure-backup}
+
+For information on setting up and using secure encrypted backup see the user's guide [here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)
+
+For security information on secure encrypted backup see the security page [here](https://docs.crp.to/security.html#how-backup)
 
 ### Self-Destruct {#self-destruct}
 
@@ -205,19 +137,9 @@ TL;DR - With a fake profile and a real profile someone can't just force you to h
 
 OnlyKey allows the use of a hidden profile (Primary standard profile) and a fake profile (Second profile set to plausible deniability) that essentially provides a cover story. If compelled to unlock an OnlyKey the fake profile can be activated by entering the second profile PIN code. The goal of this feature is that there is no proof that the first profile even exists. The [International Travel Edition](https://docs.crp.to/ite.html) OnlyKey firmware looks and acts just like the Standard Edition firmware when in plausible deniability mode. This means that its not possible to determine if the device is running International Travel Edition firmware (which only has one profile) or the Standard Edition firmware in plausible deniability mode. When the standard edition OnlyKey is in plausible deniability mode it is indistinguishable from an International Travel Edition OnlyKey.
 
-Now that you understand the basics of how the plausible deniability feature works the reason for having two versions of firmware becomes more clear. **OnlyKey is the only device in the world where you can have encryption and there isn't a way to prove that you have encryption.** Here is how this is possible:
+Now that you understand the basics of how the plausible deniability feature works the reason for having two versions of firmware becomes more clear. **OnlyKey is the only device in the world where you can have encryption and there isn't a way to prove that you have encryption.**
 
-Part 1. We ship two versions of the OnlyKey, an [International Travel Edition](https://onlykey.io/products/onlykey-international-travel-edition-w-stealth-black-case?variant=8661476737068) and a [Standard Edition](https://onlykey.io/products/onlykey-color-secure-password-manager-and-2-factor-token-u2f-yubikey-otp-google-auth-make-password-hacking-obsolete?variant=469626486828). We can ship the international travel edition globally and even if there is an encryption ban in the receiving country it is in compliance because it is just a password manager that does not utilize any encryption.
-
-Part 2. Both editions utilize physical flash security to lock the information stored on the devices so there is no way to know what editions a device has loaded. We have taken great care to ensure that the plausible deniability mode on the Standard Edition firmware acts exactly the same as the International Travel Edition firmware.
-
-Part 3. We make it easy for user's to load whatever version of the firmware they want. International customers can easily load the standard edition and vice versa. Even we have no way of knowing what version of firmware a device has loaded.
-
-So now you can see how a user if compelled to do so could say ''I just have a basic password manager, here is my PIN code'' and it would be completely plausible that they do in fact just have a basic password manager. To be even more plausible the user should set up actual accounts with real credentials which work to log into websites.
-
-DISCLAIMER - The intended use of the plausible deniability feature is to protect your information against an illegal adversary that might force you to give up your PIN. Use of this feature in any way that is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity is strictly prohibited.
-
-For more information on encryption and international travel see [https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/](https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/)
+For more information read the [International Travel Edition Guide](https://docs.crp.to/ite.html).
 
 
 
