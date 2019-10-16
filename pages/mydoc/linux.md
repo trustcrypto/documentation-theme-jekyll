@@ -69,7 +69,7 @@ One requirement of TOTP (Time-based One-time Password) is having the correct tim
 
 ## Other Linux and BSD support
 
-Details on using the OnlyKey CLI app and OnlyKey Agent with FreeBSD are available [here](https://groups.google.com/forum/#!searchin/onlykey/freebsd%7Csort:date/onlykey/CEYwdXjB508/vPPcJsEnAwAJ)
+Details on using the OnlyKey CLI app and OnlyKey Agent with FreeBSD are available [here](https://groups.google.com/d/msg/onlykey/CEYwdXjB508/MCe14p0gAwAJ)
 
 
 {% include links.html %}
