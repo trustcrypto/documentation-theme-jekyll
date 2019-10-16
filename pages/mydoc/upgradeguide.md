@@ -109,6 +109,8 @@ We have made many improvements to the Webcrypt secure messaging tool including:
 - Keybase user search tool. Use this to search for and send a secure message or file to anyone on Keybase.
 - Native Android support (Chrome and Firefox). Now no app is required to send encrypted messages or encrypt files on Android devices with OnlyKey.
 
+The Webcrypt 2.0 app will be available on Friday Oct 18th
+
 ### Challenge-Response
 
 OnlyKey is the first open source device to support this feature which was previously only supported by Yubikey. Challenge and response is a useful feature that is already supported by many apps. Now these apps can support OnlyKey as well as Yubikey. Applications that support this include:
@@ -119,15 +121,15 @@ OnlyKey is the first open source device to support this feature which was previo
 
 ### Computer Lock
 
-Want a quick and easy way to lock both your OnlyKey and workstation? Just set one of the buttons on OnlyKey as your lock button. When you press the button OnlyKey will automatically lock your computer screen and then lock itself.
+Want a quick and easy way to lock both your OnlyKey and workstation? Just set one of the buttons on OnlyKey as your lock button. When you press the button OnlyKey will automatically lock your computer screen and then lock itself. Configure this in the OnlyKey app [Preferences] tab.
 
 ### Adjustable LED Brightness
 
-You can now adjust the brightness of the light on OnlyKey through the app.
+You can now adjust the brightness of the light on OnlyKey through the app. Configure this in the OnlyKey app [Preferences] tab.
 
 ### PIN Change
 
-You can now change your PIN through the OnlyKey app. Go to the [Setup] tab to change your PINs at any time.
+You can now change your PIN through the OnlyKey app. Go to the [Setup] tab to change your PINs at any time. Configure this in the OnlyKey app [Setup] tab.
 
 ### OnlyKey Quick Setup
 
