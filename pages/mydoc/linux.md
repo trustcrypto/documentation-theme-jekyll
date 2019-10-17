@@ -37,10 +37,10 @@ For Debian user's install the DEB below.
 For other Linux users you may install the OnlyKey app via [snapcraft](https://snapcraft.io/onlykey-app)
 
 ```
-$ snap install onlykey-app
+$ snap install --beta --devmode onlykey-app
 ```
 
-At time of writing, snapcraft app does not work on Fedora, as an alternative you may also extract the .DEB and run the application directly:
+At time of writing, an issue is open with snapcraft to allow USB permissions, this requires manual approval from snapcraft. Once this is complete the app can be installed without dev-mode. As an alternative you may also extract the .DEB and run the application directly:
 
 ```
 $ ar xf OnlyKey*.deb
