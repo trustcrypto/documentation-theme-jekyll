@@ -42,18 +42,17 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.dmg)
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey.App.5.2.0.dmg)
 
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.exe)
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0.exe)
 
-{% include tip.html content="The latest version of Windows 10 (1903) now requires apps to be “run as administrator” in order to be able to communicate with OnlyKey. While running the OnlyKey App as admin does work for now, we are building a better solution that will be available in an upcoming OnlyKey app update." %}
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0_amd64.deb)
 
-
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
+{% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06<br>" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 247b3ed27a5d7f2c35f6da0d44e0d6e7cb3ac4084eb3f944df1ce58e0df54dce<br>Windows SHA 256 CHECKSUM: 71ae01f86995c1aadae947d447223f65540c0c5ebcd1319dd5e5f1e1907013c0<br>Linux SHA 256 CHECKSUM: 3dc675c5a33c55abb153f98003a41843d4a1b5959f30ff479b76a953799665c8<br> [ **GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/CryptoTrust_LLC_pub.asc)" %}
 
 ### Install OnlyKey Chrome App {#app-chrome}
 
@@ -81,10 +80,6 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 Check out the [OnlyKey Support Forum](https://groups.google.com/forum/#!forum/onlykey)
 
 Check out the [OnlyKey Documentation](https://docs.crp.to)
-
-### GNU/Linux users:
-
-Your system may by default only allow read access to USB devices including the OnlyKey. You'll need to insert a udev rule in order to allow read/write access if the app hangs and you see "Working... please wait". Here are [instructions for inserting a udev rule](https://docs.crp.to/linux.html).
 
 ## Developer Notes
 
