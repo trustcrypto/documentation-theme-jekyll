@@ -466,7 +466,7 @@ To use OnlyKey as a security key follow the instructions given by the website wh
 
 No, while OnlyKey is flashing blue it will not type out any information, OnlyKey also has a 2 second cool off period to ensure this does not happen accidentally.
 
-While you can press any button, some user's may prefer to always press the button of unused slot for FIDO authentication. For example, keep slot 6a unused and always press OnlyKey button 6 for FIDO authentication. 
+While you can press any button, some user's may prefer to always press the button of unused slot for FIDO authentication. For example, keep slot 6a unused and always press OnlyKey button 6 for FIDO authentication.
 " %}
 
 #### Security Key Advanced {#security-key-advanced}
@@ -481,11 +481,11 @@ One touch login may be configured with a security key by assigned the FIDO U2F t
 
 {% include callout.html content="**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login." type="default" %}
 
-{% include tip.html content="There are **two ways to use U2F** on OnlyKey:<br><br>**1)** Have one designated slot on OnlyKey for U2F. i.e. Set slot 6a as U2F and press button 6 to authenticate to an unlimited number of sites.<br><br>**2)** Have U2F enabled along with other account information for each site. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
+{% include tip.html content="There are **two ways to use FIDO U2F** on OnlyKey:<br><br>**1)** Press any button when prompted for FIDO U2F login<br><br>**2)** Have FIDO U2F enabled along with other account information for each site. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
 ![U2F Example](https://docs.crp.to/images/u2f-slot.jpeg)
 <br>Now you can register your security key by pressing button 1. But won't it type out my information while registering? No, while your device is flashing blue you can press the button to register and typing is disabled. Once your security key is registered you can log out and now you have a one touch login configured:<br>- Automatically type out and browse to login page (https://www.dropbox.com/login).<br>- Three second delay ensures login page has time to load, this can be increased if using slow internet connections.<br>- Username and password are entered in login field.<br>- Two second delay ensures security key page has time to load.<br>- U2F authentication completes automatically." %}
 
-Learn more about OnlyKey's implementation of U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
+Learn more about OnlyKey's implementation of FIDO2 / FIDO U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
 
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
