@@ -2,7 +2,7 @@
 title: OnlyKey App
 tags: [OnlyKey App, Chrome App]
 keywords: OnlyKey, App
-last_updated: Jan, 16, 2018
+last_updated: Oct, 18, 2019
 summary: The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chromebook (with Chrome App).
 sidebar: mydoc_sidebar
 permalink: app.html
@@ -34,7 +34,7 @@ For information on using the app with OnlyKey see the [OnlyKey User's Guide](htt
 
 There are two options for installing the OnlyKey app.
 - Install the [OnlyKey Desktop App](#app-desktop) (Recommended)
-- Install the [OnlyKey Chrome App](#app-chrome)
+- Install the [OnlyKey Chrome App](#app-chrome) (Supported on Chrome, Brave Browser, Chromium)
 
 Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
@@ -56,7 +56,7 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
 ### Install OnlyKey Chrome App {#app-chrome}
 
-{% include callout.html content="**Step 1.** Open the Chrome (or Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
+{% include callout.html content="**Step 1.** Open the Chrome (or Brave/Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
 
 {% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
 

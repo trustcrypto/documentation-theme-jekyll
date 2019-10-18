@@ -456,11 +456,18 @@ When websites use the term security key they typically are referring to one of t
 - Universal 2nd Factor (FIDO U2F) - Security key is used just as a 2nd factor along with your password.
 - FIDO2 - A replacement for FIDO U2F released in 2019, Security key may be used as a 2nd factor along with your password or may be used as a passwordless security key on supported websites. Passwordless authentication allows logging in with just a security key and a PIN code.
 
-The term WebAuthn is sometimes used instead of FIDO2, essentially FIDO2 is part of a larger WebAuthn standard.
+The term WebAuthn is sometimes used instead of FIDO2, essentially WebAuthn is the browser Javascript standard and is part of the larger FIDO2 project.
 
 OnlyKey works just like any other FIDO2 or FIDO U2F token. The first step to use a security key is to register the key and then once registered you can login to that site with the key.
 
 To use OnlyKey as a security key follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site.
+
+{% include tip.html content="If I press an OnlyKey button where a password is already assigned won't OnlyKey type out my password?
+
+No, while OnlyKey is flashing blue it will not type out any information, OnlyKey also has a 2 second cool off period to ensure this does not happen accidentally.
+
+While you can press any button, some user's may prefer to always press the button of unused slot for FIDO authentication. For example, keep slot 6a unused and always press OnlyKey button 6 for FIDO authentication. 
+" %}
 
 #### Security Key Advanced {#security-key-advanced}
 
