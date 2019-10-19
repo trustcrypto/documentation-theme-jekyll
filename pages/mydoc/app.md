@@ -58,7 +58,7 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
 {% include callout.html content="**Step 1.** Open the Chrome (or Brave/Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
 
-{% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
+{% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
 
 {% include image.html file="image41.png" %}
 
