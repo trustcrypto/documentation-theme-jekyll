@@ -207,8 +207,11 @@ When a backup key/passphrase is set, the OnlyKey is unlocked, and a backup is in
 - The encrypted data is then converted to base64 format and typed out via the keyboard into a text box where it may be saved as a text file.
 
 -----BEGIN ONLYKEY BACKUP-----
+
 base64 encrypted data
+
 -----END ONLYKEY BACKUP-----
+
 
 ### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
 
@@ -311,5 +314,13 @@ This secondary feature has been added to provide additional protection against t
 Bob leaves his OnlyKey unlocked and plugged into his computer and walks away, Alice walks up and loads her key onto Bob's OnlyKey and sets this as the backup key and then uses this to create a backup. Alice now has the encrypted contents of Bob's OnlyKey and knows the key.
 
 While Bob should not have left his device unlocked and unattended we still want to prevent this scenario so first a device must be in config mode to load keys or to restore from backup. To put a device in config mode hold the # 6 button down for 5 seconds on an unlocked OnlyKey, then re-enter the PIN. This ensures that only someone who knows the PIN can select the private key used to create a backup.
+
+Additional security may be added with the backup key mode mentioned below.
+
+#### Backup Key Mode {#backup-key-mode}
+
+There is also an option to lock the backup key which ensures that the backup key may not be changed on a device. Enabling this option where there is no backup key permanently disables the backup feature.
+
+{% include image.html file="backup-key-mode.png" %}
 
 {% include links.html %}
