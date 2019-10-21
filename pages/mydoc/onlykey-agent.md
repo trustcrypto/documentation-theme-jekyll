@@ -17,7 +17,7 @@ SSH is a popular remote access tool that is often used by administrators. Thanks
 
 ## SSH Agent Quickstart Guide
 
-1) Install OnlyKey agent on your client machine:
+1) After installing [prerequisites](#install), install OnlyKey agent on your client machine:
 
 ```
 $ sudo pip install onlykey
@@ -55,7 +55,7 @@ Note: This method can also be used for git push or other mechanisms that are usi
 $ onlykey-agent user@host git push
 ```
 
-## Installation
+## Installation {#install}
 
 ### MacOS Install with dependencies
 Brew is required. To install visit https://brew.sh/
@@ -69,15 +69,15 @@ $ pip2 install onlykey onlykey-agent
 ```
 $ apt update && apt upgrade
 $ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
-$ pip2 install onlykey
-$ pip2 install onlykey-agent
+$ pip install onlykey
+$ pip install onlykey-agent
 ```
 
 ### Debian Install with dependencies
 ```
 $ apt update && apt upgrade
 $ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
-$ pip2 install onlykey onlykey-agent
+$ pip install onlykey onlykey-agent
 ```
 
 ### Fedora/RedHat/CentOS Install with dependencies
@@ -85,12 +85,12 @@ $ pip2 install onlykey onlykey-agent
 $ yum update
 $ yum install python-pip python-devel libusb-devel libudev-devel \
               gcc redhat-rpm-config
-$ pip2 install onlykey onlykey-agent
+$ pip install onlykey onlykey-agent
 ```
 ### OpenSUSE Install with dependencies
 ```
 $ zypper install python-pip python-devel libusb-1_0-devel libudev-devel
-$ pip2 install onlykey onlykey-agent
+$ pip install onlykey onlykey-agent
 ```
 
 ### Linux UDEV Rule
