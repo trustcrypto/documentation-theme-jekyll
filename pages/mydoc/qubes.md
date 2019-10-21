@@ -39,7 +39,7 @@ dpkg -i OnlyKey_5.1.0_amd64.deb
 
 If your USB qube is based on a non-debian Linux distribution and the .deb file is incompatible there are two additional options available.
 
-**Option 1** - Install Chromium, and install the OnlyKey Chrome extension from [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica). The OnlyKey Chrome app will automatically set the time on the OnlyKey whenever Chromium is running and the OnlyKey is connected.
+**Option 1** - Use one of the alternative Linux install methods for the OnlyKey App described [here](https://docs.crp.to/linux.html#install-app).
 
 **Option 2** - Install the OnlyKey Python Command-Line Utility from [here](https://docs.crp.to/command-line.html). With this installed you can set the time on OnlyKey as follows:
 

@@ -207,7 +207,7 @@ When a backup key/passphrase is set, the OnlyKey is unlocked, and a backup is in
 - The encrypted data is then converted to base64 format and typed out via the keyboard into a text box where it may be saved as a text file.
 
 -----BEGIN ONLYKEY BACKUP-----
-<base64 encrypted data>
+base64 encrypted data
 -----END ONLYKEY BACKUP-----
 
 ### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
