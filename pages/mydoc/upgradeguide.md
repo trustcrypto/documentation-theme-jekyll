@@ -44,6 +44,8 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Step 3.** **Check out the new features [here](#new-features)**" type="default" %}
 
+{% include note.html content="onlykey-agent users, make sure to install the latest version (1.1.0) of onlykey with `$pip install onlykey`" %}
+
 ### Install OnlyKey Desktop App {#app-desktop}
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
