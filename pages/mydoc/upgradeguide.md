@@ -111,7 +111,7 @@ We have made many improvements to the Webcrypt secure messaging tool including:
 - Keybase user search tool. Use this to search for and send a secure message or file to anyone on Keybase.
 - Native Android support (Chrome and Firefox). Now no app is required to send encrypted messages or encrypt files on Android devices with OnlyKey.
 
-The Webcrypt 2.0 app will be available on Friday Oct 18th
+The Webcrypt 2.0 app is available now - https://apps.crp.to
 
 ### Challenge-Response
 
