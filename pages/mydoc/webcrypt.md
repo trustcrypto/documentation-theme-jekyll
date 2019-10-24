@@ -25,10 +25,10 @@ Supports macOS, Windows, Linux, Chrome OS, and Android!
 
 With Keybase user/key management is made easy and with OnlyKey private keys remain securely offline. Private keys are not accessible to the browser or even the local computer. By using FIDO2 as a secure communication channel the web application can send messages to OnlyKey that are decrypted and signed offline. This provides similar function to a token/smart card but no drivers or software required. All that is needed is a browser that supports FIDO2 and an OnlyKey to send secure messages and files.
 
-{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:
-- Twitter, Github, Reddit, or Hackernews Usernames
-- Web domains
-- PGP fingerprint
+{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:<br>
+- Twitter, Github, Reddit, or Hackernews Usernames<br>
+- Web domains<br>
+- PGP fingerprint<br>
 - Or Automatically search for best match" type="default" %}
 
 {% include image.html file="user-search.jpg" %}

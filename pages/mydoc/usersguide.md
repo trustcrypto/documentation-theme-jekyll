@@ -549,10 +549,10 @@ OnlyKey is OpenPGP compatible and the worlds first plug and play encryption devi
 
 ### How it works {#openpgp-how}
 
-{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:
-- Twitter, Github, Reddit, or Hackernews Usernames
-- Web domains
-- PGP fingerprint
+{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:<br>
+- Twitter, Github, Reddit, or Hackernews Usernames<br>
+- Web domains<br>
+- PGP fingerprint<br>
 - Or Automatically search for best match" type="default" %}
 
 {% include image.html file="user-search.jpg" %}
@@ -563,7 +563,7 @@ OnlyKey is OpenPGP compatible and the worlds first plug and play encryption devi
 
 {% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to [https://apps.crp.to/decrypt](https://apps.crp.to/decrypt) or [https://apps.crp.to/decrypt-file](https://apps.crp.to/decrypt-file). You can also create a unique link which allows anyone, with or without an OnlyKey to send you and encrypted file. This may be used in places such as an email signature to receive secure messages. The format is:
 <br><br>
-Send me a secure message - 
+Send me a secure message -
 [https://apps.crp.to/encrypt.html?type=e&recipients=YOURKEYBASEUSERNAME](https://apps.crp.to/encrypt.html?type=e&recipients=YOURKEYBASEUSERNAME)
 <br><br>
 Send me a secure file
