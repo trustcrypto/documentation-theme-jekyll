@@ -31,7 +31,7 @@ With Keybase user/key management is made easy and with OnlyKey private keys rema
 - PGP fingerprint
 - Or Automatically search for best match" type="default" %}
 
-{% include image.html file="user-search.jpg" %}
+{% include image.html file="user-search.jpg" max-width="400" %}
 
 {% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to https://apps.crp.to/encrypt to send a secure message or browse to https://apps.crp.to/encrypt-file to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
 
