@@ -25,7 +25,7 @@ Supports macOS, Windows, Linux, Chrome OS, and Android!
 
 With Keybase user/key management is made easy and with OnlyKey private keys remain securely offline. Private keys are not accessible to the browser or even the local computer. By using FIDO2 as a secure communication channel the web application can send messages to OnlyKey that are decrypted and signed offline. This provides similar function to a token/smart card but no drivers or software required. All that is needed is a browser that supports FIDO2 and an OnlyKey to send secure messages and files.
 
-{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to https://apps.crp.to/search to use our custom Keybase search tool to search Keybase users by:
+{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:
 - Twitter, Github, Reddit, or Hackernews Usernames
 - Web domains
 - PGP fingerprint
@@ -33,11 +33,11 @@ With Keybase user/key management is made easy and with OnlyKey private keys rema
 
 {% include image.html file="user-search.jpg" max-width="400" %}
 
-{% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to https://apps.crp.to/encrypt to send a secure message or browse to https://apps.crp.to/encrypt-file to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
+{% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to [https://apps.crp.to/encrypt](https://apps.crp.to/encrypt) to send a secure message or browse to [https://apps.crp.to/encrypt-file](https://apps.crp.to/encrypt-file) to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
 
 {% include image.html file="webcrypt1.png" %}
 
-{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to https://apps.crp.to/decrypt or https://apps.crp.to/decrypt-file. You can also create a unique link which allows anyone, with or without an OnlyKey to send you and encrypted file. This may be used in places such as an email signature to receive secure messages. The format is:
+{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to [https://apps.crp.to/decrypt](https://apps.crp.to/decrypt) or [https://apps.crp.to/decrypt-file](https://apps.crp.to/decrypt-file). You can also create a unique link which allows anyone, with or without an OnlyKey to send you and encrypted file. This may be used in places such as an email signature to receive secure messages. The format is:
 
 Send me a secure message
 https://apps.crp.to/encrypt.html?type=e&recipients=YOURKEYBASEUSERNAME
