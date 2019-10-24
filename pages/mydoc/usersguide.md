@@ -559,6 +559,8 @@ OnlyKey is OpenPGP compatible and the worlds first plug and play encryption devi
 
 {% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to https://apps.crp.to/encrypt to send a secure message or browse to https://apps.crp.to/encrypt-file to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
 
+{% include image.html file="webcrypt1.png" %}
+
 {% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to https://apps.crp.to/decrypt or https://apps.crp.to/decrypt-file. You can also create a unique link which allows anyone, with or without an OnlyKey to send you and encrypted file. This may be used in places such as an email signature to receive secure messages. The format is:
 
 Send me a secure message
@@ -568,6 +570,8 @@ Send me a secure file
 https://apps.crp.to/encrypt-file.html?type=e&recipients=YOURKEYBASEUSERNAME
 
 " type="default" %}
+
+{% include image.html file="webcrypt2.png" %}
 
 ### See WebCrypt in action {#openpgp-action}
 

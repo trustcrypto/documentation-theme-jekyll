@@ -47,6 +47,8 @@ https://apps.crp.to/encrypt-file.html?type=e&recipients=YOURKEYBASEUSERNAME
 
 " type="default" %}
 
+{% include image.html file="webcrypt2.png" %}
+
 ### See WebCrypt in action {#openpgp-action}
 
 After configuring your OnlyKey following [these instructions](#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
