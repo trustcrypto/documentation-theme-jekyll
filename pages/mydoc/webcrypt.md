@@ -13,7 +13,7 @@ folder: mydoc
 
 ## About
 
-WebCrypt is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide PGP encryption everywhere on-the-go.
+WebCrypt is a serverless Web App that integrates with [OnlyKey](https://onlykey.io) and [keybase.io](https://keybase.io/) to provide PGP encryption everywhere on-the-go.
 
 Supports Firefox, Google Chrome, Brave, and Edge (new) browsers!
 
@@ -24,6 +24,59 @@ Supports macOS, Windows, Linux, Chrome OS, and Android!
 ## How it works
 
 With Keybase user/key management is made easy and with OnlyKey private keys remain securely offline. Private keys are not accessible to the browser or even the local computer. By using FIDO2 as a secure communication channel the web application can send messages to OnlyKey that are decrypted and signed offline. This provides similar function to a token/smart card but no drivers or software required. All that is needed is a browser that supports FIDO2 and an OnlyKey to send secure messages and files.
+
+{% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to https://apps.crp.to/search to use our custom Keybase search tool to search Keybase users by:
+- Twitter, Github, Reddit, or Hackernews Usernames
+- Web domains
+- PGP fingerprint
+- Or Automatically search for best match" type="default" %}
+
+{% include image.html file="user-search.jpg" %}
+
+{% include callout.html content="**Step 2. Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to https://apps.crp.to/encrypt to send a secure message or browse to https://apps.crp.to/encrypt-file to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username as the recipient. " type="default" %}
+
+{% include image.html file="webcrypt1.png" %}
+
+{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to https://apps.crp.to/decrypt or https://apps.crp.to/decrypt-file. You can also create a unique link which allows anyone, with or without an OnlyKey to send you and encrypted file. This may be used in places such as an email signature to receive secure messages. The format is:
+
+Send me a secure message
+https://apps.crp.to/encrypt.html?type=e&recipients=YOURKEYBASEUSERNAME
+
+Send me a secure file
+https://apps.crp.to/encrypt-file.html?type=e&recipients=YOURKEYBASEUSERNAME
+
+" type="default" %}
+
+### See WebCrypt in action {#openpgp-action}
+
+After configuring your OnlyKey following [these instructions](#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
+
+- Enter a message to encrypt
+{% include image.html file="encrypted-message.jpg" %}
+
+- Enter the shown challenge code on the OnlyKey (i.e. 1,5,2)
+{% include image.html file="encrypted-message2.jpg" %}
+
+- Encrypted message shown, by clicking the button again it will be copied to clipboard
+{% include image.html file="encrypted-message3.jpg" %}
+{% include image.html file="encrypted-message4.jpg" %}
+
+- Paste the message into any email or chat (Sending via Gmail shown)
+{% include image.html file="encrypted-message5.jpg" %}
+
+- When the recipient receives the message (email or chat) they can paste it into Webcrypt app to decrypt
+{% include image.html file="encrypted-message6.jpg" %}
+
+- Enter the shown challenge code on the OnlyKey (i.e. 2,2,1)
+{% include image.html file="encrypted-message7.jpg" %}
+
+- Decrypted message shown, if the sender signed the message you will see the sender's name (i.e. t) and their key ID.
+{% include image.html file="encrypted-message8.jpg" %}
+
+- By clicking the button again the message will be copied to clipboard
+{% include image.html file="encrypted-message9.jpg" %}
+
+{% include note.html content="Messages sent via Webcrypt are never sent over the internet. The way it works is the necessary files are downloaded to your browser and all processing is done in your browser. Read more about [Webcrypt security here](https://docs.crp.to/webcrypt.html#security-goals)" %}
 
 ## Benefits
 
