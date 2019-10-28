@@ -36,6 +36,8 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
+{% include warning.html content="Some users have experienced issues upgrading firmware on Windows 8. Please use Windows 10, MacOS, or Linux to upgrade firmware." %}
+
 ## Steps to Upgrade
 
 {% include callout.html content="**Step 1.** **Upgrade OnlyKey desktop app** - Follow instructions [here](#app-desktop) to install the new OnlyKey app." type="default" %}
