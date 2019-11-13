@@ -152,6 +152,8 @@ If you lose or forget your PIN then a factory default must be completed on your 
 
 {% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
 
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up accounts:<br><iframe src='https://player.vimeo.com/video/372894554' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe>  " %}
+
 ### Configure Basic Login Info {#all-about-slots}
 
 {% include callout.html content="**Enter your PIN -**  After setup you are prompted to enter the PIN you set onto your OnlyKey six button keypad." type="default" %}
@@ -757,7 +759,7 @@ If you generated your keys as described in the Generating Keys section above, us
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *Auto* is selected as Slot, the same passphrase you used with Keybase (Or Mailvelope) is entered as passphrase. When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *Auto* is selected as Slot, the same passphrase you used with Keybase (Or Protonmail / Mailvelope) is entered as passphrase. When finished select Save to OnlyKey" type="default" %}
 
 {% include image.html file="loadkey1.jpeg" %}
 

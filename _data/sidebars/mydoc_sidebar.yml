@@ -55,7 +55,7 @@ entries:
       url: /usersguide.html#Yubico-one-time-password
       output: web, pdf
 
-    - title: Universal 2nd Factor (U2F) Security Key
+    - title: Security Key (FIDO2 / U2F)
       url: /usersguide.html#universal-2nd-factor-u2f
       output: web, pdf
 
@@ -63,7 +63,7 @@ entries:
       url: /usersguide.html#using-onlykey-with-a-software-password-manager
       output: web, pdf
 
-    - title: Secure Communication - Chat/Email
+    - title: OpenPGP Encryption (Files / Messages)
       url: /usersguide.html#secure-com
       output: web, pdf
 
@@ -171,6 +171,54 @@ entries:
       url: /firmware.html
       output: web, pdf
 
+  - title: Works with OnlyKey
+    output: web, pdf
+    folderitems:
+
+    - title: Offline Password Managers (KeePassXC, KeePass, Password Safe)
+      url: /offlinepw.html
+      output: web, pdf
+
+    - title: Online Password Managers (LastPass, Dashlane, Bitwarden, 1Password)
+      url: /onlinepw.html
+      output: web, pdf
+
+    - title: Cloud Providers (Amazon AWS, MS Azure, Google Cloud)
+      url: /cloudprovider.html
+      output: web, pdf
+
+    - title: Cloud Storage (Dropbox, Box, OneDrive, BoxCryptor)
+      url: /cloudstorage.html
+      output: web, pdf
+
+    - title: Full Disk Encryption (LUKS, Bitlocker)
+      url: /diskencryption.html
+      output: web, pdf
+
+    - title: OpenPGP Providers (Protonmail, Keybase, Mailvelope)
+      url: /importpgp.html
+      output: web, pdf
+
+    - title: Privacy Focused OS (Qubes OS, Tails)
+      url: /qubes.html
+      output: web, pdf
+
+    - title: Software Development (Github, Gitlab)
+      url: /git.html
+      output: web, pdf
+
+    - title: Social Media (Facebook, Instagram, Reddit, Twitter)
+      url: /socialmedia.html
+      output: web, pdf
+
+    - title: Cryptocurrency Exchange (Kraken, Coinbase, Bitfinex, Bittrex)
+      url: /cryptocurrency.html
+      output: web, pdf
+
+    - title: Enterprise Authentication (DUO Business/Federal, Okta, SAASPASS, Azure AD)
+      url: /enterpriseauth.html
+      output: web, pdf
+
   - title: Knowledge Base
     output: web, pdf
     folderitems:
@@ -193,6 +241,10 @@ entries:
 
     - title: Using OnlyKey with Linux
       url: /linux.html
+      output: web, pdf
+
+    - title: Import keys from Protonmail, Keybase, and Mailvelope
+      url: /importpgp.html
       output: web, pdf
 
     - title: Using OnlyKey with Virtual Machines
