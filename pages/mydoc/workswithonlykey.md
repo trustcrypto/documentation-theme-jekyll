@@ -9,9 +9,9 @@ permalink: workswithonlykey.html
 folder: mydoc
 ---
 
-## [Offline Password Managers (KeePassXC, KeePass, Password Safe)](https://docs.crp.to/offline)
+## [Offline Password Managers (KeePassXC, KeePass, Password Safe)](https://docs.crp.to/offlinepw)
 
-## [Online Password Managers (LastPass, Dashlane, Bitwarden, 1Password)](https://docs.crp.to/online)
+## [Online Password Managers (LastPass, Dashlane, Bitwarden, 1Password)](https://docs.crp.to/onlinepw)
 
 ## [Cloud Providers (Amazon AWS, MS Azure, Google Cloud)](https://docs.crp.to/cloudprovider)
 
