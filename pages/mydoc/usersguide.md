@@ -30,6 +30,10 @@ There are two options for setting up your OnlyKey.
 - [OnlyKey Quick Setup](#quick-setup) (No app required, less than 5 minute setup time)
 - [OnlyKey Setup Using OnlyKey App](#onlykey-setup) (App install required, 10 minute setup time)
 
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372946883) that demonstrates setting up a new OnlyKey<br>![How-To: Setting up OnlyKey](https://i.vimeocdn.com/video/830893143_640.webp)" %}
+
+
+
 ### OnlyKey Quick Setup {#quick-setup}
 
 {% include important.html content="Quick setup is the quickest way to set up a new OnlyKey and there are no apps required. However, to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
@@ -152,7 +156,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 
 {% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run." %}
 
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up accounts:<br>![](https://i.vimeocdn.com/video/830893143_200x150.webp)" %}
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up accounts:<br>![How-To: Setup Accounts and Customize OnlyKey Preferences](https://i.vimeocdn.com/video/830893143_640.webp)" %}
 
 ### Configure Basic Login Info {#all-about-slots}
 
