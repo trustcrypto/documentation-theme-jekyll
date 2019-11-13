@@ -27,10 +27,13 @@ folder: mydoc
 
 There are two options for setting up your OnlyKey.
 
-- [OnlyKey Quick Setup](#quick-setup) (No app required, less than 5 minute setup time)
-- [OnlyKey Setup Using OnlyKey App](#onlykey-setup) (App install required, 10 minute setup time)
+- [OnlyKey Quick Setup](#quick-setup) (No app required, 1-3 minute setup time)
 
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372946883) that demonstrates setting up a new OnlyKey<br>[![How-To: Setting up OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/video-setup.png)](https://vimeo.com/372946883)" %}
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372991865) that demonstrates setting up a new OnlyKey with Quick Setup<br>[![How-To:  Setting up OnlyKey with Quick Setup](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/quick-setup.png)](https://vimeo.com/372991865)" %}
+
+- [OnlyKey Setup Using OnlyKey App](#onlykey-setup) (App install required, 5-10 minute setup time)
+
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/372946883) that demonstrates setting up a new OnlyKey using the OnlyKey App<br>[![How-To: Setting up OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/video-setup.png)](https://vimeo.com/372946883)" %}
 
 ### OnlyKey Quick Setup {#quick-setup}
 
