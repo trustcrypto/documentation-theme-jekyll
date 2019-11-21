@@ -315,6 +315,15 @@ After loading next page
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
 
+#### Generate Strong Passwords Online {#generate-strong-passwords-online}
+
+There are many websites that allow you to generate a secure random password including passwordsgenerator.net and the Lastpass tool.
+
+- Passwordsgenerator.net password generation tool available [here](https://passwordsgenerator.net/)
+- LastPass password generation tool available [here](https://lastpass.com/generatepassword.php)
+
+{% include image.html file="image59.png" %}
+
 #### Generate Strong Password via Browser Extension {#generate-strong-password-via-browser-extension}
 
 Install a browser extension by selecting add to Chrome the same way that you installed the OnlyKey app.
@@ -322,14 +331,6 @@ Install a browser extension by selecting add to Chrome the same way that you ins
 Chrome Extension available from the Chrome Web Store [here](https://chrome.google.com/webstore/detail/strong-password-generator/emehklffcaphknhhfhadkjhpfapcbpco).
 
 {% include image.html file="image21.png" %}
-
-#### Generate Strong Passwords Online {#generate-strong-passwords-online}
-
-There are many websites that allow you to generate a secure random password including the Lastpass tool.
-
-LastPass password generation tool available [here](https://lastpass.com/generatepassword.php).
-
-{% include image.html file="image59.png" %}
 
 ### Configure Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
@@ -571,15 +572,17 @@ To protect LastPass account with Google Authenticator 2FA follow the steps below
 
 #### DashLane {#dashlane}
 
-DashLane supports Google Authenticator, Yubico® OTP, and Security Keys. The choice is yours but for beginners Google Authenticator is the best option.
+DashLane supports Google Authenticator, Yubico® OTP, and Security Keys. The security key (FIDO2 / U2F) option is the most secure option.
 
 #### Google SmartLock {#google-smartlock}
 
-SmartLock is a new password manager that is available in Google Chrome. Since this uses a Google account it supports Google Authenticator or Security Key. The choice is yours but for beginners Google Authenticator is the best option.
+SmartLock is a password manager that is available in Google Chrome, it supports Google Authenticator and Security Keys. The security key (FIDO2 / U2F) option is the most secure option.
 
 ## OpenPGP File Encryption and Secure Communication {#secure-com}
 
 OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
+
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>" %}
 
 1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android for more information [read this](https://docs.crp.to/android.html).
 
@@ -615,34 +618,26 @@ Send me a secure file
 
 ### See WebCrypt in action {#openpgp-action}
 
-After configuring your OnlyKey following [these instructions](#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
+After configuring your OnlyKey following [these instructions](#generating-keys) you can the [Webcrypt app](https://apps.crp.to/encrypt) to securely decrypt messages and files with OnlyKey. You can receive encrypted messages and files from anyone, its so easy and there are no tech skills are required.
 
-- Enter a message to encrypt
-{% include image.html file="encrypted-message.jpg" %}
+Receiving encrypted files is as easy as putting a custom link in your email signature:
 
-- Enter the shown challenge code on the OnlyKey (i.e. 1,5,2)
-{% include image.html file="encrypted-message2.jpg" %}
+**Bob Smith**
+**Email:** Bobsmith@bobsmith.com
+**Phone:** 111.222.3333
+*Send me a secure [message](https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2)*
+*[More info](https://onlykey.io/pages/webcrypt)*
 
-- Encrypted message shown, by clicking the button again it will be copied to clipboard
-{% include image.html file="encrypted-message3.jpg" %}
-{% include image.html file="encrypted-message4.jpg" %}
+Link the text "message" to: https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2
 
-- Paste the message into any email or chat (Sending via Gmail shown)
-{% include image.html file="encrypted-message5.jpg" %}
+Link the text "file" to: https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2
 
-- When the recipient receives the message (email or chat) they can paste it into Webcrypt app to decrypt
-{% include image.html file="encrypted-message6.jpg" %}
+Change bobsmith2 in the link to your Keybase user name
 
-- Enter the shown challenge code on the OnlyKey (i.e. 2,2,1)
-{% include image.html file="encrypted-message7.jpg" %}
+You can also add a "More info" link to: https://onlykey.io/pages/webcrypt
+This is a quick 30 second video that will show how to send you secure files.
 
-- Decrypted message shown, if the sender signed the message you will see the sender's name (i.e. t) and their key ID.
-{% include image.html file="encrypted-message8.jpg" %}
-
-- By clicking the button again the message will be copied to clipboard
-{% include image.html file="encrypted-message9.jpg" %}
-
-{% include note.html content="Messages sent via Webcrypt are never sent over the internet. The way it works is the necessary files are downloaded to your browser and all processing is done in your browser. Read more about [Webcrypt security here](https://docs.crp.to/webcrypt.html#security-goals)" %}
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>" %}
 
 ## Preferences {#preferences}
 
@@ -731,6 +726,8 @@ Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-fea
 
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp.png)](https://vimeo.com/374512727)" %}
+
 {% include callout.html content="**Step 1.** Go to https://keybase.io" type="default" %}
 
 {% include callout.html content="**Step 2.** Select Login" type="default" %}
@@ -782,6 +779,8 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 ### Loading Keys {#loading-keys}
 
 {% include warning.html content="Only load keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
+
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp.png)](https://vimeo.com/374512727)" %}
 
 If you generated your keys as described in the Generating Keys section above, using Keybase, or using Mailvelope proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
 
@@ -983,13 +982,11 @@ The TOTP feature requires the correct time in order to generate correct codes. I
 
 {% include note.html content="Supports Moto G5 Plus, Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
 
-### iPhone/iPad Support (Experimental) {#iphone-ipad-support-experimental}
+### iPhone/iPad Support {#iphone-ipad-support-experimental}
 
-This is currently in the experimental phase so there is not official support. User's have claimed to successfully use OnlyKey on their iPhones using a USB adapter like the one shown below.
+You may use OnlyKey with a USB to Lightning adapter (sometimes called camera adapter) with iPhones and iPads.
 
 {% include image.html file="image29.png"  max-width="248" %}
-
-Since the OnlyKey is essentially detected by iPhone/iPad as a keyboard then the username / password / Yubikey® OTP login features will work. Unfortunately, there is no support for FIDO2 or Google Authenticator currently.
 
 ### Keychain Accessory {#keychain-options}
 
@@ -1055,7 +1052,7 @@ If you have an issue not listed here please reference the online support forum [
 
 ## Change your PIN {#pin-change}
 
-OnlyKey support for PIN change was added in firmware version Beta8. You can check the firmware version in the lower right corner of the OnlyKey app. To change PIN go to the Setup tab, put OnlyKey in config mode and follow the instruction in the app to set a new PIN.
+OnlyKey support for PIN change was added in firmware version Beta8. You can check the firmware version in the lower right corner of the OnlyKey app. To change PIN go to the [Setup] tab, put OnlyKey in config mode, and follow the instruction in the app to set a new PIN.
 
 ## Web Links {#web-links}
 
