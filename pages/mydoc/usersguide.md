@@ -609,24 +609,22 @@ OnlyKey is OpenPGP compatible and the worlds first plug and play encryption devi
 {% include image.html file="webcrypt2.png" %}
 
 {% include tip.html content="
-You can receive encrypted messages and files from anyone, no tech skills are required!
-
-Receiving encrypted files is as easy as putting a custom link in your email signature:
-
-**Bob Smith**
-**Email:** Bobsmith@bobsmith.com
-**Phone:** 111.222.3333
-*Send me a secure [message](https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2)*
-*[More info](https://onlykey.io/pages/webcrypt)*
-
+You can receive encrypted messages and files from anyone, no tech skills are required!<br><br>
+Receiving encrypted files is as easy as putting a custom link in your email signature:<br><br>
+**Bob Smith**<br>
+**Email:** Bobsmith@bobsmith.com<br>
+**Phone:** 111.222.3333<br>
+*Send me a secure [message](https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2)*<br>
+*[More info](https://onlykey.io/pages/webcrypt)*<br>
+<br><br>
 Link the text 'message' to: https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2
-
+<br><br>
 Link the text 'file' to: https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2
-
+<br><br>
 Change bobsmith2 in the link to your Keybase user name
-
-You can also add a 'More info' link to: https://onlykey.io/pages/webcrypt
-This is a quick 30 second video that will show others how to send you secure files.
+<br><br>
+You can also add a 'More info' link to: https://onlykey.io/pages/webcrypt<br>
+This is a quick 30 second video that will show others how to send you secure files.<br>
 [![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
 
 ## Preferences {#preferences}
