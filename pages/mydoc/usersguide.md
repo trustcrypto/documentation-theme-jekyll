@@ -616,14 +616,14 @@ Receiving encrypted files is as easy as putting a custom link in your email sign
 **Phone:** 111.222.3333<br>
 *Send me a secure [message](https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2)*<br>
 *[More info](https://onlykey.io/pages/webcrypt)*<br>
+<br>
+Link the text **'message'** to: `https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2`
 <br><br>
-Link the text 'message' to: https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2
-<br><br>
-Link the text 'file' to: https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2
+Link the text **'file'** to: `https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2`
 <br><br>
 Change bobsmith2 in the link to your Keybase user name
 <br><br>
-You can also add a 'More info' link to: https://onlykey.io/pages/webcrypt<br>
+You can also add a **'More info'** link to: `https://onlykey.io/pages/webcrypt`<br>
 This is a quick 30 second video that will show others how to send you secure files.<br>
 [![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
 
