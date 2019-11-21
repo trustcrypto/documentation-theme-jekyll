@@ -530,7 +530,7 @@ In order to unlock your KeePassXC database a hacker would need four things:
 - Know your OnlyKey PIN
 - Know your master password
 
-What is needed to use challenge-response feature?
+What is needed to use the challenge-response feature?
 No setup is required, OnlyKey generates a private key for HMAC SHA1 automatically when the device is first configured. Just create a KeePassXC database and do the following:
 - Select "Add additional protection"
 - Select "Add YubiKey Challenge-Response"
@@ -582,7 +582,7 @@ SmartLock is a password manager that is available in Google Chrome, it supports 
 
 OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>" %}
+Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android for more information [read this](https://docs.crp.to/android.html).
 
@@ -637,7 +637,7 @@ Change bobsmith2 in the link to your Keybase user name
 You can also add a "More info" link to: https://onlykey.io/pages/webcrypt
 This is a quick 30 second video that will show how to send you secure files.
 
-{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>" %}
+Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Preferences {#preferences}
 
