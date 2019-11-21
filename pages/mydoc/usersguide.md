@@ -582,10 +582,7 @@ SmartLock is a password manager that is available in Google Chrome, it supports 
 
 OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
-
-{% unless site.output == "pdf" %}
-Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe width="640" height="564" src="https://player.vimeo.com/video/374653109" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> {% endunless %}
-
+{% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
 1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android for more information [read this](https://docs.crp.to/android.html).
 
@@ -607,21 +604,12 @@ Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKe
 
 {% include image.html file="webcrypt1.png" %}
 
-{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to [https://apps.crp.to/decrypt](https://apps.crp.to/decrypt) or [https://apps.crp.to/decrypt-file](https://apps.crp.to/decrypt-file). You can also create a unique link which allows anyone, with or without an OnlyKey to send you and encrypted file. This may be used in places such as an email signature to receive secure messages. The format is:
-<br><br>
-Send me a secure message -
-[https://apps.crp.to/encrypt.html?type=e&recipients=YOURKEYBASEUSERNAME](https://apps.crp.to/encrypt.html?type=e&recipients=YOURKEYBASEUSERNAME)
-<br><br>
-Send me a secure file
-[https://apps.crp.to/encrypt-file.html?type=e&recipients=YOURKEYBASEUSERNAME](https://apps.crp.to/encrypt-file.html?type=e&recipients=YOURKEYBASEUSERNAME)
-
-" type="default" %}
+{% include callout.html content="**Step 3. Receive an encrypted message or file -** To decrypt a message or file browse to [https://apps.crp.to/decrypt](https://apps.crp.to/decrypt) or [https://apps.crp.to/decrypt-file](https://apps.crp.to/decrypt-file). " type="default" %}
 
 {% include image.html file="webcrypt2.png" %}
 
-### See WebCrypt in action {#openpgp-action}
-
-After configuring your OnlyKey following [these instructions](#generating-keys) you can the [Webcrypt app](https://apps.crp.to/encrypt) to securely decrypt messages and files with OnlyKey. You can receive encrypted messages and files from anyone, its so easy and there are no tech skills are required.
+{% include tip.html content="
+You can receive encrypted messages and files from anyone, no tech skills are required!
 
 Receiving encrypted files is as easy as putting a custom link in your email signature:
 
@@ -631,16 +619,15 @@ Receiving encrypted files is as easy as putting a custom link in your email sign
 *Send me a secure [message](https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2)*
 *[More info](https://onlykey.io/pages/webcrypt)*
 
-Link the text "message" to: https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2
+Link the text 'message' to: https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2
 
-Link the text "file" to: https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2
+Link the text 'file' to: https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2
 
 Change bobsmith2 in the link to your Keybase user name
 
-You can also add a "More info" link to: https://onlykey.io/pages/webcrypt
-This is a quick 30 second video that will show how to send you secure files.
-
-Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+You can also add a 'More info' link to: https://onlykey.io/pages/webcrypt
+This is a quick 30 second video that will show others how to send you secure files.
+[![How-To: Use OnlyKey WebCrypt](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt3.png)](https://vimeo.com/374672956)" %}
 
 ## Preferences {#preferences}
 
