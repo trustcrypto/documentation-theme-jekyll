@@ -582,7 +582,11 @@ SmartLock is a password manager that is available in Google Chrome, it supports 
 
 OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
+
+{% unless site.output == "pdf" %}
 Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br><iframe src="https://player.vimeo.com/video/374653109" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+{% endunless %}
+
 
 1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android for more information [read this](https://docs.crp.to/android.html).
 
