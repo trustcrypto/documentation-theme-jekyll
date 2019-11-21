@@ -670,6 +670,7 @@ You can change your keyboard layout on the fly through the OnlyKey app preferenc
 *   US_INTERNATIONAL
 *   CZECH
 *   SERBIAN_LATIN_ONLY
+*   HUNGARIAN
 
 ### SSH/PGP Challenge Mode {#challenge-mode}
 
