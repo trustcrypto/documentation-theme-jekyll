@@ -495,13 +495,47 @@ Learn more about OnlyKey's implementation of FIDO2 / FIDO U2F [here.](https://do
 
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
-OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to KeePassXC, Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline storage and everything else in the software password manager.
+OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to KeePassXC, Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline secure hardware and everything else in the software password manager.
 
-{% include tip.html content="This way you can keep your most valuable accounts in offline storage and everything else in the software password manager." %}
+There are two types of software password managers:
+- Online Password Managers - Less secure but more convenient because passwords sync automatically between devices
+  - [LastPass](https://onlykey.io/pages/secure-lastpass-with-onlykey)
+  - [Dashlane](https://onlykey.io/pages/secure-dashlane-with-onlykey)
+  - Bitwarden
+  - 1Password
+- Offline Password Managers - More secure but less convenient because passwords don't sync automatically
+  - [KeePassXC](https://onlykey.io/pages/securing-keepassxc-with-onlykey)
+  - KeePass
+  - Password Safe
 
-#### KeePassXC {#keepassxc}
 
-More information coming soon. We are working with the KeePassXC team to implement OnlyKey support for KeePassXC.
+#### KeePassXC (Recommended) {#keepassxc}
+
+We recommend KeePassXC because:
+- Its 100% open source (verifiable security)
+- Its cross platform, supports Windows, Linux, Mac (in contrast to KeePass which is for Windows)
+- Its offline, no passwords in the cloud
+- We collaborated with the KeePassXC team to develop a custom integration with OnlyKey that provides a major security benefit
+{% include image.html file="keepassxc.png" %}
+
+Starting with the 2.5.0 release of KeePassXC you can use OnlyKey in challenge-response mode to secure your KeePassXC password database.
+
+What does this mean?
+To unlock KeePassXC, in addition to requiring a master password, the OnlyKey flashes yellow and you must press a button on OnlyKey. By requiring a master password and an OnlyKey, your accounts are protected by essentially two layers of security. This solution is more secure than other software password managers. Here is why -
+
+In order to unlock your KeePassXC database a hacker would need four things:
+- Physical access to your computer (where the KeePass database resides)
+- Physical access to your OnlyKey
+- Know your OnlyKey PIN
+- Know your master password
+
+What is needed to use challenge-response feature?
+No setup is required, OnlyKey generates a private key for HMAC SHA1 automatically when the device is first configured. Just create a KeePassXC database and do the following:
+- Select "Add additional protection"
+- Select "Add YubiKey Challenge-Response"
+- OnlyKey will show in the list of devices, select slot1 or slot2
+
+After creating the KeePassXC database you will be prompted to press any button on OnlyKey (flashes yellow) to unlock your KeePassXC database. Additionally, since OnlyKey also stores static passwords you can use OnlyKey to store your KeePassXC master password in one of the available slots.
 
 #### LastPass {#lastpass}
 

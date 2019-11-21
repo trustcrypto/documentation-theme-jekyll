@@ -9,26 +9,69 @@ permalink: workswithonlykey.html
 folder: mydoc
 ---
 
-## [Offline Password Managers (KeePassXC, KeePass, Password Safe)](https://docs.crp.to/offlinepw)
+Pick from the list below to find out more about common solutions that integrate with OnlyKey:
 
-## [Online Password Managers (LastPass, Dashlane, Bitwarden, 1Password)](https://docs.crp.to/onlinepw)
+## Online Password Managers
+### [LastPass](https://onlykey.io/pages/secure-lastpass-with-onlykey)
+### [Dashlane](https://onlykey.io/pages/secure-dashlane-with-onlykey)
+### Bitwarden
+### 1Password
 
-## [Cloud Providers (Amazon AWS, MS Azure, Google Cloud)](https://docs.crp.to/cloudprovider)
+## [Offline Password Managers
+### [KeePassXC](https://onlykey.io/pages/securing-keepassxc-with-onlykey)
+### KeePass
+### Password Safe
 
-## [Cloud Storage (Dropbox, Box, OneDrive, BoxCryptor)](https://docs.crp.to/cloudstorage)
+## Cloud Providers
+### Amazon AWS
+### [MS Azure](https://onlykey.io/pages/securing-azure-ad-and-office-365-with-onlykey)
+### [Google Cloud](https://onlykey.io/pages/secure-google-apps-with-onlykey)
 
-## [Full Disk Encryption (LUKS, Bitlocker)](https://docs.crp.to/diskencryption)
 
-## [OpenPGP Providers (Protonmail, Keybase, Mailvelope)](https://docs.crp.to/openpgp)
+## Cloud Storage
+### Dropbox
+### Box.com
+### [OneDrive](https://onlykey.io/pages/securing-azure-ad-and-office-365-with-onlykey)
+### [Google Drive](https://onlykey.io/pages/secure-google-apps-with-onlykey)
+### BoxCryptor
 
-## [Privacy Focused OS (Qubes OS, Tails)](https://docs.crp.to/qubes)
+## Full Disk Encryption
+### LUKS
+### Bitlocker
 
-## [Software Development (Github, Gitlab)](https://docs.crp.to/git)
+## OpenPGP Providers
+### Protonmail
+### [Keybase](https://www.youtube.com/watch?v=TluqGOwyxyk)
+### Mailvelope
 
-## [Social Media (Facebook, Instagram, Reddit, Twitter)](https://docs.crp.to/socialmedia)
+## Privacy Focused OS
+### [Qubes OS](https://docs.crp.to/qubes.html)
+### Tails
 
-## [Cryptocurrency Exchange (Kraken, Coinbase, Bitfinex, Bittrex)](https://docs.crp.to/cryptocurrency)
+## Software Development
+### [Github](https://onlykey.io/pages/secure-github-and-gitlab-accounts-with-onlykey-2)
+### [Gitlab](https://onlykey.io/pages/secure-github-and-gitlab-accounts-with-onlykey-2)
 
-## [Enterprise Authentication (DUO Business/Federal, Okta, SAASPASS, Azure AD)](https://docs.crp.to/enterpriseauth)
+## Social Media
+### Facebook
+### Instagram
+### Reddit
+### [Twitter](https://www.youtube.com/watch?v=CBDKx2_br3g)
+
+## Cryptocurrency Exchange
+### Kraken
+### Coinbase
+### Bitfinex
+### Bittrex
+
+## Enterprise Authentication
+### [Google Apps](https://onlykey.io/pages/secure-google-apps-with-onlykey)
+### [Office 365](https://onlykey.io/pages/securing-azure-ad-and-office-365-with-onlykey)
+### [Azure AD](https://onlykey.io/pages/securing-azure-ad-and-office-365-with-onlykey)
+### DUO Business/Federal
+### Okta
+### SAASPASS
+
+This list includes many common solutions but OnlyKey will work with practically any service or application. If a site supports 2FA then chances are OnlyKey is supported, if a site does not support 2FA then OnlyKey is still supported for secure passwords.
 
 {% include links.html %}
