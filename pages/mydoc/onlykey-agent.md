@@ -2,7 +2,7 @@
 title: OnlyKey SSH/GPG agent
 tags: [OnlyKey, Agent, Python]
 keywords: OnlyKey, Agent
-last_updated: Sep, 26, 2017
+last_updated: Dec, 09, 2019
 summary: The OnlyKey agent is essentially middleware that lets you use OnlyKey as a hardware SSH/GPG device (GPG not supported yet).
 sidebar: mydoc_sidebar
 permalink: onlykey-agent.html
@@ -20,8 +20,7 @@ SSH is a popular remote access tool that is often used by administrators. Thanks
 1) After installing [prerequisites](#install), install OnlyKey agent on your client machine:
 
 ```
-$ sudo pip install onlykey
-$ sudo pip install onlykey-agent
+$ sudo pip2 install onlykey onlykey-agent
 ```
 
 2) Generate your First SSH Key on the OnlyKey
@@ -55,13 +54,14 @@ Note: This method can also be used for git push or other mechanisms that are usi
 $ onlykey-agent user@host git push
 ```
 
-## Installation {#install}
+## Installation 
+
+### Windows Install with dependencies
+Currently Windows is not supported directly but may be used with Windows Subsystem for Linux (WSL). Follow the [WSL guide here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to set this up. This essentially installs Linux on Windows, for example you can install Ubuntu Linux on Windows and then follow the instructions below "Ubuntu Install with dependencies".
 
 ### MacOS Install with dependencies
-Brew is required. To install visit https://brew.sh/
+Python 2.7 and pip are required. To setup a Python environment on MacOS we recommend Anaconda https://www.anaconda.com/download/#macos
 ```
-$ brew update && brew upgrade
-$ brew install python
 $ pip2 install onlykey onlykey-agent
 ```
 

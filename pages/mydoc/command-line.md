@@ -2,7 +2,7 @@
 title: OnlyKey Command-Line Utility
 tags: [OnlyKey, Command line, Python]
 keywords: OnlyKey, Command line
-last_updated: Nov, 19, 2018
+last_updated: Nov, 19, 2019
 summary: The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
 sidebar: mydoc_sidebar
 permalink: command-line.html
@@ -72,7 +72,7 @@ easy_install pycrypto
 
 3)
 ```
-$ pip install onlykey
+$ pip2 install onlykey
 ```
 
 
@@ -88,7 +88,7 @@ This is usually c:\Python27\Scripts\onlykey-cli.exe
 Python 2.7 and pip are required. To setup a Python environment on MacOS we recommend Anaconda https://www.anaconda.com/download/#macos
 
 ```
-$ pip install onlykey
+$ pip2 install onlykey
 ```
 
 ### Ubuntu Install with dependencies
@@ -96,7 +96,7 @@ $ pip install onlykey
 ```
 $ apt update && apt upgrade
 $ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
-$ pip install onlykey
+$ pip2 install onlykey
 ```
 
 ### Debian Install with dependencies
@@ -104,7 +104,7 @@ $ pip install onlykey
 ```
 $ apt update && apt upgrade
 $ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
-$ pip install onlykey
+$ pip2 install onlykey
 ```
 
 ### Fedora/RedHat/CentOS Install with dependencies
@@ -113,20 +113,20 @@ $ pip install onlykey
 $ yum update
 $ yum install python-pip python-devel libusb-devel libudev-devel \
               gcc redhat-rpm-config
-$ pip install onlykey
+$ pip2 install onlykey
 ```
 ### OpenSUSE Install with dependencies
 
 ```
 $ zypper install python-pip python-devel libusb-1_0-devel libudev-devel
-$ pip install onlykey
+$ pip2 install onlykey
 ```
 
 ### Arch Linux Install with dependencies
 
 ```
 $ sudo pacman -Sy git python2-setuptools python2 libusb python2-pip
-$ pip install onlykey
+$ pip2 install onlykey
 ```
 
 ### FreeBSD Install with dependencies
