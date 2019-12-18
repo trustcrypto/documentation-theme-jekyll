@@ -51,7 +51,7 @@ Send me a secure file
 
 ### See WebCrypt in action {#openpgp-action}
 
-After configuring your OnlyKey following [these instructions](#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
+After configuring your OnlyKey following [these instructions](https://docs.crp.to/usersguide.html#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages.
 
 - Enter a message to encrypt
 {% include image.html file="encrypted-message.jpg" %}
