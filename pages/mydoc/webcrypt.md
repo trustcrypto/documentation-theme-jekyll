@@ -15,11 +15,9 @@ folder: mydoc
 
 WebCrypt is a serverless Web App that integrates with [OnlyKey](https://onlykey.io) and [keybase.io](https://keybase.io/) to provide PGP encryption everywhere on-the-go. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
-Supports Firefox, Google Chrome, Brave, and Edge (new) browsers!
-
-Supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+)!
-
-[Try it out here!](https://apps.crp.to)
+- Supports Firefox, Google Chrome, Brave, and Edge (new) browsers!
+- Supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+)
+- [Try it out here!](https://apps.crp.to)
 
 [Encrypt Files](https://apps.crp.to/encrypt-file)
 [Decrypt Files](https://apps.crp.to/decrypt-file)
