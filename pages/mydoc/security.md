@@ -19,7 +19,7 @@ folder: mydoc
 
 - Protected key operations - Encryption / decryption operations are only allowed after user authentication via PIN.
 
-- Read/write-protected secure flash - OnlyKey utilizes Kinetis [flash security](#flashsecurity) to securely lock all data residing on OnlyKey.
+- Read/write-protected secure flash - OnlyKey utilizes Kinetis [flash security](https://www.nxp.com/docs/en/application-note/AN4507.pdf) to securely lock all data residing on OnlyKey.
 
 - Offline secure processor - The data stored and processed on the OnlyKey is completely isolated from the connected computer. Data can only be written to the OnlyKey or wiped. Physical user touch is required to authorize authentication.
 
@@ -39,18 +39,18 @@ When it comes to hardware security there are terms such as tamper resistant, tam
 – ATMEL AT90SCxx 0.21µm 2T memory cell (smart card type IC)
 Additionally, it is important to consider that most security weaknesses are related to issues with the implementation of a secure element. For example, the Ledger hardware wallet was [recently compromised](https://saleemrashid.com/2018/03/20/breaking-ledger-security-model/) due to their system architecture. Another consideration with secure elements is that an NDA is required by most manufacturers, which requires the device to be closed source with unverifiable security. This sometimes allows vulnerabilities to go unnoticed for years, as was the case with the recent [Infineon RSA key generation vulnerability](https://crocs.fi.muni.cz/public/papers/rsa_ccs17) that affected millions of smart cards and TPMs; "The vulnerability is present in NIST FIPS 140-2 and CC EAL 5+ certified devices since at least the year 2012".
 
+- **FIPS-140-2** - OnlyKey meets many of the requirements of FIPS certification including using FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256). OnlyKey circuitry is coated with a physical protection compound that is both chemical resistant and tamper resistant. This means that it would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. Removal of the coating also results in noticeable damage to the OnlyKey (FIPS 140-2 Level 2 - Tamper Evident).
+
 UPDATE 10/2019 - Additional security issues have been identified in closed source security keys and smart cards.
 - https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk
 - https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/
 - https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/
 
-- **FIPS-140-2** - OnlyKey meets many of the requirements of FIPS certification including using FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256). OnlyKey circuitry is coated with a physical protection compound that is both chemical resistant and tamper resistant. This means that it would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. Removal of the coating also results in noticeable damage to the OnlyKey (FIPS 140-2 Level 2 - Tamper Evident).
-
 ## Technical Specifications
 
 ### OnlyKey secure element {#secure-element}
 
-- Freescale Kinetis [flash security](#flashsecurity)
+- Freescale Kinetis [flash security](https://www.nxp.com/docs/en/application-note/AN4507.pdf)
 - Data-at-rest encryption (AES-256 GCM)
 - On-boot firmware integrity verification
 
