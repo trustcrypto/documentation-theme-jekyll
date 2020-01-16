@@ -317,8 +317,9 @@ Generating a strong password is easy to do. Next, let's use two different method
 
 #### Generate Strong Passwords Online {#generate-strong-passwords-online}
 
-There are many websites that allow you to generate a secure random password including passwordsgenerator.net and the Lastpass tool.
+There are many websites that allow you to generate a secure random password such as passwordsgenerator.net and there are also tools built into many software password managers.
 
+- Password manager built into [KeePassXC](#keepassxc)
 - Passwordsgenerator.net password generation tool available [here](https://passwordsgenerator.net/)
 - LastPass password generation tool available [here](https://lastpass.com/generatepassword.php)
 
@@ -510,9 +511,9 @@ There are two types of software password managers:
   - Password Safe
 
 
-#### KeePassXC (Recommended) {#keepassxc}
+#### KeePassXC {#keepassxc}
 
-We recommend KeePassXC because:
+What's great about KeePassXC:
 - Its 100% open source (verifiable security)
 - Its cross platform, supports Windows, Linux, Mac (in contrast to KeePass which is for Windows)
 - Its offline, no passwords in the cloud
@@ -521,22 +522,72 @@ We recommend KeePassXC because:
 
 Starting with the 2.5.0 release of KeePassXC you can use OnlyKey in challenge-response mode to secure your KeePassXC password database.
 
-What does this mean?
-To unlock KeePassXC, in addition to requiring a master password, the OnlyKey flashes yellow and you must press a button on OnlyKey. By requiring a master password and an OnlyKey, your accounts are protected by essentially two layers of security. This solution is more secure than other software password managers. Here is why -
+**Windows Install**
+- Download and install KeePassXC from https://keepassxc.org/download/#windows
+
+**macOS Install**
+- Download and install KeePassXC from https://keepassxc.org/download/#mac
+- An additional step is required in macOS 10.15 Catalina
+  - Go to Settings -> Security & Privacy -> Input Monitoring
+  - Unlock and click the +
+  - Select KeePassXC and click open
+
+*This additional step is required so that KeePassXC has permission to access your OnlyKey*
+
+**Linux Install**
+- Download and install KeePassXC from https://keepassxc.org/download/#linux
+
+**KeePassXC Setup**
+
+You can either import passwords to a create a new KeePassXC database by going to Database -> Import, or create a new empty KeePassXC database by selecting "Create a new KeePassXC database"
+
+{% include tip.html content="Not sure how to export the passwords from your old password manager?<br>
+- Chrome/Brave - Go to Settings -> Passwords -> click ... and select Export passwords<br>
+ " %}
+
+- Give your Password database a name and continue
+- Select continue again to keep default encryption settings
+- Enter a master password for your password database, click the dice to randomly generate one  
+- (Optional) Copy the master password and save it to one of your OnlyKey slots using the OnlyKey app
+- Select "Add additional protection"
+- Select "Add YubiKey Challenge-Response"
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/keepassxc4.png)
+- OnlyKey will show in the list of devices, select slot1 or slot2 and click done
+- OnlyKey will flash yellow, press any button, if importing OnlyKey may flash yellow several times, press any button when it does this to complete import
+- Congrats! You now have a new password database
+
+{% include warning.html content="**Remember to securely delete your exported password file after you have imported it into KeePassXC**" %}
+
+**KeePassXC Settings/Sync**
+- Click on the wrench icon in KeePassXC to customize settings
+- To enable browser integration (where KeePassXC can autofill account information in browser) click the Browser Integration icon, check the Enable browser integration checkbox, and select the browsers to enable
+- Install the KeePassXC Browser plugin https://keepassxc.org/docs/keepassxc-browser-migration/
+- To enable the SSH Agent click the SSH Agent icon and check the Enable SSH Agent checkbox. With this feature enabled your OnlyKey will be required to SSH.
+
+**KeePassXC Cloud Sync**
+While your KeePassXC database is encrypted and can be synced to multiple devices by copying it to cloud drive a better option that we recommend is to use [Cryptomator](https://cryptomator.org/).
+
+- Download and install Cryptomator
+- Create a vault inside of your cloud drive synced folder (i.e. Onedrive, Google Drive, etc)
+- You can optionally store the vault password in one of your OnlyKey slots
+- Move your KeePassXC kbdx file to your Cryptomator vault
+- Congrats! You now can access your new password database from any computer with Internet access, Cryptomator, and your OnlyKey.
+
+{% include tip.html content="So now your passwords are very secure, but you need to make sure they aren't so secure that you lock yourself out. Create a backup of both your KeePassXC database and your [OnlyKey](#secure-encrypted-backup-anywhere) and keep it somewhere safe, like in an actual safe. If you don't keep your Cryptomator password and KeePassXC password on your OnlyKey make sure you have a backup of those as well. Be to keep your OnlyKey backup passphrase in a safe location too in case you forget." %}
+
+Mobile Setup and usage (Coming soon!)
+
+**What is needed to use the challenge-response feature?**
+No setup is required, OnlyKey generates a private key for HMAC SHA1 automatically when the device is first configured. After creating the KeePassXC database you will be prompted to press any button on OnlyKey (flashes yellow) to unlock your KeePassXC database. Additionally, since OnlyKey also stores static passwords you can use OnlyKey to store your KeePassXC master password in one of the available slots.
+
+**What is challenge-response?**
+Your passwords are stored in an encrypted Keepass container, in addition to requiring a master password to decrypt this a response (HMAC SHA1) from OnlyKey is required. The OnlyKey flashes yellow and you must press a button on OnlyKey. By requiring a master password and an OnlyKey, your accounts are protected by two layers of security. This solution is more secure than software password managers that only rely on a master password. Here is a threat model explaining why -
 
 In order to unlock your KeePassXC database a hacker would need four things:
-- Physical access to your computer (where the KeePass database resides)
+- Access to your computer (where the KeePass database resides)
 - Physical access to your OnlyKey
 - Know your OnlyKey PIN
 - Know your master password
-
-What is needed to use the challenge-response feature?
-No setup is required, OnlyKey generates a private key for HMAC SHA1 automatically when the device is first configured. Just create a KeePassXC database and do the following:
-- Select "Add additional protection"
-- Select "Add YubiKey Challenge-Response"
-- OnlyKey will show in the list of devices, select slot1 or slot2
-
-After creating the KeePassXC database you will be prompted to press any button on OnlyKey (flashes yellow) to unlock your KeePassXC database. Additionally, since OnlyKey also stores static passwords you can use OnlyKey to store your KeePassXC master password in one of the available slots.
 
 #### LastPass {#lastpass}
 
@@ -974,6 +1025,10 @@ The TOTP feature requires the correct time in order to generate correct codes. I
 ### iPhone/iPad Support {#iphone-ipad-support-experimental}
 
 You may use OnlyKey with a USB to Lightning adapter (sometimes called camera adapter) with iPhones and iPads.
+
+#### [Purchase Lighting to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/lightning-to-usb-a-otg-adapter-for-iphone-or-ipad) {#lightning-to-usb-a-otg-adapter-for-iphone-or-ipad}
+
+{% include note.html content="With iOS 13.3+ you may use OnlyKey as a FIDO2 security key and also use [OnlyKey WebCrypt](https://apps.crp.to) for OpenPGP support on iOS." %}
 
 {% include image.html file="image29.png"  max-width="248" %}
 
