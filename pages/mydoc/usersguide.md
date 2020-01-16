@@ -56,15 +56,6 @@ To complete OnlyKey quick setup follow the instructions below:
 
 <i class="fa fa-arrow-down fa-3x"></i>
 
-### Install OnlyKey App {#app-install}
-
-There are two options for installing the OnlyKey app.
-
-- Install the [OnlyKey Desktop App](#app-desktop) (Recommended)
-- Install the [OnlyKey Chrome App](#app-chrome)
-
-Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
-
 ### Install OnlyKey Desktop App {#app-desktop}
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
@@ -81,26 +72,7 @@ Once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
 
 {% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 247b3ed27a5d7f2c35f6da0d44e0d6e7cb3ac4084eb3f944df1ce58e0df54dce<br>Windows SHA 256 CHECKSUM: 71ae01f86995c1aadae947d447223f65540c0c5ebcd1319dd5e5f1e1907013c0<br>Linux SHA 256 CHECKSUM: 3dc675c5a33c55abb153f98003a41843d4a1b5959f30ff479b76a953799665c8<br>" %}
 
-### Install OnlyKey Chrome App {#app-chrome}
-
-{% include callout.html content="**Step 1.** Open the Chrome (or Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
-
-{% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
-
-{% include image.html file="image41.png" %}
-
-{% include callout.html content="**Step 3.** When prompted select ''Add App''" type="default" %}
-
-{% include image.html file="image12.png" max-width="359" %}
-
-{% include callout.html content="**Step 4.** To launch the OnlyKey Configuration App select the top right menu icon -> Bookmarks -> Show Bookmarks Bar to enable the bookmarks bar to become visible. Then select the Apps icon (Or alternatively browse to ''chrome://apps/'') and then select the ''OK'' icon to launch the OnlyKey App." type="default" %}
-
-{% include image.html file="image33.png" max-width="544" %}
-<br>
-<br>
-{% include image.html file="image17.png" %}
-<br>
-<br>
+<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to OnlyKey setup below***
 
 ### OnlyKey Setup Using OnlyKey App {#onlykey-setup}
 
