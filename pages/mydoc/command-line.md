@@ -208,9 +208,9 @@ All sensitive data is wiped.
   - 21 - TURKISH
   - 22 - UNITED_KINGDOM
   - 23 - US_INTERNATIONAL
-  - 23 - CZECH
-  - 24 - SERBIAN_LATIN_ONLY
-  - 25 - HUNGARIAN
+  - 24 - CZECH
+  - 25 - SERBIAN_LATIN_ONLY
+  - 26 - HUNGARIAN
 
 - keytypespeed - 1 = slowest; 10 = fastest [4 = default]
 
