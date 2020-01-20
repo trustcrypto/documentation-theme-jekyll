@@ -207,8 +207,10 @@ All sensitive data is wiped.
   - 20 - SWEDISH
   - 21 - TURKISH
   - 22 - UNITED_KINGDOM
+  - 23 - US_INTERNATIONAL
   - 23 - CZECH
   - 24 - SERBIAN_LATIN_ONLY
+  - 25 - HUNGARIAN
 
 - keytypespeed - 1 = slowest; 10 = fastest [4 = default]
 
