@@ -1,9 +1,9 @@
 ---
 title: OnlyKey App
-tags: [OnlyKey App, Chrome App]
+tags: [OnlyKey App]
 keywords: OnlyKey, App
 last_updated: Oct, 18, 2019
-summary: The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chromebook (with Chrome App).
+summary: The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, and Linux.
 sidebar: mydoc_sidebar
 permalink: app.html
 folder: mydoc
@@ -30,15 +30,7 @@ OnlyKey can be purchased here: [OnlyKey order](http://www.crp.to/p/)
 
 For information on using the app with OnlyKey see the [OnlyKey User's Guide](https://docs.crp.to/usersguide.html)
 
-### Install OnlyKey App {#app-install}
-
-There are two options for installing the OnlyKey app.
-- Install the [OnlyKey Desktop App](#app-desktop) (Recommended)
-- Install the [OnlyKey Chrome App](#app-chrome) (Supported on Chrome, Brave Browser, Chromium)
-
-If you have an OnlyKey to set up, once you have installed the app proceed to [OnlyKey Setup](#onlykey-setup)
-
-### Install OnlyKey Desktop App {#app-desktop}
+### Install OnlyKey App {#app-desktop}
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
@@ -54,11 +46,15 @@ If you have an OnlyKey to set up, once you have installed the app proceed to [On
 
 {% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 247b3ed27a5d7f2c35f6da0d44e0d6e7cb3ac4084eb3f944df1ce58e0df54dce<br>Windows SHA 256 CHECKSUM: 71ae01f86995c1aadae947d447223f65540c0c5ebcd1319dd5e5f1e1907013c0<br>Linux SHA 256 CHECKSUM: 3dc675c5a33c55abb153f98003a41843d4a1b5959f30ff479b76a953799665c8<br> [ **GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/CryptoTrust_LLC_pub.asc)" %}
 
-### Install OnlyKey Chrome App {#app-chrome}
+If you have an OnlyKey to set up, once you have installed the app proceed to [OnlyKey Setup](https://docs.crp.to/usersguide.html#onlykey-setup)
 
-{% include callout.html content="**Step 1.** Open the Chrome (or Brave/Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
+## OnlyKey Chrome App (End of life)
 
-{% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
+Google is discontinuing Chrome app support on all operating systems. For now, the Chrome app is still available but Google has announced that it will be disabled in a future version of Chrome.
+
+{% include callout.html content="**Step 1.** Open the Chrome (or Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
+
+{% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
 
 {% include image.html file="image41.png" %}
 
@@ -74,6 +70,7 @@ If you have an OnlyKey to set up, once you have installed the app proceed to [On
 {% include image.html file="image17.png" %}
 <br>
 <br>
+
 
 ## Support
 
