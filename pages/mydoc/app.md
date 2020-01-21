@@ -48,7 +48,7 @@ For information on using the app with OnlyKey see the [OnlyKey User's Guide](htt
 
 If you have an OnlyKey to set up, once you have installed the app proceed to [OnlyKey Setup](https://docs.crp.to/usersguide.html#onlykey-setup)
 
-## OnlyKey Chrome App (End of life)
+### OnlyKey Chrome App (End of life)
 
 Google is discontinuing Chrome app support on all operating systems. For now, the Chrome app is still available but Google has announced that it will be disabled in a future version of Chrome.
 
