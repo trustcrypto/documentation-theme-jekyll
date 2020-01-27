@@ -164,11 +164,7 @@ The slots that have not been configured have no label so they are shown as ''emp
 
 **What if I am using a computer without the OnlyKey app?**
 
-This is where the card you received with your OnlyKey comes in handy. You can write your labels on this and carry this in your wallet. This is a low tech solution but it works great.
-
-{% include image.html file="card.jpg" max-width="400" %}
-
-Also, as mentioned on the card you can hold down the 2 button on OnlyKey for 5+ seconds and OnlyKey will type out your slot labels which may look something like this:
+Open a text editor and then hold down the 2 button on OnlyKey for 5+ seconds. OnlyKey will type out your slot labels which may look something like this:
 
 1a Google<br>
 2a Bank<br>
@@ -183,7 +179,13 @@ Also, as mentioned on the card you can hold down the 2 button on OnlyKey for 5+ 
 5b<br>
 6b Lastpass<br>
 
-{% include important.html content="Obviously, no sensitive information should be written on the card or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a." %}
+Since OnlyKey types out this information this method works on all computers and even mobile devices.
+
+A low tech solution is to write your labels on a card/paper and carry this in your wallet.
+
+{% include image.html file="card.jpg" max-width="400" %}
+
+{% include important.html content="Obviously, no sensitive information should be written on card/paper or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a." %}
 
 #### Set up a Slot {#set-up-a-slot}
 
