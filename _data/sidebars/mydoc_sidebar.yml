@@ -136,7 +136,7 @@ entries:
       output: web, pdf
 
     - title: Config Mode
-      url: /features.html#config-mode
+      url: /security.html#config-mode
       output: web, pdf
 
     - title: Self-Destruct

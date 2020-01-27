@@ -25,8 +25,8 @@ folder: mydoc
 *   Blue blink on/off = FIDO2 request
 *   Purple fade in and fade out - Private key signing request (SSH or PGP)
 *   Turquoise fade in and fade out - Private key decryption request
-*   Red fade in and fade out - Device is in config mode
-*   Steady white light - Device is in bootloader mode, use the OnlyKey app to load firmware.
+*   Red fade in and fade out - Device is in [config mode](https://docs.crp.to/security.html#config-mode)
+*   Steady white light - Device is in bootloader mode, use the OnlyKey app to [load firmware](https://docs.crp.to/usersguide.html#loading-onlykey-firmware).
 
 ### Password Manager {#password-manager}
 
@@ -36,9 +36,9 @@ Instead of having to remember all of your passwords you can just remember one 7 
 
 There are 3 methods of two-factor authentication supported by Onlykey.
 
-*   Google Authenticator (TOTP)
-*   FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)
-*   Yubico® One-Time Password
+*   [Google Authenticator (TOTP)](#google-authenticator-totp)
+*   [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-authentication-u2f)
+*   [Yubico® One-Time Password](#Yubico-one-time-password)
 
 #### Google Authenticator (TOTP) {#google-authenticator-totp}
 
