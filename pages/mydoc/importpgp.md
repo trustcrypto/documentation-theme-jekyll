@@ -15,9 +15,9 @@ OnlyKey uses the same standard OpenPGP keys used by popular services like Proton
 
 ### Exporting Keys
 
-#### Keybase
-
 {% include warning.html content="Only export keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
+
+#### Keybase
 
 {% include callout.html content="**Step 1.** If you do not already have a Keybase account. Follow the instructions in the [Generating Keys guide](https://docs.crp.to/usersguide.html#generating-keys) to generate your private key.<br><br>If you already have a Keybase account go to your account and next to your key ID select edit -> Export my private key from Keybase." type="default" %}
 
@@ -25,15 +25,11 @@ OnlyKey uses the same standard OpenPGP keys used by popular services like Proton
 
 #### Protonmail
 
-{% include warning.html content="Only export keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
-
 {% include callout.html content="**Step 1.** Follow the instructions in the [Protonmail knowledge base here](https://protonmail.com/support/knowledge-base/download-public-private-key/) to Download your private key" type="default" %}
 
 {% include callout.html content="**Step 2.** Follow the instructions [here](#loading-keys) to load key onto OnlyKey" type="default" %}
 
 #### Mailvelope
-
-{% include warning.html content="Only export keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
 {% include callout.html content="**Step 1.** Go to the Mailvelope extension key management tab and select 'export' -> select 'private' -> select 'save'." type="default" %}
 
@@ -55,7 +51,7 @@ OnlyKey uses the same standard OpenPGP keys used by popular services like Proton
 
 {% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *Auto* is selected as Slot, enter the same passphrase you used with Keybase, Protonmail, or Mailvelope. When finished select Save to OnlyKey" type="default" %}
 
-{% include image.html file="loadkey1.jpeg" %}
+{% include image.html file="loadkey1.jpg" %}
 
 {% include note.html content="Selecting set as backup key will use your Keybase key to encrypt backups. Setting this will override any previously set backup passphrase/key as there can only be one backup key set." %}
 

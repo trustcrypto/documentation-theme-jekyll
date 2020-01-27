@@ -812,7 +812,7 @@ If you generated your keys as described in the Generating Keys section above, us
 
 {% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *Auto* is selected as Slot, the same passphrase you used with Keybase (Or Protonmail / Mailvelope) is entered as passphrase. When finished select Save to OnlyKey" type="default" %}
 
-{% include image.html file="loadkey1.jpeg" %}
+{% include image.html file="loadkey1.jpg" %}
 
 {% include note.html content="Selecting set as backup key will use your Keybase key to encrypt backups. Setting this will override any previously set backup passphrase/key as there can only be one backup key set." %}
 
