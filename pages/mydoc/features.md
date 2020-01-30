@@ -36,8 +36,7 @@ folder: mydoc
 ***Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.***
 
 *   Hold button #1 for 5+ seconds to backup OnlyKey - See [secure backup feature](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) for more information.
-*   Hold button #2 for 5+ seconds to type out slot labels
-i.e.<br>
+*   Hold button #2 for 5+ seconds to type out slot labels - See [OnlyKey on-the-go](https://docs.crp.to/usersguide.html#otg) for more information.<br>i.e.<br>
 1a Google<br>
 2a Bank<br>
 3a Email<br>

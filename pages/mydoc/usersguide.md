@@ -181,11 +181,17 @@ Open a text editor and then hold down the 2 button on OnlyKey for 5+ seconds. On
 
 Since OnlyKey types out this information this method works on all computers and even mobile devices.
 
-A low tech solution is to write your labels on a card/paper and carry this in your wallet.
+Another low tech option is to write your labels on a card/paper and carry this in your wallet.
 
 {% include image.html file="card.jpg" max-width="400" %}
 
-{% include important.html content="Obviously, no sensitive information should be written on card/paper or saved to your slot labels. Just something that helps you remember which account is assigned there. Next, let's assign a username and password to slot 1a." %}
+{% include important.html content="Obviously, no sensitive information should be written on card/paper or saved to your slot labels. Just something that helps you remember which account is assigned there." %}
+
+Find out more about [mobile support on-the-go](#android-support)?
+
+Find out more about [TOTP support on-the-go](#google-authenticator-otg)?
+
+**Next, let's assign a username and password to slot 1a.**
 
 #### Set up a Slot {#set-up-a-slot}
 
@@ -363,9 +369,9 @@ To find out if a specific website is supported there is a full list of websites 
 
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
 
-#### Google Authenticator OTP On-The-Go {#google-authenticator-otg}
+#### TOTP (Google Authenticator) On-The-Go {#google-authenticator-otg}
 
-One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display "NOTSET" instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. For this reason it is important to ensure the OnlyKey app is permitted to autostart.
+One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will type out "NOTSET" instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. For this reason it is important to ensure the OnlyKey app is permitted to autostart.
 
 However, OnlyKey TOTP will work on-the-go without the app running. All you have to do is browse to our web app [https://apps.crp.to](https://apps.crp.to) in Google Chrome or Firefox. This web app in addition to being used to send encrypted messages sets the current time on OnlyKey and login with TOTP will function as normal.
 
@@ -400,9 +406,9 @@ The majority of Yubikey® OTP applications online require Yubicloud setup. See t
 
 Learn more about Yubikey® OTP implementation [here.](#Yubico-one-time-password)
 
-#### Yubicloud (Not Officially Support)  {#yubicloud-not-officially-support}
+#### Yubicloud (Not Officially Supported)  {#yubicloud-not-officially-support}
 
-Some online services use Yubicloud for authentication. Yubicloud is owned by Yubico® and 3rd party devices are not supported so OnlyKey is not supported on Yubicloud. However, 3rd party devices will technically work Yubicloud as long as you own an actual Yubikey®.
+Some online services use Yubicloud for authentication. Yubicloud is owned by Yubico® and 3rd party devices are not supported so OnlyKey is not supported on Yubicloud. However, 3rd party devices will technically work with Yubicloud as long as you own an actual Yubikey®.
 
 The following instructions show you how to set up a 3rd party device on Yubicloud. This is for your information only and we do not recommend setting up a 3rd party device on Yubicloud. If you choose to follow this information to set up a 3rd party device on Yubicloud you choose to do so against our recommendations and at your own risk.
 
@@ -980,13 +986,13 @@ Additional color cases are available - Choose a color that fits your style – S
 
 #### [Purchase on Amazon](https://crp.to/Amazon-Case)
 
-### Android Support {#android-support}
+### Android/iOS Support {#android-support}
 
-Android is supported by using a USB on-the-go (OTG) adapter. There are two types of OTG adapters that can be purchased USB Micro and USB C.
+Android and iOS is supported by using a USB on-the-go (OTG) adapter. For Android, there are two types of OTG adapters that can be purchased, USB Micro and USB C.
 
-Since the OnlyKey is essentially detected by Android as a keyboard, the username / password / Yubikey® OTP login features will work without any apps.
+Since the OnlyKey is essentially detected by mobile device as a keyboard, the username / password / Yubikey® OTP login features will work. Newer Android and iOS devices that support USB FIDO2 will support using OnlyKey as a security key.
 
-The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey browse to https://apps.crp.to from Chrome or Firefox in Android before trying to login.
+The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey browse to https://apps.crp.to from Chrome or Firefox in Android (Safari in iOS) before trying to login.
 
 #### [Purchase USB C to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-c-to-usb-a-otg-adapter) {#usb-c-to-usb-3-otg-adapter}
 
@@ -996,13 +1002,11 @@ The TOTP feature requires the correct time in order to generate correct codes. I
 
 {% include note.html content="Supports Moto G5 Plus, Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
 
-### iPhone/iPad Support {#iphone-ipad-support-experimental}
+#### [Purchase Lighting to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/lightning-to-usb-a-otg-adapter-for-iphone-or-ipad) {#lightning-to-usb-a-otg-adapter-for-iphone-or-ipad}
 
 You may use OnlyKey with a USB to Lightning adapter (sometimes called camera adapter) with iPhones and iPads.
 
-#### [Purchase Lighting to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/lightning-to-usb-a-otg-adapter-for-iphone-or-ipad) {#lightning-to-usb-a-otg-adapter-for-iphone-or-ipad}
-
-{% include note.html content="With iOS 13.3+ you may use OnlyKey as a FIDO2 security key and also use [OnlyKey WebCrypt](https://apps.crp.to) for OpenPGP support on iOS." %}
+{% include note.html content="With iOS 13.3+ you may use OnlyKey as a FIDO2 security key and also use [OnlyKey WebCrypt](https://apps.crp.to) for OpenPGP support in Safari." %}
 
 {% include image.html file="image29.png"  max-width="248" %}
 
