@@ -115,6 +115,10 @@ entries:
       url: /features.html#led-definitions-onlykey-color
       output: web, pdf
 
+    - title: Button Definitions
+      url: /features.html#button-definitions
+      output: web, pdf
+
     - title: Password Manager
       url: /features.html#password-manager
       output: web, pdf

@@ -4,7 +4,7 @@ permalink: features.html
 sidebar: mydoc_sidebar
 tags: [OnlyKey, Features]
 keywords: OnlyKey, Features
-last_updated: Oct, 10 2019
+last_updated: Jan, 30 2020
 summary: Detailed information on OnlyKey Features
 toc: false
 folder: mydoc
@@ -30,10 +30,10 @@ folder: mydoc
 
 ### Button Definitions {#button-definitions}
 
-*   Tap a button for slot A (i.e. Press OnlyKey button 1 for less than 1 second to type out account data stored in slot 1a)
-*   Hold a button for slot B (i.e. Press OnlyKey button 1 for more than 1 second to type out account data stored in slot 1b)
+*   Tap a button for slot <button #>A (i.e. Press OnlyKey button 1 for less than 1 second to type out account data stored in slot 1a)
+*   Hold a button for slot <button #>B (i.e. Press OnlyKey button 1 for more than 1 second to type out account data stored in slot 1b)
 
-Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.
+***Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.***
 
 *   Hold button #1 for 5+ seconds to backup OnlyKey - See [secure backup feature](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) for more information.
 *   Hold button #2 for 5+ seconds to type out slot labels
@@ -43,12 +43,12 @@ i.e.<br>
 3a Email<br>
 4a VPN<br>
 5a School<br>
-6a U2F<br>
-1b Amazon<br>
+6a Coinbase<br>
+1b Amazon AWS<br>
 2b Dropbox<br>
-3b<br>
-4b<br>
-5b<br>
+3b KeePassXC<br>
+4b Azure<br>
+5b Github<br>
 6b Lastpass<br>
 
 *   Hold button #6 for 5+ seconds to put OnlyKey in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
