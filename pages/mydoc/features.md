@@ -30,8 +30,20 @@ folder: mydoc
 
 ### Button Definitions {#button-definitions}
 
-*   Tap a button for slot <button #>A (i.e. Press OnlyKey button 1 for less than 1 second to type out account data stored in slot 1a)
-*   Hold a button for slot <button #>B (i.e. Press OnlyKey button 1 for more than 1 second to type out account data stored in slot 1b)
+#### Unconfigured OnlyKey {#uninitialized-onlykey}
+
+*   Hold button #3 down for 5+ seconds to start quick setup - See [OnlyKey Quick Setup](https://docs.crp.to/usersguide.html#quick-setup) for more information.
+*   Hold button #1 down for 5+ seconds to start quick setup in manual mode.
+*   Hold button #2 down for 5+ seconds to start quick setup in auto mode.
+
+#### Locked OnlyKey {#uninitialized-onlykey}
+
+*   While locked buttons only function to enter PIN code to unlock OnlyKey, 7-10 digits.
+
+#### Unlocked OnlyKey {#unlocked-onlykey}
+
+*   Tap a button for slot <button #>A (i.e. Press OnlyKey button #1 for less than 1 second to type out account data stored in slot 1a)
+*   Hold a button for slot <button #>B (i.e. Press OnlyKey button #1 for more than 1 second to type out account data stored in slot 1b)
 
 ***Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.***
 
