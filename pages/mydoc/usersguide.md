@@ -15,9 +15,9 @@ folder: mydoc
 
 ## Unpacking OnlyKey {#unpacking}
 
-{% include callout.html content="**Step 1.** Remove the OnlyKey and Keychain from packaging." type="default" %}
+{% include callout.html content="**Step 1.** Remove the OnlyKey and the quick-connect attachment from packaging." type="default" %}
 
-{% include callout.html content="**Step 2.** Attach the provided keychain to your OnlyKey and insert OnlyKey into protective case." type="default" %}
+{% include callout.html content="**Step 2.** Attach the quick-connect to the OnlyKey, the other end of the quick-connect can be attached to your keyring." type="default" %}
 
 {% include callout.html content="**Step 3.** (Optional) Check out OnlyKey accessories - [color cases](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908), [mobile adapter](https://onlykey.io/collections/accessories-1), [business workstation](https://onlykey.io/collections/workstation)." type="default" %}
 
