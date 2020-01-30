@@ -342,18 +342,18 @@ We would comply with the order and at the same time 100% protect customers. This
                           <th>Required Adapter</th>
                           </tr>
                           <tr>
-                          <td>iPhone/iPad (IOS 9.2+) with Lightning port</td>
-                          <td>Password manager and Yubikey OTP</td>
+                          <td>iPhone/iPad (IOS 13.3+) with Lightning port</td>
+                          <td>Password manager and Yubikey OTP (FIDO2 / U2F, TOTP, and OpenPGP with OnlyKey Webcrypt on Safari)</td>
                           <td>Lightning to USB OTG Adapter available from 3rd party vendors</td>
                           </tr>
                           <tr>
                           <td>Android with USB Micro port</td>
-                          <td>Password manager and Yubikey OTP (FIDO U2F, TOTP, and OpenPGP with OnlyKey App)</td>
+                          <td>Password manager and Yubikey OTP (FIDO2 / U2F, TOTP, and OpenPGP with OnlyKey Webcrypt)</td>
                           <td>USB Micro OTG w/Key chain Adapter available <a href="https://onlykey.io/collections/all/products/usb-micro-to-usb-a-otg-adapter">here</a></td>
                           </tr>
                           <tr>
                           <td>Android with USB C port</td>
-                          <td>Password manager and Yubikey OTP (FIDO U2F, TOTP, and OpenPGP with OnlyKey App)</td>
+                          <td>Password manager and Yubikey OTP (FIDO2 / U2F, TOTP, and OpenPGP with OnlyKey Webcrypt)</td>
                           <td>USB C OTG Adapter available <a href="https://onlykey.io/collections/all/products/usb-c-to-usb-a-otg-adapter">here</a></td>
                           </tr>
                           </tbody>
