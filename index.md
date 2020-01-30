@@ -4,7 +4,7 @@ keywords: homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: This is the official OnlyKey documenation site. Select from the topics shown below or from the left sidebar.
+summary: This is the official OnlyKey documentation site. Select from the topics shown below or from the left sidebar.
 ---
 
 ## Get Started With OnlyKey
@@ -51,10 +51,14 @@ The Knowledge Base contains guides and information for using OnlyKey in specific
 
 [Firmware Upgrade Guide](https://docs.crp.to/upgradeguide.html) - Follow this guide to upgrade firmware.
 
-[Deploying OnlyKey to the Enterprise](https://docs.crp.to/enterprise.html) - Options for deploying ready to use OnlyKey to employees.
-
 [International Travel Edition Guide](https://docs.crp.to/ite.html) - Follow this guide to use the International Travel Edition OnlyKey.
 
 [Plausible Deniability Setup Guide](https://docs.crp.to/pdguide.html) - Follow this guide to use the plausible deniability feature of OnlyKey
+
+[Import keys from Protonmail, Keybase, and Mailvelope](https://docs.crp.to/importpgp.html)
+
+[Using OnlyKey to authenticate to a device with no monitor](https://docs.crp.to/headless-server.html)
+
+[Works with OnlyKey](https://docs.crp.to/workswithonlykey.html)
 
 {% include links.html %}
