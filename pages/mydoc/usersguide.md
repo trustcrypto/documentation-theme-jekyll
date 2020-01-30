@@ -2,7 +2,7 @@
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
-last_updated: Nov, 13, 2019
+last_updated: Jan, 30, 2020
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
 sidebar: mydoc_sidebar
 permalink: usersguide.html
@@ -15,7 +15,7 @@ folder: mydoc
 
 ## Unpacking OnlyKey {#unpacking}
 
-{% include callout.html content="**Step 1.** Remove the OnlyKey and the quick-connect attachment from packaging." type="default" %}
+{% include callout.html content="**Step 1.** Remove the OnlyKey and the metal quick-connect keychain from packaging." type="default" %}
 
 {% include callout.html content="**Step 2.** Attach the quick-connect to the OnlyKey, the other end of the quick-connect can be attached to your keyring." type="default" %}
 
@@ -125,7 +125,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup accounts below***
 
-## Set up accounts {#account-setup}
+## Setting up accounts {#account-setup}
 
 {% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.<br><br>
 Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://i.vimeocdn.com/video/830893143_640.webp)](https://vimeo.com/372894554)" %}
