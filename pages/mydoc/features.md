@@ -28,6 +28,31 @@ folder: mydoc
 *   Red fade in and fade out - Device is in [config mode](https://docs.crp.to/security.html#config-mode)
 *   Steady white light - Device is in bootloader mode, use the OnlyKey app to [load firmware](https://docs.crp.to/usersguide.html#loading-onlykey-firmware).
 
+### Button Definitions {#button-definitions}
+
+*   Tap a button for slot A (i.e. Press OnlyKey button 1 for less than 1 second to type out account data stored in slot 1a)
+*   Hold a button for slot B (i.e. Press OnlyKey button 1 for more than 1 second to type out account data stored in slot 1b)
+
+Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.
+
+*   Hold button #1 for 5+ seconds to backup OnlyKey - See [secure backup feature](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) for more information.
+*   Hold button #2 for 5+ seconds to type out slot labels
+i.e.<br>
+1a Google<br>
+2a Bank<br>
+3a Email<br>
+4a VPN<br>
+5a School<br>
+6a U2F<br>
+1b Amazon<br>
+2b Dropbox<br>
+3b<br>
+4b<br>
+5b<br>
+6b Lastpass<br>
+
+*   Hold button #6 for 5+ seconds to put OnlyKey in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
+
 ### Password Manager {#password-manager}
 
 Instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 24 unique accounts using strong and random (up to 56 character) passwords along with the login page URLs, usernames, and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
@@ -36,7 +61,7 @@ Instead of having to remember all of your passwords you can just remember one 7 
 
 There are 3 methods of two-factor authentication supported by Onlykey.
 
-*   [Google Authenticator (TOTP)](#google-authenticator-totp)
+*   [OATH TOTP](#google-authenticator-totp)
 *   [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-authentication-u2f)
 *   [Yubico® One-Time Password](#Yubico-one-time-password)
 
