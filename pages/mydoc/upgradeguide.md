@@ -32,7 +32,7 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include note.html content="If you are a new OnlyKey user skip this section and head over to the [User's Guide](https://docs.crp.to/usersguide.html#onlykey-setup) to get started." %}
 
-{% include warning.html content="This firmware release adds support for FIDO2 (WebAuthn), this has been developed as a replacement for FIDO U2F. This requires re-registering your security keys (U2F Keys). To do this ensure that the sites where OnlyKey has been registered as a U2F security key have an alternate method of two-factor authentication enabled. After upgrading login and re-register OnlyKey as a security key on these sites." %}
+{% include warning.html content="This firmware release adds support for FIDO2 (WebAuthn), this has been developed as a replacement for FIDO U2F. If you are upgrading from Beta7 or earlier firmware this requires re-registering your security keys (U2F Keys). To do this ensure that the sites where OnlyKey has been registered as a U2F security key have an alternate method of two-factor authentication enabled. After upgrading login and re-register OnlyKey as a security key on these sites." %}
 
 {% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
