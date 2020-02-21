@@ -17,7 +17,7 @@ We are pleased to announce that the latest and greatest OnlyKey software is now 
 This release has a lot of improvements and new features. Here is the short list of new features in this release:
 
 - Windows 10 support (Fixes 1903 compatibility issue)
-- Android support (with OpenPGP message/file encryption support) for more information [read this](https://docs.crp.to/android.html).
+- Android and iOS support (with OpenPGP message/file encryption support) for more information [read this](https://docs.crp.to/mobile.html).
 - FIDO2 (supports Windows Hello and Azure AD)
 - File encryption (using Firefox, Chrome, Edge(new), Brave web browsers or a native app to encrypt/decrypt files)
 - PINs can now be changed!

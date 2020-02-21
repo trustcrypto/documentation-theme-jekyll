@@ -615,7 +615,7 @@ OnlyKey is OpenPGP compatible and the worlds first plug and play encryption devi
 
 {% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
-1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android for more information [read this](https://docs.crp.to/android.html).
+1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android and iOS for more information [read this](https://docs.crp.to/mobile.html).
 
 2) **[OnlyKey WebCrypt Native App](https://docs.crp.to/webcrypt.html)** provides the same app functionality but as a native app for that runs on Windows, mac OS, or Linux.
 
@@ -990,7 +990,7 @@ Additional color cases are available - Choose a color that fits your style – S
 
 Android and iOS is supported by using a USB on-the-go (OTG) adapter. For Android, there are two types of OTG adapters that can be purchased, USB Micro and USB C.
 
-Since the OnlyKey is essentially detected by mobile device as a keyboard, the username / password / Yubikey® OTP login features will work. Newer Android and iOS devices that support USB FIDO2 will support using OnlyKey as a security key.
+Since the OnlyKey is essentially detected by mobile device as a keyboard, the username / password / Yubikey® OTP login features will work. Newer Android and iOS devices that support USB FIDO2 will support using OnlyKey as a security key. WebCrypt may also be used to encrypt messages and files more info [here](https://docs.crp.to/mobile)
 
 The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey browse to https://apps.crp.to from Chrome or Firefox in Android (Safari in iOS) before trying to login.
 

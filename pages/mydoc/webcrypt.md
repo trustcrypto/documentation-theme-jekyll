@@ -100,7 +100,7 @@ The decrypted message will be displayed or the decrypted zip file downloaded.
 
 ### Universal Support
 
-This is accomplished by using the FIDO2 communication channel to communicate with a USB hardware device. The universal support for FIDO2 allows the web application to be used anywhere FIDO2 is supported including browsers on Android, iPhone (iOS 13.3+), Windows, Mac OS, Linux, and Chromebook. The web app can also be released as a native app that does not require a web browser if this is preferred.
+This is accomplished by using the FIDO2 communication channel to communicate with a USB hardware device. The universal support for FIDO2 allows the web application to be used anywhere FIDO2 is supported including browsers on Android, iPhone (iOS 13.3+), Windows, Mac OS, Linux, and Chromebook. The web app can also be released as a native app that does not require a web browser if this is preferred. [More information on Android/iOS support](https://docs.crp.to/mobile)
 
 ### Key Management
 
