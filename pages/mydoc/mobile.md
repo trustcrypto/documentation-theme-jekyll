@@ -59,17 +59,17 @@ This is currently supported using Firefox and Chrome browsers for Android. To us
 - Use a zip utility app to open the zip and access files i.e. Winzip for Android
 
 
-### Using OnlyKey as a Security Key on Android
+### Using OnlyKey as a Security Key on iOS (Experimental)
 
-Registering and logging in with OnlyKey as a security key on Android is almost the same as using on a desktop computer. This is currently supported using Firefox and Chrome browsers for Android. To use OnlyKey as a security key:
+Registering and logging in with OnlyKey as a security key on iOS is almost the same as using on a desktop computer. This is currently supported using the iOS Safari browser. To use OnlyKey as a security key:
 
 - Plug OnlyKey into mobile device using adapter
 - Enter PIN to unlock OnlyKey
 - Browse to the site you wish to use OnlyKey with
-- Register OnlyKey as a security key (Android has several pop up messages that you must accept to proceed)
+- Register OnlyKey as a security key (iOS may have several pop up messages that you must accept to proceed)
 - Once registered you can use OnlyKey as a security key to login
 
-{% include note.html content="If you have already registered OnlyKey as a security key for a website on desktop computer you may still have to re-register security key on Android." %}
+{% include note.html content="If you have already registered OnlyKey as a security key for a website on desktop computer you may still have to re-register security key on iOS." %}
 
 ### Using OnlyKey to encrypt files on iOS (Experimental)
 
