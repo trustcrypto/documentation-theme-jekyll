@@ -203,6 +203,10 @@ entries:
       url: /linux.html
       output: web, pdf
 
+    - title: Using OnlyKey with iOS and Android
+      url: /mobile.html
+      output: web, pdf
+
     - title: Import keys from Protonmail, Keybase, and Mailvelope
       url: /importpgp.html
       output: web, pdf

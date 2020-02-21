@@ -15,6 +15,11 @@ folder: mydoc
 - Mobile device using adapter, these may also be purchased [here](https://onlykey.io/collections/accessories-1).
 - To encrypt/decrypt a key must be loaded on OnlyKey. Instructions are available [here](https://docs.crp.to/usersguide.html#generating-keys).
 
+### Android/iOS Static Password, TOTP, and Yubikey OTP Support
+
+Since the OnlyKey is essentially detected by mobile device as a keyboard, the username / password / Yubikey® OTP login features will work.
+
+The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey browse to https://apps.crp.to from Chrome or Firefox in Android (Safari in iOS) before trying to login.
 
 ### Using OnlyKey as a Security Key on Android
 
