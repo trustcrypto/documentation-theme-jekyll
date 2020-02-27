@@ -119,7 +119,7 @@ The Webcrypt 2.0 app is available now - https://apps.crp.to
 
 OnlyKey is the first open source device to support this feature which was previously only supported by Yubikey. Challenge and response is a useful feature that is already supported by many apps. Now these apps can support OnlyKey as well as Yubikey. Applications that support this include:
 
-- KeePassXC software password manager will support challenge-response to lock your password vault using OnlyKey (next release KeePassXC 2.5.0). Using a master password plus challenge-response is much better than a master password alone. Stay tuned for the next KeePassXC release with OnlyKey support.
+- KeePassXC software password manager will support challenge-response to lock your password vault using OnlyKey (next release KeePassXC 2.5.0). 
 
 - Computer log in and full-disk encryption – The challenge-response code can be used to log in and is used with full-disk encryption solutions like LUKs. We will be working to add OnlyKey support to these projects. Know of any others we should add? We would love to hear about it, let us know and ask the project to add OnlyKey support.
 
