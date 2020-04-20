@@ -21,15 +21,7 @@ KERNEL=="ttyACM*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="066
 # OWNER:="yourusername" to create the device owned by you, or with
 # GROUP:="somegroupname" and mange access using standard unix groups.
 #
-# One requirement of TOTP (Time-based One-time Password) is having the correct
-# time. If OnlyKey is used on a system where the OnlyKey app is not running it
-# will display “NOTSET” instead of the OTP code. Because OnlyKey has no battery
-# it requires an app to send it the correct time to be able to generate TOTP
-# codes. If you have OnlyKey command-line utility installed, adding the
-# following will automatically set the current time on OnlyKey every time you
-# plug it: RUN+="/usr/local/bin/onlykey-cli settime"
+# Blink 3x Blue on OS start, useful for FDE password on headless systems
 #
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="0660", GROUP:="onlykey", RUN+="python /opt/python-fido2/examples/get_info.py"
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="0660", GROUP:="onlykey", RUN+="python /opt/python-fido2/examples/get_info.py"
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="0660", GROUP:="onlykey", RUN+="python /opt/python-fido2/examples/get_info.py"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="0660", GROUP:="onlykey", RUN+="python /opt/python-fido2/examples/get_info.py && python /opt/python-fido2/examples/get_info.py && python /opt/python-fido2/examples/get_info.py"
 #
