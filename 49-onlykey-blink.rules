@@ -1,13 +1,13 @@
-# UDEV Rules for OnlyKey, https://docs.crp.to/linux.html
+# UDEV Rules for headless system using OnlyKey for FDE, https://docs.crp.to/headless-server.html
 #
 # This file must be placed at:
 #
-# /etc/udev/rules.d/49-onlykey.rules    (preferred location)
+# /etc/udev/rules.d/49-onlykey-blink.rules    (preferred location)
 #   or
-# /lib/udev/rules.d/49-onlykey.rules    (req'd on some broken systems)
+# /lib/udev/rules.d/49-onlykey-blink.rules    (req'd on some broken systems)
 #
 # To install, type this command in a terminal:
-#   sudo cp 49-onlykey.rules /etc/udev/rules.d/49-onlykey.rules
+#   sudo cp 49-onlykey-blink.rules /etc/udev/rules.d/49-onlykey-blink.rules
 #
 # After this file is installed, physically unplug and reconnect OnlyKey.
 #
@@ -21,7 +21,16 @@ KERNEL=="ttyACM*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="066
 # OWNER:="yourusername" to create the device owned by you, or with
 # GROUP:="somegroupname" and mange access using standard unix groups.
 #
-# Blink 3x Blue on OS start, useful for FDE password on headless systems
+# Blink Blue on OS start, useful for letting user know FDE password on headless systems was successful
+# Requires at command and python-fido2
+# $ apt install python-pip
+# $ pip install fido2
+# $ cd /opt/
+# $ git clone https://github.com/Yubico/python-fido2.git
+# $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey-blink.rules
+# $ sudo cp 49-onlykey-blink.rules /etc/udev/rules.d/
+# $ sudo udevadm control –reload
 #
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="0660", GROUP:="onlykey", RUN+="python /opt/python-fido2/examples/get_info.py && python /opt/python-fido2/examples/get_info.py && python /opt/python-fido2/examples/get_info.py"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="0660", GROUP:="onlykey", RUN+="python /opt/python-fido2/examples/get_info.py"
+KERNEL=="ttyACM*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="60fc", MODE:="0660", GROUP:="onlykey", RUN+="python /opt/python-fido2/examples/get_info.py"
 #
