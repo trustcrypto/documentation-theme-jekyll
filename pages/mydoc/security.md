@@ -46,6 +46,10 @@ UPDATE 10/2019 - Additional security issues have been identified in closed sourc
 - https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/
 - https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/
 
+#### OnlyKey Bug Bounty Program
+
+No secure hardware is perfect, and CryptoTrust believes that working with skilled security researchers across the globe is crucial in identifying weaknesses in any technology. If you believe you've found a security issue in our product, we encourage you to notify us. We welcome working with you to resolve the issue promptly, please reference the [OnlyKey Bug Bounty Program here](https://onlykey.io/pages/onlykey-bug-bounty-program).
+
 ## Technical Specifications
 
 ### OnlyKey secure element {#secure-element}
