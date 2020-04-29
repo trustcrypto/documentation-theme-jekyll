@@ -42,11 +42,11 @@ Additionally, it is important to consider that most security weaknesses are rela
 - **FIPS-140-2** - OnlyKey meets many of the requirements of FIPS certification including using FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256). OnlyKey circuitry is coated with a physical protection compound that is both chemical resistant and tamper resistant. This means that it would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. Removal of the coating also results in noticeable damage to the OnlyKey (FIPS 140-2 Level 2 - Tamper Evident).
 
 UPDATE 10/2019 - Additional security issues have been identified in closed source security keys and smart cards.
-- https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk
-- https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/
-- https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/
+- [https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk](https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk)
+- [https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/](https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/)
+- [https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/](https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/)
 
-#### OnlyKey Bug Bounty Program
+### OnlyKey Bug Bounty Program
 
 No secure hardware is perfect, and CryptoTrust believes that working with skilled security researchers across the globe is crucial in identifying weaknesses in any technology. If you believe you've found a security issue in our product, we encourage you to notify us. We welcome working with you to resolve the issue promptly, please reference the [OnlyKey Bug Bounty Program here](https://onlykey.io/pages/onlykey-bug-bounty-program).
 
