@@ -11,21 +11,21 @@ folder: mydoc
 
 ## Security Features Overview
 
-- Firmware verification - The bootloader verifies the firmware signature on the OnlyKey. The firmware is only loaded onto the OnlyKey if the firmware is correctly signed by CryptoTrust.
+- **Firmware verification** - The bootloader verifies the firmware signature on the OnlyKey. The firmware is only loaded onto the OnlyKey if the firmware is correctly signed by CryptoTrust.
 
-- Firmware integrity checking - The bootloader verifies the firmware hash each time the device is used. The device only starts the firmware if the firmware has not changed.
+- **Firmware integrity checking** - The bootloader verifies the firmware hash each time the device is used. The device only starts the firmware if the firmware has not changed.
 
-- Tamper resistant / chemical resistant hardware - The device is coated with a chemical resistant coating that is resistant to chemical removal. Visible damage is done to the device by attempting to access coated electronics (Tamper evident).
+- **Tamper resistant / chemical resistant hardware** - The device is coated with a chemical resistant coating that is resistant to chemical removal. Visible damage is done to the device by attempting to access coated electronics (Tamper evident).
 
-- Protected key operations - Encryption / decryption operations are only allowed after user authentication via PIN.
+- **Protected key operations** - Encryption / decryption operations are only allowed after user authentication via PIN.
 
-- Read/write-protected secure flash - OnlyKey utilizes Kinetis [flash security](https://www.nxp.com/docs/en/application-note/AN4507.pdf) to securely lock all data residing on OnlyKey.
+- **Read/write-protected secure flash** - OnlyKey utilizes Kinetis [flash security](https://www.nxp.com/docs/en/application-note/AN4507.pdf) to securely lock all data residing on OnlyKey.
 
-- Offline secure processor - The data stored and processed on the OnlyKey is completely isolated from the connected computer. Data can only be written to the OnlyKey or wiped. Physical user touch is required to authorize authentication.
+- **Offline secure processor** - The data stored and processed on the OnlyKey is completely isolated from the connected computer. Data can only be written to the OnlyKey or wiped. Physical user touch is required to authorize authentication.
 
-- Secure encrypted backup and restore - Backups are securely encrypted with a user's passphrase (25+ characters) or a user's PGP key.
+- **Secure encrypted backup and restore** - Backups are securely encrypted with a user's passphrase (25+ characters) or a user's PGP key.
 
-- [True random number generation](cryptographically-secure-random-number-generator) - To guarantee random keys the patent pending method of random number generation utilizes a combination of hardware entropy and user touch entropy. The user touch entropy is completely unpredictable random data that is affected by many variables such as the conductivity of the user's skin, how long they press button, how long they delay between button presses, temperature and humidity.
+- **[True random number generation](cryptographically-secure-random-number-generator)** - To guarantee random keys the patent pending method of random number generation utilizes a combination of hardware entropy and user touch entropy. The user touch entropy is completely unpredictable random data that is affected by many variables such as the conductivity of the user's skin, how long they press button, how long they delay between button presses, temperature and humidity.
 
 ### About Hardware Security {#hardware-security}
 
