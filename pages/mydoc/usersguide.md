@@ -37,20 +37,20 @@ There are two options for setting up your OnlyKey.
 
 ### OnlyKey Quick Setup {#quick-setup}
 
-{% include important.html content="Quick setup is the quickest way to set up a new OnlyKey and there are no apps required. However, to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
+{% include important.html content="Quick setup is the quickest way to set up a new OnlyKey and there are no apps required. However, to take advantage of OnlyKey's many features, the OnlyKey app is required." %}
 
-To complete OnlyKey quick setup follow the instructions below:
+To complete OnlyKey quick setup, please follow the instructions below:
 
 - Open a text editor such as notepad on a trusted computer
 - Click inside the text editor
 - Insert OnlyKey into the USB port on your computer
 - Hold button #3 on your OnlyKey down for 5+ seconds and then release
 
-{% include callout.html content="OnlyKey will type out instructions for you to follow into the text editor. Follow these instructions to set PINs on OnlyKey and a backup passphrase. You can choose to have OnlyKey automatically generate random PINs or set PINs yourself. When setting a PIN keep in mind that remembering a pattern may be easier than remembering numbers." type="default" %}
+{% include callout.html content="OnlyKey will type out instructions for you to follow into the text editor. Follow these instructions to set PINs on OnlyKey and a backup passphrase. You can choose to have OnlyKey automatically generate random PINs or set PINs yourself. When setting a PIN, please keep in mind that remembering a pattern may be easier than remembering numbers." type="default" %}
 
-- When you are complete the quick setup you will see the text 'SETUP COMPLETE, DELETE THIS TEXT'
+- When you complete the quick setup, you will see the text 'SETUP COMPLETE, DELETE THIS TEXT'
 - Make sure you have carefully written down your PINs and backup passphrase and store this in a secure location
-- When finished enter your PIN onto OnlyKey to start using your new device, OnlyKey is ready for use as a security key (FIDO2/U2F) and for challenge-response
+- When finished, enter your PIN onto OnlyKey to start using your new device; OnlyKey is ready for use as a security key (FIDO2/U2F) and for challenge-response
 
  ***To use OnlyKey for password management, file encryption, and secure messaging follow the steps below to install the OnlyKey app***.
 
@@ -96,7 +96,7 @@ If you have already setup OnlyKey using quick setup proceed to [Account Setup](#
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
 
-{% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
+{% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN, then enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
 
@@ -106,7 +106,7 @@ If you have already setup OnlyKey using quick setup proceed to [Account Setup](#
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7-2.png)
 
-{% include callout.html content="**Step 8.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup just select [Next] to complete the setup." type="default" %}
+{% include callout.html content="**Step 8.** If you have an OnlyKey backup to restore, select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. If you do not have a backup, just select [Next] to complete the setup." type="default" %}
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
 
@@ -127,14 +127,14 @@ If you lose or forget your PIN then a factory default must be completed on your 
 
 ## Setting up accounts {#account-setup}
 
-{% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.<br><br>
+{% include tip.html content="Set aside some time to set up accounts as this can be time consuming the first time you set it up. After you configure your profiles once, you won't have to do this again unless you add a new account. Think of all the time you will save not having to remember and type usernames, passwords, and getting your phone out to type codes etc. This is a huge time saver in the long run.<br><br>
 Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demonstrates setting up a new OnlyKey<br>[![How-To: Setup Accounts and Customize OnlyKey Preferences](https://i.vimeocdn.com/video/830893143_640.webp)](https://vimeo.com/372894554)" %}
 
 ### Configure Basic Login Info {#all-about-slots}
 
-{% include callout.html content="**Enter your PIN -**  After setup you are prompted to enter the PIN you set onto your OnlyKey six button keypad." type="default" %}
+{% include callout.html content="**Enter your PIN -**  After setup, you are prompted to enter the PIN you set onto your OnlyKey six button keypad." type="default" %}
 
-Now that your OnlyKey is unlocked you see this screen.
+Now that your OnlyKey is unlocked you see this screen:
 
 {% include image.html file="image31.png" %}
 
@@ -156,7 +156,7 @@ The slots that have not been configured have no label so they are shown as ''emp
 
 {% include image.html file="image36.png" %}
 
-*Now the label you entered is assigned to slot 1a. Slot labels are helpful if you forget which button is assigned to which account you can open the OnlyKey app at any time to see how it is set up.*
+*Now the label you entered is assigned to slot 1a. Slot labels are helpful if you forget which button is assigned to which account. You can open the OnlyKey app at any time to see how it is set up.*
 
 {% include image.html file="image66.png" %}
 
@@ -179,7 +179,7 @@ Open a text editor and then hold down the 2 button on OnlyKey for 5+ seconds. On
 5b<br>
 6b Lastpass<br>
 
-Since OnlyKey types out this information this method works on all computers and even mobile devices.
+Since OnlyKey types out this information, this method works on all computers and even mobile devices.
 
 Another low tech option is to write your labels on a card/paper and carry this in your wallet.
 
@@ -207,26 +207,26 @@ The example configuration shown below would be to set up a username and password
 
 **Now the configuration is saved and shows up in the OnlyKey app as ''Google 1''**
 
-{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
+{% include note.html content="Since not all Login pages are the same, OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the Tab or Return key so if you are unsure of how to set up your OnlyKey configuration, try logging into your login page first by using just your keyboard. For the example above, you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
 
 #### Test a Slot {#test-a-slot}
 
-Once you set your desired account information to a slot then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
+Once you set your desired account information to a slot, then try it out by going to the login page, clicking in the login field, and pressing the corresponding button on the OnlyKey.
 
 ***Common issues:***
 
 *   ***The password is entered before page loads.***
-    *   *Set the delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
+    *   *Set a delay, usually 2-3 seconds works well but this may not be enough time for slow web pages or slow internet connections.*
 *   ***There is a Captcha required sometimes after password***
     *   *You can either set the delay to a high value like 8 - 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
 *   ***Everything works fine but I really wish it typed faster.***
     *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
 
-As mentioned earlier, login pages can be different between sites and sometimes even different on the same site. For the second example we will set up another Google login, this one for a Google account where the username is already saved to the website so all you need to do is enter a password. This is the default when you have already logged into Google in the past on a computer.
+As mentioned earlier, login pages can be different between sites and sometimes even different on the same site. For the second example, we will set up another Google login, this one for a Google account where the username is already saved to the website so all you need to do is enter a password. This is the default when you have already logged into Google in the past on a computer.
 
 Additionally, by using the URL field we can have the OnlyKey type the login page URL into the browser and browse to the login page (in this case accounts.google.com). This way a one-touch login is possible. Just select the empty URL field in the browser and the URL is automatically typed out and Return is pressed to browse to the site. Once on the site the password is entered and the login is complete.
 
-{% include tip.html content="Using the URL field provides protection against spear phishing attacks as this provides assurance that the site you are entering your password into is the legitimate site. For example, if you receive an email asking you to log into your account to verify something instead of clicking the link in the email to login you would use OnlyKey to browse to the correct site to login.
+{% include tip.html content="Using the URL field provides protection against spear phishing attacks as this provides assurance that the site you are entering your password into is the legitimate site. For example, if you receive an email asking you to log into your account to verify something, instead of clicking the link in the email to login you would use OnlyKey to browse to the correct site to login.
 <br>
 *Need a URL longer than 56 characters? Try using a URL shortner like Bit.ly*" %}
 
@@ -250,7 +250,7 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
    </td>
   </tr>
   <tr>
-   <td>Site that does not automatically select username field after loading page (i.e.Kracken).
+   <td>Site that does not automatically select username field after loading page (e.g., Kracken).
 {% include image.html file="image42.png" max-width="201" %}
    </td>
    <td><em>With URL - You will notice that "Tab before UserName" is checked. This will select the username field as it is not automatically selected when the page loads.</em>
@@ -260,16 +260,16 @@ Additionally, by using the URL field we can have the OnlyKey type the login page
    </td>
   </tr>
   <tr>
-   <td>Site where username is remembered after first login (i.e. Google).
+   <td>Site where username is remembered after first login (e.g., Google).
    </td>
    <td><em>Password and 2FA only - This is usually the best option if you remember your username/email address as this will work on any computer whether your username is remembered or not. This method does not include URL in case you are prompted for a password.</em>
 {% include image.html file="image60.png" max-width="395"%}
-<em>Username Remembered w/URL - If you use your device mostly on a computer where you username is remembered this is a good option. If you use this configuration on a computer where username is not remembered then you must output of the login information into notepad and paste into login fields.</em>
+<em>Username Remembered w/URL - If you use your device mostly on a computer where your username is remembered this is a good option. If you use this configuration on a computer where username is not remembered then you must output of the login information into notepad and paste into login fields.</em>
 {% include image.html file="image61.png" max-width="395" %}
    </td>
   </tr>
   <tr>
-   <td>Site that does not automatically select OTP code field (i.e. Salesforce)
+   <td>Site that does not automatically select OTP code field (e.g., Salesforce)
 {% include image.html file="image22.png" max-width="201" %}
 After loading next page
 {% include image.html file="image47.png" max-width="201" %}
@@ -279,7 +279,7 @@ After loading next page
    </td>
   </tr>
   <tr>
-   <td>Site where username and password is required first and then OTP code field appears below (i.e. IT Glue)
+   <td>Site where username and password is required first and then OTP code field appears below (e.g., IT Glue)
 {% include image.html file="image28.png" max-width="207"%}
    </td>
    <td>
@@ -291,7 +291,7 @@ After loading next page
 
 {% include tip.html content="Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
-{% include important.html content="***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker." %}
+{% include important.html content="***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager, one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker." %}
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
 
@@ -315,7 +315,7 @@ Chrome Extension available from the Chrome Web Store [here](https://chrome.googl
 
 ### Configure Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
-Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are three different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
+Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised, an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know (like a password), something you are (like a fingerprint or iris scan), or something you have (like the OnlyKey). There are three different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA, OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
 
 #### Google Authenticator (TOTP) {#google-authenticator-totp}
 
@@ -331,13 +331,13 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 *You would then take a picture of the QR code the website gives you. The app then starts generating a 6 digit number that changes every 30 seconds that is required to be typed into the website login prompt in addition to your username and password.*
 
-*This method of two-factor authentication has some notable advantages over using features like 2nd-step verification where a website will send you an SMS message with a code to enter to login. One weakness in the SMS approach is that phone numbers can be transferred to a malicious party sometimes just by calling and asking the phone company to do this and providing some personal information. Another weakness is that more sophisticated attackers may be able to clone your phone number and then receive SMS messages sent to you. Google authenticator (TOTP) solves some of these issues by generating the code on your phone itself using a private key. Now that the background is covered we can set this up on your OnlyKey. No phone or app required for setting this up on your OnlyKey but if you wish to maintain a backup of your two-factor authentication codes it may be a good idea to download the app and scan the QR code as a backup in case you lose your OnlyKey.*
+*This method of two-factor authentication has some notable advantages over using features like 2nd-step verification where a website will send you an SMS message with a code to enter to login. One weakness in the SMS approach is that phone numbers can be transferred to a malicious party sometimes just by calling and asking the phone company to do this and providing some personal information. Another weakness is that more sophisticated attackers may be able to clone your phone number and then receive SMS messages sent to you. Google authenticator (TOTP) solves some of these issues by generating the code on your phone itself using a private key. Now that the background is covered, we can set this up on your OnlyKey. No phone or app required for setting this up on your OnlyKey but if you wish to maintain a backup of your two-factor authentication codes, it may be a good idea to download the app and scan the QR code as a backup in case you lose your OnlyKey.*
 
-{% include callout.html content="**Step 1. Enable Google Authenticator App on Website -** If you are unsure if the website you want to setup supports OTP check [here](http://www.dongleauth.info/). Assuming that the website supports Google Authenticator you can proceed to enable Google Authenticator. For example to do this for your Google Account you must first enable 2-Step Verification and then you select ''SETUP'' as shown below:" type="default" %}
+{% include callout.html content="**Step 1. Enable Google Authenticator App on Website -** If you are unsure if the website you want to setup supports OTP check [here](http://www.dongleauth.info/). Assuming that the website supports Google Authenticator, you can proceed to enable Google Authenticator. For example to do this for your Google Account you must first enable 2-Step Verification and then you select ''SETUP'' as shown below:" type="default" %}
 
 {% include image.html file="image85.png" max-width="582" %}
 
-As you go through the steps you will be prompted to scan a QR code (Looks like a square bar code). You can go ahead and scan the QR code using your smartphone Google Authenticator app if you wish to create a backup and then select "CAN'T SCAN IT" as shown below:
+As you go through the steps, you will be prompted to scan a QR code (looks like a square bar code). You can go ahead and scan the QR code using your smartphone Google Authenticator app if you wish to create a backup and then select "CAN'T SCAN IT" as shown below:
 
 {% include image.html file="image6.png" max-width="392" %}
 
@@ -347,25 +347,25 @@ Selecting ''CAN'T SCAN IT'' will display the private code. Select this text and 
 
 {% include image.html file="image38.png" max-width="383"%}
 
-Now open the OnlyKey Chrome Configuration App. With your correct PIN entered on the OnlyKey you are able to select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
+Now open the OnlyKey Chrome Configuration App. With your correct PIN entered on the OnlyKey, you are able to select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
 
 {% include image.html file="image65.png" max-width="599" %}
 
 Once you click submit your OnlyKey is ready to generate OTPs.
 
-{% include callout.html content="**Step 3. Generate OTP -** Place your cursor in the ''Enter code'' field and press the button that corresponds to the slot that was set. In the example above we set slot 2a so we press the #2 button to generate the OTP." type="default" %}
+{% include callout.html content="**Step 3. Generate OTP -** Place your cursor in the ''Enter code'' field and press the button that corresponds to the slot that was set. In the example above, we set slot 2a so we press the #2 button to generate the OTP." type="default" %}
 
 {% include image.html file="image20.png" max-width="339" %}
 
 {% include image.html file="image75.png" max-width="324" %}
 
-Once your account has been verified you are all set. You can add a username and password to this slot so that you can do a one touch login. Keep in mind that the page may take a second or two to load where your 6 digit OTP is entered so set the delay accordingly, 4 - 5 seconds delay should work in most cases.
+Once your account has been verified, you are all set. You can add a username and password to this slot so that you can do a one touch login. Keep in mind that the page may take a second or two to load where your 6 digit OTP is entered so set the delay accordingly, 4 - 5 seconds delay should work in most cases.
 
 {% include image.html file="image37.png" max-width="600" %}
 
-If you are looking for step-by-step guides on setting up other popular sites with 2FA check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
+If you are looking for step-by-step guides on setting up other popular sites with 2FA, check out the guides [here](https://authy.com/guides-filter/compatible-with-authy/). Just as with the steps mentioned above, instead of scanning the QR code with an app, click "CAN'T SCAN IT" to copy and paste the text into the Google Auth OTP field of the OnlyKey app.
 
-To find out if a specific website is supported there is a full list of websites and wether or not they support 2FA [here](http://www.dongleauth.info/). To see if a certain site is supported see that there is a check next to "One Time Passwords (OTP)"
+To find out if a specific website is supported, there is a full list of websites and whether or not they support 2FA [here](http://www.dongleauth.info/). To see if a certain site is supported, see that there is a check next to "One Time Passwords (OTP)"
 
 Learn more about the implementation of Google Auth OTP [here.](#google-authenticator-totp)
 
@@ -410,7 +410,7 @@ Learn more about Yubikey® OTP implementation [here.](#Yubico-one-time-password)
 
 Some online services use Yubicloud for authentication. Yubicloud is owned by Yubico® and 3rd party devices are not supported so OnlyKey is not supported on Yubicloud. However, 3rd party devices will technically work with Yubicloud as long as you own an actual Yubikey®.
 
-The following instructions show you how to set up a 3rd party device on Yubicloud. This is for your information only and we do not recommend setting up a 3rd party device on Yubicloud. If you choose to follow this information to set up a 3rd party device on Yubicloud you choose to do so against our recommendations and at your own risk.
+The following instructions show you how to set up a 3rd party device on Yubicloud. This is for your information only and we do not recommend setting up a 3rd party device on Yubicloud. If you choose to follow this information to set up a 3rd party device on Yubicloud, then you choose to do so against our recommendations and at your own risk.
 
 {% include callout.html content="**Step 1.** Download and install the [Yubikey® personalization tools](https://www.Yubico.com/support/download/)" type="default" %}
 
@@ -440,7 +440,7 @@ The following instructions show you how to set up a 3rd party device on Yubiclou
 
 The terminology for security keys can be a bit confusing so here are some quick definitions to make sense of it.
 
-When websites use the term security key they typically are referring to one of these:
+When websites use the term security key, they typically are referring to one of these:
 - Universal 2nd Factor (FIDO U2F) - Security key is used just as a 2nd factor along with your password.
 - FIDO2 - A replacement for FIDO U2F released in 2019, Security key may be used as a 2nd factor along with your password or may be used as a passwordless security key on supported websites. Passwordless authentication allows logging in with just a security key and a PIN code.
 
@@ -448,18 +448,18 @@ The term WebAuthn is sometimes used instead of FIDO2, essentially WebAuthn is th
 
 OnlyKey works just like any other FIDO2 or FIDO U2F token. The first step to use a security key is to register the key and then once registered you can login to that site with the key.
 
-To use OnlyKey as a security key follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site.
+To use OnlyKey as a security key, follow the instructions given by the website where you wish to register OnlyKey. When using Onlykey as a security key you will see the light flash blue, press any button on the OnlyKey to register or login to a site.
 
 {% include tip.html content="If I press an OnlyKey button where a password is already assigned won't OnlyKey type out my password?
 
 No, while OnlyKey is flashing blue it will not type out any information, OnlyKey also has a 2 second cool off period to ensure this does not happen accidentally.
 
-While you can press any button, some user's may prefer to always press the button of unused slot for FIDO authentication. For example, keep slot 6a unused and always press OnlyKey button 6 for FIDO authentication.
+While you can press any button, some users may prefer to always press the button of unused slot for FIDO authentication. For example, keep slot 6a unused and always press OnlyKey button 6 for FIDO authentication.
 " %}
 
 #### Security Key Advanced {#security-key-advanced}
 
-One touch login may be configured with a security key by assigned the FIDO U2F two-factor mode to a slot.
+One touch login may be configured with a security key by assigning the FIDO U2F two-factor mode to a slot.
 
 {% include callout.html content="**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting ''Submit''." type="default" %}
 
@@ -469,7 +469,7 @@ One touch login may be configured with a security key by assigned the FIDO U2F t
 
 {% include callout.html content="**Step 3.** Once registered, your token can be used to authenticate by pressing the button. You can also add username and password to this slot to have a one touch login." type="default" %}
 
-{% include tip.html content="There are **two ways to use FIDO U2F** on OnlyKey:<br><br>**1)** Press any button when prompted for FIDO U2F login<br><br>**2)** Have FIDO U2F enabled along with other account information for each site. i.e. Set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
+{% include tip.html content="There are **two ways to use FIDO U2F** on OnlyKey:<br><br>**1)** Press any button when prompted for FIDO U2F login<br><br>**2)** Have FIDO U2F enabled along with other account information for each site. For example, set slot 1a as Dropbox login and include URL, Username, Password, and U2F all in one profile like this:<br>
 ![U2F Example](https://docs.crp.to/images/u2f-slot.jpeg)
 <br>Now you can register your security key by pressing button 1. But won't it type out my information while registering? No, while your device is flashing blue you can press the button to register and typing is disabled. Once your security key is registered you can log out and now you have a one touch login configured:<br>- Automatically type out and browse to login page (https://www.dropbox.com/login).<br>- Three second delay ensures login page has time to load, this can be increased if using slow internet connections.<br>- Username and password are entered in login field.<br>- Two second delay ensures security key page has time to load.<br>- U2F authentication completes automatically." %}
 
@@ -477,7 +477,7 @@ Learn more about OnlyKey's implementation of FIDO2 / FIDO U2F [here.](https://do
 
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
-OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to KeePassXC, Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline secure hardware and everything else in the software password manager.
+OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to KeePassXC, Dashlane, Google (Smart Lock), Lastpass, etc., and enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline secure hardware and everything else in the software password manager.
 
 There are two types of software password managers:
 - Online Password Managers - Less secure but more convenient because passwords sync automatically between devices
@@ -489,14 +489,14 @@ There are two types of software password managers:
   - [KeePassXC](https://onlykey.io/pages/securing-keepassxc-with-onlykey)
   - KeePass
   - Password Safe
-
+  - Keeper
 
 #### KeePassXC {#keepassxc}
 
 What's great about KeePassXC:
-- Its 100% open source (verifiable security)
-- Its cross platform, supports Windows, Linux, Mac (in contrast to KeePass which is for Windows)
-- Its offline, no passwords in the cloud
+- It's 100% open source (verifiable security)
+- It's cross platform, supports Windows, Linux, Mac (in contrast to KeePass which is for Windows)
+- It's offline, no passwords in the cloud
 - We collaborated with the KeePassXC team to develop a custom integration with OnlyKey that provides a major security benefit
 {% include image.html file="keepassxc.png" %}
 
@@ -611,13 +611,13 @@ SmartLock is a password manager that is available in Google Chrome, it supports 
 
 ## OpenPGP File Encryption and Secure Communication {#secure-com}
 
-OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
+OnlyKey is OpenPGP compatible and the world's first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
 {% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
-1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android and iOS for more information [read this](https://docs.crp.to/mobile.html).
+1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android and iOS, for more information [read this](https://docs.crp.to/mobile.html).
 
-2) **[OnlyKey WebCrypt Native App](https://docs.crp.to/webcrypt.html)** provides the same app functionality but as a native app for that runs on Windows, mac OS, or Linux.
+2) **[OnlyKey WebCrypt Native App](https://docs.crp.to/webcrypt.html)** provides the same app functionality but as a native app that runs on Windows, macOS, or Linux.
 
 {% include note.html content="Private keys are securely stored on OnlyKey and are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. Additionally, physical user presence is required to process secure messages/files. This is in contrast to Smart Cards which only require a PIN code that can be captured and replayed without physical user presence." %}
 
@@ -652,7 +652,7 @@ Receiving encrypted files is as easy as putting a custom link in your email sign
 <br><br>
 - Link the text **'file'** to: https://apps.crp.to/encrypt-file.html?type=e&recipients=<mark>bobsmith2</mark>
 <br><br>
-- Change <mark>bobsmith2</mark> in the link to your Keybase user name
+- Change <mark>bobsmith2</mark> in the link to your Keybase username
 <br><br>
 - Add a **'More info'** link to: https://onlykey.io/pages/webcrypt<br>
 This link provides information to let your sender know what WebCrypt is, why it's secure, and includes a quick 30 second video that will shows how to use it.<br>
@@ -670,7 +670,7 @@ This is the amount of time that the OnlyKey should remain unlocked while not bei
 
 ### Configurable Keyboard Type Speed {#configurable-keyboard-type-speed}
 
-Setting a custom type speed may be desirable in cases where the application you are using can not keep up with fast typing. Or if you don't use any applications with type speed restrictions you can have the text typed at top speed for the fastest logins. Setting value to 1 will result in very slow type speed of about one character a second, setting value to 10 will result in very fast type speed that will type almost instantly.
+Setting a custom type speed may be desirable in cases where the application you are using can not keep up with fast typing. Or if you don't use any applications with type speed restrictions, you can have the text typed at top speed for the fastest logins. Setting value to 1 will result in very slow type speed of about one character a second, setting value to 10 will result in very fast type speed that will type almost instantly.
 
 ### Configurable Keyboard Layouts {#configurable-keyboard-layouts}
 
@@ -713,7 +713,7 @@ By default, you can change your backup key/passphrase at any time by entering yo
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
-**Use Case #1** - If you are using the plausible deniability feature there is one scenario where an adversary may be able to determine that you were using the plausible deniability feature. This is possible if the adversary enters 10 incorrect PINs causing your OnlyKey to wipe all data and then they go to reconfigure the OnlyKey. The adversary would be able to determine during setup if the device has the Standard Edition firmware or the International Travel Edition firmware. At this point the device is wiped the adversary would not have access to any sensitive information but the adversary would know that your device is capable of encryption which in some areas may be undesirable. To address this issue you can set the wipe mode of your OnlyKey to Full Wipe. Given the same scenario with Full Wipe set when 10 incorrect PINs are entered the device will completely wipe all information including the firmware from your OnlyKey. No useful information would be available to an adversary concerning what firmware you were running and in order to use the device new firmware must be loaded.
+**Use Case #1** - If you are using the plausible deniability feature, there is one scenario where an adversary may be able to determine that you were using the plausible deniability feature. This is possible if the adversary enters 10 incorrect PINs causing your OnlyKey to wipe all data and then they go to reconfigure the OnlyKey. The adversary would be able to determine during setup if the device has the Standard Edition firmware or the International Travel Edition firmware. At this point the device is wiped the adversary would not have access to any sensitive information but the adversary would know that your device is capable of encryption which in some areas may be undesirable. To address this issue you can set the wipe mode of your OnlyKey to Full Wipe. Given the same scenario with Full Wipe set when 10 incorrect PINs are entered the device will completely wipe all information including the firmware from your OnlyKey. No useful information would be available to an adversary concerning what firmware you were running and in order to use the device new firmware must be loaded.
 
 **Use Case #2** - You just like to be absolutely sure that everything including the firmware has been eliminated from your device when a factory default occurs.
 
@@ -729,7 +729,7 @@ In the simplest terms an encryption key is something you have that allows you to
 
 **Why does protecting private keys matter?**
 
-You may hear the term private key being used sometimes, we will not get into the details here but there are plenty of places to read further on this topic online. For our purposes here a private key is used to read the secure messages / data that someone sends you. Only you should have access to this key because anyone with access to the key can read all messages sent to you in the past or in the future. This is why it is important to protect the key from exposure and why storing it securely on the OnlyKey is better than on your computer somewhere.
+You may hear the term private key being used sometimes, we will not get into the details here but there are plenty of places to read further on this topic online. For our purposes here, a private key is used to read the secure messages / data that someone sends you. Only you should have access to this key because anyone with access to the key can read all messages sent to you in the past or in the future. This is why it is important to protect the key from exposure and why storing it securely on the OnlyKey is better than on your computer somewhere.
 
 **What does OnlyKey use keys for?**
 
@@ -744,7 +744,7 @@ Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-fea
 
 ### Generating Keys {#generating-keys}
 
-{% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
+{% include warning.html content="Only generate keys on a computer that you trust (i.e., never a publicly accessible or shared workstation)." %}
 
 {% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp.png)](https://vimeo.com/374512727)" %}
 
@@ -798,11 +798,11 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 
 ### Loading Keys {#loading-keys}
 
-{% include warning.html content="Only load keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
+{% include warning.html content="Only load keys on a computer that you trust (i.e., never a publicly accessible or shared workstation)." %}
 
 {% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp.png)](https://vimeo.com/374512727)" %}
 
-If you generated your keys as described in the Generating Keys section above, using Keybase, or using Mailvelope proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
+If you generated your keys as described in the Generating Keys section above, using Keybase or using Mailvelope, proceed to follow the steps below. If not, then head over to [Loading Keys Advanced](#loading-keys-a).
 
 {% include callout.html content="**Step 1.** Open the text file of your private key that you saved in the previous steps. Select all of the text of the private key (CTRL+A), and copy the text (CTRL+C)." type="default" %}
 
@@ -887,7 +887,7 @@ $ gpg2 --export-secret-key -a "asdf"
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-{% include callout.html content="**Step 4.** Copy and paste the private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with GPG is entered as passphrase, *Set as decryption key* is selected. If you wish to use your PGP to encrypt OnlyKey backups select *Set as backup key* (Note: If you previously set a backup passphrase and set this the PGP key will be used instead). When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 4.** Copy and paste the private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with GPG is entered as passphrase, *Set as decryption key* is selected. If you wish to use your PGP to encrypt OnlyKey backups select *Set as backup key* (Note: If you previously set a backup passphrase and set this, the PGP key will be used instead). When finished select Save to OnlyKey" type="default" %}
 
 {% include note.html content="Selecting set as backup key will use your GPG key to encrypt backups. If you wish to use a different key for backups just load that key and set it as backup. There can only be one backup key set." %}
 
@@ -927,7 +927,7 @@ The process is the same to backup without the app. OnlyKey can type out your enc
 
 ## Restore From Backup {#restore-from-backup}
 
-Using the backup file created in the Secure Encrypted Backup Anywhere section, we can restore an OnlyKey from backup. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
+Using the backup file created in the Secure Encrypted Backup Anywhere section, you can restore an OnlyKey from backup. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
 
 {% include note.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
@@ -990,9 +990,9 @@ Additional color cases are available - Choose a color that fits your style – S
 
 Android and iOS is supported by using a USB on-the-go (OTG) adapter. For Android, there are two types of OTG adapters that can be purchased, USB Micro and USB C.
 
-Since the OnlyKey is essentially detected by mobile device as a keyboard, the username / password / Yubikey® OTP login features will work. Newer Android and iOS devices that support USB FIDO2 will support using OnlyKey as a security key. WebCrypt may also be used to encrypt messages and files more info [here](https://docs.crp.to/mobile)
+Since the OnlyKey is essentially detected by mobile device as a keyboard, the username / password / Yubikey® OTP login features will work. Newer Android and iOS devices that support USB FIDO2 will support using OnlyKey as a security key. WebCrypt may also be used to encrypt messages and files, more info [here](https://docs.crp.to/mobile)
 
-The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey browse to https://apps.crp.to from Chrome or Firefox in Android (Safari in iOS) before trying to login.
+The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey, browse to https://apps.crp.to from Chrome or Firefox in Android (Safari in iOS) before trying to login.
 
 #### [Purchase USB C to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-c-to-usb-a-otg-adapter) {#usb-c-to-usb-3-otg-adapter}
 
@@ -1000,7 +1000,7 @@ The TOTP feature requires the correct time in order to generate correct codes. I
 
 #### [Purchase USB Micro to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-micro-to-usb-a-otg-adapter) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
 
-{% include note.html content="Supports Moto G5 Plus, Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
+{% include note.html content="Supports Moto G5 Plus, Samsung Galaxy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
 
 #### [Purchase Lighting to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/lightning-to-usb-a-otg-adapter-for-iphone-or-ipad) {#lightning-to-usb-a-otg-adapter-for-iphone-or-ipad}
 
@@ -1040,7 +1040,7 @@ Below is a list of common issues and solutions.
   <tr>
    <td>Not working with certain sites / Not entering data in correct field
    </td>
-   <td>We often get customers that ask how to set up a specific site with OnlyKey. There are several examples listed in the table provided in the <a href="#set-up-a-slot">Set up a slot</a> section. If you have a use case that is not covered by this please open a new issue on the support forum.
+   <td>We often get customers that ask how to set up a specific site with OnlyKey. There are several examples listed in the table provided in the <a href="#set-up-a-slot">Set up a slot</a> section. If you have a use case that is not covered by this, please open a new issue on the support forum.
    </td>
   </tr>
   <tr>
