@@ -2,7 +2,7 @@
 title: About Security
 tags: [OnlyKey, security]
 keywords: OnlyKey, security
-last_updated: Feb, 22, 2019
+last_updated: April, 29, 2020
 summary: This article talks about the security features and security architecture of OnlyKey
 sidebar: mydoc_sidebar
 permalink: security.html
@@ -15,7 +15,7 @@ folder: mydoc
 
 - **Firmware integrity checking** - The bootloader verifies the firmware hash each time the device is used. The device only starts the firmware if the firmware has not changed.
 
-- **Tamper resistant / chemical resistant hardware** - The device is coated with a chemical resistant coating that is resistant to chemical removal. Visible damage is done to the device by attempting to access coated electronics (Tamper evident).
+- **Tamper resistant / chemical resistant hardware** - The device is coated with a chemical resistant coating that is    resistant to chemical removal. Visible damage is done to the device by attempting to access coated electronics (Tamper evident).
 
 - **Protected key operations** - Encryption / decryption operations are only allowed after user authentication via PIN.
 
@@ -31,7 +31,7 @@ folder: mydoc
 
 When it comes to hardware security there are terms such as tamper resistant, tamper evident, tamper proof, and secure element. It is important to understand what these terms mean as they are often used for marketing purposes.
 
-- **Tamper proof** - Anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof. The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels. A simplified explanation of these levels can be found on [wikipedia](https://en.wikipedia.org/wiki/FIPS_140-2) (Notice that even the highest security level is not tamper proof)
+- **Tamper proof** - Anyone with in-depth knowledge of hardware security understands there is no such thing as tamper proof. The National Institute of Standards and Technology has established some standards for the SECURITY REQUIREMENTS FOR CRYPTOGRAPHIC MODULES in the publication [here](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf). This standard defines 4 security levels. A simplified explanation of these levels can be found on [wikipedia](https://en.wikipedia.org/wiki/FIPS_140-2) (Notice that even the highest security level is not tamper proof).
 
 - **Tamper resistant** - This can mean something as simple as the device being coated in plastic. In many cases that plastic can [easily be removed](http://www.hexview.com/~scl/neo/) with household chemicals.
 
@@ -41,10 +41,11 @@ Additionally, it is important to consider that most security weaknesses are rela
 
 - **FIPS-140-2** - OnlyKey meets many of the requirements of FIPS certification including using FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256). OnlyKey circuitry is coated with a physical protection compound that is both chemical resistant and tamper resistant. This means that it would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. Removal of the coating also results in noticeable damage to the OnlyKey (FIPS 140-2 Level 2 - Tamper Evident).
 
-UPDATE 10/2019 - Additional security issues have been identified in closed source security keys and smart cards.
+New security issues continue to be identified in closed source security keys and smart cards.
 - [https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk](https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk)
 - [https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/](https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/)
 - [https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/](https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/)
+- [https://securitygladiators.com/gemalto-smart-cards/](https://securitygladiators.com/gemalto-smart-cards/)
 
 ### OnlyKey Bug Bounty Program
 
