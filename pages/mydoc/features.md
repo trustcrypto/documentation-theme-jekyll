@@ -143,7 +143,11 @@ Keys are loaded using the OnlyKey App. Step by step directions for generating an
 
 ### SSH Login {#ssh-login}
 
-SSH Authentication - Currently only ECC keys (curve25519 & NIST-P256) are supported for SSH authentication. Using the [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html) SSH authentication is easy and your private key is never exposed on a computer where it can be compromised by hacker.
+OnlyKey can be used for SSH Authentication in two ways:
+
+1. Using the [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html), SSH authentication is easy and your private key is never exposed on a computer where it can be compromised by hacker. Currently only ECC keys (curve25519 & NIST-P256) are supported for SSH authentication.
+
+2. Using [OpenSSH](https://docs.crp.to/openssh.html) version [8.2 or higher](http://www.openssh.com/txt/release-8.2), OnlyKey can be paired with a traditional SSH key for second factor authentication.  Currently only ecdsa is supported.
 
 ### OpenPGP Everywhere Message and File Encryption {#openpgp}
 
