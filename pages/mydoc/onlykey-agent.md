@@ -27,7 +27,7 @@ $ sudo pip2 install onlykey onlykey-agent
 Plug and unlock your OnlyKey and then run:
 
 ```
-$ onlykey-agent user@host
+$ onlykey-agent identity@myhost
 ```
 
 Where user is your usual SSH user and host the host you want to connect to.
@@ -36,25 +36,45 @@ Where user is your usual SSH user and host the host you want to connect to.
 
 i.e.
 
-`ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFwsFGFI7px8toa38FVeBIKcYdBvWzYXAiVcbB2d1o3zEsRB6Lm/ZuCzQjaLwQdcpT1aF8tycqt4K6AGI1o+qFk= user@host`
+`ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFwsFGFI7px8toa38FVeBIKcYdBvWzYXAiVcbB2d1o3zEsRB6Lm/ZuCzQjaLwQdcpT1aF8tycqt4K6AGI1o+qFk= identity@myhost`
 
 Cut and paste the whole string into your server ~/.ssh/authorized_keys file, you're now ready to use SSH with your newly generated key.
 
 4) From now on you can log in to your server using OnlyKey using the following command:
 
 ```
-$ onlykey-agent -c user@host
+$ onlykey-agent identity@myhost -c
 ```
 
 You will be prompted for a challenge code, type this on your OnlyKey to complete log in.
 
-Note: This method can also be used for git push or other mechanisms that are using SSH as their communication protocol:
+Note: This method can also be used for git push, scp, or other mechanisms that are using SSH as their communication protocol:
 
 ```
-$ onlykey-agent user@host git push
+$ onlykey-agent identity@myhost -- COMMAND --WITH --ARGUMENTS
 ```
 
-## Installation 
+### Use the derived key for subversion commits
+```
+$ onlykey-agent identity@myhost -- svn commit -m "commit message"
+```
+
+### Use the key for git clone/pull/fetch/push
+```
+$ onlykey-agent identity@myhost -- git push
+```
+
+### For rsyncing
+```
+$ onlykey-agent identity@myhost -- rsync -a /path   someuser@somehost:/remote/path
+```
+
+### Copy a file to an SSH server running in Termux running on an android device
+```
+$ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195:/sdcard/
+```
+
+## Installation
 
 ### Windows Install with dependencies
 Currently Windows is not supported directly but may be used with Windows Subsystem for Linux (WSL). Follow the [WSL guide here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to set this up. This essentially installs Linux on Windows, for example you can install Ubuntu Linux on Windows and then follow the instructions below "Ubuntu Install with dependencies".
