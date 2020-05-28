@@ -30,7 +30,7 @@ Plug and unlock your OnlyKey and then run:
 $ onlykey-agent identity@myhost
 ```
 
-Where user is your usual SSH user and host the host you want to connect to.
+Where identity is your usual SSH user and myhost the host you want to connect to.
 
 3) You now have the SSH public key for the user and the host you previously selected.
 
