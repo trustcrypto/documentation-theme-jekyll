@@ -17,7 +17,7 @@ SSH is a popular remote access tool that is often used by administrators. Thanks
 
 ## SSH Agent Quickstart Guide
 
-1) After installing [prerequisites](#install), install OnlyKey agent on your client machine:
+1) After installing [prerequisites](#installation), install OnlyKey agent on your client machine:
 
 ```
 $ sudo pip install onlykey onlykey-agent
