@@ -86,7 +86,7 @@ There is a tab named [Firmware] in the app. This may be used to load the latest 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
 - Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
-  - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.8/Signed_OnlyKey_Beta8_STD_Color.txt)
+  - [OnlyKey Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.8/Signed_OnlyKey_Beta8_STD_Color.txt)
 - Follow the instructions in the app to load firmware
 
 ## New OnlyKey Features {#new-features}
@@ -119,7 +119,7 @@ The Webcrypt 2.0 app is available now - https://apps.crp.to
 
 OnlyKey is the first open source device to support this feature which was previously only supported by Yubikey. Challenge and response is a useful feature that is already supported by many apps. Now these apps can support OnlyKey as well as Yubikey. Applications that support this include:
 
-- KeePassXC software password manager will support challenge-response to lock your password vault using OnlyKey (next release KeePassXC 2.5.0). 
+- KeePassXC software password manager will support challenge-response to lock your password vault using OnlyKey (next release KeePassXC 2.5.0).
 
 - Computer log in and full-disk encryption – The challenge-response code can be used to log in and is used with full-disk encryption solutions like LUKs. We will be working to add OnlyKey support to these projects. Know of any others we should add? We would love to hear about it, let us know and ask the project to add OnlyKey support.
 

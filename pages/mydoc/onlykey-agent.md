@@ -2,8 +2,8 @@
 title: OnlyKey SSH/GPG agent
 tags: [OnlyKey, Agent, Python]
 keywords: OnlyKey, Agent
-last_updated: Dec, 09, 2019
-summary: The OnlyKey agent is essentially middleware that lets you use OnlyKey as a hardware SSH/GPG device (GPG not supported yet).
+last_updated: Aug, 17, 2020
+summary: Using OnlyKey as hardware SSH agent (GPG not supported yet).
 sidebar: mydoc_sidebar
 permalink: onlykey-agent.html
 folder: mydoc
@@ -20,11 +20,12 @@ SSH is a popular remote access tool that is often used by administrators. Thanks
 1) After installing [prerequisites](#install), install OnlyKey agent on your client machine:
 
 ```
-$ sudo pip2 install onlykey onlykey-agent
+$ sudo pip install onlykey onlykey-agent
 ```
 
 2) Generate your First SSH Key on the OnlyKey
-Plug and unlock your OnlyKey and then run:
+
+Plug in and unlock your OnlyKey and then run:
 
 ```
 $ onlykey-agent identity@myhost
@@ -36,7 +37,7 @@ Where identity is your usual SSH user and myhost the host you want to connect to
 
 i.e.
 
-`ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFwsFGFI7px8toa38FVeBIKcYdBvWzYXAiVcbB2d1o3zEsRB6Lm/ZuCzQjaLwQdcpT1aF8tycqt4K6AGI1o+qFk= identity@myhost`
+`ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJcNZQFm742/hIf6KvbaApQM1VzoW6L2BHANZ4KgiU0o <ssh://identity@myhost|ed25519>`
 
 Cut and paste the whole string into your server ~/.ssh/authorized_keys file, you're now ready to use SSH with your newly generated key.
 
@@ -46,7 +47,7 @@ Cut and paste the whole string into your server ~/.ssh/authorized_keys file, you
 $ onlykey-agent identity@myhost -c
 ```
 
-You will be prompted for a challenge code, type this on your OnlyKey to complete log in.
+You will be prompted for a challenge code, type this on your OnlyKey to complete log in. If you wish to just require any button press to login, in the OnlyKey App -> Preferences choose to [disable challenge code](https://docs.crp.to/usersguide.html#challenge-mode) (device must be in config mode to change setting).
 
 Note: This method can also be used for git push, scp, or other mechanisms that are using SSH as their communication protocol:
 
@@ -80,9 +81,9 @@ $ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195
 Currently Windows is not supported directly but may be used with Windows Subsystem for Linux (WSL). Follow the [WSL guide here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to set this up. This essentially installs Linux on Windows, for example you can install Ubuntu Linux on Windows and then follow the instructions below "Ubuntu Install with dependencies".
 
 ### MacOS Install with dependencies
-Python 2.7 and pip are required. To setup a Python environment on MacOS we recommend Anaconda https://www.anaconda.com/download/#macos
+Python 3.8 and pip are required. To setup a Python environment on MacOS we recommend Anaconda https://www.anaconda.com/download/#macos
 ```
-$ pip2 install onlykey onlykey-agent
+$ pip install onlykey onlykey-agent
 ```
 
 ### Ubuntu Install with dependencies
@@ -121,18 +122,16 @@ In order for non-root users in Linux to be able to communicate with OnlyKey a ud
 
 ### Supported curves
 
-Keys are generated unique for each user / host combination. By default OnlyKey agent uses NIST P256 but also supports ED25519 keys. ED25519 can be used as follows:
+Keys are generated unique for each user / host combination. By default OnlyKey agent uses ED25519 keys but also supports NIST256P1 keys. NIST256P1 can be used as follows:
 
-1) Generate ED25519 public key using onlykey-agent
+1) Generate NIST256P1 public key using onlykey-agent
 ```
-$ onlykey-agent user@host -e ed25519
-```
-
-2) Log in using ED25519 public key
-```
-$ onlykey-agent -c user@host -e ed25519
+$ onlykey-agent user@host -e nist256p1
 ```
 
-You can also just type `-e e` instead of typing out the full `-e ed25519`
+2) Log in using nist256p1 public key
+```
+$ onlykey-agent -c user@host -e nist256p1
+```
 
 The project started from a fork [trezor-agent](https://github.com/romanz/trezor-agent) (thanks!).

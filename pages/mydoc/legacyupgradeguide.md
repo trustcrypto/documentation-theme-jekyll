@@ -45,8 +45,6 @@ This release has a lot of improvements, most notably after upgrading your OnlyKe
 {% include callout.html content="**Step 2.**  Download and install [Teensy Loader](https://www.pjrc.com/teensy/loader.html)" type="default" %}
 {% include callout.html content="**Step 3.**  Determine which version of OnlyKey you have and download firmware below" type="default" %}
 
-{% include image.html file="image25.jpg" max-width="285" %}
-
 <table>
   <tr>
    <td>OnlyKey Color (Has a square LED)
