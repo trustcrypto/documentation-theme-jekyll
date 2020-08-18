@@ -81,37 +81,60 @@ $ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195
 Currently Windows is not supported directly but may be used with Windows Subsystem for Linux (WSL). Follow the [WSL guide here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to set this up. This essentially installs Linux on Windows, for example you can install Ubuntu Linux on Windows and then follow the instructions below "Ubuntu Install with dependencies".
 
 ### MacOS Install with dependencies
-Python 3.8 and pip are required. To setup a Python environment on MacOS we recommend Anaconda https://www.anaconda.com/download/#macos
+Python 3.8 and pip3 are required. To setup a Python environment on MacOS we recommend Anaconda https://www.anaconda.com/download/#macos
 ```
-$ pip install onlykey onlykey-agent
+$ brew install libusb
+$ pip3 install onlykey-agent
 ```
 
 ### Ubuntu Install with dependencies
 ```
-$ apt update && apt upgrade
-$ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
-$ pip install onlykey
-$ pip install onlykey-agent
+$ sudo apt update && apt upgrade
+$ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
+$ pip3 install onlykey-agent
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ sudo cp 49-onlykey.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
 ### Debian Install with dependencies
 ```
-$ apt update && apt upgrade
-$ apt install python-pip python-dev libusb-1.0-0-dev libudev-dev
-$ pip install onlykey onlykey-agent
+$ sudo apt update && apt upgrade
+$ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
+$ pip3 install onlykey-agent
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ sudo cp 49-onlykey.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
-### Fedora/RedHat/CentOS Install with dependencies
+### RedHat Install with dependencies
 ```
 $ yum update
-$ yum install python-pip python-devel libusb-devel libudev-devel \
+$ yum install python3-pip python3-devel python3-tk libusb-devel libudev-devel \
               gcc redhat-rpm-config
-$ pip install onlykey onlykey-agent
+$ pip3 install onlykey-agent
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ sudo cp 49-onlykey.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules && udevadm trigger
 ```
+
+### Fedora Install with dependencies
+```
+$ dnf install python3-pip python3-devel python3-tkinter libusb-devel libudev-devel \
+              gcc redhat-rpm-config
+$ pip3 install onlykey-agent
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ sudo cp 49-onlykey.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules && udevadm trigger
+```
+
 ### OpenSUSE Install with dependencies
 ```
-$ zypper install python-pip python-devel libusb-1_0-devel libudev-devel
-$ pip install onlykey onlykey-agent
+$ zypper install python3-pip python3-devel python3-tk libusb-1_0-devel libudev-devel
+$ pip3 install onlykey-agent
+$ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
+$ sudo cp 49-onlykey.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
 ### Linux UDEV Rule
@@ -133,5 +156,3 @@ $ onlykey-agent user@host -e nist256p1
 ```
 $ onlykey-agent -c user@host -e nist256p1
 ```
-
-The project started from a fork [trezor-agent](https://github.com/romanz/trezor-agent) (thanks!).
