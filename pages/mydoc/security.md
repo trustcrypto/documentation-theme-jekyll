@@ -132,15 +132,15 @@ There are multiple protections in use to prevent successful hardware attacks.
 
 ### Where is OnlyKey made?
 
-As with most electronics OnlyKey consists of a PCB and various electronic components. Everything is assembled in the USA.
+OnlyKey is made in USA of U.S. and imported parts. As with most electronics, OnlyKey consists of a printed circuit board (PCB) and various electronic components. Everything is assembled in the USA.
 
 - The first step in making an OnlyKey is the PCB, this component is essentially the board that the electronics are put onto. This is manufactured in China.
 
-- Next, the PCB and various electronic components are assembled, the components are soldered onto the PCB. This is done in Massachusetts.
+- Next, the PCB and various electronic components are assembled, the components are soldered onto the PCB. This is done in Massachusetts, USA.
 
-- Next, the assembled boards are sent to North Carolina for programming and application of the tamper resistant coating. This coating is also what makes OnlyKey durable and water resistant.
+- Next, the assembled boards are sent to North Carolina, USA. for programming and application of the tamper resistant coating. 
 
-- Finally, the completed OnlyKeys are packaged in North Carolina and sent to distributors like Amazon and Amazon EU.
+- Finally, the completed OnlyKeys are packaged in North Carolina and sent to distributors like Amazon US and Amazon EU.
 
 ## Advanced
 
