@@ -9,7 +9,7 @@ permalink: command-line.html
 folder: mydoc
 ---
 
-# python-onlykey
+# onlykey-cli
 
 Python client for interacting with the OnlyKey.
 
@@ -364,26 +364,26 @@ To set key a device must first be put into config mode.
 
 $ onlykey-cli
 
-OnlyKey> setkey 130 0                                                                                                     
+OnlyKey> setkey 130 9                                                                                                     
 
 Type Control-T to toggle password visible.
 Password/Key: ****************************************  
 
 
-*HMAC key must be 20 bytes, 130 is mapped to HMAC slot 1, 0 is HMAC type*
+*HMAC key must be 20 bytes, 130 is mapped to HMAC slot 1, 9 is HMAC type*
 
 
 **Set HMAC key 2 to a custom value**
 
 $ onlykey-cli
 
-OnlyKey> setkey 129 0                                                                                                     
+OnlyKey> setkey 129 9                                                                                                     
 
 Type Control-T to toggle password visible.
 Password/Key: ****************************************  
 
 
-*HMAC key must be 20 bytes, 129 is mapped to HMAC slot 2, 0 is HMAC type*
+*HMAC key must be 20 bytes, 129 is mapped to HMAC slot 2, 9 is HMAC type*
 
 
 **Set ECC key in slot 101 to a custom value (Slots 101-116 are available for ECC keys. Supported ECC curves X25519(1), NIST256P1(2), SECP256K1(3))**
