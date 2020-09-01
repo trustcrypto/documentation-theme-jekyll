@@ -138,9 +138,27 @@ OnlyKey is made in USA of U.S. and imported parts. As with most electronics, Onl
 
 - Next, the PCB and various electronic components are assembled, the components are soldered onto the PCB. This is done in Massachusetts, USA.
 
-- Next, the assembled boards are sent to North Carolina, USA. for programming and application of the tamper resistant coating. 
+- Next, the assembled boards are sent to North Carolina, USA. for programming and application of the tamper resistant coating.
 
 - Finally, the completed OnlyKeys are packaged in North Carolina and sent to distributors like Amazon US and Amazon EU.
+
+## About Software Development Security {#software-security}
+
+### OnlyKey Apps {#software-app-security}
+
+OnlyKey software is developed by a small team of trusted developers located in the US. No 3rd party access to OnlyKey software is granted. OnlyKey apps include the OnlyKey Desktop App, OnlyKey WebCrypt, OnlyKey SSH/GPG Agent, and the OnlyKey CLI. OnlyKey Apps are developed with specific requirements in mind.
+
+- 1 - **Privacy** - No logins or tracking of users.
+- 2 - **Leave encryption to the hardware** - Private keys and software should not mix. Private keys should remain offline in hardware. For example, WebCrypt and OnlyKey SSH agent have access to only public keys and communicate with OnlyKey for all private key operations.
+- 3 - **Open source & audit-able** - What you see is what you get, source available on Github.
+
+### OnlyKey Firmware {#software-app-security}
+
+OnlyKey firmware is developed by a small team of trusted developers located in the US. OnlyKey firmware is developed with specific requirements in mind, as this is an embedded hardware device these requirements are different than traditional software development.
+
+- 1 - **Defense in depth architecture** - This includes designing multiple levels of protection ensuring there is no single point of failure. An example of this is the use of flash hardware security, encrypting sensitive data at rest, and key splitting. Key splitting involves splitting values used to derive private key in physically separate parts of the hardware such as ROM, Flash memory, and EEPROM.
+- 2 - **Least privilege** - In order to perform privileged tasks such as key loading a user must activate config mode by providing physical user presence and authentication with PIN.
+- 4 - **Simplicity** - Use of complex data structures may introduce unintended vulnerabilities. For this reason, OnlyKey firmware uses primarily simple buffers to provide simple and auditable code.
 
 ## Advanced
 
