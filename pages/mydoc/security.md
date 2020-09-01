@@ -149,7 +149,7 @@ OnlyKey is made in USA of U.S. and imported parts. As with most electronics, Onl
 OnlyKey software is developed by a small team of trusted developers located in the USA. No 3rd party access to OnlyKey software is granted. OnlyKey apps include the OnlyKey Desktop App, OnlyKey WebCrypt, OnlyKey SSH/GPG Agent, and the OnlyKey CLI. OnlyKey Apps are developed with specific requirements in mind.
 
 - **1 - Privacy** - No logins or tracking of users.
-- **2 - Leave encryption to the hardware** - Private keys and software should not mix. Private keys should remain offline in hardware. For example, WebCrypt and OnlyKey SSH agent have access to only public keys and communicate with OnlyKey for all private key operations.
+- **2 - Leave encryption to the hardware** - Private key operations and software should not mix. Private keys should remain offline in hardware. For example, WebCrypt and OnlyKey SSH agent have access to only public keys and communicate with OnlyKey for all private key operations.
 - **3 - Open source & audit-able** - What you see is what you get, source available on Github.
 
 ### OnlyKey Firmware {#software-app-security}
