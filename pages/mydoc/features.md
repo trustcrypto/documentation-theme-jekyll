@@ -13,57 +13,6 @@ folder: mydoc
 
 ## Features {#features}
 
-### LED Definitions {#led-definitions-onlykey-color}
-
-*   Steady green light = Unlocked
-*   No light = Locked
-*   Single yellow flash = Button pressed for PIN entry
-*   3 red flashes = Wrong PIN
-*   Continuous red flashes = Exceeded PIN tries
-*   Continuous green flashes = Backup and restore is complete.
-*   Blue fade in and fade out = FIDO U2F request
-*   Blue blink on/off = FIDO2 request
-*   Purple fade in and fade out - Private key signing request (SSH or PGP)
-*   Turquoise fade in and fade out - Private key decryption request
-*   Red fade in and fade out - Device is in [config mode](https://docs.crp.to/security.html#config-mode)
-*   Steady white light - Device is in bootloader mode, use the OnlyKey app to [load firmware](https://docs.crp.to/usersguide.html#loading-onlykey-firmware).
-
-### Button Definitions {#button-definitions}
-
-#### Unconfigured OnlyKey {#uninitialized-onlykey}
-
-*   Hold button #3 down for 5+ seconds to start quick setup - See [OnlyKey Quick Setup](https://docs.crp.to/usersguide.html#quick-setup) for more information.
-*   Hold button #1 down for 5+ seconds to start quick setup in manual mode.
-*   Hold button #2 down for 5+ seconds to start quick setup in auto mode.
-
-#### Locked OnlyKey {#uninitialized-onlykey}
-
-*   While locked buttons only function to enter PIN code to unlock OnlyKey, 7-10 digits.
-
-#### Unlocked OnlyKey {#unlocked-onlykey}
-
-*   Tap a button for slot <button #>A (i.e. Press OnlyKey button #1 for less than 1 second to type out account data stored in slot 1a)
-*   Hold a button for slot <button #>B (i.e. Press OnlyKey button #1 for more than 1 second to type out account data stored in slot 1b)
-
-***Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.***
-
-*   Hold button #1 for 5+ seconds to backup OnlyKey - See [secure backup feature](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) for more information.
-*   Hold button #2 for 5+ seconds to type out slot labels - See [OnlyKey on-the-go](https://docs.crp.to/usersguide.html#otg) for more information.<br>i.e.<br>
-1a Google<br>
-2a Bank<br>
-3a Email<br>
-4a VPN<br>
-5a School<br>
-6a Coinbase<br>
-1b Amazon AWS<br>
-2b Dropbox<br>
-3b KeePassXC<br>
-4b Azure<br>
-5b Github<br>
-6b Lastpass<br>
-
-*   Hold button #6 for 5+ seconds to put OnlyKey in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
-
 ### Password Manager {#password-manager}
 
 Instead of having to remember all of your passwords you can just remember one 7 - 10 digit PIN. You can set up 24 unique accounts using strong and random (up to 56 character) passwords along with the login page URLs, usernames, and two-factor authentication. This way whenever you need to log in you just detach the OnlyKey from your keyring and enter your PIN to unlock your passwords. The Onlykey automatically types them into the login fields for you with the press of a button.
@@ -166,6 +115,57 @@ OnlyKey is OpenPGP compatible and the worlds first plug and play encryption devi
 For information on setting up and using secure encrypted backup see the user's guide [here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)
 
 For security information on secure encrypted backup see the security page [here](https://docs.crp.to/security.html#how-backup)
+
+### LED Definitions {#led-definitions-onlykey-color}
+
+*   Steady green light = Unlocked
+*   No light = Locked
+*   Single yellow flash = Button pressed for PIN entry
+*   3 red flashes = Wrong PIN
+*   Continuous red flashes = Exceeded PIN tries
+*   Continuous green flashes = Backup and restore is complete.
+*   Blue fade in and fade out = FIDO U2F request
+*   Blue blink on/off = FIDO2 request
+*   Purple fade in and fade out - Private key signing request (SSH or PGP)
+*   Turquoise fade in and fade out - Private key decryption request
+*   Red fade in and fade out - Device is in [config mode](https://docs.crp.to/security.html#config-mode)
+*   Steady white light - Device is in bootloader mode, use the OnlyKey app to [load firmware](https://docs.crp.to/usersguide.html#loading-onlykey-firmware).
+
+### Button Definitions {#button-definitions}
+
+#### Unconfigured OnlyKey {#uninitialized-onlykey}
+
+*   Hold button #3 down for 5+ seconds to start quick setup - See [OnlyKey Quick Setup](https://docs.crp.to/usersguide.html#quick-setup) for more information.
+*   Hold button #1 down for 5+ seconds to start quick setup in manual mode.
+*   Hold button #2 down for 5+ seconds to start quick setup in auto mode.
+
+#### Locked OnlyKey {#uninitialized-onlykey}
+
+*   While locked buttons only function to enter PIN code to unlock OnlyKey, 7-10 digits.
+
+#### Unlocked OnlyKey {#unlocked-onlykey}
+
+*   Tap a button for slot <button #>A (i.e. Press OnlyKey button #1 for less than 1 second to type out account data stored in slot 1a)
+*   Hold a button for slot <button #>B (i.e. Press OnlyKey button #1 for more than 1 second to type out account data stored in slot 1b)
+
+***Note: This provides 12 slots, as OnlyKey supports two profiles there are a maximum of 24 accounts.***
+
+*   Hold button #1 for 5+ seconds to backup OnlyKey - See [secure backup feature](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) for more information.
+*   Hold button #2 for 5+ seconds to type out slot labels - See [OnlyKey on-the-go](https://docs.crp.to/usersguide.html#otg) for more information.<br>i.e.<br>
+1a Google<br>
+2a Bank<br>
+3a Email<br>
+4a VPN<br>
+5a School<br>
+6a Coinbase<br>
+1b Amazon AWS<br>
+2b Dropbox<br>
+3b KeePassXC<br>
+4b Azure<br>
+5b Github<br>
+6b Lastpass<br>
+
+*   Hold button #6 for 5+ seconds to put OnlyKey in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
 
 ### Self-Destruct {#self-destruct}
 
