@@ -43,7 +43,7 @@ With this kind of two-factor authentication, mere knowledge of username and pass
 The service provider generates an 80-bit secret key for each user (whereas RFC 4226 §4 requires 128 bits and recommends 160 bits).[36] This is provided as a 16, 26 or 32 character base32 string or as a QR code.
 
 **How it works on OnlyKey**
-As mentioned above the service provider generates a base32 string or a QR code. While the way you would set up the Google Authenticator app on your phone is typically to take a picture of the QR code you also have the option of displaying the base 32 string. This option is available when you are setting up an account there may be a link that says something like ''Can't read QR code'' that you have to click to show the base 32 key. You would then copy and paste this key into the the OnlyKey slot that you would like to use with this account.
+As mentioned above the service provider generates a base32 string or a QR code. While the way you would set up the Google Authenticator app on your phone is typically to take a picture of the QR code you also have the option of displaying the base 32 string. This option is available when you are setting up an account there may be a link that says something like ''Can't read QR code'' that you have to click to show the base 32 key. You would then copy and paste this key into the OnlyKey slot that you would like to use with this account.
 
 
 {% include image.html file="image79.jpg" max-width="492" %}
@@ -102,7 +102,7 @@ OnlyKey can be used for SSH Authentication in two ways:
 
 The information below is intended to provide information on OnlyKey's OpenPGP everywhere feature. For information on setting up and using OpenPGP everywhere see the user's guide [here](https://docs.crp.to/usersguide.html#secure-com)
 
-OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
+OnlyKey is OpenPGP compatible and the world's first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
 
 1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android and iOS for more information [read this](https://docs.crp.to/mobile.html).
 
@@ -175,7 +175,7 @@ Wouldn't it be nice to know that your data is protected, and if you are in a pin
 
 TL;DR - With a fake profile and a real profile someone can't just force you to hand over your PIN to gain access to all your accounts.
 
-OnlyKey allows the use of a hidden profile (Primary standard profile) and a fake profile (Second profile set to plausible deniability) that essentially provides a cover story. If compelled to unlock an OnlyKey the fake profile can be activated by entering the second profile PIN code. The goal of this feature is that there is no proof that the first profile even exists. The [International Travel Edition](https://docs.crp.to/ite.html) OnlyKey firmware looks and acts just like the Standard Edition firmware when in plausible deniability mode. This means that its not possible to determine if the device is running International Travel Edition firmware (which only has one profile) or the Standard Edition firmware in plausible deniability mode. When the standard edition OnlyKey is in plausible deniability mode it is indistinguishable from an International Travel Edition OnlyKey.
+OnlyKey allows the use of a hidden profile (Primary standard profile) and a fake profile (Second profile set to plausible deniability) that essentially provides a cover story. If compelled to unlock an OnlyKey the fake profile can be activated by entering the second profile PIN code. The goal of this feature is that there is no proof that the first profile even exists. The [International Travel Edition](https://docs.crp.to/ite.html) OnlyKey firmware looks and acts just like the Standard Edition firmware when in plausible deniability mode. This means that it's not possible to determine if the device is running International Travel Edition firmware (which only has one profile) or the Standard Edition firmware in plausible deniability mode. When the standard edition OnlyKey is in plausible deniability mode it is indistinguishable from an International Travel Edition OnlyKey.
 
 Now that you understand the basics of how the plausible deniability feature works the reason for having two versions of firmware becomes more clear. **OnlyKey is the only device in the world where you can have encryption and there isn't a way to prove that you have encryption.**
 
