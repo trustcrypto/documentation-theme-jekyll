@@ -219,8 +219,8 @@ entries:
       url: /qubes.html
       output: web, pdf
 
-    - title: Using OnlyKey to authenticate to a device with no monitor
-      url: /headless-server.html
+    - title: Using OnlyKey for Full-Disk Encryption and Head-less Server
+      url: /full-disk-encryption.html
       output: web, pdf
 
     - title: Using OnlyKey with OpenSSH
