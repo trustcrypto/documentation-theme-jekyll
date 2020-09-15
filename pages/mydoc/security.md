@@ -332,11 +332,15 @@ With user interaction, the touchpin values change significantly. Also the touchp
 
 #### Config Mode {#config-mode}
 
+Putting a device in config mode is required to configure certain things like PGP keys and some preferences:
+
+{% include image.html file="preferences.png" %}
+
 This secondary feature has been added to provide additional protection against the following scenario:
 
 Bob leaves his OnlyKey unlocked and plugged into his computer and walks away, Alice walks up and loads her key onto Bob's OnlyKey and sets this as the backup key and then uses this to create a backup. Alice now has the encrypted contents of Bob's OnlyKey and knows the key.
 
-While Bob should not have left his device unlocked and unattended we still want to prevent this scenario so first a device must be in config mode to load keys or to restore from backup. To put a device in config mode hold the # 6 button down for 5 seconds on an unlocked OnlyKey, then re-enter the PIN. This ensures that only someone who knows the PIN can select the private key used to create a backup.
+While Bob should not have left his device unlocked and unattended we still want to prevent this threat model so first a device must be in config mode to load keys or to restore from backup. To put a device in config mode hold the # 6 button down for 5 seconds on an unlocked OnlyKey, then re-enter the PIN. This ensures that only someone who knows the PIN can select the private key used to create a backup.
 
 Additional security may be added with the backup key mode mentioned below.
 
