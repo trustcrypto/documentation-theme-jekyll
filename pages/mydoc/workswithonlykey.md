@@ -35,9 +35,10 @@ Pick from the list below to find out more about common solutions that integrate 
 ### - [Google Drive](https://onlykey.io/pages/secure-google-apps-with-onlykey)
 ### - BoxCryptor
 
-## Full Disk Encryption
-### - LUKS
-### - Bitlocker
+## [Full Disk Encryption](https://docs.crp.to/full-disk-encryption.html#full-disk-encryption)
+### - [LUKS](https://docs.crp.to/full-disk-encryption.html#full-disk-encryption)
+### - [Bitlocker](https://docs.crp.to/full-disk-encryption.html#full-disk-encryption)
+### - [Veracrypt (Other)](https://docs.crp.to/full-disk-encryption.html#full-disk-encryption)
 
 ## OpenPGP Providers
 ### - Protonmail
