@@ -74,7 +74,7 @@ Google is discontinuing Chrome app support on all operating systems. For now, th
 
 ## Support
 
-Check out the [OnlyKey Support Forum](https://groups.google.com/forum/#!forum/onlykey)
+Check out the [OnlyKey Support Forum](https://forum.onlykey.io)
 
 Check out the [OnlyKey Documentation](https://docs.crp.to)
 

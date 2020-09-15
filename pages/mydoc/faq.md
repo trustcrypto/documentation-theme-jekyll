@@ -34,7 +34,7 @@ folder: mydoc
                         </div>
                         <div id="collapseTwenty" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                            Check out the <a href="https://groups.google.com/forum/#!forum/onlykey">OnlyKey Support Forum</a>
+                            Check out the <a href="https://forum.onlykey.io">OnlyKey Support Forum</a>
                             Check out the <a href="https://docs.crp.to">OnlyKey Documentation</a>
                             </div>
                         </div>

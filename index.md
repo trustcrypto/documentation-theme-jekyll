@@ -23,7 +23,7 @@ The users's guide provides step-by-step instructions for configuring the OnlyKey
 
 If you have specific questions about the OnlyKey check out the [OnlyKey Frequently Asked Questions](https://docs.crp.to/faq.html) first.
 
-If you are having issues that are not addressed in the User's Guide or FAQs check out the [OnlyKey Support forum](https://groups.google.com/forum/#!forum/onlykey). If you are having a new issue not already mentioned in the forum this is the place to ask for help.
+If you are having issues that are not addressed in the User's Guide or FAQs check out the [OnlyKey Support forum](https://forum.onlykey.io). If you are having a new issue not already mentioned in the forum this is the place to ask for help.
 
 ### 4. OnlyKey Apps and Software
 

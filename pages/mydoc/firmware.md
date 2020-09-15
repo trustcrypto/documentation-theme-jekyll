@@ -39,7 +39,7 @@ OnlyKey firmware is open source and new features are added with each firmware re
 
 ## Support
 
-Check out the [OnlyKey Support Forum](https://groups.google.com/forum/#!forum/onlykey).
+Check out the [OnlyKey Support Forum](https://forum.onlykey.io).
 
 Check out the [OnlyKey Documentation](https://docs.crp.to).
 
