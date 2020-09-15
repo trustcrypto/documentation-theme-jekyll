@@ -348,6 +348,6 @@ Additional security may be added with the backup key mode mentioned below.
 
 There is also an option to lock the backup key which ensures that the backup key may not be changed on a device. Enabling this option where there is no backup key permanently disables the backup feature.
 
-{% include image.html file="backup-key-mode.png" %}
+{% include image.html file="lockmode.png" %}
 
 {% include links.html %}
