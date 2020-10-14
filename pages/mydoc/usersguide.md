@@ -66,11 +66,13 @@ To complete OnlyKey quick setup follow the instructions below:
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0_amd64.deb)
 
-{% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
+{% include important.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 247b3ed27a5d7f2c35f6da0d44e0d6e7cb3ac4084eb3f944df1ce58e0df54dce<br>Windows SHA 256 CHECKSUM: 71ae01f86995c1aadae947d447223f65540c0c5ebcd1319dd5e5f1e1907013c0<br>Linux SHA 256 CHECKSUM: 3dc675c5a33c55abb153f98003a41843d4a1b5959f30ff479b76a953799665c8<br>" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 247b3ed27a5d7f2c35f6da0d44e0d6e7cb3ac4084eb3f944df1ce58e0df54dce<br>Windows SHA 256 CHECKSUM: 71ae01f86995c1aadae947d447223f65540c0c5ebcd1319dd5e5f1e1907013c0<br>Linux SHA 256 CHECKSUM: 3dc675c5a33c55abb153f98003a41843d4a1b5959f30ff479b76a953799665c8<br>" %}
+
+{% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to OnlyKey setup below***
 
@@ -182,8 +184,6 @@ Open a text editor and then hold down the 2 button on OnlyKey for 5+ seconds. On
 Since OnlyKey types out this information this method works on all computers and even mobile devices.
 
 Another low tech option is to write your labels on a card/paper and carry this in your wallet.
-
-{% include image.html file="card.jpg" max-width="400" %}
 
 {% include important.html content="Obviously, no sensitive information should be written on card/paper or saved to your slot labels. Just something that helps you remember which account is assigned there." %}
 
@@ -569,6 +569,10 @@ In order to unlock your KeePassXC database a hacker would need four things:
 - Know your OnlyKey PIN
 - Know your master password
 
+**What is challenge-response?**
+
+
+
 #### LastPass {#lastpass}
 
 LastPass supports both Google Authenticator and Yubico® OTP. Google Authenticator is supported in the free version of LastPass and Yubico® OTP is supported in the premium version of LastPass.
@@ -680,6 +684,7 @@ You can change your keyboard layout on the fly through the OnlyKey app preferenc
 *   CANADIAN_FRENCH
 *   CANADIAN_MULTILINGUAL
 *   DANISH
+*   DANISH_MAC
 *   FINNISH
 *   FRENCH
 *   FRENCH_BELGIAN
@@ -702,20 +707,84 @@ You can change your keyboard layout on the fly through the OnlyKey app preferenc
 *   CZECH
 *   SERBIAN_LATIN_ONLY
 *   HUNGARIAN
+*   US_DVORAK
 
-### SSH/PGP Challenge Mode {#challenge-mode}
+### Derived Key User Input Mode {#derived-challenge-mode}
 
-By default, you must enter a 3 digit challenge code on OnlyKey to perform SSH or PGP operation. This is great for security but for some users a more convenient approach may be preferred. With challenge mode off, a physical press on any key is all that is required to perform the SSH or PGP operation.
+OnlyKey supports automatic generation of keys that may be used for SSH and PGP/GPG with the [onlykey-agent app](https://docs.crp.to/onlykey-agent.html).
+
+The default setting is "Challenge Code Required" which requires a 3 digit challenge code to be entered on OnlyKey to perform SSH or PGP/GPG operation. This is great for security but for some users a more convenient approach may be preferred. With "Button Press Required", a physical press on any key is all that is required to perform the operation.
+
+### Stored Key User Input Mode {#stored-challenge-mode}
+
+OnlyKey supports [import of existing OpenPGP keys](https://docs.crp.to/usersguide.html#loading-keys) using the [OnlyKey app](https://docs.crp.to/app.html). These keys once imported are securely stored in OnlyKey hardware and may be used to perform SSH or PGP/GPG operations with the [onlykey-agent app](https://docs.crp.to/onlykey-agent.html) or in the browser with the [OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html).
+
+By default, you must enter a 3 digit challenge code on OnlyKey to perform SSH or PGP/GPG operation. If a more convenient approach is preferred "Button Press Required" may be set so that a physical press on any key is all that is required.
+
+### HMAC Mode {#hmac-mode}
+
+OnlyKey supports HMAC challenge-response. By default, user input (button press) is required on OnlyKey to perform HMAC operation. For some use cases such as full-disk encryption no button press may be preferred. With "Button Press Not Required", HMAC challenge-response operations may be performed without user interaction.
 
 ### Backup Key Mode {#backup-key-mode}
 
-By default, you can change your backup key/passphrase at any time by entering your PIN to put the device in config mode. By setting backup key mode to locked, the backup key/passphrase may not be changed. This setting provides extra security so that even if an adversary has your PIN and has physical access to your device they would not be able to backup and restore your data.
+You can change your backup key/passphrase at any time by entering your PIN to put the device in config mode. By setting backup key mode to locked, the backup key/passphrase may not be changed. This setting provides extra security so that even if an adversary has your PIN and has physical access to your device they would not be able to backup and restore your data.
+
+{% include important.html content="With OnlyKey Go, if no PIN is set the backup key is locked by default." %}
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
 **Use Case #1** - If you are using the plausible deniability feature there is one scenario where an adversary may be able to determine that you were using the plausible deniability feature. This is possible if the adversary enters 10 incorrect PINs causing your OnlyKey to wipe all data and then they go to reconfigure the OnlyKey. The adversary would be able to determine during setup if the device has the Standard Edition firmware or the International Travel Edition firmware. At this point the device is wiped the adversary would not have access to any sensitive information but the adversary would know that your device is capable of encryption which in some areas may be undesirable. To address this issue you can set the wipe mode of your OnlyKey to Full Wipe. Given the same scenario with Full Wipe set when 10 incorrect PINs are entered the device will completely wipe all information including the firmware from your OnlyKey. No useful information would be available to an adversary concerning what firmware you were running and in order to use the device new firmware must be loaded.
 
 **Use Case #2** - You just like to be absolutely sure that everything including the firmware has been eliminated from your device when a factory default occurs.
+
+### Sysadmin Mode {#sysadmin-mode}
+
+By default, OnlyKey may only type regular keyboard characters, TAB, and RETURN. This is useful for entering usernames, passwords, etc. For more advanced use cases such as for system administrators it may be helpful to utilize modifier keys to save time while entering common keystrokes such as CTRL-ALT-DEL, and then entering a username/password. With "Sysadmin Mode" set this permits the use of the following modifier and additional keys to be stored and typed by OnlyKey:
+
+- Ctrl (\c)
+- Shift (\s)
+- Alt (\a)
+- Windows (PC) or Clover (Mac) (\g)
+- Tab (\t)
+- Return (\r)
+- Printscreen (\p)
+- Home (\h)
+- Page Up (\u)
+- Page Down (\o)
+- End (\e)
+- Delete (\d)
+- Backspace (\b)
+- Arrow-Up (\U)
+- Arrow-Down (\D)
+- Arrow-Left (\L)
+- Arrow-Right (\R)
+- Escape (\E)
+- Delay (\#) # is number of seconds to wait
+
+{% include important.html content="Once you enable this feature you will no longer be able to set slot values without first putting OnlyKey into config mode. This adds an extra layer of security for system administrators." %}
+
+Once enabled, this can be used like this:
+
+i.e. To press Ctrl-Alt-Del, release Ctrl-Alt-Del, delay 3 seconds, press TAB, enter username, and enter password:
+
+" \c\a\d  \3 USERNAME \t PASSWORD"
+
+Notice that a space followed by the '\' character is used to begin " \c\a\d " and one space is used to end (resets modifier keys).
+Here are some other common examples:
+
+- To enter Ctrl+Alt+T (the shortcut to open terminal in Ubuntu), then delay two seconds, then enter a command into terminal " \c\at  \2 ssh user@domain"
+
+- To enter Windows+R (the shortcut to run a command in Windows), then delay two seconds, then enter a command into command prompt " \gr  \2 powershell.exe"
+
+- To enter text into fields 1, 3, and 5 of a multiple field form and then submit " \t textforfield#1 \t  \t textforfield#3 \t  \t textforfield#5 \r "
+
+### Configurable Lock Button {#configurable-lock-button}
+
+One of the buttons on OnlyKey can be configured as a lock button. When the lock button is pressed the OnlyKey locks and the OnlyKey sends keystrokes to lock the computer (Windows+L for Windows and Linux, CTRL+SHIFT+EJECT for Mac).
+
+### Configurable Indicator Light (LED) Brightness {#configurable-led-brightness}
+
+The multicolor LED on OnlyKey is set to medium (8) brightness by default. Brightness may be adjusted between 1 (dimmest) and 10 (brightest).
 
 ## Encryption Keys {#encryption-keys}
 
@@ -927,7 +996,7 @@ The process is the same to backup without the app. OnlyKey can type out your enc
 
 ## Restore From Backup {#restore-from-backup}
 
-Using the backup file created in the Secure Encrypted Backup Anywhere section, we can restore an OnlyKey from backup. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
+Using the backup file created in the [Secure Encrypted Backup Anywhere](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere) section, OnlyKey can be restored to a previous state. This also allows restoring to a different OnlyKey or a second OnlyKey in order to have an extra.
 
 {% include note.html content="The way that a restore works is that it overwrites the current information on your OnlyKey with the information stored in the backup. So if you for example have a backup file that contains a password in slot 1 and you do a restore to an OnlyKey that already has a username and password in slot 1 the result would be that the username would remain unchanged and the password would be overwritten." %}
 
@@ -1070,7 +1139,7 @@ Below is a list of common issues and solutions.
 </table>
 
 
-If you have an issue not listed here please reference the online support forum [here.](https://groups.google.com/forum/#!forum/onlykey)
+If you have an issue not listed here please reference the online support forum [here.](https://forum.onlykey.io)
 
 ## Change your PIN {#pin-change}
 
@@ -1082,7 +1151,7 @@ Documentation - [https://docs.crp.to](https://docs.crp.to)
 
 FAQs - [https://docs.crp.to/faq.html](https://docs.crp.to/faq.html)
 
-Forum -[ https://groups.google.com/forum/#!forum/onlykey](https://groups.google.com/forum/#!forum/onlykey)
+Forum -[ https://forum.onlykey.io](https://forum.onlykey.io)
 
 Store –[ https://crp.to/ok](https://crp.to/ok)
 
