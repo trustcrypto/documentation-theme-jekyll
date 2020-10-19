@@ -2,7 +2,7 @@
 title: Plausible Deniability Setup Guide
 tags: [OnlyKey, International Travel Edition, Plausible Deniability]
 keywords: OnlyKey, International Travel Edition, Plausible Deniability
-last_updated: Dec, 5, 2018
+last_updated: Oct, 5, 2020
 summary: Follow this guide to use the plausible deniability feature of OnlyKey
 sidebar: mydoc_sidebar
 permalink: pdguide.html
@@ -11,7 +11,7 @@ folder: mydoc
 
 ## About Plausible Deniability
 
-General information on OnlyKey plausible deniability mode is available [here](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware).
+General information on OnlyKey plausible deniability mode is available [here](https://docs.crp.to/features.html#plausible-deniability-feature).
 
 General information on the International Travel Edition OnlyKey firmware is available [here](https://docs.crp.to/ite.html).
 
@@ -51,16 +51,17 @@ General information on the International Travel Edition OnlyKey firmware is avai
 
 {% include callout.html content="**Step 9.** Your device will now automatically reboot. Enter the PIN for you first profile to unlock OnlyKey." type="default" %}
 
-{% include callout.html content="**Step 10.** Select [Preferences] from the top menu and then click [Set Wipe Mode]. Full wipe will completely erase both the OnlyKey data and firmware in the event of a factory default." type="default" %}
+{% include callout.html content="**Step 10.** Select [Preferences] from the top menu and then click [Set Wipe Mode]. Full wipe will completely erase both the OnlyKey data and firmware in the event of a factory default. This is an important step as if this is not set it is possible to determine which firmware edition is loaded after doing a factory default, more information [here](https://docs.crp.to/usersguide.html#configurable-wipe-mode)" type="default" %}
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pref.png)
-
-{% include note.html content="This ensures that after a factory default occurs there is not a way of determining what edition of firmware had been previously loaded on the device. This also requires re-loading the firmware through the OnlyKey app." %}
 
 ## Plausible Deniability FAQ
 
 Q - Is it believable that my OnlyKey only has one profile (only 12 slots used)?
-A - We actually sell quite a few [international travel edition Onlykeys](https://onlykey.io/products/onlykey-international-travel-edition-w-stealth-black-case?variant=8661476737068) so yes it is believable that you are using one of these. Even if you did not purchase an International Travel Edition Onlykey it is plausible that you have one because you can download and load the [international travel edition firmware here](https://github.com/trustcrypto/OnlyKey-Firmware/releases). People buy these when they live in or want to travel places where strong encryption may be banned.
+A - We sell quite a few [international travel edition Onlykeys](https://onlykey.io/products/onlykey-international-travel-edition-w-stealth-black-case?variant=8661476737068) so yes it is believable that you are using one of these. It is also believable that you did not purchase an International Travel Edition Onlykey but followed the guide [here](https://docs.crp.to/ite.html) in order to prepare for traveling. The international travel edition firmware is made for use in places where strong encryption may be controlled or banned.
+
+Q - Is having wipe mode set to "Full Wipe" an indicator that device is using plausible deniability?
+A - We recommend that all users desiring the highest level of security enable full wipe. This is described in the user's guide and in the [international travel edition guide](https://docs.crp.to/ite.html) as it ensures that no data or meta data such as what version of firmware was loaded is available to an adversary.
 
 Q - Why not just give an adversary your self-destruct PIN?
 A - If you are not concerned with plausible deniability then yes the self-destruct pin would be fine. The adversary would obviously know that this was intentional.
@@ -68,5 +69,6 @@ A - If you are not concerned with plausible deniability then yes the self-destru
 Q - Wouldn't it be possible for an adversary to brute force the primary profile PIN by trying 9 pins and then entering the secondary profile pin?
 A - When using a plausible deniability profile there is a counter that counts how many failed login attempts since the last primary profile login. You have a maximum of 20 failed attempts since the last successful login to the primary profile. Once that is reached the primary profile hash is deleted, essentially the primary profile is gone forever.
 
+{% include warning.html content="This means if you have a plausible deniability profile you have to occasionally log into your standard profile. If you use the plausible deniability profile 20 times in a row the standard profile will no longer be accessible." %}
 
 {% include links.html %}

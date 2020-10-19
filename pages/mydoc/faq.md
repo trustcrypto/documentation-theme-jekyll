@@ -180,7 +180,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                The encryption free version of the OnlyKey may be used in countries where encryption is banned. Additionally, the two editions enable the Check out the <a href="https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware">plausible deniability feature - Read More</a>                
+                                The encryption free version of the OnlyKey may be used in countries where encryption is banned. Additionally, the two editions enable the Check out the <a href="https://docs.crp.to/features.html#plausible-deniability-feature">plausible deniability feature - Read More</a>                
                             </div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@ In addition to PIN security OnlyKey has functionality that smart cards do not li
                         <div id="collapseFive" class="panel-collapse collapse">
                             <div class="panel-body">
                                 This activates a second profile that stores an additional 12 accounts. When setting up OnlyKey you choose the second profile type which can either be standard or plausible deniability. The standard profile is a second profile with full functionality. The plausible deniability profile is designed to be indistinguishable from an OnlyKey with the International Travel Edition firmware, while actually running the OnlyKey Standard Edition firmware. The objective of this feature is to allow travel overseas to areas where devices using encryption might not be allowed or where it is mandatory to give up passwords/keys. More information
-                                <a href="https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware">here</a>
+                                <a href="https://docs.crp.to/features.html#plausible-deniability-feature">here</a>
                                 For more information on encryption and international travel see <a href="https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/">https://www.princeton.edu/itsecurity/encryption/encryption-and-internatio/</a>
                             </div>
                         </div>

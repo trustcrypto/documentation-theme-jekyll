@@ -120,19 +120,19 @@ entries:
       output: web, pdf
 
     - title: Password Manager
-      url: /features.html#password-manager
+      url: /features.html#hardware-password-manager
       output: web, pdf
 
     - title: Two-Factor Authentication
-      url: /features.html#two-factor-authentication
+      url: /features.html#universal-2-factor-token
       output: web, pdf
 
     - title: SSH Login
-      url: /features.html#ssh-login
+      url: /features.html#ssh-authentication
       output: web, pdf
 
     - title: OpenPGP Everywhere
-      url: /features.html#openpgp
+      url: /features.html#openpgp-support
       output: web, pdf
 
     - title: Secure Backup Anywhere
@@ -148,7 +148,7 @@ entries:
       output: web, pdf
 
     - title: Plausible Deniability
-      url: /features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
+      url: /features.html#plausible-deniability-feature
       output: web, pdf
 
   - title: Apps and Software

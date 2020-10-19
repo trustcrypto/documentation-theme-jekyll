@@ -733,9 +733,7 @@ You can change your backup key/passphrase at any time by entering your PIN to pu
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
-**Use Case #1** - If you are using the plausible deniability feature there is one scenario where an adversary may be able to determine that you were using the plausible deniability feature. This is possible if the adversary enters 10 incorrect PINs causing your OnlyKey to wipe all data and then they go to reconfigure the OnlyKey. The adversary would be able to determine during setup if the device has the Standard Edition firmware or the International Travel Edition firmware. At this point the device is wiped the adversary would not have access to any sensitive information but the adversary would know that your device is capable of encryption which in some areas may be undesirable. To address this issue you can set the wipe mode of your OnlyKey to Full Wipe. Given the same scenario with Full Wipe set when 10 incorrect PINs are entered the device will completely wipe all information including the firmware from your OnlyKey. No useful information would be available to an adversary concerning what firmware you were running and in order to use the device new firmware must be loaded.
-
-**Use Case #2** - You just like to be absolutely sure that everything including the firmware has been eliminated from your device when a factory default occurs.
+Setting wipe mode to "Full Wipe" ensures that not only is your sensitive data wiped when a factory default occurs but also the firmware is wiped. This ensures that no data or meta data such as what version of firmware you had would be accessible to an adversary that steals or otherwise obtains a user's OnlyKey and then performs a factory default. The tradeoff of setting wipe mode to full wipe is that this cannot be changed once set and when a factory default occurs the firmware must be reloaded using the [**firmware upgrade guide **](https://docs.crp.to/upgradeguide.html). For user's desiring the highest level of security we recommend enabling full wipe. 
 
 ### Sysadmin Mode {#sysadmin-mode}
 
@@ -1014,13 +1012,9 @@ If you used the OnlyKey App to create the backup then the name of this file will
 
 ## Loading OnlyKey Firmware {#loading-onlykey-firmware}
 
-If your OnlyKey has firmware v0.2-beta.7x or later follow the link below to load OnlyKey Firmware.
+Follow the upgrade guide below to load the latest OnlyKey firmware:
 
-- [**Current firmware upgrade guide (v0.2-beta.7x or later)**](https://docs.crp.to/upgradeguide.html)
-
-You can check firmware version by looking in the bottom right corner of the OnlyKey App.
-
-{% include image.html file="version.png" %}
+- [**Firmware upgrade guide **](https://docs.crp.to/upgradeguide.html)
 
 If you received a message in the OnlyKey app stating *"This application is designed to work with a newer version of OnlyKey firmware."* or if your OnlyKey has firmware v0.2-beta.6x or earlier follow the link below:
 
