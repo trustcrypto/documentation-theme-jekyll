@@ -79,10 +79,10 @@ OnlyKey types out the encrypted backup so it works anywhere independent of apps.
 ## Other Features
 
 ### AUTOMATIC LOCK FEATURE
-Want your OnlyKey to automatically lock itself after being inactive for 30 minutes? No problem, this is customizable.
+Want your OnlyKey to automatically lock itself after being inactive for 30 minutes? No problem, this is customizable in [OnlyKey preferences](https://docs.crp.to/usersguide.html#configurable-inactivity-lockout-period).
 
 ### ADVANCED HARDWARE SECURITY
-Once a PIN has been set on your OnlyKey it locks down the hardware so that even if an attacker gains physical access to your OnlyKey, without the correct PIN it will be useless.
+Once a PIN has been set on your OnlyKey it locks down the hardware so that even if an attacker gains physical access to your OnlyKey, without the correct PIN it will be useless. Read more about [security architecture of OnlyKey](https://docs.crp.to/security.html).
 
 ### INTERNATIONAL KEYBOARD LAYOUTS
 OnlyKey is the world's first device to allow changing your keyboard layout on the fly. Supports multiple international keyboard layouts:
@@ -90,6 +90,7 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 - CANADIAN_FRENCH
 - CANADIAN_MULTILINGUAL
 - DANISH
+- DANISH_MAC
 - FINNISH
 - FRENCH
 - FRENCH_BELGIAN
@@ -112,6 +113,7 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 - CZECH
 - SERBIAN_LATIN_ONLY
 - HUNGARIAN
+- DVORAK
 
 ### USER SELECTABLE TYPE SPEED FEATURE
 Want your OnlyKey to type out information faster or slower? No problem, this is customizable.

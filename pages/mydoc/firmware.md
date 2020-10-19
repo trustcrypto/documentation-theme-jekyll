@@ -2,7 +2,7 @@
 title: OnlyKey Firmware
 tags: [OnlyKey Firmware]
 keywords: OnlyKey, Firmware
-last_updated: Oct, 18, 2019
+last_updated: Oct, 18, 2020
 summary: The OnlyKey firmware runs on the OnlyKey itself and provides the core functionality of OnlyKey.
 sidebar: mydoc_sidebar
 permalink: firmware.html
@@ -13,35 +13,27 @@ folder: mydoc
 
 This is the official firmware for **OnlyKey**
 
-OnlyKey can be purchased here: [OnlyKey order](https://onlykey.io)
+OnlyKey can be purchased here: [OnlyKey order](https://onlykey.io/)
 
 ## Getting Started
 
 Just getting started with OnlyKey?
 
-[Start here](http://www.crp.to/okstart)
+[Start here](https://onlykey.io/start)
 
 ## About
 
-The firmware is the software that runs on the OnlyKey itself. In order to load firmware follow the instructions in the [User's Guide here](https://docs.crp.to/usersguide.html#loading-onlykey-firmware).
-
-There are two available editions of the OnlyKey firmware:
-
-**OnlyKey Standard Edition** The full featured OnlyKey firmware.
-
-**OnlyKey International Travel Edition** The encryption free OnlyKey firmware (ships globally).
-
-More information on the difference between the two editions is available [here](https://docs.crp.to/features.html#plausible-deniability-feature).
+The firmware is the software that runs on the OnlyKey itself. In order to load firmware follow the instructions in the [User's Guide here](https://docs.crp.to/usersguide.html#loading-onlykey-firmware)
 
 ## Development
 
-OnlyKey firmware is open source and new features are added with each firmware release. A list of of supported features are available [here](https://docs.crp.to/features.html).
+OnlyKey firmware is open source and new features are added with each firmware release. A list of of supported features are available [here](https://docs.crp.to/features.html)
 
 ## Support
 
-Check out the [OnlyKey Support Forum](https://forum.onlykey.io).
+Check out the [OnlyKey Support Forum](https://forum.onlykey.io)
 
-Check out the [OnlyKey Documentation](https://docs.crp.to).
+Check out the [OnlyKey Documentation](https://docs.crp.to)
 
 ## Libraries
 

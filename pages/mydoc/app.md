@@ -50,9 +50,9 @@ If you have an OnlyKey to set up, once you have installed the app proceed to [On
 
 ### OnlyKey Chrome App (End of life)
 
-Google is discontinuing Chrome app support on all operating systems. For now, the Chrome app is still available but Google has announced that it will be disabled in a future version of Chrome.
+Google is discontinuing Chrome app support on all operating systems. For now, the Chrome app is still available and Google has extended support (June 2021 for Windows, Mac, Linux and June 2022 for Chrome OS) but Google has announced that it will be disabled in a future version of Chrome. The Chrome app will continue to be maintained but users should migrate to the desktop app.
 
-{% include callout.html content="**Step 1.** Open the Chrome (or Chromium) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
+{% include callout.html content="**Step 1.** Open the Chrome (Chromium, Brave, Edge) Web Browser. If you do not have the chrome web browser installed you can install this by following the instructions here: [https://www.google.com/chrome/browser/desktop/](https://www.google.com/chrome/browser/desktop/))" type="default" %}
 
 {% include callout.html content="**Step 2.** Click [here](https://chrome.google.com/webstore/detail/onlykey-configuration/adafilbceehejjehoccladhbkgbjmica) to browse to the OnlyKey Configuration Web app on the Chrome Web Store and select 'Add to Chrome'" type="default" %}
 

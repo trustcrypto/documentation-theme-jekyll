@@ -2,7 +2,7 @@
 title: OnlyKey User's Guide
 tags: [OnlyKey, User's Guide]
 keywords: OnlyKey, User's Guide
-last_updated: Jan, 30, 2020
+last_updated: Oct, 19, 2020
 summary: The OnlyKey user's guide provides step-by-step instructions for configuring and using OnlyKey.
 sidebar: mydoc_sidebar
 permalink: usersguide.html
@@ -19,7 +19,7 @@ folder: mydoc
 
 {% include callout.html content="**Step 2.** Attach the quick-connect to the OnlyKey, the other end of the quick-connect can be attached to your keyring." type="default" %}
 
-{% include callout.html content="**Step 3.** (Optional) Check out OnlyKey accessories - [color cases](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908), [mobile adapter](https://onlykey.io/collections/accessories-1), [business workstation](https://onlykey.io/collections/workstation)." type="default" %}
+{% include callout.html content="**Step 3.** (Optional) Check out OnlyKey accessories - [color cases](https://onlykey.io/products/onlykey-silicone-case?variant=469636644908), [mobile adapter (USB-C, Lightning)](https://onlykey.io/collections/accessories-1), [business workstation](https://onlykey.io/collections/workstation)." type="default" %}
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup below***
 
@@ -66,7 +66,9 @@ To complete OnlyKey quick setup follow the instructions below:
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0_amd64.deb)
 
-{% include important.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
+[<i class="fa fa-chrome fa-2x"></i> **Chrome OS & Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
+
+{% include important.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via Snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
@@ -733,7 +735,7 @@ You can change your backup key/passphrase at any time by entering your PIN to pu
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
-Setting wipe mode to "Full Wipe" ensures that not only is your sensitive data wiped when a factory default occurs but also the firmware is wiped. This ensures that no data or meta data such as what version of firmware you had would be accessible to an adversary that steals or otherwise obtains a user's OnlyKey and then performs a factory default. The tradeoff of setting wipe mode to full wipe is that this cannot be changed once set and when a factory default occurs the firmware must be reloaded using the [**firmware upgrade guide **](https://docs.crp.to/upgradeguide.html). For user's desiring the highest level of security we recommend enabling full wipe. 
+Setting wipe mode to "Full Wipe" ensures that not only is your sensitive data wiped when a factory default occurs but also the firmware is wiped. This ensures that no data or meta data such as what version of firmware you had would be accessible to an adversary that steals or otherwise obtains a user's OnlyKey and then performs a factory default. The tradeoff of setting wipe mode to full wipe is that this cannot be changed once set and when a factory default occurs the firmware must be reloaded using the [**firmware upgrade guide **](https://docs.crp.to/upgradeguide.html). For user's desiring the highest level of security we recommend enabling full wipe.
 
 ### Sysadmin Mode {#sysadmin-mode}
 
