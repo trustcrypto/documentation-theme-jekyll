@@ -126,7 +126,7 @@ Want your OnlyKey to type out information faster or slower? No problem, this is 
 *   3 red flashes = Wrong PIN
 *   Continuous red flashes = Exceeded PIN tries
 *   Continuous green flashes = Backup and restore is complete.
-*   Blue fade in and fade out = FIDO U2F request
+*   Blue blink then green blink = FIDO U2F request
 *   Blue blink on/off = FIDO2 request
 *   Purple fade in and fade out - Private key signing request (SSH or PGP)
 *   Turquoise fade in and fade out - Private key decryption request

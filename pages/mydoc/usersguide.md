@@ -66,7 +66,7 @@ To complete OnlyKey quick setup follow the instructions below:
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.2.0/OnlyKey_5.2.0_amd64.deb)
 
-[<i class="fa fa-chrome fa-2x"></i> **Chrome OS & Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
+[<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
 
 {% include important.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via Snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
@@ -84,7 +84,7 @@ If you have already setup OnlyKey using quick setup proceed to [Account Setup](#
 
 {% include callout.html content="**Step 1.** Insert OnlyKey and select [Next] to get started." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config1.png)
 
 {% include tip.html content="Before setting a PIN<br><br>You may find it easier to remember a pattern rather than a 7 - 10 digit PIN. Kind of like patterns used to unlock a phone lock screen:" %}
 
@@ -98,11 +98,11 @@ If you have already setup OnlyKey using quick setup proceed to [Account Setup](#
 
 {% include callout.html content="**Step 4.** Enter a PIN code for second profile, check the disclaimer box, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config4.png)
 
 {% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/config5.png)
 
 {% include callout.html content="**Step 6.** Re-enter PIN code, and select [Next]." type="default" %}
 
@@ -125,7 +125,7 @@ If you lose or forget your PIN then a factory default must be completed on your 
 <br>
 **Method #2** - Enter 10 incorrect PINs. You will notice that after entering 3 incorrect PINs your OnlyKey is steadily blinking red. This is an intentional safeguard so that your OnlyKey will not be inadvertently wiped by repeatedly pressing buttons. You must remove and reinsert your OnlyKey and enter 3 more incorrect PINs. Repeat this until 10 incorrect PINs have been entered. The device will then have a solid green light on that indicates that it is ready to set up." %}
 
-*If you want to learn more about the Self-Destruct and Plausible Deniability features see the [OnlyKey FAQ](https://docs.crp.to/faq.html) and the [OnlyKey Features](https://docs.crp.to/features.html#self-destruct).*
+*If you want to learn more about features like [Self-Destruct](https://docs.crp.to/features.html#self-destruct) and [Plausible Deniability](https://docs.crp.to/pdguide.html) see [OnlyKey Features](https://docs.crp.to/features.html).*
 
 <i class="fa fa-arrow-down fa-3x"></i> ***Proceed to setup accounts below***
 

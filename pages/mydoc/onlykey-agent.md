@@ -2,7 +2,7 @@
 title: OnlyKey SSH/GPG agent
 tags: [OnlyKey, Agent, Python]
 keywords: OnlyKey, Agent
-last_updated: Aug, 17, 2020
+last_updated: Oct, 17, 2020
 summary: Using OnlyKey as hardware SSH and GPG agent.
 sidebar: mydoc_sidebar
 permalink: onlykey-agent.html
@@ -11,9 +11,11 @@ folder: mydoc
 
 # onlykey-agent
 
-SSH agent for the OnlyKey.
+OnlyKey Agent is a hardware-based SSH and GPG agent that allows offline cold storage of your SSH and OpenPGP keys. SSH is a popular remote access tool that is often used by administrators and with OnlyKey remote access can be passwordless by physically pressing OnlyKey button to log in. GPG (or GnuPG) is a versatile OpenPGP tool that provides encryption and signing. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use SSH and GPG.
 
-SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure.
+## How to use OnlyKey Agent
+
+You can do things like sign your emails, git commits, and software packages, manage your passwords (with pass and gopass, among others), authenticate web tunnels and file transfers, and more. Since many 3rd party applications already integrate with SSH and GPG you can use those as well.
 
 ## SSH Agent Quickstart Guide
 

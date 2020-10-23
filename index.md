@@ -11,13 +11,13 @@ summary: This is the official OnlyKey documentation site. Select from the topics
 
 ### 1. Start Here
 
-The first step in getting started with OnlyKey is to follow the [steps here ](https://crp.to/okstart).
+The first step in getting started with OnlyKey is to follow the [steps here ](https://onlykey.io/start).
 
 This will ensure you stay up to date on important OnlyKey updates.
 
 ### 2. OnlyKey Configuration
 
-The users's guide provides step-by-step instructions for configuring the OnlyKey. The user's guide is available online here [Online User's Guide](https://docs.crp.to/usersguide.html) as well as downloadable PDF format here [User's Guide PDF](https://www.sejda.com/html-to-pdf?save-link=https://docs.crp.to/usersguide.html).
+The users's guide provides step-by-step instructions for configuring the OnlyKey. The user's guide is available online here [Online User's Guide](https://docs.crp.to/usersguide.html) as well as downloadable PDF format here [User's Guide PDF](https://www.sejda.com/html-to-pdf?save-link=https://docs.crp.to/usersguide.html&viewportWidth=1440&pageSize=A3&usePrintMedia&pageOrientation=portrait).
 
 ### 3. OnlyKey Support
 
@@ -27,17 +27,17 @@ If you are having issues that are not addressed in the User's Guide or FAQs chec
 
 ### 4. OnlyKey Apps and Software
 
-[Desktop App](https://docs.crp.to/app.html) - The OnlyKey App is used for the initial setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chromebook (with Chrome App).
+[OnlyKey Desktop App](https://docs.crp.to/app.html) is used for setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chrome OS (with Chrome App).
 
-[WebCrypt](https://docs.crp.to/webcrypt.html) is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide PGP encryption everywhere on-the-go for secure messages and file encryption. Supports browsers Google Chrome, Brave, and Firefox. Supports OS Windows, Mac, Linux and Android.
+[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html) provides a way to securely use OnlyKey in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. WebCrypt integrates with services like [Keybase](https://keybase.io/) and [Protonmail](https://protonmail.com) to provide OpenPGP encryption and key management everywhere on-the-go. Supports browsers Chrome, Chromium/Brave, and Firefox. Supports Windows, Mac, Linux, Android and iOS.
 
-[SSH Agent](https://docs.crp.to/onlykey-agent.html) - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure.
+[OnlyKey Agent](https://docs.crp.to/onlykey-agent.html) is a hardware-based SSH and GPG agent that allows offline cold storage of your SSH and OpenPGP keys. SSH is a popular remote access tool that is often used by administrators and with OnlyKey remote access can be passwordless by physically pressing OnlyKey button to log in. GPG (or GnuPG) is a versatile OpenPGP tool that provides encryption and signing. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use SSH and GPG.
 
 [Firmware](https://docs.crp.to/firmware.html) - This is the software that runs on the OnlyKey itself. The OnlyKey firmware is open source and can be loaded onto the OnlyKey by following the instructions in the User's Guide.
 
 The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKey-Firmware/releases)
 
-[Command-line Utility](https://docs.crp.to/command-line.html) - The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration and testing.
+[Command-line Utility](https://docs.crp.to/command-line.html) - The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration, scripting, and testing.
 
 ### 5. OnlyKey Knowledge Base
 
@@ -45,20 +45,22 @@ The Knowledge Base contains guides and information for using OnlyKey in specific
 
 [Using OnlyKey with Linux](https://docs.crp.to/linux.html) - Instructions for creating a UDEV rule for OnlyKey.
 
+[Using OnlyKey with OpenSSH](https://docs.crp.to/openssh.html) -  OnlyKey can be used with OpenSSH to provide multi-factor authentication on SSH keys
+
 [Using OnlyKey with Virtual Machines](https://docs.crp.to/virtualmachines.html) - How to use OnlyKey with VMware and Virtualbox.
 
 [Using OnlyKey with Qubes OS](https://docs.crp.to/qubes.html) - How to use OnlyKey with Qubes OS.
 
 [Firmware Upgrade Guide](https://docs.crp.to/upgradeguide.html) - Follow this guide to upgrade firmware.
 
+[Import OpenPGP keys from Protonmail, Keybase, and Mailvelope](https://docs.crp.to/importpgp.html) - Export OpenPGP keys from popular services and load onto OnlyKey
+
+[Using OnlyKey for Full-Disk Encryption and Head-less Server](https://docs.crp.to/full-disk-encryption.html) - Use OnlyKey to unlock encrypted hard drive.
+
+[Works with OnlyKey](https://docs.crp.to/workswithonlykey.html) - A list of applications and things that work with OnlyKey
+
 [International Travel Edition Guide](https://docs.crp.to/ite.html) - Follow this guide to use the International Travel Edition OnlyKey.
 
 [Plausible Deniability Setup Guide](https://docs.crp.to/pdguide.html) - Follow this guide to use the plausible deniability feature of OnlyKey
-
-[Import keys from Protonmail, Keybase, and Mailvelope](https://docs.crp.to/importpgp.html)
-
-[Using OnlyKey to authenticate to a device with no monitor](https://docs.crp.to/headless-server.html)
-
-[Works with OnlyKey](https://docs.crp.to/workswithonlykey.html)
 
 {% include links.html %}
