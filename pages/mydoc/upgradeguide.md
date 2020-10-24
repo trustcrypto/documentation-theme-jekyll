@@ -17,7 +17,7 @@ We are pleased to announce that the latest and greatest OnlyKey software is now 
 This release has a lot of improvements and new features. Here is the short list of new features in this release:
 
 - [OnlyKey GPG agent support](https://docs.crp.to/onlykey-agent.html)
-- [WebCrypt 3.0 support](https://docs.crp.to/webcrypt.html) Webcrypt 3.0 to be released later this month.
+- [WebCrypt 3.0](https://docs.crp.to/webcrypt.html) Available in Nov 2020.
 - Enhanced FIDO2 support (improved usability and ability to manage individual FIDO2 resident keys)
 - [Sysadmin mode](https://docs.crp.to/usersguide.html#sysadmin-mode) - SysAdmin mode permits OnlyKey to type almost any combination of characters such as Ctrl-Alt-Del, then enter usernames/passwords or system commands.
 - Primary Profile and Secondary Profile LED Color - OnlyKey supports a primary and secondary profile, switching between the two is now even easier. Hold down button #3 for 5 seconds to lock OnlyKey to switch profiles. Recognizing which profile you are logged into is now easier with profile colors, OnlyKey has Green light for Primary profile and Blue light for Secondary profile.
