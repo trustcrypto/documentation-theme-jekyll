@@ -30,7 +30,7 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
-{% include warning.html content="This firmware release adds enhanced support for FIDO2 (WebAuthn) resident keys. If you have any resident keys they will be wiped during upgrade and must be reloaded by restoring backup file. This only applies to FIDO2 resident keys which are not widely supported yet, this does not apply to FIDO U2F which does not require restoring backup. While most users do not use resident keys (not widely supported) we recommend to keep a copy of the backup from the previous step." %}
+{% include warning.html content="This firmware release adds enhanced support for FIDO2 (WebAuthn) resident keys. If you have any resident keys they will be wiped during upgrade and must be reloaded by restoring backup file. This only applies to FIDO2 resident keys which are not widely supported yet, this does not apply to FIDO U2F (When security key flashed blue to be used as only 2nd factor) which does not require restoring backup. While most users do not use resident keys we recommend to keep a copy of the backup from the previous step." %}
 
 ## Steps to Upgrade
 
@@ -38,31 +38,17 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Step 2.** **Upgrade OnlyKey firmware** - Follow instructions [here](#loading-onlykey-firmware) to upgrade firmware on the OnlyKey" type="default" %}
 
-{% include callout.html content="**Step 3.** **Check out the new features [here](#new-features)**" type="default" %}
-
 {% include note.html content="onlykey-agent users, make sure to install the latest version of onlykey-agent with `$pip uninstall onlykey onlykey-agent` and `$pip3 install onlykey-agent`. Python 3 is required." %}
 
 ### Steps to Upgrade OnlyKey firmware {#loading-onlykey-firmware}
 
-### Automatic Firmware Upgrade
-
-OnlyKey supports auto firmware update through the OnlyKey App. This requires that "Automatically check for firmware updates" is checked in your OnlyKey App settings.
-
-If this feature is enabled when you restart the OnlyKey App you will see a pop-up, just follow the provided instructions to upgrade OnlyKey firmware:
-
-{% include image.html file="auto-upgrade1.png" %}
-
-{% include image.html file="auto-upgrade2.png" %}
-
-If you don't see a pop-up message proceed to Download Firmware section below:
-
 ### Download Firmware
 
-There is a tab named [Firmware] in the app. This may be used to load the latest firmware onto OnlyKey directly through the app, no backup/restore or wiping is required. Firmware updates are securely signed and are verified on the OnlyKey.
+There is a tab named [Firmware] in the app. This may be used to load the latest firmware onto OnlyKey directly through the OnlyKey app.
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
-- Download [OnlyKey Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.8/Signed_OnlyKey_Beta8_STD_Color.txt)
+- Download [OnlyKey Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v2.1.0-prod/Signed_OnlyKey_2_1_0_STD.txt)
 - Go to the [Firmware] tab in the app
 - Follow the instructions in the app to load firmware
 

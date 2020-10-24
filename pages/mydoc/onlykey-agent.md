@@ -328,6 +328,16 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 
 In order for non-root users in Linux to be able to communicate with OnlyKey a udev rule must be created as described [here](https://docs.crp.to/linux.html).
 
+## Roadmap
+
+In a future release we will be implementing the following features:
+
+- Imported PGP (X25519) keys, this feature will permit using GPG with existing PGP keys that are loaded onto OnlyKey. This feature is currently being tested.
+- Imported PGP (RSA) keys, this feature will permit using GPG with existing PGP keys that are loaded onto OnlyKey. This feature is not yet implemented.
+- SSH with RSA keys, this feature will permit using SSH with existing PGP keys that are loaded onto OnlyKey. This feature is currently being tested.
+- Windows support and stand-alone EXE for easy deployment. This feature is not yet implemented, it is possible to use the agent with a Windows subsystem for Linux.
+- Pure Python PGP implementation, this feature will permit use on systems where GPG is not installed. If GPG is not found PGPy will be used for OpenPGP support.
+
 ## Advanced Options
 
 ### Supported curves
