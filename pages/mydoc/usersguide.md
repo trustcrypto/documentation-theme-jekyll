@@ -730,8 +730,9 @@ OnlyKey supports HMAC challenge-response. By default, user input (button press) 
 ### Backup Key Mode {#backup-key-mode}
 
 You can change your backup key/passphrase at any time by entering your PIN to put the device in config mode. By setting backup key mode to locked, the backup key/passphrase may not be changed. This setting provides extra security so that even if an adversary has your PIN and has physical access to your device they would not be able to backup and restore your data.
-
+<!---
 {% include important.html content="With OnlyKey Go, if no PIN is set the backup key is locked by default." %}
+-->
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
