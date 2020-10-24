@@ -19,7 +19,8 @@ WebCrypt integrates with services like [Keybase](https://keybase.io/) and [Proto
 
 - Supports Firefox, Google Chrome, Brave, and Edge (new) browsers!
 - Supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+)
-- [Try it out here!](https://apps.crp.to)
+
+[Try it out here!](https://apps.crp.to)
 
 [Encrypt Files](https://apps.crp.to/encrypt-file)
 
@@ -83,7 +84,7 @@ After configuring your OnlyKey following [these instructions](https://docs.crp.t
 #### Step-by-step sending your first message
 
 To create encrypted PGP message or file just:
-- Browse to https://apps.crp.to/encrypt
+- Browse to [https://apps.crp.to/encrypt](https://apps.crp.to/encrypt)
 - Enter the recipient's Keybase username or Protonmail email in the first box
 - Enter your Keybase username or Protonmail email (for the key you loaded onto OnlyKey) in the second box.
 
@@ -100,7 +101,7 @@ The encrypted message will be displayed and you can paste it into an email, IM, 
 #### Step-by-step receiving encrypted files
 
 To decrypt an OpenPGP encrypted file just:
-- Browse to https://apps.crp.to/decrypt-file
+- Browse to [https://apps.crp.to/decrypt-file](https://apps.crp.to/decrypt-file)
 - If you know the Keybase username/Protonmail email of the sender enter this in the first box, if you don't know this click the "Decrypt Only" radio button.
 - Choose encrypted file (should end in .gpg file extension)
 - Click Decrypt

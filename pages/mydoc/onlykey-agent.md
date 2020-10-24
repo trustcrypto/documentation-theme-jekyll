@@ -11,9 +11,13 @@ folder: mydoc
 
 # onlykey-agent
 
-OnlyKey Agent is a hardware-based SSH and GPG agent that allows offline cold storage of your SSH and OpenPGP keys. SSH is a popular remote access tool that is often used by administrators and with OnlyKey remote access can be passwordless by physically pressing OnlyKey button to log in. GPG (or GnuPG) is a versatile OpenPGP tool that provides encryption and signing. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use SSH and GPG.
+OnlyKey Agent is a hardware-based SSH and GPG agent that allows offline cold storage of your SSH and OpenPGP keys. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use SSH and GPG.
 
 ## How to use OnlyKey Agent
+
+SSH is a popular remote access tool that is often used by administrators and with OnlyKey Agent remote access can be passwordless. GPG (or GnuPG) is a versatile OpenPGP tool that is used for encryption and signing. The way OnlyKey Agent works is that the indicator light on OnlyKey will blink purple for a sign request (such as SSH authentication), and will blink turquoise for a decrypt request. To authorize a user must press button (or [challenge code](https://docs.crp.to/usersguide.html#derived-challenge-mode)) on OnlyKey.
+
+{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374479136)<br>[![How-To: Use OnlyKey for Passwordless SSH](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ssh-thumb)](https://vimeo.com/374479136)" %}
 
 You can do things like sign your emails, git commits, and software packages, manage your passwords (with pass and gopass, among others), authenticate web tunnels and file transfers, and more. Since many 3rd party applications already integrate with SSH and GPG you can use those as well.
 
@@ -57,7 +61,7 @@ Note: This method can also be used for git push, scp, or other mechanisms that a
 $ onlykey-agent identity@myhost -- COMMAND --WITH --ARGUMENTS
 ```
 
-### Use the derived key for subversion commits
+### Use the key for subversion commits
 ```
 $ onlykey-agent identity@myhost -- svn commit -m "commit message"
 ```
@@ -188,20 +192,24 @@ $ onlykey-gpg init "Bob Smith <bob@protonmail.com>"
 
 ## Stored Keys
 
-By default OnlyKey will generate a random key that is used to derive an unlimited number of keys for SSH and GPG use. Since each derived key is different based on the identity@myhost provided, it is required to copy the unique public key for each host to that host's ~/.ssh/authorized_keys file.
+By default OnlyKey will generate a random key that is used to derive an unlimited number of keys for SSH and GPG use. Since each derived key is different based on the identity@myhost provided, it is required to copy the unique public key for each host.
+
 
 i.e.
+
 `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJcNZQFm742/hIf6KvbaApQM1VzoW6L2BHANZ4KgiU0o <ssh://identity@myhost|ed25519>`
 `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIXzPsm6lkM6xSADnwh/S1IGLlU+dHE8M/xEp2qeol2w <ssh://identity@myhost2|ed25519>`
 `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILb27+QTNo+9+xm1AzvlQHmjWt1XMwokM00xfZPJiUHP <ssh://identity@myhost3|ed25519>`
 
-OnlyKey also stores up to 16 private keys that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key.
+
+OnlyKey also stores up to 16 elliptic curve private keys and 4 RSA private keys that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key.
 
 Follow the guide [here](https://docs.crp.to/importpgp.html) to load an existing OpenPGP key.
-OnlyKey supports 4 RSA key slots and 16 ECC key slots. By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP keys are stored as follows:
-- RSA Decryption key is slot 1
+
+By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP keys are stored as follows:
+- RSA Decryption key in slot 1
 - RSA Signing key in slot 2
-- ECC (NIST256P1 and X25519) Decryption key is slot 101
+- ECC (NIST256P1 and X25519) Decryption key in slot 101
 - ECC (NIST256P1 and X25519) Signing key in slot 102
 
 Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots.
