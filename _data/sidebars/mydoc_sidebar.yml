@@ -199,7 +199,7 @@ entries:
       url: /workswithonlykey.html
       output: web, pdf
 
-    - title: Firmware Upgrade Guide
+    - title: Upgrade Guide
       url: /upgradeguide.html
       output: web, pdf
 
