@@ -2,7 +2,7 @@
 title: Import keys from Keybase, Protonmail, and Mailvelope/GPG
 tags: [OnlyKey, mailvelope, protonmail, keybase]
 keywords: OnlyKey, mailvelope, protonmail, keybase, pgp, openpgp
-last_updated: Jan, 27, 2020
+last_updated: Oct, 19, 2020
 summary: How to use export keys from Protonmail, Keybase, and Mailvelope and load onto OnlyKey
 sidebar: mydoc_sidebar
 permalink: importpgp.html
@@ -11,7 +11,7 @@ folder: mydoc
 
 ## OpenPGP Support
 
-OnlyKey uses the same standard OpenPGP keys used by popular services like Protonmail, Keybase, and Mailvelope. If you already have a key with one of these you can export the private key and load it onto OnlyKey. OnlyKey uses this loaded key for encrypted messages and files (see [WebCrypt](https://docs.crp.to/webcrypt.html)) and can use this key for secure backups of your OnlyKey (see [secure backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)).
+OnlyKey uses the same standard OpenPGP keys used by popular services like Protonmail, Keybase, and Mailvelope. If you already have a key with one of these you can export the private key and load it onto OnlyKey. OnlyKey uses this loaded key for encrypted messages and files (see [WebCrypt](https://docs.crp.to/webcrypt.html) and [OnlyKey Agent](https://docs.crp.to/onlykey-agent.html)) and can use this key for secure backups of your OnlyKey (see [secure backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)).
 
 ### Exporting Keys
 
@@ -49,15 +49,15 @@ OnlyKey uses the same standard OpenPGP keys used by popular services like Proton
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
 
-{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *Auto* is selected as Slot, enter the same passphrase you used with Keybase, Protonmail, or Mailvelope. When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 4.** Paste the copied private key into the OpenPGP Private Key (PEM Format) box. Ensure *Auto Load* is selected as Slot, enter the same passphrase you used with Keybase, Protonmail, or Mailvelope. When finished select Save to OnlyKey" type="default" %}
 
-{% include image.html file="loadkey1.jpg" %}
+{% include image.html file="loadkey1.png" %}
 
 {% include note.html content="Selecting set as backup key will use your Keybase key to encrypt backups. Setting this will override any previously set backup passphrase/key as there can only be one backup key set." %}
 
 You should see a message displayed indicating the key was successfully saved to OnlyKey.
 
-{% include tip.html content="If you used Keybase to create your PGP key your OnlyKey is ready to send/receive OpenPGP encrypted messages/files using [WebCrypt](https://docs.crp.to/webcrypt.html). If not create a Keybase profile -> select 'add a PGP key' -> select 'I have one already' -> paste your public key and upload to Keybase" %}
+{% include tip.html content="If you used Protonmail or Keybase to create your PGP key your OnlyKey is ready to send/receive OpenPGP encrypted messages/files using [WebCrypt](https://docs.crp.to/webcrypt.html). If not create a Keybase profile -> select 'add a PGP key' -> select 'I have one already' -> paste your public key and upload to Keybase. Alternatively, public key can be pasted to use WebCrypt. <br><br>For using OpenPGP key with GPG get started with [onlykey-agent here](https://docs.crp.to/onlykey-agent.html)." %}
 
 ### Troubleshooting
 

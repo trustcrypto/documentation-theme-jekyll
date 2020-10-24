@@ -2,17 +2,47 @@
 title: Using OnlyKey with Mobile Devices (Android and iOS)
 tags: [OnlyKey, Android]
 keywords: OnlyKey, Android, mobile
-last_updated: Feb, 21, 2020
+last_updated: Oct, 21, 2020
 summary: Options for using OnlyKey with Android and iOS phones / tablets
 sidebar: mydoc_sidebar
 permalink: mobile.html
 folder: mydoc
 ---
 
-### Prerequisites
+### About Mobile Support
+
+Using a security key with a mobile device is possible, however most mobile devices already have a built-in security key. Before using OnlyKey with a mobile device here are some considerations.
+
+|  | Built-in Security Key | USB Security Key | NFC Security Key |
+|-------|--------|---------|---------|
+| Physical Security* | Medium | High | Low |
+| Convenience | High | Low | Medium |
+
+* NFC devices are vulnerable to attacks from a close proximity (someone bumps into you) while USB and built-in security keys are vulnerable with authenticated access to the device (someone steals your phone/key and your fingerprint/pin). Mobile device built-in secure element is generally higher security and more convenient than an NFC device.
+
+Recently, [Android](https://fidoalliance.org/news-your-google-android-7-phone-is-now-a-fido2-security-key/) and [iOS](https://www.theverge.com/2020/6/24/21301509/apple-safari-14-browser-face-touch-id-logins-webauthn-fido2) have added support for using the built-in secure element as a FIDO2 security key. We recommend this for most user's that require two-factor authentication on a mobile device as most apps support the built-in mobile security.
+
+#### How to Use Built-in Security Key on Android
+
+Android Example:
+- Open the Chrome browser and browse to https://www.passwordless.dev/mfa#heroFoot.
+- Create a test account, and when prompted select "Use this device with Fingerprint or PIN" to register, do the same to sign in.
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/android-built-in.png)
+
+#### How to Use Built-in Security Key on iOS
+
+iOS Example:
+- Open the Safari (14 or later) browser and browse to https://www.passwordless.dev/mfa#heroFoot.
+- Create a test account, and when prompted select the built-in security key to register, do the same to sign in.
+
+#### How Built-in Mobile Biometric 2FA Works Together with OnlyKey
+
+OnlyKey can be used together with mobile apps that permit login via fingerprint (Touch ID / Face ID). Just use OnlyKey to enter password and/or 2FA for the mobile app first time login, then once logged in enable the built-in mobile biometric 2FA for future logins.
+
+### OnlyKey Mobile Prerequisites
 
 - Ensure the latest firmware is loaded on OnlyKey. Instructions are available [here](https://docs.crp.to/usersguide.html#loading-onlykey-firmware) for loading firmware.
-- Mobile device using adapter, these may also be purchased [here](https://onlykey.io/collections/accessories-1).
+- Connect to mobile device using adapter, these may also be purchased [here](https://onlykey.io/collections/accessories-1).
 - To encrypt/decrypt a key must be loaded on OnlyKey. Instructions are available [here](https://docs.crp.to/usersguide.html#generating-keys).
 
 ### Android/iOS Static Password, TOTP, and Yubikey OTP Support
@@ -64,7 +94,7 @@ This is currently supported using Firefox and Chrome browsers for Android. To us
 - Use a zip utility app to open the zip and access files i.e. Winzip for Android
 
 
-### Using OnlyKey as a Security Key on iOS (Experimental)
+### Using OnlyKey as a Security Key on iOS
 
 Registering and logging in with OnlyKey as a security key on iOS is almost the same as using on a desktop computer. This is currently supported using the iOS Safari browser. To use OnlyKey as a security key:
 
@@ -76,7 +106,7 @@ Registering and logging in with OnlyKey as a security key on iOS is almost the s
 
 {% include note.html content="If you have already registered OnlyKey as a security key for a website on desktop computer you may still have to re-register security key on iOS." %}
 
-### Using OnlyKey to encrypt files on iOS (Experimental)
+### Using OnlyKey to encrypt files on iOS
 
 This is currently supported using the iOS Safari browser. To use OnlyKey to encrypt/decrypt files:
 
@@ -92,7 +122,7 @@ This is currently supported using the iOS Safari browser. To use OnlyKey to encr
 
 {% include tip.html content="The challenge code is an added security feature, if ease of use is the priority this can be turned off so that pressing any button will confirm. To do this set 'Disable Challenge Code for PGP' in the OnlyKey app preferences." %}
 
-### Using OnlyKey to decrypt files on iOS (Experimental)
+### Using OnlyKey to decrypt files on iOS
 
 This is currently supported using the iOS Safari browser. To use OnlyKey to encrypt/decrypt files:
 

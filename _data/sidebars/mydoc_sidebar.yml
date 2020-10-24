@@ -111,6 +111,46 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Universal Support
+      url: /features.html#universal-support
+      output: web, pdf
+
+    - title: Portable. Durable. Waterproof
+      url: /features.html#portable-durable-waterproof
+      output: web, pdf
+
+    - title: Pin Protected
+      url: /features.html#pin-protected
+      output: web, pdf
+
+    - title: Hardware Password Manager
+      url: /features.html#hardware-password-manager
+      output: web, pdf
+
+    - title: Universal Two-Factor Authentication
+      url: /features.html#universal-2-factor-token
+      output: web, pdf
+
+    - title: SSH Authentication
+      url: /features.html#ssh-authentication
+      output: web, pdf
+
+    - title: OpenPGP Everywhere
+      url: /features.html#openpgp-support
+      output: web, pdf
+
+    - title: Self-Destruct
+      url: /features.html#self-destruct-feature
+      output: web, pdf
+
+    - title: Encrypted Backup Anywhere
+      url: /features.html#encrypted-backup-anywhere
+      output: web, pdf
+
+    - title: Automatic Lock
+      url: /features.html#automatic-lock-feature
+      output: web, pdf
+
     - title: LED Definitions
       url: /features.html#led-definitions-onlykey-color
       output: web, pdf
@@ -119,36 +159,12 @@ entries:
       url: /features.html#button-definitions
       output: web, pdf
 
-    - title: Password Manager
-      url: /features.html#password-manager
-      output: web, pdf
-
-    - title: Two-Factor Authentication
-      url: /features.html#two-factor-authentication
-      output: web, pdf
-
-    - title: SSH Login
-      url: /features.html#ssh-login
-      output: web, pdf
-
-    - title: OpenPGP Everywhere
-      url: /features.html#openpgp
-      output: web, pdf
-
-    - title: Secure Backup Anywhere
-      url: /usersguide.html#secure-encrypted-backup-anywhere
-      output: web, pdf
-
     - title: Config Mode
       url: /security.html#config-mode
       output: web, pdf
 
-    - title: Self-Destruct
-      url: /features.html#self-destruct
-      output: web, pdf
-
     - title: Plausible Deniability
-      url: /features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware
+      url: /features.html#plausible-deniability-feature
       output: web, pdf
 
   - title: Apps and Software
@@ -163,11 +179,11 @@ entries:
       url: /webcrypt.html
       output: web, pdf
 
-    - title: SSH/GPG Agent
+    - title: SSH/GPG Agent (onlykey-agent)
       url: /onlykey-agent.html
       output: web, pdf
 
-    - title: Command-Line Utility
+    - title: Command-Line Utility (onlykey-cli)
       url: /command-line.html
       output: web, pdf
 

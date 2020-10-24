@@ -9,16 +9,9 @@ permalink: legacyupgradeguide.html
 folder: mydoc
 ---
 
-## Why Upgrade?
+## Overview
 
-This release has a lot of improvements, most notably after upgrading your OnlyKey you can load future updates directly in the app without the need to backup and restore. Here is the short list of improvements in this release:
-
-- Better touch sense on OnlyKey buttons using automatic touch sense calibration.
-- Backup Passphrase support - Backup's may be securely encrypted with a passphrase.
-- Two profile support - By setting two PINs you can have two profiles to store up to 24 accounts.
-- Automatic firmware and app update notifications - The OnlyKey app can now let you know when there are updates available.
-- Seamless firmware upgrades - Signed firmware can now be loaded directly through the app without wiping account data (thanks to our new blockchain bootloader).
-- Better FIDO U2F support
+This guide is for upgrading legacy OnlyKey devices with firmware version v0.2-beta.6 or earlier only (OnlyKeys purchased prior to Nov 2018). For the current upgrade guide follow the [**Firmware upgrade guide **](https://docs.crp.to/upgradeguide.html).
 
 ## Steps to Upgrade
 
@@ -130,78 +123,7 @@ File Name
 
 ### Install OnlyKey Desktop App {#app-desktop}
 
-{% include callout.html content="**Step 1.** Download installer" type="default" %}
-
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.dmg)
-
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0.exe)
-
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.1.0/OnlyKey_5.1.0_amd64.deb)
-
-{% include note.html content="Linux users must follow the following instructions to update the UDEV rule for the app to be able to communicate with the OnlyKey - [Linux Guide](https://docs.crp.to/linux.html)" %}
-
-
-
-{% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
-
-{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 486a5f8c8da82dfdf57dbe76b3343274c4e6bea4294db789b7c258788d353234<br>Windows SHA 256 CHECKSUM: af331256d79ae7d8aa522072ab35724c29cb7a3c83b25d61ccd7067ef4c8612f<br>Linux SHA 256 CHECKSUM: 4638ce8b21c66b6f414d937d08ba01917db3d20b050630e6b456c338ba1c9e06<br> [ **GPG Public Key**](https://keybase.io/trustcrypto/pgp_keys.asc)" %}
-
-
-### Steps to Setup OnlyKey {#onlykey-setup}
-
-Now that the new OnlyKey app and firmware are installed its time to setup OnlyKey.
-
-{% include callout.html content="**Step 1.** Select [Next] to get started." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite1.png)
-
-{% include callout.html content="**Step 2.** Enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite2.png)
-
-{% include callout.html content="**Step 3.** Re-enter PIN code, and select [Next]." type="default" %}
-
-{% include callout.html content="**Step 4.** Enter a PIN code for second profile, check the disclaimer box, and select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
-
-{% include callout.html content="**Step 5.** If you wish to set a self-destruct PIN enter a PIN code, check the disclaimer box, and select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite5.png)
-
-{% include callout.html content="**Step 6.** Re-enter PIN code, and select [Next]." type="default" %}
-
-{% include callout.html content="**Step 7.** Select [Use PGP Key instead of passphrase]" type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup7.png)
-
-{% include callout.html content="**Step 8.** With slot 1 selected, paste OpenPGP RSA key and enter passphrase and then select [Next]." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup8.png)
-
-{% include callout.html content="**Step 9.** If you generated your keys as described in the [Generating Keys section](https://docs.crp.to/usersguide.html##generating-keys) select [subkey 1] and then select [Save]. If you generated a custom backup key then load the subkey used for backups to slot 1." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup9.png)
-
-{% include callout.html content="**Step 10.** Select [Choose File] and select your OnlyKey backup file and then select [Next] to load it onto your OnlyKey. Your device will reboot automatically when the restore is complete." type="default" %}
-
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/setup10.png)
-
-Your device is now set up!
-
-Check out the new app features below.
-
-## New OnlyKey Features {#new-features}
-
-### Backup Passphrase
-
-Keys are great but a passphrase is an easier way to securely backup your OnlyKey. If you are already using an OpenPGP key for backup you can switch to a passphrase simply by following the instructions on the [Set Backup Passphrase or Key] page. Your OpenPGP key will remain on the OnlyKey but the passphrase will be used for future backup and restore.
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature1.png)
-
-### Two Profile Support
-
-You may notice now that when setting your PINs there is a primary profile and a secondary profile. The secondary profile can be either a standard profile or plausible deniability profile. This is a change as the previous OnlyKey release only had the option for the second profile to be a plausible deniability profile. The standard profile is a full featured second profile with 12 available slots and the plausible deniablity profile is a limited feature second profile that looks and acts just like a device with [International Travel Edition firmware](https://docs.crp.to/ite.html).
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite4.png)
+Follow instructions here - [OnlyKey App Install](#onlykey-setup)
 
 ### In App Firmware Updates
 

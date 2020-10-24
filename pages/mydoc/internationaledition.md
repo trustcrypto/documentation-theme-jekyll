@@ -44,11 +44,11 @@ Features not included in the International Travel Edition OnlyKey that are avail
 
 ## Switch to Standard Edition Firmware
 
-It is easy to switch between the International Travel Edition firmware and the Standard Edition firmware. In order to switch to Standard Edition firmware ensure that your International Travel Edition OnlyKey is in a factory default state and select [Load Firmware] in the OnlyKey App.
+It is easy to switch between the International Travel Edition firmware and the Standard Edition firmware. Keep in mind that switching from the Standard Edition to the International Travel Edition will disable features not available such as the second profile. In order to switch to Standard Edition firmware ensure that your International Travel Edition OnlyKey is in a factory default state and select [Load Firmware] in the OnlyKey App.
 
 - Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
-  - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_STD_Color.txt)
-  - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v0.2-beta.7/Signed_OnlyKey_Beta7_IN_TRVL_Color.txt)
+  - [OnlyKey Color Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v2.1.0-prodc/Signed_OnlyKey_2_1_0_STD.txt)
+  - [OnlyKey Color International Travel Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v2.1.0-prodc/Signed_OnlyKey_2_1_0_IN_TRVL.txt)
 - Select the [Load Firmware] button as shown below and follow the instructions in the app to load firmware
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite6.png)
@@ -84,10 +84,8 @@ Step 6 - Re-enter PIN code, and select [Next].
 
 Your device is now set up, remove and reinsert OnlyKey to set up accounts.
 
-## About plausible deniability
+### Set Wipe Mode
 
-An OnlyKey with the International Travel Edition is identical in functionality to an OnlyKey with the Standard Edition firmware that is in plausible deniability mode. This mode is enabled by setting the second profile to Plausible Deniability Profile. [More about plausible deniability here](https://docs.crp.to/features.html#plausible-deniability-international-travel-edition-and-standard-edition-of-firmware).
-
-A plausible deniability setup guide is available [here](https://docs.crp.to/pdguide.html).
+The wipe mode setting determines what is wiped when a factory default occurs. The default setting is to just wipe the sensitive data, there is also the option to do a "Full Wipe" which wipes sensitive data and firmware. If keeping the type and version of firmware that is loaded confidential is desired, go to preferences in the OnlyKey app and set the wipe mode of your OnlyKey to "Full Wipe". More information on this setting is available here - [Wipe Mode Feature](https://docs.crp.to/usersguide.html#configurable-wipe-mode).
 
 {% include links.html %}
