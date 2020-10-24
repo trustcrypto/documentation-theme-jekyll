@@ -1,9 +1,9 @@
 ---
-title: Upgrading Firmware
+title: Upgrade Guide
 tags: [OnlyKey, Firmware, Upgrade]
 keywords: OnlyKey, Firmware, Upgrade
 last_updated: Oct, 19, 2020
-summary: Follow this guide to upgrade firmware
+summary: Follow this guide to upgrade OnlyKey firmware and desktop app
 sidebar: mydoc_sidebar
 permalink: upgradeguide.html
 folder: mydoc
@@ -17,7 +17,7 @@ We are pleased to announce that the latest and greatest OnlyKey software is now 
 This release has a lot of improvements and new features. Here is the short list of new features in this release:
 
 - [OnlyKey GPG agent support](https://docs.crp.to/onlykey-agent.html)
-- [WebCrypt 3.0 support](https://docs.crp.to/webcrypt.html)
+- [WebCrypt 3.0 support](https://docs.crp.to/webcrypt.html) Webcrypt 3.0 to be released later this month.
 - Enhanced FIDO2 support (improved usability and ability to manage individual FIDO2 resident keys)
 - [Sysadmin mode](https://docs.crp.to/usersguide.html#sysadmin-mode) - SysAdmin mode permits OnlyKey to type almost any combination of characters such as Ctrl-Alt-Del, then enter usernames/passwords or system commands.
 - Primary Profile and Secondary Profile LED Color - OnlyKey supports a primary and secondary profile, switching between the two is now even easier. Hold down button #3 for 5 seconds to lock OnlyKey to switch profiles. Recognizing which profile you are logged into is now easier with profile colors, OnlyKey has Green light for Primary profile and Blue light for Secondary profile.
@@ -30,7 +30,7 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
-{% include warning.html content="This firmware release adds enhanced support for FIDO2 (WebAuthn) resident keys. If you have any resident keys they will be wiped during upgrade and must be reloaded by restoring backup file. This only applies to FIDO2 resident keys which are not widely supported yet, this does not apply to FIDO U2F (When security key flashed blue to be used as only 2nd factor) which does not require restoring backup. While most users do not use resident keys we recommend to keep a copy of the backup from the previous step." %}
+{% include warning.html content="This firmware release adds enhanced support for FIDO2 (WebAuthn) resident keys. If you have any resident keys they will be wiped during upgrade and must be reloaded by restoring backup file. This only applies to FIDO2 resident keys which are not widely supported yet, this does not apply to FIDO U2F (When security key blinks blue to be used as only 2nd factor) which does not require restoring backup. While most users do not use resident keys we recommend to keep a copy of the backup from the previous step." %}
 
 ## Steps to Upgrade
 
@@ -48,7 +48,7 @@ There is a tab named [Firmware] in the app. This may be used to load the latest 
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
-- Download [OnlyKey Standard Edition firmware](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/Signed_OnlyKey_2_1_0_STD.txt)
+- Download <a href="https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/Signed_OnlyKey_2_1_0_STD.txt" download="Signed_OnlyKey_2_1_0_STD.txt">OnlyKey Standard Edition firmware</a>
 - Go to the [Firmware] tab in the app
 - Follow the instructions in the app to load firmware
 
