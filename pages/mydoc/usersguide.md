@@ -72,7 +72,7 @@ To complete OnlyKey quick setup follow the instructions below:
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: a19aa2e0e177c68a2d62cdd550a48885e22db8bd4a3527640865cc7b5264929fe<br>Windows SHA 256 CHECKSUM: 44fb2d9e2ac6307ecceb389332e0cdeb30d311bd95069b15595dc4a181310e84<br>Linux SHA 256 CHECKSUM: acb5d769de195b5806257d51d91ac18d7307a5777c027e8046753cf79db84cf4<br>" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: a19aa2e0e177c68a2d62cdd550a48885e22db8bd4a3527640865cc7b5264929f<br>Windows SHA 256 CHECKSUM: 44fb2d9e2ac6307ecceb389332e0cdeb30d311bd95069b15595dc4a181310e84<br>Linux SHA 256 CHECKSUM: acb5d769de195b5806257d51d91ac18d7307a5777c027e8046753cf79db84cf4<br>" %}
 
 {% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
 
