@@ -9,11 +9,9 @@ permalink: usersguide.html
 toc: false
 folder: mydoc
 ---
-{% include image.html file="image50.png" %}
-<h1>&nbsp;&nbsp;USER'S GUIDE</h1>
-<br>
 
-## Unpacking OnlyKey {#unpacking}
+<i class="fa fa-arrow-down fa-3x"></i>
+## Start Here - Unpacking OnlyKey {#unpacking}
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/package.jpg)
 
