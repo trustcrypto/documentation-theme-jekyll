@@ -30,7 +30,7 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
-{% include warning.html content="This firmware release adds enhanced support for FIDO2 (WebAuthn) resident keys. If you have any resident keys they will be wiped during upgrade and must be reloaded by restoring backup file. This only applies to FIDO2 resident keys which are not widely supported yet, this does not apply to FIDO U2F (When security key blinks blue to be used as only 2nd factor) which does not require restoring backup. While most users do not use resident keys we recommend to keep a copy of the backup from the previous step." %}
+{% include warning.html content="If you use OnlyKey with KeePassXC [read this](https://docs.crp.to/keepassxc-upgrade.html) before upgrading. This firmware release adds enhanced support for FIDO2 (WebAuthn) resident keys. If you have any resident keys they will be wiped during upgrade and must be reloaded by restoring backup file. This only applies to FIDO2 resident keys which are not widely supported yet, this does not apply to FIDO U2F (When security key blinks blue to be used as only 2nd factor) which does not require restoring backup. While most users do not use resident keys we recommend to keep a copy of the backup from the previous step." %}
 
 ## Steps to Upgrade
 
