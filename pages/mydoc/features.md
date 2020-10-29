@@ -42,6 +42,7 @@ Supports FIDO2 and FIDO Universal 2nd Factor Authentication (U2F), OATH TOTP, an
 *   [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-authentication-u2f)
 *   [OATH TOTP](#google-authenticator-totp)
 *   [Yubico® One-Time Password](#Yubico-one-time-password)
+*   [Challenge-Response](https://docs.crp.to/usersguide.html#challenge-response)
 
 ### SSH AUTHENTICATION
 SSH authentication is easy with passwordless login. Your SSH key remains securely stored in hardware and not available to attackers.

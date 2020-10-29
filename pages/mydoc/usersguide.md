@@ -317,9 +317,14 @@ Chrome Extension available from the Chrome Web Store [here](https://chrome.googl
 
 ### Configure Two Factor Authentication (2FA) {#two-factor-authentication-2fa}
 
-Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are three different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
+Two-factor authentication (2FA) is essentially an extra step that is required during the login process that makes it so that even if your username and password are compromised an attacker cannot login to your account. It is called two-factor authentication, or sometimes also multifactor authentication, because more than one factor is required to login. Factors can be something you know like a password, something you are like a fingerprint or iris scan, or something you have like the OnlyKey. There are four different types of 2FA supported by OnlyKey. By supporting multiple modes of 2FA OnlyKey will work with most sites that support 2FA - [http://www.dongleauth.info/](http://www.dongleauth.info/)
 
-#### Google Authenticator (TOTP) {#google-authenticator-totp}
+1) [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-u2f)
+2) [OATH TOTP](#google-authenticator-totp)
+3) [Yubico® One-Time Password](#Yubico-one-time-password)
+4) [Challenge-Response](#challenge-response)
+
+#### OATH TOTP (Google Authenticator) {#google-authenticator-totp}
 
 *DISCLAIMER - Google® is the registered trademarks of Google Inc. OnlyKey is not associated with or sponsored by Google® Inc.*
 
@@ -444,9 +449,9 @@ The terminology for security keys can be a bit confusing so here are some quick 
 
 When websites use the term security key they typically are referring to one of these:
 - Universal 2nd Factor (FIDO U2F) - Security key is used just as a 2nd factor along with your password.
-- FIDO2 - A replacement for FIDO U2F released in 2019, Security key may be used as a 2nd factor along with your password or may be used as a passwordless security key on supported websites. Passwordless authentication allows logging in with just a security key and a PIN code.
+- FIDO2 - A replacement for FIDO U2F released in 2019, Security key may be used as a 2nd factor along with your password or may be used as a passwordless security key on supported applications. Passwordless authentication allows logging in with just a security key and a PIN code.
 
-The term WebAuthn is sometimes used instead of FIDO2, essentially WebAuthn is the browser Javascript standard and is part of the larger FIDO2 project.
+The term WebAuthn is sometimes used instead of FIDO2, essentially WebAuthn is the web browser standard and is part of the larger FIDO2 project.
 
 OnlyKey works just like any other FIDO2 or FIDO U2F token. The first step to use a security key is to register the key and then once registered you can login to that site with the key.
 
@@ -477,6 +482,26 @@ One touch login may be configured with a security key by assigned the FIDO U2F t
 
 Learn more about OnlyKey's implementation of FIDO2 / FIDO U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
 
+#### Challenge-Response {#challenge-response}
+
+Challenge response is a form of authentication where an application sends a unique challenge and OnlyKey sends back an HMACSHA1 response. This response may be used for things like encryption of data which is used by software such as [KeePassXC](#keepassxc). OnlyKey flashes yellow when a challenge is received and user presses any button on OnlyKey to authorize the response. OnlyKey supports customizable "HMAC User Input Mode" which allows the user to select if button press is required for challenge-response.
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/prefs.png)
+
+**Advanced**
+
+By default, no setup is required for challenge-response as OnlyKey has a random HMAC key set by default. Challenge-response is compatible with Yubikey devices. This permits OnlyKey and Yubikey to be used interchangeably for challenge-response with supported applications. In order to use OnlyKey and Yubikey interchangeably both must have the same HMAC key set. To set HMAC key on YubiKey we recommend using the [Yubikey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/).
+
+For example, to set a key of all 1s to slot 1 and set a key of all 2s to slot 2:
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal1.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal2.png)
+
+To set HMAC key on OnlyKey the [OnlyKey CLI](https://docs.crp.to/command-line.html) may be used.
+
+For example, to set a key of all 1s to slot 1 (130 in CLI) and set a key of all 2s to slot 2 (129 in CLI):
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/okchal2.png)
+
+Setting the same HMAC key (20 bytes hex) allows OnlyKey/Yubikey devices to generate the same responses and be used interchangeably.
+
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
 OnlyKey stores up to 24 unique accounts in offline storage and can be used to secure an unlimited number of accounts if used in conjunction with a software password manager. For example, set one of the OnlyKey slots to KeePassXC, Dashlane, Google (Smart Lock), Lastpass, etc. enable 2-factor on this slot and then use your OnlyKey to unlock your software password manager. This way you can keep your most valuable accounts in offline secure hardware and everything else in the software password manager.
@@ -491,7 +516,6 @@ There are two types of software password managers:
   - [KeePassXC](https://onlykey.io/pages/securing-keepassxc-with-onlykey)
   - KeePass
   - Password Safe
-
 
 #### KeePassXC {#keepassxc}
 
@@ -570,10 +594,6 @@ In order to unlock your KeePassXC database a hacker would need four things:
 - Physical access to your OnlyKey
 - Know your OnlyKey PIN
 - Know your master password
-
-**What is challenge-response?**
-
-
 
 #### LastPass {#lastpass}
 
