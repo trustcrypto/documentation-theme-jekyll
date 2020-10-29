@@ -18,7 +18,7 @@ Using a security key with a mobile device is possible, however most mobile devic
 | Physical Security* | Medium | High | Low |
 | Convenience | High | Low | Medium |
 
-* NFC devices are vulnerable to attacks from a close proximity (someone bumps into you) while USB and built-in security keys are vulnerable with authenticated access to the device (someone steals your phone/key and your fingerprint/pin). Mobile device built-in secure element is generally higher security and more convenient than an NFC device.
+*NFC devices are vulnerable to attacks from a close proximity (someone bumps into you) while USB and built-in security keys are vulnerable with authenticated access to the device (someone steals your phone/key and your fingerprint/pin). Mobile device built-in secure element is generally higher security and more convenient than an NFC device.
 
 Recently, [Android](https://fidoalliance.org/news-your-google-android-7-phone-is-now-a-fido2-security-key/) and [iOS](https://www.theverge.com/2020/6/24/21301509/apple-safari-14-browser-face-touch-id-logins-webauthn-fido2) have added support for using the built-in secure element as a FIDO2 security key. We recommend this for most user's that require two-factor authentication on a mobile device as most apps support the built-in mobile security.
 
