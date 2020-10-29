@@ -25,19 +25,17 @@ Recently, [Android](https://fidoalliance.org/news-your-google-android-7-phone-is
 #### How to Use Built-in Security Key on Android
 
 Android Example:
-- Open the Chrome browser and browse to https://www.passwordless.dev/mfa#heroFoot.
+- Open the Chrome browser and browse to [https://www.passwordless.dev/mfa#heroFoot](https://www.passwordless.dev/mfa#heroFoot).
 - Create a test account, and when prompted select "Use this device with Fingerprint or PIN" to register, do the same to sign in.
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/android-built-in.png)
 
 #### How to Use Built-in Security Key on iOS
 
 iOS Example:
-- Open the Safari (14 or later) browser and browse to https://www.passwordless.dev/mfa#heroFoot.
+- Open the Safari (14 or later) browser and browse to [https://www.passwordless.dev/mfa#heroFoot](https://www.passwordless.dev/mfa#heroFoot).
 - Create a test account, and when prompted select the built-in security key to register, do the same to sign in.
 
-#### How Built-in Mobile Biometric 2FA Works Together with OnlyKey
-
-OnlyKey can be used together with mobile apps that permit login via fingerprint (Touch ID / Face ID). Just use OnlyKey to enter password and/or 2FA for the mobile app first time login, then once logged in enable the built-in mobile biometric 2FA for future logins.
+{% include tip.html content="Built-in Mobile Biometric 2FA Works Together with OnlyKey <br>OnlyKey can be used together with mobile apps that permit login via fingerprint (Touch ID / Face ID). Just use OnlyKey to enter password and/or 2FA for the mobile app first time login, then once logged in enable the built-in mobile biometric 2FA for future logins." %}
 
 ### OnlyKey Mobile Prerequisites
 
