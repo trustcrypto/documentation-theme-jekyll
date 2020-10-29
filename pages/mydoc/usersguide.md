@@ -480,8 +480,6 @@ One touch login may be configured with a security key by assigned the FIDO U2F t
 ![U2F Example](https://docs.crp.to/images/u2f-slot.jpeg)
 <br>Now you can register your security key by pressing button 1. But won't it type out my information while registering? No, while your device is flashing blue you can press the button to register and typing is disabled. Once your security key is registered you can log out and now you have a one touch login configured:<br>- Automatically type out and browse to login page (https://www.dropbox.com/login).<br>- Three second delay ensures login page has time to load, this can be increased if using slow internet connections.<br>- Username and password are entered in login field.<br>- Two second delay ensures security key page has time to load.<br>- U2F authentication completes automatically." %}
 
-Learn more about OnlyKey's implementation of FIDO2 / FIDO U2F [here.](https://docs.crp.to/features.html#universal-2nd-factor-authentication-u2f)
-
 #### Challenge-Response {#challenge-response}
 
 Challenge response is a form of authentication where an application sends a unique challenge and OnlyKey sends back an HMACSHA1 response. This response may be used for things like encryption of data which is used by software such as [KeePassXC](#keepassxc). OnlyKey flashes yellow when a challenge is received and user presses any button on OnlyKey to authorize the response. OnlyKey supports customizable "HMAC User Input Mode" which allows the user to select if button press is required for challenge-response.
@@ -491,16 +489,14 @@ Challenge response is a form of authentication where an application sends a uniq
 
 By default, no setup is required for challenge-response as OnlyKey has a random HMAC key set by default. Challenge-response is compatible with Yubikey devices. This permits OnlyKey and Yubikey to be used interchangeably for challenge-response with supported applications. In order to use OnlyKey and Yubikey interchangeably both must have the same HMAC key set. To set HMAC key on YubiKey we recommend using the [Yubikey Personalization Tool](https://www.yubico.com/products/services-software/download/yubikey-personalization-tools/).
 
-For example, to set a key of all 1s to slot 1 and set a key of all 2s to slot 2:
+For example, a random secret key may be generated and loaded into slots 1 and 2 on Yubikey:
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal1.png)
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal2.png)
 
-To set HMAC key on OnlyKey the [OnlyKey CLI](https://docs.crp.to/command-line.html) may be used.
-
-For example, to set a key of all 1s to slot 1 (130 in CLI) and set a key of all 2s to slot 2 (129 in CLI):
+The same secret key may be loaded into slots 1 (130 in CLI) and 2 (129 in CLI) using the OnlyKey the [OnlyKey CLI](https://docs.crp.to/command-line.html).
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/okchal2.png)
 
-Setting the same HMAC key (20 bytes hex) allows OnlyKey/Yubikey devices to generate the same responses and be used interchangeably.
+Setting the same HMAC key (40 characters, 20 bytes hex) allows OnlyKey/Yubikey devices to generate the same responses and be used interchangeably.
 
 ### Using OnlyKey With A Software Password Manager {#using-onlykey-with-a-software-password-manager}
 
