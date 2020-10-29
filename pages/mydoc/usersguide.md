@@ -494,7 +494,7 @@ For example, a random secret key may be generated and loaded into slots 1 and 2 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ykchal2.png)
 
 The same secret key may be loaded into slots 1 (130 in CLI) and 2 (129 in CLI) using the OnlyKey the [OnlyKey CLI](https://docs.crp.to/command-line.html).
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/okchal2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/okchal2-cli.png)
 
 Setting the same HMAC key (40 characters, 20 bytes hex) allows OnlyKey/Yubikey devices to generate the same responses and be used interchangeably.
 
