@@ -724,7 +724,7 @@ You can change your keyboard layout on the fly through the OnlyKey app preferenc
 *   CZECH
 *   SERBIAN_LATIN_ONLY
 
-Note: These additional keyboard layouts are available but cannot currently be set using the OnlyKey app. To set these keyboard layouts use the [OnlyKey CLI here](https://docs.crp.to/command-line.html#command-options).
+Note: These additional keyboard layouts are available but cannot currently be set using the OnlyKey app. To set these keyboard layouts use the [OnlyKey CLI here](https://docs.crp.to/command-line.html#keylayout).
 *   DANISH MAC
 *   HUNGARIAN
 *   US_DVORAK
