@@ -13,7 +13,7 @@ folder: mydoc
 <i class="fa fa-arrow-down fa-3x"></i>
 ## Start Here - Unpacking OnlyKey {#unpacking}
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/package.jpg)
+{% include image.html file="package.jpg)" max-width="292" %}
 
 {% include callout.html content="**Step 1.** Remove the OnlyKey and the metal quick-connect keychain from packaging." type="default" %}
 
