@@ -1070,34 +1070,7 @@ Additional color cases are available - Choose a color that fits your style – S
 
 ### Android/iOS Support {#android-support}
 
-Android and iOS is supported by using a USB on-the-go (OTG) adapter. For Android, there are two types of OTG adapters that can be purchased, USB Micro and USB C.
-
-Since the OnlyKey is essentially detected by mobile device as a keyboard, the username / password / Yubikey® OTP login features will work. Newer Android and iOS devices that support USB FIDO2 will support using OnlyKey as a security key. WebCrypt may also be used to encrypt messages and files more info [here](https://docs.crp.to/mobile)
-
-The TOTP feature requires the correct time in order to generate correct codes. In order to set the time on OnlyKey browse to https://apps.crp.to from Chrome or Firefox in Android (Safari in iOS) before trying to login.
-
-#### [Purchase USB C to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-c-to-usb-a-otg-adapter) {#usb-c-to-usb-3-otg-adapter}
-
-{% include note.html content="Supports OnePlus2/3, Nexus 5X, LG G5, HTC 10 or other Android device with USB C and OTG support." %}
-
-#### [Purchase USB Micro to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/usb-micro-to-usb-a-otg-adapter) {#usb-micro-to-usb-3-otg-adapter-with-keychain}
-
-{% include note.html content="Supports Moto G5 Plus, Samsung Galazy S7 S6 S5 S4 S3 Note 2 Note, HTC One X, HTC One S, Moto G5, Moto X, or other Android device with USB Micro and OTG support." %}
-
-#### [Purchase Lighting to USB 3 OTG in OnlyKey Store](https://onlykey.io/collections/all/products/lightning-to-usb-a-otg-adapter-for-iphone-or-ipad) {#lightning-to-usb-a-otg-adapter-for-iphone-or-ipad}
-
-You may use OnlyKey with a USB to Lightning adapter (sometimes called camera adapter) with iPhones and iPads.
-
-{% include note.html content="With iOS 13.3+ you may use OnlyKey as a FIDO2 security key and also use [OnlyKey WebCrypt](https://apps.crp.to) for OpenPGP support in Safari." %}
-
-{% include image.html file="image29.png"  max-width="248" %}
-
-### Keychain Accessory {#keychain-options}
-
-#### Heavy Duty Metal Keychain
-
-This keychain swivels 360° and is designed to withstand the stresses of demanding use. This can be purchased from the [OnlyKey store](https://onlykey.io/collections/keychains/products/heavy-duty-metal-keychain?variant=7154240028716).
-{% include image.html file="51vOBo8vUSL._SL1000_.jpg"  max-width="248" %}
+Android and iOS is supported by using a USB on-the-go (OTG) adapter. For more information read [Using OnlyKey with Mobile Devices (Android and iOS)](https://docs.crp.to/mobile.html)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -1170,6 +1143,6 @@ Store –[ https://crp.to/ok](https://crp.to/ok)
 
 Github –[ https://github.com/trustcrypto](https://github.com/trustcrypto)
 
-Getting started with OnlyKey –[ https://crp.to/okstart](https://crp.to/okstart)
+Getting started with OnlyKey – [https://onlykey.io/start](https://onlykey.io/start)
 
 {% include links.html %}
