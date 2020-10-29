@@ -15,6 +15,8 @@ folder: mydoc
 
 ## Unpacking OnlyKey {#unpacking}
 
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/package.jpg)
+
 {% include callout.html content="**Step 1.** Remove the OnlyKey and the metal quick-connect keychain from packaging." type="default" %}
 
 {% include callout.html content="**Step 2.** Attach the quick-connect to the OnlyKey, the other end of the quick-connect can be attached to your keyring." type="default" %}
