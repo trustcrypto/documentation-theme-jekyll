@@ -149,7 +149,7 @@ Password managers such as [pass](https://www.passwordstore.org/) and [gopass](ht
 
 ##### With `pass`:
 
-First install `pass` from [passwordstore.org] and initialize it to use your TREZOR-based GPG identity:
+First install `pass` from [passwordstore.org] and initialize it to use your OnlyKey-based GPG identity:
 ```
 $ pass init "Bob Smith <bob@protonmail.com>"
 Password store initialized for Bob Smith <bob@protonmail.com>
