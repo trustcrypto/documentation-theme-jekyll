@@ -15,21 +15,21 @@ OnlyKey-cli - A command line interface to the OnlyKey (Similar functionality to 
 
 ## Installation
 
+### Windows Stand-Alone EXE
+No install is required. Download and run the EXE to open OnlyKey CLI interactive mode or run directly from command line like this:
+```
+C:\ onlykey-cli.exe getlabels
+```
+
 ### Windows Install with dependencies
 1) Python 3.8 and pip3 are required. To setup a Python environment on Windows we recommend Anaconda [https://www.anaconda.com/download/#windows](https://www.anaconda.com/download/#windows)
 
-2)
+2) From an administrator command prompt run:
 ```
-$ pip3 install onlykey
+pip3 install hidapi==0.9.0 onlykey
 ```
 
-You should see a message showing where the executable is installed.
-
-Installing onlykey-cli-script.py script to c:\Python37\Scripts
-Installing onlykey-cli.exe script to c:\Python37\Scripts
-Installing onlykey-cli.exe.manifest script to c:\Python37\Scripts
-
-This is usually c:\Python37\Scripts\onlykey-cli.exe
+You should see a message showing where the executable is installed. This is usually c:\python39\scripts\onlykey-cli.exe
 
 ### MacOS Install with dependencies
 Python 3.8 and pip3 are required. To setup a Python environment on MacOS we recommend Anaconda [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos)
@@ -198,7 +198,7 @@ Set keyboard layout
 
 You can run commands in two ways:
 
-**1) Directly in terminal**
+#### 1) Directly in terminal
 
 Like this:
 
@@ -247,7 +247,7 @@ Slot 6b:
 
 ```
 
-**2) Interactive Mode**
+#### 2) Interactive Mode
 
 Or you can run commands in an interactive shell like this:
 
