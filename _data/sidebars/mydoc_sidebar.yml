@@ -151,6 +151,14 @@ entries:
       url: /features.html#automatic-lock-feature
       output: web, pdf
 
+    - title: International Keyboard Layouts
+      url: /features.html#international-keyboard-layouts
+      output: web, pdf
+
+    - title: Sysadmin Mode
+      url: /features.html#sysadmin-mode
+      output: web, pdf
+
     - title: LED Definitions
       url: /features.html#led-definitions-onlykey-color
       output: web, pdf
