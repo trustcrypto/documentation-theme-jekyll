@@ -39,9 +39,9 @@ Instead of having to remember all of your passwords you can just remember one 7 
 ### UNIVERSAL 2-FACTOR TOKEN
 Supports FIDO2 and FIDO Universal 2nd Factor Authentication (U2F), OATH TOTP, and Yubikey® compatible OTP. Chances are that if the website supports two-factor authentication, OnlyKey is compatible.
 
-*   [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](#universal-2nd-factor-authentication-u2f)
-*   [OATH TOTP](#google-authenticator-totp)
-*   [Yubico® One-Time Password](#Yubico-one-time-password)
+*   [FIDO2 and FIDO Universal 2nd Factor Authentication (U2F)](https://docs.crp.to/usersguide.html#universal-2nd-factor-u2f)
+*   [OATH TOTP](https://docs.crp.to/usersguide.html#google-authenticator-totp)
+*   [Yubico® One-Time Password](https://docs.crp.to/usersguide.html#Yubico-one-time-password)
 *   [Challenge-Response](https://docs.crp.to/usersguide.html#challenge-response)
 
 ### SSH AUTHENTICATION
@@ -82,6 +82,12 @@ OnlyKey types out the encrypted backup so it works anywhere independent of apps.
 ### AUTOMATIC LOCK FEATURE
 Want your OnlyKey to automatically lock itself after being inactive for 30 minutes? No problem, this is customizable in [OnlyKey preferences](https://docs.crp.to/usersguide.html#configurable-inactivity-lockout-period).
 
+### USER SELECTABLE TYPE SPEED FEATURE
+Want your OnlyKey to type out information faster or slower? No problem, this is customizable in [OnlyKey preferences](https://docs.crp.to/usersguide.html#configurable-keyboard-type-speed).
+
+### SYSADMIN MODE
+Want your OnlyKey to fill any login form or even automate system administration commands? No problem, enable [Sysadmin Mode](https://docs.crp.to/usersguide.html#sysadmin-mode).
+
 ### ADVANCED HARDWARE SECURITY
 Once a PIN has been set on your OnlyKey it locks down the hardware so that even if an attacker gains physical access to your OnlyKey, without the correct PIN it will be useless. Read more about [security architecture of OnlyKey](https://docs.crp.to/security.html).
 
@@ -115,9 +121,6 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 - SERBIAN_LATIN_ONLY
 - HUNGARIAN
 - DVORAK
-
-### USER SELECTABLE TYPE SPEED FEATURE
-Want your OnlyKey to type out information faster or slower? No problem, this is customizable.
 
 ### LED DEFINITIONS {#led-definitions-onlykey-color}
 
