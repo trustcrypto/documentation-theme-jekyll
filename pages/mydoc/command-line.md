@@ -109,7 +109,12 @@ See forum thread - [https://groups.google.com/forum/#!category-topic/onlykey/new
 
 ## QuickStart
 
-### Command Options
+### Setup Command Options
+
+#### init
+A command line tool for setting PIN on OnlyKey (Initial Configuration)
+
+### General Command Options
 
 #### version
 Displays the version of the app
@@ -117,58 +122,36 @@ Displays the version of the app
 #### fwversion
 Displays the version of the OnlyKey firmware
 
-#### init
-A command line tool for setting PIN on OnlyKey (Initial Configuration)
-
-#### settime
-A command for setting time on OnlyKey, time is needed for TOTP (Google Authenticator)
+#### wink
+OnlyKey flashes blue (winks), may be used for visual confirmation of connectivity
 
 #### getlabels
 Returns slot labels
 
+#### settime
+A command for setting time on OnlyKey, time is needed for TOTP (Google Authenticator)
+
 #### getkeylabels
 Returns key labels for RSA keys 1-4 and ECC keys 1 -32
 
-#### setslot [id] [type] [value]
-  - [id] must be slot number 1a - 6b
-  - [type] must be one of the following:
-    - label - Slot label i.e. My Google Acct
-    - url - URL to login page
-    - delay1 - set a 0 - 9 second delay
-    - add_char1 - Additional character before username 1 for TAB, 0 to clear
-    - username - Username to login
-    - add_char2 - Additional character after username 1 for TAB, 2 for RETURN
-    - delay2 - set a 0 - 9 second delay
-    - password - Password to login
-    - add_char3 - Additional character after password 1 for TAB, 2 for RETURN
-    - delay3 - set a 0 - 9 second delay
-    - add_char4 - Additional character before OTP 1 for TAB
-    - 2fa - type of two factor authentication
-      - g - Google Authenticator
-      - y - Yubico OTP
-      - u - U2F
-    - totpkey - Google Authenticator key
-    - add_char5 - Additional character after OTP 2 for RETURN
+#### rng [type]
+Access OnlyKey TRNG to generate random numbers:
+- [type] must be one of the following:
+  - hexbytes - Output hex encoded random bytes. Default 8 bytes; Maximum 255 bytes. Specify number of bytes to return with --count <number of bytes>.
+  - raw - Output raw entropy endlessly.
+  - feedkernel - Feed random bytes to /dev/random.
 
-#### wipeslot [id]
-  - <id> must be slot number 1a - 6b
+### OnlyKey Preferences Command Options
 
-#### setkey [key slot] [key type]
-  - See examples [here](https://docs.crp.to/command-line.html#writing-private-keys-and-passwords)  
+#### idletimeout [num]
+OnlyKey locks after ideletimeout is reached (1 – 255 minutes; default = 30; 0 to disable). [More info](https://docs.crp.to/usersguide.html#configurable-inactivity-lockout-period)
 
-#### wipekey [key slot]
-
-#### idletimeout
-OnlyKey locks after ideletimeout is reached (1 – 255 minutes; default = 30; 0 to disable)
-
-#### wipemode
+#### wipemode [num]
 Configure how the OnlyKey responds to
 a factory reset. WARNING - Setting to Full Wipe mode cannot be changed.
-  - 1 - Sensitive Data Only (default)
-All sensitive data is wiped.
-  - 2 - Full Wipe (recommended for plausible deniability users) Entire device is wiped. Firmware must be reloaded.
+1 = Sensitive Data Only (default); 2 = Full Wipe (recommended for plausible deniability users) Entire device is wiped. Firmware must be reloaded. [More info](https://docs.crp.to/usersguide.html#configurable-wipe-mode)
 
-#### keylayout
+#### keylayout [num]
 Set keyboard layout
   - 1 - USA_ENGLISH	(Default)
   - 2 - CANADIAN_FRENCH
@@ -199,11 +182,86 @@ Set keyboard layout
   - 27 - DANISH MAC
   - 28 - US_DVORAK
 
-#### keytypespeed
-1 = slowest; 10 = fastest [7 = default]
+[More info](https://docs.crp.to/usersguide.html#configurable-keyboard-layouts)
 
-#### led_brightness
+#### keytypespeed [num]
+1 = slowest; 10 = fastest [7 = default]
+[More info](https://docs.crp.to/usersguide.html#configurable-keyboard-type-speed)
+
+#### led_brightness [num]
 1 = dimmest; 10 = brightest [8 = default]
+[More info](https://docs.crp.to/usersguide.html#configurable-led-brightness)
+
+#### 2nd_profile_mode [num]
+Set during init (Initial Configuration) to set 2nd profile type 1 = standard (default); 2 = plausible deniability
+
+#### stored_key_mode [num]
+Enable or disable challenge for stored keys (SSH/PGP)
+0 = Challenge Code Required (default); 1 = Button Press Required
+[More info](https://docs.crp.to/usersguide.html#stored-challenge-mode)
+
+#### derived_key_mode [num]
+Enable or disable challenge for stored keys (SSH/PGP)
+0 = Challenge Code Required (default); 1 = Button Press Required
+[More info](https://docs.crp.to/usersguide.html#derived-challenge-mode)
+
+#### backup_key_mode [num]
+1 = Lock backup key so this may not be changed on device
+WARNING - Once set to "Locked" this cannot be changed unless a factory reset occurs.
+[More info](https://docs.crp.to/usersguide.html#backup-key-mode)
+
+### Slot Config Command Options
+
+#### setslot [id] [type] [value]
+  - [id] must be slot number 1a - 6b
+  - [type] must be one of the following:
+    - label - Slot label i.e. My Google Acct
+    - url - URL to login page
+    - delay1 - set a 0 - 9 second delay
+    - add_char1 - Additional character before username 1 for TAB, 0 to clear
+    - username - Username to login
+    - add_char2 - Additional character after username 1 for TAB, 2 for RETURN
+    - delay2 - set a 0 - 9 second delay
+    - password - Password to login
+    - add_char3 - Additional character after password 1 for TAB, 2 for RETURN
+    - delay3 - set a 0 - 9 second delay
+    - add_char4 - Additional character before OTP 1 for TAB
+    - 2fa - type of two factor authentication
+      - g - Google Authenticator
+      - y - Yubico OTP
+      - u - U2F
+    - totpkey - Google Authenticator key
+    - add_char5 - Additional character after OTP 2 for RETURN
+
+#### wipeslot [id]
+  - [id] must be slot number 1a - 6b
+
+### Key Config Command Options
+
+#### setkey [key slot] [key type]
+  - See examples [here](https://docs.crp.to/command-line.html#writing-private-keys-and-passwords).
+
+#### wipekey [key slot]
+
+### FIDO2 Config Command Options
+
+#### ping
+Sends a FIDO2 transaction to the device, which immediately echoes the same data back. This command is defined to be a uniform function for debugging, latency and performance measurements (CTAPHID_PING).
+
+#### set-pin
+Set new FIDO PIN, this is the PIN entered via keyboard and used for FIDO2 register/login (not the OnlyKey PIN entered on device).
+
+#### change-pin
+Change FIDO PIN, this is the PIN entered via keyboard and used for FIDO2 register/login (not the OnlyKey PIN entered on device).
+
+#### credential [operation] [credential ID]
+   - [operation] must be one of the following:
+     - info - Display number of existing resident keys and remaining space.
+     - ls - List resident keys.
+     - rm [credential ID] - Remove resident keys, [example here](https://docs.crp.to/command-line.html#list-and-remove-fido2-resident-key).
+
+#### reset
+Reset wipes all FIDO U2F and FIDO2 credentials!!! It is highly recommended to backup device prior to reset.
 
 ### Running Commands
 
@@ -369,7 +427,9 @@ OnlyKey>
 Bye!
 ```
 
-## Writing Private Keys and Passwords
+## Examples
+
+### Writing Private Keys and Passwords
 
 Keys/passwords are masked when entered and should only be set from interactive mode and not directly from terminal. Entering directly from terminal is not secure as command history is stored.
 
@@ -417,7 +477,7 @@ Password/Key: *************************************************************
 
 *ECC key must be 32 bytes, 1 is X25519 type*
 
-## Scripting Example
+### Scripting Example
 
 
 **Set time on OnlyKey (required for TOTP)**
@@ -428,6 +488,25 @@ This can be added to scripts such as the UDEV rule to automatically set time whe
 
 
 **Scripted provisioning of an OnlyKey slots and keys can be done by creating a script that sets multiple values on OnlyKey**
+
+### List and Remove FIDO2 Resident Key
+
+List current resident keys:
+
+```
+onlykey-cli credential ls
+```
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls.png)
+
+Remove a resident key by credential ID
+
+```
+onlykey-cli credential rm eu7LPIjTNwIJt2Ws9LWJlXkiNKaueSEEGteZM2MT/lZtEuYo49V6deCiIRMb6EDC29XG13nBL60+Yx+6hxSUYS1uxX9+AA==
+```
+
+Once removed, list current resident keys to verify:
+
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls2.png)
 
 ## Source
 

@@ -727,6 +727,7 @@ Note: These additional keyboard layouts are available but cannot currently be se
 *   HUNGARIAN
 *   US_DVORAK
 <a name="challenge-mode"></a>
+
 ### Derived Key User Input Mode {#derived-challenge-mode}
 
 OnlyKey supports automatic generation of keys that may be used for SSH and PGP/GPG with the [onlykey-agent app](https://docs.crp.to/onlykey-agent.html).
