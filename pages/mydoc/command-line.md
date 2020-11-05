@@ -190,27 +190,42 @@ Set keyboard layout
 1 = slowest; 10 = fastest [7 = default]
 [More info](https://docs.crp.to/usersguide.html#configurable-keyboard-type-speed)
 
-#### led_brightness [num]
+#### ledbrightness [num]
 1 = dimmest; 10 = brightest [8 = default]
 [More info](https://docs.crp.to/usersguide.html#configurable-led-brightness)
 
-#### 2nd_profile_mode [num]
+#### 2ndprofilemode [num]
 Set during init (Initial Configuration) to set 2nd profile type 1 = standard (default); 2 = plausible deniability
 
-#### stored_key_mode [num]
+#### storedkeymode [num]
 Enable or disable challenge for stored keys (SSH/PGP)
 0 = Challenge Code Required (default); 1 = Button Press Required
 [More info](https://docs.crp.to/usersguide.html#stored-challenge-mode)
 
-#### derived_key_mode [num]
+#### derivedkeymode [num]
 Enable or disable challenge for stored keys (SSH/PGP)
 0 = Challenge Code Required (default); 1 = Button Press Required
 [More info](https://docs.crp.to/usersguide.html#derived-challenge-mode)
 
-#### backup_key_mode [num]
+#### hmackeymode [num]
+Enable or disable button press for HMAC challenge-response
+0 = Button Press Required (default); 1 = Button Press Not Required.
+[More info](https://docs.crp.to/usersguide.html#hmac-mode)
+
+#### backupkeymode [num]
 1 = Lock backup key so this may not be changed on device
 WARNING - Once set to "Locked" this cannot be changed unless a factory reset occurs.
 [More info](https://docs.crp.to/usersguide.html#backup-key-mode)
+
+#### sysadminmode
+Enable or disable challenge for stored keys (SSH/PGP)
+0 = Challenge Code Required (default); 1 = Button Press Required
+[More info](https://docs.crp.to/usersguide.html#derived-challenge-mode)
+
+#### lockbutton
+Enable or disable challenge for stored keys (SSH/PGP)
+0 = Challenge Code Required (default); 1 = Button Press Required
+[More info](https://docs.crp.to/usersguide.html#derived-challenge-mode)
 
 ### Slot Config Options
 
@@ -220,20 +235,20 @@ WARNING - Once set to "Locked" this cannot be changed unless a factory reset occ
     - label - Slot label i.e. My Google Acct
     - url - URL to login page
     - delay1 - set a 0 - 9 second delay
-    - add_char1 - Additional character before username 1 for TAB, 0 to clear
+    - addchar1 - Additional character before username 1 for TAB, 0 to clear
     - username - Username to login
-    - add_char2 - Additional character after username 1 for TAB, 2 for RETURN
+    - addchar2 - Additional character after username 1 for TAB, 2 for RETURN
     - delay2 - set a 0 - 9 second delay
     - password - Password to login
-    - add_char3 - Additional character after password 1 for TAB, 2 for RETURN
+    - addchar3 - Additional character after password 1 for TAB, 2 for RETURN
     - delay3 - set a 0 - 9 second delay
-    - add_char4 - Additional character before OTP 1 for TAB
+    - addchar4 - Additional character before OTP 1 for TAB
     - 2fa - type of two factor authentication
       - g - Google Authenticator
       - y - Yubico OTP
       - u - U2F
     - totpkey - Google Authenticator key
-    - add_char5 - Additional character after OTP 2 for RETURN
+    - addchar5 - Additional character after OTP 2 for RETURN
 
 #### wipeslot [id]
   - [id] must be slot number 1a - 6b
@@ -376,7 +391,7 @@ OnlyKey> setslot 1a url accounts.google.com
 
 Successfully set URL
 
-OnlyKey> setslot 1a add_char1 2
+OnlyKey> setslot 1a addchar1 2
 
 Successfully set Character1
 
@@ -388,7 +403,7 @@ OnlyKey> setslot 1a username onlykey.1234
 
 Successfully set Username
 
-OnlyKey> setslot 1a add_char2 2
+OnlyKey> setslot 1a addchar2 2
 
 Successfully set Character2
 
@@ -402,7 +417,7 @@ Type Control-T to toggle password visible.
 Password: *********
 Successfully set Password
 
-OnlyKey> setslot 1a add_char3 2
+OnlyKey> setslot 1a addchar3 2
 
 Successfully set Character3
 
@@ -420,7 +435,7 @@ Type Control-T to toggle password visible.
 Password: ********************************
 Successfully set TOTP Key
 
-OnlyKey> setslot 1a add_char4 2
+OnlyKey> setslot 1a addchar4 2
 
 Successfully set Character4
 
