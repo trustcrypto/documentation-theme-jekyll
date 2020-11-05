@@ -109,12 +109,12 @@ See forum thread - [https://groups.google.com/forum/#!category-topic/onlykey/new
 
 ## QuickStart
 
-### Setup Command Options
+### Setup Commands
 
 #### init
 A command line tool for setting PIN on OnlyKey (Initial Configuration)
 
-### General Command Options
+### General Commands
 
 #### version
 Displays the version of the app
@@ -141,7 +141,7 @@ Access OnlyKey TRNG to generate random numbers:
   - raw - Output raw entropy endlessly.
   - feedkernel - Feed random bytes to /dev/random.
 
-### OnlyKey Preferences Command Options
+### OnlyKey Preferences Commands
 
 #### idletimeout [num]
 OnlyKey locks after ideletimeout is reached (1 – 255 minutes; default = 30; 0 to disable). [More info](https://docs.crp.to/usersguide.html#configurable-inactivity-lockout-period)
@@ -210,7 +210,7 @@ Enable or disable challenge for stored keys (SSH/PGP)
 WARNING - Once set to "Locked" this cannot be changed unless a factory reset occurs.
 [More info](https://docs.crp.to/usersguide.html#backup-key-mode)
 
-### Slot Config Command Options
+### Slot Config Commands
 
 #### setslot [id] [type] [value]
   - [id] must be slot number 1a - 6b
@@ -243,7 +243,7 @@ WARNING - Once set to "Locked" this cannot be changed unless a factory reset occ
 
 #### wipekey [key slot]
 
-### FIDO2 Config Command Options
+### FIDO2 Config Commands
 
 #### ping
 Sends a FIDO2 transaction to the device, which immediately echoes the same data back. This command is defined to be a uniform function for debugging, latency and performance measurements (CTAPHID_PING).
