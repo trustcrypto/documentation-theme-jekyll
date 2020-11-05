@@ -40,7 +40,11 @@ $ brew install libusb
 $ pip3 install onlykey
 ```
 
-### Ubuntu Install with dependencies
+### Linux/BSD Install with dependencies
+
+In order for non-root users in Linux to be able to communicate with OnlyKey a udev rule must be created as described [here](https://docs.crp.to/linux).
+
+#### Ubuntu Install with dependencies
 ```
 $ sudo apt update && apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
@@ -50,7 +54,7 @@ $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
-### Debian Install with dependencies
+#### Debian Install with dependencies
 ```
 $ sudo apt update && apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
@@ -60,7 +64,7 @@ $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
-### RedHat Install with dependencies
+#### RedHat Install with dependencies
 ```
 $ yum update
 $ yum install python3-pip python3-devel python3-tk libusb-devel libudev-devel \
@@ -71,7 +75,7 @@ $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
-### Fedora Install with dependencies
+#### Fedora Install with dependencies
 ```
 $ dnf install python3-pip python3-devel python3-tkinter libusb-devel libudev-devel \
               gcc redhat-rpm-config
@@ -81,7 +85,7 @@ $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
-### OpenSUSE Install with dependencies
+#### OpenSUSE Install with dependencies
 ```
 $ zypper install python3-pip python3-devel python3-tk libusb-1_0-devel libudev-devel
 $ pip3 install onlykey
@@ -90,7 +94,7 @@ $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
-### Arch Linux Install with dependencies
+#### Arch Linux Install with dependencies
 ```
 $ sudo pacman -Sy git python3-setuptools python3 libusb python3-pip
 $ pip3 install onlykey
@@ -99,17 +103,19 @@ $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules && udevadm trigger
 ```
 
-### FreeBSD Install with dependencies
+#### FreeBSD Install with dependencies
 
-See forum thread - https://groups.google.com/forum/#!category-topic/onlykey/new-features-and-feature-requests/CEYwdXjB508
-
-### Linux UDEV Rule
-
-In order for non-root users in Linux to be able to communicate with OnlyKey a udev rule must be created as described [here](https://docs.crp.to/linux).
+See forum thread - [https://groups.google.com/forum/#!category-topic/onlykey/new-features-and-feature-requests/CEYwdXjB508](https://groups.google.com/forum/#!category-topic/onlykey/new-features-and-feature-requests/CEYwdXjB508)
 
 ## QuickStart
 
 ### Command Options
+
+#### version
+Displays the version of the app
+
+#### fwversion
+Displays the version of the OnlyKey firmware
 
 #### init
 A command line tool for setting PIN on OnlyKey (Initial Configuration)
@@ -194,7 +200,10 @@ Set keyboard layout
   - 28 - US_DVORAK
 
 #### keytypespeed
-1 = slowest; 10 = fastest [4 = default]
+1 = slowest; 10 = fastest [7 = default]
+
+#### led_brightness
+1 = dimmest; 10 = brightest [8 = default]
 
 ### Running Commands
 
