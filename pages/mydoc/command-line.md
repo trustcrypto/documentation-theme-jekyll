@@ -105,7 +105,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 
 #### FreeBSD Install with dependencies
 
-See forum thread - [https://groups.google.com/forum/#!category-topic/onlykey/new-features-and-feature-requests/CEYwdXjB508](https://groups.google.com/forum/#!category-topic/onlykey/new-features-and-feature-requests/CEYwdXjB508)
+See forum thread [here](https://groups.google.com/d/msg/onlykey/CEYwdXjB508/MCe14p0gAwAJ)
 
 ## QuickStart
 
