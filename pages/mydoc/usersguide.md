@@ -467,6 +467,18 @@ While you can press any button, some user's may prefer to always press the butto
 
 #### Security Key Advanced {#security-key-advanced}
 
+**FIDO2 Resident Credentials**
+
+With resident credentials you can create a smoother, username-less login experience by saving some of the user data on the authenticator. To try it out we recommend using [https://www.passwordless.dev/usernameless](https://www.passwordless.dev/usernameless). As shown on the site not all browsers support this feature:
+
+{% include image.html file="passwordless.png"%}
+
+One drawback of resident credentials is that physical devices have limited storage. OnlyKey stores up to 12 resident credentials. In the event this fills up resident credentials can be managed and removed with the [OnlyKey CLI](https://docs.crp.to/command-line.html#fido2-config-options)
+
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls.png)
+
+**One Touch Login**
+
 One touch login may be configured with a security key by assigned the FIDO U2F two-factor mode to a slot.
 
 {% include callout.html content="**Step 1.** Select a slot that you wish to use with U2F mode by selecting the radio button and then selecting ''Submit''." type="default" %}
