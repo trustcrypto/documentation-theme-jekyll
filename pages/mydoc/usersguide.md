@@ -1145,7 +1145,7 @@ If you have an issue not listed here please reference the online support forum [
 
 ## Change your PIN {#pin-change}
 
-OnlyKey support for PIN change was added in firmware version Beta8. You can check the firmware version in the lower right corner of the OnlyKey app. To change PIN go to the [Setup] tab, put OnlyKey in config mode, and follow the instruction in the app to set a new PIN.
+To change PIN go to the [Setup] tab, put OnlyKey in config mode, and follow the instruction in the app to set a new PIN.
 
 ## Web Links {#web-links}
 

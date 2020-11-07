@@ -44,7 +44,7 @@ This release has a lot of improvements and new features. Here is the short list 
 
 ### Download Firmware
 
-There is a tab named [Firmware] in the app. This may be used to load the latest firmware onto OnlyKey directly through the OnlyKey app.
+There is a tab named Firmware in the app. This may be used to load the latest firmware onto OnlyKey directly through the OnlyKey app.
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 

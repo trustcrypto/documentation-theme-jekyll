@@ -269,7 +269,7 @@ Sends a FIDO2 transaction to the device, which immediately echoes the same data 
 Set new FIDO PIN, this is the PIN entered via keyboard and used for FIDO2 register/login (not the OnlyKey PIN entered on device).
 
 #### change-pin
-Change FIDO PIN, this is the PIN entered via keyboard and used for FIDO2 register/login (not the OnlyKey PIN entered on device).
+Change FIDO PIN, this is the PIN entered via keyboard and used for FIDO2 register/login (not the OnlyKey PIN entered on device, to change that PIN use the OnlyKey Desktop App).
 
 #### credential [operation] [credential ID]
    - [operation] must be one of the following:
