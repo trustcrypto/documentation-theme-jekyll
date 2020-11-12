@@ -9,8 +9,15 @@
 }
 
 @font-face {
-  font-family: "TxFont";
-  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-family: "BodyFont";
+    src: url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "BodyFont";
+    src: url("../fonts/Ubuntu-Italic.ttf") format("truetype");
+    font-style: italic;
 }
 
 body {
@@ -20,7 +27,7 @@ body {
 
 a,
 p {
-  font-family: TxFont, monospace;
+  font-family: BodyFont, monospace;
 }
 
 h1,
