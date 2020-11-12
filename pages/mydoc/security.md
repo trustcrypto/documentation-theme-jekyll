@@ -25,7 +25,7 @@ folder: mydoc
 
 - **Secure encrypted backup and restore** - Backups are securely encrypted with a user's passphrase (25+ characters) or a user's PGP key.
 
-- **[True random number generation](cryptographically-secure-random-number-generator)** - To guarantee random keys the patent pending method of random number generation utilizes a combination of hardware entropy and user touch entropy. The user touch entropy is completely unpredictable random data that is affected by many variables such as the conductivity of the user's skin, how long they press button, how long they delay between button presses, temperature and humidity.
+- **[True random number generation](https://docs.crp.to/security.html#cryptographically-secure-random-number-generator)** - To guarantee random keys the patent pending method of random number generation utilizes a combination of hardware entropy and user touch entropy. The user touch entropy is completely unpredictable random data that is affected by many variables such as the conductivity of the user's skin, how long they press button, how long they delay between button presses, temperature and humidity.
 
 ### About Hardware Security {#hardware-security}
 
