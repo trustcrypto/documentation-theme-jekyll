@@ -12,7 +12,7 @@ folder: mydoc
 
 ## OnlyKey Product Details
 
-![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/Infographic.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/Infographic.png)
 
 ### UNIVERSAL SUPPORT
 Supports Windows, Mac OS, Android, Linux, and Chrome OS. Driverless operation – Recognized by computer as a regular keyboard.
@@ -20,7 +20,7 @@ Supports Windows, Mac OS, Android, Linux, and Chrome OS. Driverless operation �
 ### PORTABLE. DURABLE. WATERPROOF
 On-the-go – Easily attach and detach the OnlyKey to your keychain and bring it everywhere you go.
 
-![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/package.jpg)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/package.jpg)
 
 ### PIN PROTECTED
 Your PIN code must be typed onto the 6 button keypad of the OnlyKey in order to unlock. If you lose OnlyKey no problem, it is PIN protected and can’t be used without the PIN, enter the wrong PIN too many times the data will self destruct
