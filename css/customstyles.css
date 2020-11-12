@@ -1,16 +1,16 @@
 @font-face {
   font-family: "HFont";
-  src: url("Roboto-Medium.ttf") format("truetype");
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "BodyFont";
-  src: url("Ubuntu-Regular.ttf") format("truetype");
+  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "TxFont";
-  src: url("Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 body {
