@@ -766,7 +766,7 @@ You can change your backup key/passphrase at any time by entering your PIN to pu
 
 ### Configurable Wipe Mode {#configurable-wipe-mode}
 
-Setting wipe mode to "Full Wipe" ensures that not only is your sensitive data wiped when a factory default occurs but also the firmware is wiped. This ensures that no data or meta data such as what version of firmware you had would be accessible to an adversary that steals or otherwise obtains a user's OnlyKey and then performs a factory default. The tradeoff of setting wipe mode to full wipe is that this cannot be changed once set and when a factory default occurs the firmware must be reloaded using the [**firmware upgrade guide **](https://docs.crp.to/upgradeguide.html). For user's desiring the highest level of security we recommend enabling full wipe.
+Setting wipe mode to "Full Wipe" ensures that not only is your sensitive data wiped when a factory default occurs but also the firmware is wiped. This ensures that no data or meta data such as what version of firmware you had would be accessible to an adversary that steals or otherwise obtains a user's OnlyKey and then performs a factory default. The tradeoff of setting wipe mode to full wipe is that this cannot be changed once set and when a factory default occurs the firmware must be reloaded using the [firmware upgrade guide](https://docs.crp.to/upgradeguide.html). For user's desiring the highest level of security we recommend enabling full wipe.
 
 ### Sysadmin Mode {#sysadmin-mode}
 
