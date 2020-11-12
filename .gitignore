@@ -3,5 +3,6 @@ _site/
 .jekyll-metadata
 _pdf
 .DS_Store
-
-.DS_Store
+.idea
+vendor/
+.bundle/
