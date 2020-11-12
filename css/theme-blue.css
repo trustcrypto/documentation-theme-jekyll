@@ -1,11 +1,11 @@
 .summary {
     color: #808080;
-    border-left: 5px solid #ae0000;
+    border-left: 5px solid #b80000;
     font-size:16px;
 }
 
 
-h3 {color: #ae0000; }
+h3 {color: #b80000; }
 h4 {color: #808080; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -91,7 +91,7 @@ a.navbar-brand:hover {
 
 body.print h1 {color: #015CAE !important; font-size:28px !important;}
 body.print h2 {color: #595959 !important; font-size:20px !important;}
-body.print h3 {color: #E50E51 !important; font-size:14px !important;}
+body.print h3 {color: #b80000 !important; font-size:14px !important;}
 body.print h4 {color: #679DCE !important; font-size:14px; font-style: italic !important;}
 
 .anchorjs-link:hover {
@@ -106,7 +106,7 @@ li.sidebarTitle {
   margin-top:20px;
     font-weight:normal;
     font-size:130%;
-    color: #ae0000;
+    color: #b80000;
     margin-bottom:10px;
     margin-left: 5px;
 

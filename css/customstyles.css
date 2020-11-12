@@ -547,7 +547,7 @@ table.profile thead tr th {
 }
 
 table.request thead tr th {
-    background-color: #ae0000;
+    background-color: #b80000;
 }
 
 .audienceLabel {
@@ -612,7 +612,7 @@ a[data-toggle] {
     font-size:120%;
     color: #808080;
     margin:20px 0px 20px 0px;
-    border-left: 5px solid #ae0000;
+    border-left: 5px solid #b80000;
     padding-left: 10px;
 
 }
@@ -627,7 +627,7 @@ a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-h3 {color: #ae0000; font-weight:normal; font-size:140%;}
+h3 {color: #b80000; font-weight:normal; font-size:140%;}
 h4 {color: #808080; font-weight:normal; font-size:130%; font-style:italic;}
 
 .alert, .callout {
