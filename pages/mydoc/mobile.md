@@ -41,7 +41,7 @@ iOS Example:
 
 - Ensure the latest firmware is loaded on OnlyKey. Instructions are available [here](https://docs.crp.to/usersguide.html#loading-onlykey-firmware) for loading firmware.
 - Connect to mobile device using adapter. On-the-go USB-C, Lightning and multi adapters may also be purchased [here](https://onlykey.io/collections/accessories-1).
-- To encrypt/decrypt a key must be loaded on OnlyKey. Instructions are available [here](https://docs.crp.to/usersguide.html#generating-keys).
+- To encrypt/decrypt a key must be loaded on OnlyKey. Instructions are available [here](https://docs.crp.to/importpgp.html#generating-keys).
 
 ### Android/iOS Static Password, TOTP, and Yubikey OTP Support
 

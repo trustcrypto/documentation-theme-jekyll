@@ -77,7 +77,7 @@ This link provides information to let your sender know what WebCrypt is, why it'
 
 ### See WebCrypt in action {#openpgp-action}
 
-After configuring your OnlyKey following [these instructions](https://docs.crp.to/usersguide.html#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages/files.
+After configuring your OnlyKey following [these instructions](https://docs.crp.to/importpgp.html#generating-keys) you can browse to the [Webcrypt app](https://apps.crp.to/encrypt) to send secure messages/files.
 
 {% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
@@ -88,7 +88,7 @@ To create encrypted PGP message or file just:
 - Enter the recipient's Keybase username or Protonmail email in the first box
 - Enter your Keybase username or Protonmail email (for the key you loaded onto OnlyKey) in the second box.
 
-{% include tip.html content="If you didn't load your key onto OnlyKey follow these [these instructions](https://docs.crp.to/usersguide.html#generating-keys)" %}
+{% include tip.html content="If you didn't load your key onto OnlyKey follow these [these instructions](https://docs.crp.to/importpgp.html#generating-keys)" %}
 
 - Enter your secure message in the third box
 - Click "Encrypt and Sign"

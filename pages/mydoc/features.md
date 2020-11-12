@@ -58,8 +58,8 @@ Using OnlyKey makes OpenPGP easier than ever.
 
 Keys are loaded using the OnlyKey App. Step by step directions for generating and loading keys are provided in the User's Guide here:
 
-*   [Generate keys](https://docs.crp.to/usersguide.html#generating-keys) using Keybase
-*   [Load keys](https://docs.crp.to/usersguide.html#loading-keys) onto OnlyKey
+*   [Generate keys](https://docs.crp.to/importpgp.html#generating-keys) using Keybase
+*   [Load keys](https://docs.crp.to/importpgp.html#loading-keys) onto OnlyKey
 
 ### SELF-DESTRUCT FEATURE
 In a pinch and want to wipe your OnlyKey? Enter your self-destruct PIN to wipe EVERYTHING! Plus you can always restore from backup easily.

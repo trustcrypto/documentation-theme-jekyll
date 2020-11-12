@@ -642,19 +642,18 @@ DashLane supports Google Authenticator, Yubico® OTP, and Security Keys. The sec
 
 SmartLock is a password manager that is available in Google Chrome, it supports Google Authenticator and Security Keys. The security key (FIDO2 / U2F) option is the most secure option.
 
-## OpenPGP File Encryption and Secure Communication {#secure-com}
+## OpenPGP File Encryption {#openpgp}
 
-OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. With OnlyKey and Keybase together you have offline cold storage of your OpenPGP keys and can still easily encrypt messages and files.
+OnlyKey is OpenPGP compatible and the worlds first plug and play encryption device. It is universally supported and does not require special software or drivers. There are two ways to use OnlyKey with OpenPGP.
+
+1) **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
+2) **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - A hardware-based GPG agent that provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
 
 {% include tip.html content="Watch a video [here](https://vimeo.com/374653109) that demonstrates using OnlyKey WebCrypt for file encryption<br>[![How-To: Use OnlyKey WebCrypt for file encryption](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/webcrypt.png)](https://vimeo.com/374653109)" %}
 
-1) **[OnlyKey WebCrypt Web App](https://docs.crp.to/webcrypt.html)** is supported on Firefox, Brave, Edge (new) and Google Chrome for sending secure messages right in the browser. It is also supported on Android and iOS for more information [read this](https://docs.crp.to/mobile.html).
-
-2) **[OnlyKey WebCrypt Native App](https://docs.crp.to/webcrypt.html)** provides the same app functionality but as a native app for that runs on Windows, mac OS, or Linux.
-
 {% include note.html content="Private keys are securely stored on OnlyKey and are not accessible to the app or to the browser. This is in contrast to for example PGP/GPG software, webmail (i.e. Protonmail), and smartphone apps. Additionally, physical user presence is required to process secure messages/files. This is in contrast to Smart Cards which only require a PIN code that can be captured and replayed without physical user presence." %}
 
-### How it works {#openpgp-how}
+### How WebCrypt works {#openpgp-how}
 
 {% include callout.html content="**Step 1. Find a Keybase User -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase search tool to search Keybase users by:<br>
 - Twitter, Github, Reddit, or Hackernews Usernames<br>
@@ -742,13 +741,13 @@ Note: These additional keyboard layouts are available but cannot currently be se
 
 ### Derived Key User Input Mode {#derived-challenge-mode}
 
-OnlyKey supports automatic generation of keys that may be used for SSH and PGP/GPG with the [onlykey-agent app](https://docs.crp.to/onlykey-agent.html).
+OnlyKey supports automatic generation of keys that may be used for SSH and PGP/GPG with the [OnlyKey Agent](https://docs.crp.to/onlykey-agent.html).
 
 The default setting is "Challenge Code Required" which requires a 3 digit challenge code to be entered on OnlyKey to perform SSH or PGP/GPG operation. This is great for security but for some users a more convenient approach may be preferred. With "Button Press Required", a physical press on any key is all that is required to perform the operation.
 
 ### Stored Key User Input Mode {#stored-challenge-mode}
 
-OnlyKey supports [import of existing OpenPGP keys](https://docs.crp.to/usersguide.html#loading-keys) using the [OnlyKey app](https://docs.crp.to/app.html). These keys once imported are securely stored in OnlyKey hardware and may be used to perform SSH or PGP/GPG operations with the [onlykey-agent app](https://docs.crp.to/onlykey-agent.html) or in the browser with the [OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html).
+OnlyKey supports [import of existing OpenPGP keys](https://docs.crp.to/importpgp.html#loading-keys) using the [OnlyKey app](https://docs.crp.to/app.html). These keys once imported are securely stored in OnlyKey hardware and may be used to perform SSH or PGP/GPG operations with the [OnlyKey Agent](https://docs.crp.to/onlykey-agent.html) or in the browser with the [OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html).
 
 By default, you must enter a 3 digit challenge code on OnlyKey to perform SSH or PGP/GPG operation. If a more convenient approach is preferred "Button Press Required" may be set so that a physical press on any key is all that is required.
 
@@ -835,173 +834,17 @@ You may hear the term private key being used sometimes, we will not get into the
 
 **What does OnlyKey use keys for?**
 
-The OnlyKey stores private keys. These private keys are used for four different purposes.
+The OnlyKey stores private keys. These private keys are used for three different purposes.
 
-1.  **Secure Encrypted Backup** - This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For information on backing up OnlyKey see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
-2.  **Secure Encrypted Messages (OpenPGP)**
-  - **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** is a serverless Web App that integrates with [OnlyKey](https://crp.to/p/) and [keybase.io](https://keybase.io/) to provide encryption everywhere on-the-go.
-3.  **SSH Authentication** - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure. For information on using OnlyKey for SSH authentication see [OnlyKey-Agent](https://docs.crp.to/onlykey-agent.html).
+1.  **Signing and Encrypted Messages/Files (OpenPGP)**
+  - **[OnlyKey WebCrypt](https://docs.crp.to/webcrypt.html)** - Provides a way to securely use OnlyKey for OpenPGP in the browser. The Webcrypt app loads everything necessary to encrypt messages and files directly in the local browser without the need to send messages or files over the Internet. Data between [OnlyKey](https://onlykey.io) and the local browser is end-to-end encrypted. This provides encryption everywhere on-the-go and supports macOS, Windows, Linux, Chrome OS, Android, and iPhone (Safari on iOS 13.3+). More information on mobile support [here](https://docs.crp.to/mobile.html).
+  - **[OnlyKey GPG Agent](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide)** - A hardware-based GPG agent that provides a way to securely use OnlyKey for OpenPGP on a local computer. Instead of keeping keys on a computer, OnlyKey generates and securely stores your keys off of the computer and you can still easily use GPG to do things like sign emails, git commits, software packages etc.
+2.  **SSH Authentication** - SSH is a popular remote access tool that is often used by administrators. Thanks to the OnlyKey SSH Agent remote access can be passwordless and more secure. For information on using OnlyKey for SSH authentication see [OnlyKey SSH Agent](https://docs.crp.to/onlykey-agent.html#ssh-agent-quickstart-guide).
+3.  **Secure Encrypted Backup** - This will backup everything including your stored accounts, preferences, and other keys to an encrypted text file. For information on backing up OnlyKey see [Secure Encrypted Backup](#secure-encrypted-backup-anywhere).
 
-Learn more about keys feature [here.](https://docs.crp.to/features.html#keys-feature)
+**How do I load OpenPGP key?**
 
-### Generating Keys {#generating-keys}
-
-{% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
-
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp.png)](https://vimeo.com/374512727)" %}
-
-{% include callout.html content="**Step 1.** Go to https://keybase.io" type="default" %}
-
-{% include callout.html content="**Step 2.** Select Login" type="default" %}
-
-{% include image.html file="keybase1.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 3.** Select Join Keybase" type="default" %}
-
-{% include image.html file="keybase2.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 4.** Enter an email address, username, and passphrase. This username will be used by others who want to send you encrypted messages. When finished select join." type="default" %}
-
-{% include image.html file="keybase11.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 5.** Select add a PGP key" type="default" %}
-
-{% include image.html file="keybase3.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 6.** Select I need a public key" type="default" %}
-
-{% include image.html file="keybase4.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 7.** Select Ok, got it" type="default" %}
-
-{% include image.html file="keybase5.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 8.** Enter Full name and at least one email. These will appear on the messages you send. When finished select Let the math begin." type="default" %}
-
-{% include image.html file="keybase6.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 9.** After the key is generated make sure to uncheck Host encrypted private key, too. Best security practices are to only keep your private key offline." type="default" %}
-
-{% include image.html file="keybase7.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 10.** Highlight your private key and copy to a text file. Save this to removable media like a USB flash drive or CD/DVD. You may want to make multiple copies as there is no way to recover this key if you lose it. Also ensure you write down your key passphrase (Same as Keybase account password) this is required to unlock your key. Store both in a physically secure location." type="default" %}
-
-{% include tip.html content="A great physically secure location is a safe, preferably a fire safe." %}
-
-{% include image.html file="keybase8.jpeg" max-width="434" %}
-
-{% include image.html file="keybase9.jpeg" max-width="434" %}
-
-{% include callout.html content="**Step 11.** Select Done, post to Keybase." type="default" %}
-
-Now all that is needed to start sending encrypted messages is to load the key you generated onto your OnlyKey.
-
-<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to Loading Keys below***
-
-### Loading Keys {#loading-keys}
-
-{% include warning.html content="Only load keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
-
-{% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374512727)<br>[![How-To: Generate and load a new OpenPGP key on OnlyKey](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp.png)](https://vimeo.com/374512727)" %}
-
-If you generated your keys as described in the Generating Keys section above, using Keybase, or using Mailvelope proceed to follow the steps below. If not head over to [Loading Keys Advanced](#loading-keys-a).
-
-{% include callout.html content="**Step 1.** Open the text file of your private key that you saved in the previous steps. Select all of the text of the private key (CTRL+A), and copy the text (CTRL+C)." type="default" %}
-
-{% include image.html file="Keybase12.jpg" %}
-
-{% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey App." type="default" %}
-
-{% include callout.html content="**Step 3.** Put the OnlyKey into config mode doing the following" type="default" %}
-
-*   Ensure OnlyKey is unlocked
-*   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
-*   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
-
-{% include callout.html content="**Step 4.** Paste the copied private key into the RSA Private Key box. Ensure *Auto* is selected as Slot, the same passphrase you used with Keybase (Or Protonmail / Mailvelope) is entered as passphrase. When finished select Save to OnlyKey" type="default" %}
-
-{% include image.html file="loadkey1.jpg" %}
-
-{% include note.html content="Selecting set as backup key will use your Keybase key to encrypt backups. Setting this will override any previously set backup passphrase/key as there can only be one backup key set." %}
-
-You should see a message displayed indicating the key was successfully saved to OnlyKey.
-
-Now your OnlyKey is ready to:
-
-- Send/receive PGP encrypted messages/files using [WebCrypt](https://docs.crp.to/webcrypt.html)
-
-### Loading Keys Advanced {#loading-keys-a}
-
-{% include warning.html content="Only load keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
-
-If you did not generate keys using the [Generating Keys](#generating-keys) steps provided or you already have an OpenPGP key that you would like to use there are some additional considerations.
-
-- OnlyKey supports RSA OpenPGP keys of sizes 2048 and 4096 (ECC Keys are not used for OpenPGP).
-- Decryption operations using a 2048 size key takes about 2 seconds, with 4096 size key it takes about 9 seconds (or up to 30 seconds with OnlyKey Original).
-
-For best user experience we recommend using OnlyKey Color with 2048 key size (subkeys) for decryption and signing.
-
-**What are subkeys?**
-
-Each OpenPGP key is actually multiple keys. There is a primary key and subkey(s), for example when you follow the Generating Keys steps Keybase generates a key that has a 4096 key size primary key and two 2048 key size subkeys. The first subkey is used for decryption and the second subkey is used for signing.
-
-**Why does this matter?**
-
-You need to determine which keys to load to OnlyKey if you are generating your own key. Typically, if your key has two subkeys then subkey 1 is used for decryption and subkey 2 is used for signing.
-
-If your key only has one subkey then the primary (master) key is typically used for signing and the subkey is used for decryption. This is the default for keys created with GnuPG and Mailvelope (OpenPGP.js).
-
-Once you determine which key is your used for signing and which key is used for decryption:
-- Load the decryption subkey into slot 1 of OnlyKey and check "set as decryption key".
-- Load the signing primary/subkey into slot 2 of OnlyKey and check "set as signature key".
-
-**Digging Deeper into PGP**
-
-You can use gpg2 via terminal to check the key flags by using the following commands:
-```
-$ gpg2 --import /Downloads/asdf_priv.asc
-gpg: key 86F9C12A016169E4: public key "asdf <asdf@asdf.com>" imported
-gpg: key 86F9C12A016169E4: secret key imported
-gpg: Total number processed: 1
-
-$ gpg2 --with-colons --list-keys 86F9C12A016169E4
-tru::1:1481922139:0:3:1:5
-pub:-:4096:1:86F9C12A016169E4:1513980282:::-:::scESC::::::23::0:
-fpr:::::::::37F75C777AEBB46FB690040986F9C12A016169E4:
-uid:-::::1513980287::AB20A6F0D2D7FE2A9EFF4575C3FF7ED2DAC66F4A::asdf <asdf@asdf.com>::::::::::0:
-sub:-:4096:1:8E6332B693FB6D8F:1513980282::::::e::::::23:
-fpr:::::::::F5F80C91796859CEC6CB54768E6332B693FB6D8F:
-```
-In the shown example the flag 'e' (encryption) indicates that the first subkey is the decryption key. The flag 'sc' indicates that the primary key is the signing key
-
-**Exporting a key from GPG and Loading onto OnlyKey**
-
-{% include callout.html content="**Step 1.** Export the OpenPGP compatible private key from GPG" type="default" %}
-```
-$ gpg2 --export-secret-key -a "asdf"
-```
-
-% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey App." type="default" %}
-
-{% include callout.html content="**Step 3.** Put the OnlyKey into config mode doing the following" type="default" %}
-
-*   Ensure OnlyKey is unlocked
-*   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
-*   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
-
-{% include callout.html content="**Step 4.** Copy and paste the private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with GPG is entered as passphrase, *Set as decryption key* is selected. If you wish to use your PGP to encrypt OnlyKey backups select *Set as backup key* (Note: If you previously set a backup passphrase and set this the PGP key will be used instead). When finished select Save to OnlyKey" type="default" %}
-
-{% include note.html content="Selecting set as backup key will use your GPG key to encrypt backups. If you wish to use a different key for backups just load that key and set it as backup. There can only be one backup key set." %}
-
-{% include callout.html content="**Step 5.** Select the decryption subkey and save" type="default" %}
-
-You should see a message displayed indicating the key was successfully saved to OnlyKey.
-
-{% include callout.html content="**Step 6.** Paste the copied private key into the RSA Private Key box again. Ensure *slot 2* is selected, the same passphrase you used with GPG is entered as passphrase, and *Set as signature key* is selected. When finished select Save to OnlyKey" type="default" %}
-
-{% include callout.html content="**Step 5.** Select the signing primary/subkey and save" type="default" %}
-
-You should see a message displayed indicating the key was successfully saved to OnlyKey.
+Follow the guide [here](https://docs.crp.to/importpgp.html) to generate and load OpenPGP keys onto OnlyKey.
 
 ## Secure Encrypted Backup Anywhere {#secure-encrypted-backup-anywhere}
 

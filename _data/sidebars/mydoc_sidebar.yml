@@ -64,7 +64,7 @@ entries:
       output: web, pdf
 
     - title: OpenPGP Encryption (Files / Messages)
-      url: /usersguide.html#secure-com
+      url: /usersguide.html#openpgp
       output: web, pdf
 
     - title: Preferences
@@ -76,11 +76,11 @@ entries:
       output: web, pdf
 
     - title: Generating Keys
-      url: /usersguide.html#generating-keys
+      url: /importpgp.html#generating-keys
       output: web, pdf
 
     - title: Loading Keys
-      url: /usersguide.html#loading-keys
+      url: /importpgp.html#loading-keys
       output: web, pdf
 
     - title: Secure Encrypted Backup Anywhere
