@@ -19,7 +19,7 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                      </span>
                  </div>
                  <div class="panel-body">
-                     <p>The first step in getting started with OnlyKey is to follow the [steps here ](https://onlykey.io/start). This will ensure you stay up to date on important OnlyKey updates.</p>
+                     <p>The first step in getting started with OnlyKey is to follow the <a href="https://onlykey.io/start">steps here</a>. This will ensure you stay up to date on important OnlyKey updates.</p>
                      <a href="https://onlykey.io/start" class="btn btn-primary">Start Here</a>
                  </div>
              </div>
@@ -47,8 +47,8 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                      </span>
                  </div>
                  <div class="panel-body">
-                     <p>Knowledge Base</p>
-                     <a href="#knowledge-base" class="btn btn-primary">The Knowledge Base contains guides and information for using OnlyKey in specific applications.</a>
+                     <p>The Knowledge Base contains guides and information for using OnlyKey in specific applications.</p>
+                     <a href="#knowledge-base" class="btn btn-primary">Knowledge Base</a>
                  </div>
              </div>
          </div>
