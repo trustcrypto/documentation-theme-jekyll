@@ -83,7 +83,7 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 
 *   Ensure OnlyKey is unlocked
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
-*   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
+*   Re-enter your PIN, you will see the OnlyKey LED flash red while in config mode.
 
 {% include callout.html content="**Step 4.** Paste the copied private key into the OpenPGP Private Key (PEM Format) box. Ensure *Auto Load* is selected as Slot, enter the same passphrase you used with Keybase, Protonmail, or Mailvelope. When finished select Save to OnlyKey" type="default" %}
 
@@ -179,7 +179,7 @@ $ gpg2 --export-secret-key -a "asdf"
 
 *   Ensure OnlyKey is unlocked
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
-*   Re-enter your PIN, you will see the OnlyKey LED fade in and out continuously (Red if OnlyKey Color) while in config mode.
+*   Re-enter your PIN, you will see the OnlyKey LED flash red while in config mode.
 
 {% include callout.html content="**Step 4.** Copy and paste the private key into the RSA Private Key box. Ensure *slot 1* is selected, the same passphrase you used with GPG is entered as passphrase, *Set as decryption key* is selected. If you wish to use your PGP to encrypt OnlyKey backups select *Set as backup key* (Note: If you previously set a backup passphrase and set this the PGP key will be used instead). When finished select Save to OnlyKey" type="default" %}
 

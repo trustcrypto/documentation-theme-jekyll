@@ -9,23 +9,68 @@ summary: This is the official OnlyKey documentation site. Select from the topics
 
 ## Get Started With OnlyKey
 
-### 1. Start Here
+<div class="row">
+         <div class="col-md-3 col-sm-6">
+             <div class="panel panel-default text-center">
+                 <div class="panel-heading">
+                     <span class="fa-stack fa-5x">
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa fa-check-square-o fa-stack-1x fa-inverse"></i>
+                     </span>
+                 </div>
+                 <div class="panel-body">
+                     <p>The first step in getting started with OnlyKey is to follow the [steps here ](https://onlykey.io/start). This will ensure you stay up to date on important OnlyKey updates.</p>
+                     <a href="https://onlykey.io/start" class="btn btn-primary">Start Here</a>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+             <div class="panel panel-default text-center">
+                 <div class="panel-heading">
+                     <span class="fa-stack fa-5x">
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                     </span>
+                 </div>
+                 <div class="panel-body">
+                     <p>The users's guide provides step-by-step instructions for configuring the OnlyKey. The user's guide is available online here [Online User's Guide](https://docs.crp.to/usersguide.html) as well as downloadable PDF format here [User's Guide PDF](https://www.sejda.com/html-to-pdf?save-link=https://docs.crp.to/usersguide.html&viewportWidth=1440&pageSize=A3&usePrintMedia&pageOrientation=portrait).</p>
+                     <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">User's Guide</a>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+             <div class="panel panel-default text-center">
+                 <div class="panel-heading">
+                     <span class="fa-stack fa-5x">
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+                     </span>
+                 </div>
+                 <div class="panel-body">
+                     <p>Apps and Software.</p>
+                     <a href="#apps" class="btn btn-primary">Apps and Software</a>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+             <div class="panel panel-default text-center">
+                 <div class="panel-heading">
+                     <span class="fa-stack fa-5x">
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                     </span>
+                 </div>
+                 <div class="panel-body">
+                     <p>If you have specific questions about the OnlyKey check out the [OnlyKey Frequently Asked Questions](https://docs.crp.to/faq.html) first.
 
-The first step in getting started with OnlyKey is to follow the [steps here ](https://onlykey.io/start).
+                     If you are having issues that are not addressed in the User's Guide or FAQs check out the [OnlyKey Support forum](https://forum.onlykey.io). If you are having a new issue not already mentioned in the forum this is the place to ask for help.</p>
+                     <a href="#knowledge-base" class="btn btn-primary">Support</a>
+                 </div>
+             </div>
+         </div>
+</div>
 
-This will ensure you stay up to date on important OnlyKey updates.
-
-### 2. OnlyKey Configuration
-
-The users's guide provides step-by-step instructions for configuring the OnlyKey. The user's guide is available online here [Online User's Guide](https://docs.crp.to/usersguide.html) as well as downloadable PDF format here [User's Guide PDF](https://www.sejda.com/html-to-pdf?save-link=https://docs.crp.to/usersguide.html&viewportWidth=1440&pageSize=A3&usePrintMedia&pageOrientation=portrait).
-
-### 3. OnlyKey Support
-
-If you have specific questions about the OnlyKey check out the [OnlyKey Frequently Asked Questions](https://docs.crp.to/faq.html) first.
-
-If you are having issues that are not addressed in the User's Guide or FAQs check out the [OnlyKey Support forum](https://forum.onlykey.io). If you are having a new issue not already mentioned in the forum this is the place to ask for help.
-
-### 4. OnlyKey Apps and Software
+### OnlyKey Apps and Software {#apps}
 
 [OnlyKey Desktop App](https://docs.crp.to/app.html) is used for setup and configuration of OnlyKey. Supported on Windows, macOS, Linux, and Chrome OS (with Chrome App).
 
@@ -39,7 +84,7 @@ The firmware releases can be found [here.](https://github.com/trustcrypto/OnlyKe
 
 [Command-line Utility](https://docs.crp.to/command-line.html) - The OnlyKey Command-Line Utility is a command line tool targeted towards more advanced users. This can be used for configuration, scripting, and testing.
 
-### 5. OnlyKey Knowledge Base
+### OnlyKey Knowledge Base {#knowledge-base}
 
 The Knowledge Base contains guides and information for using OnlyKey in specific applications.
 
