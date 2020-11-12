@@ -1,5 +1,35 @@
+@font-face {
+  font-family: "HFont";
+  src: url("Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BodyFont";
+  src: url("Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TxFont";
+  src: url("Roboto-Regular.ttf") format("truetype");
+}
+
 body {
+    font-family: BodyFont, monospace;
     font-size:15px;
+}
+
+a,
+p {
+  font-family: TxFont, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: HFont, monospace;
 }
 
 .bs-callout {
@@ -1198,4 +1228,3 @@ h4.panel-title {
         display:block !important;
     }
 }
-

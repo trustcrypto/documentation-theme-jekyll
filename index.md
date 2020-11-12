@@ -15,7 +15,7 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                           <i class="fa fa-check-square-o fa-stack-1x fa-inverse"></i>
+                           <i class="fa fa-sign-in fa-stack-1x fa-inverse"></i>
                      </span>
                  </div>
                  <div class="panel-body">
