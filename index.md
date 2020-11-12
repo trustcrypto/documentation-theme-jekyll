@@ -33,7 +33,7 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                      </span>
                  </div>
                  <div class="panel-body">
-                     <p>The users's guide provides step-by-step instructions for configuring the OnlyKey. The user's guide is available online here [Online User's Guide](https://docs.crp.to/usersguide.html) as well as downloadable PDF format here [User's Guide PDF](https://www.sejda.com/html-to-pdf?save-link=https://docs.crp.to/usersguide.html&viewportWidth=1440&pageSize=A3&usePrintMedia&pageOrientation=portrait).</p>
+                     <p>The users's guide provides step-by-step instructions for configuring the OnlyKey.</p>
                      <a href="https://docs.crp.to/usersguide.html" class="btn btn-primary">User's Guide</a>
                  </div>
              </div>
@@ -43,12 +43,12 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                  <div class="panel-heading">
                      <span class="fa-stack fa-5x">
                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                           <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+                           <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                      </span>
                  </div>
                  <div class="panel-body">
-                     <p>Apps and Software.</p>
-                     <a href="#apps" class="btn btn-primary">Apps and Software</a>
+                     <p>Knowledge Base</p>
+                     <a href="#knowledge-base" class="btn btn-primary">The Knowledge Base contains guides and information for using OnlyKey in specific applications.</a>
                  </div>
              </div>
          </div>
@@ -61,10 +61,8 @@ summary: This is the official OnlyKey documentation site. Select from the topics
                      </span>
                  </div>
                  <div class="panel-body">
-                     <p>If you have specific questions about the OnlyKey check out the [OnlyKey Frequently Asked Questions](https://docs.crp.to/faq.html) first.
-
-                     If you are having issues that are not addressed in the User's Guide or FAQs check out the [OnlyKey Support forum](https://forum.onlykey.io). If you are having a new issue not already mentioned in the forum this is the place to ask for help.</p>
-                     <a href="#knowledge-base" class="btn btn-primary">Support</a>
+                     <p>If you are having issues that are not addressed in the <a href="https://docs.crp.to/usersguide.html">User's Guide</a> or <a href="https://docs.crp.to/faq.html">FAQs</a> check out the <a href="https://forum.onlykey.io">OnlyKey Support forum</a>.</p>
+                     <a href="https://forum.onlykey.io" class="btn btn-primary">Support</a>
                  </div>
              </div>
          </div>
