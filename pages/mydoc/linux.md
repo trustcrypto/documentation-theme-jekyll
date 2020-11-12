@@ -2,8 +2,8 @@
 title: Using OnlyKey with Linux
 tags: [OnlyKey, Linux]
 keywords: OnlyKey, Linux, udev
-last_updated: Oct, 16, 2019
-summary: Create Linux UDEV rule for OnlyKey.
+last_updated: Oct, 16, 2020
+summary: Guide for using OnlyKey on Linux and creating a UDEV rule for OnlyKey.
 sidebar: mydoc_sidebar
 permalink: linux.html
 folder: mydoc
