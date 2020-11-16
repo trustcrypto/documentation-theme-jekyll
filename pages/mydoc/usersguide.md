@@ -141,7 +141,6 @@ Prefer a how-to video? Watch one [here](https://vimeo.com/372894554) that demons
 Now that your OnlyKey is unlocked you see this screen.
 
 {% include image.html file="image31.png" %}
-
 #### All About Slots {#all-about-slots}
 
 The Slots area of the application is where you will set up things like your usernames, passwords, and 2 factor. As you can see the word ''empty'' is shown 12 times next to a button with a number and a letter. Each of these buttons refer to one of the slots on your OnlyKey.
@@ -798,16 +797,27 @@ Once enabled, this can be used like this:
 
 i.e. To press Ctrl-Alt-Del, release Ctrl-Alt-Del, delay 3 seconds, press TAB, enter username, and enter password:
 
-" \c\a\d  \3 USERNAME \t PASSWORD"
+```
+\c\a\d  \3 USERNAME \t PASSWORD
+```
 
 Notice that a space followed by the '\' character is used to begin " \c\a\d " and one space is used to end (resets modifier keys).
 Here are some other common examples:
 
-- To enter Ctrl+Alt+T (the shortcut to open terminal in Ubuntu), then delay two seconds, then enter a command into terminal " \c\at  \2 ssh user@domain"
+- To enter Ctrl+Alt+T (the shortcut to open terminal in Ubuntu), then delay two seconds, then enter a command into terminal
+```
+\c\at  \2 ssh user@domain"
+```
 
-- To enter Windows+R (the shortcut to run a command in Windows), then delay two seconds, then enter a command into command prompt " \gr  \2 powershell.exe"
+- To enter Windows+R (the shortcut to run a command in Windows), then delay two seconds, then enter a command into command prompt 
+```
+ \gr  \2 powershell.exe"
+```
 
-- To enter text into fields 1, 3, and 5 of a multiple field form and then submit " \t textforfield#1 \t  \t textforfield#3 \t  \t textforfield#5 \r "
+- To enter text into fields 1, 3, and 5 of a multiple field form and then submit 
+```
+ \t textforfield#1 \t  \t textforfield#3 \t  \t textforfield#5 \r 
+ ```
 
 ### Configurable Lock Button {#configurable-lock-button}
 
