@@ -820,7 +820,7 @@ Here are some other common examples:
  \g  \2 run \2  \r  \2 powershell.exe ls \r"
 ```
 
-- To press Windows key and run cmd command to open calculator (2 second delays added between actions)
+- To press Windows key and run cmd command to open calculator (2 second delays added)
 ```
  \g  \2 cmd \c calc \2  \r"
 ```
