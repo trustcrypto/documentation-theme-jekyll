@@ -290,7 +290,12 @@ After loading next page
 </table>
 
 
-{% include tip.html content="Need OnlyKey to fill a custom form or press special keys like Ctrl-Alt-Del? OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.<br><br>
+{% include tip.html content="Need OnlyKey to fill a custom form that does not fit any example? You can enter ' \t' or ' \r' inline with slot data to type TAB or Return. <br>
+i.e.<br>
+```
+ \t textfield1 \t  \t textfield3 \t  \t textfield5 \r
+```
+To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.<br><br>
 Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
 {% include important.html content="***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker." %}
@@ -798,26 +803,32 @@ Once enabled, this can be used like this:
 i.e. To press Ctrl-Alt-Del, release Ctrl-Alt-Del, delay 3 seconds, press TAB, enter username, and enter password:
 
 ```
-\c\a\d  \3 USERNAME \t PASSWORD
+ \c\a\d  \3 USERNAME \t PASSWORD
 ```
 
-Notice that a space followed by the '\' character is used to begin " \c\a\d " and one space is used to end (resets modifier keys).
+Notice that a space followed by the '\' character is used to begin " \c\a\d " and one space is used to end (resets modifier keys). To use one space to start and one to end for multiple actions there will be two spaces in between actions.
 Here are some other common examples:
 
-- To enter Ctrl+Alt+T (the shortcut to open terminal in Ubuntu), then delay two seconds, then enter a command into terminal
+- To open terminal in Linux, then delay two seconds, then enter a command into terminal (2 second delays added)
+
 ```
-\c\at  \2 ssh user@domain"
+ \g  \2 terminal \r  \2 ssh user@domain \r"
 ```
 
-- To enter Windows+R (the shortcut to run a command in Windows), then delay two seconds, then enter a command into command prompt 
+- To press Windows key and open run box, then delay, then enter a powershell command (2 second delays added)
 ```
- \gr  \2 powershell.exe"
+ \g  \2 run \2  \r  \2 powershell.exe ls \r"
 ```
 
-- To enter text into fields 1, 3, and 5 of a multiple field form and then submit 
+- To press Windows key and run cmd command to open calculator (2 second delays added between actions)
 ```
- \t textforfield#1 \t  \t textforfield#3 \t  \t textforfield#5 \r 
- ```
+ \g  \2 cmd \c calc \2  \r"
+```
+
+- To enter text into fields 1, 3, and 5 of a multiple field form and then submit
+```
+ \t textfield1 \t  \t textfield3 \t  \t textfield5 \r
+```
 
 ### Configurable Lock Button {#configurable-lock-button}
 
