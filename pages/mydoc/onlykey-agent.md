@@ -216,7 +216,7 @@ Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots
 
 ### SSH Agent Quickstart Guide (Stored Keys)
 
-1) After installing [prerequisites](#installation) and [loading keys](#stored-keys), install OnlyKey agent on your client machine:
+1) After installing [prerequisites](#installation) and [loading keys](https://docs.crp.to/importpgp.html#loading-keys), install OnlyKey agent on your client machine:
 
 ```
 $ pip3 install onlykey-agent
@@ -248,7 +248,7 @@ $ onlykey-agent identity@myhost -c -sk 102
 
 ### GPG Agent Quickstart Guide (Stored Keys)
 
-1) After installing [prerequisites](#installation) and [loading keys](#stored-keys), install OnlyKey agent on your client machine:
+1) After installing [prerequisites](#installation) and [loading keys](https://docs.crp.to/importpgp.html#loading-keys), install OnlyKey agent on your client machine:
 
 ```
 $ pip3 install onlykey-agent
