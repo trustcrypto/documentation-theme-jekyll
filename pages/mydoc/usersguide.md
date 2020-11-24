@@ -37,7 +37,7 @@ There are two options for setting up your OnlyKey.
 
 ### OnlyKey Quick Setup {#quick-setup}
 
-{% include important.html content="Quick setup is the quickest way to set up a new OnlyKey and there are no apps required. However, to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
+{% include important.html content="Quick setup is the quickest way to set up a new OnlyKey and there are no apps required. However, a computer with a US layout keyboard is required and to take advantage of many of the OnlyKey features the OnlyKey app is required." %}
 
 To complete OnlyKey quick setup follow the instructions below:
 
