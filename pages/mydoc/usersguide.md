@@ -468,6 +468,8 @@ While you can press any button, some user's may prefer to always press the butto
 
 #### Security Key Advanced {#security-key-advanced}
 
+As mentioned above, FIDO U2F works as a 2nd factor and is supported for an unlimited number of sites. FIDO2 has some additional options such as resident credentials and extensions that are not yet supported by most sites or applications. 
+
 **FIDO2 Resident Credentials**
 
 With resident credentials you can create a smoother, username-less login experience by saving some of the user data on the security key. To try it out we recommend using [https://www.passwordless.dev/usernameless](https://www.passwordless.dev/usernameless). As shown on the site not all browsers support this feature:
@@ -477,6 +479,10 @@ With resident credentials you can create a smoother, username-less login experie
 One drawback of resident credentials is that physical devices have limited storage. OnlyKey stores up to 12 resident credentials. In the event this fills up resident credentials can be managed and removed with the [OnlyKey CLI](https://docs.crp.to/command-line.html#list-and-remove-fido2-resident-key)
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/cli-cred-ls.png)
+
+**FIDO2 Extensions**
+
+FIDO2 allows support of extensions such as the HMAC SHA1 extension for challenge-response which is supported by OnlyKey. 
 
 **One Touch Login**
 
