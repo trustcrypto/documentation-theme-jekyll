@@ -348,18 +348,69 @@ In a future release we will be implementing the following features:
 
 ## Advanced Options
 
-### Supported curves
+### Supported Key Types
 
-Keys are generated unique for each user / host combination. By default OnlyKey agent uses ED25519 keys but also supports NIST256P1 keys. NIST256P1 can be used as follows:
+#### X25519
 
-1) Generate NIST256P1 public key using onlykey-agent
+By default OnlyKey agent uses X25519 keys but also supports NIST256P1 and RSA (SSH only) keys. 
+
+#### NIST256P1
+
+1) Generate NIST256P1 SSH public key using onlykey-agent
+
+Derived key:
 ```
 $ onlykey-agent user@host -e nist256p1
 ```
+Stored key:
+```
+$ onlykey-agent user@host -e nist256p1 -sk 102
+```
 
-2) Log in using nist256p1 public key
+2) SSH login in using nist256p1 
+
+Derived key:
 ```
 $ onlykey-agent -c user@host -e nist256p1
+```
+Stored key:
+```
+$ onlykey-agent -c user@host -sk 102 -e nist256p1
+```
+
+4) GPG init using nist256p1 
+
+Derived key:
+```
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -e nist256p1
+```
+Stored key:
+```
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -e nist256p1
+```
+
+#### RSA
+
+1) Generate RSA SSH public key using onlykey-agent
+
+Derived key:
+```
+$ onlykey-agent user@host -e rsa
+```
+Stored key:
+```
+$ onlykey-agent user@host -e rsa -sk 2
+```
+
+2) SSH login in using RSA
+
+Derived key:
+```
+$ onlykey-agent -c user@host -e rsa
+```
+Stored key:
+```
+$ onlykey-agent -c user@host -e rsa -sk 2 
 ```
 
 ### Load Existing OpenSSH Private Key (Stored Keys)
