@@ -18,7 +18,7 @@ OnlyKey Agent is a hardware-based SSH and GPG agent that allows offline cold sto
 SSH is a popular remote access tool that is often used by administrators and with OnlyKey Agent remote access can be passwordless. GPG (or GnuPG) is a versatile OpenPGP tool that is used for encryption and signing. The way OnlyKey Agent works is that the indicator light on OnlyKey will blink purple for a sign request (such as SSH authentication), and will blink turquoise for a decrypt request. To authorize a user must press button (or [challenge code](https://docs.crp.to/usersguide.html#derived-challenge-mode)) on OnlyKey.
 
 {% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374479136)<br>[![How-To: Use OnlyKey for Passwordless SSH](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ssh-thumb.png)](https://vimeo.com/374479136)" %}
-
+   
 You can do things like sign your emails, git commits, and software packages, manage your passwords (with pass and gopass, among others), authenticate web tunnels and file transfers, and more. Since many 3rd party applications already integrate with SSH and GPG you can use those as well.
 
 ## SSH Agent Quickstart Guide
@@ -202,15 +202,15 @@ i.e.
 `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILb27+QTNo+9+xm1AzvlQHmjWt1XMwokM00xfZPJiUHP <ssh://identity@myhost3|ed25519>`
 
 
-OnlyKey also stores up to 16 elliptic curve private keys and 4 RSA private keys that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key.
+OnlyKey also stores up to 16 elliptic curve private keys and 4 RSA private keys that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key, or an OpenSSH key.
 
-Follow the guide [here](https://docs.crp.to/importpgp.html) to load an existing OpenPGP key.
+Follow the guide [here](https://docs.crp.to/importpgp.html) to load an existing OpenPGP key or the guide [here](https://docs.crp.to/onlykey-agent.html#load-existing-openssh-private-key-stored-keys) to load an existing OpenSSH key.
 
-By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP keys are stored as follows:
-- RSA Decryption key in slot 1
-- RSA Signing key in slot 2
-- ECC (NIST256P1 and X25519) Decryption key in slot 101
-- ECC (NIST256P1 and X25519) Signing key in slot 102
+By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP or OpenSSH keys are stored as follows:
+- RSA Decryption key (GPG) in slot 1 
+- RSA Signing key (SSH/GPG) in slot 2 
+- ECC (NIST256P1 and X25519) Decryption key (GPG) in slot 101
+- ECC (NIST256P1 and X25519) Signing key (SSH/GPG) in slot 102
 
 Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots.
 
@@ -361,3 +361,20 @@ $ onlykey-agent user@host -e nist256p1
 ```
 $ onlykey-agent -c user@host -e nist256p1
 ```
+
+### Load Existing OpenSSH Private Key (Stored Keys)
+
+For the SSH Agent you can [load existing OpenPGP](https://docs.crp.to/importpgp.html) keys or existing OpenSSH keys in the keys tab of the OnlyKey app. To load OpenSSH key:
+
+- Copy the PEM format OpenSSH private key contents (i.e. from ~/.ssh/id_rsa or ~/.ssh/id_ecdsa or ~/.ssh/id_ed25519)
+- Paste contents into 'Key:' field
+- Enter Passphrase if one is required
+- Put OnlyKey into config mode and select 'Save to OnlyKey'
+
+By default this loads your RSA OpenSSH key into slot 2 or your ECC OpenSSH key into slot 102. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
+
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openpgp.png)
+
+Then check 'Primary Key' radio button and select 'Save:'
+
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openpgp2.png)
