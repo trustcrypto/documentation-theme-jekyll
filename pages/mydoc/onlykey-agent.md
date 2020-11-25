@@ -373,8 +373,8 @@ For the SSH Agent you can [load existing OpenPGP](https://docs.crp.to/importpgp.
 
 By default this loads your RSA OpenSSH key into slot 2 or your ECC OpenSSH key into slot 102. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openpgp.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openssh.png)
 
 Then check 'Primary Key' radio button and select 'Save:'
 
-![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openpgp2.png)
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openssh2.png)
