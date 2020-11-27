@@ -248,6 +248,8 @@ $ onlykey-agent identity@myhost -c -sk 102
 
 ### GPG Agent Quickstart Guide (Stored Keys)
 
+Note: Currently only ECC OpenPGP keys are supported. RSA OpenPGP key support is on the [roadmap](https://docs.crp.to/onlykey-agent.html#roadmap).
+
 1) After installing [prerequisites](#installation) and [loading keys](https://docs.crp.to/importpgp.html#loading-keys), install OnlyKey agent on your client machine:
 
 ```
@@ -257,10 +259,10 @@ $ pip3 install onlykey-agent
 2) Plug in and unlock your OnlyKey and then run:
 
 ```
-$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -i publickey.bob@protonmail.com.asc
 ```
 
-Where "Bob Smith <bob@protonmail.com>" is your email address that you want to use with your GPG identity, -sk 102 is the signing key to use, and -dk 101 is the decryption key to use.
+Where "Bob Smith <bob@protonmail.com>" is your email address from your OpenPGP key, "publickey.bob@protonmail.com.asc" is your OpenPGP public key, -sk 102 is the signing key to use, and -dk 101 is the decryption key to use.
 
 3) Add export GNUPGHOME=~/.gnupg/onlykey to your .bashrc or other environment file.
 
@@ -340,9 +342,7 @@ In order for non-root users in Linux to be able to communicate with OnlyKey a ud
 
 In a future release we will be implementing the following features:
 
-- Imported PGP (X25519) keys, this feature will permit using GPG with existing PGP keys that are loaded onto OnlyKey. This feature is currently being tested.
 - Imported PGP (RSA) keys, this feature will permit using GPG with existing PGP keys that are loaded onto OnlyKey. This feature is not yet implemented.
-- SSH with RSA keys, this feature will permit using SSH with existing PGP keys that are loaded onto OnlyKey. This feature is currently being tested.
 - Windows support and stand-alone EXE for easy deployment. This feature is not yet implemented, it is possible to use the agent with a Windows subsystem for Linux.
 - Pure Python PGP implementation, this feature will permit use on systems where GPG is not installed. If GPG is not found PGPy will be used for OpenPGP support.
 
@@ -386,7 +386,7 @@ $ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -e nist256p1
 ```
 Stored key:
 ```
-$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -e nist256p1
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -i publickey.bob@protonmail.com.asc -e nist256p1
 ```
 
 #### RSA
