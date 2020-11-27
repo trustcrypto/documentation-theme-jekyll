@@ -2,7 +2,7 @@
 title: OnlyKey SSH/GPG agent
 tags: [OnlyKey, Agent, Python]
 keywords: OnlyKey, Agent
-last_updated: Oct, 17, 2020
+last_updated: Nov, 27, 2020
 summary: Using OnlyKey as hardware SSH and GPG agent.
 sidebar: mydoc_sidebar
 permalink: onlykey-agent.html
@@ -83,7 +83,7 @@ $ onlykey-agent identity@myhost -- scp -P 8022 /path/somefile.txt 192.168.56.195
 
 ## GPG Agent Quickstart Guide
 
-1) After installing [prerequisites](#installation), install OnlyKey agent on your client machine:
+1) After installing [prerequisites](#installation) and setting [Derived Key User Input Mode](https://docs.crp.to/onlykey-agent.html#setting-derived-key-user-input-mode) install OnlyKey agent on your client machine:
 
 ```
 $ pip3 install onlykey-agent
@@ -216,7 +216,7 @@ Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots
 
 ### SSH Agent Quickstart Guide (Stored Keys)
 
-1) After installing [prerequisites](#installation) and [loading keys](https://docs.crp.to/importpgp.html#loading-keys), install OnlyKey agent on your client machine:
+1) After installing [prerequisites](#installation) and loading key install OnlyKey agent on your client machine:
 
 ```
 $ pip3 install onlykey-agent
@@ -250,7 +250,7 @@ $ onlykey-agent identity@myhost -c -sk 102
 
 Note: Currently only ECC OpenPGP keys are supported. RSA OpenPGP key support is on the [roadmap](https://docs.crp.to/onlykey-agent.html#roadmap).
 
-1) After installing [prerequisites](#installation) and [loading keys](https://docs.crp.to/importpgp.html#loading-keys), install OnlyKey agent on your client machine:
+1) After installing [prerequisites](#installation), [loading OpenPGP key](https://docs.crp.to/importpgp.html#loading-keys), and setting [Stored Key User Input Mode](https://docs.crp.to/onlykey-agent.html#setting-stored-key-user-input-mode), install OnlyKey agent on your client machine:
 
 ```
 $ pip3 install onlykey-agent
@@ -343,6 +343,7 @@ In order for non-root users in Linux to be able to communicate with OnlyKey a ud
 In a future release we will be implementing the following features:
 
 - Imported PGP (RSA) keys, this feature will permit using GPG with existing PGP keys that are loaded onto OnlyKey. This feature is not yet implemented.
+- GPG challenge code add on to pass the challenge code to GPG for displaying to the user.
 - Windows support and stand-alone EXE for easy deployment. This feature is not yet implemented, it is possible to use the agent with a Windows subsystem for Linux.
 - Pure Python PGP implementation, this feature will permit use on systems where GPG is not installed. If GPG is not found PGPy will be used for OpenPGP support.
 
@@ -425,3 +426,11 @@ For the SSH Agent you can [load existing OpenPGP](https://docs.crp.to/importpgp.
 By default this loads your RSA OpenSSH key into slot 2 or your ECC OpenSSH key into slot 102. To specify a custom slot change 'Slot:' from 'Auto Load' to desired slot number, check 'Signature key' box, click 'Save to OnlyKey':
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/load-openssh.png)
+
+### Setting Derived Key User Input Mode
+
+Currently it is not possible to display the 3 digit challenge code to user through GPG. This feature is on the roadmap. To use derived keys with GPG go to preferences in the OnlyKey app and set 'Derived Key User Input Mode' to 'Button Press Required'.
+
+### Setting Stored Key User Input Mode
+
+Currently it is not possible to display the 3 digit challenge code to user through GPG. This feature is on the roadmap. To use derived keys with GPG go to preferences in the OnlyKey app and set 'Stored Key User Input Mode' to 'Button Press Required'.
