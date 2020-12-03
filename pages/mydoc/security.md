@@ -69,8 +69,8 @@ No secure hardware is perfect, and CryptoTrust believes that working with skille
 
 - Data at rest is encrypted via AES-256-GCM
 - FIDO2 data is encrypted via AES-256-CBC
-- SSH Authentication uses ECC P256 or ed25519 signing
-- OpenPGP/GPG Decryption/Signing uses RSA (1024, 2048, 3072, and 4096)
+- SSH Authentication uses ECC (P256, ed25519) or RSA signing
+- OpenPGP/GPG Decryption/Signing uses ECC (P256, X25519) or RSA (2048 or 4096)
 - Firmware signing/verification uses NACL
 - Firmware integrity verification utilizes SHA-512
 - [WebCrypt App](https://docs.crp.to/webcrypt.html) uses NACL and AES-256-GCM for data in transit and OpenPGP for secure messages
@@ -79,8 +79,8 @@ No secure hardware is perfect, and CryptoTrust believes that working with skille
 
 ### Key storage
 
-- Up to 29 ECC keys are supported of type curve25519, P256 (NIST), and secp256k1 (Used for Bitcoin)
-- Up to 4 RSA keys are supported with key sizes 1024, 2048, 3072, and 4096 bit keys.
+- Up to 16 ECC keys are supported of type X25519, P256 (NIST), and secp256k1 (Used for Bitcoin)
+- Up to 4 RSA keys are supported with key sizes 2048 and 4096 bit keys.
 
 ## Security Threats
 
@@ -238,9 +238,13 @@ base64 encrypted data
 
 ### Cryptographically Secure Random Number Generator {#cryptographically-secure-random-number-generator}
 
-After much research it was concluded that Arduino and other microcontrollers such as MK20 are not ideal for generating truly random numbers. While the Arduino Reference Manual recommends using analog pins, which read random atmospheric noise to seed a PRNG, it was concluded that this method alone may not generate a cryptographically secure random number. The paper here goes into more detail - [http://benedikt.sudo.is/ardrand.pdf](http://benedikt.sudo.is/ardrand.pdf). A true random number generator uses non-deterministic sources to produce randomness. Thus, the random number generation function in use requires user provided entropy. This is similar to how TrueCrypt/VeraCrypt use mouse movements to generate entropy during key generation. The OnlyKey RNG function uses a combination of the entropy provided from two separate analog pins (atmospheric noise) and the user's key presses on the six capacitive touch sensors (conductivity of user's skin, duration of key press, number of key presses, conductivity of air).
+After much research it was concluded that Arduino and other microcontrollers such as MK20 are not ideal for generating truly random numbers. While the Arduino Reference Manual recommends using analog pins, which read random atmospheric noise to seed a PRNG, it was concluded that this method alone may not generate a cryptographically secure random number. The paper here goes into more detail - [http://benedikt.sudo.is/ardrand.pdf](http://benedikt.sudo.is/ardrand.pdf). A true random number generator uses non-deterministic sources to produce randomness. Thus, the random number generation function in use requires user provided entropy. This is similar to how TrueCrypt/VeraCrypt use mouse movements to generate entropy during key generation. The OnlyKey RNG function uses a combination of the entropy provided from the following sources:
 
-Below is an example of values read from the analog 0 pin and the touchpins values, read once per second for 3 seconds without any user provided entropy.
+- Two separate analog pins (atmospheric noise)
+- One temperature sensor (temperature changes from environment, user's touch, and attached computer)
+- User's key presses on the six capacitive touch sensors (conductivity of user's skin, duration of key press, number of key presses, conductivity of air)
+
+Below is an example of values read from the analog 0 pin and the touch pin values, read once per second for 3 seconds without any user provided entropy.
 
 Analog 0 Value = 123
 
@@ -284,7 +288,7 @@ Touchpin 5 Value = 662
 
 Touchpin 6 Value = 723
 
-Without any interaction from the user there is entropy generated from analog 0 and some entropy generated from the touchpins. The touchpin's values change slightly based on temperature, humidity, and no two pins have exactly the same sensing calibration. Below is an example of values read from the analog 0 pin and the touchpins, values read once per second for 3 seconds with user entering a three digit PIN.
+Without any interaction from the user there is entropy generated from analog 0 and some entropy generated from the touch pins. The touch pin's values change slightly based on temperature, humidity, and no two pins have exactly the same sensing calibration. Below is an example of values read from the analog 0 pin and the touch pins, values read once per second for 3 seconds with user entering a three digit PIN.
 
 Analog 0 Value = 221
 
@@ -328,7 +332,7 @@ Touchpin 5 Value = 669
 
 Touchpin 6 Value = 721
 
-With user interaction, the touchpin values change significantly. Also the touchpins next to the button that was pressed change slightly just from the proximity of a user's finger to that button. As implemented, touchpin values are read from all six capacitive touch sensors once every ~10ms and users are required to have a PIN of 7 – 10 digits. During a typical login (One button press per second), this generates approximately 56 - 80 numbers based on the conductivity of a user's skin and 280 - 400 numbers based on the conductivity of the air around the buttons not being pressed. By performing xor and bitshift operations on these numbers we can generate a random number that is based on non-deterministic values that are completely unpredictable. Additionally, if a user enters an incorrect PIN this would generate even more entropy as this would require re-entering the PIN and during use the buttons are also pressed to select sites to authenticate to which generates constantly unpredictable entropy.
+With user interaction, the touch pin values change significantly. Also the touch pins next to the button that was pressed change slightly just from the proximity of a user's finger to that button. As implemented, touch pin values are read from all six capacitive touch sensors once every ~10ms and users are required to have a PIN of 7 – 10 digits. During a typical login (One button press per second), this generates approximately 56 - 80 numbers based on the conductivity of a user's skin and 280 - 400 numbers based on the conductivity of the air around the buttons not being pressed. By performing xor and bitshift operations on these numbers we can generate a random number that is based on non-deterministic values that are completely unpredictable. Additionally, if a user enters an incorrect PIN this would generate even more entropy as this would require re-entering the PIN and during use the buttons are also pressed to select sites to authenticate to which generates constantly unpredictable entropy.
 
 #### Config Mode {#config-mode}
 
