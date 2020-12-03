@@ -209,7 +209,7 @@ During PIN changes the profilekey remains static but is re-encrypted with a new 
 
 ### How does OnlyKey encrypt backup data {#how-backup}
 
-Backups may only occur if a backup key/passphrase is set. Without setting a backup key/passphrase attempting to backup will only print instructions for how to set a backup key/passphrase. A backup key/passphrase may only be set during initial setup or if the device is in [config mode](#config-mode). There is also an option to lock backup key which ensures that the backup key may not be changed on a device. Enabling this option where there is no backup key permanently disables the backup feature.
+Backups may only occur if a backup key/passphrase is set. Without setting a backup key/passphrase attempting to backup will only print instructions for how to set a backup key/passphrase. A backup key/passphrase may only be set during initial setup or if the device is in [config mode](#config-mode). There is also an option to lock backup key which ensures that the backup key may not be changed on a device. Enabling this option where there is no backup key permanently disables the backup feature until a factory default occurs.
 
 When a backup key/passphrase is set, the OnlyKey is unlocked, and a backup is initiated by user presence on the OnlyKey the following occurs:
 - OnlyKey retrieves records to backup and compiles them all into a buffer
@@ -350,7 +350,7 @@ Additional security may be added with the backup key mode mentioned below.
 
 #### Backup Key Mode {#backup-key-mode}
 
-There is also an option to lock the backup key which ensures that the backup key may not be changed on a device. Enabling this option where there is no backup key permanently disables the backup feature.
+There is also an option to lock the backup key which ensures that the backup key may not be changed on a device. Enabling this option where there is no backup key permanently disables the backup feature until a factory default occurs.
 
 {% include image.html file="lockmode.png" %}
 
