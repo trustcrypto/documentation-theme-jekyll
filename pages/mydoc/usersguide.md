@@ -64,7 +64,7 @@ To complete OnlyKey quick setup follow the instructions below:
 
 [<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/OnlyKey_5.3.0.exe)
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/OnlyKey_5.3.0_amd64.deb)
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.1/OnlyKey_5.3.1_amd64.deb)
 
 [<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
 
@@ -72,7 +72,7 @@ To complete OnlyKey quick setup follow the instructions below:
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 76788bb4f0c2279018eb4f482ccd88a091ed7e3d1d1ff39c983dc18f716a61e2<br>Windows SHA 256 CHECKSUM: 44fb2d9e2ac6307ecceb389332e0cdeb30d311bd95069b15595dc4a181310e84<br>Linux SHA 256 CHECKSUM: acb5d769de195b5806257d51d91ac18d7307a5777c027e8046753cf79db84cf4<br>" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 76788bb4f0c2279018eb4f482ccd88a091ed7e3d1d1ff39c983dc18f716a61e2<br>Windows SHA 256 CHECKSUM: 44fb2d9e2ac6307ecceb389332e0cdeb30d311bd95069b15595dc4a181310e84<br>Linux SHA 256 CHECKSUM: ba8e0b4a5228ff1a6c2b19b9f93cb3125bc8273ea0a947bbc82770343b167bda<br>" %}
 
 {% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
 
@@ -468,7 +468,7 @@ While you can press any button, some user's may prefer to always press the butto
 
 #### Security Key Advanced {#security-key-advanced}
 
-As mentioned above, FIDO U2F works as a 2nd factor and is supported for an unlimited number of sites. FIDO2 has some additional options such as resident credentials and extensions that are not yet supported by most sites or applications. 
+As mentioned above, FIDO U2F works as a 2nd factor and is supported for an unlimited number of sites. FIDO2 has some additional options such as resident credentials and extensions that are not yet supported by most sites or applications.
 
 **FIDO2 Resident Credentials**
 
@@ -482,7 +482,7 @@ One drawback of resident credentials is that physical devices have limited stora
 
 **FIDO2 Extensions**
 
-FIDO2 allows support of extensions such as the HMAC SHA1 extension for challenge-response which is supported by OnlyKey. 
+FIDO2 allows support of extensions such as the HMAC SHA1 extension for challenge-response which is supported by OnlyKey.
 
 **One Touch Login**
 
