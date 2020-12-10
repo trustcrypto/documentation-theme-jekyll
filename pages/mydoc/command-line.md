@@ -51,7 +51,7 @@ $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules && udevadm trigger
+$ sudo bash -c 'udevadm control --reload-rules && udevadm trigger'
 ```
 
 #### Debian Install with dependencies
@@ -61,7 +61,7 @@ $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules && udevadm trigger
+$ sudo bash -c 'udevadm control --reload-rules && udevadm trigger'
 ```
 
 #### RedHat Install with dependencies
@@ -72,7 +72,7 @@ $ yum install python3-pip python3-devel python3-tk libusb-devel libudev-devel \
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules && udevadm trigger
+$ sudo bash -c 'udevadm control --reload-rules && udevadm trigger'
 ```
 
 #### Fedora Install with dependencies
@@ -82,7 +82,7 @@ $ dnf install python3-pip python3-devel python3-tkinter libusb-devel libudev-dev
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules && udevadm trigger
+$ sudo bash -c 'udevadm control --reload-rules && udevadm trigger'
 ```
 
 #### OpenSUSE Install with dependencies
@@ -91,7 +91,7 @@ $ zypper install python3-pip python3-devel python3-tk libusb-1_0-devel libudev-d
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules && udevadm trigger
+$ sudo bash -c 'udevadm control --reload-rules && udevadm trigger'
 ```
 
 #### Arch Linux Install with dependencies
@@ -100,7 +100,7 @@ $ sudo pacman -Sy git python3-setuptools python3 libusb python3-pip
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
 $ sudo cp 49-onlykey.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules && udevadm trigger
+$ sudo bash -c 'udevadm control --reload-rules && udevadm trigger'
 ```
 
 #### FreeBSD Install with dependencies
