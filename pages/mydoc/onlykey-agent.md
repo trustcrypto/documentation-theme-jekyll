@@ -127,6 +127,7 @@ $ git log --show-signature -1                # verify commit signature
 $ git tag v1.2.3 --sign                      # create GPG-signed tag
 $ git tag v1.2.3 --verify                    # verify tag signature
 ```
+#### Tips
 
 Note that your git email has to correlate to your gpg key email. If you use a different email for git, you'll need to either generate a new gpg key for that email or set your git email using the command:
 
@@ -142,6 +143,20 @@ fatal: failed to write commit object
 ````
 
 when committing to git.
+
+Also you might need to specify the KeyId used for signature:
+
+- First retrieve the keyID with
+````
+gpg --list-keys "Bob Smith <bob@protonmail.com>"
+````
+
+- Then configure git
+````
+$ git config  user.signingkey <KeyID>
+````
+
+Finally when creating the commit, don't forget to touch the key to complete challenge/response.
 
 ### Manage passwords
 
