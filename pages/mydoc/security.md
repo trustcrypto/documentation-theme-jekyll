@@ -41,7 +41,8 @@ Additionally, it is important to consider that most security weaknesses are rela
 
 - **FIPS-140-2** - OnlyKey meets many of the requirements of FIPS certification including using FIPS approved algorithms (FIPS 140-2 Level 1 - AES-256). OnlyKey circuitry is coated with a physical protection compound that is both chemical resistant and tamper resistant. This means that it would be difficult to remove and not easily dissolvable with chemicals like plastic coatings. Removal of the coating also results in noticeable damage to the OnlyKey (FIPS 140-2 Level 2 - Tamper Evident).
 
-New security issues continue to be identified in closed source security keys and smart cards.
+New security issues continue to be identified in closed source security keys and smart cards. Most recently, Google Titan, Yubikey NEO, Feitian, and NXP smart cards (all with the NXP A7005a secure element) suffered a complete security compromise where with physical access an attacker could extract the private key in a matter of hours:
+- [https://www.zdnet.com/article/new-side-channel-attack-can-recover-encryption-keys-from-google-titan-security-keys/](https://www.zdnet.com/article/new-side-channel-attack-can-recover-encryption-keys-from-google-titan-security-keys/)
 - [https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk](https://www.secureworldexpo.com/industry-news/yubikey-security-advisory-risk)
 - [https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/](https://www.engadget.com/2019/05/15/google-recalls-some-titan-bluetooth-security-keys/)
 - [https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/](https://www.zdnet.com/article/minerva-attack-can-recover-private-keys-from-smart-cards-cryptographic-libraries/)
