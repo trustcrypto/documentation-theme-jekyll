@@ -205,6 +205,18 @@ $ rm -rf ~/.gnupg/onlykey
 $ onlykey-gpg init "Bob Smith <bob@protonmail.com>"
 ```
 
+## Add Subkey to an existing GnuPG Identity
+Rather than using onlykey-gpg init to create a new GPG key, a subkey may be added to an existing GPG key (not created with onlykey-gpg).
+
+```
+$ gpg2 -k foobar
+pub   rsa2048/90C4064B 2017-10-10 [SC]
+uid         [ultimate] foobar
+sub   rsa2048/4DD05FF0 2017-10-10 [E]
+
+$ onlykey-gpg init "foobar" --subkey
+```
+
 ## Stored Keys
 
 By default OnlyKey will generate a random key that is used to derive an unlimited number of keys for SSH and GPG use. Since each derived key is different based on the identity@myhost provided, it is required to copy the unique public key for each host.
@@ -361,6 +373,155 @@ In a future release we will be implementing the following features:
 - GPG challenge code add on to pass the challenge code to GPG for displaying to the user.
 - Windows support and stand-alone EXE for easy deployment. This feature is not yet implemented, it is possible to use the agent with a Windows subsystem for Linux.
 - Pure Python PGP implementation, this feature will permit use on systems where GPG is not installed. If GPG is not found PGPy will be used for OpenPGP support.
+
+## GPG Agent FAQ
+
+### How do I generate a keys for a second identity?
+
+You can only have one identity located in default location  ~/.gnupg/trezor. However, you can specify additional locations when creating identities i.e.
+```
+$ onlykey-gpg init "test test <test@test2.com>" -v --homedir /Users/t/.gnupg/trezor/test2
+```
+
+### How do I add new user ID to existing identity?
+After your main identity is created, you can add new user IDs using the regular GnuPG commands:
+```
+$ trezor-gpg init "Foobar" -vv
+$ export GNUPGHOME=${HOME}/.gnupg/trezor
+$ gpg2 -K
+------------------------------------------
+sec   nistp256/6275E7DA 2017-12-05 [SC]
+uid         [ultimate] Foobar
+ssb   nistp256/35F58F26 2017-12-05 [E]
+
+$ gpg2 --edit Foobar
+gpg> adduid
+Real name: Xyzzy
+Email address:
+Comment:
+You selected this USER-ID:
+    "Xyzzy"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
+
+gpg> save
+
+$ gpg2 -K
+------------------------------------------
+sec   nistp256/6275E7DA 2017-12-05 [SC]
+uid         [ultimate] Xyzzy
+uid         [ultimate] Foobar
+ssb   nistp256/35F58F26 2017-12-05 [E]
+```
+
+### How do I set key expiration?
+Using the regular GnuPG commands, set an expiration date:
+
+```
+$ gpg --list-keys
+pub   ed25519 2016-10-29 [SC] [expires: 2023-01-26]
+      91EBE9BC618785293A2DE567417B8043D29B1315
+uid           [ultimate] test test <test@test.com>
+sub   cv25519 2016-10-29 [E]
+$ gpg --edit-key 91EBE9BC618785293A2DE567417B8043D29B1315
+gpg> key 0
+gpg> expire
+Changing expiration time for the primary key.
+Please specify how long the key should be valid.
+         0 = key does not expire
+      <n>  = key expires in n days
+      <n>w = key expires in n weeks
+      <n>m = key expires in n months
+      <n>y = key expires in n years
+Key is valid for? (0) 2y
+Key expires at Thu Jan 26 13:52:51 2023 EST
+Is this correct? (y/N) y
+gpg> quit
+Save changes? (y/N) y
+```
+
+### How do I export my derived private key?
+Since your private key only exists temporarily on the OnlyKey while it's being used, you can't export it. You can however back up your OnlyKey and restore to another OnlyKey which would then be able to derive the same private key, given the same init command is used 
+```
+onlykey-gpg init "Bob Smith <bob@protonmail.com>"
+```
+If you need to use keys that you can export you can use the [stored keys](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide-stored-keys) and back up your PGP/GPG key prior to loading it onto OnlyKey. 
+
+### How do I create a different derived private key using same identity?
+By default your identity is created with time (-t) set to 0 (1970-01-01) which makes it easy to recreate this key without the need for anything except OnlyKey and remember the identity. 
+```
+$ onlykey-gpg init "test test <test@test.com>"
+...
+sec   ed25519 1970-01-01 [SC]
+      B258DFB2449E70E186DAF436C5E39756DB40B5AE
+uid           [ultimate] test test <test@test.com>
+ssb   cv25519 1970-01-01 [E]
+```
+
+There is also the option to specify a time, which will use the same identity create a different key i.e.
+```
+$ onlykey-gpg init "test test <test@test.com>" -t 1477727920
+...
+sec   ed25519 2016-10-29 [SC]
+      91EBE9BC618785293A2DE567417B8043D29B1315
+uid           [ultimate] test test <test@test.com>
+ssb   cv25519 2016-10-29 [E]
+```
+Here to recreate the identity the time (-t 1477727920) must be remembered.
+
+### How do I sign and decrypt email?
+Follow instructions [here](https://github.com/romanz/trezor-agent/blob/master/doc/enigmail.md)
+
+### How do I start the agent as a systemd unit?
+
+#### 1. Create these files in `~/.config/systemd/user`
+
+Replace `onlykey` with `keepkey` or `ledger` or `onlykey` as required.
+
+##### `onlykey-gpg-agent.service`
+
+````
+[Unit]
+Description=onlykey-gpg-agent
+Requires=onlykey-gpg-agent.socket
+
+[Service]
+Type=simple
+Environment="GNUPGHOME=%h/.gnupg/trezor"
+Environment="PATH=/bin:/usr/bin:/usr/local/bin:%h/.local/bin"
+ExecStart=/usr/bin/onlykey-gpg-agent -vv
+````
+
+If you've installed `onlykey-agent` locally you may have to change the path in `ExecStart=`.
+
+##### `onlykey-gpg-agent.socket`
+
+````
+[Unit]
+Description=onlykey-gpg-agent socket
+
+[Socket]
+ListenStream=%t/gnupg/S.gpg-agent
+FileDescriptorName=std
+SocketMode=0600
+DirectoryMode=0700
+
+[Install]
+WantedBy=sockets.target
+````
+
+#### 2. Stop onlykey-gpg-agent if it's already running
+
+```
+killall onlykey-gpg-agent
+```
+
+#### 3. Run
+
+```
+systemctl --user start onlykey-gpg-agent.service onlykey-gpg-agent.socket
+systemctl --user enable onlykey-gpg-agent.socket
+```
 
 ## Advanced Options
 
