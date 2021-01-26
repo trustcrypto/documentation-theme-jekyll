@@ -441,7 +441,7 @@ Save changes? (y/N) y
 ```
 
 ### How do I export my derived private key?
-Since your private key only exists temporarily on the OnlyKey while it's being used, you can't export it. You can however back up your OnlyKey and restore to another OnlyKey which would then be able to derive the same private key, given the same init command is used 
+Since your private key only exists temporarily on the OnlyKey while it's being used, you can't export it. You can however back up your OnlyKey and restore to another OnlyKey which would then be able to derive the same private key, given the same init command is used i.e.
 ```
 onlykey-gpg init "Bob Smith <bob@protonmail.com>"
 ```
@@ -475,8 +475,6 @@ Follow instructions [here](https://github.com/romanz/trezor-agent/blob/master/do
 ### How do I start the agent as a systemd unit?
 
 #### 1. Create these files in `~/.config/systemd/user`
-
-Replace `onlykey` with `keepkey` or `ledger` or `onlykey` as required.
 
 ##### `onlykey-gpg-agent.service`
 
