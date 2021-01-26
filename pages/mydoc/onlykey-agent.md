@@ -205,7 +205,7 @@ $ rm -rf ~/.gnupg/onlykey
 $ onlykey-gpg init "Bob Smith <bob@protonmail.com>"
 ```
 
-## Add Subkey to an existing GnuPG Identity
+### Add Subkey to an existing GnuPG Identity
 Rather than using onlykey-gpg init to create a new GPG key, a subkey may be added to an existing GPG key (not created with onlykey-gpg).
 
 ```
@@ -302,7 +302,7 @@ If you wish to switch back to your software keys unset GNUPGHOME.
 ## Installation
 
 ### Windows Install with dependencies
-Currently Windows is not supported directly but may be used with Windows Subsystem for Linux (WSL). Follow the [WSL guide here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to set this up. This essentially installs Linux on Windows, for example you can install Ubuntu Linux on Windows and then follow the instructions below "Ubuntu Install with dependencies".
+Currently Windows is not supported directly but may be used with a Linux virtual machine. Another alternative is to use [OpenSSH v8.2](https://docs.crp.to/openssh.html) which supports OnlyKey as a FIDO security key. We are working on additonal options for Windows support. 
 
 ### MacOS Install with dependencies
 Python 3.8 and pip3 are required. To setup a Python environment on MacOS we recommend Anaconda [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos)
@@ -386,7 +386,7 @@ $ onlykey-gpg init "test test <test@test2.com>" -v --homedir /Users/t/.gnupg/tre
 ### How do I add new user ID to existing identity?
 After your main identity is created, you can add new user IDs using the regular GnuPG commands:
 ```
-$ trezor-gpg init "Foobar" -vv
+$ onlykey-gpg init "Foobar" -vv
 $ export GNUPGHOME=${HOME}/.gnupg/trezor
 $ gpg2 -K
 ------------------------------------------
