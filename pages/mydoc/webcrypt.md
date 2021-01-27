@@ -41,7 +41,7 @@ With OnlyKey, private keys remain securely offline. Private keys are not accessi
 
 ## How to send an encrypted message
 
-{% include callout.html content="**Find a recipient -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase/Protonmail search tool to search for Keybase usernames and Protonmail email addresses.<br>
+{% include callout.html content="**Find a recipient -** The first step in sending a secure message or file is to identify who to send it to. Browse to [https://apps.crp.to/search](https://apps.crp.to/search) to use our custom Keybase/Protonmail search tool to search for Keybase usernames and Protonmail email addresses.<br>" type="default" %}
 
 {% include callout.html content="**Send a user encrypted message or file -** Click the link in the search results to send the selected user encrypted message/file. You can also browse to [https://apps.crp.to/encrypt](https://apps.crp.to/encrypt) to send a secure message or browse to [https://apps.crp.to/encrypt-file](https://apps.crp.to/encrypt-file) to send a secure file if you already know the recipient. To encrypt files for yourself just use your Keybase username or Protonmail email as the recipient. " type="default" %}
 
