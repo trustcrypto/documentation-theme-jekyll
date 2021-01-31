@@ -52,7 +52,7 @@ To complete OnlyKey quick setup follow the instructions below:
 - Make sure you have carefully written down your PINs and backup passphrase and store this in a secure location
 - When finished enter your PIN onto OnlyKey to start using your new device, OnlyKey is ready for use as a security key (FIDO2/U2F) and for challenge-response
 
- ***To use OnlyKey for password management, file encryption, and secure messaging follow the steps below to install the OnlyKey app***.
+ ***To use OnlyKey for password management, file encryption, and other two factor authentication methods use the steps below to install the OnlyKey app***.
 
 <i class="fa fa-arrow-down fa-3x"></i>
 
@@ -66,9 +66,9 @@ To complete OnlyKey quick setup follow the instructions below:
 
 [<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.1/OnlyKey_5.3.1_amd64.deb)
 
-[<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
+{% include important.html content="Linux users must install UDEV rule for OnlyKey if one has not been created previously. Follow the following instructions here, additionally the OnlyKey app may now be installed via Snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
-{% include important.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via Snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
+[<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
@@ -413,7 +413,7 @@ However, OnlyKey TOTP will work on-the-go without the app running. All you have 
 
 {% include image.html file="image56.png" max-width="400" %}
 
-The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP.
+{% include important.html content="Keep in mind that Yubico® OTP is a counter based authenticator so you can have only one authenticator set with the same values. If you provision multiple OnlyKeys or Yubikeys with the same values only one device will work. The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP." %}
 
 #### Yubicloud (Not Officially Supported)  {#yubicloud-not-officially-support}
 
