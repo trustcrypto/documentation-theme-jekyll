@@ -81,11 +81,12 @@ To launch the app run the nw file located in the OnlyKey directory, you may want
 
 You may want to also install the OnlyKey CLI app. Follow instructions [here](https://docs.crp.to/command-line.html)
 
-One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display “NOTSET” instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. If you have OnlyKey command-line utility installed, adding the following to UDEV rule will automatically set the current time on OnlyKey every time you plug it: RUN+="/usr/local/bin/onlykey-cli settime"
+This permits additional customizations such as scripting to automatically running commands when OnlyKey is inserted.
 
-## Other Linux and BSD support
+- One requirement of TOTP (Time-based One-time Password) is having the correct time. If OnlyKey is used on a system where the OnlyKey app is not running it will display “NOTSET” instead of the OTP code. Because OnlyKey has no battery it requires an app to send it the correct time to be able to generate TOTP codes. If you have OnlyKey command-line utility installed, adding the following to UDEV rule will automatically set the current time on OnlyKey every time you plug it: RUN+="/usr/local/bin/onlykey-cli settime"
+Additonal details are provided in the udev rule here - [https://github.com/trustcrypto/trustcrypto.github.io/blob/master/49-onlykey.rules](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules)
 
-Details on using the OnlyKey CLI app and OnlyKey Agent with FreeBSD are available [here](https://groups.google.com/d/msg/onlykey/CEYwdXjB508/MCe14p0gAwAJ)
+- Another example is provided for OnlyKey to blink blue whenever the udev rule is run. This is useful for visual verification of LUKS disk decryption, additional details available [here](https://docs.crp.to/full-disk-encryption.html)
 
 
 {% include links.html %}
