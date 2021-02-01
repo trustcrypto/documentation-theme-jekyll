@@ -211,12 +211,12 @@ The example configuration shown below would be to set up a username and password
 {% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.<br><br>Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
 {% include tip.html content="Need OnlyKey to fill a custom form that does not fit into the template? i.e. You need to perform the following:<br>
-- Enter the Username
-- Press TAB
-- Press RETURN
-- Enter the password
-- Press TAB
-- Press RETURN
+- Enter the Username<br>
+- Press TAB<br>
+- Press RETURN<br>
+- Enter the password<br>
+- Press TAB<br>
+- Press RETURN<br>
 <br>
 You can enter ' \t' or ' \r' inline with slot data to type the extra TAB or Return. <br>
 i.e.<br>
@@ -224,7 +224,7 @@ i.e.<br>
 <br>
 Where in the password field the value is set to:<br>
 ```
- \r password \t \r
+  \r password \t \r
 ```
 <br>
 You can chain together multiple ' \t' or ' \r' in the fields.  Its one space to start and one space to end so if your chaining together multiple tabs it would have a double space in between like:
@@ -244,6 +244,8 @@ Once you set your desired account information to a slot then try it out by going
 *   ***There is a Captcha required sometimes after password***
     *   *You can either set the delay to a high value like 8 - 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
 *   ***Everything works fine but I really wish it typed faster.***
+    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
+*   ***I ***
     *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
 
 As mentioned earlier, login pages can be different between sites and sometimes even different on the same site. For the second example we will set up another Google login, this one for a Google account where the username is already saved to the website so all you need to do is enter a password. This is the default when you have already logged into Google in the past on a computer.
