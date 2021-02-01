@@ -224,7 +224,7 @@ i.e.<br>
 <br>
 Where in the password field the value is set to:<br>
 ```
-' \r password \t \r '
+' \r password \t  \r '
 ```
 <br>
 You can chain together multiple ' \t' or ' \r' in the fields.  Its one space to start and one space to end so if your chaining together multiple tabs it would have a double space in between like:
@@ -244,8 +244,6 @@ Once you set your desired account information to a slot then try it out by going
 *   ***There is a Captcha required sometimes after password***
     *   *You can either set the delay to a high value like 8 - 9 seconds to give yourself time to enter this or select None. Selecting None means that the password is entered but not submitted so you have time to enter additional information.*
 *   ***Everything works fine but I really wish it typed faster.***
-    *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
-*   ***I ***
     *   *You can adjust the type speed in [preferences.](#configurable-keyboard-type-speed)*
 
 As mentioned earlier, login pages can be different between sites and sometimes even different on the same site. For the second example we will set up another Google login, this one for a Google account where the username is already saved to the website so all you need to do is enter a password. This is the default when you have already logged into Google in the past on a computer.
@@ -315,7 +313,7 @@ After loading next page
 </table>
 
 
-{% include important.html content="***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker." %}
+{% include important.html content="***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''Summer2021!'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker." %}
 
 Generating a strong password is easy to do. Next, let's use two different methods to generate strong uncrackable passwords.
 
@@ -354,19 +352,19 @@ Two-factor authentication (2FA) is essentially an extra step that is required du
 
 ***Background Information***
 
-*The way you would typically set up Google Authenticator without OnlyKey is to download the Google Authenticator app to your smartphone. You would then enable Google Authenticator on a website and the website would provide you with a QR code that looks like this:*
+*The way you would typically set this up without OnlyKey is to download an authenticator app to your smartphone. You would then enable TOTP MFA on a website and the website would provide you with a QR code that looks like this:*
 
 {% include image.html file="image84.png" max-width="550" %}
 
-*You would then take a picture of the QR code the website gives you. The app then starts generating a 6 digit number that changes every 30 seconds that is required to be typed into the website login prompt in addition to your username and password.*
+*You would then take a picture of the QR code the website gives you in your authenticator app. The app then starts generating a 6 digit number that changes every 30 seconds that is required to be typed into the website login prompt in addition to your username and password.*
 
-*This method of two-factor authentication has some notable advantages over using features like 2nd-step verification where a website will send you an SMS message with a code to enter to login. One weakness in the SMS approach is that phone numbers can be transferred to a malicious party sometimes just by calling and asking the phone company to do this and providing some personal information. Another weakness is that more sophisticated attackers may be able to clone your phone number and then receive SMS messages sent to you. Google authenticator (TOTP) solves some of these issues by generating the code on your phone itself using a private key. Now that the background is covered we can set this up on your OnlyKey. No phone or app required for setting this up on your OnlyKey but if you wish to maintain a backup of your two-factor authentication codes it may be a good idea to download the app and scan the QR code as a backup in case you lose your OnlyKey.*
+*This method of two-factor authentication has some notable advantages over using features like 2nd-step verification where a website will send you an SMS message with a code to enter to login. Now that the background is covered we can set this up on your OnlyKey. No phone or app required for setting this up on your OnlyKey but if you wish to maintain a backup of your two-factor authentication codes it may be a good idea to download the app and scan the QR code as a backup in case you lose your OnlyKey.*
 
-{% include callout.html content="**Step 1. Enable Google Authenticator App on Website -** If you are unsure if the website you want to setup supports OTP check [here](http://www.dongleauth.info/). Assuming that the website supports Google Authenticator you can proceed to enable Google Authenticator. For example to do this for your Google Account you must first enable 2-Step Verification and then you select ''SETUP'' as shown below:" type="default" %}
+{% include callout.html content="**Step 1. Enable MFA (TOTP) on Website -** If you are unsure if the website you want to setup supports TOTP check [here](http://www.dongleauth.info/). For example to do this for your Google Account you must first enable 2-Step Verification and then you select ''SETUP'' as shown below:" type="default" %}
 
 {% include image.html file="image85.png" max-width="582" %}
 
-As you go through the steps you will be prompted to scan a QR code (Looks like a square bar code). You can go ahead and scan the QR code using your smartphone Google Authenticator app if you wish to create a backup and then select "CAN'T SCAN IT" as shown below:
+As you go through the steps you will be prompted to scan a QR code (Looks like a square bar code). You can go ahead and scan the QR code using your smartphone Authenticator app if you wish to create a backup and then select "CAN'T SCAN IT" as shown below:
 
 {% include image.html file="image6.png" max-width="392" %}
 
@@ -376,7 +374,7 @@ Selecting ''CAN'T SCAN IT'' will display the private code. Select this text and 
 
 {% include image.html file="image38.png" max-width="383"%}
 
-Now open the OnlyKey Chrome Configuration App. With your correct PIN entered on the OnlyKey you are able to select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
+Now open the OnlyKey App and unlock your OnlyKey. Select the Slot to configure and paste this code into the field located next to ''Google Auth OTP'' as shown below:
 
 {% include image.html file="image65.png" max-width="599" %}
 
