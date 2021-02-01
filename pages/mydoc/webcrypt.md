@@ -55,12 +55,13 @@ Receiving encrypted files is as easy as putting a custom link in your email sign
 **Bob Smith**<br>
 **Email:** Bobsmith@bobsmith.com<br>
 **Phone:** 111.222.3333<br>
-*Send me a secure [message](https://apps.crp.to/encrypt.html?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/encrypt-file.html?type=e&recipients=bobsmith2)*<br>
+*Send me a secure [message](https://apps.crp.to/app/encrypt?type=e&recipients=bobsmith2) or [file](https://apps.crp.to//app/encrypt?type=e&recipients=bobsmith2)*<br>
+
 *[More info](https://onlykey.io/pages/webcrypt)*<br>
 <br>
-- Link the text **'message'** to: https://apps.crp.to/encrypt.html?type=e&recipients=<mark>bobsmith2</mark>
+- Link the text **'message'** to: https://apps.crp.to/app/encrypt?type=e&recipients=<mark>bobsmith2</mark>
 <br><br>
-- Link the text **'file'** to: https://apps.crp.to/encrypt-file.html?type=e&recipients=<mark>bobsmith2</mark>
+- Link the text **'file'** to: https://apps.crp.to/app/encrypt-file?type=e&recipients=<mark>bobsmith2</mark>
 <br><br>
 - Change <mark>bobsmith2</mark> in the link to your Keybase user name
 <br><br>
