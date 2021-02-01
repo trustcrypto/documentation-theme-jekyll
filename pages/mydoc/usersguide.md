@@ -426,7 +426,7 @@ However, OnlyKey TOTP will work on-the-go without the app running. All you have 
 *   Now your OnlyKey is ready to function in Yubikey® OTP mode
 *   Just select a slot that you wish to use with Yubikey® OTP mode by selecting the radio button and then selecting ''Submit''. The Yubikey® OTP will be generated when the corresponding button is pressed.
 
-{% include image.html file="image56.png" max-width="400" %}
+{% include image.html file="image56.png" %}
 
 {% include important.html content="Keep in mind that Yubico® OTP is a counter based authenticator so you can have only one authenticator set with the same values. If you provision multiple OnlyKeys or Yubikeys with the same values only one device will work. The majority of Yubikey® OTP applications online require Yubicloud setup. See the Yubicloud setup section after setting up Yubico® OTP." %}
 
