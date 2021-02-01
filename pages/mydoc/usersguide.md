@@ -208,7 +208,30 @@ The example configuration shown below would be to set up a username and password
 
 **Now the configuration is saved and shows up in the OnlyKey app as ''Google 1''**
 
-{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login." %}
+{% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.<br><br>Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
+
+{% include tip.html content="Need OnlyKey to fill a custom form that does not fit into the template? i.e. You need to perform the following:<br>
+- Enter the Username
+- Press TAB
+- Press RETURN
+- Enter the password
+- Press TAB
+- Press RETURN
+<br>
+You can enter ' \t' or ' \r' inline with slot data to type the extra TAB or Return. <br>
+i.e.<br>
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/custom-slot.png)
+<br>
+Where in the password field the value is set to:<br>
+```
+ \r password \t \r
+```
+<br>
+You can chain together multiple ' \t' or ' \r' in the fields.  Its one space to start and one space to end so if your chaining together multiple tabs it would have a double space in between like:
+```
+' \t  \t  \t  \t  \t password'
+```
+To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details." %}
 
 #### Test a Slot {#test-a-slot}
 
@@ -289,14 +312,6 @@ After loading next page
   </tr>
 </table>
 
-
-{% include tip.html content="Need OnlyKey to fill a custom form that does not fit any example? You can enter ' \t' or ' \r' inline with slot data to type TAB or Return. <br>
-i.e.<br>
-```
- \t textfield1 \t  \t textfield3 \t  \t textfield5 \r
-```
-To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.<br><br>
-Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
 {% include important.html content="***NO WEAK PASSWORDS*** - While OnlyKey makes it possible for your accounts to be more secure than remembering passwords or than using a software password manager one thing to remember is that it is up to you to use strong passwords. If you set your password to something like ''password1'' this is not secure, in fact we recommend using randomly generated strong passwords that cannot be guessed or cracked by a hacker." %}
 
