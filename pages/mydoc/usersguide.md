@@ -420,7 +420,7 @@ However, OnlyKey TOTP will work on-the-go without the app running. All you have 
 
 *   Copy and paste these into the corresponding fields in the OnlyKey App (Advanced Tab).
 
-{% include image.html file="image62.png" max-width="330" %}
+{% include image.html file="image62.png" %}
 
 *   Select ''Save to OnlyKey'' to write these values to your OnlyKey
 *   Now your OnlyKey is ready to function in Yubikey® OTP mode
