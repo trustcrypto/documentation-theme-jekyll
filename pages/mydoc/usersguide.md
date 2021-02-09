@@ -210,7 +210,7 @@ The example configuration shown below would be to set up a username and password
 
 {% include note.html content="Since not all Login pages are the same OnlyKey has options like tab (use to go to the next field) and Return (submit). These essentially press either the tab or return key so if you are unsure of how to set up your OnlyKey configuration try logging into your login page first by using just your keyboard. For the example above you would do this by entering your username, pressing the Return/Enter key, on the next page entering your password and then pressing the Return/Enter key to complete your login.<br><br>Before testing a configuration in your web browser it is a good idea to try it out in a text editor like notepad, just to make sure it looks right. The last thing you want is to find that you accidentally are typing your password out in the wrong field and now have to change the password." %}
 
-{% include tip.html content="Need OnlyKey to fill a custom form that does not fit into the template? i.e. You need to perform the following:<br>
+If you need OnlyKey to fill a custom form that does not fit into the template? i.e. You need to perform the following:<br>
 - Enter the Username<br>
 - Press TAB<br>
 - Press RETURN<br>
@@ -231,7 +231,7 @@ You can chain together multiple ' \t' or ' \r' in the fields.  Its one space to 
 ```
  \t  \t  \t  \t  \t password \r
 ```
-To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details." %}
+To do even more like press special keys such as Ctrl-Alt-Del OnlyKey has a special mode that enables filling virtually any form or login. See [Sysadmin Mode](#sysadmin-mode) for more details.
 
 #### Test a Slot {#test-a-slot}
 
