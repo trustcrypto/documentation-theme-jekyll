@@ -18,7 +18,7 @@ OnlyKey Agent is a hardware-based SSH and GPG agent that allows offline cold sto
 SSH is a popular remote access tool that is often used by administrators and with OnlyKey Agent remote access can be passwordless. GPG (or GnuPG) is a versatile OpenPGP tool that is used for encryption and signing. The way OnlyKey Agent works is that the indicator light on OnlyKey will blink purple for a sign request (such as SSH authentication), and will blink turquoise for a decrypt request. To authorize a user must press button (or [challenge code](https://docs.crp.to/usersguide.html#derived-challenge-mode)) on OnlyKey.
 
 {% include tip.html content="Prefer a how-to video? Watch one [here](https://vimeo.com/374479136)<br>[![How-To: Use OnlyKey for Passwordless SSH](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ssh-thumb.png)](https://vimeo.com/374479136)" %}
-   
+
 You can do things like sign your emails, git commits, and software packages, manage your passwords (with pass and gopass, among others), authenticate web tunnels and file transfers, and more. Since many 3rd party applications already integrate with SSH and GPG you can use those as well.
 
 ## SSH Agent Quickstart Guide
@@ -223,23 +223,33 @@ By default OnlyKey will generate a random key that is used to derive an unlimite
 
 
 i.e.
-
-`ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJcNZQFm742/hIf6KvbaApQM1VzoW6L2BHANZ4KgiU0o <ssh://identity@myhost|ed25519>`
-`ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIXzPsm6lkM6xSADnwh/S1IGLlU+dHE8M/xEp2qeol2w <ssh://identity@myhost2|ed25519>`
-`ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILb27+QTNo+9+xm1AzvlQHmjWt1XMwokM00xfZPJiUHP <ssh://identity@myhost3|ed25519>`
-
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJcNZQFm742/hIf6KvbaApQM1VzoW6L2BHANZ4KgiU0o <ssh://identity@myhost|ed25519>
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIXzPsm6lkM6xSADnwh/S1IGLlU+dHE8M/xEp2qeol2w <ssh://identity@myhost2|ed25519>
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILb27+QTNo+9+xm1AzvlQHmjWt1XMwokM00xfZPJiUHP <ssh://identity@myhost3|ed25519>
+```
 
 OnlyKey also stores up to 16 elliptic curve private keys and 4 RSA private keys that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key, or an OpenSSH key.
 
 Follow the guide [here](https://docs.crp.to/importpgp.html) to load an existing OpenPGP key or the guide [here](https://docs.crp.to/onlykey-agent.html#load-existing-openssh-private-key-stored-keys) to load an existing OpenSSH key.
 
 By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP or OpenSSH keys are stored as follows:
-- RSA Decryption key (GPG) in slot 1 
-- RSA Signing key (SSH/GPG) in slot 2 
+- RSA Decryption key (GPG) in slot 1
+- RSA Signing key (SSH/GPG) in slot 2
 - ECC (NIST256P1 and X25519) Decryption key (GPG) in slot 101
 - ECC (NIST256P1 and X25519) Signing key (SSH/GPG) in slot 102
 
-Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots.
+Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots. For example, to set an ECC key in ECC 4 (104) and ECC (105):
+
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp-load1.png)
+
+![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp-load2.png)
+
+Then to use the stored keys the -sk (signing key) and -dk (decryption key) flags are used like this:
+
+```
+$ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 105 -dk 104 -i publickey.bob@protonmail.com.asc
+```
 
 ### SSH Agent Quickstart Guide (Stored Keys)
 
@@ -302,7 +312,7 @@ If you wish to switch back to your software keys unset GNUPGHOME.
 ## Installation
 
 ### Windows Install with dependencies
-Currently Windows is not supported directly but may be used with a Linux virtual machine. Another alternative is to use [OpenSSH v8.2](https://docs.crp.to/openssh.html) which supports OnlyKey as a FIDO security key. We are working on additonal options for Windows support. 
+Currently Windows is not supported directly but may be used with a Linux virtual machine. Another alternative is to use [OpenSSH v8.2](https://docs.crp.to/openssh.html) which supports OnlyKey as a FIDO security key. We are working on additonal options for Windows support.
 
 ### MacOS Install with dependencies
 Python 3.8 and pip3 are required. To setup a Python environment on MacOS we recommend Anaconda [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos)
@@ -445,10 +455,10 @@ Since your private key only exists temporarily on the OnlyKey while it's being u
 ```
 onlykey-gpg init "Bob Smith <bob@protonmail.com>"
 ```
-If you need to use keys that you can export you can use the [stored keys](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide-stored-keys) and back up your PGP/GPG key prior to loading it onto OnlyKey. 
+If you need to use keys that you can export you can use the [stored keys](https://docs.crp.to/onlykey-agent.html#gpg-agent-quickstart-guide-stored-keys) and back up your PGP/GPG key prior to loading it onto OnlyKey.
 
 ### How do I create a different derived private key using same identity?
-By default your identity is created with time (-t) set to 0 (1970-01-01) which makes it easy to recreate this key without the need for anything except OnlyKey and remember the identity. 
+By default your identity is created with time (-t) set to 0 (1970-01-01) which makes it easy to recreate this key without the need for anything except OnlyKey and remember the identity.
 ```
 $ onlykey-gpg init "test test <test@test.com>"
 ...
@@ -527,7 +537,7 @@ systemctl --user enable onlykey-gpg-agent.socket
 
 #### X25519
 
-By default OnlyKey agent uses X25519 keys but also supports NIST256P1 and RSA (SSH only) keys. 
+By default OnlyKey agent uses X25519 keys but also supports NIST256P1 and RSA (SSH only) keys.
 
 #### NIST256P1
 
@@ -542,7 +552,7 @@ Stored key:
 $ onlykey-agent user@host -e nist256p1 -sk 102
 ```
 
-2) SSH login in using nist256p1 
+2) SSH login in using nist256p1
 
 Derived key:
 ```
@@ -553,7 +563,7 @@ Stored key:
 $ onlykey-agent -c user@host -sk 102 -e nist256p1
 ```
 
-4) GPG init using nist256p1 
+4) GPG init using nist256p1
 
 Derived key:
 ```
@@ -585,7 +595,7 @@ $ onlykey-agent -c user@host -e rsa
 ```
 Stored key:
 ```
-$ onlykey-agent -c user@host -e rsa -sk 2 
+$ onlykey-agent -c user@host -e rsa -sk 2
 ```
 
 ### Load Existing OpenSSH Private Key (Stored Keys)
