@@ -239,7 +239,7 @@ By default, when set to "Slot: Auto Load" in the OnlyKey app, OpenPGP or OpenSSH
 - ECC (NIST256P1 and X25519) Decryption key (GPG) in slot 101
 - ECC (NIST256P1 and X25519) Signing key (SSH/GPG) in slot 102
 
-Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots. For example, to set an ECC key in ECC 4 (104) and ECC (105):
+Advanced users may load and use keys in any of the 4 RSA slots, and 16 ECC slots. For example, to set an ECC key in ECC 4 (104) and ECC 5 (105):
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/pgp-load1.png)
 
