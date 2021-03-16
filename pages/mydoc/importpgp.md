@@ -173,7 +173,7 @@ In the shown example the flag 'e' (encryption) indicates that the first subkey i
 $ gpg2 --export-secret-key -a "asdf"
 ```
 
-% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey App." type="default" %}
+{% include callout.html content="**Step 2.** Click on the Keys tab of the OnlyKey App." type="default" %}
 
 {% include callout.html content="**Step 3.** Put the OnlyKey into config mode doing the following" type="default" %}
 
