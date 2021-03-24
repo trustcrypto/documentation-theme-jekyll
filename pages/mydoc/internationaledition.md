@@ -46,9 +46,8 @@ Features not included in the International Travel Edition OnlyKey that are avail
 
 It is easy to switch between the International Travel Edition firmware and the Standard Edition firmware. Keep in mind that switching from the Standard Edition to the International Travel Edition will disable features not available such as the second profile. In order to switch to Standard Edition firmware ensure that your International Travel Edition OnlyKey is in a factory default state and select [Load Firmware] in the OnlyKey App.
 
-- Download the [latest firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/latest/)
-  - [OnlyKey Standard Edition firmware](https://github.com/trustcrypto/trustcrypto.github.io/raw/master/Signed_OnlyKey_2_1_0_STD.txt)
-  - [OnlyKey International Travel Edition firmware](https://github.com/trustcrypto/trustcrypto.github.io/raw/master/Signed_OnlyKey_2_1_0_IN_TRVL.txt)
+- Download <a href="Signed_OnlyKey_2_1_0_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_0_STD.txt">OnlyKey Standard Edition firmware</a>
+- Download <a href="Signed_OnlyKey_2_1_0_IN_TRVL.txt" target="_blank" download="Signed_OnlyKey_2_1_0_IN_TRVL.txt">OnlyKey International Travel Edition firmware</a>
 - Select the [Load Firmware] button as shown below and follow the instructions in the app to load firmware
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite6.png)
