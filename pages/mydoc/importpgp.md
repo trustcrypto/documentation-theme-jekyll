@@ -1,9 +1,9 @@
 ---
-title: Import keys from Keybase, Protonmail, and Mailvelope/GPG
+title: Import keys from Keybase, Protonmail, and GPG
 tags: [OnlyKey, mailvelope, protonmail, keybase]
 keywords: OnlyKey, mailvelope, protonmail, keybase, pgp, openpgp
-last_updated: Oct, 19, 2020
-summary: How to use export keys from Protonmail, Keybase, and Mailvelope and load onto OnlyKey
+last_updated: Mar, 24, 2021
+summary: How to use export keys from Protonmail, Keybase, and GPG and load onto OnlyKey
 sidebar: mydoc_sidebar
 permalink: importpgp.html
 folder: mydoc
@@ -11,13 +11,39 @@ folder: mydoc
 
 ## OpenPGP Support
 
-OnlyKey uses the same standard OpenPGP keys used by popular services like Protonmail, Keybase, and Mailvelope. If you already have a key with one of these you can export the private key and load it onto OnlyKey. OnlyKey uses this loaded key for encrypted messages and files (see [WebCrypt](https://docs.crp.to/webcrypt.html) and [OnlyKey Agent](https://docs.crp.to/onlykey-agent.html)) and can use this key for secure backups of your OnlyKey (see [secure backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)).
+OnlyKey uses the same standard OpenPGP keys used by popular services like Protonmail and Keybase. If you already have a key with one of these you can use this guide to export the private key and load it onto OnlyKey. You can also use this guide to create a new private key if you don't have one. OnlyKey uses this loaded key for encrypted messages and files (see [WebCrypt](https://docs.crp.to/webcrypt.html) and [OnlyKey Agent](https://docs.crp.to/onlykey-agent.html)) and can use this key for secure backups of your OnlyKey (see [secure backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)).
 
-If you already have a PGP key follow the steps in [Exporting Keys](#exporting-keys).
+For best compatibility we recommend using one of these options:
+
+[Option A](#generating-keys-protonmail) - Create X25519 OpenPGP key with [ProtonMail](https://protonmail.com/blog/elliptic-curve-cryptography/)
+[Option B](#generating-keys-keybase) - Create RSA OpenPGP key with Keybase
+[Option C](#generating-keys-gpg) - Create X25519 OpenPGP key with GPG
+
+|  | OnlyKey WebCrypt | Secure Backup | OnlyKey SSH Agent | OnlyKey GPG Agent | Keybase Support | Protonmail Support |
+|-------|--------|---------|---------|---------|---------|---------|
+| Option A | Yes | Yes | Yes | Yes | Yes | Yes |
+| Option B | Yes | Yes | Yes | No | Yes | No |
+| Option C | Yes | Yes | Yes | Yes | Yes | No |
+
+To use an existing OpenPGP key follow the steps in [Exporting Keys](#exporting-keys).
 
 If you wish to generate a new key, follow the steps below:
 
 ### Generating Keys {#generating-keys}
+
+#### Generate OpenPGP Key Using Protonmail {#generating-keys-protonmail}
+
+{% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
+
+{% include callout.html content="**Step 1.** Create a free ProtonMail account [here](https://protonmail.com/signup)." type="default" %}
+
+{% include callout.html content="**Step 2.** Follow the instructions in the [Protonmail knowledge base here](https://protonmail.com/blog/elliptic-curve-cryptography/) to add new ECC X25519 key" type="default" %}
+
+{% include callout.html content="**Step 3.** Follow the instructions in the [Protonmail knowledge base here](https://protonmail.com/support/knowledge-base/download-public-private-key/) to Download your private key" type="default" %}
+
+{% include callout.html content="**Step 4.** Follow the instructions [here](#loading-keys) to load key onto OnlyKey" type="default" %}
+
+#### Generating Keys Using Keybase {#generating-keys-keybase}
 
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
@@ -69,7 +95,91 @@ If you wish to generate a new key, follow the steps below:
 
 Now all that is needed to start sending encrypted messages is to load the key you generated onto your OnlyKey.
 
-<i class="fa fa-arrow-down fa-3x"></i> ***Proceed to Loading Keys below***
+<i class="fa fa-arrow-down fa-3x"></i> [***Proceed to Loading Keys below***](#loading-keys)
+
+
+#### Generate OpenPGP Key Using GPG {#generating-keys-gpg}
+
+{% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
+
+{% include callout.html content="**Step 1.** Use GPG via terminal to create new OpenPGP key<br>
+```
+$ gpg --expert --full-gen-key
+gpg (GnuPG) 2.2.20; Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Please select what kind of key you want:
+(1) RSA and RSA (default)
+(2) DSA and Elgamal
+(3) DSA (sign only)
+(4) RSA (sign only)
+(7) DSA (set your own capabilities)
+(8) RSA (set your own capabilities)
+(9) ECC and ECC
+(10) ECC (sign only)
+(11) ECC (set your own capabilities)
+(13) Existing key
+(14) Existing key from card
+```
+
+Your selection? 9
+
+```
+Please select which elliptic curve you want:
+(1) Curve 25519
+(3) NIST P-256
+(4) NIST P-384
+(5) NIST P-521
+(6) Brainpool P-256
+(7) Brainpool P-384
+(8) Brainpool P-512
+(9) secp256k1
+```
+
+Your selection? 1
+
+```
+Please specify how long the key should be valid.
+0 = key does not expire
+= key expires in n days
+w = key expires in n weeks
+m = key expires in n months
+y = key expires in n years
+```
+
+Enter number of years, i.e. 10 years
+
+```
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Bob Smith
+Email address: bob@protonmail.com
+Comment:
+You selected this USER-ID:
+“Bob Smith bob@protonmail.com”
+```
+
+Replace Bob Smith with your name and email address
+
+```
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
+
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+```
+" type="default" %}
+
+{% include callout.html content="**Step 2.** Use GPG via terminal to export secret OpenPGP key<br>
+```
+$ gpg --output private.asc --armor --export-secret-key <YOUR EMAIL>
+```
+" type="default" %}
+
+{% include callout.html content="**Step 3.** Follow the instructions [here](#loading-keys) to load private.asc key onto OnlyKey" type="default" %}
+
 
 ### Loading Keys {#loading-keys}
 
@@ -85,7 +195,7 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 *   Hold the 6 button down for more than 5 seconds, and then release, you will see the light turn off.
 *   Re-enter your PIN, you will see the OnlyKey LED flash red while in config mode.
 
-{% include callout.html content="**Step 4.** Paste the copied private key into the OpenPGP Private Key (PEM Format) box. Ensure *Auto Load* is selected as Slot, enter the same passphrase you used with Keybase, Protonmail, or Mailvelope. When finished select Save to OnlyKey" type="default" %}
+{% include callout.html content="**Step 4.** Paste the copied private key into the OpenPGP Private Key (PEM Format) box. Ensure *Auto Load* is selected as Slot, enter the same passphrase you used with Keybase, Protonmail, or GPG. When finished select Save to OnlyKey" type="default" %}
 
 {% include image.html file="loadkey1.png" %}
 
@@ -99,19 +209,19 @@ You should see a message displayed indicating the key was successfully saved to 
 
 {% include warning.html content="Only export keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
-#### Keybase
+#### Keybase {#exporting-keys-keybase}
 
 {% include callout.html content="**Step 1.** If you do not already have a Keybase account. Follow the instructions in the [Generating Keys guide](#generating-keys) to generate your private key.<br><br>If you already have a Keybase account go to your account and next to your key ID select edit -> Export my private key from Keybase." type="default" %}
 
 {% include callout.html content="**Step 2.** Follow the instructions [here](#loading-keys) to load key onto OnlyKey" type="default" %}
 
-#### Protonmail
+#### Protonmail {#exporting-keys-protonmail}
 
 {% include callout.html content="**Step 1.** Follow the instructions in the [Protonmail knowledge base here](https://protonmail.com/support/knowledge-base/download-public-private-key/) to Download your private key" type="default" %}
 
 {% include callout.html content="**Step 2.** Follow the instructions [here](#loading-keys) to load key onto OnlyKey" type="default" %}
 
-#### Mailvelope
+#### Mailvelope {#exporting-keys-mailvelope}
 
 {% include callout.html content="**Step 1.** Go to the Mailvelope extension key management tab and select 'export' -> select 'private' -> select 'save'." type="default" %}
 
@@ -128,10 +238,10 @@ Some PGP/GPG keys contain legacy settings or values not supported by OpenPGP. Th
 If you did not generate keys using the [Generating Keys](#generating-keys) steps provided or you already have an OpenPGP key that you would like to use there are some additional considerations.
 
 - OnlyKey supports RSA OpenPGP keys of sizes 2048 and 4096.
-- OnlyKey supports ECC OpenPGP keys of type Ed25519 and NIST256P1
+- OnlyKey supports ECC OpenPGP keys of type X25519 and NIST256P1
 - Decryption operations using a 2048 size key takes about 2 seconds, with 4096 size key it takes about 9 seconds.
 
-For best user experience we recommend using OnlyKey with Ed25519 or RSA 2048 (subkeys) for decryption and signing.
+For best user experience we recommend using OnlyKey with X25519 or RSA 2048 (subkeys) for decryption and signing.
 
 **What are subkeys?**
 
