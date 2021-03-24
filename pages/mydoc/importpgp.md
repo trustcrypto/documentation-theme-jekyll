@@ -11,12 +11,14 @@ folder: mydoc
 
 ## OpenPGP Support
 
-OnlyKey uses the same standard OpenPGP keys used by popular services like Protonmail and Keybase. If you already have a key with one of these you can use this guide to export the private key and load it onto OnlyKey. You can also use this guide to create a new private key if you don't have one. OnlyKey uses this loaded key for encrypted messages and files (see [WebCrypt](https://docs.crp.to/webcrypt.html) and [OnlyKey Agent](https://docs.crp.to/onlykey-agent.html)) and can use this key for secure backups of your OnlyKey (see [secure backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)).
+OnlyKey uses the same standard OpenPGP keys used by popular services like Protonmail and Keybase. If you already have a key with these services you can use this guide to export the private key and load it onto OnlyKey. You can also use this guide to create a new private key if you don't have one. OnlyKey uses this loaded key for encrypted messages and files (see [WebCrypt](https://docs.crp.to/webcrypt.html) and [OnlyKey Agent](https://docs.crp.to/onlykey-agent.html)) and can use this key for secure backups of your OnlyKey (see [secure backups](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere)).
 
 For best compatibility we recommend using one of these options:
 
 [Option A](#generating-keys-protonmail) - Create X25519 OpenPGP key with [ProtonMail](https://protonmail.com/blog/elliptic-curve-cryptography/)
+
 [Option B](#generating-keys-keybase) - Create RSA OpenPGP key with Keybase
+
 [Option C](#generating-keys-gpg) - Create X25519 OpenPGP key with GPG
 
 |  | OnlyKey WebCrypt | Secure Backup | OnlyKey SSH Agent | OnlyKey GPG Agent | Keybase Support | Protonmail Support |
@@ -102,7 +104,8 @@ Now all that is needed to start sending encrypted messages is to load the key yo
 
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 
-{% include callout.html content="**Step 1.** Use GPG via terminal to create new OpenPGP key<br>
+{% include callout.html content="**Step 1.** Use GPG via terminal to create new OpenPGP key:" type="default" %}
+
 ```
 $ gpg --expert --full-gen-key
 gpg (GnuPG) 2.2.20; Copyright (C) 2020 Free Software Foundation, Inc.
@@ -170,16 +173,17 @@ some other action (type on the keyboard, move the mouse, utilize the
 disks) during the prime generation; this gives the random number
 generator a better chance to gain enough entropy.
 ```
-" type="default" %}
 
-{% include callout.html content="**Step 2.** Use GPG via terminal to export secret OpenPGP key<br>
+Your generated key details should be displayed
+
+
+{% include callout.html content="**Step 2.** Use GPG via terminal to export secret OpenPGP key:" type="default" %}
+
 ```
 $ gpg --output private.asc --armor --export-secret-key <YOUR EMAIL>
 ```
-" type="default" %}
 
 {% include callout.html content="**Step 3.** Follow the instructions [here](#loading-keys) to load private.asc key onto OnlyKey" type="default" %}
-
 
 ### Loading Keys {#loading-keys}
 
