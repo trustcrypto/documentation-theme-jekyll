@@ -48,6 +48,11 @@ It is easy to switch between the International Travel Edition firmware and the S
 
 - Download <a href="Signed_OnlyKey_2_1_0_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_0_STD.txt">OnlyKey Standard Edition firmware</a>
 - Download <a href="Signed_OnlyKey_2_1_0_IN_TRVL.txt" target="_blank" download="Signed_OnlyKey_2_1_0_IN_TRVL.txt">OnlyKey International Travel Edition firmware</a>
+
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_2_1_0_STD.txt SHA 256 checksum:<br>
+c4c2fd05c89fa164dae069c57deea78f2adc665c69e4e671e7483c2658339c9a<br>Signed_OnlyKey_2_1_0_IN_TRVL.txt SHA 256 checksum:<br>
+dd2a955f029dce16dd48b05542efa8b37d83ceec24fa668c1002dee309fb172d" %}
+
 - Select the [Load Firmware] button as shown below and follow the instructions in the app to load firmware
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/ite6.png)

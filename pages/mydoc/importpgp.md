@@ -45,7 +45,7 @@ If you wish to generate a new key, follow the steps below:
 
 {% include callout.html content="**Step 4.** Follow the instructions [here](#loading-keys) to load key onto OnlyKey" type="default" %}
 
-#### Generating Keys Using Keybase {#generating-keys-keybase}
+#### Generate OpenPGP Key Using Keybase {#generating-keys-keybase}
 
 {% include warning.html content="Only generate keys on a computer that you trust (i.e. never a publicly accessible or shared workstation)." %}
 

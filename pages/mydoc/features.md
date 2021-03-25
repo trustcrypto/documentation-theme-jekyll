@@ -171,6 +171,7 @@ OnlyKey is the world's first device to allow changing your keyboard layout on th
 5b Github<br>
 6b Lastpass<br>
 
+*   Hold button #3 for 5+ seconds to lock OnlyKey.
 *   Hold button #6 for 5+ seconds to put OnlyKey in config mode - See [config mode](https://docs.crp.to/security.html#config-mode) for more information.
 
 {% include links.html %}

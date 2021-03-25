@@ -229,7 +229,7 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIXzPsm6lkM6xSADnwh/S1IGLlU+dHE8M/xEp2qeol2w
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILb27+QTNo+9+xm1AzvlQHmjWt1XMwokM00xfZPJiUHP <ssh://identity@myhost3|ed25519>
 ```
 
-OnlyKey also stores up to 16 elliptic curve private keys and 4 RSA private keys that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key, or an OpenSSH key.
+OnlyKey also stores up to 16 elliptic curve private keys and 4 RSA private keys (SSH Only) that may be used instead of the default derived keys. To use stored keys, first a key must be loaded onto OnlyKey. The easiest way to load a key is to use an existing OpenPGP key such as an X25519 Protonmail key, or an OpenSSH key.
 
 Follow the guide [here](https://docs.crp.to/importpgp.html) to load an existing OpenPGP key or the guide [here](https://docs.crp.to/onlykey-agent.html#load-existing-openssh-private-key-stored-keys) to load an existing OpenSSH key.
 
