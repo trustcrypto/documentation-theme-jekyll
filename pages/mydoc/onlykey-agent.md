@@ -323,7 +323,7 @@ $ pip3 install onlykey-agent
 
 ### Ubuntu Install with dependencies
 ```
-$ sudo apt update && apt upgrade
+$ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey-agent
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
@@ -333,7 +333,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 
 ### Debian Install with dependencies
 ```
-$ sudo apt update && apt upgrade
+$ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey-agent
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules

@@ -46,7 +46,7 @@ In order for non-root users in Linux to be able to communicate with OnlyKey a ud
 
 #### Ubuntu Install with dependencies
 ```
-$ sudo apt update && apt upgrade
+$ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
@@ -56,7 +56,7 @@ $ sudo udevadm control --reload-rules && udevadm trigger
 
 #### Debian Install with dependencies
 ```
-$ sudo apt update && apt upgrade
+$ sudo apt update && sudo apt upgrade
 $ sudo apt install python3-pip python3-tk libusb-1.0-0-dev libudev-dev
 $ pip3 install onlykey
 $ wget https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/49-onlykey.rules
@@ -193,6 +193,11 @@ Set keyboard layout
 #### ledbrightness [num]
 1 = dimmest; 10 = brightest [8 = default]
 [More info](https://docs.crp.to/usersguide.html#configurable-led-brightness)
+
+#### touchsense [num]
+Change the OnlyKey's button touch sensitivity.
+WARNING: Setting button's touch sensitivity lower than 5 is not recommended as this could result in inadvertent button press.
+2 = highest sensitivity; 100 = lowest sensitivity [12 = default]
 
 #### 2ndprofilemode [num]
 Set during init (Initial Configuration) to set 2nd profile type 1 = standard (default); 2 = plausible deniability
@@ -339,7 +344,7 @@ Or you can run commands in an interactive shell like this:
 
 ```
 $ onlykey-cli
-OnlyKey CLI v1.2.2
+OnlyKey CLI v1.2.5
 Press the right arrow to insert the suggestion.
 Press Control-C to retry. Control-D to exit.
 
