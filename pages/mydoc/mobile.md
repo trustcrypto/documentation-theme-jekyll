@@ -67,7 +67,7 @@ This is currently supported using Firefox and Chrome browsers for Android. To us
 
 - Plug OnlyKey into mobile device using adapter
 - Enter PIN to unlock OnlyKey
-- Browse to https://apps.crp.to/encrypt-files
+- Browse to https://apps.crp.to/encrypt-file
 - A pop-up will appear that you must accept for the device to communicate with OnlyKey
 - If OnlyKey is correctly connected a message will show "OnlyKey v0.2-beta.8c Secure Connection Established"
 - Enter your Keybase username and the recipient's username (if you are encrypting files for yourself this is your username)
@@ -81,7 +81,7 @@ This is currently supported using Firefox and Chrome browsers for Android. To us
 
 - Plug OnlyKey into mobile device using adapter
 - Enter PIN to unlock OnlyKey
-- Browse to https://apps.crp.to/decrypt-files
+- Browse to https://apps.crp.to/decrypt-file
 - A pop-up will appear that you must accept for the device to communicate with OnlyKey
 - If OnlyKey is correctly connected a message will show "OnlyKey v0.2-beta.8c Secure Connection Established"
 - Enter your Keybase username
@@ -110,7 +110,7 @@ This is currently supported using the iOS Safari browser. To use OnlyKey to encr
 
 - Plug OnlyKey into mobile device using adapter
 - Enter PIN to unlock OnlyKey
-- Browse to https://apps.crp.to/encrypt-files
+- Browse to https://apps.crp.to/encrypt-file
 - A pop-up will appear that you must accept for the device to communicate with OnlyKey
 - If OnlyKey is correctly connected a message will show "OnlyKey v0.2-beta.8c Secure Connection Established"
 - Enter your Keybase username and the recipient's username (if you are encrypting files for yourself this is your username)
@@ -126,7 +126,7 @@ This is currently supported using the iOS Safari browser. To use OnlyKey to encr
 
 - Plug OnlyKey into mobile device using adapter
 - Enter PIN to unlock OnlyKey
-- Browse to https://apps.crp.to/decrypt-files
+- Browse to https://apps.crp.to/decrypt-file
 - A pop-up will appear that you must accept for the device to communicate with OnlyKey
 - If OnlyKey is correctly connected a message will show "OnlyKey v0.2-beta.8c Secure Connection Established"
 - Enter your Keybase username

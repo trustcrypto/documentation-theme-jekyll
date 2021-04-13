@@ -55,7 +55,7 @@ Receiving encrypted files is as easy as putting a custom link in your email sign
 **Bob Smith**<br>
 **Email:** Bobsmith@bobsmith.com<br>
 **Phone:** 111.222.3333<br>
-*Send me a secure [message](https://apps.crp.to/app/encrypt?type=e&recipients=bobsmith2) or [file](https://apps.crp.to//app/encrypt?type=e&recipients=bobsmith2)*<br>
+*Send me a secure [message](https://apps.crp.to/app/encrypt?type=e&recipients=bobsmith2) or [file](https://apps.crp.to/app/encrypt-file?type=e&recipients=bobsmith2)*<br>
 
 *[More info](https://onlykey.io/pages/webcrypt)*<br>
 <br>
