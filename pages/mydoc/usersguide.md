@@ -833,17 +833,17 @@ Here are some other common examples:
 - To open terminal in Linux, then delay two seconds, then enter a command into terminal (2 second delays added)
 
 ```
- \g  \2 terminal \r  \2 ssh user@domain \r"
+ \g  \2 terminal \r  \2 ssh user@domain \r
 ```
 
 - To press Windows key and open run box, then delay, then enter a powershell command (2 second delays added)
 ```
- \g  \2 run \2  \r  \2 powershell.exe ls \r"
+ \g  \2 run \2  \r  \2 powershell.exe ls \r
 ```
 
 - To press Windows key and run cmd command to open calculator (2 second delays added)
 ```
- \g  \2 cmd \c calc \2  \r"
+ \g  \2 cmd \r calc \2  \r
 ```
 
 - To enter text into fields 1, 3, and 5 of a multiple field form and then submit
