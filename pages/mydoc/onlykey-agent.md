@@ -578,10 +578,6 @@ $ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -i publickey
 
 1) Generate RSA SSH public key using onlykey-agent
 
-Derived key:
-```
-$ onlykey-agent user@host -e rsa
-```
 Stored key:
 ```
 $ onlykey-agent user@host -e rsa -sk 2
@@ -589,10 +585,6 @@ $ onlykey-agent user@host -e rsa -sk 2
 
 2) SSH login in using RSA
 
-Derived key:
-```
-$ onlykey-agent -c user@host -e rsa
-```
 Stored key:
 ```
 $ onlykey-agent -c user@host -e rsa -sk 2
