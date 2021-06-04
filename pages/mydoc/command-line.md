@@ -2,7 +2,7 @@
 title: OnlyKey Command-Line Utility
 tags: [OnlyKey, Command line, Python]
 keywords: OnlyKey, Command line
-last_updated: Oct, 27, 2020
+last_updated: Jun, 03, 2021
 summary: The OnlyKey Command-Line Utility is a command line interface to OnlyKey.
 sidebar: mydoc_sidebar
 permalink: command-line.html
@@ -237,7 +237,7 @@ Enable or disable challenge for stored keys (SSH/PGP)
 #### setslot [id] [type] [value]
   - [id] must be slot number 1a - 6b
   - [type] must be one of the following:
-    - label - Slot label i.e. My Google Acct
+    - label - set slots (1a - 6b) to have a descriptive label i.e. My Google Acct
     - url - URL to login page
     - delay1 - set a 0 - 9 second delay
     - addchar1 - Additional character before username 1 for TAB, 0 to clear
@@ -260,10 +260,21 @@ Enable or disable challenge for stored keys (SSH/PGP)
 
 ### Key Config Options
 
-#### setkey [key slot] [key type]
-  - See examples [here](https://docs.crp.to/command-line.html#writing-private-keys-and-passwords).
+#### setkey [key id] [type]
+Sets raw private keys and key labels
+  - [key id] must be key number RSA1 - RSA4, ECC1 - ECC16, HMAC1 - HMAC2
+  - [type] must be one of the following:
+    - label - set to have a descriptive key label i.e. My GPG signing key
+    - x - X25519 Key Type (32 bytes)
+    - n - NIST256P1 Key Type (32 bytes)
+    - s - SECP256K1 Key Type (32 bytes)
+    - r - RSA Key Type (NOT CURRENTLY SUPPORTED IN CLI)
+    - h - HMAC Key Type (20 bytes)
+  - For setting keys see examples [here](https://docs.crp.to/command-line.html#writing-private-keys-and-passwords).
 
-#### wipekey [key slot]
+#### wipekey [key id]
+Erases key stored at [key id]
+  - [key id] must be key number RSA1 - RSA4, ECC1 - ECC16, HMAC1 - HMAC2
 
 ### FIDO2 Config Options
 
@@ -465,39 +476,42 @@ To set key a device must first be put into config mode.
 
 $ onlykey-cli
 
-OnlyKey> setkey 130 9                                                                                                     
+OnlyKey> setkey HMAC1 h                                                                                                  
 
 Type Control-T to toggle password visible.
 Password/Key: ****************************************  
 
+Successfully set ECC Key
 
-*HMAC key must be 20 bytes, 130 is mapped to HMAC slot 1, 9 is HMAC type*
+*HMAC key must be 20 bytes, h is HMAC type*
 
 
 **Set HMAC key 2 to a custom value**
 
 $ onlykey-cli
 
-OnlyKey> setkey 129 9                                                                                                     
+OnlyKey> setkey HMAC2 h                                                                                                     
 
 Type Control-T to toggle password visible.
 Password/Key: ****************************************  
 
+Successfully set ECC Key
 
-*HMAC key must be 20 bytes, 129 is mapped to HMAC slot 2, 9 is HMAC type*
+*HMAC key must be 20 bytes, h is HMAC type*
 
 
-**Set ECC key in slot 101 to a custom value (Slots 101-116 are available for ECC keys. Supported ECC curves X25519(1), NIST256P1(2), SECP256K1(3))**
+**Set ECC key in slot 101 to a custom value (Slots 101-116 are available for ECC keys. Supported ECC curves X25519(x), NIST256P1(n), SECP256K1(s))**
 
 $ onlykey-cli
 
-OnlyKey> setkey 101 1                                                                                                     
+OnlyKey> setkey ECC1 x                                                                                                    
 
 Type Control-T to toggle password visible.
 Password/Key: *************************************************************  
 
+Successfully set ECC Key
 
-*ECC key must be 32 bytes, 1 is X25519 type*
+*ECC key must be 32 bytes, x is X25519 type*
 
 ### Scripting Example
 
