@@ -139,8 +139,7 @@ Returns key labels for RSA keys 1-4 and ECC keys 1 -32
 #### rng [type]
 Access OnlyKey TRNG to generate random numbers:
 - [type] must be one of the following:
-  - hexbytes - Output hex encoded random bytes. Default 8 bytes; Maximum 255 bytes. Specify number of bytes to return with --count <number of bytes>.
-  - raw - Output raw entropy endlessly.
+  - hexbytes - Output hex encoded random bytes. Default 8 bytes; Maximum 255 bytes. Specify number of bytes to return with --count <number of bytes> i.e. 'onlykey-cli rng hexbytes --count 32'
   - feedkernel - Feed random bytes to /dev/random.
 
 ### OnlyKey Preferences Options
@@ -261,7 +260,7 @@ Enable or disable challenge for stored keys (SSH/PGP)
 ### Key Config Options
 
 #### setkey [key id] [type]
-Sets raw private keys and key labels
+Sets raw private keys and key labels, to set PEM format keys use the OnlyKey App
   - [key id] must be key number RSA1 - RSA4, ECC1 - ECC16, HMAC1 - HMAC2
   - [type] must be one of the following:
     - label - set to have a descriptive key label i.e. My GPG signing key
