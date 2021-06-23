@@ -2,7 +2,7 @@
 title: Upgrade Guide
 tags: [OnlyKey, Firmware, Upgrade]
 keywords: OnlyKey, Firmware, Upgrade
-last_updated: Oct, 19, 2020
+last_updated: June, 23, 2021
 summary: Follow this guide to upgrade OnlyKey firmware and desktop app
 sidebar: mydoc_sidebar
 permalink: upgradeguide.html
@@ -16,13 +16,13 @@ We are pleased to announce that the latest and greatest OnlyKey software is now 
 
 This release has a lot of improvements and new features. Here is the short list of new features in this release:
 
-- [OnlyKey GPG agent support](https://docs.crp.to/onlykey-agent.html)
+- Added support for Authlite for enterprise Windows AD 2-factor
+- Added support for ed25519-sk FIDO2 keys with [OpenSSH](https://docs.crp.to/openssh.html)
+- Fixed compatibility issue with FIDO2 Microsoft accounts and Chrome browser
+- [Improved OnlyKey GPG agent support](https://docs.crp.to/onlykey-agent.html)
 - [WebCrypt 3.0](https://docs.crp.to/webcrypt.html) Available in Nov 2020.
 - Enhanced FIDO2 support (improved usability and ability to manage individual FIDO2 resident keys)
-- [Sysadmin mode](https://docs.crp.to/usersguide.html#sysadmin-mode) - SysAdmin mode permits OnlyKey to type almost any combination of characters such as Ctrl-Alt-Del, then enter usernames/passwords or system commands.
-- Primary Profile and Secondary Profile LED Color - OnlyKey supports a primary and secondary profile, switching between the two is now even easier. Hold down button #3 for 5 seconds to lock OnlyKey to switch profiles. Recognizing which profile you are logged into is now easier with profile colors, OnlyKey has Green light for Primary profile and Blue light for Secondary profile.
-- Customizable HMAC Keys - By default HMAC keys are random, these can now be customized for HMAC challenge-response. This feature is used for things like [KeePassXC](https://docs.crp.to/usersguide.html#keepassxc) support.
-- Improved OnlyKey Agent SSH support - OnlyKey SSH agent now supports both derived keys and stored keys for users who wish to use a single key to log into multiple servers. PGP (RSA and ECC) key import support will be added in our next OnlyKey SSH agent release. This allows users to import existing keys to OnlyKey for secure SSH. Alternatively, OpenSSH supports OnlyKey — read more about that [here](https://docs.crp.to/openssh.html).
+- [Improved Sysadmin mode](https://docs.crp.to/usersguide.html#sysadmin-mode) - SysAdmin mode permits OnlyKey to type almost any combination of characters such as Ctrl-Alt-Del, then enter usernames/passwords or system commands.
 
 ## Before Upgrading
 
@@ -30,7 +30,7 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
-{% include warning.html content="If you use OnlyKey with KeePassXC [read this](https://docs.crp.to/keepassxc-upgrade.html) before upgrading. This firmware release adds enhanced support for FIDO2 (WebAuthn) resident keys. If you have any resident keys they will be wiped during upgrade and must be reloaded by restoring backup file. This only applies to FIDO2 resident keys which are not widely supported yet, this does not apply to FIDO U2F (When security key blinks blue to be used as only 2nd factor) which does not require restoring backup. While most users do not use resident keys we recommend to keep a copy of the backup from the previous step." %}
+{% include warning.html content="If your OnlyKey has firmware v0.2-beta.8 or earlier you must backup OnlyKey prior to upgrading. Once firmware is upgraded restore backup file." %}
 
 ## Steps to Upgrade
 
@@ -38,7 +38,7 @@ This release has a lot of improvements and new features. Here is the short list 
 
 {% include callout.html content="**Step 2.** **Upgrade OnlyKey firmware** - Follow instructions [here](#loading-onlykey-firmware) to upgrade firmware on the OnlyKey" type="default" %}
 
-{% include note.html content="onlykey-agent users, make sure to install the latest version of onlykey-agent with `$pip uninstall onlykey onlykey-agent` and `$pip3 install onlykey-agent`. Python 3 is required." %}
+{% include note.html content="onlykey-agent users, make sure to install the latest version of onlykey-agent with `$ pip3 uninstall onlykey-agent lib-agent` and `$ pip3 install onlykey-agent`. Python 3 is required." %}
 
 ### Steps to Upgrade OnlyKey firmware {#loading-onlykey-firmware}
 
@@ -48,12 +48,12 @@ There is a tab named Firmware in the app. This may be used to load the latest fi
 
 ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/newfeature2.png)
 
-- Download <a href="Signed_OnlyKey_2_1_0_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_0_STD.txt">OnlyKey Standard Edition firmware</a>
+- Download <a href="Signed_OnlyKey_2_1_1_STD.txt" target="_blank" download="Signed_OnlyKey_2_1_1_STD.txt">OnlyKey Standard Edition firmware</a>
 - Go to the Firmware tab in the app
 - Follow the instructions in the app to load firmware
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_2_1_0_STD.txt SHA 256 checksum:<br>
-c4c2fd05c89fa164dae069c57deea78f2adc665c69e4e671e7483c2658339c9a" %}
+{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>Signed_OnlyKey_2_1_1_STD.txt SHA 256 checksum:<br>
+c218a2dc29a1dbb92cf9ccc958bb73ab81d687db0a42c14ab42efd52c165be3c" %}
 
 <!---
 - Download [OnlyKey Standard Edition firmware](https://github.com/trustcrypto/OnlyKey-Firmware/releases/download/v2.1.0-prod/Signed_OnlyKey_2_1_0_STD.txt)

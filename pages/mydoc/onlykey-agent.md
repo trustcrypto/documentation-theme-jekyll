@@ -2,7 +2,7 @@
 title: OnlyKey SSH/GPG agent
 tags: [OnlyKey, Agent, Python]
 keywords: OnlyKey, Agent
-last_updated: Nov, 27, 2020
+last_updated: June, 23, 2021
 summary: Using OnlyKey as hardware SSH and GPG agent.
 sidebar: mydoc_sidebar
 permalink: onlykey-agent.html
@@ -205,8 +205,8 @@ $ rm -rf ~/.gnupg/onlykey
 $ onlykey-gpg init "Bob Smith <bob@protonmail.com>"
 ```
 
-### Add Subkey to an existing GnuPG Identity
-Rather than using onlykey-gpg init to create a new GPG key, a subkey may be added to an existing GPG key (not created with onlykey-gpg).
+### Add OnlyKey-based subkey to an existing GnuPG Identity (not created with onlykey-gpg)
+Rather than using onlykey-gpg init to create a new GPG key, a subkey may be added to an **existing** GPG key (not created with onlykey-gpg).
 
 ```
 $ gpg2 -k foobar
@@ -215,6 +215,38 @@ uid         [ultimate] foobar
 sub   rsa2048/4DD05FF0 2017-10-10 [E]
 
 $ onlykey-gpg init "foobar" --subkey
+```
+
+### Add new user IDs (UIDs) to your OnlyKey GnuPG Identity 
+After your main identity is created, you can add new user IDs using the regular GnuPG commands:
+
+```
+$ onlykey-gpg init "Foobar" -vv
+$ export GNUPGHOME=${HOME}/.gnupg/onlykey
+$ gpg2 -K
+------------------------------------------
+sec   nistp256/6275E7DA 2017-12-05 [SC]
+uid         [ultimate] Foobar
+ssb   nistp256/35F58F26 2017-12-05 [E]
+
+$ gpg2 --edit Foobar
+gpg> adduid
+Real name: Xyzzy
+Email address:
+Comment:
+You selected this USER-ID:
+    "Xyzzy"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
+
+gpg> save
+
+$ gpg2 -K
+------------------------------------------
+sec   nistp256/6275E7DA 2017-12-05 [SC]
+uid         [ultimate] Xyzzy
+uid         [ultimate] Foobar
+ssb   nistp256/35F58F26 2017-12-05 [E]
 ```
 
 ## Stored Keys
@@ -301,7 +333,11 @@ $ onlykey-gpg init "Bob Smith <bob@protonmail.com>" -sk 102 -dk 101 -i publickey
 
 Where "Bob Smith <bob@protonmail.com>" is your email address from your OpenPGP key, "publickey.bob@protonmail.com.asc" is your OpenPGP public key, -sk 102 is the signing key to use, and -dk 101 is the decryption key to use.
 
-3) Add export GNUPGHOME=~/.gnupg/onlykey to your .bashrc or other environment file.
+3) Add export GNUPGHOME=~/.gnupg/onlykey to your .bashrc or other environment file. i.e.
+
+```
+$ export GNUPGHOME=${HOME}/.gnupg/onlykey
+```
 
 This GNUPGHOME contains your hardware keyring and agent settings. This agent software assumes all keys are backed by hardware devices so you can't use standard GPG keys in GNUPGHOME (if you do mix keys you'll receive an error when you attempt to use them).
 
@@ -388,16 +424,16 @@ In a future release we will be implementing the following features:
 
 ### How do I generate a keys for a second identity?
 
-You can only have one identity located in default location  ~/.gnupg/trezor. However, you can specify additional locations when creating identities i.e.
+You can only have one identity located in default location  ~/.gnupg/onlykey. However, you can specify additional locations when creating identities i.e.
 ```
-$ onlykey-gpg init "test test <test@test2.com>" -v --homedir /Users/t/.gnupg/trezor/test2
+$ onlykey-gpg init "test test <test@test2.com>" -v --homedir /Users/t/.gnupg/onlykey/test2
 ```
 
 ### How do I add new user ID to existing identity?
 After your main identity is created, you can add new user IDs using the regular GnuPG commands:
 ```
 $ onlykey-gpg init "Foobar" -vv
-$ export GNUPGHOME=${HOME}/.gnupg/trezor
+$ export GNUPGHOME=${HOME}/.gnupg/onlykey
 $ gpg2 -K
 ------------------------------------------
 sec   nistp256/6275E7DA 2017-12-05 [SC]
@@ -495,7 +531,7 @@ Requires=onlykey-gpg-agent.socket
 
 [Service]
 Type=simple
-Environment="GNUPGHOME=%h/.gnupg/trezor"
+Environment="GNUPGHOME=%h/.gnupg/onlykey"
 Environment="PATH=/bin:/usr/bin:/usr/local/bin:%h/.local/bin"
 ExecStart=/usr/bin/onlykey-gpg-agent -vv
 ````

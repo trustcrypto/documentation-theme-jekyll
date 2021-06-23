@@ -2,18 +2,18 @@
 title: OpenSSH
 tags: [SSH]
 keywords: OnlyKey, SSH, OpenSSH
-last_updated: May, 22, 2020
-summary: The OnlyKey can be used with OpenSSH to provide multifactor authentication on SSH keys
+last_updated: June, 22, 2021
+summary: The OnlyKey can be used with OpenSSH to provide multifactor authentication for SSH keys
 sidebar: mydoc_sidebar
 permalink: openssh.html
 folder: mydoc
 ---
 
-# OpenSSH v8.2
+# OpenSSH use with OnlyKey
 
 This document describes how to use the OnlyKey as a second factor authentication device with traditional SSH Keys.
 
-The OnlyKey currently only supports `ecdsa` keys with OpenSSH.
+The OnlyKey currently only supports `ecdsa` and `ed25519` keys with OpenSSH.
 
 ## Quickstart Guide
 
@@ -69,8 +69,46 @@ Confirm user presence for key ECDSA-SK SHA256:ECFmaoLZENpq0rLem8HC1F6vTwH1pjsnR6
 
 5. Success!
 
+## FIDO2 Resident Keys
+
+1. You must have OnlyKey firmware v2.1.1 or higher to use this feature.
+
+Use the following command to generate a key and store it on the device:
+
+```
+$ ssh-keygen -t ed25519-sk -O resident -f ~/.ssh/id_mykey_sk
+```
+
+2. Then copy the new public key to your remote hosts.
+
+3. To view resident keys stored on device use [onlykey-cli](https://docs.crp.to/command-line.html#list-and-remove-fido2-resident-key)
+
+```
+$ onlykey-cli credential ls
+PIN: 
+Relying Party       Username            Credential ID
+-----------------------------------------------------
+ssh:                openssh             F6pS8iFTMI9ezUZRMD39pMgC3CMpEwVCq9Y6O8YEc3lNGuMGEOihYhFZYP4ewiPmUpyfS26AIA3LXlwyHIrx4rG/fR67AA==
 
 ## Prerequisites
+
+### Windows
+Follow the install guide [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) and install "OpenSSH Client"
+
+### Mac
+```
+$ brew install openssh
+```
+
+### Ubuntu (20.10 Groovy Gorilla) & Debian (bullseye)
+```
+$ apt install openssh-client
+```
+
+### Arch Linux
+```
+$ pacman -S openssh libfido2
+```
 
 ### Void Linux
 ```
@@ -78,14 +116,8 @@ $ xbps-install -S openssh openssh-sk-helper
 ```
 
 
-### Arch Linux
-```
-$ pacman -S openssh libfido2
-```
 
-### Ubuntu (20.10 Groovy Gorilla) & Debian (bullseye)
-```
-$ apt install openssh-client
-```
+
+
 
 

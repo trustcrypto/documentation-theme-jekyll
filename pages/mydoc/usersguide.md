@@ -60,19 +60,20 @@ To complete OnlyKey quick setup follow the instructions below:
 
 {% include callout.html content="**Step 1.** Download installer" type="default" %}
 
-[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/OnlyKey_App_5.3.0.dmg)
 
-[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/OnlyKey_5.3.0.exe)
+[<i class="fa fa-apple fa-2x"></i> **macOS**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey.App.5.3.3.dmg)
 
-[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.1/OnlyKey_5.3.1_amd64.deb)
+[<i class="fa fa-windows fa-2x"></i> **Windows**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey_5.3.3.exe)
 
-{% include important.html content="Linux users must install UDEV rule for OnlyKey if one has not been created previously. Follow the following instructions here, additionally the OnlyKey app may now be installed via Snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
+[<i class="fa fa-linux fa-2x"></i> **Linux**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.3/OnlyKey_5.3.3_amd64.deb)
+
+{% include note.html content="Linux users, if a UDEV rule has not been created previously follow the following instructions here, additionally the OnlyKey app may now be installed via snapcraft - [Linux Guide](https://docs.crp.to/linux.html)" %}
 
 [<i class="fa fa-chrome fa-2x"></i> **Chrome OS / Chrome App**](https://docs.crp.to/app.html#onlykey-chrome-app-end-of-life)
 
 {% include callout.html content="**Step 2.** Install and launch the app." type="default" %}
 
-{% include note.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 76788bb4f0c2279018eb4f482ccd88a091ed7e3d1d1ff39c983dc18f716a61e2<br>Windows SHA 256 CHECKSUM: 44fb2d9e2ac6307ecceb389332e0cdeb30d311bd95069b15595dc4a181310e84<br>Linux SHA 256 CHECKSUM: ba8e0b4a5228ff1a6c2b19b9f93cb3125bc8273ea0a947bbc82770343b167bda<br>" %}
+{% include tip.html content="You can ensure the integrity of your downloaded file by verifying the checksum. <br>macOS SHA 256 CHECKSUM: 38a20e11e0a3219c874b55c9f41d809c426296041c297e2c3e717ebd35403a25<br>Windows SHA 256 CHECKSUM: 7145b5fddc125b9dd60dc6de261b6ecd0adbdb136caa06274e4c77d461abc3f4<br>Linux SHA 256 CHECKSUM: 10611139e7cb601e49453dd9297aa8be767956c8ff37ebebeae1ac9076008e63<br> [ **Linux App GPG Public Key**](https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.0/CryptoTrust_LLC_pub.asc) A1D6 4A3B 496C B0F3 6E12 B46F 9A9F 520D 44EA 53D1" %}
 
 {% include tip.html content="As you use the OnlyKey app you can hover over icons for tooltips and click on icon's to browse to that topic in the documentation ![](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/tooltip.png)" %}
 
