@@ -20,17 +20,15 @@ This release has a lot of improvements and new features. Here is the short list 
 - Added support for ed25519-sk FIDO2 keys with [OpenSSH](https://docs.crp.to/openssh.html)
 - Fixed compatibility issue with FIDO2 Microsoft accounts and Chrome browser
 - [Improved OnlyKey GPG agent support](https://docs.crp.to/onlykey-agent.html)
-- [WebCrypt 3.0](https://docs.crp.to/webcrypt.html) Available in Nov 2020.
+- [Improved WebCrypt support](https://docs.crp.to/webcrypt.html) Now supports X25519 OpenPGP keys.
 - Enhanced FIDO2 support (improved usability and ability to manage individual FIDO2 resident keys)
 - [Improved Sysadmin mode](https://docs.crp.to/usersguide.html#sysadmin-mode) - SysAdmin mode permits OnlyKey to type almost any combination of characters such as Ctrl-Alt-Del, then enter usernames/passwords or system commands.
 
-## Before Upgrading
-
-{% include note.html content="If you are a new OnlyKey user skip this section and head over to the [User's Guide](https://docs.crp.to/usersguide.html#onlykey-setup) to get started." %}
-
-{% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
+## Backup Before Upgrading
 
 {% include warning.html content="If your OnlyKey has firmware v0.2-beta.8 or earlier you must backup OnlyKey prior to upgrading. Once firmware is upgraded restore backup file." %}
+
+{% include callout.html content="**Backup OnlyKey** - It is always a good idea to create a backup prior to upgrading. Do this by going to the Backup/Restore tab in the OnlyKey app. Ensure you have a copy of your backup key/passphrase ([User Guide Backup Instructions here](https://docs.crp.to/usersguide.html#secure-encrypted-backup-anywhere))." type="default" %}
 
 ## Steps to Upgrade
 
