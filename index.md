@@ -88,6 +88,8 @@ The Knowledge Base contains guides and information for using OnlyKey in specific
 
 **[Linux Guide](https://docs.crp.to/linux.html)** - Guide for using OnlyKey on Linux and creating a UDEV rule for OnlyKey.
 
+**[Windows Active Directory Guide](https://docs.crp.to/activedirectory.html)** - Follow this guide to use OnlyKey for Windows Active Directory and Azure AD for 2-factor Authentication and Protection from Ransomware.
+
 **[OpenSSH Guide](https://docs.crp.to/openssh.html)** -  OnlyKey can be used with OpenSSH to provide multi-factor authentication on SSH keys
 
 **[Virtual Machine Guide](https://docs.crp.to/virtualmachines.html)** - How to use OnlyKey with VMware and Virtualbox.

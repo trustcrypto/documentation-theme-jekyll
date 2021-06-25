@@ -223,30 +223,34 @@ entries:
       url: /pdguide.html
       output: web, pdf
 
-    - title: Using OnlyKey with Linux
+    - title: Windows Active Directory Guide
+      url: /activedirectory.html
+      output: web, pdf
+
+    - title: Linux - Using OnlyKey with Linux
       url: /linux.html
       output: web, pdf
 
-    - title: Using OnlyKey with iOS and Android
+    - title: Mobile - Using OnlyKey with iOS and Android
       url: /mobile.html
       output: web, pdf
 
-    - title: Import keys from Protonmail, Keybase, and Mailvelope
+    - title: OpenPGP Keys - Import keys from Protonmail, Keybase, and Mailvelope
       url: /importpgp.html
       output: web, pdf
 
-    - title: Using OnlyKey with Virtual Machines
+    - title: Virtual Machines with OnlyKey
       url: /virtualmachines.html
       output: web, pdf
 
-    - title: Using OnlyKey with Qubes OS
+    - title: Qubes OS with OnlyKey
       url: /qubes.html
       output: web, pdf
 
-    - title: Using OnlyKey for Full-Disk Encryption and Head-less Server
+    - title: Full-Disk Encryption with OnlyKey
       url: /full-disk-encryption.html
       output: web, pdf
 
-    - title: Using OnlyKey with OpenSSH
+    - title: OpenSSH With OnlyKey
       url: /openssh.html
       output: web, pdf
