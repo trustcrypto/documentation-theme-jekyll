@@ -71,7 +71,7 @@ Confirm user presence for key ECDSA-SK SHA256:ECFmaoLZENpq0rLem8HC1F6vTwH1pjsnR6
 
 ## FIDO2 Resident Keys
 
-1. You must have OnlyKey firmware v2.1.1 or higher to use this feature.
+1. OnlyKey firmware v2.1.1 or higher is required to use this feature.
 
 Use the following command to generate a key and store it on the device:
 
