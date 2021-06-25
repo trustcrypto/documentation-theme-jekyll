@@ -11,11 +11,11 @@ folder: mydoc
 
 ## Windows Active Directory Support
 
-Windows Active Directory provides centralized administration of servers, workstations, users, and applications. There are several different types of Active Directory and OnlyKey supports the different types in different ways.
+Windows Active Directory provides centralized administration of servers, workstations, users, and applications. There are different types of Active Directory and OnlyKey supports the different types in different ways.
 
 ### Local Active Directory (AD)
 
-This is the traditional Active Directory model where there is a direct network connection between Windows workstations and an Active Directory Domain Controller. Windows does not support a built-in feature for 2-factor authentication and users log in via password authentication. 3rd party 2-factor authentication solutions such as Authlite may be used to implement 2-factor authentication.
+This is the traditional Active Directory model where there is a direct network connection between Windows workstations and an Active Directory Domain Controller. Local AD does not support FIDO security keys and typically users log in via password authentication. 3rd party 2-factor authentication solutions such as Authlite may be used to implement 2-factor authentication.
 
 OnlyKey can be used with Local AD in two ways:
 
@@ -32,7 +32,7 @@ Why Authlite instead of one of the other solutions?
 - Authlite supports physical security keys like OnlyKey
 - Authlite fails closed, this is unlike DUO which may in many cases be bypassed (i.e. boot into safe mode)
 - Authlite does not require contact with external service, works offline, and only requires install of software on domain controller
-- Like OnlyKey, Authlite is a one time cost per user
+- Like OnlyKey, Authlite is a one-time cost per user
 
 ### Azure Active Directory (AAD)
 
@@ -46,9 +46,11 @@ To deploy security keys on Azure AD some configuration is required:
 
 ![Azure AD Authentication methods](https://raw.githubusercontent.com/trustcrypto/trustcrypto.github.io/master/images/authentication.png)
 
-3) Select "Add AAGUID" under "Restrict specific keys" and add OnlyKey's AAGUID `79d699df01914b10b9035467e7ce8231`
+3) Select "Add AAGUID" under "Restrict specific keys" and add OnlyKey's AAGUID `79d699df-0191-4b10-b903-5467e7ce8231`
 
-## Ransomware Protection with OnlyKey Protected Windows Accounts {#ransomware}
+## Threat Models Mitigated with OnlyKey Protected Windows Accounts
+
+### Ransomware Protection {#ransomware}
 
 While centralized administration of servers, workstation, and users is a powerful tool for system administrators it can also be a powerful tool for adversaries should account compromise occur. When a privileged account is compromised the same features that allow a legitmate administrator to remotely access systems can allow ransomware to move laterally between systems where it can then encrypt and steal sensitive files.
 
@@ -59,6 +61,7 @@ Here are the steps in a typical ransomware attack:
 3. These password hashes are then run through a password cracking appliance that uses combinations of words, numbers, and special characters to crack passwords. Passwords such as Summer2019! and Welcome2020# are cracked almost immediately while other more complex passwords take longer.
 4. Once a workstation or server admin account is compromised the credential is used to install ransomware such as [Ryuk](https://www.crowdstrike.com/blog/big-game-hunting-with-ryuk-another-lucrative-targeted-ransomware/) on all accessible (Active Directory) client systems. A ransom that can be up to millions of dollars is demanded to restore client data that is encrypted. Many victims of ransomware may never recover and may even have to close down after an attack.
 
-The one key weakness exploited in a ransomware attack is most commonly passwords. OnlyKey stores long random passwords that are stored offline on a physical key fob. By using long random passwords ransomware is unable to crack passwords. Going a step further and using a 2-factor authentication solution like Authlite or security keys with Azure provides an even more robust solution for protection of accounts. 
+The one key weakness exploited in a ransomware attack is most commonly passwords. OnlyKey stores long random passwords that are stored offline on a physical key fob. By using long random passwords ransomware is unable to crack passwords. Going a step further and using a 2-factor authentication solution like Authlite provides an even more robust solution for protection of accounts.
+
 
 {% include links.html %}
