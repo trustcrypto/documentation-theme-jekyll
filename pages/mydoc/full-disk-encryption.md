@@ -19,7 +19,7 @@ OnlyKey may be used to enter passphrase/PIN to unlock Bitlocker encrypted drives
 
 ### LUKS
 
-OnlyKey may be used to enter passphrase to unlock LUKS encrypted drives.
+OnlyKey may be used to enter passphrase to unlock LUKS encrypted drives. Additionally, by using the FIDO2 features of OnlyKey this may be used to implement LUKS 2-factor authentication with open source solutions such as [fido2luks](https://github.com/shimunn/fido2luks).
 
 ### Other
 
